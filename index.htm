@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Star Resonance — Verdant Oracle Tree (fan-made)</title>
+  <link rel="stylesheet" href="Styles\VOstyle.css" />
+  <link rel="icon" type="image/x-icon" href="Styles\favicon.png" >
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>Star Resonance — Verdant Oracle Tree (fan-made)</h1>
+    <div class="stats">
+      <div class="statbox">
+        <span>Spent</span><strong id="spent">0</strong><span>/</span>
+        <label>Talent Point Cap</label><input id="capInput" type="number" min="1" max="200" value="70">
+      </div>
+      <div class="statbox">
+        <span>Used</span><strong id="sealsUsed">0</strong><span>/</span>
+        <label>Arcane Seals Cap</label><input id="sealsCapInput" type="number" min="0" max="200" value="60">
+      </div>
+    </div>
+  </header>
+
+  <aside class="leftbar" id="leftbar">
+    <div class="toggle"><button id="collapseBtn">≡</button></div>
+
+    <div class="panel">
+      <h2>Branches</h2>
+      
+      
+      <div class="branch-buttons">
+        <button class="btn branch" data-jump="verdant" title="Verdant Oracle">🌿 Verdant</button>
+        <button class="btn max-btn" id="maxVerdant" title="Max Verdant">⬆ Max Verdant</button>
+        <button class="btn branch" data-jump="smite" title="Smite">⚔️ Smite</button>
+        <button class="btn max-btn" id="maxSmite" title="Max Smite">⬆ Max Smite</button>
+        <button class="btn branch" data-jump="lifebloom" title="Life Bloom">🌸 Life Bloom</button>
+        <button class="btn max-btn" id="maxLife" title="Max Life Bloom">⬆ Max Life Bloom</button>
+      </div>
+
+
+    </div>
+
+    <div class="panel">
+      <h2>Reset</h2>
+      <div class="compact-row"><button class="btn" id="resetAll">⭮ Reset All</button></div>
+      <div class="compact-row"><button class="btn" id="resetBranch" disabled>⭮ Reset Current Branch</button></div>
+    </div>
+
+    <div class="panel" id="notesPanel">
+      <h2>Notes <button class="btn" id="clearNotes" style="padding:4px 8px">Clear ✖</button></h2>
+      <div id="notesContent" class="small">
+        Hover / select a skill for more details.<br/><br/>
+        ⭮ Reset Current Branch: Resets only the branch where you’ve invested points.<br/>
+        Priority: Smite / Life Bloom → Verdant Oracle.
+      </div>
+    </div>
+  </aside>
+
+  <main class="canvas">
+    <div class="grid-wrap">
+      <div class="grid" id="grid"></div>
+      <svg id="tree" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="nodeGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0f2a20"/>
+            <stop offset="100%" stop-color="#0b1f18"/>
+          </linearGradient>
+        </defs>
+        <g id="edges"></g>
+        <g id="nodes"></g>
+      </svg>
+    </div>
+  </main>
+</div>
+
+<div class="legend panel">
+  <h2>Key</h2>
+  <div class="row"><span>Unlocked</span><span class="dot un"></span></div>
+  <div class="row"><span>Available</span><span class="dot av"></span></div>
+  <div class="row"><span>Locked</span><span class="dot"></span></div>
+  <p>Left click: unlock • Right click: refund</p>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const cfg = { json:'VOtree.json', columns:7, colWidth:160, rowHeight:90 };
+const state = { cap:70, sealsCap:60, spent:0, sealsUsed:0, unlocked:new Set(), activeBranch:null };
+const dom = {
+  tree:document.getElementById('tree'), edges:document.getElementById('edges'), nodes:document.getElementById('nodes'),
+  grid:document.getElementById('grid'), spent:document.getElementById('spent'), capInput:document.getElementById('capInput'),
+  sealsUsed:document.getElementById('sealsUsed'), sealsCapInput:document.getElementById('sealsCapInput'),
+  toast:document.getElementById('toast'), notes:document.getElementById('notesContent'),
+  resetAll:document.getElementById('resetAll'), resetBranch:document.getElementById('resetBranch'),
+  maxVerdant:document.getElementById('maxVerdant'), maxSmite:document.getElementById('maxSmite'), maxLife:document.getElementById('maxLife'),
+  leftbar:document.getElementById('leftbar'), collapseBtn:document.getElementById('collapseBtn')
+};
+function toast(msg){ dom.toast.textContent=msg; dom.toast.classList.add('show'); clearTimeout(dom.toast._t); dom.toast._t=setTimeout(()=>dom.toast.classList.remove('show'), 1400); }
+function updateHeader(){ dom.spent.textContent = state.spent; dom.sealsUsed.textContent = state.sealsUsed; }
+function gridToPx(col,row){ return { x:(col-1)*cfg.colWidth + 120, y:(row-1)*cfg.rowHeight + 40 }; }
+function branchOfNode(id){ if(id.startsWith('vo'))return'verdant'; if(id.startsWith('smi'))return'smite'; if(id.startsWith('lb'))return'lifebloom'; return'unknown'; }
+let data=null, byId={};
+
+async function load(){
+  const res = await fetch(cfg.json); data = await res.json();
+  cfg.columns = data.config?.columns || cfg.columns; cfg.colWidth = data.config?.colWidth || cfg.colWidth; cfg.rowHeight = data.config?.rowHeight || cfg.rowHeight;
+  const maxRow = Math.max(...data.tiers.flatMap(t=>t.nodes.map(n=>n.row)));
+  const width = cfg.columns * cfg.colWidth + 240;
+  const height = (maxRow) * cfg.rowHeight + 200;
+  dom.tree.setAttribute('viewBox', `0 0 ${width} ${height}`); dom.tree.style.height = height + 'px'; dom.grid.style.height = height + 'px'; dom.grid.style.width = width + 'px';
+  dom.grid.style.backgroundSize = cfg.rowHeight+'px '+cfg.rowHeight+'px, '+cfg.colWidth+'px '+cfg.colWidth+'px';
+
+  for(const tier of data.tiers){ for(const n of tier.nodes){ byId[n.id]=n; n.parents=[]; } }
+  for(const tier of data.tiers){
+    for(const n of tier.nodes){
+      const p = gridToPx(n.col, n.row); n.x=p.x; n.y=p.y;
+      for(const ch of (n.children||[])){ if(byId[ch]) byId[ch].parents.push(n.id); }
+    }
+  }
+  draw(); bindUI(); update();
+}
+
+function draw(){
+  dom.edges.innerHTML=''; dom.nodes.innerHTML='';
+  for(const tier of data.tiers){
+    for(const n of tier.nodes){
+      for(const ch of (n.children||[])){
+        const t = byId[ch]; if(!t) continue;
+        const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+        line.setAttribute('x1', n.x); line.setAttribute('y1', n.y); line.setAttribute('x2', t.x); line.setAttribute('y2', t.y);
+        line.setAttribute('class','edge'); line.dataset.a=n.id; line.dataset.b=t.id; dom.edges.appendChild(line);
+      }
+    }
+  }
+  for(const tier of data.tiers){
+    for(const n of tier.nodes){
+      const g = document.createElementNS('http://www.w3.org/2000/svg','g'); g.classList.add('node'); g.setAttribute('transform', `translate(${n.x},${n.y})`); g.dataset.id=n.id;
+      const c = document.createElementNS('http://www.w3.org/2000/svg','circle'); c.setAttribute('r',22); c.setAttribute('cx',0); c.setAttribute('cy',0); g.appendChild(c);
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text'); t.setAttribute('text-anchor','middle'); t.setAttribute('dy','4'); t.textContent = (n.icon||'●'); g.appendChild(t);
+      const badge = document.createElementNS('http://www.w3.org/2000/svg','text'); badge.setAttribute('class','badge'); badge.setAttribute('text-anchor','middle'); badge.setAttribute('y',36);
+      badge.textContent = (n.cost||0) + (n.seals? ` • ${n.seals}🔮` : ''); g.appendChild(badge);
+      g.addEventListener('click', ()=> tryUnlock(n.id)); g.addEventListener('contextmenu', (e)=>{ e.preventDefault(); refundBranch(n.id); }); g.addEventListener('mouseenter', ()=> showNotes(n.id));
+      dom.nodes.appendChild(g);
+    }
+  }
+}
+
+function showNotes(id){
+  const n = byId[id];
+  const reqs = [];
+  if(n.minSpent) reqs.push(`Requires ${n.minSpent} talent points spent.`);
+  if(id==='smi01' || id==='lb01') reqs.push('Requires all 30 Verdant Oracle nodes.');
+  const sealsReq = (n.seals||0) > 0 ? ` and ${n.seals} Arcane Seals` : '';
+  dom.notes.innerHTML = `<div class="statbox" style="margin-bottom:8px">
+    <div><strong>${n.name}</strong><div class="small">${n.desc||''}</div></div>
+  </div>
+  <div class="small">Cost: <strong>${n.cost||0} Talent Points${sealsReq}</strong></div>
+  ${reqs.length? `<div class="small" style="margin-top:6px">${reqs.join('<br/>')}</div>`:''}`;
+}
+
+function prereqsMet(id){
+  const n = byId[id];
+  const parentsOk = (n.parents||[]).every(p=>state.unlocked.has(p));
+  if(!parentsOk) return false;
+  if(id==='smi01' || id==='lb01'){
+    const allVo = data.tiers.find(t=>t.id==='verdant').nodes.every(v=>state.unlocked.has(v.id));
+    if(!allVo) return false;
+  }
+  if(n.minSpent && state.spent < n.minSpent) return false;
+  if(id.startsWith('smi') && state.activeBranch==='lifebloom') return false;
+  if(id.startsWith('lb') && state.activeBranch==='smite') return false;
+  return true;
+}
+
+function tryUnlock(id){
+  const n = byId[id]; if(state.unlocked.has(id)) return;
+  if(!prereqsMet(id)) { toast('Locked.'); return; }
+  const cost = n.cost||0, seals=n.seals||0;
+  if(state.spent + cost > state.cap || state.sealsUsed + seals > state.sealsCap){ toast('Not enough resources.'); return; }
+  if(id==='smi01'){ state.activeBranch='smite'; }
+  if(id==='lb01'){ state.activeBranch='lifebloom'; }
+  state.unlocked.add(id); state.spent+=cost; state.sealsUsed+=seals; update();
+}
+
+function refundBranch(id){
+  if(!state.unlocked.has(id)) return;
+  const toRefund=new Set();
+  (function dfs(cur){
+    for(const k in byId){
+      const cand=byId[k];
+      if((cand.parents||[]).includes(cur) && state.unlocked.has(cand.id)) dfs(cand.id);
+    }
+    toRefund.add(cur);
+  })(id);
+  for(const rid of toRefund){
+    const n = byId[rid]; state.unlocked.delete(rid); state.spent -= (n.cost||0); state.sealsUsed -= (n.seals||0);
+    if(rid==='smi01' && state.activeBranch==='smite') state.activeBranch=null;
+    if(rid==='lb01' && state.activeBranch==='lifebloom') state.activeBranch=null;
+  }
+  update();
+}
+
+function update(){
+  const smiteRootUnlocked = state.unlocked.has('smi01');
+  const lifeRootUnlocked = state.unlocked.has('lb01');
+  const smiteHidden = state.activeBranch==='lifebloom';
+  const lifeHidden  = state.activeBranch==='smite';
+  const anyUnlocked = state.unlocked.size>0;
+  dom.resetBranch.disabled = !anyUnlocked;
+
+  for(const g of dom.nodes.querySelectorAll('.node')){
+    const id = g.dataset.id; const n = byId[id]; const branch = branchOfNode(id);
+    let hide=false;
+    if(branch==='smite' && id!=='smi01' && !smiteRootUnlocked) hide=true;
+    if(branch==='lifebloom' && id!=='lb01' && !lifeRootUnlocked) hide=true;
+    if(branch==='smite' && smiteHidden && id!=='smi01') hide=true;
+    if(branch==='lifebloom' && lifeHidden && id!=='lb01') hide=true;
+    if(id==='smi01' && state.activeBranch==='lifebloom') hide=true;
+    if(id==='lb01' && state.activeBranch==='smite') hide=true;
+    g.classList.toggle('hidden', hide);
+
+    g.classList.remove('unlocked','available');
+    if(state.unlocked.has(id)) g.classList.add('unlocked');
+    else if(prereqsMet(id) && state.spent + (n.cost||0) <= state.cap && state.sealsUsed + (n.seals||0) <= state.sealsCap) g.classList.add('available');
+
+    const badge = g.querySelector('.badge'); const locked = !state.unlocked.has(id) && !g.classList.contains('available');
+    if(locked) badge.textContent='🔒'; else badge.textContent=(n.cost||0)+(n.seals?` • ${n.seals}🔮`:'');
+  }
+
+  for(const e of dom.edges.querySelectorAll('.edge')){
+    const a=e.dataset.a, b=e.dataset.b; const branchA=branchOfNode(a), branchB=branchOfNode(b);
+    let hide=false;
+    if(branch==='smite' && id!=='smi01' && !smiteRootUnlocked) hide=true;
+    if(branch==='lifebloom' && id!=='lb01' && !lifeRootUnlocked) hide=true;
+    if(state.activeBranch==='smite'){ if(branchA==='lifebloom'||branchB==='lifebloom') hide=true; }
+    else if(state.activeBranch==='lifebloom'){ if(branchA==='smite'||branchB==='smite') hide=true; }
+    if((a==='lb01'||b==='lb01') && state.activeBranch==='smite') hide=true;
+    if((a==='smi01'||b==='smi01') && state.activeBranch==='lifebloom') hide=true;
+    e.classList.toggle('hidden', hide);
+    const active = state.unlocked.has(a) && state.unlocked.has(b);
+    e.setAttribute('class','edge'+(active?' active':'')+(hide?' hidden':''));
+  }
+  updateHeader();
+}
+
+function resetAll(){
+  state.unlocked.clear(); state.spent=0; state.sealsUsed=0; state.activeBranch=null; update(); toast('All talents refunded.');
+}
+function resetCurrentByPriority(){
+  const hasSmite=[...state.unlocked].some(id=>id.startsWith('smi'));
+  const hasLife=[...state.unlocked].some(id=>id.startsWith('lb'));
+  const hasVo=[...state.unlocked].some(id=>id.startsWith('vo'));
+  if(hasSmite) return refundGroup('smi','Smite talents refunded.');
+  if(hasLife)  return refundGroup('lb','Life Bloom talents refunded.');
+  if(hasVo)    return refundGroup('vo','Verdant talents refunded.');
+}
+function refundGroup(prefix,msg){
+  for(const id of [...state.unlocked]){
+    if(id.startsWith(prefix)){ const n=byId[id]; state.unlocked.delete(id); state.spent-=(n.cost||0); state.sealsUsed-=(n.seals||0); }
+  }
+  if(prefix==='smi' || prefix==='lb') state.activeBranch=null; update(); toast(msg);
+}
+function bindUI(){
+  dom.capInput.addEventListener('input', ()=>{ state.cap=Math.max(1,+dom.capInput.value||1); update(); });
+  state.cap = +dom.capInput.value || 70;
+  dom.sealsCapInput.addEventListener('input', ()=>{ state.sealsCap=Math.max(0,+dom.sealsCapInput.value||0); update(); });
+  state.sealsCap = +dom.sealsCapInput.value || 60;
+  document.querySelectorAll('[data-jump]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const id=btn.dataset.jump; let y=0;
+      for(const t of data.tiers){ if(t.id===id){ y = Math.min(...t.nodes.map(n=>n.y)); break; } }
+      window.scrollTo({top:Math.max(0,y-120), behavior:'smooth'});
+    });
+  });
+  dom.maxVerdant.onclick=()=>massUnlock('vo'); dom.maxSmite.onclick=()=>massUnlock('smi'); dom.maxLife.onclick=()=>massUnlock('lb');
+  dom.resetAll.onclick=resetAll; dom.resetBranch.onclick=resetCurrentByPriority;
+  dom.collapseBtn.onclick=()=> dom.leftbar.classList.toggle('collapsed');
+  document.getElementById('clearNotes').onclick=()=>{ dom.notes.innerHTML=`Hover / select a skill for more details.<br/><br/>
+  ⭮ Reset Current Branch: Resets only the branch where you’ve invested points.<br/>Priority: Smite / Life Bloom → Verdant Oracle.`; toast('Notes cleared.'); };
+}
+function massUnlock(prefix){
+  if(prefix==='smi' || prefix==='lb'){
+    const allVo = data.tiers.find(t=>t.id==='verdant').nodes.every(v=>state.unlocked.has(v.id));
+    if(!allVo){ toast('Locked.'); return; }
+    if(prefix==='smi') state.activeBranch='smite'; if(prefix==='lb') state.activeBranch='lifebloom';
+  }
+  for(let pass=0; pass<10; pass++){
+    let changed=false;
+    for(const id in byId){
+      if(!id.startsWith(prefix)) continue; if(state.unlocked.has(id)) continue;
+      const n=byId[id];
+      if(prereqsMet(id)){
+        const cost=n.cost||0, seals=n.seals||0;
+        if(state.spent+cost<=state.cap && state.sealsUsed+seals<=state.sealsCap){ state.unlocked.add(id); state.spent+=cost; state.sealsUsed+=seals; changed=true; }
+      }
+    }
+    if(!changed) break;
+  }
+  update();
+}
+document.addEventListener('DOMContentLoaded', load);
+</script>
+</body>
+</html>

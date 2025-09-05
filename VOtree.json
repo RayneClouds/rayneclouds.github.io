@@ -1,0 +1,558 @@
+{
+  "config": {
+    "columns": 7,
+    "colWidth": 160,
+    "rowHeight": 90,
+    "voTopRow": 1,
+    "voLeftCol": 2
+  },
+  "tiers": [
+    {
+      "id": "verdant",
+      "name": "Verdant Oracle",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "id": "vo01",
+          "name": "Verdant 01",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 1,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo01.",
+          "children": [
+            "vo02",
+            "vo03",
+            "vo04"
+          ]
+        },
+        {
+          "id": "vo02",
+          "name": "Verdant 02",
+          "icon": "\ud83c\udf3f",
+          "col": 3,
+          "row": 2,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo02.",
+          "children": [
+            "vo06"
+          ]
+        },
+        {
+          "id": "vo03",
+          "name": "Verdant 03",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 2,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo03.",
+          "children": [
+            "vo05"
+          ]
+        },
+        {
+          "id": "vo04",
+          "name": "Verdant 04",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 2,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo04.",
+          "children": [
+            "vo08"
+          ]
+        },
+        {
+          "id": "vo05",
+          "name": "Verdant 05",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 3,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo05.",
+          "children": [
+            "vo07"
+          ]
+        },
+        {
+          "id": "vo06",
+          "name": "Verdant 06",
+          "icon": "\ud83c\udf3f",
+          "col": 3,
+          "row": 4,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo06.",
+          "children": [
+            "vo09"
+          ]
+        },
+        {
+          "id": "vo07",
+          "name": "Verdant 07",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 4,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo07.",
+          "children": [
+            "vo10"
+          ]
+        },
+        {
+          "id": "vo08",
+          "name": "Verdant 08",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 4,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo08.",
+          "children": [
+            "vo11"
+          ]
+        },
+        {
+          "id": "vo09",
+          "name": "Verdant 09",
+          "icon": "\ud83c\udf3f",
+          "col": 2,
+          "row": 5,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo09.",
+          "children": [
+            "vo12"
+          ]
+        },
+        {
+          "id": "vo10",
+          "name": "Verdant 10",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 5,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo10.",
+          "children": [
+            "vo13",
+            "vo14",
+            "vo15"
+          ]
+        },
+        {
+          "id": "vo11",
+          "name": "Verdant 11",
+          "icon": "\ud83c\udf3f",
+          "col": 6,
+          "row": 5,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo11.",
+          "children": [
+            "vo15"
+          ]
+        },
+        {
+          "id": "vo12",
+          "name": "Verdant 12",
+          "icon": "\ud83c\udf3f",
+          "col": 3,
+          "row": 6,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo12.",
+          "children": [
+            "vo16"
+          ]
+        },
+        {
+          "id": "vo13",
+          "name": "Verdant 13",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 6,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo13.",
+          "children": [
+            "vo19",
+            "vo22"
+          ]
+        },
+        {
+          "id": "vo14",
+          "name": "Verdant 14",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 6,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo14.",
+          "children": [
+            "vo17",
+            "vo23"
+          ]
+        },
+        {
+          "id": "vo15",
+          "name": "Verdant 15",
+          "icon": "\ud83c\udf3f",
+          "col": 6,
+          "row": 6,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo15.",
+          "children": [
+            "vo18",
+            "vo24"
+          ]
+        },
+        {
+          "id": "vo16",
+          "name": "Verdant 16",
+          "icon": "\ud83c\udf3f",
+          "col": 3,
+          "row": 7,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo16.",
+          "children": [
+            "vo21"
+          ]
+        },
+        {
+          "id": "vo17",
+          "name": "Verdant 17",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 7,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo17.",
+          "children": [
+            "vo20"
+          ]
+        },
+        {
+          "id": "vo18",
+          "name": "Verdant 18",
+          "icon": "\ud83c\udf3f",
+          "col": 7,
+          "row": 7,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo18.",
+          "children": [
+            "vo25"
+          ]
+        },
+        {
+          "id": "vo19",
+          "name": "Verdant 19",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 8,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo19.",
+          "children": [
+            "vo22"
+          ]
+        },
+        {
+          "id": "vo20",
+          "name": "Verdant 20",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 8,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo20.",
+          "children": [
+            "vo23"
+          ]
+        },
+        {
+          "id": "vo21",
+          "name": "Verdant 21",
+          "icon": "\ud83c\udf3f",
+          "col": 3,
+          "row": 9,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo21.",
+          "children": [
+            "vo26"
+          ]
+        },
+        {
+          "id": "vo22",
+          "name": "Verdant 22",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 9,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo22.",
+          "children": [
+            "vo27"
+          ]
+        },
+        {
+          "id": "vo23",
+          "name": "Verdant 23",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 9,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo23.",
+          "children": [
+            "vo28"
+          ]
+        },
+        {
+          "id": "vo24",
+          "name": "Verdant 24",
+          "icon": "\ud83c\udf3f",
+          "col": 6,
+          "row": 9,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo24.",
+          "children": [
+            "vo29"
+          ]
+        },
+        {
+          "id": "vo25",
+          "name": "Verdant 25",
+          "icon": "\ud83c\udf3f",
+          "col": 7,
+          "row": 9,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo25.",
+          "children": [
+            "vo30"
+          ]
+        },
+        {
+          "id": "vo26",
+          "name": "Verdant 26",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 10,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo26.",
+          "children": []
+        },
+        {
+          "id": "vo27",
+          "name": "Verdant 27",
+          "icon": "\ud83c\udf3f",
+          "col": 4,
+          "row": 10,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo27.",
+          "children": []
+        },
+        {
+          "id": "vo28",
+          "name": "Verdant 28",
+          "icon": "\ud83c\udf3f",
+          "col": 5,
+          "row": 10,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo28.",
+          "children": []
+        },
+        {
+          "id": "vo29",
+          "name": "Verdant 29",
+          "icon": "\ud83c\udf3f",
+          "col": 6,
+          "row": 10,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo29.",
+          "children": []
+        },
+        {
+          "id": "vo30",
+          "name": "Verdant 30",
+          "icon": "\ud83c\udf3f",
+          "col": 7,
+          "row": 10,
+          "cost": 1,
+          "seals": 0,
+          "desc": "Placeholder description for vo30.",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "smite",
+      "name": "Smite",
+      "origin": {
+        "x": 0,
+        "y": 40
+      },
+      "nodes": [
+        {
+          "id": "smi01",
+          "name": "Smite Root",
+          "icon": "\u2694\ufe0f",
+          "col": 3,
+          "row": 11,
+          "cost": 0,
+          "seals": 0,
+          "desc": "Smite entry.",
+          "children": [
+            "smi02"
+          ]
+        },
+        {
+          "id": "smi02",
+          "name": "Smite II",
+          "icon": "\u2694\ufe0f",
+          "col": 3,
+          "row": 12,
+          "cost": 2,
+          "seals": 1,
+          "desc": "Placeholder.",
+          "children": [
+            "smi03",
+            "smi04"
+          ]
+        },
+        {
+          "id": "smi03",
+          "name": "Smite III",
+          "icon": "\u2694\ufe0f",
+          "col": 2,
+          "row": 13,
+          "cost": 2,
+          "seals": 0,
+          "desc": "Placeholder.",
+          "children": [
+            "smi05"
+          ]
+        },
+        {
+          "id": "smi04",
+          "name": "Smite IV",
+          "icon": "\u2694\ufe0f",
+          "col": 4,
+          "row": 13,
+          "cost": 2,
+          "seals": 0,
+          "desc": "Placeholder.",
+          "children": [
+            "smi05"
+          ]
+        },
+        {
+          "id": "smi05",
+          "name": "Smite Keystone",
+          "icon": "\u2694\ufe0f",
+          "col": 3,
+          "row": 14,
+          "cost": 4,
+          "seals": 2,
+          "minSpent": 50,
+          "desc": "Requires 50 spent.",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "lifebloom",
+      "name": "Life Bloom",
+      "origin": {
+        "x": 0,
+        "y": 40
+      },
+      "nodes": [
+        {
+          "id": "lb01",
+          "name": "Life Bloom Root",
+          "icon": "\ud83c\udf38",
+          "col": 5,
+          "row": 11,
+          "cost": 0,
+          "seals": 0,
+          "desc": "Life Bloom entry.",
+          "children": [
+            "lb02"
+          ]
+        },
+        {
+          "id": "lb02",
+          "name": "Life Bloom II",
+          "icon": "\ud83c\udf38",
+          "col": 5,
+          "row": 12,
+          "cost": 2,
+          "seals": 1,
+          "desc": "Placeholder.",
+          "children": [
+            "lb03",
+            "lb04"
+          ]
+        },
+        {
+          "id": "lb03",
+          "name": "Life Bloom III",
+          "icon": "\ud83c\udf38",
+          "col": 4,
+          "row": 13,
+          "cost": 2,
+          "seals": 0,
+          "desc": "Placeholder.",
+          "children": [
+            "lb05"
+          ]
+        },
+        {
+          "id": "lb04",
+          "name": "Life Bloom IV",
+          "icon": "\ud83c\udf38",
+          "col": 6,
+          "row": 13,
+          "cost": 2,
+          "seals": 0,
+          "desc": "Placeholder.",
+          "children": [
+            "lb05"
+          ]
+        },
+        {
+          "id": "lb05",
+          "name": "Life Bloom Keystone",
+          "icon": "\ud83c\udf38",
+          "col": 5,
+          "row": 14,
+          "cost": 4,
+          "seals": 2,
+          "minSpent": 50,
+          "desc": "Requires 50 spent.",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
