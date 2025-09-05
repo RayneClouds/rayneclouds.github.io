@@ -1,29 +1,23 @@
 {
-  "config": {
-    "columns": 7,
-    "colWidth": 160,
-    "rowHeight": 90,
-    "voTopRow": 1,
-    "voLeftCol": 2
-  },
   "tiers": [
     {
       "id": "verdant",
       "name": "Verdant Oracle",
+      "collapsed": false,
+      "requiresUnlocked": [],
       "origin": {
-        "x": 0,
-        "y": 0
+        "x": 1000,
+        "y": 200
       },
       "nodes": [
         {
           "id": "vo01",
-          "name": "Verdant 01",
+          "name": "VO Talent 01",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 1,
+          "gx": 0,
+          "gy": 0,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo01.",
+          "desc": "Placeholder description.",
           "children": [
             "vo02",
             "vo03",
@@ -32,374 +26,349 @@
         },
         {
           "id": "vo02",
-          "name": "Verdant 02",
+          "name": "VO Talent 02",
           "icon": "\ud83c\udf3f",
-          "col": 3,
-          "row": 2,
+          "gx": -2,
+          "gy": 2,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo02.",
+          "desc": "Placeholder description.",
           "children": [
             "vo06"
           ]
         },
         {
           "id": "vo03",
-          "name": "Verdant 03",
+          "name": "VO Talent 03",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 2,
+          "gx": 0,
+          "gy": 2,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo03.",
+          "desc": "Placeholder description.",
           "children": [
-            "vo05"
+            "vo05",
+            "vo07"
           ]
         },
         {
           "id": "vo04",
-          "name": "Verdant 04",
+          "name": "VO Talent 04",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 2,
+          "gx": 2,
+          "gy": 2,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo04.",
+          "desc": "Placeholder description.",
           "children": [
             "vo08"
           ]
         },
         {
           "id": "vo05",
-          "name": "Verdant 05",
+          "name": "VO Talent 05",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 3,
+          "gx": 0,
+          "gy": 3,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo05.",
+          "desc": "Placeholder description.",
           "children": [
             "vo07"
           ]
         },
         {
           "id": "vo06",
-          "name": "Verdant 06",
+          "name": "VO Talent 06",
           "icon": "\ud83c\udf3f",
-          "col": 3,
-          "row": 4,
+          "gx": -2,
+          "gy": 5,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo06.",
+          "desc": "Placeholder description.",
           "children": [
             "vo09"
           ]
         },
         {
           "id": "vo07",
-          "name": "Verdant 07",
+          "name": "VO Talent 07",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 4,
+          "gx": 0,
+          "gy": 5,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo07.",
+          "desc": "Placeholder description.",
           "children": [
             "vo10"
           ]
         },
         {
           "id": "vo08",
-          "name": "Verdant 08",
+          "name": "VO Talent 08",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 4,
+          "gx": 2,
+          "gy": 5,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo08.",
+          "desc": "Placeholder description.",
           "children": [
             "vo11"
           ]
         },
         {
           "id": "vo09",
-          "name": "Verdant 09",
+          "name": "VO Talent 09",
           "icon": "\ud83c\udf3f",
-          "col": 2,
-          "row": 5,
+          "gx": -3,
+          "gy": 7,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo09.",
+          "desc": "Placeholder description.",
           "children": [
             "vo12"
           ]
         },
         {
           "id": "vo10",
-          "name": "Verdant 10",
+          "name": "VO Talent 10",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 5,
+          "gx": -1,
+          "gy": 7,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo10.",
+          "desc": "Placeholder description.",
           "children": [
             "vo13",
-            "vo14",
-            "vo15"
+            "vo14"
           ]
         },
         {
           "id": "vo11",
-          "name": "Verdant 11",
+          "name": "VO Talent 11",
           "icon": "\ud83c\udf3f",
-          "col": 6,
-          "row": 5,
+          "gx": 1,
+          "gy": 7,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo11.",
+          "desc": "Placeholder description.",
           "children": [
             "vo15"
           ]
         },
         {
           "id": "vo12",
-          "name": "Verdant 12",
+          "name": "VO Talent 12",
           "icon": "\ud83c\udf3f",
-          "col": 3,
-          "row": 6,
+          "gx": -3,
+          "gy": 9,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo12.",
+          "desc": "Placeholder description.",
           "children": [
             "vo16"
           ]
         },
         {
           "id": "vo13",
-          "name": "Verdant 13",
+          "name": "VO Talent 13",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 6,
+          "gx": -1,
+          "gy": 9,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo13.",
+          "desc": "Placeholder description.",
           "children": [
-            "vo19",
-            "vo22"
+            "vo19"
           ]
         },
         {
           "id": "vo14",
-          "name": "Verdant 14",
+          "name": "VO Talent 14",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 6,
+          "gx": 1,
+          "gy": 9,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo14.",
+          "desc": "Placeholder description.",
           "children": [
             "vo17",
-            "vo23"
+            "vo20"
           ]
         },
         {
           "id": "vo15",
-          "name": "Verdant 15",
+          "name": "VO Talent 15",
           "icon": "\ud83c\udf3f",
-          "col": 6,
-          "row": 6,
+          "gx": 3,
+          "gy": 9,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo15.",
+          "desc": "Placeholder description.",
           "children": [
-            "vo18",
-            "vo24"
+            "vo18"
           ]
         },
         {
           "id": "vo16",
-          "name": "Verdant 16",
+          "name": "VO Talent 16",
           "icon": "\ud83c\udf3f",
-          "col": 3,
-          "row": 7,
+          "gx": -3,
+          "gy": 11,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo16.",
+          "desc": "Placeholder description.",
           "children": [
             "vo21"
           ]
         },
         {
           "id": "vo17",
-          "name": "Verdant 17",
+          "name": "VO Talent 17",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 7,
+          "gx": 0,
+          "gy": 11,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo17.",
+          "desc": "Placeholder description.",
           "children": [
-            "vo20"
+            "vo19",
+            "vo20",
+            "vo22",
+            "vo23",
+            "vo24"
           ]
         },
         {
           "id": "vo18",
-          "name": "Verdant 18",
+          "name": "VO Talent 18",
           "icon": "\ud83c\udf3f",
-          "col": 7,
-          "row": 7,
+          "gx": 3,
+          "gy": 11,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo18.",
+          "desc": "Placeholder description.",
           "children": [
             "vo25"
           ]
         },
         {
           "id": "vo19",
-          "name": "Verdant 19",
+          "name": "VO Talent 19",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 8,
+          "gx": -1,
+          "gy": 12,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo19.",
+          "desc": "Placeholder description.",
           "children": [
-            "vo22"
-          ]
-        },
-        {
-          "id": "vo20",
-          "name": "Verdant 20",
-          "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 8,
-          "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo20.",
-          "children": [
+            "vo22",
             "vo23"
           ]
         },
         {
-          "id": "vo21",
-          "name": "Verdant 21",
+          "id": "vo20",
+          "name": "VO Talent 20",
           "icon": "\ud83c\udf3f",
-          "col": 3,
-          "row": 9,
+          "gx": 1,
+          "gy": 12,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo21.",
+          "desc": "Placeholder description.",
+          "children": [
+            "vo23",
+            "vo24"
+          ]
+        },
+        {
+          "id": "vo21",
+          "name": "VO Talent 21",
+          "icon": "\ud83c\udf3f",
+          "gx": -2,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
             "vo26"
           ]
         },
         {
           "id": "vo22",
-          "name": "Verdant 22",
+          "name": "VO Talent 22",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 9,
+          "gx": 0,
+          "gy": 13,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo22.",
+          "desc": "Placeholder description.",
           "children": [
             "vo27"
           ]
         },
         {
           "id": "vo23",
-          "name": "Verdant 23",
+          "name": "VO Talent 23",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 9,
+          "gx": 0,
+          "gy": 13,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo23.",
+          "desc": "Placeholder description.",
           "children": [
             "vo28"
           ]
         },
         {
           "id": "vo24",
-          "name": "Verdant 24",
+          "name": "VO Talent 24",
           "icon": "\ud83c\udf3f",
-          "col": 6,
-          "row": 9,
+          "gx": 2,
+          "gy": 13,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo24.",
+          "desc": "Placeholder description.",
           "children": [
             "vo29"
           ]
         },
         {
           "id": "vo25",
-          "name": "Verdant 25",
+          "name": "VO Talent 25",
           "icon": "\ud83c\udf3f",
-          "col": 7,
-          "row": 9,
+          "gx": 3,
+          "gy": 13,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo25.",
+          "desc": "Placeholder description.",
           "children": [
             "vo30"
           ]
         },
         {
           "id": "vo26",
-          "name": "Verdant 26",
+          "name": "VO Talent 26",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 10,
+          "gx": -1,
+          "gy": 15,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo26.",
+          "desc": "Placeholder description.",
           "children": []
         },
         {
           "id": "vo27",
-          "name": "Verdant 27",
+          "name": "VO Talent 27",
           "icon": "\ud83c\udf3f",
-          "col": 4,
-          "row": 10,
+          "gx": 0,
+          "gy": 15,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo27.",
+          "desc": "Placeholder description.",
           "children": []
         },
         {
           "id": "vo28",
-          "name": "Verdant 28",
+          "name": "VO Talent 28",
           "icon": "\ud83c\udf3f",
-          "col": 5,
-          "row": 10,
+          "gx": 0,
+          "gy": 15,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo28.",
+          "desc": "Placeholder description.",
           "children": []
         },
         {
           "id": "vo29",
-          "name": "Verdant 29",
+          "name": "VO Talent 29",
           "icon": "\ud83c\udf3f",
-          "col": 6,
-          "row": 10,
+          "gx": 1,
+          "gy": 15,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo29.",
+          "desc": "Placeholder description.",
           "children": []
         },
         {
           "id": "vo30",
-          "name": "Verdant 30",
+          "name": "VO Talent 30",
           "icon": "\ud83c\udf3f",
-          "col": 7,
-          "row": 10,
+          "gx": 2,
+          "gy": 15,
           "cost": 1,
-          "seals": 0,
-          "desc": "Placeholder description for vo30.",
+          "desc": "Placeholder description.",
           "children": []
         }
       ]
@@ -407,149 +376,1488 @@
     {
       "id": "smite",
       "name": "Smite",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "vo01",
+        "vo02",
+        "vo03",
+        "vo04",
+        "vo05",
+        "vo06",
+        "vo07",
+        "vo08",
+        "vo09",
+        "vo10",
+        "vo11",
+        "vo12",
+        "vo13",
+        "vo14",
+        "vo15",
+        "vo16",
+        "vo17",
+        "vo18",
+        "vo19",
+        "vo20",
+        "vo21",
+        "vo22",
+        "vo23",
+        "vo24",
+        "vo25",
+        "vo26",
+        "vo27",
+        "vo28",
+        "vo29",
+        "vo30"
+      ],
       "origin": {
-        "x": 0,
-        "y": 40
+        "x": 600,
+        "y": 900
       },
       "nodes": [
         {
           "id": "smi01",
-          "name": "Smite Root",
+          "name": "SMI Talent 01",
           "icon": "\u2694\ufe0f",
-          "col": 3,
-          "row": 11,
-          "cost": 0,
-          "seals": 0,
-          "desc": "Smite entry.",
-          "children": [
-            "smi02"
-          ]
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
         },
         {
           "id": "smi02",
-          "name": "Smite II",
+          "name": "SMI Talent 02",
           "icon": "\u2694\ufe0f",
-          "col": 3,
-          "row": 12,
-          "cost": 2,
-          "seals": 1,
-          "desc": "Placeholder.",
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "smi03",
-            "smi04"
+            "smi05"
           ]
         },
         {
           "id": "smi03",
-          "name": "Smite III",
+          "name": "SMI Talent 03",
           "icon": "\u2694\ufe0f",
-          "col": 2,
-          "row": 13,
-          "cost": 2,
-          "seals": 0,
-          "desc": "Placeholder.",
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "smi05"
+            "smi09"
           ]
         },
         {
           "id": "smi04",
-          "name": "Smite IV",
+          "name": "SMI Talent 04",
           "icon": "\u2694\ufe0f",
-          "col": 4,
-          "row": 13,
-          "cost": 2,
-          "seals": 0,
-          "desc": "Placeholder.",
-          "children": [
-            "smi05"
-          ]
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
         },
         {
           "id": "smi05",
-          "name": "Smite Keystone",
+          "name": "SMI Talent 05",
           "icon": "\u2694\ufe0f",
-          "col": 3,
-          "row": 14,
-          "cost": 4,
-          "seals": 2,
-          "minSpent": 50,
-          "desc": "Requires 50 spent.",
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi11"
+          ]
+        },
+        {
+          "id": "smi06",
+          "name": "SMI Talent 06",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi09"
+          ]
+        },
+        {
+          "id": "smi07",
+          "name": "SMI Talent 07",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi14"
+          ]
+        },
+        {
+          "id": "smi08",
+          "name": "SMI Talent 08",
+          "icon": "\u2694\ufe0f",
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi54",
+            "smi13"
+          ]
+        },
+        {
+          "id": "smi09",
+          "name": "SMI Talent 09",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi14"
+          ]
+        },
+        {
+          "id": "smi10",
+          "name": "SMI Talent 10",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": []
+        },
+        {
+          "id": "smi11",
+          "name": "SMI Talent 11",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 7,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi14"
+          ]
+        },
+        {
+          "id": "smi12",
+          "name": "SMI Talent 12",
+          "icon": "\u2694\ufe0f",
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi15"
+          ]
+        },
+        {
+          "id": "smi13",
+          "name": "SMI Talent 13",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi14",
+          "name": "SMI Talent 14",
+          "icon": "\u2694\ufe0f",
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi16"
+          ]
+        },
+        {
+          "id": "smi15",
+          "name": "SMI Talent 15",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi16",
+          "name": "SMI Talent 16",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi21",
+            "smi19"
+          ]
+        },
+        {
+          "id": "smi17",
+          "name": "SMI Talent 17",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi20"
+          ]
+        },
+        {
+          "id": "smi18",
+          "name": "SMI Talent 18",
+          "icon": "\u2694\ufe0f",
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi19",
+          "name": "SMI Talent 19",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi20",
+          "name": "SMI Talent 20",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi24"
+          ]
+        },
+        {
+          "id": "smi21",
+          "name": "SMI Talent 21",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi22",
+          "name": "SMI Talent 22",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi28"
+          ]
+        },
+        {
+          "id": "smi23",
+          "name": "SMI Talent 23",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi29",
+            "smi30"
+          ]
+        },
+        {
+          "id": "smi24",
+          "name": "SMI Talent 24",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi25",
+          "name": "SMI Talent 25",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 14,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi26",
+          "name": "SMI Talent 26",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 14,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi27",
+          "name": "SMI Talent 27",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 15,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi57"
+          ]
+        },
+        {
+          "id": "smi28",
+          "name": "SMI Talent 28",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 15,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi32",
+            "smi33"
+          ]
+        },
+        {
+          "id": "smi29",
+          "name": "SMI Talent 29",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 16,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi32"
+          ]
+        },
+        {
+          "id": "smi30",
+          "name": "SMI Talent 30",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 16,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi31",
+          "name": "SMI Talent 31",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi57",
+            "smi35"
+          ]
+        },
+        {
+          "id": "smi32",
+          "name": "SMI Talent 32",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi36"
+          ]
+        },
+        {
+          "id": "smi33",
+          "name": "SMI Talent 33",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 18,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi53"
+          ]
+        },
+        {
+          "id": "smi34",
+          "name": "SMI Talent 34",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 18,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi58"
+          ]
+        },
+        {
+          "id": "smi35",
+          "name": "SMI Talent 35",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi52"
+          ]
+        },
+        {
+          "id": "smi36",
+          "name": "SMI Talent 36",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi37",
+          "name": "SMI Talent 37",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 20,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi52"
+          ]
+        },
+        {
+          "id": "smi38",
+          "name": "SMI Talent 38",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 20,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi51",
+            "smi40"
+          ]
+        },
+        {
+          "id": "smi39",
+          "name": "SMI Talent 39",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi40",
+          "name": "SMI Talent 40",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi41",
+          "name": "SMI Talent 41",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi43"
+          ]
+        },
+        {
+          "id": "smi42",
+          "name": "SMI Talent 42",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi47",
+            "smi48"
+          ]
+        },
+        {
+          "id": "smi43",
+          "name": "SMI Talent 43",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 23,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi48"
+          ]
+        },
+        {
+          "id": "smi44",
+          "name": "SMI Talent 44",
+          "icon": "\u2694\ufe0f",
+          "gx": -2,
+          "gy": 23,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi45",
+            "smi49"
+          ]
+        },
+        {
+          "id": "smi45",
+          "name": "SMI Talent 45",
+          "icon": "\u2694\ufe0f",
+          "gx": -2,
+          "gy": 24,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi46",
+          "name": "SMI Talent 46",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 24,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi48"
+          ]
+        },
+        {
+          "id": "smi47",
+          "name": "SMI Talent 47",
+          "icon": "\u2694\ufe0f",
+          "gx": 2,
+          "gy": 25,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi50"
+          ]
+        },
+        {
+          "id": "smi48",
+          "name": "SMI Talent 48",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 25,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi50"
+          ]
+        },
+        {
+          "id": "smi49",
+          "name": "SMI Talent 49",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 26,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi50",
+          "name": "SMI Talent 50",
+          "icon": "\u2694\ufe0f",
+          "gx": 0,
+          "gy": 26,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi51",
+          "name": "SMI Talent 51",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi43",
+            "smi47"
+          ]
+        },
+        {
+          "id": "smi52",
+          "name": "SMI Talent 52",
+          "icon": "\u2694\ufe0f",
+          "gx": 1,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi53",
+          "name": "SMI Talent 53",
+          "icon": "\u2694\ufe0f",
+          "gx": -2,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi54",
+          "name": "SMI Talent 54",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi11",
+            "smi15"
+          ]
+        },
+        {
+          "id": "smi55",
+          "name": "SMI Talent 55",
+          "icon": "\u2694\ufe0f",
+          "gx": -2,
+          "gy": 26,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "smi56",
+          "name": "SMI Talent 56",
+          "icon": "\u2694\ufe0f",
+          "gx": 3,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi53",
+            "smi38"
+          ]
+        },
+        {
+          "id": "smi57",
+          "name": "SMI Talent 57",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 18,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi39"
+          ]
+        },
+        {
+          "id": "smi58",
+          "name": "SMI Talent 58",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi43"
+          ]
+        },
+        {
+          "id": "smi59",
+          "name": "SMI Talent 59",
+          "icon": "\u2694\ufe0f",
+          "gx": -3,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi36"
+          ]
+        },
+        {
+          "id": "smi60",
+          "name": "SMI Talent 60",
+          "icon": "\u2694\ufe0f",
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "smi12",
+            "smi10"
+          ]
         }
       ]
     },
     {
       "id": "lifebloom",
       "name": "Life Bloom",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "vo01",
+        "vo02",
+        "vo03",
+        "vo04",
+        "vo05",
+        "vo06",
+        "vo07",
+        "vo08",
+        "vo09",
+        "vo10",
+        "vo11",
+        "vo12",
+        "vo13",
+        "vo14",
+        "vo15",
+        "vo16",
+        "vo17",
+        "vo18",
+        "vo19",
+        "vo20",
+        "vo21",
+        "vo22",
+        "vo23",
+        "vo24",
+        "vo25",
+        "vo26",
+        "vo27",
+        "vo28",
+        "vo29",
+        "vo30"
+      ],
       "origin": {
-        "x": 0,
-        "y": 40
+        "x": 1400,
+        "y": 900
       },
       "nodes": [
         {
           "id": "lb01",
-          "name": "Life Bloom Root",
+          "name": "LB Talent 01",
           "icon": "\ud83c\udf38",
-          "col": 5,
-          "row": 11,
-          "cost": 0,
-          "seals": 0,
-          "desc": "Life Bloom entry.",
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "lb02"
+            "lb03"
           ]
         },
         {
           "id": "lb02",
-          "name": "Life Bloom II",
+          "name": "LB Talent 02",
           "icon": "\ud83c\udf38",
-          "col": 5,
-          "row": 12,
-          "cost": 2,
-          "seals": 1,
-          "desc": "Placeholder.",
+          "gx": -3,
+          "gy": 2,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "lb03",
-            "lb04"
+            "lb06"
           ]
         },
         {
           "id": "lb03",
-          "name": "Life Bloom III",
+          "name": "LB Talent 03",
           "icon": "\ud83c\udf38",
-          "col": 4,
-          "row": 13,
-          "cost": 2,
-          "seals": 0,
-          "desc": "Placeholder.",
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "lb05"
+            "lb08",
+            "lb07"
           ]
         },
         {
           "id": "lb04",
-          "name": "Life Bloom IV",
+          "name": "LB Talent 04",
           "icon": "\ud83c\udf38",
-          "col": 6,
-          "row": 13,
-          "cost": 2,
-          "seals": 0,
-          "desc": "Placeholder.",
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": [
-            "lb05"
+            "lb06"
           ]
         },
         {
           "id": "lb05",
-          "name": "Life Bloom Keystone",
+          "name": "LB Talent 05",
           "icon": "\ud83c\udf38",
-          "col": 5,
-          "row": 14,
-          "cost": 4,
-          "seals": 2,
-          "minSpent": 50,
-          "desc": "Requires 50 spent.",
+          "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb11"
+          ]
+        },
+        {
+          "id": "lb06",
+          "name": "LB Talent 06",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb10"
+          ]
+        },
+        {
+          "id": "lb07",
+          "name": "LB Talent 07",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb11",
+            "lb10"
+          ]
+        },
+        {
+          "id": "lb08",
+          "name": "LB Talent 08",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb10"
+          ]
+        },
+        {
+          "id": "lb09",
+          "name": "LB Talent 09",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb10",
+          "name": "LB Talent 10",
+          "icon": "\ud83c\udf38",
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb11",
+          "name": "LB Talent 11",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb18",
+            "lb17"
+          ]
+        },
+        {
+          "id": "lb12",
+          "name": "LB Talent 12",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb13",
+          "name": "LB Talent 13",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb20"
+          ]
+        },
+        {
+          "id": "lb14",
+          "name": "LB Talent 14",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb19"
+          ]
+        },
+        {
+          "id": "lb15",
+          "name": "LB Talent 15",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb16",
+          "name": "LB Talent 16",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb54"
+          ]
+        },
+        {
+          "id": "lb17",
+          "name": "LB Talent 17",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb60"
+          ]
+        },
+        {
+          "id": "lb18",
+          "name": "LB Talent 18",
+          "icon": "\ud83c\udf38",
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb19",
+            "lb22"
+          ]
+        },
+        {
+          "id": "lb19",
+          "name": "LB Talent 19",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb55"
+          ]
+        },
+        {
+          "id": "lb20",
+          "name": "LB Talent 20",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb60"
+          ]
+        },
+        {
+          "id": "lb21",
+          "name": "LB Talent 21",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb25"
+          ]
+        },
+        {
+          "id": "lb22",
+          "name": "LB Talent 22",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb23"
+          ]
+        },
+        {
+          "id": "lb23",
+          "name": "LB Talent 23",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb55"
+          ]
+        },
+        {
+          "id": "lb24",
+          "name": "LB Talent 24",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb26",
+            "lb28"
+          ]
+        },
+        {
+          "id": "lb25",
+          "name": "LB Talent 25",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 14,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb32",
+            "lb31"
+          ]
+        },
+        {
+          "id": "lb26",
+          "name": "LB Talent 26",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 14,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb31"
+          ]
+        },
+        {
+          "id": "lb27",
+          "name": "LB Talent 27",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 15,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb30"
+          ]
+        },
+        {
+          "id": "lb28",
+          "name": "LB Talent 28",
+          "icon": "\ud83c\udf38",
+          "gx": -3,
+          "gy": 15,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb29",
+          "name": "LB Talent 29",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 16,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb36"
+          ]
+        },
+        {
+          "id": "lb30",
+          "name": "LB Talent 30",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 16,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb52",
+            "lb31"
+          ]
+        },
+        {
+          "id": "lb31",
+          "name": "LB Talent 31",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb35",
+            "lb36"
+          ]
+        },
+        {
+          "id": "lb32",
+          "name": "LB Talent 32",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb36",
+            "lb37"
+          ]
+        },
+        {
+          "id": "lb33",
+          "name": "LB Talent 33",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 18,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb35",
+            "lb59"
+          ]
+        },
+        {
+          "id": "lb34",
+          "name": "LB Talent 34",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 18,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb35"
+          ]
+        },
+        {
+          "id": "lb35",
+          "name": "LB Talent 35",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb41",
+            "lb38"
+          ]
+        },
+        {
+          "id": "lb36",
+          "name": "LB Talent 36",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb41"
+          ]
+        },
+        {
+          "id": "lb37",
+          "name": "LB Talent 37",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 20,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb57",
+            "lb41"
+          ]
+        },
+        {
+          "id": "lb38",
+          "name": "LB Talent 38",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 20,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb39",
+          "name": "LB Talent 39",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb40",
+          "name": "LB Talent 40",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 21,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb43",
+            "lb41"
+          ]
+        },
+        {
+          "id": "lb41",
+          "name": "LB Talent 41",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb42",
+          "name": "LB Talent 42",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb46",
+            "lb45"
+          ]
+        },
+        {
+          "id": "lb43",
+          "name": "LB Talent 43",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 23,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb49"
+          ]
+        },
+        {
+          "id": "lb44",
+          "name": "LB Talent 44",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 23,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb50",
+            "lb49"
+          ]
+        },
+        {
+          "id": "lb45",
+          "name": "LB Talent 45",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 24,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb49"
+          ]
+        },
+        {
+          "id": "lb46",
+          "name": "LB Talent 46",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 24,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb49",
+            "lb47"
+          ]
+        },
+        {
+          "id": "lb47",
+          "name": "LB Talent 47",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 25,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb49"
+          ]
+        },
+        {
+          "id": "lb48",
+          "name": "LB Talent 48",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 25,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb50",
+            "lb49"
+          ]
+        },
+        {
+          "id": "lb49",
+          "name": "LB Talent 49",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 26,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb50",
+          "name": "LB Talent 50",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 26,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb51",
+          "name": "LB Talent 51",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 22,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb46",
+            "lb43"
+          ]
+        },
+        {
+          "id": "lb52",
+          "name": "LB Talent 52",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 17,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb59"
+          ]
+        },
+        {
+          "id": "lb53",
+          "name": "LB Talent 53",
+          "icon": "\ud83c\udf38",
+          "gx": 3,
+          "gy": 2,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb06"
+          ]
+        },
+        {
+          "id": "lb54",
+          "name": "LB Talent 54",
+          "icon": "\ud83c\udf38",
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb25"
+          ]
+        },
+        {
+          "id": "lb55",
+          "name": "LB Talent 55",
+          "icon": "\ud83c\udf38",
+          "gx": -2,
+          "gy": 14,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb56",
+          "name": "LB Talent 56",
+          "icon": "\ud83c\udf38",
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb20"
+          ]
+        },
+        {
+          "id": "lb57",
+          "name": "LB Talent 57",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 23,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb48",
+            "lb47"
+          ]
+        },
+        {
+          "id": "lb58",
+          "name": "LB Talent 58",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": [
+            "lb25"
+          ]
+        },
+        {
+          "id": "lb59",
+          "name": "LB Talent 59",
+          "icon": "\ud83c\udf38",
+          "gx": -1,
+          "gy": 19,
+          "cost": 1,
+          "desc": "Placeholder description.",
+          "children": []
+        },
+        {
+          "id": "lb60",
+          "name": "LB Talent 60",
+          "icon": "\ud83c\udf38",
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "desc": "Placeholder description.",
           "children": []
         }
       ]
