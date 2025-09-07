@@ -1,0 +1,159 @@
+id,name,icon,desc,children,gx,gy,cost,seal
+vo01,Forest Attack,🌿,Forest Attack +5,vo02,0,0,1,0
+vo02,Stamina,🌿,Stamina +30,"vo03,vo04,vo05",0,4,1,0
+vo03,Inspiration,🌿,"Encourage you and your allies within 30 meters. Gain 50 points in strength, agility, endurance and intelligence.",vo06,-2,4,1,0
+vo04,Intellect Conversion,🌿,Every 10 points of int provides 1 point of magic atk power,vo08,2,4,1,0
+vo05,Regen Bud,🌿,"Intial limit is 4. When skills are used to heal, 2 regen buds are consumed to throw out a Nourishing seed (1 sec cd, restores 40% of atk power as health) When skills are used to cause dmg, 2 regen buds are consumed to throw out a Wild seed (1 sec cd, deals 100% of atk power as dmg)",vo07,0,8,1,0
+vo06,Intellect,🌿,Intellect +10,vo09,-2,12,1,0
+vo07,Forest Attack,🌿,Forest Attack +5,vo10,0,12,1,0
+vo08,Intellect,🌿,Intellect +10,vo11,2,12,1,0
+vo09,Stamina,🌿,Stamina +30,vo12,-4,16,1,0
+vo10,Stamina,🌿,Stamina +30,"vo13,vo14",0,16,1,0
+vo11,Stamina,🌿,Stamina +30,"vo14,vo15",4,16,1,0
+vo12,Defensive Blessing,🌿,Encouragement now provides an additional 200 points of physical defense,vo16,-2,20,1,0
+vo13,Breath of Buds,🌿,Regen buds limit +4.,vo19,0,20,1,0
+vo14,Forest Attack,🌿,Forest Attack +5,vo17,2,20,1,0
+vo15,Energy Surge,🌿,Every 2% haste provides 1% energy recovery efficiency,"vo18,v20",4,20,1,0
+vo16,Intellect,🌿,Intellect +10,vo21,-4,24,1,0
+vo17,Regeneration Bud,🌿,"When dealing dmg with basic attacks, 10% fixed chance to gain 1 regen bud","vo19,vo20,vo23",2,24,1,0
+vo18,Intellect,🌿,Intellect +10,vo25,6,24,1,0
+vo19,Stamina,🌿,Stamina +30,"vo22,vo23",0,28,1,0
+vo20,Forest Attack,🌿,Forest Attack +5,"vo23,vo24",4,28,1,0
+vo21,Forest Attack,🌿,Forest Attack +5,vo26,-4,32,1,0
+vo22,Stamina,🌿,Stamina +30,vo27,0,32,1,0
+vo23,Intellect,🌿,Intellect +10,vo28,2,32,1,0
+vo24,Stamina,🌿,Stamina +30,vo29,4,32,1,0
+vo25,Stamina,🌿,Stamina +30,vo30,6,32,1,0
+vo26,Healing Breath,🌿,"When skills apply direct healing, there is a 20% chance to trigger a treatment link and every 2% luck increases trigger chance by 1%. 
+ 
+Treatment Link: 
+the healing chain bounces between friendly units, restoring 40% of atk power as health each time. Max number of bounces is 2.",,-2,36,1,0
+vo27,Divine Ascension of the Flower Realm,🌿,"When wild seed or nourishing seed takes effect, gain 10% forest elemental bonus for 8 seconds",,0,36,1,0
+vo28,Dancing Seed,🌿,"When specialization skill triggers Lucky hit, the number of wild seeds launched next time is increased by 1. For every 5 nourishing seed thrown, next time is increased by 1.",,2,36,1,0
+vo29,Omnipotent Breath,🌿,"When int reaches 500, versatility +4%",,4,36,1,0
+vo30,Brimming Vitality,🌿,Energy recovery speed +20%.,,6,36,1,0
+smi01,Smite Spec,⚔️,"Enhanced Wild Bloom. Wild bloom,  Regeneration Pulse, Nature's Sanctuary apply Symbiotic Mark to friendly targets. Lasts for 6 seconds, all damage caused by self will be restored to Symbiotic Mark targets for 30% of the damage.
+
+When there is no damage caused within five seconds, each basic attack will restore 12.6% max health to teammates","smi02,smi03",0,0,1,0
+smi02,Forest Attack,⚔️,Forest Attack +5,smi04,-2,4,1,0
+smi03,Stamina,⚔️,Stamina +30,smi05,2,4,1,0
+smi04,Natural Shield,⚔️,"When Wildbloom heals, it also applies Nature's shield to the healed target. When attacked while Nature's shield is applied, heal by 10% of your attack power. CD 1 sec.","smi06,smi07",-2,8,1,0
+smi05,Pulse Double,⚔️,Regeneration Pulse spreads twice.,"smi07,smi08",2,8,1,0
+smi06,Stamina,⚔️,Stamina +30,"smi09,smi10",-4,12,1,0
+smi07,Stamina,⚔️,Stamina +30,"smi10,smi11",0,12,1,0
+smi08,Intellect,⚔️,Intellect +10,"smi12,smi13",4,12,1,0
+smi09,Thorns,⚔️,Wild Seed applies Thorns to the target when it its. Thorns targets receives +5% Forest Damage.,smi14,-6,16,1,0
+smi10,Forest Attack,⚔️,Forest Attack +5,"smi15,smi16",-2,16,1,0
+smi11,Intellect,⚔️,Intellect +10,"smi16,smi18",0,16,1,0
+smi12,Shelter,⚔️,"For 5 seconds after casting Infusion, the amount of damage Nature's Shield can receive is doubled.","smi16,smi20",2,16,1,0
+smi13,Lucky Damage,⚔️,Lucky Hit Damage + 5%. Each 1% luck provides 1% lucky hit dmg.,,6,16,1,0
+smi14,Intellect,⚔️,Intellect +10,smi17,-6,20,1,0
+smi15,Wild Blessing,⚔️,Wildbloom has 2 charges and costs -15% less energy.,,-4,20,1,0
+smi16,Stamina,⚔️,Stamina +30,smi20,2,24,1,0
+smi17,Final Light Wheel,,"When Wildbloom triggers Lucky Hit, cd of infusion will reduce by 3s.","smi22,smi23",-2,24,1,0
+smi18,Flower Language,⚔️,Replace ultimate with Flower Language ultimate skill.,smi23,0,24,1,0
+smi19,Intellect,⚔️,Intellect +10,"smi24,smi30",-4,28,1,0
+smi20,Stamina,⚔️,Stamina +30,smi25,-6,64,1,0
+smi21,Spread Thorns,,Thorns effect is spread to enemies within hit by feral seed,smi26,4,64,1,0
+smi22,Stamina,⚔️,Stamina +30,smi26,-4,64,1,0
+smi23,Stamina,⚔️,Stamina +30,"smi27,smi28",-2,64,1,0
+smi24,Pulse loopback,⚔️,Regeneration Pulse now deals dmg and returns after reaching maximum distance.,"smi28,smi29",2,64,1,0
+smi25,Gift of Energy,⚔️,"Within 10m of an enemy killed, an energy orb will spawn and picking it up will grant 1 regen bud.",,4,64,1,0
+smi26,Forest Attack,⚔️,Forest Attack +5,"smi31,smi32,smi33",-2,64,1,0
+smi27,Untamed Seed Symbiosis,⚔️,"When Symbiotic Marks >= 5, damage of Untamed Seed is increased by 100%",smi33,0,64,1,0
+smi28,Intellect,⚔️,Intellect +10,"smi33,smi34,smi35",2,64,1,0
+smi29,Pulse Echo,⚔️,"When infusion deals dmg, gain 1 stack of Pulse Echo. 
+
+Effect:
+Regeneration Pulse dmg +20%, last for 12 sec and can be stacked up to 5 times.","smi35,smi36",4,64,1,0
+smi30,Breath of Symbiosis,⚔️,Symbiotic Mark healing +2%. Every 5% Mastery +1% healing.,smi36,6,64,1,0
+smi31,Named Talent,⚔️,Placeholder description.,,-5,64,1,0
+smi32,Stamina,⚔️,Placeholder description.,smi37,-3,64,1,0
+smi33,Stamina,⚔️,Placeholder description.,"smi38,smi40",-9,64,1,0
+smi34,Stag Charge,⚔️,Placeholder description.,"smi38,smi42",-3,64,1,0
+smi35,Intellect,⚔️,Placeholder description.,smi46,-9,64,1,0
+smi36,Forest Attack,⚔️,Placeholder description.,"smi39,smi52",-6,64,1,0
+smi37,Named Talent,⚔️,Placeholder description.,,-9,64,1,0
+smi38,Stamina,⚔️,Placeholder description.,smi41,-7,64,1,0
+smi39,Named Talent,⚔️,Placeholder description.,smi43,-7,64,1,0
+smi40,Intellect,⚔️,Placeholder description.,,-3,64,1,0
+smi41,Named Talent,⚔️,Placeholder description.,,-9,64,1,0
+smi42,Forest Attack,⚔️,Placeholder description.,,-5,64,1,0
+smi43,Intellect,⚔️,Placeholder description.,,-9,64,1,0
+smi44,Named Talent,⚔️,Placeholder description.,,-8,64,1,0
+smi45,Named Talent,⚔️,Placeholder description.,,-8,64,1,0
+smi46,Named Talent,⚔️,Placeholder description.,,-3,64,1,0
+smi47,Named Talent,⚔️,Placeholder description.,,-4,64,1,0
+smi48,Stamina,⚔️,Placeholder description.,,-3,64,1,0
+smi49,Stamina,⚔️,Placeholder description.,,-9,64,1,0
+smi50,Intellect,⚔️,Placeholder description.,,-6,64,1,0
+smi51,Stamina,⚔️,Placeholder description.,,-7,64,1,0
+smi52,Named Talent,⚔️,Placeholder description.,,-5,64,1,0
+smi53,Intellect,⚔️,Placeholder description.,,-8,64,1,0
+smi54,Forest Attack,⚔️,Placeholder description.,,-7,64,1,0
+smi55,Stamina,⚔️,Placeholder description.,,-8,64,1,0
+smi56,Named Talent,⚔️,Placeholder description.,,-3,64,1,0
+smi57,Named Talent,⚔️,Placeholder description.,,-9,64,1,0
+smi58,Named Talent,⚔️,Placeholder description.,,-7,64,1,0
+smi59,Named Talent,⚔️,Placeholder description.,,-9,64,1,0
+smi60,Named Talent,⚔️,Placeholder description.,,-7,64,1,0
+lb01,LB Talent 01,🌸,Placeholder description.,lb03,0,0,1,0
+lb02,LB Talent 02,🌸,Placeholder description.,lb06,3,18,1,0
+lb03,LB Talent 03,🌸,Placeholder description.,"lb08,lb07",9,19,1,0
+lb04,LB Talent 04,🌸,Placeholder description.,lb06,5,19,1,0
+lb05,LB Talent 05,🌸,Placeholder description.,lb11,9,20,1,0
+lb06,LB Talent 06,🌸,Placeholder description.,lb10,4,20,1,0
+lb07,LB Talent 07,🌸,Placeholder description.,"lb11,lb10",8,21,1,0
+lb08,LB Talent 08,🌸,Placeholder description.,lb10,4,21,1,0
+lb09,LB Talent 09,🌸,Placeholder description.,,7,22,1,0
+lb10,LB Talent 10,🌸,Placeholder description.,,3,22,1,0
+lb11,LB Talent 11,🌸,Placeholder description.,"lb18,lb17",8,23,1,0
+lb12,LB Talent 12,🌸,Placeholder description.,,5,23,1,0
+lb13,LB Talent 13,🌸,Placeholder description.,lb20,9,24,1,0
+lb14,LB Talent 14,🌸,Placeholder description.,lb19,5,24,1,0
+lb15,LB Talent 15,🌸,Placeholder description.,,8,25,1,0
+lb16,LB Talent 16,🌸,Placeholder description.,lb54,5,25,1,0
+lb17,LB Talent 17,🌸,Placeholder description.,lb60,4,26,1,0
+lb18,LB Talent 18,🌸,Placeholder description.,"lb19,lb22",3,26,1,0
+lb19,LB Talent 19,🌸,Placeholder description.,lb55,7,27,1,0
+lb20,LB Talent 20,🌸,Placeholder description.,lb60,6,27,1,0
+lb21,LB Talent 21,🌸,Placeholder description.,lb25,7,28,1,0
+lb22,LB Talent 22,🌸,Placeholder description.,lb23,5,28,1,0
+lb23,LB Talent 23,🌸,Placeholder description.,lb55,5,29,1,0
+lb24,LB Talent 24,🌸,Placeholder description.,"lb26,lb28",4,29,1,0
+lb25,LB Talent 25,🌸,Placeholder description.,"lb32,lb31",8,30,1,0
+lb26,LB Talent 26,🌸,Placeholder description.,lb31,4,30,1,0
+lb27,LB Talent 27,🌸,Placeholder description.,lb30,5,31,1,0
+lb28,LB Talent 28,🌸,Placeholder description.,,3,31,1,0
+lb29,LB Talent 29,🌸,Placeholder description.,lb36,8,32,1,0
+lb30,LB Talent 30,🌸,Placeholder description.,"lb52,lb31",6,32,1,0
+lb31,LB Talent 31,🌸,Placeholder description.,"lb35,lb36",8,33,1,0
+lb32,LB Talent 32,🌸,Placeholder description.,"lb36,lb37",4,33,1,0
+lb33,LB Talent 33,🌸,Placeholder description.,"lb35,lb59",7,34,1,0
+lb34,LB Talent 34,🌸,Placeholder description.,lb35,5,34,1,0
+lb35,LB Talent 35,🌸,Placeholder description.,"lb41,lb38",7,35,1,0
+lb36,LB Talent 36,🌸,Placeholder description.,lb41,5,35,1,0
+lb37,LB Talent 37,🌸,Placeholder description.,"lb57,lb41",9,36,1,0
+lb38,LB Talent 38,🌸,Placeholder description.,,7,36,1,0
+lb39,LB Talent 39,🌸,Placeholder description.,,6,37,1,0
+lb40,LB Talent 40,🌸,Placeholder description.,"lb43,lb41",5,37,1,0
+lb41,LB Talent 41,🌸,Placeholder description.,,9,38,1,0
+lb42,LB Talent 42,🌸,Placeholder description.,"lb46,lb45",7,38,1,0
+lb43,LB Talent 43,🌸,Placeholder description.,lb49,5,39,1,0
+lb44,LB Talent 44,🌸,Placeholder description.,"lb50,lb49",4,39,1,0
+lb45,LB Talent 45,🌸,Placeholder description.,lb49,9,40,1,0
+lb46,LB Talent 46,🌸,Placeholder description.,"lb49,lb47",8,40,1,0
+lb47,LB Talent 47,🌸,Placeholder description.,lb49,7,41,1,0
+lb48,LB Talent 48,🌸,Placeholder description.,"lb50,lb49",6,41,1,0
+lb49,LB Talent 49,🌸,Placeholder description.,,9,42,1,0
+lb50,LB Talent 50,🌸,Placeholder description.,,5,42,1,0
+lb51,LB Talent 51,🌸,Placeholder description.,"lb46,lb43",4,38,1,0
+lb52,LB Talent 52,🌸,Placeholder description.,lb59,6,33,1,0
+lb53,LB Talent 53,🌸,Placeholder description.,lb06,9,18,1,0
+lb54,LB Talent 54,🌸,Placeholder description.,lb25,8,27,1,0
+lb55,LB Talent 55,🌸,Placeholder description.,,4,30,1,0
+lb56,LB Talent 56,🌸,Placeholder description.,lb20,7,25,1,0
+lb57,LB Talent 57,🌸,Placeholder description.,"lb48,lb47",5,39,1,0
+lb58,LB Talent 58,🌸,Placeholder description.,lb25,6,29,1,0
+lb59,LB Talent 59,🌸,Placeholder description.,,5,35,1,0
+lb60,LB Talent 60,🌸,Placeholder description.,,6,29,1,0

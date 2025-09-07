@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Star Resonance — Talent Tree (Fan-made)</title>
+  <link rel="stylesheet" href="Styles/VOstyle.css" />
+  <link rel="icon" type="image/x-icon" href="Styles/favicon.png" >
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Star Resonance — Talent Tree (Fan-made)</h1>
+      <div class="statboards">
+        <div class="stat">Talent Points: <strong id="spent">0</strong> / <input id="cap" type="number" value="70" min="1" max="200"></div>
+        <div class="stat">Arcane Seals: <strong id="usedSeals">0</strong> / <input id="sealCap" type="number" value="60" min="0" max="200"></div>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="panel">
+        <div class="branch-controls collapse-control">
+          <button class="collapse-btn" id="collapseBtn">
+            <img src="Styles/left-arrow.png" class="collapse-icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Branches</h2>
+        <div class="branch-controls">
+          <button class="branch-btn" data-jump="verdant"><span class="icon">🌿</span> <span class="label">Verdant Oracle</span></button>
+          <button class="max-btn" id="maxVerdant"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Verdant</span></button>
+
+          <button class="branch-btn" data-jump="smite"><span class="icon">⚔️</span> <span class="label">Smite</span></button>
+          <button class="max-btn" id="maxSmite"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Smite</span></button>
+
+          <button class="branch-btn" data-jump="lifebloom"><span class="icon">🌸</span> <span class="label">Life Bloom</span></button>
+          <button class="max-btn" id="maxLifeBloom"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Life Bloom</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Reset</h2>
+        <button class="action-btn" id="resetAll">⭮ Reset All</button>
+        <button class="action-btn" id="resetCurrent" disabled>⭮ Reset Current Branch</button>
+      </div>
+
+      <div class="panel">
+        <h2>Notes <button class="clear-notes" id="clearNotes">Clear ✖</button></h2>
+        <div class="notes" id="notes">
+          Hover / select a skill for more details.<br><br>
+          ⭮ Reset Current Branch: Resets only the branch where you’ve invested points.<br>
+          Priority: Smite / Life Bloom → Verdant Oracle.
+        </div>
+      </div>
+    </aside>
+
+    <main class="canvas">
+      <div class="space-grid"></div>
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" aria-label="Talent Tree" viewBox="0px 0px 2000px 2000px" preserveAspectRatio="xMidYMid meet"></svg>
+
+
+      <!-- Legend -->
+      <div class="legend" id="legend">
+        <div class="legend-expanded">
+          <div class="row"><span>Unlocked</span><span class="dot un"></span></div>
+          <div class="row"><span>Available</span><span class="dot av"></span></div>
+          <div class="row"><span>Locked</span><span class="dot"></span></div>
+          <div style="margin-top:6px; font-size:12px; color:#c5ffe6">
+            • Left click: unlock
+            <br>
+            • Right click: refund  
+            <img src="Styles/up-arrow.png" class="legend-icon" style="transform: rotate(180deg);" align="right">
+          </div>
+        </div>
+
+        <div class="legend-collapsed" style="display:none; font-size:12px; color:#c5ffe6;">
+          Key •
+          <img src="Styles/up-arrow.png" class="legend-icon">
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
