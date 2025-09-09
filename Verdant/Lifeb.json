@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Lifeb01",
+    "name": "Lifebind Spec",
+    "icon": "Lifebind.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Replace Special Attack with Life Bloom and enhances the skill.\nLife Bloom generates 20% more healing.\nCasting Life Bloom grants 1 additional Regen Bud.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb02",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb04",
+    "name": "Healing Infusion",
+    "icon": "HealingI.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb05",
+    "name": "Lifeforce Extension",
+    "icon": "Lifeforc.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb06",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb09",
+    "name": "Energy Arcane",
+    "icon": "EnergyAr.png",
+    "gx": -3,
+    "gy": 4,
+    "desc": "During Growth Arcane, increases ERG REG SPD by 50%.\nIncreases Grove Wish's Crit by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb10",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb11",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb12",
+    "name": "Transcendence",
+    "icon": "Transcen.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Every 60 self-heals from Nourish grants Transcendence.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb13",
+    "name": "Verdant Nourishment",
+    "icon": "VerdantN.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb14",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb15",
+    "name": "Life Bloom",
+    "icon": "LifeBloo.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb17",
+    "name": "Full Bloom",
+    "icon": "FullBloo.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb18",
+    "name": "Vital Surge",
+    "icon": "VitalSur.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Replace Ultimate, Divine Circle Bloom with Vital Surge.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb19",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb21",
+    "name": "Blooming Reincarnation",
+    "icon": "Blooming.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb23",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb24",
+    "name": "Vitality",
+    "icon": "Vitality.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb25",
+    "name": "Gift of Life",
+    "icon": "GiftofLi.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb26",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb27",
+    "name": "Flower Time Dance",
+    "icon": "FlowerTi.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Every 45s, generates 1 Flower Stalk in the following order:\nCrimson Insight, Golden Devotion, and Moonlight Solace.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb28",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb29",
+    "name": "Nourish Essence",
+    "icon": "NourishE.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "When Life Bloom generates healing, 50% chance to apply Nourish.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb30",
+    "name": "Endless Blossom",
+    "icon": "EndlessB.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb31",
+    "name": "Flourishing Progress",
+    "icon": "Flourish.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb34",
+    "name": "Verdant Root",
+    "icon": "VerdantR.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "While in battle state, standing still for 2s creates a Grass Domain.\nGrass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb35",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb36",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb37",
+    "name": "Natural Bloom",
+    "icon": "NaturalB.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb39",
+    "name": "Energy Expansion",
+    "icon": "EnergyEx.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Increases Max Energy by 20.\nUsing Blossom Charge restores 30% lost Energy.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb40",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb41",
+    "name": "Verdant Duet",
+    "icon": "VerdantD.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Life bloom has a fixed 20% chance to heal 1 additional time.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb42",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb43",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb44",
+    "name": "Wings of Revival",
+    "icon": "WingsofR.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb45",
+    "name": "Bud to Blossom",
+    "icon": "BudtoBlo.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb46",
+    "name": "Inspire and Strengthen",
+    "icon": "Inspirea.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb47",
+    "name": "Floral Whisper",
+    "icon": "FloralWh.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb49",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb50",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb51",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb52",
+    "name": "Healing Pulse",
+    "icon": "HealingP.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb53",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb54",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb55",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb56",
+    "name": "Instant Bloom",
+    "icon": "InstantB.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb57",
+    "name": "Rescue",
+    "icon": "Rescue.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Healing Expertise restore 25% more HP to the targets with HP below 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb58",
+    "name": "Flourishing Flower",
+    "icon": "Flourish.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Within Grass Domain, Flower Stalk appeared 50% earlier.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb59",
+    "name": "Tricolor Revelation",
+    "icon": "Tricolor.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.\nFlower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Lifeb60",
+    "name": "Ultimate Inspiration",
+    "icon": "Ultimate.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Doubles the effectiveness of Inspiration.",
+    "cost": null,
+    "seal": null
+  }
+]

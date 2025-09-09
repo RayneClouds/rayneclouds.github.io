@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Smite01",
+    "name": "Smite Spec",
+    "icon": "SmiteSpe.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Further enhances the ability to use Wild Bloom.\nWild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.\nSymbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.\n\nHealing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite02",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite04",
+    "name": "Nature Shield",
+    "icon": "NatureSh.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "When Wild Bloom heals a target, it also applies Nature Shield to them.\nTargets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite05",
+    "name": "Pulse Duality",
+    "icon": "PulseDua.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "When Regen Pulse is actively used, it spreads twice.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite06",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite09",
+    "name": "Thorns",
+    "icon": "Thorns.png",
+    "gx": -3,
+    "gy": 4,
+    "desc": "When Wild Seed hits a target, it inflicts Thorn on them.\nVerdant DMG dealt by players to targets with Thorn +5%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite10",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite11",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite12",
+    "name": "Shelter",
+    "icon": "Shelter.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite13",
+    "name": "Luck Damage",
+    "icon": "LuckDama.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "Lucky Hit DMG Multiplier +5%.\nEvery 1% Luck grants 1% Lucky Hit DMG Multiplier.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite14",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite15",
+    "name": "Wild Blessing",
+    "icon": "WildBles.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Wild Bloom now stores up to 2 overdrives.\nWild Bloom's Energy cost -15%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite17",
+    "name": "Final Bloomwheel",
+    "icon": "FinalBlo.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite18",
+    "name": "Bloomheal",
+    "icon": "Bloomhea.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Replace Ultimate, Divine Circle Bloom with Bloomheal.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite19",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite21",
+    "name": "Wide-area Thorns",
+    "icon": "Widearea.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite23",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite24",
+    "name": "Pulse Retrospect",
+    "icon": "PulseRet.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Regen Pulse returns to your position after it reaches the max distance.\nRegen Pulse now deals DMG to enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite25",
+    "name": "Bud Acquisition",
+    "icon": "BudAcqui.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite26",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite27",
+    "name": "Feral Seed Symbiosis",
+    "icon": "FeralSee.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite28",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite29",
+    "name": "Pulse Echo",
+    "icon": "PulseEch.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "When dealing DMG, Infusion grants 1 stack of Pulse Echo.\nPulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite30",
+    "name": "Breath of Symbiosis",
+    "icon": "Breathof.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite31",
+    "name": "Laceration",
+    "icon": "Lacerati.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "When dealing DMG, Infusion inflicts Laceration on the target.\nLaceration: Takes 100% more DMG from Thorn in 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite34",
+    "name": "Stag Charge",
+    "icon": "StagChar.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.\nCasting Stag Charge instants grants 3 Regen Buds.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite35",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite36",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite37",
+    "name": "Wings of Revival",
+    "icon": "WingsofR.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite39",
+    "name": "Arcane of Green",
+    "icon": "Arcaneof.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite40",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite41",
+    "name": "Verdant Blessing",
+    "icon": "VerdantB.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "When HP of an ally with Inspiration drops below 20%, Blessing triggers.\nBlessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite42",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite43",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite44",
+    "name": "Flourish",
+    "icon": "Flourish.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite45",
+    "name": "Double Infusion",
+    "icon": "DoubleIn.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "After casting Stag Charge, the number of channels for the next Infusion +100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite46",
+    "name": "Symbiosis Extension",
+    "icon": "Symbiosi.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite47",
+    "name": "Swift Bud",
+    "icon": "SwiftBud.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite49",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite50",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite51",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite52",
+    "name": "Healing Pulse",
+    "icon": "HealingP.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite53",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite54",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite55",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite56",
+    "name": "Swift Shelter",
+    "icon": "SwiftShe.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite57",
+    "name": "Wild Luck",
+    "icon": "WildLuck.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite58",
+    "name": "Pulse Breath",
+    "icon": "PulseBre.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite59",
+    "name": "Verdant Impact",
+    "icon": "VerdantI.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Smite60",
+    "name": "Wild Protection",
+    "icon": "WildProt.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "The charge count of Nature Ward +1.\nThe charge time of Nature Ward decreases by 5s.",
+    "cost": null,
+    "seal": null
+  }
+]
