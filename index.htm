@@ -1,443 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Star Resonance — Talent Tree (Fan-made)</title>
-  <link rel="stylesheet" href="Styles\VOstyle.css" />
-  <link rel="icon" type="image/x-icon" href="Styles\favicon.png" >
+  <meta charset="UTF-8">
+  <title>BP Star Resonance Skill Tree</title>
+<link rel="icon" type="image/x-icon" href="Styles/favicon.png" >	
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="app">
-    <header>
-      <h1>Star Resonance — Talent Tree (Fan-made)</h1>
-      <div class="statboards">
-        <div class="stat">Talent Points: <strong id="spent">0</strong> / <input id="cap" type="number" value="70" min="1" max="200"></div>
-        <div class="stat">Arcane Seals: <strong id="usedSeals">0</strong> / <input id="sealCap" type="number" value="60" min="0" max="200"></div>
-      </div>
-    </header>
+<header>
+  <h1>Verdant Oracle</h1>
+  <button id="goToFirst" class="header-btn">Verdant Oracle</button>
+  <button id="maxVerdant" class="header-btn">Max Verdant</button>
+  <button id="goToSub1" class="header-btn">Smite</button><br>
+  <button id="maxSmite" class="header-btn">Max Smite</button>
+  <button id="goToSub2" class="header-btn">Life Bloom</button>
+  <button id="maxLifebloom" class="header-btn">Max Life Bloom</button>
+  <button id="resetCur" class="header-btn">Reset Current</button><br>
+  <button id="resetAll" class="header-btn">Reset All</button>
+  <!-- Resource Counters -->
+  <div id="resourceCounters" class="resource-counters">
+    Talent Points: <span id="tpUsed">0</span>/<input id="tpMax" type="number" value="70" min="0" />
+    &nbsp; • &nbsp;
+    Arcane Seals: <span id="sealUsed">0</span>/<input id="sealMax" type="number" value="50" min="0" />
+  </div>
+</header>
 
-    <aside class="sidebar" id="sidebar">
-		      <div class="panel">
-      <div class="branch-controls collapse-control">
-  <button class="collapse-btn" id="collapseBtn">
-    <img src="Styles/left-arrow.png" class="collapse-icon">
-  </button>
+
+<aside>
+  <!-- Continuous background -->
+  <div class="sidebar-bg"></div>
+
+  <!-- Attribute container (acts like a sub-header in the sidebar) -->
+  <div class="attr-container">
+    <img id="hoverPreview" alt="preview" />
+  </div>
+
+  <!-- Text content -->
+<div class="sidebar-controls">
+  <button id="clearSidebar" class="header-btn">Clear ✖</button>
 </div>
-			  </div>
 
-      <div class="panel">
-        <h2>Branches</h2>
-        <div class="branch-controls">
-          <button class="branch-btn" data-jump="verdant"><span class="icon">🌿</span> <span class="label">Verdant Oracle</span></button>
-          <button class="max-btn" id="maxVerdant"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Verdant</span></button>
+  <div class="sidebar-text">
+    Sidebar Info Here
+    <br />More content...
+  </div>
 
-          <button class="branch-btn" data-jump="smite"><span class="icon">⚔️</span> <span class="label">Smite</span></button>
-          <button class="max-btn" id="maxSmite"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Smite</span></button>
+	
 
-          <button class="branch-btn" data-jump="lifebloom"><span class="icon">🌸</span> <span class="label">Life Bloom</span></button>
-          <button class="max-btn" id="maxLifeBloom"><img src="Styles/up-arrow.png" class="icon"> <span class="label">Max Life Bloom</span></button>
-        </div>
-      </div>
+<!-- Legend Box -->
+<div id="legend" class="legend">
+  <!-- Collapsed view -->
+  <div class="legend-collapsed">
+    Key • <img src="img/up-arrow.png" class="legend-icon" alt="↓">
+  </div>
 
-      <div class="panel">
-        <h2>Reset</h2>
-        <button class="action-btn" id="resetAll">⭮ Reset All</button>
-        <button class="action-btn" id="resetCurrent" disabled>⭮ Reset Current Branch</button>
-      </div>
-
-      <div class="panel">
-        <h2>Notes <button class="clear-notes" id="clearNotes">Clear ✖</button></h2>
-        <div class="notes" id="notes">
-          Hover / select a skill for more details.<br><br>
-          ⭮ Reset Current Branch: Resets only the branch where you’ve invested points.<br>
-          Priority: Smite / Life Bloom → Verdant Oracle.
-        </div>
-      </div>
-    </aside>
-
-    <main class="canvas">
-      <div class="space-grid"></div>
-      <svg id="svg" xmlns="http://www.w3.org/2000/svg" aria-label="Talent Tree"></svg>
-      
-
-<!-- Legend -->
-<div class="legend" id="legend">
-  <div class="legend-expanded">
+  <!-- Expanded view -->
+  <div class="legend-content">
     <div class="row"><span>Unlocked</span><span class="dot un"></span></div>
     <div class="row"><span>Available</span><span class="dot av"></span></div>
     <div class="row"><span>Locked</span><span class="dot"></span></div>
     <div style="margin-top:6px; font-size:12px; color:#c5ffe6">
       • Left click: unlock
-		<br>
-	  • Right click: refund  
-		<img src="Styles/up-arrow.png" class="legend-icon" style="transform: rotate(180deg);" align="right">
+      <br>
+      • Right click: refund  
+      <img src="img/up-arrow.png" class="legend-icon" style="transform: rotate(180deg);" alt="↑">
     </div>
   </div>
-
-  <div class="legend-collapsed" style="display:none; font-size:12px; color:#c5ffe6;">
-    Key •
-    <img src="Styles/up-arrow.png" class="legend-icon">
-  </div>
 </div>
-  <script>
-    const svg = document.getElementById('svg');
-    const toast = document.getElementById('toast');
-    const spentEl = document.getElementById('spent');
-    const capEl = document.getElementById('cap');
-    const usedSealsEl = document.getElementById('usedSeals');
-    const sealCapEl = document.getElementById('sealCap');
-    const notesEl = document.getElementById('notes');
 
-    const state = {
-      unlocked: new Set(),
-      spent: 0,
-      seals: 0,
-      cap: 70,
-      sealCap: 60,
-      currentBranch: null, // 'verdant' | 'smite' | 'lifebloom'
-      data: null,
-      byId: {},
-      tierOf: {},
-      nodes: new Map(), // id -> {el, circle, label}
-      edges: new Map(), // key -> path
-      branchRoot: null
-    };
 
-    capEl.addEventListener('input', ()=>{ state.cap = +capEl.value || state.cap; updateHUD(); });
-    sealCapEl.addEventListener('input', ()=>{ state.sealCap = +sealCapEl.value || state.sealCap; updateHUD(); });
+</aside>
 
-    function toastMsg(m){ toast.textContent=m; toast.classList.add('show'); clearTimeout(toast._t); toast._t=setTimeout(()=>toast.classList.remove('show'), 1400); }
+  <main>
+    <div class="zoom-container" id="zoomArea">
 
-    function gridToPx(origin, gx, gy){
-      const x = origin.x + gx * parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--cell-x'));
-      const y = origin.y + gy * parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--cell-y'));
-      return {x,y};
-    }
+    </div>
+  </main>
 
-    async function init(){
-      const res = await fetch('VOtree.json'); const data = await res.json();
-      state.data = data;
-      // index by id and tier
-      for(const tier of data.tiers){
-        for(const n of tier.nodes){
-          state.byId[n.id] = n;
-          state.tierOf[n.id] = tier.id;
-        }
-      }
-      build();
-      updateHUD();
-    }
-
-    function build(){
-      svg.innerHTML = '';
-      // Height estimate: find max Y
-      let maxY = 0;
-      for(const tier of state.data.tiers){
-        for(const n of tier.nodes){
-          const p = gridToPx(tier.origin, n.gx, n.gy);
-          if(p.y > maxY) maxY = p.y;
-        }
-      }
-      svg.setAttribute('viewBox', `0 0 2000 ${maxY + 400}`);
-
-      // Draw edges first (so they are under nodes)
-      for(const tier of state.data.tiers){
-        for(const n of tier.nodes){
-          const a = gridToPx(tier.origin, n.gx, n.gy);
-          for(const ch of (n.children||[])){
-            const t = state.byId[ch]; if(!t) continue;
-            const tTier = state.data.tiers.find(tt => tt.nodes.includes(t));
-            const b = gridToPx(tTier.origin, t.gx, t.gy);
-            const key = n.id + '->' + ch;
-            const line = document.createElementNS('http://www.w3.org/2000/svg','line');
-            line.setAttribute('x1', a.x); line.setAttribute('y1', a.y);
-            line.setAttribute('x2', b.x); line.setAttribute('y2', b.y);
-            line.setAttribute('class','edge');
-            svg.appendChild(line);
-            state.edges.set(key, line);
-          }
-        }
-      }
-
-      // Draw nodes
-      for(const tier of state.data.tiers){
-        for(const n of tier.nodes){
-          const p = gridToPx(tier.origin, n.gx, n.gy);
-          const g = document.createElementNS('http://www.w3.org/2000/svg','g');
-          g.setAttribute('class', 'node locked');
-          g.dataset.id = n.id;
-          g.setAttribute('transform', `translate(${p.x},${p.y})`);
-
-          const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
-          c.setAttribute('r', 20); c.setAttribute('class','node-circle');
-
-          const label = document.createElementNS('http://www.w3.org/2000/svg','text');
-          label.setAttribute('text-anchor','middle'); label.setAttribute('dy','.35em');
-          label.textContent = n.icon || '●';
-
-          g.appendChild(c); g.appendChild(label);
-          svg.appendChild(g);
-
-          // events
-          g.addEventListener('click', (e)=>{ e.preventDefault(); tryUnlock(n.id); });
-          g.addEventListener('contextmenu', (e)=>{ e.preventDefault(); refundBranch(n.id); });
-          g.addEventListener('mouseenter', ()=> showNotes(n));
-          g.addEventListener('mouseleave', ()=> {/* keep notes shown */});
-
-          state.nodes.set(n.id, {el:g, circle:c, label});
-        }
-      }
-
-      // exclusivity: hide smite/lifebloom trees until roots selected
-      updateVisibility();
-      updateStyles();
-    }
-
-    function showNotes(n){
-      notesEl.innerHTML = `<strong>${n.name}</strong><br>${n.desc||''}<br><br>Cost: ${n.cost||1} pts`;
-    }
-
-    function prereqsMet(id){
-      const n = state.byId[id];
-      // must have parents unlocked (implicit via children graph: check any node that links to id)
-      const parents = [];
-      for(const a in state.byId){
-        const node = state.byId[a];
-        if((node.children||[]).includes(id)) parents.push(a);
-      }
-      return parents.every(p => state.unlocked.has(p));
-    }
-
-    function tierRequirementsMet(tierId){
-      const tier = state.data.tiers.find(t=>t.id===tierId);
-      return (tier.requiresUnlocked||[]).every(id => state.unlocked.has(id));
-    }
-
-    function tryUnlock(id){
-      const n = state.byId[id];
-      const tierId = state.tierOf[id];
-      if(!tierRequirementsMet(tierId)) return;
-
-      // exclusivity: selecting smi01 hides Life Bloom, and vice versa
-      if(id==='smi01'){
-        // hide lifebloom branch, refund it if any
-        refundTier('lifebloom');
-      }
-      if(id==='lb01'){
-        refundTier('smite');
-      }
-
-      if(state.unlocked.has(id)) return;
-      if(!prereqsMet(id)) return;
-      const cost = n.cost||1;
-      if(state.spent + cost > state.cap) return;
-
-      state.unlocked.add(id);
-      state.spent += cost;
-      updateHUD();
-      updateStyles();
-      updateVisibility();
-    }
-
-    function refundTier(tierId){
-      // remove all unlocked nodes in that tier
-      const tier = state.data.tiers.find(t=>t.id===tierId);
-      if(!tier) return;
-      const ids = tier.nodes.map(n=>n.id);
-      let refunded=false;
-      for(const id of ids){
-        if(state.unlocked.has(id)){
-          state.unlocked.delete(id);
-          state.spent -= (state.byId[id].cost||1);
-          refunded=true;
-        }
-      }
-      if(refunded){ updateHUD(); updateStyles(); updateVisibility(); }
-    }
-
-    function refundBranch(id){
-      // refund node and descendants
-      if(!state.unlocked.has(id)) return;
-      const toRefund = new Set();
-      (function dfs(cur){
-        toRefund.add(cur);
-        for(const nid in state.byId){
-          const node = state.byId[nid];
-          if((node.children||[]).includes(cur) && state.unlocked.has(nid)){
-            // parent refund not needed for descendants; we refund downward only
-          }
-        }
-        const ch = state.byId[cur].children||[];
-        for(const c of ch){
-          if(state.unlocked.has(c)) dfs(c);
-        }
-      })(id);
-      for(const rid of toRefund){
-        if(state.unlocked.delete(rid)){
-          state.spent -= (state.byId[rid].cost||1);
-        }
-      }
-      updateHUD(); updateStyles(); updateVisibility();
-    }
-
-    function updateHUD(){
-      spentEl.textContent = state.spent;
-      usedSealsEl.textContent = state.seals;
-      document.getElementById('resetCurrent').disabled = !anyUnlocked();
-    }
-
-    function anyUnlocked(){
-      return state.unlocked.size > 0;
-    }
-
-    function updateStyles(){
-      // nodes
-      for(const [id, ref] of state.nodes){
-        ref.el.classList.remove('locked','available','unlocked');
-        const tierId = state.tierOf[id];
-        const reqMet = tierRequirementsMet(tierId);
-        if(state.unlocked.has(id)) ref.el.classList.add('unlocked');
-        else if(reqMet && prereqsMet(id) && state.spent + (state.byId[id].cost||1) <= state.cap) ref.el.classList.add('available');
-        else ref.el.classList.add('locked');
-      }
-      // edges active style
-      for(const [key, line] of state.edges){
-        const [a,b] = key.split('->');
-        const active = state.unlocked.has(a) && state.unlocked.has(b);
-        line.setAttribute('class', 'edge' + (active? ' active':''));
-      }
-    }
-
-    function updateVisibility(){
-      // Smite/Life Bloom visibility:
-      const voComplete = [...Array(30)].every((_,i)=> state.unlocked.has(`vo${String(i+1).padStart(2,'0')}`));
-      const smiteRoot = state.nodes.get('smi01');
-      const lbRoot = state.nodes.get('lb01');
-
-      // Roots are always visible (but locked until vo complete)
-      if(smiteRoot) smiteRoot.el.style.display = '';
-      if(lbRoot) lbRoot.el.style.display = '';
-
-      const showSmite = state.unlocked.has('smi01');
-      const showLB = state.unlocked.has('lb01');
-
-      // Toggle visibility for smite/lifebloom nodes/edges based on root unlock
-      for(const [id, ref] of state.nodes){
-        const tierId = state.tierOf[id];
-        if(tierId==='smite'){
-          ref.el.style.display = (id==='smi01' || showSmite) ? '' : 'none';
-        }else if(tierId==='lifebloom'){
-          ref.el.style.display = (id==='lb01' || showLB) ? '' : 'none';
-        }
-      }
-
-      for(const [key, line] of state.edges){
-        const [a,b]=key.split('->');
-        const tierA = state.tierOf[a];
-        if(tierA==='smite'){
-          line.style.display = showSmite ? '' : 'none';
-        }else if(tierA==='lifebloom'){
-          line.style.display = showLB ? '' : 'none';
-        }else{
-          line.style.display = '';
-        }
-      }
-    }
-
-    // Sidebar behaviors
-    document.getElementById('collapseBtn').addEventListener('click', ()=>{
-      document.getElementById('sidebar').classList.toggle('collapsed');
-    });
-
-    document.querySelectorAll('.branch-btn').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const target = btn.dataset.jump;
-        // simple scroll: find first node in tier and scroll there
-        const tier = state.data.tiers.find(t=>t.id===target);
-        if(!tier) return;
-        const ids = tier.nodes.map(n=>n.id);
-        const first = state.nodes.get(ids[0]);
-        if(first){
-          const bb = first.el.getBoundingClientRect();
-          window.scrollTo({ top: window.scrollY + bb.top - 120, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // Max buttons
-    document.getElementById('maxVerdant').addEventListener('click', ()=>{
-      const ids = state.data.tiers.find(t=>t.id==='verdant').nodes.map(n=>n.id);
-      for(const id of ids){
-        if(!state.unlocked.has(id) && prereqsMet(id)){
-          const cost = state.byId[id].cost||1;
-          if(state.spent + cost <= state.cap){ state.unlocked.add(id); state.spent += cost; }
-        }
-      }
-      updateHUD(); updateStyles(); updateVisibility();
-    });
-    document.getElementById('maxSmite').addEventListener('click', ()=>{
-      // require vo complete
-      const voComplete = [...Array(30)].every((_,i)=> state.unlocked.has(`vo${String(i+1).padStart(2,'0')}`));
-      if(!voComplete){ toastMsg('Complete Verdant Oracle first.'); return; }
-      refundTier('lifebloom');
-      const ids = state.data.tiers.find(t=>t.id==='smite').nodes.map(n=>n.id);
-      for(const id of ids){
-        if(!state.unlocked.has(id) && (id==='smi01' || prereqsMet(id))){
-          const cost = state.byId[id].cost||1;
-          if(state.spent + cost <= state.cap){ state.unlocked.add(id); state.spent += cost; }
-        }
-      }
-      updateHUD(); updateStyles(); updateVisibility();
-    });
-    document.getElementById('maxLifeBloom').addEventListener('click', ()=>{
-      const voComplete = [...Array(30)].every((_,i)=> state.unlocked.has(`vo${String(i+1).padStart(2,'0')}`));
-      if(!voComplete){ toastMsg('Complete Verdant Oracle first.'); return; }
-      refundTier('smite');
-      const ids = state.data.tiers.find(t=>t.id==='lifebloom').nodes.map(n=>n.id);
-      for(const id of ids){
-        if(!state.unlocked.has(id) && (id==='lb01' || prereqsMet(id))){
-          const cost = state.byId[id].cost||1;
-          if(state.spent + cost <= state.cap){ state.unlocked.add(id); state.spent += cost; }
-        }
-      }
-      updateHUD(); updateStyles(); updateVisibility();
-    });
-
-    // Reset buttons
-    document.getElementById('resetAll').addEventListener('click', ()=>{
-      state.unlocked.clear(); state.spent=0; updateHUD(); updateStyles(); updateVisibility(); toastMsg('All talents refunded.');
-    });
-    document.getElementById('resetCurrent').addEventListener('click', ()=>{
-      // Priority: Smite/Life Bloom → Verdant
-      const hasSmite = state.data.tiers.find(t=>t.id==='smite').nodes.some(n=>state.unlocked.has(n.id));
-      const hasLB = state.data.tiers.find(t=>t.id==='lifebloom').nodes.some(n=>state.unlocked.has(n.id));
-      if(hasSmite){ refundTier('smite'); toastMsg('Smite talents refunded.'); return; }
-      if(hasLB){ refundTier('lifebloom'); toastMsg('Life Bloom talents refunded.'); return; }
-      refundTier('verdant'); toastMsg('Verdant talents refunded.');
-    });
-
-    document.getElementById('clearNotes').addEventListener('click', ()=>{
-      notesEl.innerHTML = 'Hover / select a skill for more details.<br><br>⭮ Reset Current Branch: Resets only the branch where you’ve invested points.<br>Priority: Smite / Life Bloom → Verdant Oracle.';
-    });
-
-    init();
-  </script>
-  <script src="script.js"></script>
-
-<script>
-  const legendBox = document.getElementById("legend");
-  const expandedLegend = legendBox.querySelector(".legend-expanded");
-  const collapsedLegend = legendBox.querySelector(".legend-collapsed");
-
-  function toggleLegend() {
-    const isCollapsed = legendBox.classList.toggle("collapsed");
-    expandedLegend.style.display = isCollapsed ? "none" : "block";
-    collapsedLegend.style.display = isCollapsed ? "flex" : "none";
-  }
-
-  // Click anywhere on legend toggles expand/collapse
-  legendBox.addEventListener("click", toggleLegend);
-</script>
-
+<script src="script.js"></script>
+	
+ 
 </body>
 </html>
