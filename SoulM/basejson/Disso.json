@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Disso01",
+    "name": "Dissonance Spec",
+    "icon": "Dissonan.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "While in Rhapsody of Flame, increases all Luck Chance acquired by any means by 50%.\n\nHealing of Stillness: If you deal no DMG to enemies for 5s, each hit of your Basic Attack will heal up to 10 allies (prioritizing Allies), with the full 4-hit combo restoring 15.05% of their max HP in total.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso02",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso03",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso04",
+    "name": "Severed Chapter",
+    "icon": "SeveredC.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Increases Resilience Break Efficiency of self and Allies within 30 meters by 10%. This effect cannot stack.\nAfter activating Heroic Melody, you and Allies within 30 meters deal 10% more DMG to defeated targets. This effect cannot stack.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso05",
+    "name": "Sound Blaze",
+    "icon": "SoundBla.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Gains 1 Soundwave Energy each time you deal DMG equal to 10 times ATK.\nSoundwave Energy stores up to 50.\nSkills consuming Performance Passion trigger Scorching Impact when dealing DMG, consuming all Soundwave Energy. Each 1 Soundwave Energy increases Scorching Impact DMG by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso06",
+    "name": "Trio Rhapsody",
+    "icon": "TrioRhap.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Rhapsody of Flame always appears in its most powerful form. While in Rhapsody of Flame, healing +20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso12",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 4,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso13",
+    "name": "Luck Multiplier",
+    "icon": "LuckMult.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Every 1% Luck grants 0.5% Lucky Hit DMG Multiplier.\nAfter activating Heroic Melody, doubles its conversion efficiency.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso14",
+    "name": "Swing Reflux",
+    "icon": "SwingRef.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Hitting a target with Fierce Strike recovers 5 Performance Energy. Each additional target hit provides 1 extra Performance Energy, up to 10 total.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso15",
+    "name": "Restart",
+    "icon": "Restart.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "When Harmonic Anthem or Fierce Strike triggers a Lucky Hit, limited to a single activation when striking multiple targets, immediately resets Rhapsody of Flame's CD and allows Rhapsody of Flame not to consume Performance Passion for 10s, this effect is nullified upon casting Rhapsody of Flame.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso17",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso18",
+    "name": "Fire Day",
+    "icon": "FireDay.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "Increases Fire Bonus by 8% when attacking Elite or higher targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso19",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso21",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso22",
+    "name": "Healing Note",
+    "icon": "HealingN.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Basic Attack deals an extra instance of DMG.\nFor every 5 Soundwave Energy obtained, creates a Note for the ally with the lowest HP (Allies prioritized).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso23",
+    "name": "Lucky Soundwave",
+    "icon": "LuckySou.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Gains 1 Soundwave Energy whenever Expertise Skill or Amplified Beat trigger a Lucky Hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso24",
+    "name": "Rhythm Spirit",
+    "icon": "RhythmSp.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Defeating an enemy has a fixed 50% chance to grant you 1 Performance Passion.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso25",
+    "name": "Indomitable Chord",
+    "icon": "Indomita.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "While Heroic Melody is active, grants Super Armor, increases DMG Reduction by 25%, and boosts movement speed by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso26",
+    "name": "Blazing Heal",
+    "icon": "BlazingH.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Stores excess Healing (up to 500% of Max HP). After activating Heroic Melody, consumes stored Healing to recover allies' HP every 1 second, up to 15% of Max HP per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso27",
+    "name": "Infinite Rhapsody",
+    "icon": "Infinite.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Replace Ultimate Rock the Stage with Infinite Rhapsody.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso28",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso29",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso30",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso34",
+    "name": "Resonant Counterpoint",
+    "icon": "Resonant.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "When a Note forms, there's a 50% fixed chance to create an extra Note for a different target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso35",
+    "name": "Soundwave Overclock",
+    "icon": "Soundwav.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Upon casting Center Stage, grants 15 Soundwave Energy, and doubles all the Soundwave Energy gained in the next 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso36",
+    "name": "Encore Persistance",
+    "icon": "EncorePe.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Permanently benefits from Encore effect.\nFor every 5 triggers of Encore Strings, the next Amplified Beat and Harmonic Anthem deal 50% more DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso37",
+    "name": "Flame's Rampage",
+    "icon": "FlamesRa.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Heroic Melody is active, Rhapsody of Flame will erupt, dealing Magic Damage equal to 50% ATK every 3s to targets it touches (DMG interval affected by Haste).\nWhile in Rhapsody of Flame, each hit of Harmonic Anthem also heals 1 ally with the lowest HP for 30% of the DMG dealt.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso38",
+    "name": "Flame Note",
+    "icon": "FlameNot.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "When you use an Expertise Skill, Rhapsody of Flame will erupt with Rhythm, dealing Magic Damage equal to 100% of ATK and granting Note to allies it touches.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso39",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso40",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso41",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso42",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso43",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso44",
+    "name": "Sonic Therapy",
+    "icon": "SonicThe.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Converted healing from DMG +20% for targets affected by Note.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso45",
+    "name": "Encore Sharp Strike",
+    "icon": "EncoreSh.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Triggering Encore Strings to deal DMG or healing grants 2 Performance Energy. If the Encore Strings triggers Lucky Hit, grants 3 additional Performance Energy.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso46",
+    "name": "Encore Chain",
+    "icon": "EncoreCh.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Encore Strings triggers, it activates a second time on the same target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso47",
+    "name": "Concerto",
+    "icon": "Concerto.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "During Rhapsody of Flame, Amplified Beat gains 1 additional attack.\nAmplified Beat's DMG -20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso48",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso49",
+    "name": "Zenith Center Stage: Mad Tune",
+    "icon": "ZenithCe.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Each Performance Passion consumed reduces the CD of Center Stage by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso50",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso51",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso52",
+    "name": "Sonic Cure",
+    "icon": "SonicCur.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "When Expertise deal DMG (only triggers once when hitting multiple targets), additionally heal targets with Note.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso53",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso54",
+    "name": "Encore Luck Boost",
+    "icon": "EncoreLu.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Every 1% Luck Chance grants 1% trigger chance for Encore Strings.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso55",
+    "name": "Critical Acclaim",
+    "icon": "Critical.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "During Center Stage, triggering Encore Strings has a 30% fixed chance to grant Passion Surge.\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso56",
+    "name": "Tower Multiwave",
+    "icon": "TowerMul.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Casting Center Stage immediately extends Heroic Melody by 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso57",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso58",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso59",
+    "name": "Finale Command",
+    "icon": "FinaleCo.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Within 10s of casting Encore, each use of Rhapsody of Flame caused targets affected by Encore to trigger Encore Strings.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Disso60",
+    "name": "Absolute Center Stage",
+    "icon": "Absolute.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "After you use Center Stage, the number of enhanced skills increases from 1 to 2.",
+    "cost": null,
+    "seal": null
+  }
+]

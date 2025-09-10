@@ -1,0 +1,302 @@
+[
+  {
+    "id": "soulm01",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm04",
+    "name": "Passion Surge",
+    "icon": "PassionS.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "When Melody is active, there is a 15% fixed chance per second to gain Passion Surge.\n\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm05",
+    "name": "Intellect Conversion",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Every 10 points of Intellect provides 1 point of MATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm06",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm11",
+    "name": "Melody Chord",
+    "icon": "MelodyCh.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Melody Healing +20%.\nEach 1% Haste increases the REG SPD of Performance Passion by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm12",
+    "name": "Flame Pursuit",
+    "icon": "FlamePur.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "After using 3 Special Attacks, the next Basic Attack hit triggers Flame Pillar Blast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm13",
+    "name": "Arcane Ascension",
+    "icon": "ArcaneAs.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Special Attack costs 1 less Performance Passion.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm14",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm15",
+    "name": "Heat Surge",
+    "icon": "HeatSurg.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "When Melody is activated, the trigger chance for Passion Surge +an extra 3% every 1 second (up to 30%).\n\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm16",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm17",
+    "name": "Variation",
+    "icon": "Variatio.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Increases Max HP by 20% and activates Dissonance Spec with its original effect intact.\nIf Concerto Spec is activated, its effect is adjusted to replace Basic Attack with String Strum.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm18",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm21",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm23",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm24",
+    "name": "String Expansion",
+    "icon": "StringEx.png",
+    "gx": -3,
+    "gy": 12,
+    "desc": "Performance Passion max limit +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm25",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": -2,
+    "gy": 12,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm26",
+    "name": "Flame Pursuit II",
+    "icon": "FlamePur.png",
+    "gx": 0,
+    "gy": 12,
+    "desc": "Flame Pillar Blast becomes a two-hit combo.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm27",
+    "name": "Fire Attack",
+    "icon": "FireAtta.png",
+    "gx": 2,
+    "gy": 12,
+    "desc": "Fire Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm28",
+    "name": "Exaltation",
+    "icon": "Exaltati.png",
+    "gx": 3,
+    "gy": 12,
+    "desc": "Performance Energy REG SPD +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm29",
+    "name": "Melody: Heat Core",
+    "icon": "MelodyHe.png",
+    "gx": -1,
+    "gy": 13,
+    "desc": "Melody heals ally targets below 50% HP with 100% bonus effect.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "soulm30",
+    "name": "Heat Boost",
+    "icon": "HeatBoos.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "When Intellect reaches 500, the Performance Energy cap +20%.",
+    "cost": null,
+    "seal": null
+  }
+]

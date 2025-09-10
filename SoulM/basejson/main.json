@@ -1,0 +1,302 @@
+[
+  {
+    "id": "verdo01",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo02",
+    "name": "Inspiration",
+    "icon": "Inspirat.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Applies Inspiration to yourself and allies within 30 meters.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo04",
+    "name": "Intellect Conversion",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Every 10 points of Intellect provides 1 point of MATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo05",
+    "name": "Regen Bud",
+    "icon": "RegenBud.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Casting a Special Attack grants 1 Regen Bud.\n\nInitial cap of Regen Buds: 4.\nWhen an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.\nWhen an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo06",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo07",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo12",
+    "name": "Defensive Blessing",
+    "icon": "Defensiv.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Inspiration additionally grants the target 200 Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo13",
+    "name": "Breath of Buds",
+    "icon": "Breathof.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Increases Max Regen Bud by 4.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo14",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo15",
+    "name": "Energy Surge",
+    "icon": "EnergySu.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Every 2% haste provides 1% energy natural recovery efficiency.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo16",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo17",
+    "name": "Regeneration Bud",
+    "icon": "Regenera.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo18",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 3,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo20",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": 2,
+    "gy": 12,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo21",
+    "name": "Forest Attack",
+    "icon": "ForestAt.png",
+    "gx": -2,
+    "gy": 13,
+    "desc": "Forest Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo23",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 13,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo25",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 13,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo26",
+    "name": "Healing Breath",
+    "icon": "HealingB.png",
+    "gx": -1,
+    "gy": 14,
+    "desc": "When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo27",
+    "name": "Divine Ascension of the Flower Realm",
+    "icon": "DivineAs.png",
+    "gx": 0,
+    "gy": 14,
+    "desc": "When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo28",
+    "name": "Dancing Seed",
+    "icon": "DancingS.png",
+    "gx": 1,
+    "gy": 14,
+    "desc": "When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.\nFor every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo29",
+    "name": "Omnipotent Breath",
+    "icon": "Omnipote.png",
+    "gx": 2,
+    "gy": 14,
+    "desc": "When Intellect reaches 500, versatility +4%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "verdo30",
+    "name": "Brimming Vitality",
+    "icon": "Brimming.png",
+    "gx": 3,
+    "gy": 14,
+    "desc": "Increases Energy REG SPD by 20%",
+    "cost": null,
+    "seal": null
+  }
+]
