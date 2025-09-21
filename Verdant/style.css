@@ -1,171 +1,345 @@
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  background: url("img/virtual_scene_bg_4.png") center/cover no-repeat fixed;
-}
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background: 
+		url("img/weapon_line.png") center/cover no-repeat fixed, url("img/virtual_scene_bg_4.png") center/cover no-repeat fixed;
+ }
 
 /* Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; /* full width */
+  right: 0;
   height: 60px;
   background: #222;
   color: #BEBEBE;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 1rem;
   z-index: 10;
 }
 
+/* Right block split: buttons vs counters */
+.header-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1; /* fill space between title and counters */
+}
+
+/* Buttons + reset: sit just before counter zone */
+.header-buttons-row {
+  display: inline-block;
+  gap: 5px;
+  align-items: center;
+  margin-right: 1rem; /* space before counter zone */
+}
+
+#tierButtons {
+  display: flex;
+  gap: 15px;          /* space between tiers */
+  flex-wrap: wrap;     /* wrap if too many tiers for one row */
+  align-items: center; /* vertical alignment of buttons */
+}
+
+.tier-btn-row {
+  display: flex;
+  align-items: center; /* vertical center of row */
+  gap: 10px;
+}
+
+.tier-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 40px;                /* square icon button */
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tier-action-btn img {
+  display: block;
+  max-height: 80%;            /* make icon slightly smaller than button */
+  max-width: 80%;
+}
+.tier-name-btn {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: #c5ffe6;
+  gap: 4px; /* small space between text and badges if needed */
+}
+
+.tier-badge {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.max-badge { /* optional extra styling */ }
+.reset-badge { /* optional extra styling */ }
+
+/* Optional: hover effect for badges */
+.tier-badge:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+}
+
+
+
+/* Counter zone: fixed 300px box */
+.header-counters {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.resource-counters {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+
+.resource-counters input {
+	width: 50px;
+	background: #0a221a;
+	border: 1px solid #6dffcb;
+	color: #c5ffe6;
+	text-align: center;
+	position: relative;
+	padding-right: 20px;
+	/* leave space for custom arrows */
+}
+
+/* Remove default spinners */
+.resource-counters input::-webkit-inner-spin-button,
+.resource-counters input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.resource-counters input[type=number] {
+	-moz-appearance: textfield;
+	/* Firefox */
+}
+
+/* Custom neon arrows */
+.resource-counters input::before,
+.resource-counters input::after {
+	content: "";
+	position: absolute;
+	right: 6px;
+	width: 6px;
+	height: 6px;
+	border: solid #6dffcb;
+	border-width: 0 2px 2px 0;
+	padding: 2px;
+	pointer-events: none;
+}
+
+.resource-counters input::before {
+	top: 6px;
+	/* Up arrow */
+	transform: rotate(-135deg);
+}
+
+.resource-counters input::after {
+	bottom: 6px;
+	/* Down arrow */
+	transform: rotate(45deg);
+}
+
+
 /* ===== Shared header + sidebar buttons ===== */
 .header-btn {
-  background: transparent;
-  border: none;
-  color: #ffffff;      /* force white */
-  font-size: 16px;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  z-index: 3;          /* keeps sidebar button above background */
-  margin-left: auto;
-  margin-right: auto;
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	/* force white */
+	font-size: 16px;
+	padding: 6px 14px;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	/* keeps sidebar button above background */
+	margin-left: auto;
+	/*margin-right: auto;*/
+}
+.header-buttons-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.header-controls {
+  display: flex;
+  flex-direction: column;   /* stack rows */
+  align-items: flex-end;    /* right-align content */
+  margin-right: 300px;      /* 300px gap from right edge */
 }
 
 /* Hover effect (both header + sidebar buttons) */
 .header-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.1);
 }
 
 /* Special emphasis for the Clear button */
 .sidebar-controls {
-  width: 100%;
-  text-align: right;
+	width: 100%;
+	text-align: right;
 }
+
 #clearSidebar {
-  margin: 0;
-  font-weight: bold;
-  opacity: 1 !important;
+	margin: 0;
+	font-weight: bold;
+	opacity: 1 !important;
 }
 
 /* Sidebar itself */
 aside {
-  position: fixed;
-  top: 60px; /* under site header */
-  right: 0;
-  width: 300px;
-  height: calc(100% - 60px);
-  overflow: hidden;
-  z-index: 9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	position: fixed;
+	top: 60px;
+	/* under site header */
+	right: 0;
+	width: 300px;
+	height: calc(100% - 60px);
+	overflow: hidden;
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-
-}
 .sidebar-controls #clearSidebar {
-  color: #ffffff !important;
-  font-weight: bold;
-  opacity: 1 !important;
+	color: #ffffff !important;
+	font-weight: bold;
+	opacity: 1 !important;
 }
-
 
 /* Continuous background */
 .sidebar-bg {
-  position: absolute;
-  inset: 0;
-  background: url("img/talent_flag.png") center/cover no-repeat;
-  background-size: 100% 190%;
-  z-index: 1;
-  pointer-events: none; /* allow clicks to pass through */
+	position: absolute;
+	inset: 0;
+	background: url("img/talent_flag.png") center/cover no-repeat;
+	background-size: 100% 190%;
+	z-index: 1;
+	pointer-events: none;
+	/* allow clicks to pass through */
 }
-
-
 
 /* Icon container */
 .icon-container {
-  position: relative;
-  margin-bottom: 135px; /* lift up from bottom */
-  z-index: 2;
+	position: relative;
+	margin-bottom: 135px;
+	/* lift up from bottom */
+	z-index: 2;
 }
 
 /* Icon background */
 .icon-container .icon {
-  width: 100%;
-  height: auto;
-  display: block;
-  z-index: 2;
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 2;
 }
 
-/*
-/* Text between the bars */
+/* /* Text between the bars */
 .sidebar-text {
-  position: relative;
-  color: white;
-  font-size: 18px;
-  z-index: 2; /* above background */
-  text-align: center;
-  flex: 1;    /* take remaining space below attr-container */
-  overflow-y: auto;
+	position: relative;
+	color: white;
+	font-size: 18px;
+	z-index: 2;
+	/* above background */
+	text-align: center;
+	flex: 1;
+	/* take remaining space below attr-container */
+	overflow-y: auto;
 }
 
 /* Attribute container (sub-header inside sidebar) */
 .attr-container {
-  position: relative;
-  width: 100%;
-  height: 155px;              /* fixed height like before */
-  background: url("img/talent_base_attr.png") center/contain no-repeat;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: relative;
+	width: 100%;
+	height: 155px;
+	/* fixed height like before */
+	background: url("img/talent_base_attr.png") center/contain no-repeat;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .attr-container .attr {
-  width: 100%;
-  height: 155px;
-  display: block;
+	width: 100%;
+	height: 155px;
+	display: block;
 }
+.MaxTreeBtn
+ {
+  position: absolute;
+  color: #323232;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* Hover preview image */
 #hoverPreview {
-  max-width: 70%;
-  max-height: 70%;
-  display: none;
-  z-index: 3;
+	max-width: 70%;
+	max-height: 70%;
+	display: none;
+	z-index: 3;
 }
 
 /* Main content area */
 main {
-  position: absolute;
-  top: 60px; /* below header */
-  left: 0;
-  right: 300px; /* leave space for sidebar */
-  bottom: 0;
-  overflow: hidden;
-  background: url("img/talent_bg_left_5.png") no-repeat, url("img/talent_bg_right_5.png") no-repeat;
-  background-position: left -150px center, right -200px center;
-	
-  	
+	position: absolute;
+	top: 60px;
+	/* below header */
+	left: 0;
+	right: 300px;
+	/* leave space for sidebar */
+	bottom: 0;
+	overflow: hidden;
+	background: url("img/talent_bg_left_5.png") no-repeat, url("img/talent_bg_right_5.png") no-repeat;
+	background-position: left -150px center, right -200px center;
 }
 
 /* Zoomable area */
 .zoom-container {
-  width: 2000px;
-  height: 2000px;
-  transform-origin: 0 0;
-  cursor: grab;
-  position: relative;
+	width: 2000px;
+	height: 2000px;
+	transform-origin: 0 0;
+	cursor: grab;
+	position: relative;
 }
 
 .zoom-container:active {
-  cursor: grabbing;
+	cursor: grabbing;
 }
 
 /* Talent tree nodes */
@@ -180,167 +354,187 @@ main {
   cursor: pointer;
   z-index: 10;
 }
-.node:hover, .node.av:hover, .node.unlocked:hover {
-  border: #ffffff, 1px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #cecece;
+
+/* ================= Node Size Variants ================= */
+/* Default node (100x100) */
+.node.size1 {
+	width: 60px;
+	height: 60px;
 }
-.node.av {
-  border: 1px #FFFFFF;
-  z-index: 11;    /* optional, if you want unlocked nodes above locked ones */
+
+/* Small stat nodes (40x40) */
+.node.size2 {
+	width: 40px;
+	height: 40px;
 }
-.node.unlocked {
-  border: 0px;	
-  filter: none;   /* remove grayscale */
-  z-index: 12;    /* optional, if you want unlocked nodes above locked ones */
+
+.node.size2.unlocked {
+  background: url("img/talent_icon_active.png") no-repeat center/contain;
+
 }
-.node-icon {
+/* Active state overlay for size2 nodes */
+.node.size2.unlocked::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 28px;   /* size to fit inside */
-  height: 28px;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* lets clicks pass through */
-}
-.edges {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: url("img/talent_icon_active.png") no-repeat center/contain;
   width: 100%;
   height: 100%;
-  z-index: 9; /* behind nodes */
+  pointer-events: none;
+  z-index: 0; /* sits above base node, but below .node-icon */
+}
+/* Special root nodes (hexagon, 100x110) */
+.node.size3 {
+	width: 75px;
+	height: 75px;
+	background: url("img/talent_icon_hex.png") no-repeat center/contain;
+	/* your hexagon asset */
+	clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	/* hexagon mask */
 }
 
-.resource-counters {
-  margin-left: auto;
-  margin-right: 1rem;
-  color: #fff;
-  font-size: 14px;
+.node.av {
+	border: 1px #FFFFFF;
+	z-index: 11;
+	/* optional, if you want unlocked nodes above locked ones */
+}
+
+.node.unlocked {
+	border: 0px;
+	filter: none;
+	/* remove grayscale */
+	z-index: 12;
+	/* optional, if you want unlocked nodes above locked ones */
+}
+
+.node-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	max-width: 75%;
+	max-height: 75%;
+}
+
+/* Smaller icons for size2 nodes */
+.node.size2 .node-icon {
+	max-width: 50%;
+	max-height: 70%;
+}
+
+/* Default (size1 + size3) keep the larger scaling */
+.node.size1 .node-icon,
+.node.size3 .node-icon {
+	max-width: 75%;
+	max-height: 75%;
+}
+
+/* Shared hover overlay setup */
+.node::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	opacity: 0;
+	pointer-events: none;
+	/* clicks pass through */
+	transition: opacity 0.2s ease;
+}
+
+/* Show overlay on hover */
+.node:hover::after {
+	opacity: 1;
+}
+
+/* Size1 + Size2 → use talent_select.png */
+.node.size1::after,
+.node.size2::after {
+	background-image: url("img/talent_select.png");
+	width: 150%;
+	height: 140%;
+}
+
+/* Tweak scaling for small stat nodes */
+.node.size2::after {
+	width: 150%;
+	/* slightly smaller overlay */
+	height: 140%;
+}
+
+/* Size3 (hex roots) → use talent_select2.png */
+.node.size3::after {
+	background-image: url("img/talent_select2.png");
+	width: 150%;
+	/* bigger to cover hex */
+	height: 150%;
+}
+
+.edges {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	/* behind nodes */
+}
+/* All edges default thickness */
+.edges line {
+  stroke-width: 13;   
+}
+/* Base edge style */
+.edge {
+  stroke-width: 3;    /* thickness, no px */
+  fill: none;
+}
+
+/* Locked edges */
+.edge-locked {
+  stroke: #555;
+  opacity: 0.7;
+}
+
+.edge-unlocked {
+  stroke: #6dffcb;
+  opacity: 1;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 6px #6dffcb);
+}
+
+
+
+
+
+#toast-container {
+  position: fixed;
+  bottom: 5%; /* or 20px */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  flex-direction: column-reverse; /* newest toast stays at the bottom */
   align-items: center;
-  gap: 1rem;
-}
-
-.resource-counters input {
-  width: 50px;
-  background: #0a221a;
-  border: 1px solid #2be58e;
-  color: #c5ffe6;
-  text-align: center;
-  position: relative;
-  padding-right: 20px; /* leave space for custom arrows */
-}
-
-/* Remove default spinners */
-.resource-counters input::-webkit-inner-spin-button,
-.resource-counters input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.resource-counters input[type=number] {
-  -moz-appearance: textfield; /* Firefox */
-}
-
-/* Custom neon arrows */
-.resource-counters input::before,
-.resource-counters input::after {
-  content: "";
-  position: absolute;
-  right: 6px;
-  width: 6px;
-  height: 6px;
-  border: solid #2be58e;
-  border-width: 0 2px 2px 0;
-  padding: 2px;
+  gap: 8px; /* spacing between stacked toasts */
+  z-index: 9999;
   pointer-events: none;
 }
 
-.resource-counters input::before {
-  top: 6px; /* Up arrow */
-  transform: rotate(-135deg);
-}
-
-.resource-counters input::after {
-  bottom: 6px; /* Down arrow */
-  transform: rotate(45deg);
-}
-
-/* Legend container */
-.legend {
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #2be58e;
-  border-radius: 20px;
-  box-shadow: 0 0 6px #333333;
+.toast {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-size: 14px;
-  color: #c5ffe6;
-  position: absolute;
-  padding: 12px 14px;
-  right: 10px;
-  bottom: 10px;
-  z-index: 10;    /* higher than anything in aside */
-  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
-.legend.expanded {
-  max-height: 500px;       /* taller than content */
-  padding: 12px 14px;
-}
-
-/* Collapsed section visible by default */
-.legend-collapsed {
-  display: block;
-}
-
-/* Expanded content hidden by default */
-.legend-content {
-  display: none;
-  margin-top: 8px;
-}
-
-/* Swap visibility when expanded */
-.legend.expanded .legend-collapsed {
-  display: none;
-}
-.legend.expanded .legend-content {
-  display: block;
-}
-
-/* Rows inside the legend */
-.legend .row {
-  display: flex;
-  justify-content: space-between;
-  margin: 6px 0;
-}
-
-/* Status dots */
-.legend .dot {
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  background: url("img/talent_icon_green.png") center/contain no-repeat;
-  filter: grayscale(100%); /* default: greyscaled */
-  border-radius: 50%;
-}
-
-/* Available: greyscale + borders + glow */
-.legend .dot.av {
-  filter: grayscale(100%);
-  border: 1px solid #fff;
-  padding-left: 1px;
-  
-}
-
-/* Unlocked: full color */
-.legend .dot.un {
-  filter: none;
-}
-
-
-/* Arrow icon */
-.legend-icon {
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  vertical-align: middle;
+.toast.show {
+  opacity: 1;
 }

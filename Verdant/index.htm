@@ -9,21 +9,24 @@
 <body>
 <header>
   <h1>Verdant Oracle</h1>
-  <button id="goToFirst" class="header-btn">Verdant Oracle</button>
-  <button id="maxVerdant" class="header-btn">Max Verdant</button>
-  <button id="goToSub1" class="header-btn">Smite</button><br>
-  <button id="maxSmite" class="header-btn">Max Smite</button>
-  <button id="goToSub2" class="header-btn">Life Bloom</button>
-  <button id="maxLifebloom" class="header-btn">Max Life Bloom</button>
-  <button id="resetCur" class="header-btn">Reset Current</button><br>
-  <button id="resetAll" class="header-btn">Reset All</button>
-  <!-- Resource Counters -->
-  <div id="resourceCounters" class="resource-counters">
-    Talent Points: <span id="tpUsed">0</span>/<input id="tpMax" type="number" value="70" min="0" />
-    &nbsp; • &nbsp;
-    Arcane Seals: <span id="sealUsed">0</span>/<input id="sealMax" type="number" value="50" min="0" />
+
+  <div class="header-right">
+    <!-- Buttons + reset -->
+    <div class="header-buttons-row">
+      <div id="tierButtons"></div>
+      <button id="resetAll" class="header-btn">Reset All</button>
+    </div>
+
+    <!-- Counters inside fixed 300px zone -->
+    <div class="header-counters">
+      <div id="resourceCounters" class="resource-counters">
+        <div>Talent Points: <span id="tpUsed">0</span>/<input id="tpMax" type="number" value="70" min="0" /></div>
+        <div>Arcane Seals: <span id="sealUsed">0</span>/<input id="sealMax" type="number" value="50" min="0" /></div>
+      </div>
+    </div>
   </div>
 </header>
+
 
 
 <aside>
@@ -41,32 +44,16 @@
 </div>
 
   <div class="sidebar-text">
-    Sidebar Info Here
-    <br />More content...
-  </div>
+No node selected<br>
 
-	
-
-<!-- Legend Box -->
-<div id="legend" class="legend">
-  <!-- Collapsed view -->
-  <div class="legend-collapsed">
-    Key • <img src="img/up-arrow.png" class="legend-icon" alt="↓">
   </div>
-
-  <!-- Expanded view -->
-  <div class="legend-content">
-    <div class="row"><span>Unlocked</span><span class="dot un"></span></div>
-    <div class="row"><span>Available</span><span class="dot av"></span></div>
-    <div class="row"><span>Locked</span><span class="dot"></span></div>
-    <div style="margin-top:6px; font-size:12px; color:#c5ffe6">
-      • Left click: unlock
-      <br>
-      • Right click: refund  
-      <img src="img/up-arrow.png" class="legend-icon" style="transform: rotate(180deg);" alt="↑">
-    </div>
-  </div>
-</div>
+  <button id="resetCur" class="header-btn">
+  <img src="img/Reset.png" alt="Reset Current">
+  </button><br>
+  <button id="MaxButton" class="header-btn">
+  <img src="img/MaxTal.png" alt="Max Current Tree">
+  <div class="MaxTreeBtn">Max Current Tree</div>
+  </button>
 
 
 </aside>
@@ -77,8 +64,8 @@
     </div>
   </main>
 
-<script src="script.js"></script>
-	
+	<script src="script.js"></script>
+<div id="toast-container"></div>
  
 </body>
 </html>
