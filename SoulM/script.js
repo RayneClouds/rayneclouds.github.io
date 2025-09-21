@@ -794,7 +794,7 @@ function buildHeaderButtons(){
 
     // Reset badge
     const resetImg = document.createElement("img");
-    resetImg.src = "img/reset.png"; // your icon path
+    resetImg.src = "img/Reset.png"; // your icon path
     resetImg.alt = "Reset";
     resetImg.className = "tier-badge reset-badge";
     resetImg.addEventListener("click", (e)=>{
