@@ -674,10 +674,10 @@ function maxCurrentTree(){
     }
     updateCounters();
     drawEdges();
-    return; // stop here since we’re still filling base
+    return; // stop here since we're still filling base
   }
 
-  // If Verdant is done → check specializations: pick one that is unlocked
+  // If Verdant is done check specializations: pick one that is unlocked
   let chosen = null;
   for(const tid in tiers){
     if(tid === base) continue;
@@ -765,37 +765,56 @@ function resetCur(){
 
 
 
-// Build header buttons dynamically
 function buildHeaderButtons(){
   const container = document.getElementById("tierButtons");
   if(!container) return;
 
-  // Clear old
   container.innerHTML = "";
 
-  // Add buttons for each tier
   for(const tid of Object.keys(tiers)){
     const info = tiers[tid];
-    const btn = document.createElement("button");
-    btn.className = "header-btn";
-    btn.textContent = info.name || tid;
-    btn.addEventListener("click", () => { centerOnTierRoot(tid); });
-    container.appendChild(btn);
+
+    // Tier name button (parent container)
+    const nameBtn = document.createElement("button");
+    nameBtn.className = "tier-name-btn";
+    nameBtn.textContent = info.name || tid;
+
+    // Center click on tier root
+    nameBtn.addEventListener("click", () => { centerOnTierRoot(tid); });
+
+    // Max badge
+    const maxImg = document.createElement("img");
+    maxImg.src = "img/up-arrow.png"; // your icon path
+    maxImg.alt = "Max";
+    maxImg.className = "tier-badge max-badge";
+    maxImg.addEventListener("click", (e)=>{
+      e.stopPropagation(); // prevent triggering tier click
+      maxTier(tid);
+    });
+
+    // Reset badge
+    const resetImg = document.createElement("img");
+    resetImg.src = "img/reset.png"; // your icon path
+    resetImg.alt = "Reset";
+    resetImg.className = "tier-badge reset-badge";
+    resetImg.addEventListener("click", (e)=>{
+      e.stopPropagation();
+      resetTier(tid);
+    });
+
+    // Append badges to button
+    nameBtn.appendChild(maxImg);
+    nameBtn.appendChild(resetImg);
+
+    container.appendChild(nameBtn);
   }
 
-  // Rebind existing control buttons
-  $("#MaxButton")?.removeEventListener?.("click", maxCurrentTree);
-  $("#MaxButton")?.addEventListener("click", maxCurrentTree);
-
-  $("#resetCur")?.removeEventListener?.("click", resetCur);
-  $("#resetCur")?.addEventListener("click", resetCur);
-
-  $("#resetAll")?.removeEventListener?.("click", resetAll);
-  $("#resetAll")?.addEventListener("click", resetAll);
-
+  // Rebind global controls
   $("#tpMax")?.addEventListener("input", updateCounters);
   $("#sealMax")?.addEventListener("input", updateCounters);
 }
+
+
 
 
 // ----- Toast 

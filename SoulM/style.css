@@ -33,11 +33,73 @@ header {
 
 /* Buttons + reset: sit just before counter zone */
 .header-buttons-row {
-  display: flex;
-  gap: 8px;
+  display: inline-block;
+  gap: 5px;
   align-items: center;
   margin-right: 1rem; /* space before counter zone */
 }
+
+#tierButtons {
+  display: flex;
+  gap: 15px;          /* space between tiers */
+  flex-wrap: wrap;     /* wrap if too many tiers for one row */
+  align-items: center; /* vertical alignment of buttons */
+}
+
+.tier-btn-row {
+  display: flex;
+  align-items: center; /* vertical center of row */
+  gap: 10px;
+}
+
+.tier-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 40px;                /* square icon button */
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tier-action-btn img {
+  display: block;
+  max-height: 80%;            /* make icon slightly smaller than button */
+  max-width: 80%;
+}
+.tier-name-btn {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: #c5ffe6;
+  gap: 4px; /* small space between text and badges if needed */
+}
+
+.tier-badge {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.max-badge { /* optional extra styling */ }
+.reset-badge { /* optional extra styling */ }
+
+/* Optional: hover effect for badges */
+.tier-badge:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+}
+
+
 
 /* Counter zone: fixed 300px box */
 .header-counters {
