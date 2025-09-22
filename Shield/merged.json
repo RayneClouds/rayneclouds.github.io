@@ -1,0 +1,2066 @@
+{
+  "tiers": [
+    {
+      "id": "Shkni",
+      "name": "Shield Knight",
+      "collapsed": false,
+      "requiresUnlocked": [],
+      "origin": {
+        "gx": 10,
+        "gy": 1
+      },
+      "nodes": [
+        {
+          "id": "Shkni01",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shkni03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni02",
+          "name": "Condemn",
+          "icon": "Condemn.png",
+          "desc": "When casting a skill that consumes Photon Energy, there is a 30% fixed chance for Basic Attacks to evolve into Condemn.",
+          "children": [
+            "Shkni06"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni02",
+            "Shkni04",
+            "Shkni05"
+          ],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni04",
+          "name": "Power Conversion",
+          "icon": "PowerConversion.png",
+          "desc": "Armor +2000\n3 Strength provides 2 Armor.",
+          "children": [
+            "Shkni08"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni05",
+          "name": "Lightforged Body",
+          "icon": "LightforgedBody.png",
+          "desc": "Every 1 Holy Sigil consumed grants a Radiant shield equal to 30% ATK (depending on Adventurer Level, up to 60%).",
+          "children": [
+            "Shkni07"
+          ],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni06",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shkni09",
+            "Shkni10"
+          ],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni11"
+          ],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni08",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shkni12",
+            "Shkni13"
+          ],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni09",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni14"
+          ],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni10",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shkni23"
+          ],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni11",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shkni15"
+          ],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni12",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni16"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni13",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shkni17"
+          ],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni14",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shkni18"
+          ],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni15",
+          "name": "Lightforged Fortitude",
+          "icon": "LightforgedFortitude.png",
+          "desc": "During the duration of Radiant Shield, Block chance +10%.",
+          "children": [
+            "Shkni19",
+            "Shkni20"
+          ],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni16",
+          "name": "Haste Sigil",
+          "icon": "HasteSigil.png",
+          "desc": "Each 1% haste increases the recovery speed of Holy Sigil by 1%, Holy Sigil recovery time = Holy Sigil initial recovery time / (1 + Holy Sigil recovery speed bonus).",
+          "children": [
+            "Shkni20",
+            "Shkni21"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni17",
+          "name": "Lightforge Continuum",
+          "icon": "LightforgeContinuum.png",
+          "desc": "For every 20 points of Photon Energy consumed, gains Radiant Shield equal to 30% ATK (this ratio is affected by Adventurer Level, up to 60%).",
+          "children": [
+            "Shkni21"
+          ],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni18",
+          "name": "Ring of Judgment",
+          "icon": "RingofJudgment.png",
+          "desc": "Casting Judgment generates a Divine Circle, with a CD of 30s.\nEach Holy Sigil consumed reduces the remaining CD by 1s.",
+          "children": [
+            "Shkni22"
+          ],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni19",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shkni24"
+          ],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni20",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shkni25"
+          ],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni21",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shkni26"
+          ],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni22",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni27"
+          ],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni23",
+          "name": "Condemn Time Limit",
+          "icon": "CondemnTimeLimit.png",
+          "desc": "When Condemn deals damage, it immediately cools down 1 Holy Sigil (prioritizing the Holy Sigil with the longest remaining CD).",
+          "children": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni24",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni28"
+          ],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni25",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni29"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni26",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shkni30"
+          ],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni27",
+          "name": "Light of Condemn",
+          "icon": "LightofCondemn.png",
+          "desc": "While inside a Divine Circle, your Condemn is enhanced—thrusting a blade of light forward and dealing double DMG.",
+          "children": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni28",
+          "name": "Life Enhancement",
+          "icon": "LifeEnhancement.png",
+          "desc": "When Strength reaches 500 points, Max HP +12%.",
+          "children": [],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni29",
+          "name": "Blessing of Holy Sigil",
+          "icon": "BlessingofHolySigil.png",
+          "desc": "When using a Skill that consumes Holy Sigils, 20% chance for your next Holy Sigil-consuming skill to consume no Holy Sigils. The effect lasts for 8s or until a Holy Sigil-consuming skill is cast.",
+          "children": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shkni30",
+          "name": "Energy Guard",
+          "icon": "EnergyGuard.png",
+          "desc": "After Casting the Ultimate, the aggro generated by Allies is transferred to oneself, lasting for 6s.",
+          "children": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Recov",
+      "name": "Shield Spec",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "Shkni01",
+        "Shkni02",
+        "Shkni03",
+        "Shkni04",
+        "Shkni05",
+        "Shkni06",
+        "Shkni07",
+        "Shkni08",
+        "Shkni09",
+        "Shkni10",
+        "Shkni11",
+        "Shkni12",
+        "Shkni13",
+        "Shkni14",
+        "Shkni15",
+        "Shkni16",
+        "Shkni17",
+        "Shkni18",
+        "Shkni19",
+        "Shkni20",
+        "Shkni21",
+        "Shkni22",
+        "Shkni23",
+        "Shkni24",
+        "Shkni25",
+        "Shkni26",
+        "Shkni27",
+        "Shkni28",
+        "Shkni29",
+        "Shkni30"
+      ],
+      "origin": {
+        "gx": 9,
+        "gy": 10
+      },
+      "nodes": [
+        {
+          "id": "Recov01",
+          "name": "Recovery Spec",
+          "icon": "RecoverySpec.png",
+          "desc": "Continue to enhance the ability to use Valor Bash.\nRadiant Impact is accompanied by Radiant Impact, and when Radiant Impact hits an enemy target, it taunts them.",
+          "children": [
+            "Recov02",
+            "Recov03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov04",
+            "Recov05"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov05",
+            "Recov06"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov07"
+          ],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov05",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov08",
+            "Recov09",
+            "Recov13"
+          ],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov06",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov10"
+          ],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov07",
+          "name": "Holy Light Time Limit",
+          "icon": "HolyLightTimeLimit.png",
+          "desc": "During Aegis Ward, when Expertise deal Crit DMG, there's a 50% fixed chance to instantly reset 1 Holy Sigil CD (prioritizing Holy Sigil with the longest remaining CD). This effect triggers only once when hitting multiple targets.",
+          "children": [
+            "Recov11",
+            "Recov12"
+          ],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov08",
+          "name": "Radiant Guard",
+          "icon": "RadiantGuard.png",
+          "desc": "Casting Shield Toss immediately grants a Radiant shield equal to 100% ATK (depending on Adventurer Level, up to 200%). The Overdrive of Shield Toss +1.",
+          "children": [
+            "Recov12"
+          ],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov09",
+          "name": "Divine Circle Defender",
+          "icon": "DivineCircleDefender.png",
+          "desc": "While within the Divine Circle, the Armor effect provided by Valor Bash +30%.",
+          "children": [
+            "Recov14"
+          ],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov10",
+          "name": "Radiant Heal",
+          "icon": "RadiantHeal.png",
+          "desc": "Increases Judgment Healing by 25%.",
+          "children": [
+            "Recov14",
+            "Recov15"
+          ],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov16",
+            "Recov26"
+          ],
+          "gx": -3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov12",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov16",
+            "Recov17",
+            "Recov18"
+          ],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov13",
+          "name": "Oracle",
+          "icon": "Oracle.png",
+          "desc": "When a skill that consumes Holy Sigil critically hits, gain an additional 30% Light Energy.\nCrit DMG of skills that consume Light Energy +30%.",
+          "children": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov14",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov18",
+            "Recov19",
+            "Recov20"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov20",
+            "Recov30"
+          ],
+          "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov16",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov21"
+          ],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov17",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov22"
+          ],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov18",
+          "name": "Reckon Blaze",
+          "icon": "ReckonBlaze.png",
+          "desc": "When Valor Bash deals Crit DMG, gain Blazing.\nCasting Aegis Ward guarantees Blazing.\nBlazing: For the next 10s, Reckoning evolves into Inferno Reckon.",
+          "children": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov19",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov22"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov20",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov23"
+          ],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov21",
+          "name": "Shield Impact",
+          "icon": "ShieldImpact.png",
+          "desc": "Hold Valor Bash to charge, then dash forward a short distance.",
+          "children": [
+            "Recov24"
+          ],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov22",
+          "name": "Holy Barrier",
+          "icon": "HolyBarrier.png",
+          "desc": "After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.",
+          "children": [
+            "Recov24",
+            "Recov25"
+          ],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov23",
+          "name": "Reckon Shield",
+          "icon": "ReckonShield.png",
+          "desc": "Each time Inferno Reckon or Reckoning deals Crit DMG to 1 enemy target, Block chance +5%, lasting for 10s, stacking up to a maximum of 5 layers.",
+          "children": [
+            "Recov25"
+          ],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov24",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov27",
+            "Recov28"
+          ],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov25",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov28",
+            "Recov29"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov26",
+          "name": "Lightforged Balance",
+          "icon": "LightforgedBalance.png",
+          "desc": "When your HP percentage is higher than your target's, DMG taken from that target -5%.\nWhen your HP percentage is lower than your target's, Judgment deals 50% more DMG.",
+          "children": [
+            "Recov31",
+            "Recov32"
+          ],
+          "gx": -3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov27",
+          "name": "Ultimate Guard",
+          "icon": "UltimateGuard.png",
+          "desc": "For 10s after casting Shield Toss, increases Block Chance by 15%.",
+          "children": [
+            "Recov32"
+          ],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov28",
+          "name": "Holy Summon",
+          "icon": "HolySummon.png",
+          "desc": "When Shield Toss or Judgment deals DMG, 10% chance to trigger Divine Strike. If Crit DMG is dealt, the chance increases to 50%.",
+          "children": [
+            "Recov33"
+          ],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov29",
+          "name": "Divine Circle Resonance",
+          "icon": "DivineCircleResonance.png",
+          "desc": "For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",
+          "children": [
+            "Recov34"
+          ],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov30",
+          "name": "Halo",
+          "icon": "Halo.png",
+          "desc": "Divine Circle now has a halo effect, stunning enemy targets for 3s the first time it deals DMG.",
+          "children": [
+            "Recov34",
+            "Recov35"
+          ],
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov36"
+          ],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov32",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov37",
+            "Recov38"
+          ],
+          "gx": -2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov33",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov46",
+            "Recov47",
+            "Recov53"
+          ],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov34",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov39",
+            "Recov40"
+          ],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov41"
+          ],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov36",
+          "name": "Shield Strike Enhancement",
+          "icon": "ShieldStrikeEnhancement.png",
+          "desc": "Increases Valor Bash DMG by 10%.",
+          "children": [
+            "Recov44"
+          ],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov42"
+          ],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov38",
+          "name": "Fearless Shield",
+          "icon": "FearlessShield.png",
+          "desc": "Each time Shield Toss deals DMG, gains Radiant Shield equal to 25% ATK (this ratio is affected by Adventurer Level, up to 50%).",
+          "children": [
+            "Recov46"
+          ],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov39",
+          "name": "Sword Dance",
+          "icon": "SwordDance.png",
+          "desc": "When a Expertise Skill critically heals, gain a 15% healing bonus.",
+          "children": [
+            "Recov47"
+          ],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov40",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov43"
+          ],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov41",
+          "name": "Shield Guard",
+          "icon": "ShieldGuard.png",
+          "desc": "When Valor Bash deals Crit DMG, restores HP equal to 120% ATK.",
+          "children": [
+            "Recov49"
+          ],
+          "gx": 3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov42",
+          "name": "Light's Crit",
+          "icon": "Light'sCrit.png",
+          "desc": "Crit +5%.",
+          "children": [
+            "Recov45"
+          ],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov48",
+            "Recov49"
+          ],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov44",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Recov50"
+          ],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov45",
+          "name": "Aegis Ward's Anthem",
+          "icon": "AegisWard'sAnthem.png",
+          "desc": "For every 2 Holy Sigils consumed, the remaining CD of Aegis Ward -1 second.",
+          "children": [
+            "Recov51"
+          ],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov46",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength\n\nStrength + 10",
+          "children": [
+            "Recov52"
+          ],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov47",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov54"
+          ],
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov48",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Recov55"
+          ],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov49",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov56"
+          ],
+          "gx": 3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov50",
+          "name": "Holy Heal",
+          "icon": "HolyHeal.png",
+          "desc": "While having Radiant Shield, gains 12% healing bonus.",
+          "children": [],
+          "gx": -3,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov51",
+          "name": "Judgment of All Beings",
+          "icon": "JudgmentofAllBeings.png",
+          "desc": "When Judgment hits only 1 enemy target, its damage +25%.",
+          "children": [
+            "Recov57"
+          ],
+          "gx": -2,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov52",
+          "name": "Ultimate Strike",
+          "icon": "UltimateStrike.png",
+          "desc": "When Divine Strike deals DMG, increases Strength by 2% for 10s, stacking up to 5 times.",
+          "children": [
+            "Recov57"
+          ],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov53",
+          "name": "Lightforged Greatsword",
+          "icon": "LightforgedGreatsword.png",
+          "desc": "After every 10 casts of Judgment, the next Judgment is enhanced into Scorching Judgment.\nScorching Judgment: Summon a holy greatsword to descend upon the target area for 5s, healing yourself (Healing equal to that of Judgment) while dealing damage over time to nearby enemies and inflicting Scorch, totally dealing physical DMG equal to 600% ATK (scales with Judgment level/rank).\nScorch: Reduces damage taken from the target by 3% for 10s. Stacks up to 10 times. Grants 3 stacks of Scorch on Crit.",
+          "children": [],
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov54",
+          "name": "Light Chain",
+          "icon": "LightChain.png",
+          "desc": "While Aegis Ward is active, the chance of Divine Strike is doubled. Every 3 times Divine Strike is triggered, the duration of Aegis Ward is extended by 1 second.",
+          "children": [
+            "Recov58"
+          ],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov55",
+          "name": "Divine Circle Blessing",
+          "icon": "DivineCircleBlessing.png",
+          "desc": "While within the Divine Circle, your Healing Receive effect +10%.",
+          "children": [
+            "Recov58"
+          ],
+          "gx": 2,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov56",
+          "name": "Light Protection",
+          "icon": "LightProtection.png",
+          "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
+          "children": [],
+          "gx": 3,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov57",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov59"
+          ],
+          "gx": -2,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov58",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Recov60"
+          ],
+          "gx": 2,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov59",
+          "name": "Judgment Revelation",
+          "icon": "JudgmentRevelation.png",
+          "desc": "When Divine Strike Crits, there's a 50% fixed chance to automatically cast Judgment on the target (this Judgment cannot trigger Divine Strike).",
+          "children": [],
+          "gx": -1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Recov60",
+          "name": "Aegis Ward's Retribution",
+          "icon": "AegisWard'sRetribution.png",
+          "desc": "During Aegis Ward, Block chance is increased to 1.5 times.\nWhen attacked, reduces Aegis Ward's remaining CD by 0.5s. This effect can only trigger once per 1 second.",
+          "children": [],
+          "gx": 1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Shiel",
+      "name": "Shield Spec",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "Shkni01",
+        "Shkni02",
+        "Shkni03",
+        "Shkni04",
+        "Shkni05",
+        "Shkni06",
+        "Shkni07",
+        "Shkni08",
+        "Shkni09",
+        "Shkni10",
+        "Shkni11",
+        "Shkni12",
+        "Shkni13",
+        "Shkni14",
+        "Shkni15",
+        "Shkni16",
+        "Shkni17",
+        "Shkni18",
+        "Shkni19",
+        "Shkni20",
+        "Shkni21",
+        "Shkni22",
+        "Shkni23",
+        "Shkni24",
+        "Shkni25",
+        "Shkni26",
+        "Shkni27",
+        "Shkni28",
+        "Shkni29",
+        "Shkni30"
+      ],
+      "origin": {
+        "gx": 11,
+        "gy": 10
+      },
+      "nodes": [
+        {
+          "id": "Shiel01",
+          "name": "Shield Spec",
+          "icon": "ShieldSpec.png",
+          "desc": "Replaces Special Attack with Vanguard Strike and enhances its power.\nEach additional enemy hit by Vanguard Strike grants 2 extra Photon Energy, up to 10.\nSuccessfully Block prevents losing the stacks of Lightforged Barrier.\n\nLightforged Barrier: Each stack increases Max HP by 2%, up to 10 stacks, with each instance of DMG removing 1 stack. It lasts 25s or until all stacks are consumed. Gaining stacks resets the duration.",
+          "children": [
+            "Shiel02",
+            "Shiel03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel04",
+            "Shiel05"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel05",
+            "Shiel06"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel07"
+          ],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel05",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel08",
+            "Shiel09",
+            "Shiel13"
+          ],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel06",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel10"
+          ],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel07",
+          "name": "Resolved to Return",
+          "icon": "ResolvedtoReturn.png",
+          "desc": "Each time 1 stack of Lightforged Barrier is consumed or deducted, reduces the remaining CD of Radiance by 1 second.",
+          "children": [
+            "Shiel11",
+            "Shiel12"
+          ],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel08",
+          "name": "Bold Fearless",
+          "icon": "BoldFearless.png",
+          "desc": "When Sacred Blade or Judgment deals DMG, there is a fixed 25% chance to cause Vanguard Strike to evolve into Vanguard Hunt.\nVanguard Hunt: Deals Attack Damage equal to 240% ATK to the target, restores 2% of your max HP, and gains Indomitable Courage.\nIndomitable Courage: Increases Haste by 3% for 10s, stacking up to 10 times.",
+          "children": [
+            "Shiel12"
+          ],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel09",
+          "name": "Divine Circle Chant",
+          "icon": "DivineCircleChant.png",
+          "desc": "The recovery rate of Holy Sigils from Haste +100%.",
+          "children": [
+            "Shiel14"
+          ],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel10",
+          "name": "Holy Radiance",
+          "icon": "HolyRadiance.png",
+          "desc": "When Sacred Blade hits an enemy target, it applies a Holy Mark to the target.\nVanguard Strike can spread this Holy Mark to hit enemy targets.",
+          "children": [
+            "Shiel14",
+            "Shiel15"
+          ],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel16",
+            "Shiel26"
+          ],
+          "gx": -3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel12",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel16",
+            "Shiel17",
+            "Shiel18"
+          ],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel13",
+          "name": "Conquest Pursuit",
+          "icon": "ConquestPursuit.png",
+          "desc": "While Zeal Crusade is active, Vanguard Strike evolves into Vanguard Hunt.",
+          "children": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel14",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel18",
+            "Shiel19",
+            "Shiel20"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel20",
+            "Shiel30"
+          ],
+          "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel16",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel21"
+          ],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel17",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel22"
+          ],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel18",
+          "name": "Adversity Enhancement",
+          "icon": "AdversityEnhancement.png",
+          "desc": "Special Attack and damaging Expertise are enhanced based on missing HP. For every 1% HP lost, increases their DMG by 1%.",
+          "children": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel19",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel22"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel20",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel23"
+          ],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel21",
+          "name": "Holy Strike",
+          "icon": "HolyStrike.png",
+          "desc": "Each time 1 layer of Lightforged Barrier is consumed or deducted, 10% chance to obtain 1 Holy Sigil.",
+          "children": [
+            "Shiel24"
+          ],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel22",
+          "name": "Holy Barrier",
+          "icon": "HolyBarrier.png",
+          "desc": "After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.",
+          "children": [
+            "Shiel24",
+            "Shiel25"
+          ],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel23",
+          "name": "Lightforged Drive",
+          "icon": "LightforgedDrive.png",
+          "desc": "When Casting Radiance, it automatically releases Judgment to up to 5 nearby enemy targets.",
+          "children": [
+            "Shiel25"
+          ],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel24",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel27",
+            "Shiel28"
+          ],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel25",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel28",
+            "Shiel29"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel26",
+          "name": "Lightforged Balance",
+          "icon": "LightforgedBalance.png",
+          "desc": "When your HP percentage is higher than your target's, DMG taken from that target -5%.\nWhen your HP percentage is lower than your target's, Judgment deals 50% more DMG.",
+          "children": [
+            "Shiel31",
+            "Shiel32"
+          ],
+          "gx": -3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel27",
+          "name": "Zeal Haste",
+          "icon": "ZealHaste.png",
+          "desc": "For every 15 points of Photon Energy consumed, the remaining CD of Zeal Crusade -1 second.",
+          "children": [
+            "Shiel32"
+          ],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel28",
+          "name": "Radiant Core",
+          "icon": "RadiantCore.png",
+          "desc": "Vanguard Hunt can grant Radiant Core.\nRepeatedly gaining Radiant Core reduces its 2s window.",
+          "children": [
+            "Shiel33"
+          ],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel29",
+          "name": "Divine Circle Resonance",
+          "icon": "DivineCircleResonance.png",
+          "desc": "For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",
+          "children": [
+            "Shiel34"
+          ],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel30",
+          "name": "Overflow Healwall",
+          "icon": "OverflowHealwall.png",
+          "desc": "When your accumulated overhealing reaches 10% of your Max HP, gains 1 stack of Lightforged Barrier.",
+          "children": [
+            "Shiel34",
+            "Shiel35"
+          ],
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel36"
+          ],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel32",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel37",
+            "Shiel38"
+          ],
+          "gx": -2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel33",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel46",
+            "Shiel47",
+            "Shiel53"
+          ],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel34",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel39",
+            "Shiel40"
+          ],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel41"
+          ],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel36",
+          "name": "Divine Guard",
+          "icon": "DivineGuard.png",
+          "desc": "When in the Divine Circle, reduces all DMG taken by 10%.",
+          "children": [
+            "Shiel44"
+          ],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel42"
+          ],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel38",
+          "name": "Light Barrier",
+          "icon": "LightBarrier.png",
+          "desc": "Lightforged Barrier cap +2.",
+          "children": [
+            "Shiel46"
+          ],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel39",
+          "name": "Ultimate Conquest",
+          "icon": "UltimateConquest.png",
+          "desc": "Increases Zeal Crusade DMG by 50%.",
+          "children": [
+            "Shiel47"
+          ],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel40",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel43"
+          ],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel41",
+          "name": "Sigil Pursuit",
+          "icon": "SigilPursuit.png",
+          "desc": "DMG dealt by Vanguard Hunt and Sacred Blade to targets with Holy Sigil increases by 20%.",
+          "children": [
+            "Shiel49"
+          ],
+          "gx": 3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel42",
+          "name": "Judgment Improvement",
+          "icon": "JudgmentImprovement.png",
+          "desc": "For each 1 stack of Lightforged Barrier you possess, Judgment gains 2% bonus healing.",
+          "children": [
+            "Shiel45"
+          ],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel48",
+            "Shiel49"
+          ],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel44",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel50"
+          ],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel45",
+          "name": "Ascension of the Lightforged Barrier",
+          "icon": "AscensionoftheLightforgedBarrier.png",
+          "desc": "Maximum Light Energy +20.\nWhen you have at least 5 stacks of Lightforged Barrier, the Judgment consumes 5 less Light Energy.",
+          "children": [
+            "Shiel51"
+          ],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel46",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel52"
+          ],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel47",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel54"
+          ],
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel48",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Shiel55"
+          ],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel49",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Shiel56"
+          ],
+          "gx": 3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel50",
+          "name": "Light Healing",
+          "icon": "LightHealing.png",
+          "desc": "While having Radiant Shield, gains 12% healing bonus.",
+          "children": [],
+          "gx": -3,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel51",
+          "name": "Judgment of All Beings",
+          "icon": "JudgmentofAllBeings.png",
+          "desc": "When Judgment hits only 1 enemy target, its damage +25%.",
+          "children": [
+            "Shiel57"
+          ],
+          "gx": -2,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel52",
+          "name": "Ruthless Rewind",
+          "icon": "RuthlessRewind.png",
+          "desc": "During the duration of Zeal Crusade, each time 1 Holy Sigil is consumed, it overdrives Zeal Crusade by 1 layer. When the Overdrive reaches 3 layers, Zeal Crusade bursts outward, dealing 200% ATK Attack Damage and is guaranteed to critically hit.",
+          "children": [
+            "Shiel57"
+          ],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel53",
+          "name": "Wide Raid",
+          "icon": "WideRaid.png",
+          "desc": "Increases Zeal Crusade range by 100%. While Zeal Crusade is active, the effect of Indomitable Courage is doubled.",
+          "children": [],
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel54",
+          "name": "Divine Circle Blessing",
+          "icon": "DivineCircleBlessing.png",
+          "desc": "While within the Divine Circle, your Healing Receive effect +10%.",
+          "children": [
+            "Shiel58"
+          ],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel55",
+          "name": "Determination Slash",
+          "icon": "DeterminationSlash.png",
+          "desc": "When Lightforged Barrier has fewer than 5 stacks, taking DMG no longer reduces its stacks. When Lightforged Barrier has 5 or more stacks, taking DMG has a 50% fixed chance not to reduce its stacks.",
+          "children": [
+            "Shiel58"
+          ],
+          "gx": 2,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel56",
+          "name": "Light Protection",
+          "icon": "LightProtection.png",
+          "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
+          "children": [],
+          "gx": 3,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel57",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel59"
+          ],
+          "gx": -2,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel58",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Shiel60"
+          ],
+          "gx": 2,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel59",
+          "name": "Decisive Blade",
+          "icon": "DecisiveBlade.png",
+          "desc": "After Radiant Core explosion, Sacred Blade DMG +100% for 20s. Stacks up to 3 charges, casting Sacred Blade consumes one charge.",
+          "children": [],
+          "gx": -1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Shiel60",
+          "name": "Holy Sigil Enhancement",
+          "icon": "HolySigilEnhancement.png",
+          "desc": "When Judgment deals DMG, the target takes double DMG from Holy Sigil for the next 5s.",
+          "children": [],
+          "gx": 1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    }
+  ]
+}

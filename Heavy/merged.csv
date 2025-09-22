@@ -1,0 +1,173 @@
+id,name,icon,desc,children,gx,gy,cost,seal
+Heavy00,Heavy Guardian,FALSE,,,10,1,,
+Heavy01,Rock Attack,RockAttack.png,Rock Attack + 5,Heavy03,0,0,1,0
+Heavy02,Weak Point Strike,WeakPointStrike.png,"When dealing DMG, Basic Attacks have a fixed 10% chance to trigger Weak Point Strike once.",Heavy06,-1,1,1,0
+Heavy03,Stamina,Stamina.png,Stamina + 30,"Heavy02,Heavy04,Heavy05",0,1,1,0
+Heavy04,Power Conversion,PowerConversion.png,"Armor +2000
+3 Strength provides 2 Armor.",Heavy08,1,1,1,0
+Heavy05,Rage Awakening,RageAwakening.png,"Consuming Rage has a chance to enter Enraged state for 5s. The more Rage you consume, the higher the chance. Each Rage increases the chance by 1%.",Heavy07,0,2,1,0
+Heavy06,Strength,Strength.png,Strength + 10,"Heavy09,Heavy10",-1,3,1,0
+Heavy07,Stamina,Stamina.png,Stamina + 30,Heavy11,0,3,1,0
+Heavy08,Strength,Strength.png,Strength + 10,"Heavy12,Heavy13",1,3,1,0
+Heavy09,Stamina,Stamina.png,Stamina + 30,Heavy14,-2,4,1,0
+Heavy10,Stamina,Stamina.png,Stamina + 30,Heavy23,-1,4,1,0
+Heavy11,Strength,Strength.png,Strength + 10,Heavy15,0,4,1,0
+Heavy12,Rock Attack,RockAttack.png,Rock Attack + 5,Heavy16,1,4,1,0
+Heavy13,Enhanced Weak Point Strike,EnhancedWeakPointStrike.png,Weak Point Strike's fixed trigger chance +10%.,Heavy17,2,4,1,0
+Heavy14,Life Suppress,LifeSuppress.png,You gain the Suppress Specialization effect.,Heavy18,-2,5,1,0
+Heavy15,Stone Fragment Tide,StoneFragmentTide.png,"For 8s after you cast Tectonic Ring, each Basic Attack pulls a target between 8 and 20 meters away toward you. The same target cannot be pulled again within 3s.","Heavy19,Heavy20",0,5,1,0
+Heavy16,Healing Sands,HealingSands.png,Max HP +10%,"Heavy20,Heavy21",1,5,1,0
+Heavy17,Rock Attack,RockAttack.png,Rock Attack + 5,Heavy21,2,5,1,0
+Heavy18,Rock Attack,RockAttack.png,Rock Attack + 5,Heavy22,-2,6,1,0
+Heavy19,Rock Attack,RockAttack.png,Rock Attack + 5,Heavy24,0,6,1,0
+Heavy20,Stamina,Stamina.png,Stamina + 30,Heavy25,1,6,1,0
+Heavy21,Stamina,Stamina.png,Stamina + 30,Heavy26,2,6,1,0
+Heavy22,Strength,Strength.png,Strength + 10,Heavy27,-2,7,1,0
+Heavy23,Stamina,Stamina.png,Stamina + 30,,-1,7,1,0
+Heavy24,Stamina,Stamina.png,Stamina + 30,Heavy28,0,7,1,0
+Heavy25,Sandstone Revival,SandstoneRevival.png,"For each 1 Sand Crystal consumed, restore 1% of Max HP.",Heavy29,1,7,1,0
+Heavy26,Strength,Strength.png,Strength + 10,Heavy30,2,7,1,0
+Heavy27,Enrage Delay,EnrageDelay.png,"When Strength reaches 500, extends the duration of Enraged by 1 second.",,-1,8,1,0
+Heavy28,Valiant Fury,ValiantFury.png,"When Enraged, you gain 30% bonus Armor, decreasing by 5% per second.",,0,8,1,0
+Heavy29,Fury Shelter,FuryShelter.png,"In the state of Enrage, Max HP bonus +20%.",,1,8,1,0
+Heavy30,Enraged Suppress,EnragedSuppress.png,"During Enraged state, Suppress effect +50%.",,2,8,1,0
+Block00,Block Spec,TRUE,"Heavy01,Heavy02,Heavy03,Heavy04,Heavy05,Heavy06,Heavy07,Heavy08,Heavy09,Heavy10,Heavy11,Heavy12,Heavy13,Heavy14,Heavy15,Heavy16,Heavy17,Heavy18,Heavy19,Heavy20,Heavy21,Heavy22,Heavy23,Heavy24,Heavy25,Heavy26,Heavy27,Heavy28,Heavy29,Heavy30",,9,10,,
+Block01,Block Spec,BlockSpec.png,"Replace Special Attack with Counter crush, and enhance the ability.
+When Lucky Block triggers, increases Block DMG RED by 10%",Block02,0,0,1,0
+Block02,Rock Attack,RockAttack.png,Rock Attack + 5,"Block03,Block04",0,1,1,0
+Block03,Stamina,Stamina.png,Stamina + 30,"Block05,Block06",-1,2,1,0
+Block04,Stamina,Stamina.png,Stamina + 30,"Block06,Block07",1,2,1,0
+Block05,Rage Enhancement,RageEnhancement.png,Granite Fury consumes 1 Sand Crystal.,,-2,3,1,0
+Block06,Heart of Rock,HeartofRock.png,"Casting Granite Fury 10 times grants Heart of Rock.
+Heart of Rock: for 10s, Granite Fury evolves into Boulder Smash. Casting Boulder Smash guarantees Enraged status.",Block08,0,3,1,0
+Block07,Rampart Fury,RampartFury.png,"When taking DMG, increases Lucky Block DMG RED by 2% for 8s, stacks up to 3 times.",,2,3,1,0
+Block08,Strength,Strength.png,Strength + 10,Block10,-1,4,1,0
+Block09,Strength,Strength.png,Strength + 10,"Block12,Block13",-1,5,1,0
+Block10,Earth Shard,EarthShard.png,"After casting Boulder Smash, for the next 10s, summons 1 Rock Projectile every 2s.","Block09,Block11,Block21",0,5,1,0
+Block11,Strength,Strength.png,Strength + 10,"Block14,Block15",1,5,1,0
+Block12,Enraged Rock Heart,EnragedRockHeart.png,"While Enraged, increases Lucky Hit Chance by 10%.",,-2,6,1,0
+Block13,Stamina,Stamina.png,Stamina + 30,"Block16,Block17",-1,6,1,0
+Block14,Stamina,Stamina.png,Stamina + 30,"Block18,Block19",1,6,1,0
+Block15,Sand Block,SandBlock.png,"Successfully Blocking has a fixed 20% chance to gain 1 Sand Crystal. If it was a Lucky Block, gain an additional 1 Sand Crystal.",,2,6,1,0
+Block16,Shattering Rageblow,ShatteringRageblow.png,"When dealing DMB, Granite Fury has a 20% chance to allow your next Basic Attack to evolve into Rageblow. Each 2% Luck adds 1% chance.
+After casting Rageblow, increases Block DMG RED by 10% for 10s.",,-2,7,1,0
+Block17,Block Recovery,BlockRecovery.png,"Successful Block restores 1% of your HP and 2 Rage. This can only occur once per second.
+Triggering Lucky Block restores 2% of your HP and 4 Rage. This can only occur once per second.","Block20,Block21",-1,7,1,0
+Block18,Block Counterstrike,BlockCounterstrike.png,"A successful Block triggers a Countercrush, once per second. On a Lucky Block, randomly triggers 1 to 3 Countercrush, once per second.","Block21,Block22",1,7,1,0
+Block19,Fortune Bastion,FortuneBastion.png,"During Bastion, you can block Magic Damage.",,2,7,1,0
+Block20,Stamina,Stamina.png,Stamina + 30,"Block23,Block24",-2,8,1,0
+Block21,Rock Attack,RockAttack.png,Rock Attack + 5,"Block24,Block25",0,8,1,0
+Block22,Stamina,Stamina.png,Stamina + 30,"Block25,Block26",2,8,1,0
+Block23,Fang of the Alpha,FangoftheAlpha.png,DMG Reduction vs. Bosses +8%,Block29,-3,9,1,0
+Block24,Granite Fury,GraniteFury.png,"For every 50 Rage generated, summons 1 Rock Projectile.","Block27,Block29",-1,9,1,0
+Block25,Block Shelter,BlockShelter.png,"Granite Fury DMG enhances Lucky block DMG RED by 2% for 8s.
+Stacks up to 3 times.","Block28,Block30",1,9,1,0
+Block26,Shadow Veil,ShadowVeil.png,"Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)
+Remains unchanged when Earthfort Spec is active.
+If Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.
+(Doubles the effect against Elite or stronger enemies.)",Block30,3,9,1,0
+Block27,Rock Attack,RockAttack.png,Rock Attack + 5,"Block31,Block32",-1,10,1,0
+Block28,Strength,Strength.png,Strength + 10,"Block32,Block33",1,10,1,0
+Block29,Strength,Strength.png,Strength + 10,Block34,-2,11,1,0
+Block30,Rock Attack,RockAttack.png,Rock Attack + 5,Block36,2,11,1,0
+Block31,Stamina,Stamina.png,Stamina + 30,"Block34,Block35",-1,12,1,0
+Block32,Rock Attack,RockAttack.png,Rock Attack + 5,Block35,0,12,1,0
+Block33,Stamina,Stamina.png,Stamina + 30,"Block35,Block36",1,12,1,0
+Block34,Granite Combo,GraniteCombo.png,"When Rock Projectile deals DMG, there is a chance, of which equals Lucky Hit Chance, to summon an additional Rock Projectile.","Block37,Block38",-2,13,1,0
+Block35,Resonant Domain,ResonantDomain.png,Tectonic Ring generates a Sandfield that lasts for 5s.,"Block38,Block39,Block40",0,13,1,0
+Block36,Block Blessing,BlockBlessing.png,A successful Block grants a fixed 30% chance for your next Granite Fury cast to consume no Sand Crystals. This effect can occur up to once every 3s.,"Block40,Block41",2,13,1,0
+Block37,Strength,Strength.png,Strength + 10,"Block42,Block43",-2,14,1,0
+Block38,Stamina,Stamina.png,Stamina + 30,"Block43,Block44",-1,14,1,0
+Block39,Rock Attack,RockAttack.png,Rock Attack + 5,Block45,0,14,1,0
+Block40,Stamina,Stamina.png,Stamina + 30,"Block46,Block47",1,14,1,0
+Block41,Strength,Strength.png,Strength + 10,"Block47,Block48",2,14,1,0
+Block42,Stamina,Stamina.png,Stamina + 30,Block49,-3,15,1,0
+Block43,Counter Storm,CounterStorm.png,"For 10s after casting Tectonic Ring, trigger 1 Block Counterstrike every 2s.",,-2,15,1,0
+Block44,Strength,Strength.png,Strength + 10,"Block50,Block51,Block52",-1,15,1,0
+Block45,Rock Heal,RockHeal.png,"Stone Fist restores 5% max HP. For every 1 extra enemy hit, restores an additional 2% max HP (up to a total of 15%). Excess healing is converted into an equivalent Shield.",Block52,0,15,1,0
+Block46,Strength,Strength.png,Strength + 10,"Block52,Block53,Block54",1,15,1,0
+Block47,Group Suppress,GroupSuppress.png,"Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",,2,15,1,0
+Block48,Stamina,Stamina.png,Stamina + 30,Block55,3,15,1,0
+Block49,Rock Luck,RockLuck.png,"Luck Chance +5%.
+Countercrush Crit +50%.",,-3,16,1,0
+Block50,Stamina,Stamina.png,Stamina + 30,"Block56,Block57",-2,16,1,0
+Block51,Survival Instinct,SurvivalInstinct.png,"When HP falls below 30%, triggers Last Stand, once every 60s.",,-1,16,1,0
+Block52,Strength,Strength.png,Strength + 10,Block58,0,16,1,0
+Block53,Sandstone Shock,SandstoneShock.png,"While in the Brave Bastion state, casting Countercrush or Granite Fury triggers Sand Crystal Shock.",,1,16,1,0
+Block54,Stamina,Stamina.png,Stamina + 30,"Block59,Block60",2,16,1,0
+Block55,Rock Mastery,RockMastery.png,"Increases Mastery by 600.
+While Brave Bastion is active, increases Mastery by 8%.",,3,16,1,0
+Block56,Intimidation,Intimidation.png,"When Rock Projectile hits a target, it reduces all DMG taken by 10% for the next 5s.",,-2,17,1,0
+Block57,Sandstone Rewind,SandstoneRewind.png,"When Rageblow deals DMG, it reduces the CD of Brave Bastion by 3s.",,-1,17,1,0
+Block58,Granite Fury,GraniteFury.png,"Summoning 20 Rock Projectiles grants Heart of Rock: For 10s, Granite Fury evolves into Stone Fist.",,0,17,1,0
+Block59,Sandgrip,Sandgrip.png,"After casting Sandgrip, gains 10% Versatility for 10s.",,1,17,1,0
+Block60,Rampart Fortitude,RampartFortitude.png,"While Brave Bastion is active, taking DMG increases Countercrush DMG by 10% for 10s, stacks up to 10 times.",,2,17,1,0
+Earth00,Earthfort Spec,TRUE,"Heavy01,Heavy02,Heavy03,Heavy04,Heavy05,Heavy06,Heavy07,Heavy08,Heavy09,Heavy10,Heavy11,Heavy12,Heavy13,Heavy14,Heavy15,Heavy16,Heavy17,Heavy18,Heavy19,Heavy20,Heavy21,Heavy22,Heavy23,Heavy24,Heavy25,Heavy26,Heavy27,Heavy28,Heavy29,Heavy30",,11,10,,
+Earth01,Earthfort Spec,EarthfortSpec.png,"Further enhances Shield Bash.
+Each additional enemy hit by Shield Slam increases its DMG by 30%, up to 150%.",Earth02,0,0,1,0
+Earth02,Rock Attack,RockAttack.png,Rock Attack + 5,"Earth03,Earth04",0,1,1,0
+Earth03,Stamina,Stamina.png,Stamina + 30,"Earth05,Earth06",-1,2,1,0
+Earth04,Stamina,Stamina.png,Stamina + 30,"Earth06,Earth07",1,2,1,0
+Earth05,Amplified Earthfort,AmplifiedEarthfort.png,"Upon the triggering of Weak Point Strike, gains Amplified Earthfort.",,-2,3,1,0
+Earth06,Starfall,Starfall.png,"For every 20 Sand Crystals consumed, Star Shatter evolves into Starfall.",Earth08,0,3,1,0
+Earth07,Star Fury,StarFury.png,"Increases Star Shatter and Starfall DMG by 30%, and guarantees Enraged status.",,2,3,1,0
+Earth08,Strength,Strength.png,Strength + 10,Earth10,-1,4,1,0
+Earth09,Strength,Strength.png,Strength + 10,"Earth12,Earth13",-1,5,1,0
+Earth10,Shatter Strike,ShatterStrike.png,"When Star Shatter or Starfall defeats a target, Star Shatter immediately recovers 1 charge.","Earth09,Earth11,Earth21",0,5,1,0
+Earth11,Stamina,Stamina.png,Stamina + 30,"Earth14,Earth15",1,5,1,0
+Earth12,Strength,Strength.png,Strength + 10,,-2,6,1,0
+Earth13,Stamina,Stamina.png,Stamina + 30,"Earth16,Earth17",-1,6,1,0
+Earth14,Elemental Harmony,ElementalHarmony.png,"While shielded, Magic Damage and Wind DMG you take are -25% and 50% respectively.","Earth18,Earth19",1,6,1,0
+Earth15,Lord of the Great Rock,LordoftheGreatRock.png,"Casting Starfall grants Lord of Rock: For 15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",,2,6,1,0
+Earth16,Shield Echo,ShieldEcho.png,"During Sandshroud, adding a shield to yourself via Shield Bash triggers Shield Echo.",,-2,7,1,0
+Earth17,Rock Attack,RockAttack.png,Rock Attack + 5,"Earth20,Earth21",-1,7,1,0
+Earth18,Breath of Stone,BreathofStone.png,Each Sand Crystal consumed reduces the CD of Stoneform by 1s.,"Earth21,Earth22",1,7,1,0
+Earth19,Shield Bash,ShieldBash.png,"Enhances Shield effectiveness by 10%.
+During Sandshroud, additionally enhances Shield effectiveness by 10%.",,2,7,1,0
+Earth20,Stamina,Stamina.png,Stamina + 30,"Earth23,Earth24",-2,8,1,0
+Earth21,Resonant Domain,ResonantDomain.png,Tectonic Ring generates a Sandfield that lasts for 5s.,"Earth24,Earth25",0,8,1,0
+Earth22,Stamina,Stamina.png,Stamina + 30,"Earth25,Earth26",2,8,1,0
+Earth23,Fang of the Alpha,FangoftheAlpha.png,DMG Reduction vs. Bosses +8%,Earth29,-3,9,1,0
+Earth24,Enrage Expansion,EnrageExpansion.png,"In the state of Enrage, attack speed +8%.","Earth27,Earth29",-1,9,1,0
+Earth25,Stone Domain,StoneDomain.png,"During the duration of Sandshroud, being attacked reduces the attack speed of enemy targets within a 5 meter radius by 30% for 3s.
+During the duration of Sandshroud, Armor of allies within an 8 meter radius +10%.","Earth28,Earth30",1,9,1,0
+Earth26,Shadow Veil,ShadowVeil.png,"Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)
+Remains unchanged when Earthfort Spec is active.
+If Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.
+(Doubles the effect against Elite or stronger enemies.)",Earth30,3,9,1,0
+Earth27,Rock Attack,RockAttack.png,Rock Attack + 5,"Earth31,Earth32",-1,10,1,0
+Earth28,Strength,Strength.png,Strength + 10,"Earth32,Earth33",1,10,1,0
+Earth29,Strength,Strength.png,Strength + 10,Earth34,-2,11,1,0
+Earth30,Rock Attack,RockAttack.png,Rock Attack + 5,Earth36,2,11,1,0
+Earth31,Stamina,Stamina.png,Stamina + 30,"Earth34,Earth35",-1,12,1,0
+Earth32,Rock Attack,RockAttack.png,Rock Attack + 5,Earth35,0,12,1,0
+Earth33,Stamina,Stamina.png,Stamina + 30,"Earth35,Earth36",1,12,1,0
+Earth34,Rage Burst Improvement,RageBurstImprovement.png,"Rage Burst gains 1 additional charge.
+While Enraged, Rage Burst and Terra Sunder become instant cast.","Earth37,Earth38",-2,13,1,0
+Earth35,Lord of Rocks,LordofRocks.png,"Casting Starfall grants Lord of Rock: For15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.","Earth38,Earth39,Earth40",0,13,1,0
+Earth36,Shield Combo,ShieldCombo.png,Basic Attacks have a fixed 5% chance to trigger Shield Combo upon dealing DMG. Each 1% Mastery grants an extra 0.2% chance.,"Earth40,Earth41",2,13,1,0
+Earth37,Strength,Strength.png,Strength + 10,"Earth42,Earth43",-2,14,1,0
+Earth38,Stamina,Stamina.png,Stamina + 30,"Earth43,Earth44",-1,14,1,0
+Earth39,Rock Attack,RockAttack.png,Rock Attack + 5,Earth45,0,14,1,0
+Earth40,Stamina,Stamina.png,Stamina + 30,"Earth46,Earth47",1,14,1,0
+Earth41,Strength,Strength.png,Strength + 10,"Earth47,Earth48",2,14,1,0
+Earth42,Stamina,Stamina.png,Stamina + 30,Earth49,-3,15,1,0
+Earth43,Enraged Rupture,EnragedRupture.png,"While Enraged, Rupture is bound to trigger Weak Point Strike.",,-2,15,1,0
+Earth44,Strength,Strength.png,Strength + 10,"Earth50,Earth51,Earth52",-1,15,1,0
+Earth45,Boulder Shield,BoulderShield.png,"During Stoneform, reduces all DMG taken by 10%.",Earth52,0,15,1,0
+Earth46,Strength,Strength.png,Strength + 10,"Earth52,Earth53,Earth54",1,15,1,0
+Earth47,Group Suppress,GroupSuppress.png,"Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",,2,15,1,0
+Earth48,Stamina,Stamina.png,Stamina + 30,Earth55,3,15,1,0
+Earth49,Bravery in Battle,BraveryinBattle.png,"In combat, 50% of overhealing converts to a shield (accumulated shield cannot exceed 50% of Max HP).",,-3,16,1,0
+Earth50,Stamina,Stamina.png,Stamina + 30,"Earth56,Earth57",-2,16,1,0
+Earth51,Survival Instinct,SurvivalInstinct.png,"When HP falls below 30%, triggers Last Stand, once every 60s.",,-1,16,1,0
+Earth52,Strength,Strength.png,Strength + 10,Earth58,0,16,1,0
+Earth53,Resolute Breath,ResoluteBreath.png,"While shielded, use Basic Attack midair to slam down, detonating the shield and dealing damage equal to 30% max HP to nearby enemies.",,1,16,1,0
+Earth54,Stamina,Stamina.png,Stamina + 30,"Earth59,Earth60",2,16,1,0
+Earth55,Slam Shelter,SlamShelter.png,"A successful hit with Shield Bash reduces the target's DMG dealt to you by 3% for 10s, stacking up to 3 times.",,3,16,1,0
+Earth56,Recovery,Recovery.png,"Each successful hit of Expertise Skill or Special Attack increases Strength by 1% in 5s. The effect stacks up to 10 times. With 10 stacks, increases Strength by 10% for 8s. During this effect, the next Expertise Skill heals you for 20% of the DMG dealt, yet no additional Strength stacks can be gained.",,-2,17,1,0
+Earth57,Smash Support,SmashSupport.png,Increases the effectiveness of Shield granted by Shield Bash by 30%.,,-1,17,1,0
+Earth58,Star Shatter Pursuit,StarShatterPursuit.png,Star Shatter and Starfall deals additionally 200% DMG to targets with current HP less than or equal to 35%.,,0,17,1,0
+Earth59,Sandy Shelter,SandyShelter.png,"During Stoneform, every 20 Rage gained triggers Sandy shelter.",,1,17,1,0
+Earth60,Rock Guard,RockGuard.png,"Armor +5%.
+Each attack of Terra Sunder deals an additional instance of Attack Damage to the target, equal to 100% Armor.",,2,17,1,0

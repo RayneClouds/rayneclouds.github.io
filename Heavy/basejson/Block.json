@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Block01",
+    "name": "Block Spec",
+    "icon": "BlockSpe.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block02",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block04",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block05",
+    "name": "Rage Enhancement",
+    "icon": "RageEnha.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Granite Fury consumes 1 Sand Crystal.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block06",
+    "name": "Heart of Rock",
+    "icon": "HeartofR.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Casting Granite Fury 10 times grants Heart of Rock.\nHeart of Rock: for 10s, Granite Fury evolves into Boulder Smash. Casting Boulder Smash guarantees Enraged status.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block07",
+    "name": "Rampart Fury",
+    "icon": "RampartF.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "When taking DMG, increases Lucky Block DMG RED by 2% for 8s, stacks up to 3 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block08",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block09",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block10",
+    "name": "Earth Shard",
+    "icon": "EarthSha.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "After casting Boulder Smash, for the next 10s, summons 1 Rock Projectile every 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block11",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block12",
+    "name": "Enraged Rock Heart",
+    "icon": "EnragedR.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "While Enraged, increases Lucky Hit Chance by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block13",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block14",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block15",
+    "name": "Sand Block",
+    "icon": "SandBloc.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Successfully Blocking has a fixed 20% chance to gain 1 Sand Crystal. If it was a Lucky Block, gain an additional 1 Sand Crystal.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block16",
+    "name": "Shattering Rageblow",
+    "icon": "Shatteri.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "When dealing DMB, Granite Fury has a 20% chance to allow your next Basic Attack to evolve into Rageblow. Each 2% Luck adds 1% chance.\nAfter casting Rageblow, increases Block DMG RED by 10% for 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block17",
+    "name": "Block Recovery",
+    "icon": "BlockRec.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Successful Block restores 1% of your HP and 2 Rage. This can only occur once per second.\nTriggering Lucky Block restores 2% of your HP and 4 Rage. This can only occur once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block18",
+    "name": "Block Counterstrike",
+    "icon": "BlockCou.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "A successful Block triggers a Countercrush, once per second. On a Lucky Block, randomly triggers 1 to 3 Countercrush, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block19",
+    "name": "Fortune Bastion",
+    "icon": "FortuneB.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "During Bastion, you can block Magic Damage.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block21",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block23",
+    "name": "Fang of the Alpha",
+    "icon": "Fangofth.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "DMG Reduction vs. Bosses +8%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block24",
+    "name": "Granite Fury",
+    "icon": "GraniteF.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "For every 50 Rage generated, summons 1 Rock Projectile.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block25",
+    "name": "Block Shelter",
+    "icon": "BlockShe.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Granite Fury DMG enhances Lucky block DMG RED by 2% for 8s.\nStacks up to 3 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block26",
+    "name": "Shadow Veil",
+    "icon": "ShadowVe.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)\nRemains unchanged when Earthfort Spec is active.\nIf Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.\n(Doubles the effect against Elite or stronger enemies.)",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block27",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block28",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block29",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block30",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block32",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block34",
+    "name": "Granite Combo",
+    "icon": "GraniteC.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "When Rock Projectile deals DMG, there is a chance, of which equals Lucky Hit Chance, to summon an additional Rock Projectile.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block35",
+    "name": "Resonant Domain",
+    "icon": "Resonant.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Tectonic Ring generates a Sandfield that lasts for 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block36",
+    "name": "Block Blessing",
+    "icon": "BlockBle.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "A successful Block grants a fixed 30% chance for your next Granite Fury cast to consume no Sand Crystals. This effect can occur up to once every 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block37",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block39",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block41",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block43",
+    "name": "Counter Storm",
+    "icon": "CounterS.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "For 10s after casting Tectonic Ring, trigger 1 Block Counterstrike every 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block44",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block45",
+    "name": "Rock Heal",
+    "icon": "RockHeal.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Stone Fist restores 5% max HP. For every 1 extra enemy hit, restores an additional 2% max HP (up to a total of 15%). Excess healing is converted into an equivalent Shield.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block46",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block47",
+    "name": "Group Suppress",
+    "icon": "GroupSup.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block49",
+    "name": "Rock Luck",
+    "icon": "RockLuck.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Luck Chance +5%.\nCountercrush Crit +50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block50",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block51",
+    "name": "Survival Instinct",
+    "icon": "Survival.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block52",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block53",
+    "name": "Sandstone Shock",
+    "icon": "Sandston.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "While in the Brave Bastion state, casting Countercrush or Granite Fury triggers Sand Crystal Shock.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block54",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block55",
+    "name": "Rock Mastery",
+    "icon": "RockMast.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Increases Mastery by 600.\nWhile Brave Bastion is active, increases Mastery by 8%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block56",
+    "name": "Intimidation",
+    "icon": "Intimida.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "When Rock Projectile hits a target, it reduces all DMG taken by 10% for the next 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block57",
+    "name": "Sandstone Rewind",
+    "icon": "Sandston.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Rageblow deals DMG, it reduces the CD of Brave Bastion by 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block58",
+    "name": "Granite Fury",
+    "icon": "GraniteF.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Summoning 20 Rock Projectiles grants Heart of Rock: For 10s, Granite Fury evolves into Stone Fist.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block59",
+    "name": "Sandgrip",
+    "icon": "Sandgrip.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "After casting Sandgrip, gains 10% Versatility for 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Block60",
+    "name": "Rampart Fortitude",
+    "icon": "RampartF.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "While Brave Bastion is active, taking DMG increases Countercrush DMG by 10% for 10s, stacks up to 10 times.",
+    "cost": null,
+    "seal": null
+  }
+]

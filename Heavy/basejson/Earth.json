@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Earth01",
+    "name": "Earthfort Spec",
+    "icon": "Earthfor.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth02",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth04",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth05",
+    "name": "Amplified Earthfort",
+    "icon": "Amplifie.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Upon the triggering of Weak Point Strike, gains Amplified Earthfort.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth06",
+    "name": "Starfall",
+    "icon": "Starfall.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "For every 20 Sand Crystals consumed, Star Shatter evolves into Starfall.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth07",
+    "name": "Star Fury",
+    "icon": "StarFury.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Increases Star Shatter and Starfall DMG by 30%, and guarantees Enraged status.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth08",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth09",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth10",
+    "name": "Shatter Strike",
+    "icon": "ShatterS.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "When Star Shatter or Starfall defeats a target, Star Shatter immediately recovers 1 charge.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth12",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth13",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth14",
+    "name": "Elemental Harmony",
+    "icon": "Elementa.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "While shielded, Magic Damage and Wind DMG you take are -25% and 50% respectively.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth15",
+    "name": "Lord of the Great Rock",
+    "icon": "Lordofth.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Casting Starfall grants Lord of Rock: For 15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth16",
+    "name": "Shield Echo",
+    "icon": "ShieldEc.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "During Sandshroud, adding a shield to yourself via Shield Bash triggers Shield Echo.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth17",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth18",
+    "name": "Breath of Stone",
+    "icon": "Breathof.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Each Sand Crystal consumed reduces the CD of Stoneform by 1s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth19",
+    "name": "Shield Bash",
+    "icon": "ShieldBa.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Enhances Shield effectiveness by 10%.\nDuring Sandshroud, additionally enhances Shield effectiveness by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth21",
+    "name": "Resonant Domain",
+    "icon": "Resonant.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Tectonic Ring generates a Sandfield that lasts for 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth23",
+    "name": "Fang of the Alpha",
+    "icon": "Fangofth.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "DMG Reduction vs. Bosses +8%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth24",
+    "name": "Enrage Expansion",
+    "icon": "EnrageEx.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "In the state of Enrage, attack speed +8%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth25",
+    "name": "Stone Domain",
+    "icon": "StoneDom.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "During the duration of Sandshroud, being attacked reduces the attack speed of enemy targets within a 5 meter radius by 30% for 3s.\nDuring the duration of Sandshroud, Armor of allies within an 8 meter radius +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth26",
+    "name": "Shadow Veil",
+    "icon": "ShadowVe.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)\nRemains unchanged when Earthfort Spec is active.\nIf Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.\n(Doubles the effect against Elite or stronger enemies.)",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth27",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth28",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth29",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth30",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth32",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth34",
+    "name": "Rage Burst Improvement",
+    "icon": "RageBurs.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Rage Burst gains 1 additional charge.\nWhile Enraged, Rage Burst and Terra Sunder become instant cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth35",
+    "name": "Lord of Rocks",
+    "icon": "LordofRo.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Casting Starfall grants Lord of Rock: For15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth36",
+    "name": "Shield Combo",
+    "icon": "ShieldCo.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Basic Attacks have a fixed 5% chance to trigger Shield Combo upon dealing DMG. Each 1% Mastery grants an extra 0.2% chance.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth37",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth39",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth41",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth43",
+    "name": "Enraged Rupture",
+    "icon": "EnragedR.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "While Enraged, Rupture is bound to trigger Weak Point Strike.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth44",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth45",
+    "name": "Boulder Shield",
+    "icon": "BoulderS.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "During Stoneform, reduces all DMG taken by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth46",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth47",
+    "name": "Group Suppress",
+    "icon": "GroupSup.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth49",
+    "name": "Bravery in Battle",
+    "icon": "Braveryi.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "In combat, 50% of overhealing converts to a shield (accumulated shield cannot exceed 50% of Max HP).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth50",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth51",
+    "name": "Survival Instinct",
+    "icon": "Survival.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth52",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth53",
+    "name": "Resolute Breath",
+    "icon": "Resolute.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "While shielded, use Basic Attack midair to slam down, detonating the shield and dealing damage equal to 30% max HP to nearby enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth54",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth55",
+    "name": "Slam Shelter",
+    "icon": "SlamShel.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "A successful hit with Shield Bash reduces the target's DMG dealt to you by 3% for 10s, stacking up to 3 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth56",
+    "name": "Recovery",
+    "icon": "Recovery.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Each successful hit of Expertise Skill or Special Attack increases Strength by 1% in 5s. The effect stacks up to 10 times. With 10 stacks, increases Strength by 10% for 8s. During this effect, the next Expertise Skill heals you for 20% of the DMG dealt, yet no additional Strength stacks can be gained.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth57",
+    "name": "Smash Support",
+    "icon": "SmashSup.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Increases the effectiveness of Shield granted by Shield Bash by 30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth58",
+    "name": "Star Shatter Pursuit",
+    "icon": "StarShat.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Star Shatter and Starfall deals additionally 200% DMG to targets with current HP less than or equal to 35%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth59",
+    "name": "Sandy Shelter",
+    "icon": "SandyShe.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "During Stoneform, every 20 Rage gained triggers Sandy shelter.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Earth60",
+    "name": "Rock Guard",
+    "icon": "RockGuar.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Armor +5%.\nEach attack of Terra Sunder deals an additional instance of Attack Damage to the target, equal to 100% Armor.",
+    "cost": null,
+    "seal": null
+  }
+]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BP Star Resonance Skill Tree</title>
+<link rel="icon" type="image/x-icon" href="Styles/favicon.png" >	
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <h1>Stormblade</h1>
+
+  <div class="header-right">
+    <!-- Buttons + reset -->
+    <div class="header-buttons-row">
+      <div id="tierButtons"></div>
+      <button id="resetAll" class="header-btn">Reset All</button>
+    </div>
+
+    <!-- Counters inside fixed 300px zone -->
+    <div class="header-counters">
+      <div id="resourceCounters" class="resource-counters">
+        <div>Talent Points: <span id="tpUsed">0</span>/<input id="tpMax" type="number" value="70" min="0" /></div>
+        <div>Arcane Seals: <span id="sealUsed">0</span>/<input id="sealMax" type="number" value="50" min="0" /></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<aside>
+  <!-- Continuous background -->
+  <div class="sidebar-bg"></div>
+
+  <!-- Attribute container (acts like a sub-header in the sidebar) -->
+  <div class="attr-container">
+    <img id="hoverPreview" alt="preview" />
+  </div>
+
+  <!-- Text content -->
+<div class="sidebar-controls">
+  <button id="clearSidebar" class="header-btn">Clear ✖</button>
+</div>
+
+  <div class="sidebar-text">
+No node selected<br>
+
+  </div>
+  <button id="resetCur" class="header-btn">
+  <img src="img/Reset.png" alt="Reset Current">
+  </button><br>
+  <button id="MaxButton" class="header-btn">
+  <img src="img/MaxTal.png" alt="Max Current Tree">
+  <div class="MaxTreeBtn">Max Current Tree</div>
+  </button>
+
+
+</aside>
+
+  <main>
+    <div class="zoom-container" id="zoomArea">
+
+    </div>
+  </main>
+
+	<script src="script.js"></script>
+<div id="toast-container"></div>
+ 
+</body>
+</html>

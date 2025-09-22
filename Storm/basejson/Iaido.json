@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Iaido01",
+    "name": "Iaido Slash Spec",
+    "icon": "IaidoSla.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Further enhances the ability to use Iaido Slash.\nWhen the number of Thunder Sigils consumed by Iaido Slash and its enhanced skill (Thunder Cut) equals the current maximum Thunder Sigil count, increases the DMG of Iaido Slash and its enhanced skill (Thunder Cut) by 12% and grants Super Armor during the cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido04",
+    "name": "Iaido Mastery",
+    "icon": "IaidoMas.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Iaido Slash's Crit +10%.\nWhen Iaido Slash's critical rate exceeds 60%, each additional 1% grants 1% bonus Crit DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido05",
+    "name": "Thunder Sigil Affinity",
+    "icon": "ThunderS.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Each additional Thunder Sigil consumed by Expertise or Special Attacks increases your Lightning DMG dealt by 1.5% when they deal DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido06",
+    "name": "Flash Frenzy Blade",
+    "icon": "FlashFre.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Crit hit of Iaido Slash grants a fixed 10% chance to clear the CD of Flash Strike and Raijin Dash. Chance +10% for each Thunder Sigil consumed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido08",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido09",
+    "name": "Zen Moment",
+    "icon": "ZenMomen.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Crit Hits of Special Attacks grant 100 Blade Intent.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido10",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido13",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido14",
+    "name": "Thunder God's Might",
+    "icon": "ThunderG.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Activate Volt Surge. Flash Strike and Raijin Dash evolve into Dracoflash and Phantom Slash.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido17",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido18",
+    "name": "Thunder Curse",
+    "icon": "ThunderC.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido19",
+    "name": "Instant Slash",
+    "icon": "InstantS.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Iaido Slash reduces the Armor of the target hit by 6%. The effect lasts 5s and stacks up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido20",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido21",
+    "name": "Rapid Thunder Assault",
+    "icon": "RapidThu.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Each additional Thunder Sigil consumed by a skill increases its DMG by 3%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido22",
+    "name": "Frenzied Thunder Roar",
+    "icon": "Frenzied.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido23",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 3,
+    "gy": 5,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido24",
+    "name": "Wind Assault II",
+    "icon": "WindAssa.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Unleashes formidable energy to weaken nearby enemies, reducing their movement speed. Common monsters below 15% HP will instantly disperse.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido25",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido26",
+    "name": "Violent Slash",
+    "icon": "ViolentS.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Increases the critical rate of Iaido Slash and Thunder Cut by 12%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido27",
+    "name": "End of Annihilation",
+    "icon": "EndofAnn.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido28",
+    "name": "Blade Intent Thunder Strike",
+    "icon": "BladeInt.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "When Iaido Slash deals Crit DMG, if the Blade Intent exceeds 20, launches Thunderstrike (which can only be triggered once per use of Iaido Slash).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido29",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido30",
+    "name": "Wind Assault I",
+    "icon": "WindAssa.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Crit Rate obtained in any way is increased by 12%, but Luck chance obtained in any way are reduced by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido31",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido32",
+    "name": "Flash Sharp Strike",
+    "icon": "FlashSha.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Triggers Sharp Strike when casting Iaido Slash.\nSharp Strike: Increases Crit Rate of Flash Strike and its enhanced skill (Dracoflash) by 10%. If Flash Strike and its enhanced skill (Dracoflash) deals Crit DMG 1 time, gains 1 Thunder Sigil. This effect is removed after the use of Flash Strike and its enhanced skill (Dracoflash) or after 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido33",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido34",
+    "name": "Thunder Sigil Rewind",
+    "icon": "ThunderS.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "When consuming Thunder Sigils, there is a chance to return 1 Thunder Sigil, and for each additional 1 Thunder Sigil consumed, the return chance +8%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido35",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido36",
+    "name": "Unmatched Raijin Dash",
+    "icon": "Unmatche.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Raijin Dash and its enhanced skill (Phantom Slash) ignore the target's Armor.\nRaijin Dash and its enhanced skill (Phantom Slash) deal 10% more damage per additional 1 enemy hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido37",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -4,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido39",
+    "name": "Thunder Sigil Charm",
+    "icon": "ThunderS.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Increases Max Thunder Sigil by 1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido40",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido41",
+    "name": "Infinite Thunder",
+    "icon": "Infinite.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "For every 5 Thunder Sigils consumed, the remaining CD time of Volt Surge -0.5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 4,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido43",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido44",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido45",
+    "name": "Vacuum Slash",
+    "icon": "VacuumSl.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Each cast of Flash Strike, Raijin Dash, or its evolved skills grants 1 layer of Thundrage. When Thundrage reaches 5 stacks, Iaido Slash evolves into Thunder Cut. After casting Thunder Cut, 5 stacks of Thundrage are consumed. Thundrage stacks up to 8 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido46",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido47",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido48",
+    "name": "Thunder Reversal",
+    "icon": "ThunderR.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Consumes 100 Blade Intent to gain stacks of Thunder Reversal Mark. When Thunder Reversal Mark reaches 5 stacks, casting Iaido Slash grants the Thunder Reversal effect and removes all Thunder Reversal Mark stacks.\nThunder Reversal: Gain a 10% Lightning DMG bonus for 15s. During Thunder Reversal, Thunder Reversal Mark cannot be gained.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido49",
+    "name": "Duel Awareness",
+    "icon": "DuelAwar.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido50",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido51",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido52",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido53",
+    "name": "Break Slash",
+    "icon": "BreakSla.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "When dealing Crit DMG, Iaido Slash and its enhanced skill (Thunder Cut) nullifies 30% of the targets' Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido54",
+    "name": "Shadow Despise",
+    "icon": "ShadowDe.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido55",
+    "name": "Arcane",
+    "icon": "Arcane.png",
+    "gx": -4,
+    "gy": 11,
+    "desc": "Crit DMG +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido56",
+    "name": "Dual Blade Intent",
+    "icon": "DualBlad.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "When Blade Intent is at least 100, Flash Strike, Raijin Dash, and their enhanced skills (Dracoflash, Phantom Slash) gain Crit Rate by 10%.\nWhen Blade Intent is at least 100, greatly increases Flash Strike's casting speed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido57",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido58",
+    "name": "Bladewind Domain",
+    "icon": "Bladewin.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Every 3 casts of Overdrive allows the next Iaido Slash to generate a Bladewind Domain in front. Each time Bladewind Domain deals DMG, reduces the CD of Oblivion Combo by 1.5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido59",
+    "name": "Advancement",
+    "icon": "Advancem.png",
+    "gx": 4,
+    "gy": 9,
+    "desc": "Mastery +6%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Iaido60",
+    "name": "Thundrage",
+    "icon": "Thundrag.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Each use of Dracoflash or Phantom Slash grants 4 stacks of Thundrage, up to 8 stacks.",
+    "cost": null,
+    "seal": null
+  }
+]

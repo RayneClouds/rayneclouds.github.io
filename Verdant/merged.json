@@ -230,8 +230,7 @@
           "desc": "When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.",
           "children": [
             "Verdo19",
-            "Verdo20",
-            "Verdo23"
+            "Verdo20"
           ],
           "gx": 1,
           "gy": 6,
@@ -406,12 +405,40 @@
       "name": "Smite",
       "collapsed": true,
       "requiresUnlocked": [
-        "f\"Verdo{str(i).zfill(2)}\" for i in range(1",
-        "31)"
+        "Verdo01",
+        "Verdo02",
+        "Verdo03",
+        "Verdo04",
+        "Verdo05",
+        "Verdo06",
+        "Verdo07",
+        "Verdo08",
+        "Verdo09",
+        "Verdo10",
+        "Verdo11",
+        "Verdo12",
+        "Verdo13",
+        "Verdo14",
+        "Verdo15",
+        "Verdo16",
+        "Verdo17",
+        "Verdo18",
+        "Verdo19",
+        "Verdo20",
+        "Verdo21",
+        "Verdo22",
+        "Verdo23",
+        "Verdo24",
+        "Verdo25",
+        "Verdo26",
+        "Verdo27",
+        "Verdo28",
+        "Verdo29",
+        "Verdo30"
       ],
       "origin": {
-        "gx": 10,
-        "gy": 12
+        "gx": 9,
+        "gy": 11
       },
       "nodes": [
         {
@@ -1206,12 +1233,40 @@
       "name": "Life Bloom",
       "collapsed": true,
       "requiresUnlocked": [
-        "f\"Verdo{str(i).zfill(2)}\" for i in range(1",
-        "31)"
+        "Verdo01",
+        "Verdo02",
+        "Verdo03",
+        "Verdo04",
+        "Verdo05",
+        "Verdo06",
+        "Verdo07",
+        "Verdo08",
+        "Verdo09",
+        "Verdo10",
+        "Verdo11",
+        "Verdo12",
+        "Verdo13",
+        "Verdo14",
+        "Verdo15",
+        "Verdo16",
+        "Verdo17",
+        "Verdo18",
+        "Verdo19",
+        "Verdo20",
+        "Verdo21",
+        "Verdo22",
+        "Verdo23",
+        "Verdo24",
+        "Verdo25",
+        "Verdo26",
+        "Verdo27",
+        "Verdo28",
+        "Verdo29",
+        "Verdo30"
       ],
       "origin": {
-        "gx": 13,
-        "gy": 12
+        "gx": 11,
+        "gy": 11
       },
       "nodes": [
         {

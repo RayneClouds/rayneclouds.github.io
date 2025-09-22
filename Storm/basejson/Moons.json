@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Moons01",
+    "name": "Moonstrike Spec",
+    "icon": "Moonstri.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons04",
+    "name": "Thunder Seed",
+    "icon": "ThunderS.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Dealing DMG with Thundercut guarantees 1 Charge Seed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons05",
+    "name": "Thunder Rune Mastery",
+    "icon": "ThunderR.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Doubles Max Blade Intent.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons06",
+    "name": "Moonstrike Delay",
+    "icon": "Moonstri.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Blade Intent cap +25.\nAfter 5 consecutive Thundercuts in one go, it evolves into the more powerful Thundercleave, which deals higher DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons08",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons09",
+    "name": "Touch of Thunder Soul",
+    "icon": "TouchofT.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Moonstrike has a fixed 30% chance to cast Thunderstrike on a Lucky Hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons10",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons13",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons14",
+    "name": "Chaos Breaker",
+    "icon": "ChaosBre.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "When Stormflash is activated, Moonstrike evolves into Chaos Breaker.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons17",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons18",
+    "name": "Thunder Curse",
+    "icon": "ThunderC.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons19",
+    "name": "Thunder Scythe",
+    "icon": "ThunderS.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Reduces the Charge Seeds that Storm Scythe consumes by 3.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons20",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons21",
+    "name": "Moonlight Charge",
+    "icon": "Moonligh.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "When Moonstrike triggers a Lucky Hit, it has a fixed 30% chance to restore 1 Charge Seed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons22",
+    "name": "Frenzied Thunder Roar",
+    "icon": "Frenzied.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons23",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 3,
+    "gy": 5,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons24",
+    "name": "Thunder Strike Whisper",
+    "icon": "ThunderS.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Increases the Lightning DMG Thunderstrike deals by 50%, yet Thunderstrike never deals Crit DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons25",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons26",
+    "name": "Thousand Thunder Flashes",
+    "icon": "Thousand.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Each 2 Thunderstrike triggered reduces the CD of Stormflash by 0.5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons27",
+    "name": "End of Annihilation",
+    "icon": "EndofAnn.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons28",
+    "name": "Phantom Delay",
+    "icon": "PhantomD.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Casting Chaos Breaker immediately grants 30 Charge Seeds.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons29",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons30",
+    "name": "Moon Blade Swift",
+    "icon": "MoonBlad.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Moonstrike additionally deals 1 instance of Whirling DMG every 6s. Each 2% Haste reduces its CD by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons31",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons32",
+    "name": "Blade Intent - Rare",
+    "icon": "BladeInt.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Increases Max Blade Intent by 75.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons33",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons34",
+    "name": "Phantom Scythe Realm I",
+    "icon": "PhantomS.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Increases Max Moonstrike by 1. Reduces the DMG dealt by Moonstrike by 35%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons35",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons36",
+    "name": "Moonstrike Sharp Strike",
+    "icon": "Moonstri.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "When Blade Intent is at least 50, Moonstrike and its enhanced skill (Chaos Breaker) are guaranteed to lands a Crit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons37",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons38",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -4,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons39",
+    "name": "Raijin Dash Charge",
+    "icon": "RaijinDa.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "When Thundercut triggers a Lucky Hit, grants 1 Charge Seed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons40",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons41",
+    "name": "Blade Intent Recovery",
+    "icon": "BladeInt.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Each 1% Haste increases the REG SPD of Blade Intent by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 4,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons43",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons44",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons45",
+    "name": "Divine Sickle",
+    "icon": "DivineSi.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Each 7 uses of Storm Scythe triggers Divine Sickle. Divine Sickle always deals Crit DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons46",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons47",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons48",
+    "name": "Thunder Sigil Charm",
+    "icon": "ThunderS.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Increases Max Thunder Sigil by 1. Storm Scythe and Divine Sickle are bound to trigger Piercing Slash.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons49",
+    "name": "Duel Awareness",
+    "icon": "DuelAwar.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons50",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons51",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons52",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons53",
+    "name": "Shadow Despise",
+    "icon": "ShadowDe.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons54",
+    "name": "Thunder Strike Enhancement",
+    "icon": "ThunderS.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "Increases the DMG dealt by Thunderstrike by 20%. Each 1% Luck grants Thunderstrike 1% more DMG dealt.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons55",
+    "name": "Charge Catcher",
+    "icon": "ChargeCa.png",
+    "gx": -4,
+    "gy": 11,
+    "desc": "Each enemy defeated grants 1 Charge Seed (effective within a team).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons56",
+    "name": "Breath of Mark",
+    "icon": "Breathof.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Lucky Hits of Moonstrike grant a fixed 30% chance to restore 1 Thunder Sigil, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons57",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons58",
+    "name": "Lightning Flash",
+    "icon": "Lightnin.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "During Stormflash, accelerates Moonstrike's Attack SPD by 100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons59",
+    "name": "Power of Thunder",
+    "icon": "PowerofT.png",
+    "gx": 4,
+    "gy": 9,
+    "desc": "Every 10 instances of DMG dealt triggers Thunder Power.\nThunder Power: Increases Thunder Element damage dealt by 10 for 10s, stacking up to 10 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Moons60",
+    "name": "Phantom Scythe Realm II",
+    "icon": "PhantomS.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Casting Thundercut has a chance to grant 25 Blade Intent. The chance is equal to your Luck chance.",
+    "cost": null,
+    "seal": null
+  }
+]

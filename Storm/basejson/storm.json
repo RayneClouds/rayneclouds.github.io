@@ -1,0 +1,302 @@
+[
+  {
+    "id": "storm01",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm04",
+    "name": "Iai Thunder Dance",
+    "icon": "IaiThund.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "When you gain 3 or more Thunder Sigils, a Special Attack is cast, attacking 2 times consecutively.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm05",
+    "name": "Blade Intent",
+    "icon": "BladeInt.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "3 points of Blade Intent are gained when an Expertise Skill is cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm06",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm08",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm09",
+    "name": "Thunder Sigil Charm",
+    "icon": "ThunderS.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Increases Max Thunder Sigil by 1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm11",
+    "name": "Keen Strike",
+    "icon": "KeenStri.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "When Basic Attacks deal DMG, 10% chance to trigger Piercing Slash, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm13",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm14",
+    "name": "Agility Conversion",
+    "icon": "AgilityC.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Every 8 Agility grants 1 ATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm15",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm17",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm18",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm20",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm21",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm22",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm23",
+    "name": "Thunder Attack",
+    "icon": "ThunderA.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Thunder Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm24",
+    "name": "Thunder Sigil Charm",
+    "icon": "ThunderS.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Increases Max Thunder Sigil by 1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm25",
+    "name": "Swift",
+    "icon": "Swift.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Each 1% Haste provides 1% Attack Speed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm26",
+    "name": "Swift Blade",
+    "icon": "SwiftBla.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Agility reaches 500 points, Crit DMG and Lucky Damage +5%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm27",
+    "name": "Overdrive Refinement",
+    "icon": "Overdriv.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Reduces the CD of Overdrive by 30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm28",
+    "name": "Thunder Charm Blade",
+    "icon": "ThunderC.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "For each 1 Thunder Sigil consumed by Expertise Skill, gain an additional 3 points of Blade Intent.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm29",
+    "name": "Thunder Whirl",
+    "icon": "ThunderW.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Piercing Slash grants 1 layer of Overdrive.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "storm30",
+    "name": "Keen Enhancement",
+    "icon": "KeenEnha.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Increases the fixed chance to trigger Piercing Slash by 10%.",
+    "cost": null,
+    "seal": null
+  }
+]

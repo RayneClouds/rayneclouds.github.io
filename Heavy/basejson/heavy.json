@@ -1,0 +1,302 @@
+[
+  {
+    "id": "heavy01",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy02",
+    "name": "Weak Point Strike",
+    "icon": "WeakPoin.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "When dealing DMG, Basic Attacks have a fixed 10% chance to trigger Weak Point Strike once.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy04",
+    "name": "Power Conversion",
+    "icon": "PowerCon.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Armor +2000\n3 Strength provides 2 Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy05",
+    "name": "Rage Awakening",
+    "icon": "RageAwak.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Consuming Rage has a chance to enter Enraged state for 5s. The more Rage you consume, the higher the chance. Each Rage increases the chance by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy06",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy08",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy11",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy12",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy13",
+    "name": "Enhanced Weak Point Strike",
+    "icon": "Enhanced.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Weak Point Strike's fixed trigger chance +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy14",
+    "name": "Life Suppress",
+    "icon": "LifeSupp.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "You gain the Suppress Specialization effect.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy15",
+    "name": "Stone Fragment Tide",
+    "icon": "StoneFra.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "For 8s after you cast Tectonic Ring, each Basic Attack pulls a target between 8 and 20 meters away toward you. The same target cannot be pulled again within 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy16",
+    "name": "Healing Sands",
+    "icon": "HealingS.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Max HP +10%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy17",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy18",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy19",
+    "name": "Rock Attack",
+    "icon": "RockAtta.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Rock Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy20",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy21",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy22",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy23",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy25",
+    "name": "Sandstone Revival",
+    "icon": "Sandston.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "For each 1 Sand Crystal consumed, restore 1% of Max HP.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy26",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy27",
+    "name": "Enrage Delay",
+    "icon": "EnrageDe.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "When Strength reaches 500, extends the duration of Enraged by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy28",
+    "name": "Valiant Fury",
+    "icon": "ValiantF.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Enraged, you gain 30% bonus Armor, decreasing by 5% per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy29",
+    "name": "Fury Shelter",
+    "icon": "FuryShel.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "In the state of Enrage, Max HP bonus +20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "heavy30",
+    "name": "Enraged Suppress",
+    "icon": "EnragedS.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "During Enraged state, Suppress effect +50%.",
+    "cost": null,
+    "seal": null
+  }
+]

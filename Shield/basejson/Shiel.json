@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Shiel01",
+    "name": "Shield Spec",
+    "icon": "ShieldSp.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Replaces Special Attack with Vanguard Strike and enhances its power.\nEach additional enemy hit by Vanguard Strike grants 2 extra Photon Energy, up to 10.\nSuccessfully Block prevents losing the stacks of Lightforged Barrier.\n\nLightforged Barrier: Each stack increases Max HP by 2%, up to 10 stacks, with each instance of DMG removing 1 stack. It lasts 25s or until all stacks are consumed. Gaining stacks resets the duration.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel04",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel05",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel06",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel07",
+    "name": "Resolved to Return",
+    "icon": "Resolved.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Each time 1 stack of Lightforged Barrier is consumed or deducted, reduces the remaining CD of Radiance by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel08",
+    "name": "Bold Fearless",
+    "icon": "BoldFear.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "When Sacred Blade or Judgment deals DMG, there is a fixed 25% chance to cause Vanguard Strike to evolve into Vanguard Hunt.\nVanguard Hunt: Deals Attack Damage equal to 240% ATK to the target, restores 2% of your max HP, and gains Indomitable Courage.\nIndomitable Courage: Increases Haste by 3% for 10s, stacking up to 10 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel09",
+    "name": "Divine Circle Chant",
+    "icon": "DivineCi.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "The recovery rate of Holy Sigils from Haste +100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel10",
+    "name": "Holy Radiance",
+    "icon": "HolyRadi.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "When Sacred Blade hits an enemy target, it applies a Holy Mark to the target.\nVanguard Strike can spread this Holy Mark to hit enemy targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel12",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel13",
+    "name": "Conquest Pursuit",
+    "icon": "Conquest.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "While Zeal Crusade is active, Vanguard Strike evolves into Vanguard Hunt.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel14",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel16",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel17",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel18",
+    "name": "Adversity Enhancement",
+    "icon": "Adversit.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Special Attack and damaging Expertise are enhanced based on missing HP. For every 1% HP lost, increases their DMG by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel20",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel21",
+    "name": "Holy Strike",
+    "icon": "HolyStri.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Each time 1 layer of Lightforged Barrier is consumed or deducted, 10% chance to obtain 1 Holy Sigil.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel22",
+    "name": "Holy Barrier",
+    "icon": "HolyBarr.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel23",
+    "name": "Lightforged Drive",
+    "icon": "Lightfor.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "When Casting Radiance, it automatically releases Judgment to up to 5 nearby enemy targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel24",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel25",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel26",
+    "name": "Lightforged Balance",
+    "icon": "Lightfor.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "When your HP percentage is higher than your target's, DMG taken from that target -5%.\nWhen your HP percentage is lower than your target's, Judgment deals 50% more DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel27",
+    "name": "Zeal Haste",
+    "icon": "ZealHast.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "For every 15 points of Photon Energy consumed, the remaining CD of Zeal Crusade -1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel28",
+    "name": "Radiant Core",
+    "icon": "RadiantC.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Vanguard Hunt can grant Radiant Core.\nRepeatedly gaining Radiant Core reduces its 2s window.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel29",
+    "name": "Divine Circle Resonance",
+    "icon": "DivineCi.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel30",
+    "name": "Overflow Healwall",
+    "icon": "Overflow.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "When your accumulated overhealing reaches 10% of your Max HP, gains 1 stack of Lightforged Barrier.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel33",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel34",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel36",
+    "name": "Divine Guard",
+    "icon": "DivineGu.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "When in the Divine Circle, reduces all DMG taken by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel37",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel38",
+    "name": "Light Barrier",
+    "icon": "LightBar.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Lightforged Barrier cap +2.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel39",
+    "name": "Ultimate Conquest",
+    "icon": "Ultimate.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Increases Zeal Crusade DMG by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel41",
+    "name": "Sigil Pursuit",
+    "icon": "SigilPur.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "DMG dealt by Vanguard Hunt and Sacred Blade to targets with Holy Sigil increases by 20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel42",
+    "name": "Judgment Improvement",
+    "icon": "Judgment.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "For each 1 stack of Lightforged Barrier you possess, Judgment gains 2% bonus healing.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel43",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel44",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel45",
+    "name": "Ascension of the Lightforged Barrier",
+    "icon": "Ascensio.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Maximum Light Energy +20.\nWhen you have at least 5 stacks of Lightforged Barrier, the Judgment consumes 5 less Light Energy.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel46",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel47",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel48",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel49",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel50",
+    "name": "Light Healing",
+    "icon": "LightHea.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "While having Radiant Shield, gains 12% healing bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel51",
+    "name": "Judgment of All Beings",
+    "icon": "Judgment.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "When Judgment hits only 1 enemy target, its damage +25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel52",
+    "name": "Ruthless Rewind",
+    "icon": "Ruthless.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "During the duration of Zeal Crusade, each time 1 Holy Sigil is consumed, it overdrives Zeal Crusade by 1 layer. When the Overdrive reaches 3 layers, Zeal Crusade bursts outward, dealing 200% ATK Attack Damage and is guaranteed to critically hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel53",
+    "name": "Wide Raid",
+    "icon": "WideRaid.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Increases Zeal Crusade range by 100%. While Zeal Crusade is active, the effect of Indomitable Courage is doubled.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel54",
+    "name": "Divine Circle Blessing",
+    "icon": "DivineCi.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "While within the Divine Circle, your Healing Receive effect +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel55",
+    "name": "Determination Slash",
+    "icon": "Determin.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "When Lightforged Barrier has fewer than 5 stacks, taking DMG no longer reduces its stacks. When Lightforged Barrier has 5 or more stacks, taking DMG has a 50% fixed chance not to reduce its stacks.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel56",
+    "name": "Light Protection",
+    "icon": "LightPro.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel57",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel58",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel59",
+    "name": "Decisive Blade",
+    "icon": "Decisive.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "After Radiant Core explosion, Sacred Blade DMG +100% for 20s. Stacks up to 3 charges, casting Sacred Blade consumes one charge.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Shiel60",
+    "name": "Holy Sigil Enhancement",
+    "icon": "HolySigi.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "When Judgment deals DMG, the target takes double DMG from Holy Sigil for the next 5s.",
+    "cost": null,
+    "seal": null
+  }
+]

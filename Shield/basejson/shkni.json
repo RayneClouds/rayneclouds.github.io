@@ -1,0 +1,302 @@
+[
+  {
+    "id": "shkni01",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni02",
+    "name": "Condemn",
+    "icon": "Condemn.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "When casting a skill that consumes Photon Energy, there is a 30% fixed chance for Basic Attacks to evolve into Condemn.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni04",
+    "name": "Power Conversion",
+    "icon": "PowerCon.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Armor +2000\n3 Strength provides 2 Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni05",
+    "name": "Lightforged Body",
+    "icon": "Lightfor.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Every 1 Holy Sigil consumed grants a Radiant shield equal to 30% ATK (depending on Adventurer Level, up to 60%).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni06",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni08",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni10",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni11",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni13",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni14",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni15",
+    "name": "Lightforged Fortitude",
+    "icon": "Lightfor.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "During the duration of Radiant Shield, Block chance +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni16",
+    "name": "Haste Sigil",
+    "icon": "HasteSig.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Each 1% haste increases the recovery speed of Holy Sigil by 1%, Holy Sigil recovery time = Holy Sigil initial recovery time / (1 + Holy Sigil recovery speed bonus).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni17",
+    "name": "Lightforge Continuum",
+    "icon": "Lightfor.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "For every 20 points of Photon Energy consumed, gains Radiant Shield equal to 30% ATK (this ratio is affected by Adventurer Level, up to 60%).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni18",
+    "name": "Ring of Judgment",
+    "icon": "RingofJu.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Casting Judgment generates a Divine Circle, with a CD of 30s.\nEach Holy Sigil consumed reduces the remaining CD by 1s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni19",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni20",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni21",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni23",
+    "name": "Condemn Time Limit",
+    "icon": "CondemnT.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Condemn deals damage, it immediately cools down 1 Holy Sigil (prioritizing the Holy Sigil with the longest remaining CD).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni25",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni26",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni27",
+    "name": "Light of Condemn",
+    "icon": "LightofC.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "While inside a Divine Circle, your Condemn is enhanced—thrusting a blade of light forward and dealing double DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni28",
+    "name": "Life Enhancement",
+    "icon": "LifeEnha.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "When Strength reaches 500 points, Max HP +12%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni29",
+    "name": "Blessing of Holy Sigil",
+    "icon": "Blessing.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "When using a Skill that consumes Holy Sigils, 20% chance for your next Holy Sigil-consuming skill to consume no Holy Sigils. The effect lasts for 8s or until a Holy Sigil-consuming skill is cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "shkni30",
+    "name": "Energy Guard",
+    "icon": "EnergyGu.png",
+    "gx": 2,
+    "gy": 11,
+    "desc": "After Casting the Ultimate, the aggro generated by Allies is transferred to oneself, lasting for 6s.",
+    "cost": null,
+    "seal": null
+  }
+]

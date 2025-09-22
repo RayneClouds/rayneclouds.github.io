@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Recov01",
+    "name": "Recovery Spec",
+    "icon": "Recovery.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Continue to enhance the ability to use Valor Bash.\nRadiant Impact is accompanied by Radiant Impact, and when Radiant Impact hits an enemy target, it taunts them.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov04",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov05",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov06",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov07",
+    "name": "Holy Light Time Limit",
+    "icon": "HolyLigh.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "During Aegis Ward, when Expertise deal Crit DMG, there's a 50% fixed chance to instantly reset 1 Holy Sigil CD (prioritizing Holy Sigil with the longest remaining CD). This effect triggers only once when hitting multiple targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov08",
+    "name": "Radiant Guard",
+    "icon": "RadiantG.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Casting Shield Toss immediately grants a Radiant shield equal to 100% ATK (depending on Adventurer Level, up to 200%). The Overdrive of Shield Toss +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov09",
+    "name": "Divine Circle Defender",
+    "icon": "DivineCi.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "While within the Divine Circle, the Armor effect provided by Valor Bash +30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov10",
+    "name": "Radiant Heal",
+    "icon": "RadiantH.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Increases Judgment Healing by 25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov12",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov13",
+    "name": "Oracle",
+    "icon": "Oracle.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "When a skill that consumes Holy Sigil critically hits, gain an additional 30% Light Energy.\nCrit DMG of skills that consume Light Energy +30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov14",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov16",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov17",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov18",
+    "name": "Reckon Blaze",
+    "icon": "ReckonBl.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "When Valor Bash deals Crit DMG, gain Blazing.\nCasting Aegis Ward guarantees Blazing.\nBlazing: For the next 10s, Reckoning evolves into Inferno Reckon.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov20",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov21",
+    "name": "Shield Impact",
+    "icon": "ShieldIm.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Hold Valor Bash to charge, then dash forward a short distance.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov22",
+    "name": "Holy Barrier",
+    "icon": "HolyBarr.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov23",
+    "name": "Reckon Shield",
+    "icon": "ReckonSh.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Each time Inferno Reckon or Reckoning deals Crit DMG to 1 enemy target, Block chance +5%, lasting for 10s, stacking up to a maximum of 5 layers.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov24",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov25",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov26",
+    "name": "Lightforged Balance",
+    "icon": "Lightfor.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "When your HP percentage is higher than your target's, DMG taken from that target -5%.\nWhen your HP percentage is lower than your target's, Judgment deals 50% more DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov27",
+    "name": "Ultimate Guard",
+    "icon": "Ultimate.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "For 10s after casting Shield Toss, increases Block Chance by 15%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov28",
+    "name": "Holy Summon",
+    "icon": "HolySumm.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "When Shield Toss or Judgment deals DMG, 10% chance to trigger Divine Strike. If Crit DMG is dealt, the chance increases to 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov29",
+    "name": "Divine Circle Resonance",
+    "icon": "DivineCi.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov30",
+    "name": "Halo",
+    "icon": "Halo.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Divine Circle now has a halo effect, stunning enemy targets for 3s the first time it deals DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov33",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov34",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov36",
+    "name": "Shield Strike Enhancement",
+    "icon": "ShieldSt.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Increases Valor Bash DMG by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov37",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov38",
+    "name": "Fearless Shield",
+    "icon": "Fearless.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Each time Shield Toss deals DMG, gains Radiant Shield equal to 25% ATK (this ratio is affected by Adventurer Level, up to 50%).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov39",
+    "name": "Sword Dance",
+    "icon": "SwordDan.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "When a Expertise Skill critically heals, gain a 15% healing bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov41",
+    "name": "Shield Guard",
+    "icon": "ShieldGu.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "When Valor Bash deals Crit DMG, restores HP equal to 120% ATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov42",
+    "name": "Light's Crit",
+    "icon": "LightsCr.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Crit +5%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov43",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov44",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov45",
+    "name": "Aegis Ward's Anthem",
+    "icon": "AegisWar.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "For every 2 Holy Sigils consumed, the remaining CD of Aegis Ward -1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov46",
+    "name": "Strength ",
+    "icon": "Strength.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Strength\n\nStrength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov47",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov48",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov49",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov50",
+    "name": "Holy Heal",
+    "icon": "HolyHeal.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "While having Radiant Shield, gains 12% healing bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov51",
+    "name": "Judgment of All Beings",
+    "icon": "Judgment.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "When Judgment hits only 1 enemy target, its damage +25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov52",
+    "name": "Ultimate Strike",
+    "icon": "Ultimate.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Divine Strike deals DMG, increases Strength by 2% for 10s, stacking up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov53",
+    "name": "Lightforged Greatsword",
+    "icon": "Lightfor.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "After every 10 casts of Judgment, the next Judgment is enhanced into Scorching Judgment.\nScorching Judgment: Summon a holy greatsword to descend upon the target area for 5s, healing yourself (Healing equal to that of Judgment) while dealing damage over time to nearby enemies and inflicting Scorch, totally dealing physical DMG equal to 600% ATK (scales with Judgment level/rank).\nScorch: Reduces damage taken from the target by 3% for 10s. Stacks up to 10 times. Grants 3 stacks of Scorch on Crit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov54",
+    "name": "Light Chain",
+    "icon": "LightCha.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "While Aegis Ward is active, the chance of Divine Strike is doubled. Every 3 times Divine Strike is triggered, the duration of Aegis Ward is extended by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov55",
+    "name": "Divine Circle Blessing",
+    "icon": "DivineCi.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "While within the Divine Circle, your Healing Receive effect +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov56",
+    "name": "Light Protection",
+    "icon": "LightPro.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov57",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov58",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov59",
+    "name": "Judgment Revelation",
+    "icon": "Judgment.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Divine Strike Crits, there's a 50% fixed chance to automatically cast Judgment on the target (this Judgment cannot trigger Divine Strike).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Recov60",
+    "name": "Aegis Ward's Retribution",
+    "icon": "AegisWar.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "During Aegis Ward, Block chance is increased to 1.5 times.\nWhen attacked, reduces Aegis Ward's remaining CD by 0.5s. This effect can only trigger once per 1 second.",
+    "cost": null,
+    "seal": null
+  }
+]

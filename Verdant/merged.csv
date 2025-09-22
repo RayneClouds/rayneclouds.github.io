@@ -20,7 +20,7 @@ Verdo13,Breath of Buds,BreathofBuds.png,Increases Max Regen Bud by 4.,Verdo19,0,
 Verdo14,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo17,1,5,1,0
 Verdo15,Energy Surge,EnergySurge.png,Every 2% haste provides 1% energy natural recovery efficiency.,"Verdo18,Verdo20",2,5,1,0
 Verdo16,Intellect,Intellect.png,Intellect + 10,Verdo21,-2,6,1,0
-Verdo17,Regeneration Bud,RegenerationBud.png,"When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.","Verdo19,Verdo20,Verdo23",1,6,1,0
+Verdo17,Regeneration Bud,RegenerationBud.png,"When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.","Verdo19,Verdo20",1,6,1,0
 Verdo18,Intellect,Intellect.png,Intellect + 10,Verdo25,3,6,1,0
 Verdo19,Stamina,Stamina.png,Stamina + 30,"Verdo22,Verdo23",0,7,1,0
 Verdo20,Forest Attack,ForestAttack.png,Forest Attack + 5,"Verdo23,Verdo24",2,7,1,0
@@ -35,7 +35,7 @@ Verdo28,Dancing Seed,DancingSeed.png,"When a DMG-type Expertise Skill triggers L
 For every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",,1,9,1,0
 Verdo29,Omnipotent Breath,OmnipotentBreath.png,"When Intellect reaches 500, versatility +4%.",,2,9,1,0
 Verdo30,Brimming Vitality,BrimmingVitality.png,Increases Energy REG SPD by 20%,,3,9,1,0
-Smite00,Smite,TRUE,"f""Verdo{str(i).zfill(2)}"" for i in range(1, 31)",,10,12,,
+Smite00,Smite,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,9,11,,
 Smite01,Smite Spec,SmiteSpec.png,"Further enhances the ability to use Wild Bloom.
 Wild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.
 Symbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.
@@ -111,7 +111,7 @@ Smite58,Pulse Breath,PulseBreath.png,"If equipped with Regen Pulse skill, Nature
 Smite59,Verdant Impact,VerdantImpact.png,"For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",,0,15,1,0
 Smite60,Wild Protection,WildProtection.png,"The charge count of Nature Ward +1.
 The charge time of Nature Ward decreases by 5s.",,2,15,1,0
-Lifeb00,Life Bloom,TRUE,"f""Verdo{str(i).zfill(2)}"" for i in range(1, 31)",,13,12,,
+Lifeb00,Life Bloom,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,11,11,,
 Lifeb01,Lifebind Spec,LifebindSpec.png,"Replace Special Attack with Life Bloom and enhances the skill.
 Life Bloom generates 20% more healing.
 Casting Life Bloom grants 1 additional Regen Bud.","Lifeb02,Lifeb03",0,0,1,0
