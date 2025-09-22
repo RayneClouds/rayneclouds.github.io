@@ -1,2 +1,2 @@
 # rayneclouds.github.io
-Blue Protocol Star Rail Talent Tree
+Blue Protocol Star Resonance Talent Tree
