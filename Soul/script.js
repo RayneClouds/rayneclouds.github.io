@@ -119,6 +119,21 @@ function bindLegend(){
     }
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Optional: hide menu when clicking a link
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+    });
+  });
+});
 
 // ---------- Resources ----------
 function getTpMax(){ return parseInt(document.getElementById("tpMax").value,10) || 0; }
@@ -155,7 +170,7 @@ function verdantComplete(){
   for(const id of t.nodes){
     if(nodes[id]?.unlocked) count++;
   }
-  // You currently use 30 as finishing condition — preserve that
+  // You currently use 30 as finishing condition â€” preserve that
   return count >= 30;
 }
 
@@ -197,7 +212,7 @@ function parentsSatisfied(nodeId){
 function canUnlock(node){
   if(!node) return false;
 
-  // nodeId is case-sensitive in JSON — use the actual id
+  // nodeId is case-sensitive in JSON â€” use the actual id
   const id = (node.id || "");
   const base = getBaseTierId();
 
@@ -283,6 +298,25 @@ function refundNode(nodeId, silent=false){
   const node = nodes[nodeId];
   if(!node || !node.unlocked) return;
 
+  const base = getBaseTierId();
+
+  // --- NEW: specialization roots that require *all* of base nodes
+  // If any base node is refunded → drop the specialization roots
+  if (node.tierId === base) {
+    for (const tid in tiers) {
+      if (tid === base) continue;
+      const rootId = `${tid}01`;
+      const root = nodes[rootId];
+      if (!root?.unlocked) continue;
+
+      const someBaseMissing = tiers[base].nodes.some(bid => !nodes[bid]?.unlocked || bid === nodeId);
+      if (someBaseMissing) {
+        refundNode(rootId, true);
+      }
+    }
+  }
+
+  // --- normal child cascading
   if (node.children && node.children.length) {
     for (const c of node.children) {
       const child = nodes[c];
@@ -294,6 +328,7 @@ function refundNode(nodeId, silent=false){
     }
   }
 
+  // --- standard bookkeeping
   node.unlocked = false;
   node.el.classList.remove("unlocked");
   tpUsed -= (node.cost||0);
@@ -301,9 +336,8 @@ function refundNode(nodeId, silent=false){
   if(tpUsed<0) tpUsed=0;
   if(sealUsed<0) sealUsed=0;
 
-  // 🚫 Don’t collapse SoulM’s children
   const isRoot = (nodeId || "").endsWith("01");
-  const isBaseRoot = (nodeId === `${getBaseTierId()}01`);
+  const isBaseRoot = (nodeId === `${base}01`);
   if(isRoot && !isBaseRoot){
     hideTierMembersExceptRoot(node.tierId);
   }
@@ -314,6 +348,8 @@ function refundNode(nodeId, silent=false){
   if(!silent) updateCounters();
   drawEdges();
 }
+
+
 
 // ---------- Build from JSON ----------
 function buildFromJSON(data){
@@ -378,7 +414,7 @@ function buildFromJSON(data){
   const oy = t.origin?.gy ?? 0;
   const isCollapsed = (tId === getBaseTierId()) ? false : !!t.collapsed;
 
-  // ✅ resolve base once per tier
+  // âœ… resolve base once per tier
   const baseTierId = getBaseTierId();
 
   (t.nodes || []).forEach(n => {
@@ -390,10 +426,10 @@ function buildFromJSON(data){
 
     const lname = (n.name || "").toLowerCase();
 
-    // ✅ Decide size
+    // âœ… Decide size
     if ((n.id || "").endsWith("01") && tId !== baseTierId) {
       el.classList.add("size3");
-    } else if (["stamina", "intellect", "fire attack", "forest attack"].includes(lname)) {
+    } else if (["stamina", "intellect", "fire attack",].includes(lname)) {
       el.classList.add("size2");
     } else {
       el.classList.add("size1");
@@ -553,7 +589,7 @@ function centerOnRoot(nodeId) {
   const anchorX = mainRect.width / 2;
   const anchorY = headerH + 40; // padding under header
 
-  // Compute target translation in world → screen math
+  // Compute target translation in world â†’ screen math
   const targetX = anchorX - nx * scale;
   const targetY = anchorY - ny * scale;
 
@@ -727,15 +763,21 @@ function resetTier(tid, silent=false){
   drawEdges();
 }
 
-function resetAll(){
-  // reset all tiers
-  for(const tid in tiers){
-    resetTier(tid, true);
-  }
+// ----- Modified Reset All -----
+function resetAll() {
+  const base = getBaseTierId();
+  if (!base) return;
+
+  // Reset only base tier; child specialization roots will cascade automatically
+  resetTier(base, true);
+
   updateCounters();
   drawEdges();
-  showToast("All Trees Reset");
+  showToast(`All Trees Reset`);
 }
+
+// Bind to your button
+document.getElementById("resetAll").addEventListener("click", resetAll);
 
 function resetCur(){
   const base = getBaseTierId();
@@ -746,7 +788,6 @@ function resetCur(){
     if(tid === base) continue; // skip base here
     if(nodes[`${tid}01`]?.unlocked){
       resetTier(tid);
-      showToast(`Reset ${tiers[tid].name} Tree`);
       found = true;
       break;
     }
@@ -755,7 +796,6 @@ function resetCur(){
   // 2. If none found, reset base
   if(!found && nodes[`${base}01`]?.unlocked){
     resetTier(base);
-    showToast(`Reset ${tiers[base].name} Tree`);
   }
 
   updateCounters();
@@ -782,25 +822,28 @@ function buildHeaderButtons(){
     // Center click on tier root
     nameBtn.addEventListener("click", () => { centerOnTierRoot(tid); });
 
-    // Max badge
-    const maxImg = document.createElement("img");
-    maxImg.src = "img/up-arrow.png"; // your icon path
-    maxImg.alt = "Max";
-    maxImg.className = "tier-badge max-badge";
-    maxImg.addEventListener("click", (e)=>{
-      e.stopPropagation(); // prevent triggering tier click
-      maxTier(tid);
-    });
+// Max badge
+const maxImg = document.createElement("img");
+maxImg.src = "img/up-arrow.png"; // your icon path
+maxImg.alt = "Max";
+maxImg.className = "tier-badge max-badge";
+maxImg.addEventListener("click", (e)=>{
+  e.stopPropagation(); // prevent triggering tier click
+  maxTier(tid);
+  // show toast
+  if (tiers[tid]?.name) showToast(`Maxed ${tiers[tid].name} Tree`);
+});
 
-    // Reset badge
-    const resetImg = document.createElement("img");
-    resetImg.src = "img/Reset.png"; // your icon path
-    resetImg.alt = "Reset";
-    resetImg.className = "tier-badge reset-badge";
-    resetImg.addEventListener("click", (e)=>{
-      e.stopPropagation();
-      resetTier(tid);
-    });
+// Reset badge
+const resetImg = document.createElement("img");
+resetImg.src = "img/reset.png"; // your icon path
+resetImg.alt = "Reset";
+resetImg.className = "tier-badge reset-badge";
+resetImg.addEventListener("click", (e)=>{
+  e.stopPropagation();
+  resetTier(tid);
+ });
+
 
     // Append badges to button
     nameBtn.appendChild(maxImg);
@@ -814,7 +857,104 @@ function buildHeaderButtons(){
   $("#sealMax")?.addEventListener("input", updateCounters);
 }
 
+// =========================
+// Custom MaxButton + RequiresPoints
+// =========================
 
+document.getElementById("MaxButton").addEventListener("click", () => {
+  const base = getBaseTierId();
+  if (!base) return;
+
+  const lastNode = getLastPointSpent();
+
+  // Case 1: nothing has been spent yet → max base first
+  if (!lastNode) {
+    maxTier(base);
+    showToast(`Maxed ${tiers[base].name}`);
+    updateCounters();
+    drawEdges();
+    return;
+  }
+
+  // Case 2: something spent already
+  const treeId = getTreeFromNode(lastNode.id);
+
+  // Always max parent first
+  maxTier(base);
+
+  // Then max the specialization tree where last point was spent
+  if (treeId && treeId !== base) {
+    maxTier(treeId);
+    if (tiers[treeId]?.name) {
+      showToast(`Maxed ${tiers[treeId].name}`);
+    }
+  } else {
+    // Only parent
+    showToast(`Maxed ${tiers[base].name}`);
+  }
+
+  updateCounters();
+  drawEdges();
+});
+
+
+document.getElementById("resetCur").addEventListener("click", () => {
+  const lastNode = getLastPointSpent();
+  if (!lastNode) return;
+
+  const treeId = getTreeFromNode(lastNode.id);
+  if (!treeId) return;
+
+  // Just reset THAT tree, nothing else
+  resetTier(treeId);
+  if (tiers[treeId]?.name) {
+  }
+
+  updateCounters();
+  drawEdges();
+});
+
+function getTreeFromNode(nodeId) {
+  for (const tid in tiers) {
+    if (tiers[tid].nodes.includes(nodeId)) {
+      return tid;
+    }
+  }
+  return null;
+}
+
+function getLastPointSpent() {
+  if (unlockHistory.length === 0) return null;
+  const lastId = unlockHistory[unlockHistory.length - 1];
+  return nodes[lastId] || null;
+}
+
+// --- RequiresPoints support ---
+const originalCanUnlock = canUnlock;
+canUnlock = function(node) {
+  if (!node) return false;
+
+  // normal gating first
+  if (!originalCanUnlock(node)) return false;
+
+  // new requiresPoints
+  if (node.requiresPoints) {
+    const pointsSpent = getPointsSpentInTree(getTreeFromNode(node.id));
+    if (pointsSpent < node.requiresPoints) return false;
+  }
+  return true;
+};
+
+function getPointsSpentInTree(treeId) {
+  const tree = tiers[treeId];
+  if (!tree) return 0;
+  let total = 0;
+  tree.nodes.forEach(nid => {
+    const n = nodes[nid];
+    if (n?.unlocked) total += (n.cost || 0);
+  });
+  return total;
+}
 
 
 // ----- Toast 
@@ -864,3 +1004,6 @@ window.addEventListener("load", () => {
     })
     .catch(err=>console.error("Failed to load merged.json", err));
 });
+
+
+

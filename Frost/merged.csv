@@ -1,182 +1,186 @@
-id,name,icon,desc,children,gx,gy,cost,seal
-Verdo00,Verdant Oracle,FALSE,,,10,1,,
-Verdo01,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo03,0,0,1,0
-Verdo02,Inspiration,Inspiration.png,Applies Inspiration to yourself and allies within 30 meters.,Verdo06,-1,1,1,0
-Verdo03,Stamina,Stamina.png,Stamina + 30,"Verdo02,Verdo04,Verdo05",0,1,1,0
-Verdo04,Intellect Conversion,IntellectConversion.png,Every 10 points of Intellect provides 1 point of MATK.,Verdo08,1,1,1,0
-Verdo05,Regen Bud,RegenBud.png,"Casting a Special Attack grants 1 Regen Bud.
+id,name,icon,desc,children,gx,gy,cost,seal,requiresUnlock
+Frost00,Frost Mage,FALSE,,,10,1,,,
+Frost01,Ice Attack,IceAttack.png,Ice Attack + 5,"Frost02,Frost03",0,0,1,0,
+Frost02,Stamina,Stamina.png,Stamina + 30,Frost04,-1,1,1,0,
+Frost03,Stamina,Stamina.png,Stamina + 30,Frost05,1,1,1,0,
+Frost04,Ice Revelation,IceRevelation.png,"Summon 2 permanent Ice Cores that float beside you.
 
-Initial cap of Regen Buds: 4.
-When an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.
-When an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",Verdo07,0,2,1,0
-Verdo06,Intellect,Intellect.png,Intellect + 10,Verdo09,-1,3,1,0
-Verdo07,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo10,0,3,1,0
-Verdo08,Intellect,Intellect.png,Intellect + 10,Verdo11,1,3,1,0
-Verdo09,Stamina,Stamina.png,Stamina + 30,Verdo12,-2,4,1,0
-Verdo10,Stamina,Stamina.png,Stamina + 30,"Verdo13,Verdo14",0,4,1,0
-Verdo11,Stamina,Stamina.png,Stamina + 30,"Verdo14,Verdo15",2,4,1,0
-Verdo12,Defensive Blessing,DefensiveBlessing.png,Inspiration additionally grants the target 200 Armor.,Verdo16,-1,5,1,0
-Verdo13,Breath of Buds,BreathofBuds.png,Increases Max Regen Bud by 4.,Verdo19,0,5,1,0
-Verdo14,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo17,1,5,1,0
-Verdo15,Energy Surge,EnergySurge.png,Every 2% haste provides 1% energy natural recovery efficiency.,"Verdo18,Verdo20",2,5,1,0
-Verdo16,Intellect,Intellect.png,Intellect + 10,Verdo21,-2,6,1,0
-Verdo17,Regeneration Bud,RegenerationBud.png,"When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.","Verdo19,Verdo20",1,6,1,0
-Verdo18,Intellect,Intellect.png,Intellect + 10,Verdo25,3,6,1,0
-Verdo19,Stamina,Stamina.png,Stamina + 30,"Verdo22,Verdo23",0,7,1,0
-Verdo20,Forest Attack,ForestAttack.png,Forest Attack + 5,"Verdo23,Verdo24",2,7,1,0
-Verdo21,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo26,-2,8,1,0
-Verdo22,Stamina,Stamina.png,Stamina + 30,Verdo27,0,8,1,0
-Verdo23,Intellect,Intellect.png,Intellect + 10,Verdo28,1,8,1,0
-Verdo24,Stamina,Stamina.png,Stamina + 30,Verdo29,2,8,1,0
-Verdo25,Stamina,Stamina.png,Stamina + 30,Verdo30,3,8,1,0
-Verdo26,Healing Breath,HealingBreath.png,"When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",,-1,9,1,0
-Verdo27,Divine Ascension of the Flower Realm,DivineAscensionoftheFlowerRealm.png,"When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",,0,9,1,0
-Verdo28,Dancing Seed,DancingSeed.png,"When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.
-For every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",,1,9,1,0
-Verdo29,Omnipotent Breath,OmnipotentBreath.png,"When Intellect reaches 500, versatility +4%.",,2,9,1,0
-Verdo30,Brimming Vitality,BrimmingVitality.png,Increases Energy REG SPD by 20%,,3,9,1,0
-Smite00,Smite,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,9,11,,
-Smite01,Smite Spec,SmiteSpec.png,"Further enhances the ability to use Wild Bloom.
-Wild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.
-Symbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.
+Ice Core
+When Basic Attacks deal DMG, Ice Cores have a fixed 10% chance to fire 2 Ice Arrows.
 
-Healing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.","Smite02,Smite03",0,0,1,0
-Smite02,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite04,-1,1,1,0
-Smite03,Stamina,Stamina.png,Stamina + 30,Smite05,1,1,1,0
-Smite04,Nature Shield,NatureShield.png,"When Wild Bloom heals a target, it also applies Nature Shield to them.
-Targets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.","Smite06,Smite07",-1,2,1,0
-Smite05,Pulse Duality,PulseDuality.png,"When Regen Pulse is actively used, it spreads twice.","Smite07,Smite08",1,2,1,0
-Smite06,Stamina,Stamina.png,Stamina + 30,"Smite09,Smite10",-2,3,1,0
-Smite07,Stamina,Stamina.png,Stamina + 30,"Smite10,Smite11",0,3,1,0
-Smite08,Intellect,Intellect.png,Intellect + 10,"Smite12,Smite13",2,3,1,0
-Smite09,Thorns,Thorns.png,"When Wild Seed hits a target, it inflicts Thorn on them.
-Verdant DMG dealt by players to targets with Thorn +5%.",Smite14,-3,4,1,0
-Smite10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite15,Smite17",-1,4,1,0
-Smite11,Intellect,Intellect.png,Intellect + 10,"Smite16,Smite18",0,4,1,0
-Smite12,Shelter,Shelter.png,"Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.","Smite16,Smite20",1,4,1,0
-Smite13,Luck Damage,LuckDamage.png,"Lucky Hit DMG Multiplier +5%.
-Every 1% Luck grants 1% Lucky Hit DMG Multiplier.",,3,4,1,0
-Smite14,Intellect,Intellect.png,Intellect + 10,Smite21,-3,5,1,0
-Smite15,Wild Blessing,WildBlessing.png,"Wild Bloom now stores up to 2 overdrives.
-Wild Bloom's Energy cost -15%.",,-2,5,1,0
-Smite16,Stamina,Stamina.png,Stamina + 30,Smite19,1,5,1,0
-Smite17,Final Bloomwheel,FinalBloomwheel.png,"When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.","Smite22,Smite23",-1,6,1,0
-Smite18,Bloomheal,Bloomheal.png,"Replace Ultimate, Divine Circle Bloom with Bloomheal.",Smite23,0,6,1,0
-Smite19,Intellect,Intellect.png,Intellect + 10,"Smite24,Smite30",1,6,1,0
-Smite20,Stamina,Stamina.png,Stamina + 30,Smite25,3,6,1,0
-Smite21,Wide-area Thorns,Wide-areaThorns.png,Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.,Smite26,-3,7,1,0
-Smite22,Stamina,Stamina.png,Stamina + 30,Smite26,-2,7,1,0
-Smite23,Stamina,Stamina.png,Stamina + 30,"Smite27,Smite28",-1,7,1,0
-Smite24,Pulse Retrospect,PulseRetrospect.png,"Regen Pulse returns to your position after it reaches the max distance.
-Regen Pulse now deals DMG to enemies.","Smite28,Smite29",1,7,1,0
-Smite25,Bud Acquisition,BudAcquisition.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",,3,7,1,0
-Smite26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite31,Smite32,Smite33",-2,8,1,0
-Smite27,Feral Seed Symbiosis,FeralSeedSymbiosis.png,"When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",Smite33,-1,8,1,0
-Smite28,Intellect,Intellect.png,Intellect + 10,"Smite33,Smite34,Smite35",0,8,1,0
-Smite29,Pulse Echo,PulseEcho.png,"When dealing DMG, Infusion grants 1 stack of Pulse Echo.
-Pulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.","Smite35,Smite36",2,8,1,0
-Smite30,Breath of Symbiosis,BreathofSymbiosis.png,Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.,Smite36,3,8,1,0
-Smite31,Laceration,Laceration.png,"When dealing DMG, Infusion inflicts Laceration on the target.
-Laceration: Takes 100% more DMG from Thorn in 2s.",,-3,9,1,0
-Smite32,Stamina,Stamina.png,Stamina + 30,Smite37,-2,9,1,0
-Smite33,Stamina,Stamina.png,Stamina + 30,"Smite38,Smite40",-1,9,1,0
-Smite34,Stag Charge,StagCharge.png,"After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.
-Casting Stag Charge instants grants 3 Regen Buds.","Smite38,Smite42",0,9,1,0
-Smite35,Intellect,Intellect.png,Intellect + 10,Smite46,1,9,1,0
-Smite36,Intellect,Intellect.png,Intellect + 10,"Smite39,Smite52",3,9,1,0
-Smite37,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
-Revival: Restores HP equal to 50% of the DMG taken over 5s.",,-3,10,1,0
-Smite38,Stamina,Stamina.png,Stamina + 30,Smite41,-1,10,1,0
-Smite39,Arcane of Green,ArcaneofGreen.png,"When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",Smite43,2,10,1,0
-Smite40,Intellect,Intellect.png,Intellect + 10,"Smite44,Smite47",-3,11,1,0
-Smite41,Verdant Blessing,VerdantBlessing.png,"When HP of an ally with Inspiration drops below 20%, Blessing triggers.
-Blessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.","Smite44,Smite48",-1,11,1,0
-Smite42,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite45,0,11,1,0
-Smite43,Intellect,Intellect.png,Intellect + 10,"Smite46,Smite51",2,11,1,0
-Smite44,Flourish,Flourish.png,"When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",Smite48,-2,12,1,0
-Smite45,Double Infusion,DoubleInfusion.png,"After casting Stag Charge, the number of channels for the next Infusion +100%.",Smite49,0,12,1,0
-Smite46,Symbiosis Extension,SymbiosisExtension.png,Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.,"Smite50,Smite51",1,12,1,0
-Smite47,Swift Bud,SwiftBud.png,"Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",,-3,13,1,0
-Smite48,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite57",-1,13,1,0
-Smite49,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite54,Smite55",0,13,1,0
-Smite50,Intellect,Intellect.png,Intellect + 10,Smite55,1,13,1,0
-Smite51,Stamina,Stamina.png,Stamina + 30,"Smite55,Smite56",2,13,1,0
-Smite52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",,3,13,1,0
-Smite53,Intellect,Intellect.png,Intellect + 10,Smite58,-1,14,1,0
-Smite54,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite59,0,14,1,0
-Smite55,Stamina,Stamina.png,Stamina + 30,Smite60,1,14,1,0
-Smite56,Swift Shelter,SwiftShelter.png,"Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",,3,14,1,0
-Smite57,Wild Luck,WildLuck.png,"When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",,-3,15,1,0
-Smite58,Pulse Breath,PulseBreath.png,"If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",,-1,15,1,0
-Smite59,Verdant Impact,VerdantImpact.png,"For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",,0,15,1,0
-Smite60,Wild Protection,WildProtection.png,"The charge count of Nature Ward +1.
-The charge time of Nature Ward decreases by 5s.",,2,15,1,0
-Lifeb00,Life Bloom,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,11,11,,
-Lifeb01,Lifebind Spec,LifebindSpec.png,"Replace Special Attack with Life Bloom and enhances the skill.
-Life Bloom generates 20% more healing.
-Casting Life Bloom grants 1 additional Regen Bud.","Lifeb02,Lifeb03",0,0,1,0
-Lifeb02,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb04,-1,1,1,0
-Lifeb03,Stamina,Stamina.png,Stamina + 30,Lifeb05,1,1,1,0
-Lifeb04,Healing Infusion,HealingInfusion.png,Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%,"Lifeb06,Lifeb07",-1,2,1,0
-Lifeb05,Lifeforce Extension,LifeforceExtension.png,"Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.","Lifeb07,Lifeb08",1,2,1,0
-Lifeb06,Stamina,Stamina.png,Stamina + 30,"Lifeb09,Lifeb10",-2,3,1,0
-Lifeb07,Stamina,Stamina.png,Stamina + 30,"Lifeb10,Lifeb11",0,3,1,0
-Lifeb08,Intellect,Intellect.png,Intellect + 10,"Lifeb12,Lifeb13",2,3,1,0
-Lifeb09,Energy Arcane,EnergyArcane.png,"During Growth Arcane, increases ERG REG SPD by 50%.
-Increases Grove Wish's Crit by 10%.",Lifeb14,-3,4,1,0
-Lifeb10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb15,Lifeb17",-1,4,1,0
-Lifeb11,Intellect,Intellect.png,Intellect + 10,"Lifeb16,Lifeb18",0,4,1,0
-Lifeb12,Transcendence,Transcendence.png,Every 60 self-heals from Nourish grants Transcendence.,"Lifeb16,Lifeb20",1,4,1,0
-Lifeb13,Verdant Nourishment,VerdantNourishment.png,"If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",,3,4,1,0
-Lifeb14,Intellect,Intellect.png,Intellect + 10,Lifeb21,-3,5,1,0
-Lifeb15,Life Bloom,LifeBloom.png,"Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",,-2,5,1,0
-Lifeb16,Stamina,Stamina.png,Stamina + 30,Lifeb19,1,5,1,0
-Lifeb17,Full Bloom,FullBloom.png,Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.,"Lifeb22,Lifeb23",-1,6,1,0
-Lifeb18,Vital Surge,VitalSurge.png,"Replace Ultimate, Divine Circle Bloom with Vital Surge.",Lifeb23,0,6,1,0
-Lifeb19,Intellect,Intellect.png,Intellect + 10,"Lifeb24,Lifeb30",1,6,1,0
-Lifeb20,Stamina,Stamina.png,Stamina + 30,Lifeb25,3,6,1,0
-Lifeb21,Blooming Reincarnation,BloomingReincarnation.png,Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.,Lifeb26,-3,7,1,0
-Lifeb22,Stamina,Stamina.png,Stamina + 30,Lifeb26,-2,7,1,0
-Lifeb23,Stamina,Stamina.png,Stamina + 30,"Lifeb27,Lifeb28",-1,7,1,0
-Lifeb24,Vitality,Vitality.png,Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.,"Lifeb28,Lifeb29",1,7,1,0
-Lifeb25,Gift of Life,GiftofLife.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",,3,7,1,0
-Lifeb26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb31,Lifeb32,Lifeb33",-2,8,1,0
-Lifeb27,Flower Time Dance,FlowerTimeDance.png,"Every 45s, generates 1 Flower Stalk in the following order:
-Crimson Insight, Golden Devotion, and Moonlight Solace.",Lifeb33,-1,8,1,0
-Lifeb28,Intellect,Intellect.png,Intellect + 10,"Lifeb33,Lifeb34,Lifeb35",0,8,1,0
-Lifeb29,Nourish Essence,NourishEssence.png,"When Life Bloom generates healing, 50% chance to apply Nourish.","Lifeb35,Lifeb36",2,8,1,0
-Lifeb30,Endless Blossom,EndlessBlossom.png,"When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",Lifeb36,3,8,1,0
-Lifeb31,Flourishing Progress,FlourishingProgress.png,"When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",,-3,9,1,0
-Lifeb32,Stamina,Stamina.png,Stamina + 30,Lifeb37,-2,9,1,0
-Lifeb33,Stamina,Stamina.png,Stamina + 30,"Lifeb38,Lifeb40",-1,9,1,0
-Lifeb34,Verdant Root,VerdantRoot.png,"While in battle state, standing still for 2s creates a Grass Domain.
-Grass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.","Lifeb38,Lifeb42",0,9,1,0
-Lifeb35,Intellect,Intellect.png,Intellect + 10,Lifeb46,1,9,1,0
-Lifeb36,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb39,Lifeb52",3,9,1,0
-Lifeb37,Natural Bloom,NaturalBloom.png,"When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",,-3,10,1,0
-Lifeb38,Stamina,Stamina.png,Stamina + 30,Lifeb41,-1,10,1,0
-Lifeb39,Energy Expansion,EnergyExpansion.png,"Increases Max Energy by 20.
-Using Blossom Charge restores 30% lost Energy.",Lifeb43,2,10,1,0
-Lifeb40,Intellect,Intellect.png,Intellect + 10,"Lifeb44,Lifeb47",-3,11,1,0
-Lifeb41,Verdant Duet,VerdantDuet.png,Life bloom has a fixed 20% chance to heal 1 additional time.,"Lifeb44,Lifeb48",-1,11,1,0
-Lifeb42,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb45,0,11,1,0
-Lifeb43,Intellect,Intellect.png,Intellect + 10,"Lifeb46,Lifeb51",2,11,1,0
-Lifeb44,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
-Revival: Restores HP equal to 50% of the DMG taken over 5s.",Lifeb48,-2,12,1,0
-Lifeb45,Bud to Blossom,BudtoBlossom.png,"When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",Lifeb49,0,12,1,0
-Lifeb46,Inspire and Strengthen,InspireandStrengthen.png,"Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.","Lifeb50,Lifeb51",1,12,1,0
-Lifeb47,Floral Whisper,FloralWhisper.png,"Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",,-3,13,1,0
-Lifeb48,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb57",-1,13,1,0
-Lifeb49,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb54,Lifeb55",0,13,1,0
-Lifeb50,Intellect,Intellect.png,Intellect + 10,Lifeb55,1,13,1,0
-Lifeb51,Stamina,Stamina.png,Stamina + 30,"Lifeb55,Lifeb56",2,13,1,0
-Lifeb52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",,3,13,1,0
-Lifeb53,Intellect,Intellect.png,Intellect + 10,Lifeb58,-1,14,1,0
-Lifeb54,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb59,0,14,1,0
-Lifeb55,Stamina,Stamina.png,Stamina + 30,Lifeb60,1,14,1,0
-Lifeb56,Instant Bloom,InstantBloom.png,Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.,,3,14,1,0
-Lifeb57,Rescue,Rescue.png,Healing Expertise restore 25% more HP to the targets with HP below 50%.,,-3,15,1,0
-Lifeb58,Flourishing Flower,FlourishingFlower.png,"Within Grass Domain, Flower Stalk appeared 50% earlier.",,-1,15,1,0
-Lifeb59,Tricolor Revelation,TricolorRevelation.png,"Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.
-Flower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",,0,15,1,0
-Lifeb60,Ultimate Inspiration,UltimateInspiration.png,Doubles the effectiveness of Inspiration.,,2,15,1,0
+Ice Arrow: Each arrow deals Magic Damage equal to 25% ATK to the target and grants 1 Frost Crystal (up to 2 Frost Crystals can be stored).",Frost06,-1,2,1,0,
+Frost05,Intellect Conversion,IntellectConversion.png,Every 10 points of Intellect provides 1 point of MATK.,"Frost07,Frost08",1,2,1,0,
+Frost06,Intellect,Intellect.png,Intellect + 10,"Frost09,Frost10",-2,3,1,0,
+Frost07,Ice Attack,IceAttack.png,Ice Attack + 5,Frost11,0,3,1,0,
+Frost08,Intellect,Intellect.png,Intellect + 10,"Frost12,Frost13",2,3,1,0,
+Frost09,Secondary Amp,SecondaryAmp.png,"Boost the highest stat among the following 5 stats: Crit, Haste, Luck, Mastery, and Versatility by 3.5% as a final value.",Frost14,-2,4,1,0,
+Frost10,Stamina,Stamina.png,Stamina + 30,Frost15,-1,4,1,0,
+Frost11,Instant Cooling,InstantCooling.png,"For every 35 Ice Energy consumed, the CD of Meteor Storm and Frozen Gale -1s.",,0,4,1,0,
+Frost12,Stamina,Stamina.png,Stamina + 30,"Frost15,Frost16",1,4,1,0,
+Frost13,Intellect Cooling,IntellectCooling.png,"When Intellect reaches 300, skill CD -10%.",Frost17,3,4,1,0,
+Frost14,Ice Attack,IceAttack.png,Ice Attack + 5,"Frost18,Frost19",-2,5,1,0,
+Frost15,Frost Curse Sigil,FrostCurseSigil.png,"When a Special Attack deals DMG, it has a fixed 5% chance to Frozen the target.",,0,5,1,0,
+Frost16,Intellect,Intellect.png,Intellect + 10,Frost20,1,5,1,0,
+Frost17,Ice Attack,IceAttack.png,Ice Attack + 5,Frost21,2,5,1,0,
+Frost18,Stamina,Stamina.png,Stamina + 30,Frost22,-3,6,1,0,
+Frost19,Stamina,Stamina.png,Stamina + 30,"Frost23,Frost24",-1,6,1,0,
+Frost20,Ice Comet,IceComet.png,"When Intellect reaches 500, gain 5% Ice bonus.",Frost24,1,6,1,0,
+Frost21,Stamina,Stamina.png,Stamina + 30,Frost28,2,6,1,0,
+Frost22,Breath of Frost,BreathofFrost.png,Frost Crystal cap +1.,,-2,7,1,0,
+Frost23,Cold Stream,ColdStream.png,"Max Ice Energy +25.
+Every 1% Haste increases Ice Energy's auto REG SPD by 1%.",Frost26,-1,7,1,0,
+Frost24,Ice Attack,IceAttack.png,Ice Attack + 5,Frost25,0,7,1,0,
+Frost25,Intellect,Intellect.png,Intellect + 10,Frost27,1,8,1,0,
+Frost26,Intellect,Intellect.png,Intellect + 10,Frost29,-1,9,1,0,
+Frost27,Cold Intent - Flow,ColdIntent-Flow.png,"Ice Energy cap +40.
+Special Attack damage +4%.",,0,9,1,0,
+Frost28,Cold Intent - Sharp,ColdIntent-Sharp.png,"Max Ice Energy +10.
+Special Attack DMG +12%.",,2,9,1,0,
+Frost29,Stamina,Stamina.png,Stamina + 30,Frost30,0,10,1,0,
+Frost30,Frost Explosion,FrostExplosion.png,Ice Arrows fired by Ice Cores deal an additional instance of AoE Magic Damage equal to 25% ATK.,,0,11,1,0,
+Icicl00,Icicle Spec,TRUE ,,,9,13,,,
+Icicl01,Icicle Spec,IcicleSpec.png,"Further enhances Frost Lance. When Frost Lance deals Crit DMG, it has a fixed 30% chance to let Ice Cores fire Ice Arrows.","Icicl02,Icicl03,Icicl04",0,0,1,0,
+Icicl02,Stamina,Stamina.png,Stamina + 30,Icicl05,-1,1,1,0,
+Icicl03,Intellect,Intellect.png,Intellect + 10,Icicl06,0,1,1,0,
+Icicl04,Stamina,Stamina.png,Stamina + 30,Icicl07,1,1,1,0,
+Icicl05,Shattering Strike,ShatteringStrike.png,"When Meteor Storm deals DMG, it causes Ice Cores to fire Ice Arrows. This effect can trigger up to once per Meteor Storm cast.",Icicl09,-1,2,1,0,
+Icicl06,Energy Saving,EnergySaving.png,"Consume Frost Crystal with Frost Lance returns 50% of the consumed Ice Energy after Casting.
+
+Not consuming Frost Crystal with Frost Lance deducts an additional 50% of the consumed Ice Energy after Casting.",Icicl10,0,2,1,0,
+Icicl07,Snow Shadow,SnowShadow.png,"For every 50 Ice Energy consumed, the CD of Crystal Veil -1s.",Icicl11,1,2,1,0,
+Icicl08,Stamina,Stamina.png,Stamina + 30,Icicl26,-3,3,1,0,
+Icicl09,Ice Attack,IceAttack.png,Ice Attack + 5,"Icicl08,Icicl13,Icicl14",-2,3,1,0,
+Icicl10,Stamina,Stamina.png,Stamina + 30,"Icicl14,Icicl15,Icicl16",0,3,1,0,
+Icicl11,Ice Attack,IceAttack.png,Ice Attack + 5,"Icicl12,Icicl16,Icicl17",2,3,1,0,
+Icicl12,Stamina,Stamina.png,Stamina + 30,Icicl30,3,3,1,0,
+Icicl13,Intellect,Intellect.png,Intellect + 10,Icicl21,-2,4,1,0,
+Icicl14,Intellect,Intellect.png,Intellect + 10,"Icicl18,Icicl19",-1,4,1,0,
+Icicl15,Deep Cold Magic Spear,DeepColdMagicSpear.png,Frost Lance deals 70% more DMG. Frost Lance costs 100% more time to use.,,0,4,1,0,
+Icicl16,Intellect,Intellect.png,Intellect + 10,"Icicl19,Icicl20",1,4,1,0,
+Icicl17,Intellect,Intellect.png,Intellect + 10,Icicl25,2,4,1,0,
+Icicl18,Stormy Encounter,StormyEncounter.png,"When Crystal Veil deals DMG, it has a fixed chance to reduce the CD of Blizzard by 1s. The chance equals half percentage of your Luck.",Icicl22,-1,5,1,0,
+Icicl19,Stamina,Stamina.png,Stamina + 30,Icicl23,0,5,1,0,
+Icicl20,Frost Blade,FrostBlade.png,Frost Lance that consume Frost Crystal deal 20% more DMG.,Icicl24,1,5,1,0,
+Icicl21,Luck Damage,LuckDamage.png,"Lucky Hit DMG multiplier +15%.
+Every 2% Luck grants 1% Lucky Hit DMG multiplier.","Icicl26,Icicl31",-2,6,1,0,
+Icicl22,Stamina,Stamina.png,Stamina + 30,"Icicl27,Icicl28",-1,6,1,0,
+Icicl23,Frost Domain,FrostDomain.png,"The area of Glacier Hymn -50%.
+While within it, you gain a 25% bonus to your Ice damage.",,0,6,1,0,
+Icicl24,Stamina,Stamina.png,Stamina + 30,"Icicl28,Icicl29",1,6,1,0,
+Icicl25,Quick Frozen Blast,QuickFrozenBlast.png,"When an Expertise Skill or Ultimate deals DMG to a target with Frozen, it triggers Frost Shock, once per second.","Icicl30,Icicl33",2,6,1,0,
+Icicl26,Glazed Vastness,GlazedVastness.png,Ice skills deal 8% more DMG to Elite and stronger targets.,Icicl31,-3,7,1,0,
+Icicl27,Sharp Blizzard,SharpBlizzard.png,Increases the critical rate of Blizzard by 50%. Increases the Crit DMG of Blizzard by 15%.,,-1,7,1,0,
+Icicl28,Endless Cold,EndlessCold.png,"Every 20 Frost Crystals consumed grants Endless Cold effect.
+
+Endless Cold: for 10s, increases Meteor Storm DMG by 150%, and removes its CD and Ice Energy cost. During this period, Ice Arrows triggered by Meteor Storm cannot produce Frost Crystal",Icicl32,0,7,1,0,
+Icicl29,Blizzard Dual Spears,BlizzardDualSpears.png,"Within 8s after casting Blizzard, Frost Lancecan fire an additional Frost Lanceat another target near the original one.",,1,7,1,0,
+Icicl30,Deadly Frost Lance,DeadlyFrostLance.png,Frost Lance deals 20% more DMG to targets with HPless than 35%,Icicl33,3,7,1,0,
+Icicl31,Stamina,Stamina.png,Stamina + 30,"Icicl34,Icicl35",-2,8,1,0,
+Icicl32,Stamina,Stamina.png,Stamina + 30,"Icicl39,Icicl40,Icicl41",0,8,1,0,
+Icicl33,Stamina,Stamina.png,Stamina + 30,"Icicl36,Icicl37",2,8,1,0,
+Icicl34,Continuous Stream,ContinuousStream.png,"Dealing DMG triggers Trickle.
+
+Trickle: Grants a 1% Ice Damage bonus for 6s. stacking up to 5 times.",,-3,9,1,0,
+Icicl35,Ice Attack,IceAttack.png,Ice Attack + 5,"Icicl38,Icicl39",-2,9,1,0,
+Icicl36,Ice Attack,IceAttack.png,Ice Attack + 5,"Icicl41,Icicl42",2,9,1,0,
+Icicl37,Frost Shock,FrostShock.png,"When an Expertise Skill or Ultimate lands a Lucky Hit, it has a fixed 30% chance to trigger Frost Shock, once every 3s.",,3,9,1,0,
+Icicl38,Frost Crystal Empowerment,FrostCrystalEmpowerment.png,Each consumed Frost Crystal increases Intellect by 25. The effect lasts 10sand stacks up to 5 times.,,-2,10,1,0,
+Icicl39,Stamina,Stamina.png,Stamina + 30,"Icicl43,Icicl44",-1,10,1,0,
+Icicl40,Frozen Stars,FrozenStars.png,"If Frost Lance deals Crit DMG and triggers Lucky Hit, Meteor Storm's remaining CD is instantly cleared.",Icicl45,0,10,1,0,
+Icicl41,Stamina,Stamina.png,Stamina + 30,"Icicl46,Icicl47",1,10,1,0,
+Icicl42,Bitter Cold,BitterCold.png,Every 100 Intellect grants 0.5 bonus Crit DMG dealt.,,2,10,1,0,
+Icicl43,Freezing Meteor Storm,FreezingMeteorStorm.png,"When Meteor Storm deals damage, 20% chance to apply Frozen to the target.
+During the duration of Permafrost, when Frost Lance and Meteor Storm critically hit, extend the duration of Permafrost by 0.5s, with a cumulative extension not exceeding 5s.",,-2,11,1,0,
+Icicl44,Intellect,Intellect.png,Intellect + 10,Icicl48,-1,11,1,0,
+Icicl45,Stamina,Stamina.png,Stamina + 30,"Icicl48,Icicl49,Icicl51",0,11,1,0,
+Icicl46,Intellect,Intellect.png,Intellect + 10,Icicl49,1,11,1,0,
+Icicl47,Frost Assault,FrostAssault.png,"Blizzard reduces the Ice RES of targets hit by 10%. The effect lasts 10s and does not stack, and only works on your own.",,2,11,1,0,
+Icicl48,Glacier Fury,GlacierFury.png,"Consuming 15 Frost Crystals enhances the next Blizzard.
+
+Blizzard: Bypasses the casting time and increases DMG dealt by 30%",Icicl50,-1,12,1,0,
+Icicl49,Icicle Volley,IcicleVolley.png,"For every 10 casts of Frost Lance, a Piercing Spear is launched forward.",Icicl52,1,12,1,0,
+Icicl50,Ice Attack,IceAttack.png,Ice Attack + 5,Icicl53,-2,13,1,0,
+Icicl51,Frost Comet,FrostComet.png,"When Frost Lance consumes Frost Crystal and triggers either a Crit Hit or Lucky Hit, there is a fixed 30% chance to summon a Frost Comet.",Icicl54,0,13,1,0,
+Icicl52,Ice Attack,IceAttack.png,Ice Attack + 5,Icicl55,2,13,1,0,
+Icicl53,Critical Cold,CriticalCold.png,"During Permafrost, increases Crit DMG dealt by 15%.
+During Permafrost increases allies' critical rate by 3%.",Icicl56,-1,14,1,0,
+Icicl54,Intellect,Intellect.png,Intellect + 10,"Icicl56,Icicl57,Icicl59",0,14,1,0,
+Icicl55,Frost Lance Crit,FrostLanceCrit.png,Frost Lance deals 1.5% more Crit DMG. The effect lasts 6s and stacks up to 10 times.,Icicl57,1,14,1,0,
+Icicl56,Intellect,Intellect.png,Intellect + 10,Icicl58,-1,15,1,0,
+Icicl57,Intellect,Intellect.png,Intellect + 10,Icicl60,1,15,1,0,
+Icicl58,Frost Lance Barrage,FrostLanceBarrage.png,"During Permafrost, Frost Lance fires 2 consecutive shots.",,-1,16,1,0,
+Icicl59,Meteor Storm Expansion,MeteorStormExpansion.png,"Meteor Storm hit count +1.
+Meteor Storm gains 10% Ice Bonus.",,0,16,1,0,
+Icicl60,Infusion Sublimation,InfusionSublimation.png,"Increases Max Frost Crystal by 1.
+During Permafrost, increases Ice damage by 100.
+When Permafrost ends, the amount of your Frost Crystal resets to that before Permafrost.",,1,16,1,0,
+IceBm00,Frost Beam Spec,TRUE ,,,11,13,,,
+IceBm01,Frostbeam Spec,FrostbeamSpec.png,"Replace Special Attack with Frostbeam, enhancing its effectiveness.
+Each possessed Frost Crystal increases Frostbeam DMG by 15% and Ice Energy consumption by 30%.","IceBm02,IceBm03,IceBm04",0,0,1,0,
+IceBm02,Stamina,Stamina.png,Stamina + 30,IceBm05,-1,1,1,0,
+IceBm03,Intellect,Intellect.png,Intellect + 10,IceBm06,0,1,1,0,
+IceBm04,Stamina,Stamina.png,Stamina + 30,IceBm07,1,1,1,0,
+IceBm05,Crystal Resonance,CrystalResonance.png,"When Frostbeam deals DMG, it has a fixed 30% chance to let Ice Cores fire Ice Arrows.",IceBm09,-1,2,1,0,
+IceBm06,Cold Retention,ColdRetention.png,"In the Permafrost status, the cost of Frostbeam decreases by 25%.",IceBm10,0,2,1,0,
+IceBm07,Tide Mastery,TideMastery.png,"While casting Frostbeam, you can channel Tidepool.",IceBm11,1,2,1,0,
+IceBm08,Stamina,Stamina.png,Stamina + 30,IceBm26,-3,3,1,0,
+IceBm09,Ice Attack,IceAttack.png,Ice Attack + 5,"IceBm08,IceBm13,IceBm14",-2,3,1,0,
+IceBm10,Stamina,Stamina.png,Stamina + 30,"IceBm14,IceBm15,IceBm16",0,3,1,0,
+IceBm11,Ice Attack,IceAttack.png,Ice Attack + 5,"IceBm12,IceBm16,IceBm17",2,3,1,0,
+IceBm12,Stamina,Stamina.png,Stamina + 30,IceBm30,3,3,1,0,
+IceBm13,Intellect,Intellect.png,Intellect + 10,IceBm21,-2,4,1,0,
+IceBm14,Intellect,Intellect.png,Intellect + 10,"IceBm18,IceBm19",-1,4,1,0,
+IceBm15,Intellect Ice Crystal,IntellectIceCrystal.png,"Every 50 Intellect grants 1 Max Ice Energy, up to 100 from this source.",,0,4,1,0,
+IceBm16,Intellect,Intellect.png,Intellect + 10,"IceBm19,IceBm20",1,4,1,0,
+IceBm17,Intellect,Intellect.png,Intellect + 10,IceBm25,2,4,1,0,
+IceBm18,Cold Wind Convergence,ColdWindConvergence.png,"When Frozen Gale hits a target (only triggers once even if multiple enemies are hit), all Frost Crystals are consumed to summon Icy Bolt. The number of Icy Bolt summoned matches the number of Frost Crystal consumed. When an Icy Bolt deals DMG, 5 Ice Energy is restored and the Ice Energy cost of skills -5% for the next 8s, stacking up to 6 times.",IceBm22,-1,5,1,0,
+IceBm19,Stamina,Stamina.png,Stamina + 30,IceBm23,0,5,1,0,
+IceBm20,Frostjade Staff,FrostjadeStaff.png,"When an Ice Arrow fired by an Ice Core deals DMG, it has a fixed 30% chance to grant 3 Ice Energy.
+During Permafrost, doubles the chance.",IceBm24,1,5,1,0,
+IceBm21,Frost Tide,FrostTide.png,"When dealing DMG, Frostbeam has a fixed 20% chance to grant Frost Crystal. If Max Frost Crystal is reached, grants 5% bonus Ice damage dealt instead for 3s.","IceBm26,IceBm31",-2,6,1,0,
+IceBm22,Stamina,Stamina.png,Stamina + 30,"IceBm27,IceBm28",-1,6,1,0,
+IceBm23,Boundless Frost,BoundlessFrost.png,"Every 50 Ice Energy consumed grants 1 Frost Crystal.
+Max Frost Crystal +3.",,0,6,1,0,
+IceBm24,Stamina,Stamina.png,Stamina + 30,"IceBm28,IceBm29",1,6,1,0,
+IceBm25,Frost Revelation,FrostRevelation.png,The first hit of Tidepool on the target grants 5 Ice Energy. Each additional Frost Crystal increases Ice Energy restored by 10.,"IceBm30,IceBm33",2,6,1,0,
+IceBm26,Glazed Vastness,GlazedVastness.png,Ice skills deal 8% more DMG to Elite and stronger targets.,IceBm31,-3,7,1,0,
+IceBm27,Ice Crystal Expansion,IceCrystalExpansion.png,Max Ice Energy +40.,,-1,7,1,0,
+IceBm28,Frost Domain,FrostDomain.png,"The area of Glacier Hymn -50%.
+While within it, you gain a 25% bonus to your Ice damage.",IceBm32,0,7,1,0,
+IceBm29,Ray's Swan Song,Ray'sSwanSong.png,"When dealing DMG, Frostbeam gains a fixed 10% chance to double Mastery for 3s (which can only be triggered once on multiple hits).",,1,7,1,0,
+IceBm30,Quick Frozen Blast,QuickFrozenBlast.png,"When an Expertise Skill or Ultimate deals DMG to a target with Frozen, it triggers Frost Shock, once per second.",IceBm33,3,7,1,0,
+IceBm31,Stamina,Stamina.png,Stamina + 30,"IceBm34,IceBm35",-2,8,1,0,
+IceBm32,Stamina,Stamina.png,Stamina + 30,"IceBm39,IceBm40,IceBm41",0,8,1,0,
+IceBm33,Stamina,Stamina.png,Stamina + 30,"IceBm36,IceBm37",2,8,1,0,
+IceBm34,Continuous Stream,ContinuousStream.png,"Dealing DMG triggers Trickle.
+
+Trickle: Grants a 1% Ice Damage bonus for 6s. stacking up to 5 times.",,-3,9,1,0,
+IceBm35,Ice Attack,IceAttack.png,Ice Attack + 5,"IceBm38,IceBm39",-2,9,1,0,
+IceBm36,Ice Attack,IceAttack.png,Ice Attack + 5,"IceBm41,IceBm42",2,9,1,0,
+IceBm37,Icy Calm,IcyCalm.png,"Each additional target hit by an Expertise Skill or Ultimate grants a 2% bonus to your highest stat among Mastery, Haste, Crit, or Luck for 5s. Hitting more than 5 additional targets still only counts as 5.",,3,9,1,0,
+IceBm38,Ice Shard Pact,IceShardPact.png,Increases Maelstrom's Ice Energy recovery rate by 200%.,,-2,10,1,0,
+IceBm39,Stamina,Stamina.png,Stamina + 30,"IceBm43,IceBm44",-1,10,1,0,
+IceBm40,Rapid Ice Arrow,RapidIceArrow.png,"During Permafrost, Frostbeam fires 2 additional Ice Arrows generated by Ice Core.
+However, during Permafrost, Lucky Hit final DMG -50%.",IceBm45,0,10,1,0,
+IceBm41,Stamina,Stamina.png,Stamina + 30,"IceBm46,IceBm47",1,10,1,0,
+IceBm42,Quick Chant,QuickChant.png,"Increases Haste by 500.
+During Permafrost, accelerates the using of Skills by 15%.",,2,10,1,0,
+IceBm43,Intellect Amp,IntellectAmp.png,Increases Intellect by 5%.,,-2,11,1,0,
+IceBm44,Intellect,Intellect.png,Intellect + 10,IceBm48,-1,11,1,0,
+IceBm45,Stamina,Stamina.png,Stamina + 30,"IceBm48,IceBm49,IceBm51",0,11,1,0,
+IceBm46,Intellect,Intellect.png,Intellect + 10,IceBm49,1,11,1,0,
+IceBm47,Ray Mastery I,RayMasteryI.png,"Frostbeam deals 2% more Ice damage.
+Frostbeam deals 5% more Ice damage to the main target.",,2,11,1,0,
+IceBm48,Endless Tide,EndlessTide.png,"During Permafrost, each Ice Arrow triggered by Ice Core extends the duration of Permafrost by 0.5s, up to 5s.",IceBm50,-1,12,1,0,
+IceBm49,Cold Pulse,ColdPulse.png,Every 50 instances of DMG dealt by Frostbeam triggers Cold Pulse once.,IceBm52,1,12,1,0,
+IceBm50,Ice Attack,IceAttack.png,Ice Attack + 5,IceBm53,-2,13,1,0,
+IceBm51,Ice Crystal Expansion,IceCrystalExpansion.png,Max Ice Energy +40.,IceBm54,0,13,1,0,
+IceBm52,Ice Attack,IceAttack.png,Ice Attack + 5,IceBm55,2,13,1,0,
+IceBm53,Power of Ice Crystals,PowerofIceCrystals.png,"When Ice Energy is above 50%, deals 8% more Ice damage.",IceBm56,-1,14,1,0,
+IceBm54,Intellect,Intellect.png,Intellect + 10,"IceBm56,IceBm57,IceBm59",0,14,1,0,
+IceBm55,Ice Crystal Recovery,IceCrystalRecovery.png,"When Ice Energy is below 50%, enhances the recovery rate of Ice Energy by 10%.",IceBm57,1,14,1,0,
+IceBm56,Intellect,Intellect.png,Intellect + 10,IceBm58,-1,15,1,0,
+IceBm57,Intellect,Intellect.png,Intellect + 10,IceBm60,1,15,1,0,
+IceBm58,Sharp Ice Arrow,SharpIceArrow.png,Increases the critical rate of Ice Arrows from Ice Core by 50%. Increases the Crit DMG of Ice Arrows from Ice Core by 10%.,,-1,16,1,0,
+IceBm59,Law of Energy Surge,LawofEnergySurge.png,"Every 50 Ice Arrows shot increases the DMG of your next Frozen Gale by 200% for 30s. Additionally, casting Frozen Gale grants the Law of Energy Surge.",,0,16,1,0,
+IceBm60,Wide Area Ice Arrow,WideAreaIceArrow.png,Every 15 hits of Expertise Skill allows Ice Core to fire Ice Arrow.,,1,16,1,0,

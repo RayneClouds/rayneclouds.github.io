@@ -1,2056 +1,2131 @@
 {
   "tiers": [
     {
-      "id": "Verdo",
-      "name": "Verdant Oracle",
+      "id": "marks",
+      "name": "Marksman",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
       },
       "nodes": [
         {
-          "id": "Verdo01",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "marks01",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Verdo03"
+            "marks02",
+            "marks03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo02",
-          "name": "Inspiration",
-          "icon": "Inspiration.png",
-          "desc": "Applies Inspiration to yourself and allies within 30 meters.",
+          "id": "marks02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Verdo06"
+            "marks04"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo03",
+          "id": "marks03",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo02",
-            "Verdo04",
-            "Verdo05"
+            "marks05"
           ],
-          "gx": 0,
-          "gy": 1,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo04",
-          "name": "Intellect Conversion",
-          "icon": "IntellectConversion.png",
-          "desc": "Every 10 points of Intellect provides 1 point of MATK.",
-          "children": [
-            "Verdo08"
-          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo05",
-          "name": "Regen Bud",
-          "icon": "RegenBud.png",
-          "desc": "Casting a Special Attack grants 1 Regen Bud.\n\nInitial cap of Regen Buds: 4.\nWhen an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.\nWhen an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",
+          "id": "marks04",
+          "name": "Wolf Pact",
+          "icon": "WolfPact.png",
+          "desc": "Tames a Wild Wolf to fight alongside you. Storm Arrow has a 30% fixed chance to trigger Coordinated Attack.\n\nWild Wolf\nA Wild Wolf fights alongside you.\nBasic Attack: Sweeps the enemy, dealing Attack Damage equal to 60% ATK (which scales with the Level/Tier of your Basic Attack).\nCoordinated Attack: Wild Wolf leaps to the enemy and bites, dealing Attack Damage equal to 100% ATK (which scales with the Level/Tier of your Basic Attack).",
           "children": [
-            "Verdo07"
+            "marks06"
           ],
-          "gx": 0,
+          "requiresUnlock": [],
+          "gx": -1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo06",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "marks05",
+          "name": "Agility Conversion",
+          "icon": "AgilityConversion.png",
+          "desc": "Every 10 points of Agility provide 2 point of Haste.",
           "children": [
-            "Verdo09"
+            "marks07",
+            "marks08"
           ],
-          "gx": -1,
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks06",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "marks09",
+            "marks10"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo07",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "marks07",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Verdo10"
+            "marks11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "marks08",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Verdo11"
+            "marks12",
+            "marks13"
           ],
-          "gx": 1,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo09",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "marks09",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Verdo12"
+            "marks14"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo10",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "marks10",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Verdo13",
-            "Verdo14"
+            "marks15"
           ],
-          "gx": 0,
-          "gy": 4,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo11",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Verdo14",
-            "Verdo15"
-          ],
-          "gx": 2,
-          "gy": 4,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo12",
-          "name": "Defensive Blessing",
-          "icon": "DefensiveBlessing.png",
-          "desc": "Inspiration additionally grants the target 200 Armor.",
-          "children": [
-            "Verdo16"
-          ],
+          "requiresUnlock": [],
           "gx": -1,
-          "gy": 5,
+          "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo13",
-          "name": "Breath of Buds",
-          "icon": "BreathofBuds.png",
-          "desc": "Increases Max Regen Bud by 4.",
-          "children": [
-            "Verdo19"
-          ],
+          "id": "marks11",
+          "name": "Vulnerable Strike",
+          "icon": "VulnerableStrike.png",
+          "desc": "Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.\nVulnerability: Increases the DMG you deal to the target by 10% for 5s.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
-          "gy": 5,
+          "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo14",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "marks12",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Verdo17"
+            "marks15",
+            "marks16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
-          "gy": 5,
+          "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo15",
-          "name": "Energy Surge",
-          "icon": "EnergySurge.png",
-          "desc": "Every 2% haste provides 1% energy natural recovery efficiency.",
+          "id": "marks13",
+          "name": "Quick Shot",
+          "icon": "QuickShot.png",
+          "desc": "Attack Speed +3%",
           "children": [
-            "Verdo18",
-            "Verdo20"
+            "marks17"
           ],
-          "gx": 2,
-          "gy": 5,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo16",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Verdo21"
-          ],
-          "gx": -2,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo17",
-          "name": "Regeneration Bud",
-          "icon": "RegenerationBud.png",
-          "desc": "When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.",
-          "children": [
-            "Verdo19",
-            "Verdo20"
-          ],
-          "gx": 1,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo18",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Verdo25"
-          ],
+          "requiresUnlock": [],
           "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks14",
+          "name": "Rapid Shot",
+          "icon": "RapidShot.png",
+          "desc": "Every 5% Haste provides an additional 1% attack speed.",
+          "children": [
+            "marks18",
+            "marks19"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks16",
+          "name": "Psychic Surge",
+          "icon": "PsychicSurge.png",
+          "desc": "For every 15 Special Attacks cast, Photon Energy granted by the next cast of Arrow Rain +100%.",
+          "children": [
+            "marks20"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks17",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "marks21"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks18",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "marks22"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo19",
+          "id": "marks19",
+          "name": "Beast Power",
+          "icon": "BeastPower.png",
+          "desc": "Pet damage +10%.",
+          "children": [
+            "marks23",
+            "marks24"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks20",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "marks24"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks21",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "marks28"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks22",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks23",
+          "name": "Overcharge",
+          "icon": "Overcharge.png",
+          "desc": "When Basic Attacks deal DMG, 5% chance to instantly grant an overdrive to Special Attack, as long as the overdrive limit hasn't been reached..",
+          "children": [
+            "marks26"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks24",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo22",
-            "Verdo23"
+            "marks25"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo20",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Verdo23",
-            "Verdo24"
-          ],
-          "gx": 2,
-          "gy": 7,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo21",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Verdo26"
-          ],
-          "gx": -2,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo22",
+          "id": "marks25",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo27"
+            "marks27"
           ],
-          "gx": 0,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo23",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Verdo28"
-          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo24",
+          "id": "marks26",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo29"
+            "marks29"
           ],
-          "gx": 2,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo25",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Verdo30"
-          ],
-          "gx": 3,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo26",
-          "name": "Healing Breath",
-          "icon": "HealingBreath.png",
-          "desc": "When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",
-          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo27",
-          "name": "Divine Ascension of the Flower Realm",
-          "icon": "DivineAscensionoftheFlowerRealm.png",
-          "desc": "When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",
+          "id": "marks27",
+          "name": "Photon Limit",
+          "icon": "PhotonLimit.png",
+          "desc": "Increases Max Photon Energy by 20, extending the duration of Photon Reforge. Unaffected when Wildpack Spec is active.\nIf Falconry Spec is activated, the effect becomes: Max Photon Energy -20 but Photon Reforge state can be entered more quickly.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo28",
-          "name": "Dancing Seed",
-          "icon": "DancingSeed.png",
-          "desc": "When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.\nFor every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",
+          "id": "marks28",
+          "name": "Meditation",
+          "icon": "Meditation.png",
+          "desc": "While in Photon Reforge, Photon Energy drain per second is reduced from 25 to 20, allowing the effect to last longer.\nUnaffected when Wildpack Spec is active.\nIf Falconry Spec is activated, the effect becomes: Photon Energy regeneration is increased by 2 to 3 points per second, reducing the time required to enter Photon Reforge.",
           "children": [],
-          "gx": 1,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo29",
-          "name": "Omnipotent Breath",
-          "icon": "OmnipotentBreath.png",
-          "desc": "When Intellect reaches 500, versatility +4%.",
-          "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo30",
-          "name": "Brimming Vitality",
-          "icon": "BrimmingVitality.png",
-          "desc": "Increases Energy REG SPD by 20%",
+          "id": "marks29",
+          "name": "Dexterity",
+          "icon": "Dexterity.png",
+          "desc": "When Agility reaches 500 points, attack speed +5%.",
+          "children": [
+            "marks30"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "marks30",
+          "name": "Explosive Arrow",
+          "icon": "ExplosiveArrow.png",
+          "desc": "When a Basic Attack or Special Attack deals DMG, it has a fixed 10% chance to fire an Explosive Arrow, once every 3s.",
           "children": [],
-          "gx": 3,
-          "gy": 9,
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         }
       ]
     },
     {
-      "id": "Smite",
-      "name": "Smite",
+      "id": "Falco",
+      "name": "Falconry Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
-        "gy": 11
+        "gy": 13
       },
       "nodes": [
         {
-          "id": "Smite01",
-          "name": "Smite Spec",
-          "icon": "SmiteSpec.png",
-          "desc": "Further enhances the ability to use Wild Bloom.\nWild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.\nSymbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.\n\nHealing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.",
+          "id": "Falco01",
+          "name": "Falconry Spec",
+          "icon": "FalconrySpec.png",
+          "desc": "Replaces Special Attack with Double Arrow, and enhances the ability to use this skill.\nRecovers 2 points of Photon Energy per second.\nCan tame a Falcon to assist in combat.\n\nFalcon always accompanies you. When your Class Skill deals Crit DMG, the Falcon swiftly attacks the target, dealing Attack Damage equal to 150% ATK. Scales with the Level/Tier of Basic Attack.",
           "children": [
-            "Smite02",
-            "Smite03"
+            "Falco02",
+            "Falco03",
+            "Falco04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite02",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Falco02",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Smite04"
+            "Falco05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite03",
+          "id": "Falco03",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite05"
+            "Falco06"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco04",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Falco07"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite04",
-          "name": "Nature Shield",
-          "icon": "NatureShield.png",
-          "desc": "When Wild Bloom heals a target, it also applies Nature Shield to them.\nTargets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.",
+          "id": "Falco05",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite06",
-            "Smite07"
+            "Falco09"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite05",
-          "name": "Pulse Duality",
-          "icon": "PulseDuality.png",
-          "desc": "When Regen Pulse is actively used, it spreads twice.",
+          "id": "Falco06",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Smite07",
-            "Smite08"
+            "Falco10"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco07",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Falco11"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite06",
+          "id": "Falco08",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Falco26"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco09",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite09",
-            "Smite10"
+            "Falco08",
+            "Falco13",
+            "Falco14"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite07",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Falco10",
+          "name": "Radiant Spirit",
+          "icon": "RadiantSpirit.png",
+          "desc": "Extends the duration of Focus by 3s.",
           "children": [
-            "Smite10",
-            "Smite11"
+            "Falco14",
+            "Falco15",
+            "Falco16"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Falco11",
+          "name": "Piercing Shot",
+          "icon": "PiercingShot.png",
+          "desc": "Increases the Crit of Double Arrow and Quadraflare by 7%.",
           "children": [
-            "Smite12",
-            "Smite13"
+            "Falco12",
+            "Falco16",
+            "Falco17"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite09",
-          "name": "Thorns",
-          "icon": "Thorns.png",
-          "desc": "When Wild Seed hits a target, it inflicts Thorn on them.\nVerdant DMG dealt by players to targets with Thorn +5%.",
+          "id": "Falco12",
+          "name": "Falcon Raid",
+          "icon": "FalconRaid.png",
+          "desc": "For every 3 instances of Crit DMG dealt by Special Attacks, the Falcon instantly launches Lightning Strike.",
           "children": [
-            "Smite14"
+            "Falco30"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco13",
+          "name": "Light Energy Stasis",
+          "icon": "LightEnergyStasis.png",
+          "desc": "When Radiance Barrage hits a target, it applies Photon Stagnation to them.\nPhoton Stagnation: movement speed -30%. Being hit by Powerdraw is bound to deal Crit DMG. Lasts for 5s.",
+          "children": [
+            "Falco21"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite10",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Falco14",
+          "name": "Focused Concentration",
+          "icon": "FocusedConcentration.png",
+          "desc": "While Focus is active, increases Crit Chance by 0.5% and Crit DMG by 1% every 1 second. This effect stacks up to 12 times.",
           "children": [
-            "Smite15",
-            "Smite17"
+            "Falco18",
+            "Falco19"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite11",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite16",
-            "Smite18"
-          ],
+          "id": "Falco15",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite12",
-          "name": "Shelter",
-          "icon": "Shelter.png",
-          "desc": "Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.",
+          "id": "Falco16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite16",
-            "Smite20"
+            "Falco19",
+            "Falco20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite13",
-          "name": "Luck Damage",
-          "icon": "LuckDamage.png",
-          "desc": "Lucky Hit DMG Multiplier +5%.\nEvery 1% Luck grants 1% Lucky Hit DMG Multiplier.",
-          "children": [],
-          "gx": 3,
+          "id": "Falco17",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Falco25"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite14",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Falco18",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Smite21"
+            "Falco22"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite15",
-          "name": "Wild Blessing",
-          "icon": "WildBlessing.png",
-          "desc": "Wild Bloom now stores up to 2 overdrives.\nWild Bloom's Energy cost -15%.",
-          "children": [],
-          "gx": -2,
+          "id": "Falco19",
+          "name": "Lightning Strike",
+          "icon": "LightningStrike.png",
+          "desc": "Increases Lightning Strike DMG by 30%.",
+          "children": [
+            "Falco23"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite16",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Falco20",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Smite19"
+            "Falco24"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite17",
-          "name": "Final Bloomwheel",
-          "icon": "FinalBloomwheel.png",
-          "desc": "When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.",
+          "id": "Falco21",
+          "name": "Steel Beak",
+          "icon": "SteelBeak.png",
+          "desc": "When you and your Falcon deal Crit DMG, applies 1 stack of Steel Beak to the target.",
           "children": [
-            "Smite22",
-            "Smite23"
+            "Falco26",
+            "Falco31"
           ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco22",
+          "name": "Meteor",
+          "icon": "Meteor.png",
+          "desc": "When the Falcon strikes, grants you a fixed 30% chance to gain 1 stack of Weak Point Aim.\nUsing Quadraflare leaves behind a Radiance Rift midair. Radiance Rift fires Photon Arrows equal to the current number of Weak Point Aim stacks.",
+          "children": [
+            "Falco27",
+            "Falco28"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite18",
-          "name": "Bloomheal",
-          "icon": "Bloomheal.png",
-          "desc": "Replace Ultimate, Divine Circle Bloom with Bloomheal.",
-          "children": [
-            "Smite23"
-          ],
+          "id": "Falco23",
+          "name": "Eagle Eye",
+          "icon": "EagleEye.png",
+          "desc": "Casting Quadraflare will be faster.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite19",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Falco24",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Smite24",
-            "Smite30"
+            "Falco28",
+            "Falco29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite20",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Falco25",
+          "name": "Focused Shot",
+          "icon": "FocusedShot.png",
+          "desc": "Every target hit grants 1% Light DMG bonus. The bonus lasts 3s and can layer up to 4 times.",
           "children": [
-            "Smite25"
+            "Falco30",
+            "Falco33"
           ],
-          "gx": 3,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite21",
-          "name": "Wide-area Thorns",
-          "icon": "Wide-areaThorns.png",
-          "desc": "Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.",
+          "id": "Falco26",
+          "name": "Energy Gathering Power",
+          "icon": "EnergyGatheringPower.png",
+          "desc": "Reduces Powerdraw CD 50%.",
           "children": [
-            "Smite26"
+            "Falco31"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite22",
+          "id": "Falco27",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [
-            "Smite26"
-          ],
-          "gx": -2,
-          "gy": 7,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite23",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite27",
-            "Smite28"
-          ],
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite24",
-          "name": "Pulse Retrospect",
-          "icon": "PulseRetrospect.png",
-          "desc": "Regen Pulse returns to your position after it reaches the max distance.\nRegen Pulse now deals DMG to enemies.",
+          "id": "Falco28",
+          "name": "Light Prism",
+          "icon": "LightPrism.png",
+          "desc": "When Lightning Strike hits a target, it triggers Light Prism.\nLight Prism: Deals area damage equal to 100% ATK to up to 5 surrounding enemy targets, and additionally applies 3 stacks of Steel Beak.",
           "children": [
-            "Smite28",
-            "Smite29"
+            "Falco32"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco29",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite25",
-          "name": "Bud Acquisition",
-          "icon": "BudAcquisition.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",
-          "children": [],
+          "id": "Falco30",
+          "name": "Celestial Eagle",
+          "icon": "CelestialEagle.png",
+          "desc": "While Focus is active, Radiance Barrage summons 1 Celestial Eagle at the target's location.",
+          "children": [
+            "Falco33"
+          ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite26",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Falco31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite31",
-            "Smite32",
-            "Smite33"
+            "Falco34",
+            "Falco35"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite27",
-          "name": "Feral Seed Symbiosis",
-          "icon": "FeralSeedSymbiosis.png",
-          "desc": "When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",
+          "id": "Falco32",
+          "name": "Arrow Barrage",
+          "icon": "ArrowBarrage.png",
+          "desc": "Basic Attacks have a fixed 20% chance to fire one arrow at each of up to 3 enemies near the target.",
           "children": [
-            "Smite33"
+            "Falco39",
+            "Falco40",
+            "Falco41"
           ],
-          "gx": -1,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite28",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite33",
-            "Smite34",
-            "Smite35"
-          ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite29",
-          "name": "Pulse Echo",
-          "icon": "PulseEcho.png",
-          "desc": "When dealing DMG, Infusion grants 1 stack of Pulse Echo.\nPulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.",
+          "id": "Falco33",
+          "name": "Valiant Heart",
+          "icon": "ValiantHeart.png",
+          "desc": "Pets deal 15% more DMG to Elites or stronger enemies.",
           "children": [
-            "Smite35",
-            "Smite36"
+            "Falco36",
+            "Falco37"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite30",
-          "name": "Breath of Symbiosis",
-          "icon": "BreathofSymbiosis.png",
-          "desc": "Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.",
-          "children": [
-            "Smite36"
-          ],
-          "gx": 3,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite31",
-          "name": "Laceration",
-          "icon": "Laceration.png",
-          "desc": "When dealing DMG, Infusion inflicts Laceration on the target.\nLaceration: Takes 100% more DMG from Thorn in 2s.",
+          "id": "Falco34",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite32",
+          "id": "Falco35",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite37"
+            "Falco38",
+            "Falco39"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite33",
+          "id": "Falco36",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite38",
-            "Smite40"
+            "Falco41",
+            "Falco42"
           ],
-          "gx": -1,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite34",
-          "name": "Stag Charge",
-          "icon": "StagCharge.png",
-          "desc": "After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.\nCasting Stag Charge instants grants 3 Regen Buds.",
-          "children": [
-            "Smite38",
-            "Smite42"
-          ],
-          "gx": 0,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite35",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite46"
-          ],
-          "gx": 1,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite36",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite39",
-            "Smite52"
-          ],
+          "id": "Falco37",
+          "name": "Sundering Arrow",
+          "icon": "SunderingArrow.png",
+          "desc": "Basic Attacks have a fixed 15% chance to trigger Split Arrow, once per second.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite37",
-          "name": "Wings of Revival",
-          "icon": "WingsofRevival.png",
-          "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
+          "id": "Falco38",
+          "name": "Steel Beak Strike",
+          "icon": "SteelBeakStrike.png",
+          "desc": "When Powerdraw hits a target, it applies 2 stacks of Steel Beak. If it deals Crit DMG, it applies 5 stacks of Steel Beak.",
           "children": [],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite38",
+          "id": "Falco39",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite41"
+            "Falco43",
+            "Falco44"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite39",
-          "name": "Arcane of Green",
-          "icon": "ArcaneofGreen.png",
-          "desc": "When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",
+          "id": "Falco40",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite43"
+            "Falco45"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco41",
+          "name": "Falcon's Heart",
+          "icon": "Falcon'sHeart.png",
+          "desc": "The Falcon nullifies 20% of the targets' Armor.",
+          "children": [
+            "Falco46",
+            "Falco47"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco42",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite40",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite44",
-            "Smite47"
-          ],
-          "gx": -3,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite41",
-          "name": "Verdant Blessing",
-          "icon": "VerdantBlessing.png",
-          "desc": "When HP of an ally with Inspiration drops below 20%, Blessing triggers.\nBlessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.",
-          "children": [
-            "Smite44",
-            "Smite48"
-          ],
-          "gx": -1,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite42",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Smite45"
-          ],
-          "gx": 0,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite43",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite46",
-            "Smite51"
-          ],
-          "gx": 2,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite44",
-          "name": "Flourish",
-          "icon": "Flourish.png",
-          "desc": "When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",
-          "children": [
-            "Smite48"
-          ],
+          "id": "Falco43",
+          "name": "Swift",
+          "icon": "Swift.png",
+          "desc": "Applies Swiftness to the Falcon when casting Lightning Strike.\nSwiftness: Increases Attack SPD by 10%. This effect lasts 8s and stacks up to 3 times.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -2,
-          "gy": 12,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite45",
-          "name": "Double Infusion",
-          "icon": "DoubleInfusion.png",
-          "desc": "After casting Stag Charge, the number of channels for the next Infusion +100%.",
+          "id": "Falco44",
+          "name": "Dual Arrow Mastery",
+          "icon": "DualArrowMastery.png",
+          "desc": "When a Special Attack deals Crit DMG, reduces the remaining CD of Blast Shot and Powerdraw by 1 second.",
           "children": [
-            "Smite49"
+            "Falco48"
           ],
-          "gx": 0,
-          "gy": 12,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite46",
-          "name": "Symbiosis Extension",
-          "icon": "SymbiosisExtension.png",
-          "desc": "Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.",
-          "children": [
-            "Smite50",
-            "Smite51"
-          ],
-          "gx": 1,
-          "gy": 12,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite47",
-          "name": "Swift Bud",
-          "icon": "SwiftBud.png",
-          "desc": "Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",
-          "children": [],
-          "gx": -3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite48",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite53",
-            "Smite57"
-          ],
+          "requiresUnlock": [],
           "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco45",
+          "name": "Steel Beak Gathering",
+          "icon": "SteelBeakGathering.png",
+          "desc": "When Celestial Eagle hits a target, it prevents the target's Steel Beak from naturally decaying.",
+          "children": [
+            "Falco48",
+            "Falco49",
+            "Falco51"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco46",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Falco49"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco47",
+          "name": "Falcon Break",
+          "icon": "FalconBreak.png",
+          "desc": "Crit hits of the Falcon nullify 50% of the target's Armor.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco48",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Falco50"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco49",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Falco52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco50",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Falco53"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite49",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Falco51",
+          "name": "Radiant Sharpshooter",
+          "icon": "RadiantSharpshooter.png",
+          "desc": "Reduces Max Photon Energy by 20.",
           "children": [
-            "Smite53",
-            "Smite54",
-            "Smite55"
+            "Falco54"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite50",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Falco52",
+          "name": "Chain Explosion",
+          "icon": "ChainExplosion.png",
+          "desc": "Blast Shot Upon detonation, inflicts 10 stacks of Steel Beak on all targets hit.",
           "children": [
-            "Smite55"
+            "Falco55"
           ],
-          "gx": 1,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite51",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite55",
-            "Smite56"
-          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite52",
-          "name": "Healing Pulse",
-          "icon": "HealingPulse.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",
-          "children": [],
-          "gx": 3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite53",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Falco53",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite58"
+            "Falco56"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite54",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Falco54",
+          "name": "Lightfall",
+          "icon": "Lightfall.png",
+          "desc": "Each 1% critical rate increases Crit DMG by 0.3%.\nWhen Double Arrow or Quadraflare deals Crit DMG, 2 Photon Energy is restored.",
           "children": [
-            "Smite59"
+            "Falco56",
+            "Falco57",
+            "Falco59"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite55",
+          "id": "Falco55",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite60"
+            "Falco57"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite56",
-          "name": "Swift Shelter",
-          "icon": "SwiftShelter.png",
-          "desc": "Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",
-          "children": [],
-          "gx": 3,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite57",
-          "name": "Wild Luck",
-          "icon": "WildLuck.png",
-          "desc": "When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",
-          "children": [],
-          "gx": -3,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite58",
-          "name": "Pulse Breath",
-          "icon": "PulseBreath.png",
-          "desc": "If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",
-          "children": [],
+          "id": "Falco56",
+          "name": "Sharp Double Arrow I",
+          "icon": "SharpDoubleArrowI.png",
+          "desc": "Increases the Crit DMG of Double Arrow and Quadraflare by 15%.",
+          "children": [
+            "Falco58"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite59",
-          "name": "Verdant Impact",
-          "icon": "VerdantImpact.png",
-          "desc": "For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",
-          "children": [],
-          "gx": 0,
+          "id": "Falco57",
+          "name": "Radiant Charge",
+          "icon": "RadiantCharge.png",
+          "desc": "When an arrow fired from Radiance Rift deals DMG for 1 time, increases the DMG of the next Blast Shot by 10%, up to a maximum of 100%.",
+          "children": [
+            "Falco60"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 15,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite60",
-          "name": "Wild Protection",
-          "icon": "WildProtection.png",
-          "desc": "The charge count of Nature Ward +1.\nThe charge time of Nature Ward decreases by 5s.",
+          "id": "Falco58",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [],
-          "gx": 2,
-          "gy": 15,
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 16,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco59",
+          "name": "Phantom Falcon",
+          "icon": "PhantomFalcon.png",
+          "desc": "Triggering Implosion 5 times summons a Phantom Falcon to charge at the target.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 16,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Falco60",
+          "name": "Twin Arrows",
+          "icon": "TwinArrows.png",
+          "desc": "Luminary Bolt additionally causes a Photon Explosion, dealing Attack Damage equal to 1,500% ATK (which scales with the Level/Tier of Ultimate), and also knocks targets airborne and increases the DMG you deal to them by 5% for 10s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         }
       ]
     },
     {
-      "id": "Lifeb",
-      "name": "Life Bloom",
+      "id": "Wildp",
+      "name": "Wildpack Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
-        "gy": 11
+        "gy": 13
       },
       "nodes": [
         {
-          "id": "Lifeb01",
-          "name": "Lifebind Spec",
-          "icon": "LifebindSpec.png",
-          "desc": "Replace Special Attack with Life Bloom and enhances the skill.\nLife Bloom generates 20% more healing.\nCasting Life Bloom grants 1 additional Regen Bud.",
+          "id": "Wildp01",
+          "name": "Wildpack Spec",
+          "icon": "WildpackSpec.png",
+          "desc": "Further enhances Storm Arrow and the Wild Wolf's power.\nWhile Photon Reforge is active, the chance for the Wild Wolf to trigger Coordinated Attack is increased to 100%.",
           "children": [
-            "Lifeb02",
-            "Lifeb03"
+            "Wildp02",
+            "Wildp03",
+            "Wildp04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb02",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Wildp02",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Lifeb04"
+            "Wildp05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb03",
+          "id": "Wildp03",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb05"
+            "Wildp06"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp04",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Wildp07"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb04",
-          "name": "Healing Infusion",
-          "icon": "HealingInfusion.png",
-          "desc": "Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%",
+          "id": "Wildp05",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb06",
-            "Lifeb07"
+            "Wildp09"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb05",
-          "name": "Lifeforce Extension",
-          "icon": "LifeforceExtension.png",
-          "desc": "Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.",
+          "id": "Wildp06",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Lifeb07",
-            "Lifeb08"
+            "Wildp10"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp07",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Wildp11"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb06",
+          "id": "Wildp08",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Wildp26"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp09",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb09",
-            "Lifeb10"
+            "Wildp08",
+            "Wildp13",
+            "Wildp14"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb07",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Wildp10",
+          "name": "Light Chasing Sharp",
+          "icon": "LightChasingSharp.png",
+          "desc": "While Photon Reforge is active, reduces Storm Arrow CD by 50%.",
           "children": [
-            "Lifeb10",
-            "Lifeb11"
+            "Wildp14",
+            "Wildp15",
+            "Wildp16"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Wildp11",
+          "name": "Phantom Wolfstrike",
+          "icon": "PhantomWolfstrike.png",
+          "desc": "When Wild Wolf launches a Coordinated Attack, or Tail Sweep, there is a fixed 30% chance to summon a Phantom Direwolf using Pounce and Bite to attack the current enemy.\nPounce and Bite inflicts Bleed, and if the target is already suffered from Bleed, Pounce and Bite deals Crit DMG.",
           "children": [
-            "Lifeb12",
-            "Lifeb13"
+            "Wildp12",
+            "Wildp16",
+            "Wildp17"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb09",
-          "name": "Energy Arcane",
-          "icon": "EnergyArcane.png",
-          "desc": "During Growth Arcane, increases ERG REG SPD by 50%.\nIncreases Grove Wish's Crit by 10%.",
+          "id": "Wildp12",
+          "name": "Direwolf Bite",
+          "icon": "DirewolfBite.png",
+          "desc": "Wild Wolf's Coordinated Attack has a 50% fixed chance to inflict Bleed.",
           "children": [
-            "Lifeb14"
+            "Wildp30"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp13",
+          "name": "Stomp",
+          "icon": "Stomp.png",
+          "desc": "Casting Wildcall again within 10s of its initial cast commands all beasts on the field to immediately cast Stomp.",
+          "children": [
+            "Wildp21"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb10",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Wildp14",
+          "name": "Light Intent",
+          "icon": "LightIntent.png",
+          "desc": "Increases Max Photon Energy by 20.",
           "children": [
-            "Lifeb15",
-            "Lifeb17"
+            "Wildp18",
+            "Wildp19"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb11",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb16",
-            "Lifeb18"
-          ],
+          "id": "Wildp15",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb12",
-          "name": "Transcendence",
-          "icon": "Transcendence.png",
-          "desc": "Every 60 self-heals from Nourish grants Transcendence.",
+          "id": "Wildp16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb16",
-            "Lifeb20"
+            "Wildp19",
+            "Wildp20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb13",
-          "name": "Verdant Nourishment",
-          "icon": "VerdantNourishment.png",
-          "desc": "If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",
-          "children": [],
-          "gx": 3,
+          "id": "Wildp17",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Wildp25"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb14",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Wildp18",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [
-            "Lifeb21"
+            "Wildp22"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb15",
-          "name": "Life Bloom",
-          "icon": "LifeBloom.png",
-          "desc": "Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",
-          "children": [],
-          "gx": -2,
+          "id": "Wildp19",
+          "name": "Beast Tidal Power",
+          "icon": "BeastTidalPower.png",
+          "desc": "Increases Light Bonus by 3%.\nFor 5s after casting Torrent Volley, increases Light Bonus by 10%.",
+          "children": [
+            "Wildp23"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb16",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Wildp20",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Lifeb19"
+            "Wildp24"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb17",
-          "name": "Full Bloom",
-          "icon": "FullBloom.png",
-          "desc": "Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.",
+          "id": "Wildp21",
+          "name": "Tracer Arrows",
+          "icon": "TracerArrows.png",
+          "desc": "While Photon Reforge is active, for each Companion on the battlefield, Storm Arrow fires 1 extra Lightseeker Arrow.",
           "children": [
-            "Lifeb22",
-            "Lifeb23"
+            "Wildp26",
+            "Wildp31"
           ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp22",
+          "name": "Wolf Evolution",
+          "icon": "WolfEvolution.png",
+          "desc": "Wild Wolf evolves into its Adult Form, increases DMG by 30%, DMG Range by 50%.",
+          "children": [
+            "Wildp27",
+            "Wildp28"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb18",
-          "name": "Vital Surge",
-          "icon": "VitalSurge.png",
-          "desc": "Replace Ultimate, Divine Circle Bloom with Vital Surge.",
-          "children": [
-            "Lifeb23"
-          ],
+          "id": "Wildp23",
+          "name": "Legendary Beast",
+          "icon": "LegendaryBeast.png",
+          "desc": "Each time Wildcall is cast, a powerful Legendary Eagle or Legendary Boar will answer your call.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb19",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Wildp24",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
           "children": [
-            "Lifeb24",
-            "Lifeb30"
+            "Wildp28",
+            "Wildp29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb20",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Wildp25",
+          "name": "Focused Shot",
+          "icon": "FocusedShot.png",
+          "desc": "Every target hit grants 1% Light DMG bonus. The bonus lasts 3s and can layer up to 4 times.",
           "children": [
-            "Lifeb25"
+            "Wildp30",
+            "Wildp33"
           ],
-          "gx": 3,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb21",
-          "name": "Blooming Reincarnation",
-          "icon": "BloomingReincarnation.png",
-          "desc": "Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.",
+          "id": "Wildp26",
+          "name": "Life Hunt",
+          "icon": "LifeHunt.png",
+          "desc": "For each additional bleed effect on the target, Wolf deals +3% damage to it.",
           "children": [
-            "Lifeb26"
+            "Wildp31"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb22",
+          "id": "Wildp27",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [
-            "Lifeb26"
-          ],
-          "gx": -2,
-          "gy": 7,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb23",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb27",
-            "Lifeb28"
-          ],
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb24",
-          "name": "Vitality",
-          "icon": "Vitality.png",
-          "desc": "Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.",
+          "id": "Wildp28",
+          "name": "Wolf Fang Pact",
+          "icon": "WolfFangPact.png",
+          "desc": "Wild Wolf's Coordinated Attack reduces the remaining CD of Storm Arrow by 1 second.",
           "children": [
-            "Lifeb28",
-            "Lifeb29"
+            "Wildp32"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp29",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb25",
-          "name": "Gift of Life",
-          "icon": "GiftofLife.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",
-          "children": [],
+          "id": "Wildp30",
+          "name": "Battle Howl",
+          "icon": "BattleHowl.png",
+          "desc": "While Wildcall is active, the Wild Wolf is bound to deal Crit DMG on hit.",
+          "children": [
+            "Wildp33"
+          ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb26",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Wildp31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb31",
-            "Lifeb32",
-            "Lifeb33"
+            "Wildp34",
+            "Wildp35"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb27",
-          "name": "Flower Time Dance",
-          "icon": "FlowerTimeDance.png",
-          "desc": "Every 45s, generates 1 Flower Stalk in the following order:\nCrimson Insight, Golden Devotion, and Moonlight Solace.",
+          "id": "Wildp32",
+          "name": "Sundering Arrow",
+          "icon": "SunderingArrow.png",
+          "desc": "Basic Attacks have a fixed 15% chance to trigger Split Arrow, once per second.",
           "children": [
-            "Lifeb33"
+            "Wildp39",
+            "Wildp40",
+            "Wildp41"
           ],
-          "gx": -1,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb28",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb33",
-            "Lifeb34",
-            "Lifeb35"
-          ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb29",
-          "name": "Nourish Essence",
-          "icon": "NourishEssence.png",
-          "desc": "When Life Bloom generates healing, 50% chance to apply Nourish.",
+          "id": "Wildp33",
+          "name": "Valiant Heart",
+          "icon": "ValiantHeart.png",
+          "desc": "Pets deal 15% more DMG to Elites or stronger enemies.",
           "children": [
-            "Lifeb35",
-            "Lifeb36"
+            "Wildp36",
+            "Wildp37"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb30",
-          "name": "Endless Blossom",
-          "icon": "EndlessBlossom.png",
-          "desc": "When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",
-          "children": [
-            "Lifeb36"
-          ],
-          "gx": 3,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb31",
-          "name": "Flourishing Progress",
-          "icon": "FlourishingProgress.png",
-          "desc": "When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",
+          "id": "Wildp34",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb32",
+          "id": "Wildp35",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb37"
+            "Wildp38",
+            "Wildp39"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb33",
+          "id": "Wildp36",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb38",
-            "Lifeb40"
+            "Wildp41",
+            "Wildp42"
           ],
-          "gx": -1,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb34",
-          "name": "Verdant Root",
-          "icon": "VerdantRoot.png",
-          "desc": "While in battle state, standing still for 2s creates a Grass Domain.\nGrass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.",
-          "children": [
-            "Lifeb38",
-            "Lifeb42"
-          ],
-          "gx": 0,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb35",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb46"
-          ],
-          "gx": 1,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb36",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Lifeb39",
-            "Lifeb52"
-          ],
+          "id": "Wildp37",
+          "name": "Arrow Barrage",
+          "icon": "ArrowBarrage.png",
+          "desc": "Basic Attacks have a fixed 20% chance to fire one arrow at each of up to 3 enemies near the target.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb37",
-          "name": "Natural Bloom",
-          "icon": "NaturalBloom.png",
-          "desc": "When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",
+          "id": "Wildp38",
+          "name": "Wild Call CD",
+          "icon": "WildCallCD.png",
+          "desc": "For every 1 Lightseeker Arrow shot, the remaining CD of Wildcall -0.5 second.",
           "children": [],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb38",
+          "id": "Wildp39",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb41"
+            "Wildp43",
+            "Wildp44"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb39",
-          "name": "Energy Expansion",
-          "icon": "EnergyExpansion.png",
-          "desc": "Increases Max Energy by 20.\nUsing Blossom Charge restores 30% lost Energy.",
+          "id": "Wildp40",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb43"
+            "Wildp45"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp41",
+          "name": "Direwolf's Hunger",
+          "icon": "Direwolf'sHunger.png",
+          "desc": "When the Wild Wolf deals Crit DMG, you and your Companion gain 2% Haste. This bonus lasts for 10s and can layer up to 5 times.",
+          "children": [
+            "Wildp46",
+            "Wildp47"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp42",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb40",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb44",
-            "Lifeb47"
-          ],
-          "gx": -3,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb41",
-          "name": "Verdant Duet",
-          "icon": "VerdantDuet.png",
-          "desc": "Life bloom has a fixed 20% chance to heal 1 additional time.",
-          "children": [
-            "Lifeb44",
-            "Lifeb48"
-          ],
-          "gx": -1,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb42",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Lifeb45"
-          ],
-          "gx": 0,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb43",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb46",
-            "Lifeb51"
-          ],
-          "gx": 2,
-          "gy": 11,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb44",
-          "name": "Wings of Revival",
-          "icon": "WingsofRevival.png",
-          "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
-          "children": [
-            "Lifeb48"
-          ],
+          "id": "Wildp43",
+          "name": "Demon Wolf Twin",
+          "icon": "DemonWolfTwin.png",
+          "desc": "When Storm Arrow deals DMG in battle, it has a fixed 10% chance to summon a Wild Wolf for 8s. This effect can occur once every 40s.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -2,
-          "gy": 12,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb45",
-          "name": "Bud to Blossom",
-          "icon": "BudtoBlossom.png",
-          "desc": "When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",
+          "id": "Wildp44",
+          "name": "Lumi Torrent",
+          "icon": "LumiTorrent.png",
+          "desc": "While Photon Reforge is active, Torrent Volley continuously overdrives. After 30s of overdriving, Torrent Volley evolves into Lumi Torrent.",
           "children": [
-            "Lifeb49"
+            "Wildp48"
           ],
-          "gx": 0,
-          "gy": 12,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb46",
-          "name": "Inspire and Strengthen",
-          "icon": "InspireandStrengthen.png",
-          "desc": "Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.",
-          "children": [
-            "Lifeb50",
-            "Lifeb51"
-          ],
-          "gx": 1,
-          "gy": 12,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb47",
-          "name": "Floral Whisper",
-          "icon": "FloralWhisper.png",
-          "desc": "Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",
-          "children": [],
-          "gx": -3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb48",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb53",
-            "Lifeb57"
-          ],
+          "requiresUnlock": [],
           "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp45",
+          "name": "Wolf Dancer",
+          "icon": "WolfDancer.png",
+          "desc": "After you use Arrow Rain, the Wild Wolf continuously performs Tail Sweep until the Arrow Rain ends.\nWild Wolf's Tail Sweep is bound to deal Crit DMG and to inflict Bleed.",
+          "children": [
+            "Wildp48",
+            "Wildp49",
+            "Wildp51"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp46",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Wildp49"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp47",
+          "name": "Light and Shadow Drain",
+          "icon": "LightandShadowDrain.png",
+          "desc": "Lightseeker Arrow has a fixed 50% chance to apply bleed to the target.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp48",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Wildp50"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp49",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Wildp52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp50",
+          "name": "Light Attack",
+          "icon": "LightAttack.png",
+          "desc": "Light Attack + 5",
+          "children": [
+            "Wildp53"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb49",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Wildp51",
+          "name": "Mastery of Bleed",
+          "icon": "MasteryofBleed.png",
+          "desc": "Every 2% Mastery provides 1% bleed DMG.",
           "children": [
-            "Lifeb53",
-            "Lifeb54",
-            "Lifeb55"
+            "Wildp54"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb50",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Wildp52",
+          "name": "Wolf's Bite",
+          "icon": "Wolf'sBite.png",
+          "desc": "Wild Wolf deals additionally 30% DMG to targets with current HP less than or equal to 35%.",
           "children": [
-            "Lifeb55"
+            "Wildp55"
           ],
-          "gx": 1,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb51",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb55",
-            "Lifeb56"
-          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb52",
-          "name": "Healing Pulse",
-          "icon": "HealingPulse.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",
-          "children": [],
-          "gx": 3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb53",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Wildp53",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb58"
+            "Wildp56"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb54",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Wildp54",
+          "name": "Wolf Sharp Strike",
+          "icon": "WolfSharpStrike.png",
+          "desc": "In the state of Light Reforging, Wolf Crit DMG +50%.",
           "children": [
-            "Lifeb59"
+            "Wildp56",
+            "Wildp57",
+            "Wildp59"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb55",
+          "id": "Wildp55",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb60"
+            "Wildp57"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb56",
-          "name": "Instant Bloom",
-          "icon": "InstantBloom.png",
-          "desc": "Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.",
-          "children": [],
-          "gx": 3,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb57",
-          "name": "Rescue",
-          "icon": "Rescue.png",
-          "desc": "Healing Expertise restore 25% more HP to the targets with HP below 50%.",
-          "children": [],
-          "gx": -3,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb58",
-          "name": "Flourishing Flower",
-          "icon": "FlourishingFlower.png",
-          "desc": "Within Grass Domain, Flower Stalk appeared 50% earlier.",
-          "children": [],
+          "id": "Wildp56",
+          "name": "Photon Reforge Lore",
+          "icon": "PhotonReforgeLore.png",
+          "desc": "While Photon Reforge is active, the Wild Wolf's Coordinated Attack nullifies the target's Armor.",
+          "children": [
+            "Wildp58"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb59",
-          "name": "Tricolor Revelation",
-          "icon": "TricolorRevelation.png",
-          "desc": "Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.\nFlower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",
-          "children": [],
-          "gx": 0,
+          "id": "Wildp57",
+          "name": "Arrow of Light",
+          "icon": "ArrowofLight.png",
+          "desc": "Arrow Rain and Lightseeker Arrow are bound to deal Crit DMG.",
+          "children": [
+            "Wildp60"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 15,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb60",
-          "name": "Ultimate Inspiration",
-          "icon": "UltimateInspiration.png",
-          "desc": "Doubles the effectiveness of Inspiration.",
+          "id": "Wildp58",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
           "children": [],
-          "gx": 2,
-          "gy": 15,
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 16,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp59",
+          "name": "Arrow Rain Acceleration",
+          "icon": "ArrowRainAcceleration.png",
+          "desc": "Each time you summon 1 Wolf or Phantom Wolf, the remaining CD of Arrow Rain -0.5s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 16,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Wildp60",
+          "name": "Twin Arrows",
+          "icon": "TwinArrows.png",
+          "desc": "Luminary Bolt additionally causes a Photon Explosion, dealing Attack Damage equal to 1,500% ATK (which scales with the Level/Tier of Ultimate), and also knocks targets airborne and increases the DMG you deal to them by 5% for 10s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         }

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "fm01",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm04",
+    "name": "Ice Revelation",
+    "icon": "IceRevel.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Summon 2 permanent Ice Cores that float beside you.\n\nIce Core\nWhen Basic Attacks deal DMG, Ice Cores have a fixed 10% chance to fire 2 Ice Arrows.\n\nIce Arrow: Each arrow deals Magic Damage equal to 25% ATK to the target and grants 1 Frost Crystal (up to 2 Frost Crystals can be stored).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm05",
+    "name": "Intellect Conversion",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Every 10 points of Intellect provides 1 point of MATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm06",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm07",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm08",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm09",
+    "name": "Secondary Amp",
+    "icon": "Secondar.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Boost the highest stat among the following 5 stats: Crit, Haste, Luck, Mastery, and Versatility by 3.5% as a final value.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm11",
+    "name": "Instant Cooling",
+    "icon": "InstantC.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "For every 35 Ice Energy consumed, the CD of Meteor Storm and Frozen Gale -1s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm13",
+    "name": "Intellect Cooling",
+    "icon": "Intellec.png",
+    "gx": 3,
+    "gy": 4,
+    "desc": "When Intellect reaches 300, skill CD -10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm14",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm15",
+    "name": "Frost Curse Sigil",
+    "icon": "FrostCur.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "When a Special Attack deals DMG, it has a fixed 5% chance to Frozen the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm16",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm17",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm18",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm20",
+    "name": "Ice Comet",
+    "icon": "IceComet.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "When Intellect reaches 500, gain 5% Ice bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm21",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm22",
+    "name": "Breath of Frost",
+    "icon": "Breathof.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Frost Crystal cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm23",
+    "name": "Cold Stream",
+    "icon": "ColdStre.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Max Ice Energy +25.\nEvery 1% Haste increases Ice Energy's auto REG SPD by 1%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm24",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm25",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm26",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm27",
+    "name": "Cold Intent - Flow",
+    "icon": "ColdInte.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Ice Energy cap +40.\nSpecial Attack damage +4%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm28",
+    "name": "Cold Intent - Sharp",
+    "icon": "ColdInte.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Max Ice Energy +10.\nSpecial Attack DMG +12%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm29",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "fm30",
+    "name": "Frost Explosion",
+    "icon": "FrostExp.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Ice Arrows fired by Ice Cores deal an additional instance of AoE Magic Damage equal to 25% ATK.",
+    "cost": null,
+    "seal": null
+  }
+]

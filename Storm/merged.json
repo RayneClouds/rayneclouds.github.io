@@ -4,7 +4,7 @@
       "id": "Storm",
       "name": "Stormblade",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
@@ -19,6 +19,7 @@
             "Storm02",
             "Storm03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -32,6 +33,7 @@
           "children": [
             "Storm04"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -45,6 +47,7 @@
           "children": [
             "Storm05"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -59,6 +62,7 @@
             "Storm06",
             "Storm07"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
@@ -73,6 +77,7 @@
             "Storm07",
             "Storm08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
@@ -86,6 +91,7 @@
           "children": [
             "Storm09"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -99,6 +105,7 @@
           "children": [
             "Storm14"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -113,6 +120,7 @@
             "Storm10",
             "Storm11"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -127,6 +135,7 @@
             "Storm12",
             "Storm13"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -140,6 +149,7 @@
           "children": [
             "Storm15"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -153,6 +163,7 @@
           "children": [
             "Storm16"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -166,6 +177,7 @@
           "children": [
             "Storm17"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 5,
           "cost": 1,
@@ -179,6 +191,7 @@
           "children": [
             "Storm18"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -192,6 +205,7 @@
           "children": [
             "Storm19"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -205,6 +219,7 @@
           "children": [
             "Storm22"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -218,6 +233,7 @@
           "children": [
             "Storm20"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -231,6 +247,7 @@
           "children": [
             "Storm24"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 6,
           "cost": 1,
@@ -244,6 +261,7 @@
           "children": [
             "Storm25"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -258,6 +276,7 @@
             "Storm21",
             "Storm27"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -272,6 +291,7 @@
             "Storm23",
             "Storm30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -285,6 +305,7 @@
           "children": [
             "Storm26"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -298,6 +319,7 @@
           "children": [
             "Storm28"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -311,6 +333,7 @@
           "children": [
             "Storm29"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -322,6 +345,7 @@
           "icon": "ThunderSigilCharm.png",
           "desc": "Increases Max Thunder Sigil by 1.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 8,
           "cost": 1,
@@ -333,6 +357,7 @@
           "icon": "Swift.png",
           "desc": "Each 1% Haste provides 1% Attack Speed.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -344,6 +369,7 @@
           "icon": "SwiftBlade.png",
           "desc": "When Agility reaches 500 points, Crit DMG and Lucky Damage +5%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
@@ -355,6 +381,7 @@
           "icon": "OverdriveRefinement.png",
           "desc": "Reduces the CD of Overdrive by 30%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -366,6 +393,7 @@
           "icon": "ThunderCharmBlade.png",
           "desc": "For each 1 Thunder Sigil consumed by Expertise Skill, gain an additional 3 points of Blade Intent.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 8,
           "cost": 1,
@@ -377,6 +405,7 @@
           "icon": "ThunderWhirl.png",
           "desc": "Piercing Slash grants 1 layer of Overdrive.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -388,6 +417,7 @@
           "icon": "KeenEnhancement.png",
           "desc": "Increases the fixed chance to trigger Piercing Slash by 10%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -399,38 +429,7 @@
       "id": "Iaido",
       "name": "Iaido Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Storm01",
-        "Storm02",
-        "Storm03",
-        "Storm04",
-        "Storm05",
-        "Storm06",
-        "Storm07",
-        "Storm08",
-        "Storm09",
-        "Storm10",
-        "Storm11",
-        "Storm12",
-        "Storm13",
-        "Storm14",
-        "Storm15",
-        "Storm16",
-        "Storm17",
-        "Storm18",
-        "Storm19",
-        "Storm20",
-        "Storm21",
-        "Storm22",
-        "Storm23",
-        "Storm24",
-        "Storm25",
-        "Storm26",
-        "Storm27",
-        "Storm28",
-        "Storm29",
-        "Storm30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
         "gy": 10
@@ -445,6 +444,7 @@
             "Iaido02",
             "Iaido03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -459,6 +459,7 @@
             "Iaido04",
             "Iaido05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -473,6 +474,7 @@
             "Iaido05",
             "Iaido06"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -487,6 +489,7 @@
             "Iaido07",
             "Iaido08"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 2,
           "cost": 1,
@@ -500,6 +503,7 @@
           "children": [
             "Iaido09"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -514,6 +518,7 @@
             "Iaido10",
             "Iaido11"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 2,
           "cost": 1,
@@ -528,6 +533,7 @@
             "Iaido12",
             "Iaido17"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 3,
           "cost": 1,
@@ -543,6 +549,7 @@
             "Iaido13",
             "Iaido14"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -554,6 +561,7 @@
           "icon": "ZenMoment.png",
           "desc": "Crit Hits of Special Attacks grant 100 Blade Intent.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -569,6 +577,7 @@
             "Iaido15",
             "Iaido16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -583,6 +592,7 @@
             "Iaido16",
             "Iaido23"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 3,
           "cost": 1,
@@ -596,6 +606,7 @@
           "children": [
             "Iaido18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -610,6 +621,7 @@
             "Iaido19",
             "Iaido20"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -621,6 +633,7 @@
           "icon": "ThunderGod'sMight.png",
           "desc": "Activate Volt Surge. Flash Strike and Raijin Dash evolve into Dracoflash and Phantom Slash.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -635,6 +648,7 @@
             "Iaido20",
             "Iaido21"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -648,6 +662,7 @@
           "children": [
             "Iaido22"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -661,6 +676,7 @@
           "children": [
             "Iaido24"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 5,
           "cost": 1,
@@ -672,6 +688,7 @@
           "icon": "ThunderCurse.png",
           "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -686,6 +703,7 @@
             "Iaido25",
             "Iaido26"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -701,6 +719,7 @@
             "Iaido27",
             "Iaido28"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -715,6 +734,7 @@
             "Iaido28",
             "Iaido29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -726,6 +746,7 @@
           "icon": "FrenziedThunderRoar.png",
           "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -739,6 +760,7 @@
           "children": [
             "Iaido30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 5,
           "cost": 1,
@@ -752,6 +774,7 @@
           "children": [
             "Iaido31"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 6,
           "cost": 1,
@@ -765,6 +788,7 @@
           "children": [
             "Iaido32"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -779,6 +803,7 @@
             "Iaido33",
             "Iaido34"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -790,6 +815,7 @@
           "icon": "EndofAnnihilation.png",
           "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -804,6 +830,7 @@
             "Iaido34",
             "Iaido35"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -817,6 +844,7 @@
           "children": [
             "Iaido36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -830,6 +858,7 @@
           "children": [
             "Iaido37"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -844,6 +873,7 @@
             "Iaido38",
             "Iaido43"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
@@ -855,6 +885,7 @@
           "icon": "FlashSharpStrike.png",
           "desc": "Triggers Sharp Strike when casting Iaido Slash.\nSharp Strike: Increases Crit Rate of Flash Strike and its enhanced skill (Dracoflash) by 10%. If Flash Strike and its enhanced skill (Dracoflash) deals Crit DMG 1 time, gains 1 Thunder Sigil. This effect is removed after the use of Flash Strike and its enhanced skill (Dracoflash) or after 10s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -868,6 +899,7 @@
           "children": [
             "Iaido39"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -881,6 +913,7 @@
           "children": [
             "Iaido40"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
@@ -894,6 +927,7 @@
           "children": [
             "Iaido41"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -905,6 +939,7 @@
           "icon": "UnmatchedRaijinDash.png",
           "desc": "Raijin Dash and its enhanced skill (Phantom Slash) ignore the target's Armor.\nRaijin Dash and its enhanced skill (Phantom Slash) deal 10% more damage per additional 1 enemy hit.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -919,6 +954,7 @@
             "Iaido42",
             "Iaido47"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
@@ -932,6 +968,7 @@
           "children": [
             "Iaido55"
           ],
+          "requiresUnlock": [],
           "gx": -4,
           "gy": 8,
           "cost": 1,
@@ -945,6 +982,7 @@
           "children": [
             "Iaido44"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -960,6 +998,7 @@
             "Iaido45",
             "Iaido46"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -973,6 +1012,7 @@
           "children": [
             "Iaido46"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -986,6 +1026,7 @@
           "children": [
             "Iaido59"
           ],
+          "requiresUnlock": [],
           "gx": 4,
           "gy": 8,
           "cost": 1,
@@ -1000,6 +1041,7 @@
             "Iaido48",
             "Iaido49"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -1014,6 +1056,7 @@
             "Iaido49",
             "Iaido50"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -1027,6 +1070,7 @@
           "children": [
             "Iaido51"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -1041,6 +1085,7 @@
             "Iaido52",
             "Iaido53"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -1055,6 +1100,7 @@
             "Iaido53",
             "Iaido54"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -1066,6 +1112,7 @@
           "icon": "ThunderReversal.png",
           "desc": "Consumes 100 Blade Intent to gain stacks of Thunder Reversal Mark. When Thunder Reversal Mark reaches 5 stacks, casting Iaido Slash grants the Thunder Reversal effect and removes all Thunder Reversal Mark stacks.\nThunder Reversal: Gain a 10% Lightning DMG bonus for 15s. During Thunder Reversal, Thunder Reversal Mark cannot be gained.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -1077,6 +1124,7 @@
           "icon": "DuelAwareness.png",
           "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 10,
           "cost": 1,
@@ -1090,6 +1138,7 @@
           "children": [
             "Iaido56"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -1103,6 +1152,7 @@
           "children": [
             "Iaido57"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 10,
           "cost": 1,
@@ -1116,6 +1166,7 @@
           "children": [
             "Iaido58"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -1127,6 +1178,7 @@
           "icon": "BreakSlash.png",
           "desc": "When dealing Crit DMG, Iaido Slash and its enhanced skill (Thunder Cut) nullifies 30% of the targets' Armor.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -1138,6 +1190,7 @@
           "icon": "ShadowDespise.png",
           "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 10,
           "cost": 1,
@@ -1149,6 +1202,7 @@
           "icon": "Arcane.png",
           "desc": "Crit DMG +10%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -4,
           "gy": 11,
           "cost": 1,
@@ -1160,6 +1214,7 @@
           "icon": "DualBladeIntent.png",
           "desc": "When Blade Intent is at least 100, Flash Strike, Raijin Dash, and their enhanced skills (Dracoflash, Phantom Slash) gain Crit Rate by 10%.\nWhen Blade Intent is at least 100, greatly increases Flash Strike's casting speed.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -1173,6 +1228,7 @@
           "children": [
             "Iaido60"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 11,
           "cost": 1,
@@ -1184,6 +1240,7 @@
           "icon": "BladewindDomain.png",
           "desc": "Every 3 casts of Overdrive allows the next Iaido Slash to generate a Bladewind Domain in front. Each time Bladewind Domain deals DMG, reduces the CD of Oblivion Combo by 1.5s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1195,6 +1252,7 @@
           "icon": "Advancement.png",
           "desc": "Mastery +6%",
           "children": [],
+          "requiresUnlock": [],
           "gx": 4,
           "gy": 11,
           "cost": 1,
@@ -1206,6 +1264,7 @@
           "icon": "Thundrage.png",
           "desc": "Each use of Dracoflash or Phantom Slash grants 4 stacks of Thundrage, up to 8 stacks.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
@@ -1217,38 +1276,7 @@
       "id": "Moons",
       "name": "Moonstrike Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Storm01",
-        "Storm02",
-        "Storm03",
-        "Storm04",
-        "Storm05",
-        "Storm06",
-        "Storm07",
-        "Storm08",
-        "Storm09",
-        "Storm10",
-        "Storm11",
-        "Storm12",
-        "Storm13",
-        "Storm14",
-        "Storm15",
-        "Storm16",
-        "Storm17",
-        "Storm18",
-        "Storm19",
-        "Storm20",
-        "Storm21",
-        "Storm22",
-        "Storm23",
-        "Storm24",
-        "Storm25",
-        "Storm26",
-        "Storm27",
-        "Storm28",
-        "Storm29",
-        "Storm30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
         "gy": 10
@@ -1263,6 +1291,7 @@
             "Moons02",
             "Moons03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -1277,6 +1306,7 @@
             "Moons04",
             "Moons05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -1291,6 +1321,7 @@
             "Moons05",
             "Moons06"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -1305,6 +1336,7 @@
             "Moons07",
             "Moons08"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 2,
           "cost": 1,
@@ -1318,6 +1350,7 @@
           "children": [
             "Moons09"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -1332,6 +1365,7 @@
             "Moons10",
             "Moons11"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 2,
           "cost": 1,
@@ -1346,6 +1380,7 @@
             "Moons12",
             "Moons17"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 3,
           "cost": 1,
@@ -1361,6 +1396,7 @@
             "Moons13",
             "Moons14"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -1372,6 +1408,7 @@
           "icon": "TouchofThunderSoul.png",
           "desc": "Moonstrike has a fixed 30% chance to cast Thunderstrike on a Lucky Hit.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -1387,6 +1424,7 @@
             "Moons15",
             "Moons16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -1401,6 +1439,7 @@
             "Moons16",
             "Moons23"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 3,
           "cost": 1,
@@ -1414,6 +1453,7 @@
           "children": [
             "Moons18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -1428,6 +1468,7 @@
             "Moons19",
             "Moons20"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -1439,6 +1480,7 @@
           "icon": "ChaosBreaker.png",
           "desc": "When Stormflash is activated, Moonstrike evolves into Chaos Breaker.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -1453,6 +1495,7 @@
             "Moons20",
             "Moons21"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -1466,6 +1509,7 @@
           "children": [
             "Moons22"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -1479,6 +1523,7 @@
           "children": [
             "Moons24"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 5,
           "cost": 1,
@@ -1490,6 +1535,7 @@
           "icon": "ThunderCurse.png",
           "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -1504,6 +1550,7 @@
             "Moons25",
             "Moons26"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -1519,6 +1566,7 @@
             "Moons27",
             "Moons28"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -1533,6 +1581,7 @@
             "Moons28",
             "Moons29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -1544,6 +1593,7 @@
           "icon": "FrenziedThunderRoar.png",
           "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -1557,6 +1607,7 @@
           "children": [
             "Moons30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 5,
           "cost": 1,
@@ -1570,6 +1621,7 @@
           "children": [
             "Moons31"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 6,
           "cost": 1,
@@ -1583,6 +1635,7 @@
           "children": [
             "Moons32"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -1597,6 +1650,7 @@
             "Moons33",
             "Moons34"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -1608,6 +1662,7 @@
           "icon": "EndofAnnihilation.png",
           "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -1622,6 +1677,7 @@
             "Moons34",
             "Moons35"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -1635,6 +1691,7 @@
           "children": [
             "Moons36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -1648,6 +1705,7 @@
           "children": [
             "Moons37"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -1662,6 +1720,7 @@
             "Moons38",
             "Moons43"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
@@ -1673,6 +1732,7 @@
           "icon": "BladeIntent-Rare.png",
           "desc": "Increases Max Blade Intent by 75.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -1686,6 +1746,7 @@
           "children": [
             "Moons39"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -1699,6 +1760,7 @@
           "children": [
             "Moons40"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
@@ -1712,6 +1774,7 @@
           "children": [
             "Moons41"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -1723,6 +1786,7 @@
           "icon": "MoonstrikeSharpStrike.png",
           "desc": "When Blade Intent is at least 50, Moonstrike and its enhanced skill (Chaos Breaker) are guaranteed to lands a Crit.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -1737,6 +1801,7 @@
             "Moons42",
             "Moons47"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
@@ -1750,6 +1815,7 @@
           "children": [
             "Moons55"
           ],
+          "requiresUnlock": [],
           "gx": -4,
           "gy": 8,
           "cost": 1,
@@ -1763,6 +1829,7 @@
           "children": [
             "Moons44"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -1778,6 +1845,7 @@
             "Moons45",
             "Moons46"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -1791,6 +1859,7 @@
           "children": [
             "Moons46"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -1804,6 +1873,7 @@
           "children": [
             "Moons59"
           ],
+          "requiresUnlock": [],
           "gx": 4,
           "gy": 8,
           "cost": 1,
@@ -1818,6 +1888,7 @@
             "Moons48",
             "Moons49"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -1832,6 +1903,7 @@
             "Moons49",
             "Moons50"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -1845,6 +1917,7 @@
           "children": [
             "Moons51"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -1859,6 +1932,7 @@
             "Moons52",
             "Moons53"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -1873,6 +1947,7 @@
             "Moons53",
             "Moons54"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -1884,6 +1959,7 @@
           "icon": "ThunderSigilCharm.png",
           "desc": "Increases Max Thunder Sigil by 1. Storm Scythe and Divine Sickle are bound to trigger Piercing Slash.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -1895,6 +1971,7 @@
           "icon": "DuelAwareness.png",
           "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 10,
           "cost": 1,
@@ -1908,6 +1985,7 @@
           "children": [
             "Moons56"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -1921,6 +1999,7 @@
           "children": [
             "Moons57"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 10,
           "cost": 1,
@@ -1934,6 +2013,7 @@
           "children": [
             "Moons58"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -1945,6 +2025,7 @@
           "icon": "ShadowDespise.png",
           "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -1956,6 +2037,7 @@
           "icon": "ThunderStrikeEnhancement.png",
           "desc": "Increases the DMG dealt by Thunderstrike by 20%. Each 1% Luck grants Thunderstrike 1% more DMG dealt.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 10,
           "cost": 1,
@@ -1967,6 +2049,7 @@
           "icon": "ChargeCatcher.png",
           "desc": "Each enemy defeated grants 1 Charge Seed (effective within a team).",
           "children": [],
+          "requiresUnlock": [],
           "gx": -4,
           "gy": 11,
           "cost": 1,
@@ -1978,6 +2061,7 @@
           "icon": "BreathofMark.png",
           "desc": "Lucky Hits of Moonstrike grant a fixed 30% chance to restore 1 Thunder Sigil, once per second.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -1991,6 +2075,7 @@
           "children": [
             "Moons60"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 11,
           "cost": 1,
@@ -2002,6 +2087,7 @@
           "icon": "LightningFlash.png",
           "desc": "During Stormflash, accelerates Moonstrike's Attack SPD by 100%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -2013,6 +2099,7 @@
           "icon": "PowerofThunder.png",
           "desc": "Every 10 instances of DMG dealt triggers Thunder Power.\nThunder Power: Increases Thunder Element damage dealt by 10 for 10s, stacking up to 10 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 4,
           "gy": 11,
           "cost": 1,
@@ -2024,6 +2111,7 @@
           "icon": "PhantomScytheRealm.png",
           "desc": "Casting Thundercut has a chance to grant 25 Blade Intent. The chance is equal to your Luck chance.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,

@@ -1,0 +1,2035 @@
+{
+  "tiers": [
+    {
+      "id": "Storm",
+      "name": "Stormblade",
+      "collapsed": false,
+      "requiresUnlocked": [],
+      "origin": {
+        "gx": 10,
+        "gy": 1
+      },
+      "nodes": [
+        {
+          "id": "Storm01",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Storm02",
+            "Storm03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm04"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm05"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm04",
+          "name": "Iai Thunder Dance",
+          "icon": "IaiThunderDance.png",
+          "desc": "When you gain 3 or more Thunder Sigils, a Special Attack is cast, attacking 2 times consecutively.",
+          "children": [
+            "Storm06",
+            "Storm07"
+          ],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm05",
+          "name": "Blade Intent",
+          "icon": "BladeIntent.png",
+          "desc": "3 points of Blade Intent are gained when an Expertise Skill is cast.",
+          "children": [
+            "Storm07",
+            "Storm08"
+          ],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm06",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Storm09"
+          ],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm14"
+          ],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm08",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Storm10",
+            "Storm11"
+          ],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm09",
+          "name": "Thunder Sigil Charm",
+          "icon": "ThunderSigilCharm.png",
+          "desc": "Increases Max Thunder Sigil by 1.",
+          "children": [
+            "Storm12",
+            "Storm13"
+          ],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm10",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm15"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm11",
+          "name": "Keen Strike",
+          "icon": "KeenStrike.png",
+          "desc": "When Basic Attacks deal DMG, 10% chance to trigger Piercing Slash, once per second.",
+          "children": [
+            "Storm16"
+          ],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm12",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm17"
+          ],
+          "gx": -3,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm13",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm18"
+          ],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm14",
+          "name": "Agility Conversion",
+          "icon": "AgilityConversion.png",
+          "desc": "Every 8 Agility grants 1 ATK.",
+          "children": [
+            "Storm19"
+          ],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm15",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Storm22"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm20"
+          ],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm17",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Storm24"
+          ],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm18",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Storm25"
+          ],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm19",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Storm21",
+            "Storm27"
+          ],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm20",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Storm23",
+            "Storm30"
+          ],
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm21",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Storm26"
+          ],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm22",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Storm28"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm23",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Storm29"
+          ],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm24",
+          "name": "Thunder Sigil Charm",
+          "icon": "ThunderSigilCharm.png",
+          "desc": "Increases Max Thunder Sigil by 1.",
+          "children": [],
+          "gx": -3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm25",
+          "name": "Swift",
+          "icon": "Swift.png",
+          "desc": "Each 1% Haste provides 1% Attack Speed.",
+          "children": [],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm26",
+          "name": "Swift Blade",
+          "icon": "SwiftBlade.png",
+          "desc": "When Agility reaches 500 points, Crit DMG and Lucky Damage +5%.",
+          "children": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm27",
+          "name": "Overdrive Refinement",
+          "icon": "OverdriveRefinement.png",
+          "desc": "Reduces the CD of Overdrive by 30%.",
+          "children": [],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm28",
+          "name": "Thunder Charm Blade",
+          "icon": "ThunderCharmBlade.png",
+          "desc": "For each 1 Thunder Sigil consumed by Expertise Skill, gain an additional 3 points of Blade Intent.",
+          "children": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm29",
+          "name": "Thunder Whirl",
+          "icon": "ThunderWhirl.png",
+          "desc": "Piercing Slash grants 1 layer of Overdrive.",
+          "children": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Storm30",
+          "name": "Keen Enhancement",
+          "icon": "KeenEnhancement.png",
+          "desc": "Increases the fixed chance to trigger Piercing Slash by 10%.",
+          "children": [],
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Iaido",
+      "name": "Iaido Spec",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "Storm01",
+        "Storm02",
+        "Storm03",
+        "Storm04",
+        "Storm05",
+        "Storm06",
+        "Storm07",
+        "Storm08",
+        "Storm09",
+        "Storm10",
+        "Storm11",
+        "Storm12",
+        "Storm13",
+        "Storm14",
+        "Storm15",
+        "Storm16",
+        "Storm17",
+        "Storm18",
+        "Storm19",
+        "Storm20",
+        "Storm21",
+        "Storm22",
+        "Storm23",
+        "Storm24",
+        "Storm25",
+        "Storm26",
+        "Storm27",
+        "Storm28",
+        "Storm29",
+        "Storm30"
+      ],
+      "origin": {
+        "gx": 9,
+        "gy": 10
+      },
+      "nodes": [
+        {
+          "id": "Iaido01",
+          "name": "Iaido Slash Spec",
+          "icon": "IaidoSlashSpec.png",
+          "desc": "Further enhances the ability to use Iaido Slash.\nWhen the number of Thunder Sigils consumed by Iaido Slash and its enhanced skill (Thunder Cut) equals the current maximum Thunder Sigil count, increases the DMG of Iaido Slash and its enhanced skill (Thunder Cut) by 12% and grants Super Armor during the cast.",
+          "children": [
+            "Iaido02",
+            "Iaido03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido04",
+            "Iaido05"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido05",
+            "Iaido06"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido04",
+          "name": "Iaido Mastery",
+          "icon": "IaidoMastery.png",
+          "desc": "Iaido Slash's Crit +10%.\nWhen Iaido Slash's critical rate exceeds 60%, each additional 1% grants 1% bonus Crit DMG.",
+          "children": [
+            "Iaido07",
+            "Iaido08"
+          ],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido05",
+          "name": "Thunder Sigil Affinity",
+          "icon": "ThunderSigilAffinity.png",
+          "desc": "Each additional Thunder Sigil consumed by Expertise or Special Attacks increases your Lightning DMG dealt by 1.5% when they deal DMG.",
+          "children": [
+            "Iaido09"
+          ],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido06",
+          "name": "Flash Frenzy Blade",
+          "icon": "FlashFrenzyBlade.png",
+          "desc": "Crit hit of Iaido Slash grants a fixed 10% chance to clear the CD of Flash Strike and Raijin Dash. Chance +10% for each Thunder Sigil consumed.",
+          "children": [
+            "Iaido10",
+            "Iaido11"
+          ],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido12",
+            "Iaido17"
+          ],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido08",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido12",
+            "Iaido13",
+            "Iaido14"
+          ],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido09",
+          "name": "Zen Moment",
+          "icon": "ZenMoment.png",
+          "desc": "Crit Hits of Special Attacks grant 100 Blade Intent.",
+          "children": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido10",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido14",
+            "Iaido15",
+            "Iaido16"
+          ],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido16",
+            "Iaido23"
+          ],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido12",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido18"
+          ],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido13",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido19",
+            "Iaido20"
+          ],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido14",
+          "name": "Thunder God's Might",
+          "icon": "ThunderGod'sMight.png",
+          "desc": "Activate Volt Surge. Flash Strike and Raijin Dash evolve into Dracoflash and Phantom Slash.",
+          "children": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido20",
+            "Iaido21"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido22"
+          ],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido17",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido24"
+          ],
+          "gx": -3,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido18",
+          "name": "Thunder Curse",
+          "icon": "ThunderCurse.png",
+          "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
+          "children": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido19",
+          "name": "Instant Slash",
+          "icon": "InstantSlash.png",
+          "desc": "Iaido Slash reduces the Armor of the target hit by 6%. The effect lasts 5s and stacks up to 5 times.",
+          "children": [
+            "Iaido25",
+            "Iaido26"
+          ],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido20",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido26",
+            "Iaido27",
+            "Iaido28"
+          ],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido21",
+          "name": "Rapid Thunder Assault",
+          "icon": "RapidThunderAssault.png",
+          "desc": "Each additional Thunder Sigil consumed by a skill increases its DMG by 3%.",
+          "children": [
+            "Iaido28",
+            "Iaido29"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido22",
+          "name": "Frenzied Thunder Roar",
+          "icon": "FrenziedThunderRoar.png",
+          "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
+          "children": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido23",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido30"
+          ],
+          "gx": 3,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido24",
+          "name": "Wind Assault II",
+          "icon": "WindAssaultII.png",
+          "desc": "Unleashes formidable energy to weaken nearby enemies, reducing their movement speed. Common monsters below 15% HP will instantly disperse.",
+          "children": [
+            "Iaido31"
+          ],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido25",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido32"
+          ],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido26",
+          "name": "Violent Slash",
+          "icon": "ViolentSlash.png",
+          "desc": "Increases the critical rate of Iaido Slash and Thunder Cut by 12%.",
+          "children": [
+            "Iaido33",
+            "Iaido34"
+          ],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido27",
+          "name": "End of Annihilation",
+          "icon": "EndofAnnihilation.png",
+          "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
+          "children": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido28",
+          "name": "Blade Intent Thunder Strike",
+          "icon": "BladeIntentThunderStrike.png",
+          "desc": "When Iaido Slash deals Crit DMG, if the Blade Intent exceeds 20, launches Thunderstrike (which can only be triggered once per use of Iaido Slash).",
+          "children": [
+            "Iaido34",
+            "Iaido35"
+          ],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido29",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido36"
+          ],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido30",
+          "name": "Wind Assault I",
+          "icon": "WindAssaultI.png",
+          "desc": "Crit Rate obtained in any way is increased by 12%, but Luck chance obtained in any way are reduced by 10%.",
+          "children": [
+            "Iaido37"
+          ],
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido31",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido38",
+            "Iaido43"
+          ],
+          "gx": -3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido32",
+          "name": "Flash Sharp Strike",
+          "icon": "FlashSharpStrike.png",
+          "desc": "Triggers Sharp Strike when casting Iaido Slash.\nSharp Strike: Increases Crit Rate of Flash Strike and its enhanced skill (Dracoflash) by 10%. If Flash Strike and its enhanced skill (Dracoflash) deals Crit DMG 1 time, gains 1 Thunder Sigil. This effect is removed after the use of Flash Strike and its enhanced skill (Dracoflash) or after 10s.",
+          "children": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido33",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido39"
+          ],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido34",
+          "name": "Thunder Sigil Rewind",
+          "icon": "ThunderSigilRewind.png",
+          "desc": "When consuming Thunder Sigils, there is a chance to return 1 Thunder Sigil, and for each additional 1 Thunder Sigil consumed, the return chance +8%.",
+          "children": [
+            "Iaido40"
+          ],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido35",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido41"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido36",
+          "name": "Unmatched Raijin Dash",
+          "icon": "UnmatchedRaijinDash.png",
+          "desc": "Raijin Dash and its enhanced skill (Phantom Slash) ignore the target's Armor.\nRaijin Dash and its enhanced skill (Phantom Slash) deal 10% more damage per additional 1 enemy hit.",
+          "children": [],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido37",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido42",
+            "Iaido47"
+          ],
+          "gx": 3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido38",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido55"
+          ],
+          "gx": -4,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido39",
+          "name": "Thunder Sigil Charm",
+          "icon": "ThunderSigilCharm.png",
+          "desc": "Increases Max Thunder Sigil by 1.",
+          "children": [
+            "Iaido44"
+          ],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido40",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido44",
+            "Iaido45",
+            "Iaido46"
+          ],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido41",
+          "name": "Infinite Thunder",
+          "icon": "InfiniteThunder.png",
+          "desc": "For every 5 Thunder Sigils consumed, the remaining CD time of Volt Surge -0.5s.",
+          "children": [
+            "Iaido46"
+          ],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido59"
+          ],
+          "gx": 4,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido48",
+            "Iaido49"
+          ],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido44",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido49",
+            "Iaido50"
+          ],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido45",
+          "name": "Vacuum Slash",
+          "icon": "VacuumSlash.png",
+          "desc": "Each cast of Flash Strike, Raijin Dash, or its evolved skills grants 1 layer of Thundrage. When Thundrage reaches 5 stacks, Iaido Slash evolves into Thunder Cut. After casting Thunder Cut, 5 stacks of Thundrage are consumed. Thundrage stacks up to 8 times.",
+          "children": [
+            "Iaido51"
+          ],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido46",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Iaido52",
+            "Iaido53"
+          ],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido47",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido53",
+            "Iaido54"
+          ],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido48",
+          "name": "Thunder Reversal",
+          "icon": "ThunderReversal.png",
+          "desc": "Consumes 100 Blade Intent to gain stacks of Thunder Reversal Mark. When Thunder Reversal Mark reaches 5 stacks, casting Iaido Slash grants the Thunder Reversal effect and removes all Thunder Reversal Mark stacks.\nThunder Reversal: Gain a 10% Lightning DMG bonus for 15s. During Thunder Reversal, Thunder Reversal Mark cannot be gained.",
+          "children": [],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido49",
+          "name": "Duel Awareness",
+          "icon": "DuelAwareness.png",
+          "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
+          "children": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido50",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido56"
+          ],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido51",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido57"
+          ],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido52",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Iaido58"
+          ],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido53",
+          "name": "Break Slash",
+          "icon": "BreakSlash.png",
+          "desc": "When dealing Crit DMG, Iaido Slash and its enhanced skill (Thunder Cut) nullifies 30% of the targets' Armor.",
+          "children": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido54",
+          "name": "Shadow Despise",
+          "icon": "ShadowDespise.png",
+          "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
+          "children": [],
+          "gx": 3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido55",
+          "name": "Arcane",
+          "icon": "Arcane.png",
+          "desc": "Crit DMG +10%.",
+          "children": [],
+          "gx": -4,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido56",
+          "name": "Dual Blade Intent",
+          "icon": "DualBladeIntent.png",
+          "desc": "When Blade Intent is at least 100, Flash Strike, Raijin Dash, and their enhanced skills (Dracoflash, Phantom Slash) gain Crit Rate by 10%.\nWhen Blade Intent is at least 100, greatly increases Flash Strike's casting speed.",
+          "children": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido57",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Iaido60"
+          ],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido58",
+          "name": "Bladewind Domain",
+          "icon": "BladewindDomain.png",
+          "desc": "Every 3 casts of Overdrive allows the next Iaido Slash to generate a Bladewind Domain in front. Each time Bladewind Domain deals DMG, reduces the CD of Oblivion Combo by 1.5s.",
+          "children": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido59",
+          "name": "Advancement",
+          "icon": "Advancement.png",
+          "desc": "Mastery +6%",
+          "children": [],
+          "gx": 4,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Iaido60",
+          "name": "Thundrage",
+          "icon": "Thundrage.png",
+          "desc": "Each use of Dracoflash or Phantom Slash grants 4 stacks of Thundrage, up to 8 stacks.",
+          "children": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Moons",
+      "name": "Moonstrike Spec",
+      "collapsed": true,
+      "requiresUnlocked": [
+        "Storm01",
+        "Storm02",
+        "Storm03",
+        "Storm04",
+        "Storm05",
+        "Storm06",
+        "Storm07",
+        "Storm08",
+        "Storm09",
+        "Storm10",
+        "Storm11",
+        "Storm12",
+        "Storm13",
+        "Storm14",
+        "Storm15",
+        "Storm16",
+        "Storm17",
+        "Storm18",
+        "Storm19",
+        "Storm20",
+        "Storm21",
+        "Storm22",
+        "Storm23",
+        "Storm24",
+        "Storm25",
+        "Storm26",
+        "Storm27",
+        "Storm28",
+        "Storm29",
+        "Storm30"
+      ],
+      "origin": {
+        "gx": 11,
+        "gy": 10
+      },
+      "nodes": [
+        {
+          "id": "Moons01",
+          "name": "Moonstrike Spec",
+          "icon": "MoonstrikeSpec.png",
+          "desc": "",
+          "children": [
+            "Moons02",
+            "Moons03"
+          ],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons04",
+            "Moons05"
+          ],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons05",
+            "Moons06"
+          ],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons04",
+          "name": "Thunder Seed",
+          "icon": "ThunderSeed.png",
+          "desc": "Dealing DMG with Thundercut guarantees 1 Charge Seed.",
+          "children": [
+            "Moons07",
+            "Moons08"
+          ],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons05",
+          "name": "Thunder Rune Mastery",
+          "icon": "ThunderRuneMastery.png",
+          "desc": "Doubles Max Blade Intent.",
+          "children": [
+            "Moons09"
+          ],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons06",
+          "name": "Moonstrike Delay",
+          "icon": "MoonstrikeDelay.png",
+          "desc": "Blade Intent cap +25.\nAfter 5 consecutive Thundercuts in one go, it evolves into the more powerful Thundercleave, which deals higher DMG.",
+          "children": [
+            "Moons10",
+            "Moons11"
+          ],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons12",
+            "Moons17"
+          ],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons08",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons12",
+            "Moons13",
+            "Moons14"
+          ],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons09",
+          "name": "Touch of Thunder Soul",
+          "icon": "TouchofThunderSoul.png",
+          "desc": "Moonstrike has a fixed 30% chance to cast Thunderstrike on a Lucky Hit.",
+          "children": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons10",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons14",
+            "Moons15",
+            "Moons16"
+          ],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons16",
+            "Moons23"
+          ],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons12",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons18"
+          ],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons13",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons19",
+            "Moons20"
+          ],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons14",
+          "name": "Chaos Breaker",
+          "icon": "ChaosBreaker.png",
+          "desc": "When Stormflash is activated, Moonstrike evolves into Chaos Breaker.",
+          "children": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons20",
+            "Moons21"
+          ],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons22"
+          ],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons17",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons24"
+          ],
+          "gx": -3,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons18",
+          "name": "Thunder Curse",
+          "icon": "ThunderCurse.png",
+          "desc": "Special Attacks inflict Thunder Curse on the target upon dealing DMG.\nThunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",
+          "children": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons19",
+          "name": "Thunder Scythe",
+          "icon": "ThunderScythe.png",
+          "desc": "Reduces the Charge Seeds that Storm Scythe consumes by 3.",
+          "children": [
+            "Moons25",
+            "Moons26"
+          ],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons20",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons26",
+            "Moons27",
+            "Moons28"
+          ],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons21",
+          "name": "Moonlight Charge",
+          "icon": "MoonlightCharge.png",
+          "desc": "When Moonstrike triggers a Lucky Hit, it has a fixed 30% chance to restore 1 Charge Seed.",
+          "children": [
+            "Moons28",
+            "Moons29"
+          ],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons22",
+          "name": "Frenzied Thunder Roar",
+          "icon": "FrenziedThunderRoar.png",
+          "desc": "Defeating an enemy triggers Thunderburst, once every 3s.",
+          "children": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons23",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons30"
+          ],
+          "gx": 3,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons24",
+          "name": "Thunder Strike Whisper",
+          "icon": "ThunderStrikeWhisper.png",
+          "desc": "Increases the Lightning DMG Thunderstrike deals by 50%, yet Thunderstrike never deals Crit DMG.",
+          "children": [
+            "Moons31"
+          ],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons25",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons32"
+          ],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons26",
+          "name": "Thousand Thunder Flashes",
+          "icon": "ThousandThunderFlashes.png",
+          "desc": "Each 2 Thunderstrike triggered reduces the CD of Stormflash by 0.5s.",
+          "children": [
+            "Moons33",
+            "Moons34"
+          ],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons27",
+          "name": "End of Annihilation",
+          "icon": "EndofAnnihilation.png",
+          "desc": "The final strike of Oblivion Combo is empowered into Ultimate Slash.",
+          "children": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons28",
+          "name": "Phantom Delay",
+          "icon": "PhantomDelay.png",
+          "desc": "Casting Chaos Breaker immediately grants 30 Charge Seeds.",
+          "children": [
+            "Moons34",
+            "Moons35"
+          ],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons29",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons36"
+          ],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons30",
+          "name": "Moon Blade Swift",
+          "icon": "MoonBladeSwift.png",
+          "desc": "Moonstrike additionally deals 1 instance of Whirling DMG every 6s. Each 2% Haste reduces its CD by 1%.",
+          "children": [
+            "Moons37"
+          ],
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons31",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons38",
+            "Moons43"
+          ],
+          "gx": -3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons32",
+          "name": "Blade Intent - Rare",
+          "icon": "BladeIntent-Rare.png",
+          "desc": "Increases Max Blade Intent by 75.",
+          "children": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons33",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons39"
+          ],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons34",
+          "name": "Phantom Scythe Realm I",
+          "icon": "PhantomScytheRealm.png",
+          "desc": "Increases Max Moonstrike by 1. Reduces the DMG dealt by Moonstrike by 35%.",
+          "children": [
+            "Moons40"
+          ],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons35",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons41"
+          ],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons36",
+          "name": "Moonstrike Sharp Strike",
+          "icon": "MoonstrikeSharpStrike.png",
+          "desc": "When Blade Intent is at least 50, Moonstrike and its enhanced skill (Chaos Breaker) are guaranteed to lands a Crit.",
+          "children": [],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons37",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons42",
+            "Moons47"
+          ],
+          "gx": 3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons38",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons55"
+          ],
+          "gx": -4,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons39",
+          "name": "Raijin Dash Charge",
+          "icon": "RaijinDashCharge.png",
+          "desc": "When Thundercut triggers a Lucky Hit, grants 1 Charge Seed.",
+          "children": [
+            "Moons44"
+          ],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons40",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons44",
+            "Moons45",
+            "Moons46"
+          ],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons41",
+          "name": "Blade Intent Recovery",
+          "icon": "BladeIntentRecovery.png",
+          "desc": "Each 1% Haste increases the REG SPD of Blade Intent by 1%.",
+          "children": [
+            "Moons46"
+          ],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons59"
+          ],
+          "gx": 4,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons48",
+            "Moons49"
+          ],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons44",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons49",
+            "Moons50"
+          ],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons45",
+          "name": "Divine Sickle",
+          "icon": "DivineSickle.png",
+          "desc": "Each 7 uses of Storm Scythe triggers Divine Sickle. Divine Sickle always deals Crit DMG.",
+          "children": [
+            "Moons51"
+          ],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons46",
+          "name": "Thunder Attack",
+          "icon": "ThunderAttack.png",
+          "desc": "Thunder Attack + 5",
+          "children": [
+            "Moons52",
+            "Moons53"
+          ],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons47",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons53",
+            "Moons54"
+          ],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons48",
+          "name": "Thunder Sigil Charm",
+          "icon": "ThunderSigilCharm.png",
+          "desc": "Increases Max Thunder Sigil by 1. Storm Scythe and Divine Sickle are bound to trigger Piercing Slash.",
+          "children": [],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons49",
+          "name": "Duel Awareness",
+          "icon": "DuelAwareness.png",
+          "desc": "Deals 20% more DMG to enemies with 80% HP or above.",
+          "children": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons50",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons56"
+          ],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons51",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons57"
+          ],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons52",
+          "name": "Agility",
+          "icon": "Agility.png",
+          "desc": "Agility + 10",
+          "children": [
+            "Moons58"
+          ],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons53",
+          "name": "Shadow Despise",
+          "icon": "ShadowDespise.png",
+          "desc": "For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",
+          "children": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons54",
+          "name": "Thunder Strike Enhancement",
+          "icon": "ThunderStrikeEnhancement.png",
+          "desc": "Increases the DMG dealt by Thunderstrike by 20%. Each 1% Luck grants Thunderstrike 1% more DMG dealt.",
+          "children": [],
+          "gx": 3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons55",
+          "name": "Charge Catcher",
+          "icon": "ChargeCatcher.png",
+          "desc": "Each enemy defeated grants 1 Charge Seed (effective within a team).",
+          "children": [],
+          "gx": -4,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons56",
+          "name": "Breath of Mark",
+          "icon": "BreathofMark.png",
+          "desc": "Lucky Hits of Moonstrike grant a fixed 30% chance to restore 1 Thunder Sigil, once per second.",
+          "children": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons57",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Moons60"
+          ],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons58",
+          "name": "Lightning Flash",
+          "icon": "LightningFlash.png",
+          "desc": "During Stormflash, accelerates Moonstrike's Attack SPD by 100%.",
+          "children": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons59",
+          "name": "Power of Thunder",
+          "icon": "PowerofThunder.png",
+          "desc": "Every 10 instances of DMG dealt triggers Thunder Power.\nThunder Power: Increases Thunder Element damage dealt by 10 for 10s, stacking up to 10 times.",
+          "children": [],
+          "gx": 4,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Moons60",
+          "name": "Phantom Scythe Realm II",
+          "icon": "PhantomScytheRealm.png",
+          "desc": "Casting Thundercut has a chance to grant 25 Blade Intent. The chance is equal to your Luck chance.",
+          "children": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    }
+  ]
+}

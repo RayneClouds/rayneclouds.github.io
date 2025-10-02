@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Frost01",
+    "name": "Frostbeam Spec",
+    "icon": "Frostbea.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost03",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost04",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost05",
+    "name": "Crystal Resonance",
+    "icon": "CrystalR.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Frostbeam deals DMG, it has a fixed 30% chance to let Ice Cores fire Ice Arrows.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost06",
+    "name": "Cold Retention",
+    "icon": "ColdRete.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "In the Permafrost status, the cost of Frostbeam decreases by 25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost07",
+    "name": "Tide Mastery",
+    "icon": "TideMast.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "While casting Frostbeam, you can channel Tidepool.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost08",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost09",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost11",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost13",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost14",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost15",
+    "name": "Intellect Ice Crystal",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Every 50 Intellect grants 1 Max Ice Energy, up to 100 from this source.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost16",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost17",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost18",
+    "name": "Cold Wind Convergence",
+    "icon": "ColdWind.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "When Frozen Gale hits a target (only triggers once even if multiple enemies are hit), all Frost Crystals are consumed to summon Icy Bolt. The number of Icy Bolt summoned matches the number of Frost Crystal consumed. When an Icy Bolt deals DMG, 5 Ice Energy is restored and the Ice Energy cost of skills -5% for the next 8s, stacking up to 6 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost20",
+    "name": "Frostjade Staff",
+    "icon": "Frostjad.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "When an Ice Arrow fired by an Ice Core deals DMG, it has a fixed 30% chance to grant 3 Ice Energy.\nDuring Permafrost, doubles the chance.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost21",
+    "name": "Frost Tide",
+    "icon": "FrostTid.png",
+    "gx": -2,
+    "gy": 12,
+    "desc": "When dealing DMG, Frostbeam has a fixed 20% chance to grant Frost Crystal. If Max Frost Crystal is reached, grants 5% bonus Ice damage dealt instead for 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost23",
+    "name": "Boundless Frost",
+    "icon": "Boundles.png",
+    "gx": 0,
+    "gy": 12,
+    "desc": "Every 50 Ice Energy consumed grants 1 Frost Crystal.\nMax Frost Crystal +3.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost25",
+    "name": "Frost Revelation",
+    "icon": "FrostRev.png",
+    "gx": 2,
+    "gy": 12,
+    "desc": "The first hit of Tidepool on the target grants 5 Ice Energy. Each additional Frost Crystal increases Ice Energy restored by 10.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost26",
+    "name": "Glazed Vastness",
+    "icon": "GlazedVa.png",
+    "gx": -3,
+    "gy": 13,
+    "desc": "Ice skills deal 8% more DMG to Elite and stronger targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost27",
+    "name": "Ice Crystal Expansion",
+    "icon": "IceCryst.png",
+    "gx": -1,
+    "gy": 13,
+    "desc": "Max Ice Energy +40.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost28",
+    "name": "Frost Domain",
+    "icon": "FrostDom.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "The area of Glacier Hymn -50%.\nWhile within it, you gain a 25% bonus to your Ice damage.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost29",
+    "name": "Ray's Swan Song",
+    "icon": "RaysSwan.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "When dealing DMG, Frostbeam gains a fixed 10% chance to double Mastery for 3s (which can only be triggered once on multiple hits).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost30",
+    "name": "Quick Frozen Blast",
+    "icon": "QuickFro.png",
+    "gx": 3,
+    "gy": 13,
+    "desc": "When an Expertise Skill or Ultimate deals DMG to a target with Frozen, it triggers Frost Shock, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost34",
+    "name": "Continuous Stream",
+    "icon": "Continuo.png",
+    "gx": -3,
+    "gy": 15,
+    "desc": "Dealing DMG triggers Trickle.\n\nTrickle: Grants a 1% Ice Damage bonus for 6s. stacking up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost35",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 15,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost36",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 15,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost37",
+    "name": "Icy Calm",
+    "icon": "IcyCalm.png",
+    "gx": 3,
+    "gy": 15,
+    "desc": "Each additional target hit by an Expertise Skill or Ultimate grants a 2% bonus to your highest stat among Mastery, Haste, Crit, or Luck for 5s. Hitting more than 5 additional targets still only counts as 5.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost38",
+    "name": "Ice Shard Pact",
+    "icon": "IceShard.png",
+    "gx": -2,
+    "gy": 16,
+    "desc": "Increases Maelstrom's Ice Energy recovery rate by 200%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost39",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost40",
+    "name": "Rapid Ice Arrow",
+    "icon": "RapidIce.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "During Permafrost, Frostbeam fires 2 additional Ice Arrows generated by Ice Core.\nHowever, during Permafrost, Lucky Hit final DMG -50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost41",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost42",
+    "name": "Quick Chant",
+    "icon": "QuickCha.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Increases Haste by 500.\nDuring Permafrost, accelerates the using of Skills by 15%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost43",
+    "name": "Intellect Amp",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Increases Intellect by 5%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost44",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost45",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost46",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost47",
+    "name": "Ray Mastery I",
+    "icon": "RayMaste.png",
+    "gx": 2,
+    "gy": 11,
+    "desc": "Frostbeam deals 2% more Ice damage.\nFrostbeam deals 5% more Ice damage to the main target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost48",
+    "name": "Endless Tide",
+    "icon": "EndlessT.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "During Permafrost, each Ice Arrow triggered by Ice Core extends the duration of Permafrost by 0.5s, up to 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost49",
+    "name": "Cold Pulse",
+    "icon": "ColdPuls.png",
+    "gx": 1,
+    "gy": 12,
+    "desc": "Every 50 instances of DMG dealt by Frostbeam triggers Cold Pulse once.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost50",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 13,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost51",
+    "name": "Ice Crystal Expansion",
+    "icon": "IceCryst.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "Max Ice Energy +40.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost52",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 13,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost53",
+    "name": "Power of Ice Crystals",
+    "icon": "PowerofI.png",
+    "gx": -1,
+    "gy": 14,
+    "desc": "When Ice Energy is above 50%, deals 8% more Ice damage.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost54",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 14,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost55",
+    "name": "Ice Crystal Recovery",
+    "icon": "IceCryst.png",
+    "gx": 1,
+    "gy": 14,
+    "desc": "When Ice Energy is below 50%, enhances the recovery rate of Ice Energy by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost56",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 15,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost57",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 15,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost58",
+    "name": "Sharp Ice Arrow",
+    "icon": "SharpIce.png",
+    "gx": -1,
+    "gy": 16,
+    "desc": "Increases the critical rate of Ice Arrows from Ice Core by 50%. Increases the Crit DMG of Ice Arrows from Ice Core by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost59",
+    "name": "Law of Energy Surge",
+    "icon": "LawofEne.png",
+    "gx": 0,
+    "gy": 15,
+    "desc": "Every 50 Ice Arrows shot increases the DMG of your next Frozen Gale by 200% for 30s. Additionally, casting Frozen Gale grants the Law of Energy Surge.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Frost60",
+    "name": "Wide Area Ice Arrow",
+    "icon": "WideArea.png",
+    "gx": 1,
+    "gy": 15,
+    "desc": "Every 15 hits of Expertise Skill allows Ice Core to fire Ice Arrow.",
+    "cost": null,
+    "seal": null
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Falco01",
+    "name": "Falconry Spec",
+    "icon": "Falconry.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco02",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco04",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco05",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco06",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco07",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco08",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco10",
+    "name": "Radiant Spirit",
+    "icon": "RadiantS.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Extends the duration of Focus by 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco11",
+    "name": "Piercing Shot",
+    "icon": "Piercing.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Increases the Crit of Double Arrow and Quadraflare by 7%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco12",
+    "name": "Falcon Raid",
+    "icon": "FalconRa.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "For every 3 instances of Crit DMG dealt by Special Attacks, the Falcon instantly launches Lightning Strike.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco13",
+    "name": "Light Energy Stasis",
+    "icon": "LightEne.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "When Radiance Barrage hits a target, it applies Photon Stagnation to them.\nPhoton Stagnation: movement speed -30%. Being hit by Powerdraw is bound to deal Crit DMG. Lasts for 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco14",
+    "name": "Focused Concentration",
+    "icon": "FocusedC.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "While Focus is active, increases Crit Chance by 0.5% and Crit DMG by 1% every 1 second. This effect stacks up to 12 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco15",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco17",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco18",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco19",
+    "name": "Lightning Strike",
+    "icon": "Lightnin.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Increases Lightning Strike DMG by 30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco20",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco21",
+    "name": "Steel Beak",
+    "icon": "SteelBea.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "When you and your Falcon deal Crit DMG, applies 1 stack of Steel Beak to the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco22",
+    "name": "Meteor",
+    "icon": "Meteor.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "When the Falcon strikes, grants you a fixed 30% chance to gain 1 stack of Weak Point Aim.\nUsing Quadraflare leaves behind a Radiance Rift midair. Radiance Rift fires Photon Arrows equal to the current number of Weak Point Aim stacks.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco23",
+    "name": "Eagle Eye",
+    "icon": "EagleEye.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Casting Quadraflare will be faster.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco24",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco25",
+    "name": "Focused Shot",
+    "icon": "FocusedS.png",
+    "gx": 3,
+    "gy": 5,
+    "desc": "Every target hit grants 1% Light DMG bonus. The bonus lasts 3s and can layer up to 4 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco26",
+    "name": "Energy Gathering Power",
+    "icon": "EnergyGa.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "Reduces Powerdraw CD 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco27",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco28",
+    "name": "Light Prism",
+    "icon": "LightPri.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "When Lightning Strike hits a target, it triggers Light Prism.\nLight Prism: Deals area damage equal to 100% ATK to up to 5 surrounding enemy targets, and additionally applies 3 stacks of Steel Beak.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco29",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco30",
+    "name": "Celestial Eagle",
+    "icon": "Celestia.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "While Focus is active, Radiance Barrage summons 1 Celestial Eagle at the target's location.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco32",
+    "name": "Arrow Barrage",
+    "icon": "ArrowBar.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Basic Attacks have a fixed 20% chance to fire one arrow at each of up to 3 enemies near the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco33",
+    "name": "Valiant Heart",
+    "icon": "ValiantH.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Pets deal 15% more DMG to Elites or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco34",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco36",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco37",
+    "name": "Sundering Arrow",
+    "icon": "Sunderin.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Basic Attacks have a fixed 15% chance to trigger Split Arrow, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco38",
+    "name": "Steel Beak Strike",
+    "icon": "SteelBea.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "When Powerdraw hits a target, it applies 2 stacks of Steel Beak. If it deals Crit DMG, it applies 5 stacks of Steel Beak.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco39",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco41",
+    "name": "Falcon's Heart",
+    "icon": "FalconsH.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "The Falcon nullifies 20% of the targets' Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco42",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco43",
+    "name": "Swift",
+    "icon": "Swift.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Applies Swiftness to the Falcon when casting Lightning Strike.\nSwiftness: Increases Attack SPD by 10%. This effect lasts 8s and stacks up to 3 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco44",
+    "name": "Dual Arrow Mastery",
+    "icon": "DualArro.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "When a Special Attack deals Crit DMG, reduces the remaining CD of Blast Shot and Powerdraw by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco45",
+    "name": "Steel Beak Gathering",
+    "icon": "SteelBea.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "When Celestial Eagle hits a target, it prevents the target's Steel Beak from naturally decaying.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco46",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco47",
+    "name": "Falcon Break",
+    "icon": "FalconBr.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Crit hits of the Falcon nullify 50% of the target's Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco48",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco49",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco50",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco51",
+    "name": "Radiant Sharpshooter",
+    "icon": "RadiantS.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Reduces Max Photon Energy by 20.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco52",
+    "name": "Chain Explosion",
+    "icon": "ChainExp.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Blast Shot Upon detonation, inflicts 10 stacks of Steel Beak on all targets hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco53",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco54",
+    "name": "Lightfall",
+    "icon": "Lightfal.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Each 1% critical rate increases Crit DMG by 0.3%.\nWhen Double Arrow or Quadraflare deals Crit DMG, 2 Photon Energy is restored.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco55",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco56",
+    "name": "Sharp Double Arrow I",
+    "icon": "SharpDou.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Increases the Crit DMG of Double Arrow and Quadraflare by 15%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco57",
+    "name": "Radiant Charge",
+    "icon": "RadiantC.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "When an arrow fired from Radiance Rift deals DMG for 1 time, increases the DMG of the next Blast Shot by 10%, up to a maximum of 100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco58",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco59",
+    "name": "Phantom Falcon",
+    "icon": "PhantomF.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Triggering Implosion 5 times summons a Phantom Falcon to charge at the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Falco60",
+    "name": "Twin Arrows",
+    "icon": "TwinArro.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Luminary Bolt additionally causes a Photon Explosion, dealing Attack Damage equal to 1,500% ATK (which scales with the Level/Tier of Ultimate), and also knocks targets airborne and increases the DMG you deal to them by 5% for 10s.",
+    "cost": null,
+    "seal": null
+  }
+]

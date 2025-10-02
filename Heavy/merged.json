@@ -4,7 +4,7 @@
       "id": "Heavy",
       "name": "Heavy Guardian",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
@@ -18,6 +18,7 @@
           "children": [
             "Heavy03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -31,6 +32,7 @@
           "children": [
             "Heavy06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -46,6 +48,7 @@
             "Heavy04",
             "Heavy05"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
@@ -59,6 +62,7 @@
           "children": [
             "Heavy08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -72,6 +76,7 @@
           "children": [
             "Heavy07"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -86,6 +91,7 @@
             "Heavy09",
             "Heavy10"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -99,6 +105,7 @@
           "children": [
             "Heavy11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -113,6 +120,7 @@
             "Heavy12",
             "Heavy13"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -126,6 +134,7 @@
           "children": [
             "Heavy14"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -139,6 +148,7 @@
           "children": [
             "Heavy23"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -152,6 +162,7 @@
           "children": [
             "Heavy15"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -165,6 +176,7 @@
           "children": [
             "Heavy16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -178,6 +190,7 @@
           "children": [
             "Heavy17"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -191,6 +204,7 @@
           "children": [
             "Heavy18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -205,6 +219,7 @@
             "Heavy19",
             "Heavy20"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -219,6 +234,7 @@
             "Heavy20",
             "Heavy21"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -232,6 +248,7 @@
           "children": [
             "Heavy21"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -245,6 +262,7 @@
           "children": [
             "Heavy22"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -258,6 +276,7 @@
           "children": [
             "Heavy24"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -271,6 +290,7 @@
           "children": [
             "Heavy25"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -284,6 +304,7 @@
           "children": [
             "Heavy26"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -297,6 +318,7 @@
           "children": [
             "Heavy27"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -308,6 +330,7 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -321,6 +344,7 @@
           "children": [
             "Heavy28"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
@@ -334,6 +358,7 @@
           "children": [
             "Heavy29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -347,6 +372,7 @@
           "children": [
             "Heavy30"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -358,6 +384,7 @@
           "icon": "EnrageDelay.png",
           "desc": "When Strength reaches 500, extends the duration of Enraged by 1 second.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
@@ -369,6 +396,7 @@
           "icon": "ValiantFury.png",
           "desc": "When Enraged, you gain 30% bonus Armor, decreasing by 5% per second.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -380,6 +408,7 @@
           "icon": "FuryShelter.png",
           "desc": "In the state of Enrage, Max HP bonus +20%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 8,
           "cost": 1,
@@ -391,6 +420,7 @@
           "icon": "EnragedSuppress.png",
           "desc": "During Enraged state, Suppress effect +50%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -402,38 +432,7 @@
       "id": "Block",
       "name": "Block Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Heavy01",
-        "Heavy02",
-        "Heavy03",
-        "Heavy04",
-        "Heavy05",
-        "Heavy06",
-        "Heavy07",
-        "Heavy08",
-        "Heavy09",
-        "Heavy10",
-        "Heavy11",
-        "Heavy12",
-        "Heavy13",
-        "Heavy14",
-        "Heavy15",
-        "Heavy16",
-        "Heavy17",
-        "Heavy18",
-        "Heavy19",
-        "Heavy20",
-        "Heavy21",
-        "Heavy22",
-        "Heavy23",
-        "Heavy24",
-        "Heavy25",
-        "Heavy26",
-        "Heavy27",
-        "Heavy28",
-        "Heavy29",
-        "Heavy30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
         "gy": 10
@@ -447,6 +446,7 @@
           "children": [
             "Block02"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -461,6 +461,7 @@
             "Block03",
             "Block04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
@@ -475,6 +476,7 @@
             "Block05",
             "Block06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
@@ -489,6 +491,7 @@
             "Block06",
             "Block07"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
@@ -500,6 +503,7 @@
           "icon": "RageEnhancement.png",
           "desc": "Granite Fury consumes 1 Sand Crystal.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -513,6 +517,7 @@
           "children": [
             "Block08"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -524,6 +529,7 @@
           "icon": "RampartFury.png",
           "desc": "When taking DMG, increases Lucky Block DMG RED by 2% for 8s, stacks up to 3 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -537,6 +543,7 @@
           "children": [
             "Block10"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -551,6 +558,7 @@
             "Block12",
             "Block13"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -566,6 +574,7 @@
             "Block11",
             "Block21"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -580,6 +589,7 @@
             "Block14",
             "Block15"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -591,6 +601,7 @@
           "icon": "EnragedRockHeart.png",
           "desc": "While Enraged, increases Lucky Hit Chance by 10%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -605,6 +616,7 @@
             "Block16",
             "Block17"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -619,6 +631,7 @@
             "Block18",
             "Block19"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -630,6 +643,7 @@
           "icon": "SandBlock.png",
           "desc": "Successfully Blocking has a fixed 20% chance to gain 1 Sand Crystal. If it was a Lucky Block, gain an additional 1 Sand Crystal.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -641,6 +655,7 @@
           "icon": "ShatteringRageblow.png",
           "desc": "When dealing DMB, Granite Fury has a 20% chance to allow your next Basic Attack to evolve into Rageblow. Each 2% Luck adds 1% chance.\nAfter casting Rageblow, increases Block DMG RED by 10% for 10s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -655,6 +670,7 @@
             "Block20",
             "Block21"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -669,6 +685,7 @@
             "Block21",
             "Block22"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -680,6 +697,7 @@
           "icon": "FortuneBastion.png",
           "desc": "During Bastion, you can block Magic Damage.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -694,6 +712,7 @@
             "Block23",
             "Block24"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -708,6 +727,7 @@
             "Block24",
             "Block25"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -722,6 +742,7 @@
             "Block25",
             "Block26"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -735,6 +756,7 @@
           "children": [
             "Block29"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -749,6 +771,7 @@
             "Block27",
             "Block29"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -763,6 +786,7 @@
             "Block28",
             "Block30"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -776,6 +800,7 @@
           "children": [
             "Block30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -790,6 +815,7 @@
             "Block31",
             "Block32"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -804,6 +830,7 @@
             "Block32",
             "Block33"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -817,6 +844,7 @@
           "children": [
             "Block34"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -830,6 +858,7 @@
           "children": [
             "Block36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -844,6 +873,7 @@
             "Block34",
             "Block35"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 12,
           "cost": 1,
@@ -857,6 +887,7 @@
           "children": [
             "Block35"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
@@ -871,6 +902,7 @@
             "Block35",
             "Block36"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -885,6 +917,7 @@
             "Block37",
             "Block38"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 13,
           "cost": 1,
@@ -900,6 +933,7 @@
             "Block39",
             "Block40"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -914,6 +948,7 @@
             "Block40",
             "Block41"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -928,6 +963,7 @@
             "Block42",
             "Block43"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 14,
           "cost": 1,
@@ -942,6 +978,7 @@
             "Block43",
             "Block44"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
@@ -955,6 +992,7 @@
           "children": [
             "Block45"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
@@ -969,6 +1007,7 @@
             "Block46",
             "Block47"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
@@ -983,6 +1022,7 @@
             "Block47",
             "Block48"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 14,
           "cost": 1,
@@ -996,6 +1036,7 @@
           "children": [
             "Block49"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 15,
           "cost": 1,
@@ -1007,6 +1048,7 @@
           "icon": "CounterStorm.png",
           "desc": "For 10s after casting Tectonic Ring, trigger 1 Block Counterstrike every 2s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 15,
           "cost": 1,
@@ -1022,6 +1064,7 @@
             "Block51",
             "Block52"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -1035,6 +1078,7 @@
           "children": [
             "Block52"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 15,
           "cost": 1,
@@ -1050,6 +1094,7 @@
             "Block53",
             "Block54"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 15,
           "cost": 1,
@@ -1061,6 +1106,7 @@
           "icon": "GroupSuppress.png",
           "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 15,
           "cost": 1,
@@ -1074,6 +1120,7 @@
           "children": [
             "Block55"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 15,
           "cost": 1,
@@ -1085,6 +1132,7 @@
           "icon": "RockLuck.png",
           "desc": "Luck Chance +5%.\nCountercrush Crit +50%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 16,
           "cost": 1,
@@ -1099,6 +1147,7 @@
             "Block56",
             "Block57"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 16,
           "cost": 1,
@@ -1110,6 +1159,7 @@
           "icon": "SurvivalInstinct.png",
           "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 16,
           "cost": 1,
@@ -1123,6 +1173,7 @@
           "children": [
             "Block58"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 16,
           "cost": 1,
@@ -1134,6 +1185,7 @@
           "icon": "SandstoneShock.png",
           "desc": "While in the Brave Bastion state, casting Countercrush or Granite Fury triggers Sand Crystal Shock.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 16,
           "cost": 1,
@@ -1148,6 +1200,7 @@
             "Block59",
             "Block60"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 16,
           "cost": 1,
@@ -1159,6 +1212,7 @@
           "icon": "RockMastery.png",
           "desc": "Increases Mastery by 600.\nWhile Brave Bastion is active, increases Mastery by 8%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 16,
           "cost": 1,
@@ -1170,6 +1224,7 @@
           "icon": "Intimidation.png",
           "desc": "When Rock Projectile hits a target, it reduces all DMG taken by 10% for the next 5s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 17,
           "cost": 1,
@@ -1181,6 +1236,7 @@
           "icon": "SandstoneRewind.png",
           "desc": "When Rageblow deals DMG, it reduces the CD of Brave Bastion by 3s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 17,
           "cost": 1,
@@ -1192,6 +1248,7 @@
           "icon": "GraniteFury.png",
           "desc": "Summoning 20 Rock Projectiles grants Heart of Rock: For 10s, Granite Fury evolves into Stone Fist.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 17,
           "cost": 1,
@@ -1203,6 +1260,7 @@
           "icon": "Sandgrip.png",
           "desc": "After casting Sandgrip, gains 10% Versatility for 10s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 17,
           "cost": 1,
@@ -1214,6 +1272,7 @@
           "icon": "RampartFortitude.png",
           "desc": "While Brave Bastion is active, taking DMG increases Countercrush DMG by 10% for 10s, stacks up to 10 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 17,
           "cost": 1,
@@ -1225,38 +1284,7 @@
       "id": "Earth",
       "name": "Earthfort Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Heavy01",
-        "Heavy02",
-        "Heavy03",
-        "Heavy04",
-        "Heavy05",
-        "Heavy06",
-        "Heavy07",
-        "Heavy08",
-        "Heavy09",
-        "Heavy10",
-        "Heavy11",
-        "Heavy12",
-        "Heavy13",
-        "Heavy14",
-        "Heavy15",
-        "Heavy16",
-        "Heavy17",
-        "Heavy18",
-        "Heavy19",
-        "Heavy20",
-        "Heavy21",
-        "Heavy22",
-        "Heavy23",
-        "Heavy24",
-        "Heavy25",
-        "Heavy26",
-        "Heavy27",
-        "Heavy28",
-        "Heavy29",
-        "Heavy30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
         "gy": 10
@@ -1270,6 +1298,7 @@
           "children": [
             "Earth02"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -1284,6 +1313,7 @@
             "Earth03",
             "Earth04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
@@ -1298,6 +1328,7 @@
             "Earth05",
             "Earth06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
@@ -1312,6 +1343,7 @@
             "Earth06",
             "Earth07"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
@@ -1323,6 +1355,7 @@
           "icon": "AmplifiedEarthfort.png",
           "desc": "Upon the triggering of Weak Point Strike, gains Amplified Earthfort.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -1336,6 +1369,7 @@
           "children": [
             "Earth08"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -1347,6 +1381,7 @@
           "icon": "StarFury.png",
           "desc": "Increases Star Shatter and Starfall DMG by 30%, and guarantees Enraged status.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -1360,6 +1395,7 @@
           "children": [
             "Earth10"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -1374,6 +1410,7 @@
             "Earth12",
             "Earth13"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -1389,6 +1426,7 @@
             "Earth11",
             "Earth21"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -1403,6 +1441,7 @@
             "Earth14",
             "Earth15"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -1414,6 +1453,7 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -1428,6 +1468,7 @@
             "Earth16",
             "Earth17"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -1442,6 +1483,7 @@
             "Earth18",
             "Earth19"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -1453,6 +1495,7 @@
           "icon": "LordoftheGreatRock.png",
           "desc": "Casting Starfall grants Lord of Rock: For 15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -1464,6 +1507,7 @@
           "icon": "ShieldEcho.png",
           "desc": "During Sandshroud, adding a shield to yourself via Shield Bash triggers Shield Echo.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -1478,6 +1522,7 @@
             "Earth20",
             "Earth21"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -1492,6 +1537,7 @@
             "Earth21",
             "Earth22"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -1503,6 +1549,7 @@
           "icon": "ShieldBash.png",
           "desc": "Enhances Shield effectiveness by 10%.\nDuring Sandshroud, additionally enhances Shield effectiveness by 10%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -1517,6 +1564,7 @@
             "Earth23",
             "Earth24"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -1531,6 +1579,7 @@
             "Earth24",
             "Earth25"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -1545,6 +1594,7 @@
             "Earth25",
             "Earth26"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -1558,6 +1608,7 @@
           "children": [
             "Earth29"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -1572,6 +1623,7 @@
             "Earth27",
             "Earth29"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -1586,6 +1638,7 @@
             "Earth28",
             "Earth30"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -1599,6 +1652,7 @@
           "children": [
             "Earth30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -1613,6 +1667,7 @@
             "Earth31",
             "Earth32"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -1627,6 +1682,7 @@
             "Earth32",
             "Earth33"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -1640,6 +1696,7 @@
           "children": [
             "Earth34"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -1653,6 +1710,7 @@
           "children": [
             "Earth36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1667,6 +1725,7 @@
             "Earth34",
             "Earth35"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 12,
           "cost": 1,
@@ -1680,6 +1739,7 @@
           "children": [
             "Earth35"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
@@ -1694,6 +1754,7 @@
             "Earth35",
             "Earth36"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -1708,6 +1769,7 @@
             "Earth37",
             "Earth38"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 13,
           "cost": 1,
@@ -1723,6 +1785,7 @@
             "Earth39",
             "Earth40"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -1737,6 +1800,7 @@
             "Earth40",
             "Earth41"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -1751,6 +1815,7 @@
             "Earth42",
             "Earth43"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 14,
           "cost": 1,
@@ -1765,6 +1830,7 @@
             "Earth43",
             "Earth44"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
@@ -1778,6 +1844,7 @@
           "children": [
             "Earth45"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
@@ -1792,6 +1859,7 @@
             "Earth46",
             "Earth47"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
@@ -1806,6 +1874,7 @@
             "Earth47",
             "Earth48"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 14,
           "cost": 1,
@@ -1819,6 +1888,7 @@
           "children": [
             "Earth49"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 15,
           "cost": 1,
@@ -1830,6 +1900,7 @@
           "icon": "EnragedRupture.png",
           "desc": "While Enraged, Rupture is bound to trigger Weak Point Strike.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 15,
           "cost": 1,
@@ -1845,6 +1916,7 @@
             "Earth51",
             "Earth52"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -1858,6 +1930,7 @@
           "children": [
             "Earth52"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 15,
           "cost": 1,
@@ -1873,6 +1946,7 @@
             "Earth53",
             "Earth54"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 15,
           "cost": 1,
@@ -1884,6 +1958,7 @@
           "icon": "GroupSuppress.png",
           "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 15,
           "cost": 1,
@@ -1897,6 +1972,7 @@
           "children": [
             "Earth55"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 15,
           "cost": 1,
@@ -1908,6 +1984,7 @@
           "icon": "BraveryinBattle.png",
           "desc": "In combat, 50% of overhealing converts to a shield (accumulated shield cannot exceed 50% of Max HP).",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 16,
           "cost": 1,
@@ -1922,6 +1999,7 @@
             "Earth56",
             "Earth57"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 16,
           "cost": 1,
@@ -1933,6 +2011,7 @@
           "icon": "SurvivalInstinct.png",
           "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 16,
           "cost": 1,
@@ -1946,6 +2025,7 @@
           "children": [
             "Earth58"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 16,
           "cost": 1,
@@ -1957,6 +2037,7 @@
           "icon": "ResoluteBreath.png",
           "desc": "While shielded, use Basic Attack midair to slam down, detonating the shield and dealing damage equal to 30% max HP to nearby enemies.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 16,
           "cost": 1,
@@ -1971,6 +2052,7 @@
             "Earth59",
             "Earth60"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 16,
           "cost": 1,
@@ -1982,6 +2064,7 @@
           "icon": "SlamShelter.png",
           "desc": "A successful hit with Shield Bash reduces the target's DMG dealt to you by 3% for 10s, stacking up to 3 times.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 16,
           "cost": 1,
@@ -1993,6 +2076,7 @@
           "icon": "Recovery.png",
           "desc": "Each successful hit of Expertise Skill or Special Attack increases Strength by 1% in 5s. The effect stacks up to 10 times. With 10 stacks, increases Strength by 10% for 8s. During this effect, the next Expertise Skill heals you for 20% of the DMG dealt, yet no additional Strength stacks can be gained.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 17,
           "cost": 1,
@@ -2004,6 +2088,7 @@
           "icon": "SmashSupport.png",
           "desc": "Increases the effectiveness of Shield granted by Shield Bash by 30%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 17,
           "cost": 1,
@@ -2015,6 +2100,7 @@
           "icon": "StarShatterPursuit.png",
           "desc": "Star Shatter and Starfall deals additionally 200% DMG to targets with current HP less than or equal to 35%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 17,
           "cost": 1,
@@ -2026,6 +2112,7 @@
           "icon": "SandyShelter.png",
           "desc": "During Stoneform, every 20 Rage gained triggers Sandy shelter.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 17,
           "cost": 1,
@@ -2037,6 +2124,7 @@
           "icon": "RockGuard.png",
           "desc": "Armor +5%.\nEach attack of Terra Sunder deals an additional instance of Attack Damage to the target, equal to 100% Armor.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 17,
           "cost": 1,

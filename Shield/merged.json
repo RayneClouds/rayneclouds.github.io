@@ -4,7 +4,7 @@
       "id": "Shkni",
       "name": "Shield Knight",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
@@ -18,6 +18,7 @@
           "children": [
             "Shkni03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -31,6 +32,7 @@
           "children": [
             "Shkni06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -46,6 +48,7 @@
             "Shkni04",
             "Shkni05"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
@@ -59,6 +62,7 @@
           "children": [
             "Shkni08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -72,6 +76,7 @@
           "children": [
             "Shkni07"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -86,6 +91,7 @@
             "Shkni09",
             "Shkni10"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -99,6 +105,7 @@
           "children": [
             "Shkni11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -113,6 +120,7 @@
             "Shkni12",
             "Shkni13"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -126,6 +134,7 @@
           "children": [
             "Shkni14"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -139,6 +148,7 @@
           "children": [
             "Shkni23"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -152,6 +162,7 @@
           "children": [
             "Shkni15"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -165,6 +176,7 @@
           "children": [
             "Shkni16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -178,6 +190,7 @@
           "children": [
             "Shkni17"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -191,6 +204,7 @@
           "children": [
             "Shkni18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -205,6 +219,7 @@
             "Shkni19",
             "Shkni20"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -219,6 +234,7 @@
             "Shkni20",
             "Shkni21"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -232,6 +248,7 @@
           "children": [
             "Shkni21"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -245,6 +262,7 @@
           "children": [
             "Shkni22"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -258,6 +276,7 @@
           "children": [
             "Shkni24"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -271,6 +290,7 @@
           "children": [
             "Shkni25"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -284,6 +304,7 @@
           "children": [
             "Shkni26"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 6,
           "cost": 1,
@@ -297,6 +318,7 @@
           "children": [
             "Shkni27"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -308,6 +330,7 @@
           "icon": "CondemnTimeLimit.png",
           "desc": "When Condemn deals damage, it immediately cools down 1 Holy Sigil (prioritizing the Holy Sigil with the longest remaining CD).",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -321,6 +344,7 @@
           "children": [
             "Shkni28"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
@@ -334,6 +358,7 @@
           "children": [
             "Shkni29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -347,6 +372,7 @@
           "children": [
             "Shkni30"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -358,6 +384,7 @@
           "icon": "LightofCondemn.png",
           "desc": "While inside a Divine Circle, your Condemn is enhanced—thrusting a blade of light forward and dealing double DMG.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
@@ -369,6 +396,7 @@
           "icon": "LifeEnhancement.png",
           "desc": "When Strength reaches 500 points, Max HP +12%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -380,6 +408,7 @@
           "icon": "BlessingofHolySigil.png",
           "desc": "When using a Skill that consumes Holy Sigils, 20% chance for your next Holy Sigil-consuming skill to consume no Holy Sigils. The effect lasts for 8s or until a Holy Sigil-consuming skill is cast.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 8,
           "cost": 1,
@@ -391,6 +420,7 @@
           "icon": "EnergyGuard.png",
           "desc": "After Casting the Ultimate, the aggro generated by Allies is transferred to oneself, lasting for 6s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -400,40 +430,9 @@
     },
     {
       "id": "Recov",
-      "name": "Shield Spec",
+      "name": "Recovery Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Shkni01",
-        "Shkni02",
-        "Shkni03",
-        "Shkni04",
-        "Shkni05",
-        "Shkni06",
-        "Shkni07",
-        "Shkni08",
-        "Shkni09",
-        "Shkni10",
-        "Shkni11",
-        "Shkni12",
-        "Shkni13",
-        "Shkni14",
-        "Shkni15",
-        "Shkni16",
-        "Shkni17",
-        "Shkni18",
-        "Shkni19",
-        "Shkni20",
-        "Shkni21",
-        "Shkni22",
-        "Shkni23",
-        "Shkni24",
-        "Shkni25",
-        "Shkni26",
-        "Shkni27",
-        "Shkni28",
-        "Shkni29",
-        "Shkni30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
         "gy": 10
@@ -448,6 +447,7 @@
             "Recov02",
             "Recov03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -462,6 +462,7 @@
             "Recov04",
             "Recov05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -476,6 +477,7 @@
             "Recov05",
             "Recov06"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -489,6 +491,7 @@
           "children": [
             "Recov07"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 2,
           "cost": 1,
@@ -504,6 +507,7 @@
             "Recov09",
             "Recov13"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -517,6 +521,7 @@
           "children": [
             "Recov10"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 2,
           "cost": 1,
@@ -531,6 +536,7 @@
             "Recov11",
             "Recov12"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -544,6 +550,7 @@
           "children": [
             "Recov12"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -557,6 +564,7 @@
           "children": [
             "Recov14"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -571,6 +579,7 @@
             "Recov14",
             "Recov15"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -585,6 +594,7 @@
             "Recov16",
             "Recov26"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 4,
           "cost": 1,
@@ -600,6 +610,7 @@
             "Recov17",
             "Recov18"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -611,6 +622,7 @@
           "icon": "Oracle.png",
           "desc": "When a skill that consumes Holy Sigil critically hits, gain an additional 30% Light Energy.\nCrit DMG of skills that consume Light Energy +30%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -626,6 +638,7 @@
             "Recov19",
             "Recov20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -640,6 +653,7 @@
             "Recov20",
             "Recov30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 4,
           "cost": 1,
@@ -653,6 +667,7 @@
           "children": [
             "Recov21"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -666,6 +681,7 @@
           "children": [
             "Recov22"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -677,6 +693,7 @@
           "icon": "ReckonBlaze.png",
           "desc": "When Valor Bash deals Crit DMG, gain Blazing.\nCasting Aegis Ward guarantees Blazing.\nBlazing: For the next 10s, Reckoning evolves into Inferno Reckon.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -690,6 +707,7 @@
           "children": [
             "Recov22"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -703,6 +721,7 @@
           "children": [
             "Recov23"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -716,6 +735,7 @@
           "children": [
             "Recov24"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -730,6 +750,7 @@
             "Recov24",
             "Recov25"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -743,6 +764,7 @@
           "children": [
             "Recov25"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -757,6 +779,7 @@
             "Recov27",
             "Recov28"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -771,6 +794,7 @@
             "Recov28",
             "Recov29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -785,6 +809,7 @@
             "Recov31",
             "Recov32"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 8,
           "cost": 1,
@@ -798,6 +823,7 @@
           "children": [
             "Recov32"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -811,6 +837,7 @@
           "children": [
             "Recov33"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -824,6 +851,7 @@
           "children": [
             "Recov34"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -838,6 +866,7 @@
             "Recov34",
             "Recov35"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -851,6 +880,7 @@
           "children": [
             "Recov36"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -865,6 +895,7 @@
             "Recov37",
             "Recov38"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
@@ -880,6 +911,7 @@
             "Recov47",
             "Recov53"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -894,6 +926,7 @@
             "Recov39",
             "Recov40"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 9,
           "cost": 1,
@@ -907,6 +940,7 @@
           "children": [
             "Recov41"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -920,6 +954,7 @@
           "children": [
             "Recov44"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -933,6 +968,7 @@
           "children": [
             "Recov42"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 10,
           "cost": 1,
@@ -946,6 +982,7 @@
           "children": [
             "Recov46"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -959,6 +996,7 @@
           "children": [
             "Recov47"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -972,6 +1010,7 @@
           "children": [
             "Recov43"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -985,6 +1024,7 @@
           "children": [
             "Recov49"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 10,
           "cost": 1,
@@ -998,6 +1038,7 @@
           "children": [
             "Recov45"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -1012,6 +1053,7 @@
             "Recov48",
             "Recov49"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1025,6 +1067,7 @@
           "children": [
             "Recov50"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 12,
           "cost": 1,
@@ -1038,6 +1081,7 @@
           "children": [
             "Recov51"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
@@ -1051,6 +1095,7 @@
           "children": [
             "Recov52"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 12,
           "cost": 1,
@@ -1064,6 +1109,7 @@
           "children": [
             "Recov54"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -1077,6 +1123,7 @@
           "children": [
             "Recov55"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 12,
           "cost": 1,
@@ -1090,6 +1137,7 @@
           "children": [
             "Recov56"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 12,
           "cost": 1,
@@ -1101,6 +1149,7 @@
           "icon": "HolyHeal.png",
           "desc": "While having Radiant Shield, gains 12% healing bonus.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 13,
           "cost": 1,
@@ -1114,6 +1163,7 @@
           "children": [
             "Recov57"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 13,
           "cost": 1,
@@ -1127,6 +1177,7 @@
           "children": [
             "Recov57"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
@@ -1138,6 +1189,7 @@
           "icon": "LightforgedGreatsword.png",
           "desc": "After every 10 casts of Judgment, the next Judgment is enhanced into Scorching Judgment.\nScorching Judgment: Summon a holy greatsword to descend upon the target area for 5s, healing yourself (Healing equal to that of Judgment) while dealing damage over time to nearby enemies and inflicting Scorch, totally dealing physical DMG equal to 600% ATK (scales with Judgment level/rank).\nScorch: Reduces damage taken from the target by 3% for 10s. Stacks up to 10 times. Grants 3 stacks of Scorch on Crit.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -1151,6 +1203,7 @@
           "children": [
             "Recov58"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
           "cost": 1,
@@ -1164,6 +1217,7 @@
           "children": [
             "Recov58"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -1175,6 +1229,7 @@
           "icon": "LightProtection.png",
           "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 13,
           "cost": 1,
@@ -1188,6 +1243,7 @@
           "children": [
             "Recov59"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 14,
           "cost": 1,
@@ -1201,6 +1257,7 @@
           "children": [
             "Recov60"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 14,
           "cost": 1,
@@ -1212,6 +1269,7 @@
           "icon": "JudgmentRevelation.png",
           "desc": "When Divine Strike Crits, there's a 50% fixed chance to automatically cast Judgment on the target (this Judgment cannot trigger Divine Strike).",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -1223,6 +1281,7 @@
           "icon": "AegisWard'sRetribution.png",
           "desc": "During Aegis Ward, Block chance is increased to 1.5 times.\nWhen attacked, reduces Aegis Ward's remaining CD by 0.5s. This effect can only trigger once per 1 second.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 15,
           "cost": 1,
@@ -1234,38 +1293,7 @@
       "id": "Shiel",
       "name": "Shield Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Shkni01",
-        "Shkni02",
-        "Shkni03",
-        "Shkni04",
-        "Shkni05",
-        "Shkni06",
-        "Shkni07",
-        "Shkni08",
-        "Shkni09",
-        "Shkni10",
-        "Shkni11",
-        "Shkni12",
-        "Shkni13",
-        "Shkni14",
-        "Shkni15",
-        "Shkni16",
-        "Shkni17",
-        "Shkni18",
-        "Shkni19",
-        "Shkni20",
-        "Shkni21",
-        "Shkni22",
-        "Shkni23",
-        "Shkni24",
-        "Shkni25",
-        "Shkni26",
-        "Shkni27",
-        "Shkni28",
-        "Shkni29",
-        "Shkni30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
         "gy": 10
@@ -1280,6 +1308,7 @@
             "Shiel02",
             "Shiel03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -1294,6 +1323,7 @@
             "Shiel04",
             "Shiel05"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -1308,6 +1338,7 @@
             "Shiel05",
             "Shiel06"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -1321,6 +1352,7 @@
           "children": [
             "Shiel07"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 2,
           "cost": 1,
@@ -1336,6 +1368,7 @@
             "Shiel09",
             "Shiel13"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -1349,6 +1382,7 @@
           "children": [
             "Shiel10"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 2,
           "cost": 1,
@@ -1363,6 +1397,7 @@
             "Shiel11",
             "Shiel12"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -1376,6 +1411,7 @@
           "children": [
             "Shiel12"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -1389,6 +1425,7 @@
           "children": [
             "Shiel14"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -1403,6 +1440,7 @@
             "Shiel14",
             "Shiel15"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -1417,6 +1455,7 @@
             "Shiel16",
             "Shiel26"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 4,
           "cost": 1,
@@ -1432,6 +1471,7 @@
             "Shiel17",
             "Shiel18"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -1443,6 +1483,7 @@
           "icon": "ConquestPursuit.png",
           "desc": "While Zeal Crusade is active, Vanguard Strike evolves into Vanguard Hunt.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -1458,6 +1499,7 @@
             "Shiel19",
             "Shiel20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -1472,6 +1514,7 @@
             "Shiel20",
             "Shiel30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 4,
           "cost": 1,
@@ -1485,6 +1528,7 @@
           "children": [
             "Shiel21"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -1498,6 +1542,7 @@
           "children": [
             "Shiel22"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -1509,6 +1554,7 @@
           "icon": "AdversityEnhancement.png",
           "desc": "Special Attack and damaging Expertise are enhanced based on missing HP. For every 1% HP lost, increases their DMG by 1%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -1522,6 +1568,7 @@
           "children": [
             "Shiel22"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -1535,6 +1582,7 @@
           "children": [
             "Shiel23"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -1548,6 +1596,7 @@
           "children": [
             "Shiel24"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -1562,6 +1611,7 @@
             "Shiel24",
             "Shiel25"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -1575,6 +1625,7 @@
           "children": [
             "Shiel25"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -1589,6 +1640,7 @@
             "Shiel27",
             "Shiel28"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -1603,6 +1655,7 @@
             "Shiel28",
             "Shiel29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -1617,6 +1670,7 @@
             "Shiel31",
             "Shiel32"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 8,
           "cost": 1,
@@ -1630,6 +1684,7 @@
           "children": [
             "Shiel32"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -1643,6 +1698,7 @@
           "children": [
             "Shiel33"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -1656,6 +1712,7 @@
           "children": [
             "Shiel34"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -1670,6 +1727,7 @@
             "Shiel34",
             "Shiel35"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -1683,6 +1741,7 @@
           "children": [
             "Shiel36"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -1697,6 +1756,7 @@
             "Shiel37",
             "Shiel38"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
@@ -1712,6 +1772,7 @@
             "Shiel47",
             "Shiel53"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -1726,6 +1787,7 @@
             "Shiel39",
             "Shiel40"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 9,
           "cost": 1,
@@ -1739,6 +1801,7 @@
           "children": [
             "Shiel41"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -1752,6 +1815,7 @@
           "children": [
             "Shiel44"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -1765,6 +1829,7 @@
           "children": [
             "Shiel42"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 10,
           "cost": 1,
@@ -1778,6 +1843,7 @@
           "children": [
             "Shiel46"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -1791,6 +1857,7 @@
           "children": [
             "Shiel47"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 10,
           "cost": 1,
@@ -1804,6 +1871,7 @@
           "children": [
             "Shiel43"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -1817,6 +1885,7 @@
           "children": [
             "Shiel49"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 10,
           "cost": 1,
@@ -1830,6 +1899,7 @@
           "children": [
             "Shiel45"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 11,
           "cost": 1,
@@ -1844,6 +1914,7 @@
             "Shiel48",
             "Shiel49"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1857,6 +1928,7 @@
           "children": [
             "Shiel50"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 12,
           "cost": 1,
@@ -1870,6 +1942,7 @@
           "children": [
             "Shiel51"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
@@ -1883,6 +1956,7 @@
           "children": [
             "Shiel52"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 12,
           "cost": 1,
@@ -1896,6 +1970,7 @@
           "children": [
             "Shiel54"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -1909,6 +1984,7 @@
           "children": [
             "Shiel55"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 12,
           "cost": 1,
@@ -1922,6 +1998,7 @@
           "children": [
             "Shiel56"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 12,
           "cost": 1,
@@ -1933,6 +2010,7 @@
           "icon": "LightHealing.png",
           "desc": "While having Radiant Shield, gains 12% healing bonus.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 13,
           "cost": 1,
@@ -1946,6 +2024,7 @@
           "children": [
             "Shiel57"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 13,
           "cost": 1,
@@ -1959,6 +2038,7 @@
           "children": [
             "Shiel57"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
@@ -1970,6 +2050,7 @@
           "icon": "WideRaid.png",
           "desc": "Increases Zeal Crusade range by 100%. While Zeal Crusade is active, the effect of Indomitable Courage is doubled.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -1983,6 +2064,7 @@
           "children": [
             "Shiel58"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
           "cost": 1,
@@ -1996,6 +2078,7 @@
           "children": [
             "Shiel58"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -2007,6 +2090,7 @@
           "icon": "LightProtection.png",
           "desc": "While having Radiant Shield, gain 5% Lightal Bonus.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 13,
           "cost": 1,
@@ -2020,6 +2104,7 @@
           "children": [
             "Shiel59"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 14,
           "cost": 1,
@@ -2033,6 +2118,7 @@
           "children": [
             "Shiel60"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 14,
           "cost": 1,
@@ -2044,6 +2130,7 @@
           "icon": "DecisiveBlade.png",
           "desc": "After Radiant Core explosion, Sacred Blade DMG +100% for 20s. Stacks up to 3 charges, casting Sacred Blade consumes one charge.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -2055,6 +2142,7 @@
           "icon": "HolySigilEnhancement.png",
           "desc": "When Judgment deals DMG, the target takes double DMG from Holy Sigil for the next 5s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 15,
           "cost": 1,

@@ -1,2056 +1,2128 @@
 {
   "tiers": [
     {
-      "id": "Verdo",
-      "name": "Verdant Oracle",
+      "id": "Windk",
+      "name": "Wind Knight",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
       },
       "nodes": [
         {
-          "id": "Verdo01",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Windk01",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Verdo03"
+            "Windk02"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo02",
-          "name": "Inspiration",
-          "icon": "Inspiration.png",
-          "desc": "Applies Inspiration to yourself and allies within 30 meters.",
-          "children": [
-            "Verdo06"
-          ],
-          "gx": -1,
-          "gy": 1,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo03",
+          "id": "Windk02",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo02",
-            "Verdo04",
-            "Verdo05"
+            "Windk04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo04",
-          "name": "Intellect Conversion",
-          "icon": "IntellectConversion.png",
-          "desc": "Every 10 points of Intellect provides 1 point of MATK.",
+          "id": "Windk03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Verdo08"
+            "Windk07"
           ],
-          "gx": 1,
-          "gy": 1,
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo05",
-          "name": "Regen Bud",
-          "icon": "RegenBud.png",
-          "desc": "Casting a Special Attack grants 1 Regen Bud.\n\nInitial cap of Regen Buds: 4.\nWhen an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.\nWhen an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",
+          "id": "Windk04",
+          "name": "Sharp",
+          "icon": "Sharp.png",
+          "desc": "Dealing DMG with Special Attacks grants Sharp.",
           "children": [
-            "Verdo07"
+            "Windk03",
+            "Windk05",
+            "Windk06"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo06",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Windk05",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Verdo09"
+            "Windk09"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk06",
+          "name": "Power Conversion",
+          "icon": "PowerConversion.png",
+          "desc": "Every 8 Strength grants 1 ATK.",
+          "children": [
+            "Windk08"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk10"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
-          "gy": 3,
+          "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo07",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Windk08",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
           "children": [
-            "Verdo10"
+            "Windk11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
-          "gy": 3,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Windk09",
+          "name": "Swift Shadow",
+          "icon": "SwiftShadow.png",
+          "desc": "Every 50 points of Courage consumed reduces the CD of Spiral Thrust, Breach Pursuit, and Falcon Toss by 1.",
           "children": [
-            "Verdo11"
+            "Windk12",
+            "Windk16"
           ],
+          "requiresUnlock": [],
           "gx": 1,
-          "gy": 3,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo09",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Windk10",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Verdo12"
+            "Windk13",
+            "Windk14"
           ],
-          "gx": -2,
-          "gy": 4,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo10",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Verdo13",
-            "Verdo14"
-          ],
-          "gx": 0,
-          "gy": 4,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo11",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Verdo14",
-            "Verdo15"
-          ],
-          "gx": 2,
-          "gy": 4,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo12",
-          "name": "Defensive Blessing",
-          "icon": "DefensiveBlessing.png",
-          "desc": "Inspiration additionally grants the target 200 Armor.",
-          "children": [
-            "Verdo16"
-          ],
+          "requiresUnlock": [],
           "gx": -1,
-          "gy": 5,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo13",
-          "name": "Breath of Buds",
-          "icon": "BreathofBuds.png",
-          "desc": "Increases Max Regen Bud by 4.",
+          "id": "Windk11",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Verdo19"
+            "Windk15"
           ],
+          "requiresUnlock": [],
           "gx": 0,
-          "gy": 5,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo14",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Windk12",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Verdo17"
+            "Windk17"
           ],
-          "gx": 1,
-          "gy": 5,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo15",
-          "name": "Energy Surge",
-          "icon": "EnergySurge.png",
-          "desc": "Every 2% haste provides 1% energy natural recovery efficiency.",
-          "children": [
-            "Verdo18",
-            "Verdo20"
-          ],
+          "requiresUnlock": [],
           "gx": 2,
-          "gy": 5,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo16",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Windk13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Verdo21"
+            "Windk21"
           ],
+          "requiresUnlock": [],
           "gx": -2,
-          "gy": 6,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo17",
-          "name": "Regeneration Bud",
-          "icon": "RegenerationBud.png",
-          "desc": "When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.",
-          "children": [
-            "Verdo19",
-            "Verdo20"
-          ],
-          "gx": 1,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo18",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Verdo25"
-          ],
-          "gx": 3,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo19",
+          "id": "Windk14",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo22",
-            "Verdo23"
+            "Windk18"
           ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk15",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk19"
+          ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo20",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Windk16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Verdo23",
-            "Verdo24"
+            "Windk20"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk17",
+          "name": "Valor",
+          "icon": "Valor.png",
+          "desc": "Increases Max Courage by 30.",
+          "children": [
+            "Windk20"
+          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo21",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Windk18",
+          "name": "Long Lance Sharp Blade",
+          "icon": "LongLanceSharpBlade.png",
+          "desc": "When Strength reaches 300 points, Expertise Skill damage +7%.",
           "children": [
-            "Verdo26"
+            "Windk22"
           ],
-          "gx": -2,
+          "requiresUnlock": [],
+          "gx": -1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo22",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Windk19",
+          "name": "Vulnerable Strike",
+          "icon": "VulnerableStrike.png",
+          "desc": "Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.\nVulnerability: Increases the DMG you deal to the target by 10% for 5s.",
           "children": [
-            "Verdo27"
+            "Windk22"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo23",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Windk20",
+          "name": "Divine Concealment",
+          "icon": "DivineConcealment.png",
+          "desc": "Consuming Courage increases Haste by 1% and Speed by 2% for 5s, stacking up to 5 times.",
           "children": [
-            "Verdo28"
+            "Windk23"
           ],
-          "gx": 1,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo24",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Verdo29"
-          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo25",
+          "id": "Windk21",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Verdo30"
+            "Windk27"
           ],
-          "gx": 3,
-          "gy": 8,
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo26",
-          "name": "Healing Breath",
-          "icon": "HealingBreath.png",
-          "desc": "When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",
-          "children": [],
+          "id": "Windk22",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk24"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo27",
-          "name": "Divine Ascension of the Flower Realm",
-          "icon": "DivineAscensionoftheFlowerRealm.png",
-          "desc": "When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",
-          "children": [],
-          "gx": 0,
-          "gy": 9,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Verdo28",
-          "name": "Dancing Seed",
-          "icon": "DancingSeed.png",
-          "desc": "When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.\nFor every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",
-          "children": [],
+          "id": "Windk23",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk25",
+            "Windk26"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo29",
-          "name": "Omnipotent Breath",
-          "icon": "OmnipotentBreath.png",
-          "desc": "When Intellect reaches 500, versatility +4%.",
-          "children": [],
-          "gx": 2,
-          "gy": 9,
+          "id": "Windk24",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk28"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Verdo30",
-          "name": "Brimming Vitality",
-          "icon": "BrimmingVitality.png",
-          "desc": "Increases Energy REG SPD by 20%",
+          "id": "Windk25",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk29",
+            "Windk30"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk26",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk30"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk27",
+          "name": "Sharp",
+          "icon": "Sharp.png",
+          "desc": "When Strength reaches 500 points, the additional ATK from Sharp increases to 6%.",
           "children": [],
-          "gx": 3,
-          "gy": 9,
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk28",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk29",
+          "name": "Wind and Thunder Strike",
+          "icon": "WindandThunderStrike.png",
+          "desc": "When Galeform ends, it applies the Tempestrike.\nEvery 50 points of Courage consumed during Galeform extends the duration of Tempestrike by 1s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk30",
+          "name": "Swift",
+          "icon": "Swift.png",
+          "desc": "Each 1% Haste provides 1% Attack Speed.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         }
       ]
     },
     {
-      "id": "Smite",
-      "name": "Smite",
+      "id": "Skywa",
+      "name": "Skyward Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
-        "gy": 11
+        "gy": 13
       },
       "nodes": [
         {
-          "id": "Smite01",
-          "name": "Smite Spec",
-          "icon": "SmiteSpec.png",
-          "desc": "Further enhances the ability to use Wild Bloom.\nWild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.\nSymbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.\n\nHealing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.",
+          "id": "Skywa01",
+          "name": "Skyward Spec",
+          "icon": "SkywardSpec.png",
+          "desc": "Replace Special Attack with Skyfall enhances the skill.\nWhen having Sharp, gains ATK based on the max number of Sharp.",
           "children": [
-            "Smite02",
-            "Smite03"
+            "Skywa02",
+            "Skywa03",
+            "Skywa04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite02",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Skywa02",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite04"
+            "Skywa05",
+            "Skywa06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite03",
+          "id": "Skywa03",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite05"
+            "Skywa06",
+            "Skywa07",
+            "Skywa08"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa08",
+            "Skywa09"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite04",
-          "name": "Nature Shield",
-          "icon": "NatureShield.png",
-          "desc": "When Wild Bloom heals a target, it also applies Nature Shield to them.\nTargets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.",
+          "id": "Skywa05",
+          "name": "Bird Advancement",
+          "icon": "BirdAdvancement.png",
+          "desc": "Increases the Overdrive of Falcon Toss by 1.\nReduces Courage consumed by Falcon Toss by 50%.",
           "children": [
-            "Smite06",
-            "Smite07"
+            "Skywa11"
           ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa06",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa11",
+            "Skywa12"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite05",
-          "name": "Pulse Duality",
-          "icon": "PulseDuality.png",
-          "desc": "When Regen Pulse is actively used, it spreads twice.",
+          "id": "Skywa07",
+          "name": "Wind Fury",
+          "icon": "WindFury.png",
+          "desc": "Casting Sharp Impact grants Wind Fury.",
           "children": [
-            "Smite07",
-            "Smite08"
+            "Skywa13"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa08",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa14",
+            "Skywa15"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite06",
+          "id": "Skywa09",
+          "name": "Skyfall",
+          "icon": "Skyfall.png",
+          "desc": "When dealing DMG, Skyfall gains a fixed 15% chance to grant 1 stack of Sharp.",
+          "children": [
+            "Skywa15"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa10",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa27"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa11",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite09",
-            "Smite10"
+            "Skywa10",
+            "Skywa12",
+            "Skywa17",
+            "Skywa18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite07",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Skywa12",
+          "name": "Kamikaze Luck",
+          "icon": "KamikazeLuck.png",
+          "desc": "For each 1 stack of Sharpness consumed, gains 3 points of Courage.\nIncreases Lucky Hit final DMG by 50%.",
           "children": [
-            "Smite10",
-            "Smite11"
+            "Skywa18"
           ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa18",
+            "Skywa19",
+            "Skywa20"
+          ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa14",
+          "name": "Instant Edge Break Style",
+          "icon": "InstantEdgeBreakStyle.png",
+          "desc": "Instant Edge consumes 1 more Sharp.\nIncreases the DMG dealt by Instant Edge by 90%.",
           "children": [
-            "Smite12",
-            "Smite13"
+            "Skywa20"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa16",
+            "Skywa20",
+            "Skywa21"
+          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite09",
-          "name": "Thorns",
-          "icon": "Thorns.png",
-          "desc": "When Wild Seed hits a target, it inflicts Thorn on them.\nVerdant DMG dealt by players to targets with Thorn +5%.",
+          "id": "Skywa16",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Smite14"
+            "Skywa29"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa17",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite10",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Skywa18",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite15",
-            "Smite17"
+            "Skywa22",
+            "Skywa23",
+            "Skywa24"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite11",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite16",
-            "Smite18"
-          ],
+          "id": "Skywa19",
+          "name": "Battle Cry",
+          "icon": "BattleCry.png",
+          "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite12",
-          "name": "Shelter",
-          "icon": "Shelter.png",
-          "desc": "Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.",
+          "id": "Skywa20",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite16",
-            "Smite20"
+            "Skywa24",
+            "Skywa25",
+            "Skywa26"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite13",
-          "name": "Luck Damage",
-          "icon": "LuckDamage.png",
-          "desc": "Lucky Hit DMG Multiplier +5%.\nEvery 1% Luck grants 1% Lucky Hit DMG Multiplier.",
+          "id": "Skywa21",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
           "children": [],
-          "gx": 3,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite14",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa22",
+          "name": "Spear Penetration",
+          "icon": "SpearPenetration.png",
+          "desc": "When Skyfall lands a Lucky Hit, it triggers Spear Thrust, once every 2s.\nDealing DMG with Spear Thrust restores 8 points of Courage. This effect triggers only once, even if multiple targets are hit.",
           "children": [
-            "Smite21"
+            "Skywa30"
           ],
-          "gx": -3,
-          "gy": 5,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite15",
-          "name": "Wild Blessing",
-          "icon": "WildBlessing.png",
-          "desc": "Wild Bloom now stores up to 2 overdrives.\nWild Bloom's Energy cost -15%.",
-          "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite16",
+          "id": "Skywa23",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite19"
+            "Skywa28",
+            "Skywa31"
           ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa24",
+          "name": "Pursuit Stance",
+          "icon": "PursuitStance.png",
+          "desc": "When Skyfall deals Crit DMG, it triggers Chasing Step.",
+          "children": [
+            "Skywa28"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa25",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa28",
+            "Skywa33"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite17",
-          "name": "Final Bloomwheel",
-          "icon": "FinalBloomwheel.png",
-          "desc": "When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.",
+          "id": "Skywa26",
+          "name": "Sharp Echo",
+          "icon": "SharpEcho.png",
+          "desc": "If Sharpness isn't at Max stacks, increases the DMG dealt by Skyfall by 25%.",
           "children": [
-            "Smite22",
-            "Smite23"
+            "Skywa34"
           ],
-          "gx": -1,
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa27",
+          "name": "Tornado Dance",
+          "icon": "TornadoDance.png",
+          "desc": "During Wind Fury, DMG dealt by Instant Edge and Azure Sever triggers Tornado (triggered at most once when hitting multiple targets).",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite18",
-          "name": "Bloomheal",
-          "icon": "Bloomheal.png",
-          "desc": "Replace Ultimate, Divine Circle Bloom with Bloomheal.",
+          "id": "Skywa28",
+          "name": "Sharp Long Breath",
+          "icon": "SharpLongBreath.png",
+          "desc": "During Wind Fury, Falcon Toss evolves into Azure Sever once.",
           "children": [
-            "Smite23"
+            "Skywa32"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite19",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite24",
-            "Smite30"
-          ],
-          "gx": 1,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite20",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite25"
-          ],
+          "id": "Skywa29",
+          "name": "Catcher",
+          "icon": "Catcher.png",
+          "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite21",
-          "name": "Wide-area Thorns",
-          "icon": "Wide-areaThorns.png",
-          "desc": "Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.",
+          "id": "Skywa30",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite26"
+            "Skywa35"
           ],
-          "gx": -3,
-          "gy": 7,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite22",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite26"
-          ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite23",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Skywa31",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
           "children": [
-            "Smite27",
-            "Smite28"
+            "Skywa36"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite24",
-          "name": "Pulse Retrospect",
-          "icon": "PulseRetrospect.png",
-          "desc": "Regen Pulse returns to your position after it reaches the max distance.\nRegen Pulse now deals DMG to enemies.",
+          "id": "Skywa32",
+          "name": "Exceptional Elegance",
+          "icon": "ExceptionalElegance.png",
+          "desc": "During Galeform, increases the DMG dealt by Instant Edge and Skyfall by 25%.",
           "children": [
-            "Smite28",
-            "Smite29"
+            "Skywa42"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa33",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa37"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite25",
-          "name": "Bud Acquisition",
-          "icon": "BudAcquisition.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",
-          "children": [],
-          "gx": 3,
+          "id": "Skywa34",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa38",
+            "Skywa44"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite26",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Skywa35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite31",
-            "Smite32",
-            "Smite33"
+            "Skywa39",
+            "Skywa40"
           ],
-          "gx": -2,
+          "requiresUnlock": [],
+          "gx": -3,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite27",
-          "name": "Feral Seed Symbiosis",
-          "icon": "FeralSeedSymbiosis.png",
-          "desc": "When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",
+          "id": "Skywa36",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Smite33"
+            "Skywa40",
+            "Skywa41"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite28",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite33",
-            "Smite34",
-            "Smite35"
+            "Skywa43",
+            "Skywa44"
           ],
-          "gx": 0,
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite29",
-          "name": "Pulse Echo",
-          "icon": "PulseEcho.png",
-          "desc": "When dealing DMG, Infusion grants 1 stack of Pulse Echo.\nPulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.",
+          "id": "Skywa38",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Smite35",
-            "Smite36"
+            "Skywa45"
           ],
-          "gx": 2,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite30",
-          "name": "Breath of Symbiosis",
-          "icon": "BreathofSymbiosis.png",
-          "desc": "Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.",
-          "children": [
-            "Smite36"
-          ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite31",
-          "name": "Laceration",
-          "icon": "Laceration.png",
-          "desc": "When dealing DMG, Infusion inflicts Laceration on the target.\nLaceration: Takes 100% more DMG from Thorn in 2s.",
+          "id": "Skywa39",
+          "name": "Wind Swirl Strike",
+          "icon": "WindSwirlStrike.png",
+          "desc": "Increases the DMG dealt by Tornado by 30%.\nIncreases the DMG dealt by Spear Thrust by 30%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite32",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Skywa40",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite37"
+            "Skywa46"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite33",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite38",
-            "Smite40"
-          ],
+          "id": "Skywa41",
+          "name": "Spear Recovery",
+          "icon": "SpearRecovery.png",
+          "desc": "Spear Thrust reduces the CD of Falcon Toss by 2s (which can only be triggers once on multiple hits).",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite34",
-          "name": "Stag Charge",
-          "icon": "StagCharge.png",
-          "desc": "After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.\nCasting Stag Charge instants grants 3 Regen Buds.",
+          "id": "Skywa42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite38",
-            "Smite42"
+            "Skywa47",
+            "Skywa48",
+            "Skywa56"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite35",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite46"
-          ],
+          "id": "Skywa43",
+          "name": "Sharp Advancement",
+          "icon": "SharpAdvancement.png",
+          "desc": "Enhances the effectiveness of Wind Fury by 50%.\nWhen Instant Edge consumes Chasing Step, doubles the Overdrive effectiveness of Sharp Impact.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite36",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa44",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite39",
-            "Smite52"
+            "Skywa49"
           ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa45",
+          "name": "Combat Expertise",
+          "icon": "CombatExpertise.png",
+          "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite37",
-          "name": "Wings of Revival",
-          "icon": "WingsofRevival.png",
-          "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
+          "id": "Skywa46",
+          "name": "Divine Wind Support",
+          "icon": "DivineWindSupport.png",
+          "desc": "When Falcon Toss and its enhanced skill (Azure Sever), or Instant Edge hits 1 target, gains a 10% Wind bonus.",
           "children": [],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite38",
+          "id": "Skywa47",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Smite41"
+            "Skywa51"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite39",
-          "name": "Arcane of Green",
-          "icon": "ArcaneofGreen.png",
-          "desc": "When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",
+          "id": "Skywa48",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Smite43"
+            "Skywa52"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa49",
+          "name": "Momentum Surge",
+          "icon": "MomentumSurge.png",
+          "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite40",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa50",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite44",
-            "Smite47"
+            "Skywa54"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite41",
-          "name": "Verdant Blessing",
-          "icon": "VerdantBlessing.png",
-          "desc": "When HP of an ally with Inspiration drops below 20%, Blessing triggers.\nBlessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.",
+          "id": "Skywa51",
+          "name": "Instantaneous Crit",
+          "icon": "InstantaneousCrit.png",
+          "desc": "While Chasing Step is active, Instant Edge and Sharp Impact have their critical rate doubled.",
           "children": [
-            "Smite44",
-            "Smite48"
+            "Skywa50",
+            "Skywa55"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite42",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Skywa52",
+          "name": "Sharp Pursuit",
+          "icon": "SharpPursuit.png",
+          "desc": "When Instant Edge consumes Chasing Step, grants 1 stack of Sharp.",
           "children": [
-            "Smite45"
+            "Skywa53",
+            "Skywa57"
           ],
-          "gx": 0,
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite43",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Skywa53",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Smite46",
-            "Smite51"
+            "Skywa58"
           ],
-          "gx": 2,
+          "requiresUnlock": [],
+          "gx": 3,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite44",
-          "name": "Flourish",
-          "icon": "Flourish.png",
-          "desc": "When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",
+          "id": "Skywa54",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa55",
+          "name": "Air Dance Strike",
+          "icon": "AirDanceStrike.png",
+          "desc": "Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) allow the next Galeform to restore 50% more Courage.\nHitting a target with Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) immediately grants 3 Sharpness (only triggers once even if multiple targets are hit).",
           "children": [
-            "Smite48"
+            "Skywa59"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite45",
-          "name": "Double Infusion",
-          "icon": "DoubleInfusion.png",
-          "desc": "After casting Stag Charge, the number of channels for the next Infusion +100%.",
-          "children": [
-            "Smite49"
-          ],
+          "id": "Skywa56",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite46",
-          "name": "Symbiosis Extension",
-          "icon": "SymbiosisExtension.png",
-          "desc": "Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.",
+          "id": "Skywa57",
+          "name": "Typhoon: Sharp Impact",
+          "icon": "TyphoonSharpImpact.png",
+          "desc": "Sharp Impact is enhanced, evolving into Typhoon: Sharp Impact.",
           "children": [
-            "Smite50",
-            "Smite51"
+            "Skywa60"
           ],
-          "gx": 1,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite47",
-          "name": "Swift Bud",
-          "icon": "SwiftBud.png",
-          "desc": "Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",
+          "id": "Skywa58",
+          "name": "Instant Edge Combo",
+          "icon": "InstantEdgeCombo.png",
+          "desc": "When Instant Edge consumes Chasing Step, grants a fixed 15% chance to deal an extra instance of DMG.",
           "children": [],
-          "gx": -3,
-          "gy": 13,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite48",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite53",
-            "Smite57"
-          ],
+          "id": "Skywa59",
+          "name": "Pursuit Power",
+          "icon": "PursuitPower.png",
+          "desc": "Chasing Step consumed increases Strength by 10%. The effect lasts 10s and stacks up to 2 times.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Smite49",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite53",
-            "Smite54",
-            "Smite55"
-          ],
-          "gx": 0,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite50",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite55"
-          ],
+          "id": "Skywa60",
+          "name": "Break Style",
+          "icon": "BreakStyle.png",
+          "desc": "When dealing Crit DMG, Expertise ignore the targets' 50% Armor.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite51",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite55",
-            "Smite56"
-          ],
-          "gx": 2,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite52",
-          "name": "Healing Pulse",
-          "icon": "HealingPulse.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",
-          "children": [],
-          "gx": 3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite53",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Smite58"
-          ],
-          "gx": -1,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite54",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Smite59"
-          ],
-          "gx": 0,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite55",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Smite60"
-          ],
-          "gx": 1,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite56",
-          "name": "Swift Shelter",
-          "icon": "SwiftShelter.png",
-          "desc": "Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",
-          "children": [],
-          "gx": 3,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite57",
-          "name": "Wild Luck",
-          "icon": "WildLuck.png",
-          "desc": "When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",
-          "children": [],
-          "gx": -3,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite58",
-          "name": "Pulse Breath",
-          "icon": "PulseBreath.png",
-          "desc": "If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",
-          "children": [],
-          "gx": -1,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite59",
-          "name": "Verdant Impact",
-          "icon": "VerdantImpact.png",
-          "desc": "For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",
-          "children": [],
-          "gx": 0,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Smite60",
-          "name": "Wild Protection",
-          "icon": "WildProtection.png",
-          "desc": "The charge count of Nature Ward +1.\nThe charge time of Nature Ward decreases by 5s.",
-          "children": [],
-          "gx": 2,
-          "gy": 15,
           "cost": 1,
           "seal": 0
         }
       ]
     },
     {
-      "id": "Lifeb",
-      "name": "Life Bloom",
+      "id": "Vangu",
+      "name": "Vanguard Spec",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
-        "gy": 11
+        "gy": 13
       },
       "nodes": [
         {
-          "id": "Lifeb01",
-          "name": "Lifebind Spec",
-          "icon": "LifebindSpec.png",
-          "desc": "Replace Special Attack with Life Bloom and enhances the skill.\nLife Bloom generates 20% more healing.\nCasting Life Bloom grants 1 additional Regen Bud.",
+          "id": "Vangu01",
+          "name": "Vanguard Spec",
+          "icon": "VanguardSpec.png",
+          "desc": "Further enhances Gale Thrust. Casting Gale Thrust grants a fixed 20% chance to cause Basic Attacks to evolve into Swift Blade, with an additional 5% chance per layer of Sharpness.",
           "children": [
-            "Lifeb02",
-            "Lifeb03"
+            "Vangu02",
+            "Vangu03",
+            "Vangu04"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb02",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Vangu02",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb04"
+            "Vangu05",
+            "Vangu06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb03",
+          "id": "Vangu03",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb05"
+            "Vangu06",
+            "Vangu07",
+            "Vangu08"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu08",
+            "Vangu09"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb04",
-          "name": "Healing Infusion",
-          "icon": "HealingInfusion.png",
-          "desc": "Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%",
+          "id": "Vangu05",
+          "name": "Break Pursuit Advancement",
+          "icon": "BreakPursuitAdvancement.png",
+          "desc": "Within 15s after Casting the Ultimate, Casting Breach Pursuit will not enter CD. This effect is removed after the time ends or after Casting 3 times Breach Pursuit.",
           "children": [
-            "Lifeb06",
-            "Lifeb07"
+            "Vangu11"
           ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu06",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu11",
+            "Vangu12"
+          ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb05",
-          "name": "Lifeforce Extension",
-          "icon": "LifeforceExtension.png",
-          "desc": "Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.",
+          "id": "Vangu07",
+          "name": "Quickshot Meteor",
+          "icon": "QuickshotMeteor.png",
+          "desc": "Gale Thrust is enhanced, increasing hit counts by 2.\nReduces Gale Thrust's Courage consumption by 20%.",
           "children": [
-            "Lifeb07",
-            "Lifeb08"
+            "Vangu13"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu08",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu14",
+            "Vangu15"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb06",
+          "id": "Vangu09",
+          "name": "Swift Breeze",
+          "icon": "SwiftBreeze.png",
+          "desc": "Each 1% Haste accelerates the REG SPD of Courage by 2%.",
+          "children": [
+            "Vangu15"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu10",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu27"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu11",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb09",
-            "Lifeb10"
+            "Vangu10",
+            "Vangu12",
+            "Vangu17",
+            "Vangu18"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb07",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Vangu12",
+          "name": "Strong Attack",
+          "icon": "StrongAttack.png",
+          "desc": "When Valor Cyclone deals DMG, reduces the CD of Ultimate by 0.5s (which can only be triggers once on multiple hits).",
           "children": [
-            "Lifeb10",
-            "Lifeb11"
+            "Vangu18"
           ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu18",
+            "Vangu19",
+            "Vangu20"
+          ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb08",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Vangu14",
+          "name": "Wind Tear",
+          "icon": "WindTear.png",
+          "desc": "When Gale Thrust deals DMG, there is a 20% fixed chance to apply Rend.",
           "children": [
-            "Lifeb12",
-            "Lifeb13"
+            "Vangu20"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu16",
+            "Vangu20",
+            "Vangu21"
+          ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb09",
-          "name": "Energy Arcane",
-          "icon": "EnergyArcane.png",
-          "desc": "During Growth Arcane, increases ERG REG SPD by 50%.\nIncreases Grove Wish's Crit by 10%.",
+          "id": "Vangu16",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Lifeb14"
+            "Vangu29"
           ],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu17",
+          "name": "Wind Chaser",
+          "icon": "WindChaser.png",
+          "desc": "During the casting of Valor Cyclone, for every 20 points of Courage consumed, increase the DMG of Valor Cyclone by 4%, up to 20%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb10",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Vangu18",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb15",
-            "Lifeb17"
+            "Vangu22",
+            "Vangu23",
+            "Vangu24"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb11",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb16",
-            "Lifeb18"
-          ],
+          "id": "Vangu19",
+          "name": "Battle Cry",
+          "icon": "BattleCry.png",
+          "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb12",
-          "name": "Transcendence",
-          "icon": "Transcendence.png",
-          "desc": "Every 60 self-heals from Nourish grants Transcendence.",
+          "id": "Vangu20",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb16",
-            "Lifeb20"
+            "Vangu24",
+            "Vangu25",
+            "Vangu26"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb13",
-          "name": "Verdant Nourishment",
-          "icon": "VerdantNourishment.png",
-          "desc": "If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",
+          "id": "Vangu21",
+          "name": "Zephyr Waltz Agility",
+          "icon": "ZephyrWaltzAgility.png",
+          "desc": "Additional Courage recovery: Recovers 1 extra point of Courage per second for every 2 stacks of Sharp.",
           "children": [],
-          "gx": 3,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 4,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb14",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Vangu22",
+          "name": "Fearless Gale",
+          "icon": "FearlessGale.png",
+          "desc": "After Casting Spiral Thrust or Breach Pursuit or Valor Cyclone, the next Gale Thrust will not consume Courage. This effect is removed after leaving combat.",
           "children": [
-            "Lifeb21"
+            "Vangu30"
           ],
-          "gx": -3,
-          "gy": 5,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb15",
-          "name": "Life Bloom",
-          "icon": "LifeBloom.png",
-          "desc": "Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",
-          "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb16",
+          "id": "Vangu23",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb19"
+            "Vangu28",
+            "Vangu31"
           ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu24",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [
+            "Vangu28"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu25",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu28",
+            "Vangu33"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb17",
-          "name": "Full Bloom",
-          "icon": "FullBloom.png",
-          "desc": "Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.",
+          "id": "Vangu26",
+          "name": "Vigor Spike",
+          "icon": "VigorSpike.png",
+          "desc": "When Sharp is granted, reaching max stacks of Sharp enables Vigor Spike state. Triggers up to once per 30s.",
           "children": [
-            "Lifeb22",
-            "Lifeb23"
+            "Vangu34"
           ],
-          "gx": -1,
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu27",
+          "name": "Combat Expertise",
+          "icon": "CombatExpertise.png",
+          "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb18",
-          "name": "Vital Surge",
-          "icon": "VitalSurge.png",
-          "desc": "Replace Ultimate, Divine Circle Bloom with Vital Surge.",
+          "id": "Vangu28",
+          "name": "Rapid Drake Canon",
+          "icon": "RapidDrakeCanon.png",
+          "desc": "Using Swift Blade grants it a fixed 10% chance to evolve Basic Attack into Drake Cannon in 10s. Each failure to evolve increases the chance by 10% until success.",
           "children": [
-            "Lifeb23"
+            "Vangu32"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb19",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb24",
-            "Lifeb30"
-          ],
-          "gx": 1,
-          "gy": 6,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb20",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb25"
-          ],
+          "id": "Vangu29",
+          "name": "Catcher",
+          "icon": "Catcher.png",
+          "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb21",
-          "name": "Blooming Reincarnation",
-          "icon": "BloomingReincarnation.png",
-          "desc": "Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.",
+          "id": "Vangu30",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb26"
+            "Vangu35"
           ],
-          "gx": -3,
-          "gy": 7,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb22",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb26"
-          ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb23",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Vangu31",
+          "name": "Wind Spiral",
+          "icon": "WindSpiral.png",
+          "desc": "When Gale Thrust deals DMG, it has a 25% fixed chance to grant 1 stack of Wind Spiral that lasts 20s and stacks up to 10 times.\nWind Spiral: Casting Spiral Thrust or Valor Cyclone triggers a spiral explosion that inflicts Attack Damage equal to 100% ATK on surrounding enemies. Each explosion consumes 1 stack of Wind Spiral.",
           "children": [
-            "Lifeb27",
-            "Lifeb28"
+            "Vangu36"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb24",
-          "name": "Vitality",
-          "icon": "Vitality.png",
-          "desc": "Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.",
+          "id": "Vangu32",
+          "name": "Spiral Tear",
+          "icon": "SpiralTear.png",
+          "desc": "Spiral Thrust and Vortex Strike deals 30% more DMG to the targets with Rend.",
           "children": [
-            "Lifeb28",
-            "Lifeb29"
+            "Vangu42"
           ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu33",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu37"
+          ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb25",
-          "name": "Gift of Life",
-          "icon": "GiftofLife.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",
-          "children": [],
-          "gx": 3,
+          "id": "Vangu34",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu38",
+            "Vangu44"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 7,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb26",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Vangu35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb31",
-            "Lifeb32",
-            "Lifeb33"
+            "Vangu39",
+            "Vangu40"
           ],
-          "gx": -2,
+          "requiresUnlock": [],
+          "gx": -3,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb27",
-          "name": "Flower Time Dance",
-          "icon": "FlowerTimeDance.png",
-          "desc": "Every 45s, generates 1 Flower Stalk in the following order:\nCrimson Insight, Golden Devotion, and Moonlight Solace.",
+          "id": "Vangu36",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Lifeb33"
+            "Vangu40",
+            "Vangu41"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb28",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Vangu37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb33",
-            "Lifeb34",
-            "Lifeb35"
+            "Vangu43",
+            "Vangu44"
           ],
-          "gx": 0,
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb29",
-          "name": "Nourish Essence",
-          "icon": "NourishEssence.png",
-          "desc": "When Life Bloom generates healing, 50% chance to apply Nourish.",
+          "id": "Vangu38",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
           "children": [
-            "Lifeb35",
-            "Lifeb36"
+            "Vangu45"
           ],
-          "gx": 2,
-          "gy": 8,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb30",
-          "name": "Endless Blossom",
-          "icon": "EndlessBlossom.png",
-          "desc": "When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",
-          "children": [
-            "Lifeb36"
-          ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb31",
-          "name": "Flourishing Progress",
-          "icon": "FlourishingProgress.png",
-          "desc": "When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",
+          "id": "Vangu39",
+          "name": "Whispering Breeze",
+          "icon": "WhisperingBreeze.png",
+          "desc": "When Courage is below or equal to 50%, reduces the Energy Valor Cyclone consumes by 2.\nWhen Courage is above 50%, increases the DMG Valor Cyclone deals by 12%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb32",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
+          "id": "Vangu40",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb37"
+            "Vangu46"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb33",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb38",
-            "Lifeb40"
-          ],
+          "id": "Vangu41",
+          "name": "Breath of Wind",
+          "icon": "BreathofWind.png",
+          "desc": "Skills that consume Courage (Spiral Thrust and its enhanced skills, Valor Cyclone, Falcon Toss and its enhanced skills, Gale Thrust) gain 6% Wind Bonus.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb34",
-          "name": "Verdant Root",
-          "icon": "VerdantRoot.png",
-          "desc": "While in battle state, standing still for 2s creates a Grass Domain.\nGrass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.",
+          "id": "Vangu42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb38",
-            "Lifeb42"
+            "Vangu47",
+            "Vangu48",
+            "Vangu56"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb35",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb46"
-          ],
+          "id": "Vangu43",
+          "name": "Wind Rift Diffusion",
+          "icon": "WindRiftDiffusion.png",
+          "desc": "Expertise and Ultimates deal 10% more DMG to targets afflicted with Rend, and can detonate their Rend, spreading it to nearby enemies.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb36",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Vangu44",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb39",
-            "Lifeb52"
+            "Vangu49"
           ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu45",
+          "name": "Thousand Wounds",
+          "icon": "ThousandWounds.png",
+          "desc": "When Valor Cyclone deals DMG, it has a fixed 50% chance to inflict Rupture.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb37",
-          "name": "Natural Bloom",
-          "icon": "NaturalBloom.png",
-          "desc": "When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",
+          "id": "Vangu46",
+          "name": "Momentum Surge",
+          "icon": "MomentumSurge.png",
+          "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
           "children": [],
-          "gx": -3,
+          "requiresUnlock": [],
+          "gx": -2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb38",
+          "id": "Vangu47",
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Lifeb41"
+            "Vangu51"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb39",
-          "name": "Energy Expansion",
-          "icon": "EnergyExpansion.png",
-          "desc": "Increases Max Energy by 20.\nUsing Blossom Charge restores 30% lost Energy.",
+          "id": "Vangu48",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
           "children": [
-            "Lifeb43"
+            "Vangu52"
           ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu49",
+          "name": "Wind Split Technique",
+          "icon": "WindSplitTechnique.png",
+          "desc": "When Rend deals DMG, it has a fixed 50% chance to grant 2 points of Courage.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb40",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Vangu50",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb44",
-            "Lifeb47"
+            "Vangu54"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb41",
-          "name": "Verdant Duet",
-          "icon": "VerdantDuet.png",
-          "desc": "Life bloom has a fixed 20% chance to heal 1 additional time.",
+          "id": "Vangu51",
+          "name": "Vortex Strike",
+          "icon": "VortexStrike.png",
+          "desc": "After every 2 casts of Drake Cannon, your Spiral Thrust evolves into Vortex Strike.",
           "children": [
-            "Lifeb44",
-            "Lifeb48"
+            "Vangu50",
+            "Vangu55"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb42",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
+          "id": "Vangu52",
+          "name": "Wind Gate Drake Cannon",
+          "icon": "WindGateDrakeCannon.png",
+          "desc": "Every 22 triggers of Valor Cyclone allows Basic Attack to evolve into Drake Cannon in 10s.",
           "children": [
-            "Lifeb45"
+            "Vangu53",
+            "Vangu57"
           ],
-          "gx": 0,
+          "requiresUnlock": [],
+          "gx": 1,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb43",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
+          "id": "Vangu53",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
           "children": [
-            "Lifeb46",
-            "Lifeb51"
+            "Vangu58"
           ],
-          "gx": 2,
+          "requiresUnlock": [],
+          "gx": 3,
           "gy": 11,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb44",
-          "name": "Wings of Revival",
-          "icon": "WingsofRevival.png",
-          "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
+          "id": "Vangu54",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu55",
+          "name": "Swift Blade",
+          "icon": "SwiftBlade.png",
+          "desc": "When Valor Cyclone deals DMG, it has a fixed 7% chance to evolve Basic Attacks into Swift Blade.",
           "children": [
-            "Lifeb48"
+            "Vangu59"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb45",
-          "name": "Bud to Blossom",
-          "icon": "BudtoBlossom.png",
-          "desc": "When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",
-          "children": [
-            "Lifeb49"
-          ],
+          "id": "Vangu56",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb46",
-          "name": "Inspire and Strengthen",
-          "icon": "InspireandStrengthen.png",
-          "desc": "Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.",
+          "id": "Vangu57",
+          "name": "Dragon's Fury Flame",
+          "icon": "Dragon'sFuryFlame.png",
+          "desc": "Doubles the critical rate of Drake Cannon and Vortex Strike.\nIncreases the Crit DMG dealt by Drake Cannon and Vortex Strike by 8%.",
           "children": [
-            "Lifeb50",
-            "Lifeb51"
+            "Vangu60"
           ],
-          "gx": 1,
+          "requiresUnlock": [],
+          "gx": 2,
           "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb47",
-          "name": "Floral Whisper",
-          "icon": "FloralWhisper.png",
-          "desc": "Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",
+          "id": "Vangu58",
+          "name": "Spiral Flame",
+          "icon": "SpiralFlame.png",
+          "desc": "Using Vortext Strike, increases Haste by 25% for 10s.",
           "children": [],
-          "gx": -3,
-          "gy": 13,
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb48",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb53",
-            "Lifeb57"
-          ],
+          "id": "Vangu59",
+          "name": "Fortitude",
+          "icon": "Fortitude.png",
+          "desc": "During Valor Cyclone, gains Super Armor and reduces DMG taken by 20%.\nWhen Valor Cyclone deals DMG, restores HP equal to 10% ATK.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
           "seal": 0
         },
         {
-          "id": "Lifeb49",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb53",
-            "Lifeb54",
-            "Lifeb55"
-          ],
-          "gx": 0,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb50",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb55"
-          ],
+          "id": "Vangu60",
+          "name": "Wind Rise",
+          "icon": "WindRise.png",
+          "desc": "When Valor Cyclone deals DMG, increases the critical rate of Drake Cannon and Vortex Strike by 7%. The effect lasts 5s and stacks up to 7 times.",
+          "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb51",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb55",
-            "Lifeb56"
-          ],
-          "gx": 2,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb52",
-          "name": "Healing Pulse",
-          "icon": "HealingPulse.png",
-          "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",
-          "children": [],
-          "gx": 3,
-          "gy": 13,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb53",
-          "name": "Intellect",
-          "icon": "Intellect.png",
-          "desc": "Intellect + 10",
-          "children": [
-            "Lifeb58"
-          ],
-          "gx": -1,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb54",
-          "name": "Forest Attack",
-          "icon": "ForestAttack.png",
-          "desc": "Forest Attack + 5",
-          "children": [
-            "Lifeb59"
-          ],
-          "gx": 0,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb55",
-          "name": "Stamina",
-          "icon": "Stamina.png",
-          "desc": "Stamina + 30",
-          "children": [
-            "Lifeb60"
-          ],
-          "gx": 1,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb56",
-          "name": "Instant Bloom",
-          "icon": "InstantBloom.png",
-          "desc": "Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.",
-          "children": [],
-          "gx": 3,
-          "gy": 14,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb57",
-          "name": "Rescue",
-          "icon": "Rescue.png",
-          "desc": "Healing Expertise restore 25% more HP to the targets with HP below 50%.",
-          "children": [],
-          "gx": -3,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb58",
-          "name": "Flourishing Flower",
-          "icon": "FlourishingFlower.png",
-          "desc": "Within Grass Domain, Flower Stalk appeared 50% earlier.",
-          "children": [],
-          "gx": -1,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb59",
-          "name": "Tricolor Revelation",
-          "icon": "TricolorRevelation.png",
-          "desc": "Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.\nFlower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",
-          "children": [],
-          "gx": 0,
-          "gy": 15,
-          "cost": 1,
-          "seal": 0
-        },
-        {
-          "id": "Lifeb60",
-          "name": "Ultimate Inspiration",
-          "icon": "UltimateInspiration.png",
-          "desc": "Doubles the effectiveness of Inspiration.",
-          "children": [],
-          "gx": 2,
-          "gy": 15,
           "cost": 1,
           "seal": 0
         }

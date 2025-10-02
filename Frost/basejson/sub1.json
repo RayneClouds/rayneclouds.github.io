@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Icicl01",
+    "name": "Icicle Spec",
+    "icon": "IcicleSp.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Further enhances Frost Lance. When Frost Lance deals Crit DMG, it has a fixed 30% chance to let Ice Cores fire Ice Arrows.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl03",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl04",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl05",
+    "name": "Shattering Strike",
+    "icon": "Shatteri.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "When Meteor Storm deals DMG, it causes Ice Cores to fire Ice Arrows. This effect can trigger up to once per Meteor Storm cast.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl06",
+    "name": "Energy Saving",
+    "icon": "EnergySa.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Consume Frost Crystal with Frost Lance returns 50% of the consumed Ice Energy after Casting.\n\nNot consuming Frost Crystal with Frost Lance deducts an additional 50% of the consumed Ice Energy after Casting.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl07",
+    "name": "Snow Shadow",
+    "icon": "SnowShad.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "For every 50 Ice Energy consumed, the CD of Crystal Veil -1s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl08",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl09",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl10",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl11",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl13",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl14",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl15",
+    "name": "Deep Cold Magic Spear",
+    "icon": "DeepCold.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Frost Lance deals 70% more DMG. Frost Lance costs 100% more time to use.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl16",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl17",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl18",
+    "name": "Stormy Encounter",
+    "icon": "StormyEn.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "When Crystal Veil deals DMG, it has a fixed chance to reduce the CD of Blizzard by 1s. The chance equals half percentage of your Luck.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl19",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl20",
+    "name": "Frost Blade",
+    "icon": "FrostBla.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Frost Lance that consume Frost Crystal deal 20% more DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl21",
+    "name": "Luck Damage",
+    "icon": "LuckDama.png",
+    "gx": -2,
+    "gy": 12,
+    "desc": "Lucky Hit DMG multiplier +15%.\nEvery 2% Luck grants 1% Lucky Hit DMG multiplier.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl22",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl23",
+    "name": "Frost Domain",
+    "icon": "FrostDom.png",
+    "gx": 0,
+    "gy": 12,
+    "desc": "The area of Glacier Hymn -50%.\nWhile within it, you gain a 25% bonus to your Ice damage.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl25",
+    "name": "Quick Frozen Blast",
+    "icon": "QuickFro.png",
+    "gx": 2,
+    "gy": 12,
+    "desc": "When an Expertise Skill or Ultimate deals DMG to a target with Frozen, it triggers Frost Shock, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl26",
+    "name": "Glazed Vastness",
+    "icon": "GlazedVa.png",
+    "gx": -3,
+    "gy": 13,
+    "desc": "Ice skills deal 8% more DMG to Elite and stronger targets.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl27",
+    "name": "Sharp Blizzard",
+    "icon": "SharpBli.png",
+    "gx": -1,
+    "gy": 13,
+    "desc": "Increases the critical rate of Blizzard by 50%. Increases the Crit DMG of Blizzard by 15%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl28",
+    "name": "Endless Cold",
+    "icon": "EndlessC.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "Every 20 Frost Crystals consumed grants Endless Cold effect.\n\nEndless Cold: for 10s, increases Meteor Storm DMG by 150%, and removes its CD and Ice Energy cost. During this period, Ice Arrows triggered by Meteor Storm cannot produce Frost Crystal",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl29",
+    "name": "Blizzard Dual Spears",
+    "icon": "Blizzard.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "Within 8s after casting Blizzard, Frost Lancecan fire an additional Frost Lanceat another target near the original one.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl30",
+    "name": "Deadly Frost Lance",
+    "icon": "DeadlyFr.png",
+    "gx": 3,
+    "gy": 13,
+    "desc": "Frost Lance deals 20% more DMG to targets with HPless than 35%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl32",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl33",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 14,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl34",
+    "name": "Continuous Stream",
+    "icon": "Continuo.png",
+    "gx": -3,
+    "gy": 15,
+    "desc": "Dealing DMG triggers Trickle.\n\nTrickle: Grants a 1% Ice Damage bonus for 6s. stacking up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl35",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl36",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl37",
+    "name": "Frost Shock",
+    "icon": "FrostSho.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "When an Expertise Skill or Ultimate lands a Lucky Hit, it has a fixed 30% chance to trigger Frost Shock, once every 3s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl38",
+    "name": "Frost Crystal Empowerment",
+    "icon": "FrostCry.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Each consumed Frost Crystal increases Intellect by 25. The effect lasts 10sand stacks up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl39",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl40",
+    "name": "Frozen Stars",
+    "icon": "FrozenSt.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "If Frost Lance deals Crit DMG and triggers Lucky Hit, Meteor Storm's remaining CD is instantly cleared.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl41",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl42",
+    "name": "Bitter Cold",
+    "icon": "BitterCo.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Every 100 Intellect grants 0.5 bonus Crit DMG dealt.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl43",
+    "name": "Freezing Meteor Storm",
+    "icon": "Freezing.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "When Meteor Storm deals damage, 20% chance to apply Frozen to the target.\nDuring the duration of Permafrost, when Frost Lance and Meteor Storm critically hit, extend the duration of Permafrost by 0.5s, with a cumulative extension not exceeding 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl44",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl45",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl46",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl47",
+    "name": "Frost Assault",
+    "icon": "FrostAss.png",
+    "gx": 2,
+    "gy": 11,
+    "desc": "Blizzard reduces the Ice RES of targets hit by 10%. The effect lasts 10s and does not stack, and only works on your own.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl48",
+    "name": "Glacier Fury",
+    "icon": "GlacierF.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "Consuming 15 Frost Crystals enhances the next Blizzard.\n\nBlizzard: Bypasses the casting time and increases DMG dealt by 30%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl49",
+    "name": "Icicle Volley",
+    "icon": "IcicleVo.png",
+    "gx": 1,
+    "gy": 12,
+    "desc": "For every 10 casts of Frost Lance, a Piercing Spear is launched forward.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl50",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": -2,
+    "gy": 13,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl51",
+    "name": "Frost Comet",
+    "icon": "FrostCom.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "When Frost Lance consumes Frost Crystal and triggers either a Crit Hit or Lucky Hit, there is a fixed 30% chance to summon a Frost Comet.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl52",
+    "name": "Ice Attack",
+    "icon": "IceAttac.png",
+    "gx": 2,
+    "gy": 13,
+    "desc": "Ice Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl53",
+    "name": "Critical Cold",
+    "icon": "Critical.png",
+    "gx": -1,
+    "gy": 14,
+    "desc": "During Permafrost, increases Crit DMG dealt by 15%.\nDuring Permafrost increases allies' critical rate by 3%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl54",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 0,
+    "gy": 11,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl55",
+    "name": "Frost Lance Crit",
+    "icon": "FrostLan.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Frost Lance deals 1.5% more Crit DMG. The effect lasts 6s and stacks up to 10 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl56",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl57",
+    "name": "Intellect",
+    "icon": "Intellec.png",
+    "gx": 1,
+    "gy": 12,
+    "desc": "Intellect + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl58",
+    "name": "Frost Lance Barrage",
+    "icon": "FrostLan.png",
+    "gx": -1,
+    "gy": 13,
+    "desc": "During Permafrost, Frost Lance fires 2 consecutive shots.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl59",
+    "name": "Meteor Storm Expansion",
+    "icon": "MeteorSt.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "Meteor Storm hit count +1.\nMeteor Storm gains 10% Ice Bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Icicl60",
+    "name": "Infusion Sublimation",
+    "icon": "Infusion.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "Increases Max Frost Crystal by 1.\nDuring Permafrost, increases Ice damage by 100.\nWhen Permafrost ends, the amount of your Frost Crystal resets to that before Permafrost.",
+    "cost": null,
+    "seal": null
+  }
+]

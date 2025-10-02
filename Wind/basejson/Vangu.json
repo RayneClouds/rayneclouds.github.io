@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Vangu01",
+    "name": "Vanguard Spec",
+    "icon": "Vanguard.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Further enhances Gale Thrust. Casting Gale Thrust grants a fixed 20% chance to cause Basic Attacks to evolve into Swift Blade, with an additional 5% chance per layer of Sharpness.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu02",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu04",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu05",
+    "name": "Break Pursuit Advancement",
+    "icon": "BreakPur.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Within 15s after Casting the Ultimate, Casting Breach Pursuit will not enter CD. This effect is removed after the time ends or after Casting 3 times Breach Pursuit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu06",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu07",
+    "name": "Quickshot Meteor",
+    "icon": "Quicksho.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Gale Thrust is enhanced, increasing hit counts by 2.\nReduces Gale Thrust's Courage consumption by 20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu08",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu09",
+    "name": "Swift Breeze",
+    "icon": "SwiftBre.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Each 1% Haste accelerates the REG SPD of Courage by 2%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu10",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -3,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu12",
+    "name": "Strong Attack",
+    "icon": "StrongAt.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "When Valor Cyclone deals DMG, reduces the CD of Ultimate by 0.5s (which can only be triggers once on multiple hits).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu13",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu14",
+    "name": "Wind Tear",
+    "icon": "WindTear.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "When Gale Thrust deals DMG, there is a 20% fixed chance to apply Rend.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu16",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 3,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu17",
+    "name": "Wind Chaser",
+    "icon": "WindChas.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "During the casting of Valor Cyclone, for every 20 points of Courage consumed, increase the DMG of Valor Cyclone by 4%, up to 20%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu18",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu19",
+    "name": "Battle Cry",
+    "icon": "BattleCr.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu20",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu21",
+    "name": "Zephyr Waltz Agility",
+    "icon": "ZephyrWa.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Additional Courage recovery: Recovers 1 extra point of Courage per second for every 2 stacks of Sharp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu22",
+    "name": "Fearless Gale",
+    "icon": "Fearless.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "After Casting Spiral Thrust or Breach Pursuit or Valor Cyclone, the next Gale Thrust will not consume Courage. This effect is removed after leaving combat.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu23",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu24",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu25",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu26",
+    "name": "Vigor Spike",
+    "icon": "VigorSpi.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "When Sharp is granted, reaching max stacks of Sharp enables Vigor Spike state. Triggers up to once per 30s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu27",
+    "name": "Combat Expertise",
+    "icon": "CombatEx.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu28",
+    "name": "Rapid Drake Canon",
+    "icon": "RapidDra.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Using Swift Blade grants it a fixed 10% chance to evolve Basic Attack into Drake Cannon in 10s. Each failure to evolve increases the chance by 10% until success.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu29",
+    "name": "Catcher",
+    "icon": "Catcher.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu30",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu31",
+    "name": "Wind Spiral",
+    "icon": "WindSpir.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "When Gale Thrust deals DMG, it has a 25% fixed chance to grant 1 stack of Wind Spiral that lasts 20s and stacks up to 10 times.\nWind Spiral: Casting Spiral Thrust or Valor Cyclone triggers a spiral explosion that inflicts Attack Damage equal to 100% ATK on surrounding enemies. Each explosion consumes 1 stack of Wind Spiral.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu32",
+    "name": "Spiral Tear",
+    "icon": "SpiralTe.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Spiral Thrust and Vortex Strike deals 30% more DMG to the targets with Rend.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu33",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu34",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu36",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu37",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu38",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu39",
+    "name": "Whispering Breeze",
+    "icon": "Whisperi.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "When Courage is below or equal to 50%, reduces the Energy Valor Cyclone consumes by 2.\nWhen Courage is above 50%, increases the DMG Valor Cyclone deals by 12%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu40",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu41",
+    "name": "Breath of Wind",
+    "icon": "Breathof.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Skills that consume Courage (Spiral Thrust and its enhanced skills, Valor Cyclone, Falcon Toss and its enhanced skills, Gale Thrust) gain 6% Wind Bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu43",
+    "name": "Wind Rift Diffusion",
+    "icon": "WindRift.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Expertise and Ultimates deal 10% more DMG to targets afflicted with Rend, and can detonate their Rend, spreading it to nearby enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu44",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu45",
+    "name": "Thousand Wounds",
+    "icon": "Thousand.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "When Valor Cyclone deals DMG, it has a fixed 50% chance to inflict Rupture.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu46",
+    "name": "Momentum Surge",
+    "icon": "Momentum.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu47",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu49",
+    "name": "Wind Split Technique",
+    "icon": "WindSpli.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "When Rend deals DMG, it has a fixed 50% chance to grant 2 points of Courage.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu50",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -3,
+    "gy": 11,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu51",
+    "name": "Vortex Strike",
+    "icon": "VortexSt.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "After every 2 casts of Drake Cannon, your Spiral Thrust evolves into Vortex Strike.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu52",
+    "name": "Wind Gate Drake Cannon",
+    "icon": "WindGate.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Every 22 triggers of Valor Cyclone allows Basic Attack to evolve into Drake Cannon in 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu53",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu54",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu55",
+    "name": "Swift Blade",
+    "icon": "SwiftBla.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "When Valor Cyclone deals DMG, it has a fixed 7% chance to evolve Basic Attacks into Swift Blade.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu56",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu57",
+    "name": "Dragon's Fury Flame",
+    "icon": "DragonsF.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Doubles the critical rate of Drake Cannon and Vortex Strike.\nIncreases the Crit DMG dealt by Drake Cannon and Vortex Strike by 8%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu58",
+    "name": "Spiral Flame",
+    "icon": "SpiralFl.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Using Vortext Strike, increases Haste by 25% for 10s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu59",
+    "name": "Fortitude",
+    "icon": "Fortitud.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "During Valor Cyclone, gains Super Armor and reduces DMG taken by 20%.\nWhen Valor Cyclone deals DMG, restores HP equal to 10% ATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Vangu60",
+    "name": "Wind Rise",
+    "icon": "WindRise.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "When Valor Cyclone deals DMG, increases the critical rate of Drake Cannon and Vortex Strike by 7%. The effect lasts 5s and stacks up to 7 times.",
+    "cost": null,
+    "seal": null
+  }
+]

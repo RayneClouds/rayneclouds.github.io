@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Skywa01",
+    "name": "Skwyward Spec",
+    "icon": "Skwyward.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Replace Special Attack with Skyfall enhances the skill.\nWhen having Sharp, gains ATK based on the max number of Sharp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa02",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa04",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa05",
+    "name": "Bird Advancement",
+    "icon": "BirdAdva.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Increases the Overdrive of Falcon Toss by 1.\nReduces Courage consumed by Falcon Toss by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa06",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa07",
+    "name": "Wind Fury",
+    "icon": "WindFury.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Casting Sharp Impact grants Wind Fury.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa08",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa09",
+    "name": "Skyfall",
+    "icon": "Skyfall.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "When dealing DMG, Skyfall gains a fixed 15% chance to grant 1 stack of Sharp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa10",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -3,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa11",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa12",
+    "name": "Kamikaze Luck",
+    "icon": "Kamikaze.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "For each 1 stack of Sharpness consumed, gains 3 points of Courage.\nIncreases Lucky Hit final DMG by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa13",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa14",
+    "name": "Instant Edge Break Style",
+    "icon": "InstantE.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Instant Edge consumes 1 more Sharp.\nIncreases the DMG dealt by Instant Edge by 90%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa16",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 3,
+    "gy": 3,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa17",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa18",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa19",
+    "name": "Battle Cry",
+    "icon": "BattleCr.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa20",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa21",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa22",
+    "name": "Spear Penetration",
+    "icon": "SpearPen.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "When Skyfall lands a Lucky Hit, it triggers Spear Thrust, once every 2s.\nDealing DMG with Spear Thrust restores 8 points of Courage. This effect triggers only once, even if multiple targets are hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa23",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa24",
+    "name": "Pursuit Stance",
+    "icon": "PursuitS.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "When Skyfall deals Crit DMG, it triggers Chasing Step.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa25",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa26",
+    "name": "Sharp Echo",
+    "icon": "SharpEch.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "If Sharpness isn't at Max stacks, increases the DMG dealt by Skyfall by 25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa27",
+    "name": "Tornado Dance",
+    "icon": "TornadoD.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "During Wind Fury, DMG dealt by Instant Edge and Azure Sever triggers Tornado (triggered at most once when hitting multiple targets).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa28",
+    "name": "Sharp Long Breath",
+    "icon": "SharpLon.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "During Wind Fury, Falcon Toss evolves into Azure Sever once.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa29",
+    "name": "Catcher",
+    "icon": "Catcher.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa30",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa31",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa32",
+    "name": "Exceptional Elegance",
+    "icon": "Exceptio.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "During Galeform, increases the DMG dealt by Instant Edge and Skyfall by 25%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa33",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa34",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -3,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa36",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa37",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa38",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa39",
+    "name": "Wind Swirl Strike",
+    "icon": "WindSwir.png",
+    "gx": -3,
+    "gy": 9,
+    "desc": "Increases the DMG dealt by Tornado by 30%.\nIncreases the DMG dealt by Spear Thrust by 30%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa40",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa41",
+    "name": "Spear Recovery",
+    "icon": "SpearRec.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Spear Thrust reduces the CD of Falcon Toss by 2s (which can only be triggers once on multiple hits).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa42",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa43",
+    "name": "Sharp Advancement",
+    "icon": "SharpAdv.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Enhances the effectiveness of Wind Fury by 50%.\nWhen Instant Edge consumes Chasing Step, doubles the Overdrive effectiveness of Sharp Impact.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa44",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa45",
+    "name": "Combat Expertise",
+    "icon": "CombatEx.png",
+    "gx": 3,
+    "gy": 9,
+    "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa46",
+    "name": "Divine Wind Support",
+    "icon": "DivineWi.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "When Falcon Toss and its enhanced skill (Azure Sever), or Instant Edge hits 1 target, gains a 10% Wind bonus.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa47",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa48",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa49",
+    "name": "Momentum Surge",
+    "icon": "Momentum.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa50",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -3,
+    "gy": 11,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa51",
+    "name": "Instantaneous Crit",
+    "icon": "Instanta.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "While Chasing Step is active, Instant Edge and Sharp Impact have their critical rate doubled.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa52",
+    "name": "Sharp Pursuit",
+    "icon": "SharpPur.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "When Instant Edge consumes Chasing Step, grants 1 stack of Sharp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa53",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 3,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa54",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa55",
+    "name": "Air Dance Strike",
+    "icon": "AirDance.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) allow the next Galeform to restore 50% more Courage.\nHitting a target with Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) immediately grants 3 Sharpness (only triggers once even if multiple targets are hit).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa56",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa57",
+    "name": "Typhoon: Sharp Impact",
+    "icon": "TyphoonS.png",
+    "gx": -3,
+    "gy": 10,
+    "desc": "Sharp Impact is enhanced, evolving into Typhoon: Sharp Impact.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa58",
+    "name": "Instant Edge Combo",
+    "icon": "InstantE.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Instant Edge consumes Chasing Step, grants a fixed 15% chance to deal an extra instance of DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa59",
+    "name": "Pursuit Power",
+    "icon": "PursuitP.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Chasing Step consumed increases Strength by 10%. The effect lasts 10s and stacks up to 2 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Skywa60",
+    "name": "Break Style",
+    "icon": "BreakSty.png",
+    "gx": 3,
+    "gy": 10,
+    "desc": "When dealing Crit DMG, Expertise ignore the targets' 50% Armor.",
+    "cost": null,
+    "seal": null
+  }
+]

@@ -1,0 +1,2137 @@
+{
+  "tiers": [
+    {
+      "id": "SoulM",
+      "name": "Soul Musician",
+      "collapsed": false,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 10,
+        "gy": 1
+      },
+      "nodes": [
+        {
+          "id": "SoulM01",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "SoulM02",
+            "SoulM03"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM04"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM05"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM04",
+          "name": "Passion Surge",
+          "icon": "PassionSurge.png",
+          "desc": "When Melody is active, there is a 15% fixed chance per second to gain Passion Surge.\n\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+          "children": [
+            "SoulM06",
+            "SoulM07",
+            "SoulM09"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM05",
+          "name": "Intellect Conversion",
+          "icon": "IntellectConversion.png",
+          "desc": "Every 10 points of Intellect provides 1 point of MATK.",
+          "children": [
+            "SoulM07",
+            "SoulM08",
+            "SoulM10"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM06",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "SoulM11"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM12"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM08",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "SoulM13"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM09",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM15"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM10",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM17"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM11",
+          "name": "Melody Chord",
+          "icon": "MelodyChord.png",
+          "desc": "Melody Healing +20%.\nEach 1% Haste increases the REG SPD of Performance Passion by 1%.",
+          "children": [
+            "SoulM14",
+            "SoulM19"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM12",
+          "name": "Flame Pursuit",
+          "icon": "FlamePursuit.png",
+          "desc": "After using 3 Special Attacks, the next Basic Attack hit triggers Flame Pillar Blast.",
+          "children": [
+            "SoulM16"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM13",
+          "name": "Arcane Ascension",
+          "icon": "ArcaneAscension.png",
+          "desc": "Special Attack costs 1 less Performance Passion.",
+          "children": [
+            "SoulM18",
+            "SoulM20"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM14",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "SoulM24"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM15",
+          "name": "Heat Surge",
+          "icon": "HeatSurge.png",
+          "desc": "When Melody is activated, the trigger chance for Passion Surge +an extra 3% every 1 second (up to 30%).\n\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+          "children": [
+            "SoulM21"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM16",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "SoulM22"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM17",
+          "name": "Variation",
+          "icon": "Variation.png",
+          "desc": "Increases Max HP by 20% and activates Dissonance Spec with its original effect intact.\nIf Concerto Spec is activated, its effect is adjusted to replace Basic Attack with String Strum.",
+          "children": [
+            "SoulM23"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM18",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "SoulM28"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM19",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM25"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM20",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM27"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM21",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "SoulM25"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM22",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "SoulM26"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM23",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "SoulM27"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM24",
+          "name": "String Expansion",
+          "icon": "StringExpansion.png",
+          "desc": "Performance Passion max limit +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM25",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "SoulM29"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM26",
+          "name": "Flame Pursuit II",
+          "icon": "FlamePursuitII.png",
+          "desc": "Flame Pillar Blast becomes a two-hit combo.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM27",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "SoulM30"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM28",
+          "name": "Exaltation",
+          "icon": "Exaltation.png",
+          "desc": "Performance Energy REG SPD +10%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM29",
+          "name": "Melody Heat Core",
+          "icon": "MelodyHeatCore.png",
+          "desc": "Melody heals ally targets below 50% HP with 100% bonus effect.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "SoulM30",
+          "name": "Heat Boost",
+          "icon": "HeatBoost.png",
+          "desc": "When Intellect reaches 500, the Performance Energy cap +20%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Disso",
+      "name": "Dissonance",
+      "collapsed": false,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 9,
+        "gy": 13
+      },
+      "nodes": [
+        {
+          "id": "Disso01",
+          "name": "Dissonance Spec",
+          "icon": "DissonanceSpec.png",
+          "desc": "While in Rhapsody of Flame, increases all Luck Chance acquired by any means by 50%.\n\nHealing of Stillness: If you deal no DMG to enemies for 5s, each hit of your Basic Attack will heal up to 10 allies (prioritizing Allies), with the full 4-hit combo restoring 15.05% of their max HP in total.",
+          "children": [
+            "Disso02",
+            "Disso03"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso02",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso04",
+            "Disso05"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso03",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso05",
+            "Disso06"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso04",
+          "name": "Severed Chapter",
+          "icon": "SeveredChapter.png",
+          "desc": "Increases Resilience Break Efficiency of self and Allies within 30 meters by 10%. This effect cannot stack.\nAfter activating Heroic Melody, you and Allies within 30 meters deal 10% more DMG to defeated targets. This effect cannot stack.",
+          "children": [
+            "Disso07",
+            "Disso08"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso05",
+          "name": "Sound Blaze",
+          "icon": "SoundBlaze.png",
+          "desc": "Gains 1 Soundwave Energy each time you deal DMG equal to 10 times ATK.\nSoundwave Energy stores up to 50.\nSkills consuming Performance Passion trigger Scorching Impact when dealing DMG, consuming all Soundwave Energy. Each 1 Soundwave Energy increases Scorching Impact DMG by 10%.",
+          "children": [
+            "Disso09"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso06",
+          "name": "Trio Rhapsody",
+          "icon": "TrioRhapsody.png",
+          "desc": "Rhapsody of Flame always appears in its most powerful form. While in Rhapsody of Flame, healing +20%.",
+          "children": [
+            "Disso10",
+            "Disso11"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso12",
+            "Disso13"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso08",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso14"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso09",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso15",
+            "Disso16"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso10",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso17"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso18"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso12",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso24"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso13",
+          "name": "Luck Multiplier",
+          "icon": "LuckMultiplier.png",
+          "desc": "Every 1% Luck grants 0.5% Lucky Hit DMG Multiplier.\nAfter activating Heroic Melody, doubles its conversion efficiency.",
+          "children": [
+            "Disso19"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso14",
+          "name": "Swing Reflux",
+          "icon": "SwingReflux.png",
+          "desc": "Hitting a target with Fierce Strike recovers 5 Performance Energy. Each additional target hit provides 1 extra Performance Energy, up to 10 total.",
+          "children": [
+            "Disso20"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso15",
+          "name": "Restart",
+          "icon": "Restart.png",
+          "desc": "When Harmonic Anthem or Fierce Strike triggers a Lucky Hit, limited to a single activation when striking multiple targets, immediately resets Rhapsody of Flame's CD and allows Rhapsody of Flame not to consume Performance Passion for 10s, this effect is nullified upon casting Rhapsody of Flame.",
+          "children": [
+            "Disso21"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso21",
+            "Disso22"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso17",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso23"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso18",
+          "name": "Fire Day",
+          "icon": "FireDay.png",
+          "desc": "Increases Fire Bonus by 8% when attacking Elite or higher targets.",
+          "children": [
+            "Disso30"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso19",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso25",
+            "Disso26"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso20",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso26"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso21",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso27"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso22",
+          "name": "Healing Note",
+          "icon": "HealingNote.png",
+          "desc": "Basic Attack deals an extra instance of DMG.\nFor every 5 Soundwave Energy obtained, creates a Note for the ally with the lowest HP (Allies prioritized).",
+          "children": [
+            "Disso28"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso23",
+          "name": "Lucky Soundwave",
+          "icon": "LuckySoundwave.png",
+          "desc": "Gains 1 Soundwave Energy whenever Expertise Skill or Amplified Beat trigger a Lucky Hit.",
+          "children": [
+            "Disso29"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso24",
+          "name": "Rhythm Spirit",
+          "icon": "RhythmSpirit.png",
+          "desc": "Defeating an enemy has a fixed 50% chance to grant you 1 Performance Passion.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso25",
+          "name": "Indomitable Chord",
+          "icon": "IndomitableChord.png",
+          "desc": "While Heroic Melody is active, grants Super Armor, increases DMG Reduction by 25%, and boosts movement speed by 10%.",
+          "children": [
+            "Disso31"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso26",
+          "name": "Blazing Heal",
+          "icon": "BlazingHeal.png",
+          "desc": "Stores excess Healing (up to 500% of Max HP). After activating Heroic Melody, consumes stored Healing to recover allies' HP every 1 second, up to 15% of Max HP per second.",
+          "children": [
+            "Disso32",
+            "Disso33"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso27",
+          "name": "Infinite Rhapsody",
+          "icon": "InfiniteRhapsody.png",
+          "desc": "Replace Ultimate Rock the Stage with Infinite Rhapsody.",
+          "children": [
+            "Disso33"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso28",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso34"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso29",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso35"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso30",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso35"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso36"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso32",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso37"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso33",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso38"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso34",
+          "name": "Resonant Counterpoint",
+          "icon": "ResonantCounterpoint.png",
+          "desc": "When a Note forms, there's a 50% fixed chance to create an extra Note for a different target.",
+          "children": [
+            "Disso39",
+            "Disso40"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso35",
+          "name": "Soundwave Overclock",
+          "icon": "SoundwaveOverclock.png",
+          "desc": "Upon casting Center Stage, grants 15 Soundwave Energy, and doubles all the Soundwave Energy gained in the next 10s.",
+          "children": [
+            "Disso40"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso36",
+          "name": "Encore Persistance",
+          "icon": "EncorePersistance.png",
+          "desc": "Permanently benefits from Encore effect.\nFor every 5 triggers of Encore Strings, the next Amplified Beat and Harmonic Anthem deal 50% more DMG.",
+          "children": [
+            "Disso41"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso37",
+          "name": "Flame's Rampage",
+          "icon": "Flame'sRampage.png",
+          "desc": "When Heroic Melody is active, Rhapsody of Flame will erupt, dealing Magic Damage equal to 50% ATK every 3s to targets it touches (DMG interval affected by Haste).\nWhile in Rhapsody of Flame, each hit of Harmonic Anthem also heals 1 ally with the lowest HP for 30% of the DMG dealt.",
+          "children": [
+            "Disso42"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso38",
+          "name": "Flame Note",
+          "icon": "FlameNote.png",
+          "desc": "When you use an Expertise Skill, Rhapsody of Flame will erupt with Rhythm, dealing Magic Damage equal to 100% of ATK and granting Note to allies it touches.",
+          "children": [
+            "Disso43"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso39",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso44"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso40",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso49"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso41",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso45"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso42",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso46"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso46",
+            "Disso47"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso44",
+          "name": "Sonic Therapy",
+          "icon": "SonicTherapy.png",
+          "desc": "Converted healing from DMG +20% for targets affected by Note.",
+          "children": [
+            "Disso48"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso45",
+          "name": "Encore Sharp Strike",
+          "icon": "EncoreSharpStrike.png",
+          "desc": "Triggering Encore Strings to deal DMG or healing grants 2 Performance Energy. If the Encore Strings triggers Lucky Hit, grants 3 additional Performance Energy.",
+          "children": [
+            "Disso50"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso46",
+          "name": "Encore Chain",
+          "icon": "EncoreChain.png",
+          "desc": "When Encore Strings triggers, it activates a second time on the same target.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso47",
+          "name": "Concerto",
+          "icon": "Concerto.png",
+          "desc": "During Rhapsody of Flame, Amplified Beat gains 1 additional attack.\nAmplified Beat's DMG -20%.",
+          "children": [
+            "Disso51"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso48",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso49",
+          "name": "Zenith Center Stage: Mad Tune",
+          "icon": "ZenithCenterStageMadTune.png",
+          "desc": "Each Performance Passion consumed reduces the CD of Center Stage by 1 second.",
+          "children": [
+            "Disso53"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso50",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso54"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso51",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Disso55"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso52",
+          "name": "Sonic Cure",
+          "icon": "SonicCure.png",
+          "desc": "When Expertise deal DMG (only triggers once when hitting multiple targets), additionally heal targets with Note.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso53",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Disso56"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso54",
+          "name": "Encore Luck Boost",
+          "icon": "EncoreLuckBoost.png",
+          "desc": "Every 1% Luck Chance grants 1% trigger chance for Encore Strings.",
+          "children": [
+            "Disso57"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso55",
+          "name": "Critical Acclaim",
+          "icon": "CriticalAcclaim.png",
+          "desc": "During Center Stage, triggering Encore Strings has a 30% fixed chance to grant Passion Surge.\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso56",
+          "name": "Tower Multiwave",
+          "icon": "TowerMultiwave.png",
+          "desc": "Casting Center Stage immediately extends Heroic Melody by 5s.",
+          "children": [
+            "Disso58"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso57",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso59"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso58",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Disso60"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso59",
+          "name": "Finale Command",
+          "icon": "FinaleCommand.png",
+          "desc": "Within 10s of casting Encore, each use of Rhapsody of Flame caused targets affected by Encore to trigger Encore Strings.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Disso60",
+          "name": "Absolute Center Stage",
+          "icon": "AbsoluteCenterStage.png",
+          "desc": "After you use Center Stage, the number of enhanced skills increases from 1 to 2.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Conce",
+      "name": "Concerto",
+      "collapsed": false,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 11,
+        "gy": 13
+      },
+      "nodes": [
+        {
+          "id": "Conce01",
+          "name": "Concerto Spec",
+          "icon": "ConcertoSpec.png",
+          "desc": "",
+          "children": [
+            "Conce02",
+            "Conce03"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce02",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce04",
+            "Conce05"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce03",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce05",
+            "Conce06"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce04",
+          "name": "Stat Resonance",
+          "icon": "StatResonance.png",
+          "desc": "While Healing Melody is active, grants allies appropriate buffs (Strength, Intellect, Agility) equal to 8% of Intellect. (Buffs from different Soul Musicians cannot stack. Only one with the highest value applies.)",
+          "children": [
+            "Conce07",
+            "Conce08"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce05",
+          "name": "Brilliant Charge",
+          "icon": "BrilliantCharge.png",
+          "desc": "When Healing Beat or Passion Burst applies Crit Healing or deals Crit DMG (triggers only once when hitting multiple targets), gains 1 Performance Passion.",
+          "children": [
+            "Conce09"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce06",
+          "name": "Passion Burst: Ferver",
+          "icon": "PassionBurstFerver.png",
+          "desc": "For each 10 Performance Passion consumed, enhances Passion Burst to Passion Burst for 10s.",
+          "children": [
+            "Conce10",
+            "Conce11"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce12",
+            "Conce13"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce08",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce14"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce09",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce15",
+            "Conce16"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce10",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce17"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce18"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce12",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce24"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce13",
+          "name": "Crit Scale",
+          "icon": "CritScale.png",
+          "desc": "Increases Crit Rate by 10% against enemies above 50% HP.\nIncreases Crit Rate by 10% against enemies below 50% HP.",
+          "children": [
+            "Conce19"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce14",
+          "name": "Rhythm Spirit",
+          "icon": "RhythmSpirit.png",
+          "desc": "Defeating an enemy has a fixed 50% chance to grant you 1 Performance Passion.",
+          "children": [
+            "Conce20"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce15",
+          "name": "Crit Charge Rhythm",
+          "icon": "CritChargeRhythm.png",
+          "desc": "Fivefold Crescendo deals Crit DMG or healing (only triggers once for multiple targets), grants 2 Performance Energy. When Healing Melody lands a Crit Hit, grants 1 Performance Energy (only triggers once for multiple targets).",
+          "children": [
+            "Conce21"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce21",
+            "Conce22"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce17",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce23"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce18",
+          "name": "Fire Day",
+          "icon": "FireDay.png",
+          "desc": "Increases Fire Bonus by 8% when attacking Elite or higher targets.",
+          "children": [
+            "Conce30"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce19",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce25",
+            "Conce26"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce20",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce26"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce21",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce27"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce22",
+          "name": "Sonic Verdict",
+          "icon": "SonicVerdict.png",
+          "desc": "While Healing Melody is active, Fivefold Crescendo deals bonus DMG equal to its healing ratio.",
+          "children": [
+            "Conce28"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce23",
+          "name": "Heated Tower Flame Blast",
+          "icon": "HeatedTowerFlameBlast.png",
+          "desc": "When Passion Burst and its enhanced version (Passion Burst) hit the speaker, it immediately releases a Flame Shock.",
+          "children": [
+            "Conce29"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce24",
+          "name": "Crescendo Healing Chord",
+          "icon": "CrescendoHealingChord.png",
+          "desc": "For every second Healing Melody remains active, enhances its Healing by 7%, stacking up to 5 times.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce25",
+          "name": "Stat Resonance Crit",
+          "icon": "StatResonanceCrit.png",
+          "desc": "For 10s after using Passion Burst or its enhanced form (Passion Burst), doubles the buffs that Healing Melody provides to allies.",
+          "children": [
+            "Conce31"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce26",
+          "name": "Fiery Beat",
+          "icon": "FieryBeat.png",
+          "desc": "Healing Beat Crit Rate +10%.\nHealing Beat Healing +10%.",
+          "children": [
+            "Conce32",
+            "Conce33"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce27",
+          "name": "Concert Circuit",
+          "icon": "ConcertCircuit.png",
+          "desc": "Replace Ultimate Rock the Stage with Concert Circuit.",
+          "children": [
+            "Conce33"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce28",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce34"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce29",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce35"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce30",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce35"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce31",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce36"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce32",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce37"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce33",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce38"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce34",
+          "name": "Vitality Unleash",
+          "icon": "VitalityUnleash.png",
+          "desc": "7% of DMG dealt and 15% of healing done is stored as Rhythm. Within 10s after you cast Center Stage, the use of Expertise and Healing Beat consumes Rhythm to grant up to 40% bonus healing. The cap for Rhythm storage is 30 times MATK.",
+          "children": [
+            "Conce39",
+            "Conce40"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce35",
+          "name": "Tower Flame Blast",
+          "icon": "TowerFlameBlast.png",
+          "desc": "The speaker releases a Flame Shock every 5s.",
+          "children": [
+            "Conce40"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce36",
+          "name": "Tower Resonance",
+          "icon": "TowerResonance.png",
+          "desc": "Permanently benefits from Encore effect.\nEach trigger of Encore Strings reduces the remaining CD of Expertise by 1 second.",
+          "children": [
+            "Conce41"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce37",
+          "name": "Double Recovery Note",
+          "icon": "DoubleRecoveryNote.png",
+          "desc": "Healing Beat provides an additional equal Healing to targets under the influence of Healing Melody.",
+          "children": [
+            "Conce42"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce38",
+          "name": "Harmonic Amplifier",
+          "icon": "HarmonicAmplifier.png",
+          "desc": "Increases the DMG dealt and healing of Expertise triggered by the speaker by 30%.",
+          "children": [
+            "Conce43"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce39",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce44"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce40",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce49"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce41",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce45"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce42",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce46"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce43",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce46",
+            "Conce47"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce44",
+          "name": "Crit Healing",
+          "icon": "CritHealing.png",
+          "desc": "Increases Crit Healing by 25%.",
+          "children": [
+            "Conce48"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce45",
+          "name": "Encore Chain",
+          "icon": "EncoreChain.png",
+          "desc": "When Encore Strings triggers, it activates a second time on the same target.",
+          "children": [
+            "Conce50"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce46",
+          "name": "Stat Resonance Overload",
+          "icon": "StatResonanceOverload.png",
+          "desc": "For 15s after actively casting Encore, the stat bonuses provided by Healing Melody are +100%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce47",
+          "name": "Symphonic Aria",
+          "icon": "SymphonicAria.png",
+          "desc": "Enhances Healing by 10% for targets affected by Healing Melody.",
+          "children": [
+            "Conce51"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce48",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce49",
+          "name": "Zenith Center Stage: Concerto",
+          "icon": "ZenithCenterStageConcerto.png",
+          "desc": "The charges of Center Stage increase by 1.",
+          "children": [
+            "Conce53"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce50",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce54"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce51",
+          "name": "Fire Attack",
+          "icon": "FireAttack.png",
+          "desc": "Fire Attack + 5",
+          "children": [
+            "Conce55"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce52",
+          "name": "Multi-Target Heat Amp",
+          "icon": "Multi-TargetHeatAmp.png",
+          "desc": "Passion Burst and its enhanced version (Passion Burst) deal 5% more DMG per additional target hit, up to 25%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce53",
+          "name": "Intellect",
+          "icon": "Intellect.png",
+          "desc": "Intellect + 10",
+          "children": [
+            "Conce56"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce54",
+          "name": "Critical Encore",
+          "icon": "CriticalEncore.png",
+          "desc": "Every 1% Crit Rate grants 1% trigger chance for Encore Strings.",
+          "children": [
+            "Conce57"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce55",
+          "name": "Critical Acclaim",
+          "icon": "CriticalAcclaim.png",
+          "desc": "During Center Stage, triggering Encore Strings has a 30% fixed chance to grant Passion Surge.\n\nPassion Surge: Special Attack costs zero Performance Passion for 10s. Removed after Special Attack is cast.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce56",
+          "name": "Spiral Flame",
+          "icon": "SpiralFlame.png",
+          "desc": "After casting Center Stage, summon a wave of Sonic Surge.",
+          "children": [
+            "Conce58"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce57",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce59"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce58",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Conce60"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 14,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce59",
+          "name": "Encore Chain",
+          "icon": "EncoreChain.png",
+          "desc": "Within 10s after you cast Encore, each use of Expertise Skill triggers Encore Strings for targets affected by Encore.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Conce60",
+          "name": "Absolute Center Stage",
+          "icon": "AbsoluteCenterStage.png",
+          "desc": "After you use Center Stage, the number of enhanced skills increases from 1 to 2.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 15,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    }
+  ]
+}

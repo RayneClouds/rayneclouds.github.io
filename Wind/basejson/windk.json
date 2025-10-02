@@ -1,0 +1,302 @@
+[
+  {
+    "id": "windk01",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk04",
+    "name": "Sharp",
+    "icon": "Sharp.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Dealing DMG with Special Attacks grants Sharp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk05",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk06",
+    "name": "Power Conversion",
+    "icon": "PowerCon.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Every 8 Strength grants 1 ATK.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk07",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk08",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk09",
+    "name": "Swift Shadow",
+    "icon": "SwiftSha.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "Every 50 points of Courage consumed reduces the CD of Spiral Thrust, Breach Pursuit, and Falcon Toss by 1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk10",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk11",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk12",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk13",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk14",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk15",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk17",
+    "name": "Valor",
+    "icon": "Valor.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Increases Max Courage by 30.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk18",
+    "name": "Long Lance Sharp Blade",
+    "icon": "LongLanc.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "When Strength reaches 300 points, Expertise Skill damage +7%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk19",
+    "name": "Vulnerable Strike",
+    "icon": "Vulnerab.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.\nVulnerability: Increases the DMG you deal to the target by 10% for 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk20",
+    "name": "Divine Concealment",
+    "icon": "DivineCo.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Consuming Courage increases Haste by 1% and Speed by 2% for 5s, stacking up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk21",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk22",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": -1,
+    "gy": 11,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk23",
+    "name": "Wind Attack",
+    "icon": "WindAtta.png",
+    "gx": 1,
+    "gy": 11,
+    "desc": "Wind Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 12,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk25",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 0,
+    "gy": 12,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk26",
+    "name": "Strength",
+    "icon": "Strength.png",
+    "gx": 2,
+    "gy": 12,
+    "desc": "Strength + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk27",
+    "name": "Sharp",
+    "icon": "Sharp.png",
+    "gx": -2,
+    "gy": 13,
+    "desc": "When Strength reaches 500 points, the additional ATK from Sharp increases to 6%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk28",
+    "name": "Sharp Expansion",
+    "icon": "SharpExp.png",
+    "gx": -1,
+    "gy": 13,
+    "desc": "Sharp cap +1.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk29",
+    "name": "Wind and Thunder Strike",
+    "icon": "WindandT.png",
+    "gx": 0,
+    "gy": 13,
+    "desc": "When Galeform ends, it applies the Tempestrike.\nEvery 50 points of Courage consumed during Galeform extends the duration of Tempestrike by 1s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "windk30",
+    "name": "Swift",
+    "icon": "Swift.png",
+    "gx": 1,
+    "gy": 13,
+    "desc": "Each 1% Haste provides 1% Attack Speed.",
+    "cost": null,
+    "seal": null
+  }
+]

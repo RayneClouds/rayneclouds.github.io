@@ -1,164 +1,164 @@
-id,name,icon,desc,children,gx,gy,cost,seal
-Storm00,Stormblade,FALSE,,,10,1,,
-Storm01,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Storm02,Storm03",0,0,1,0
-Storm02,Stamina,Stamina.png,Stamina + 30,Storm04,-1,1,1,0
-Storm03,Stamina,Stamina.png,Stamina + 30,Storm05,1,1,1,0
-Storm04,Iai Thunder Dance,IaiThunderDance.png,"When you gain 3 or more Thunder Sigils, a Special Attack is cast, attacking 2 times consecutively.","Storm06,Storm07",-1,2,1,0
-Storm05,Blade Intent,BladeIntent.png,3 points of Blade Intent are gained when an Expertise Skill is cast.,"Storm07,Storm08",1,2,1,0
-Storm06,Agility,Agility.png,Agility + 10,Storm09,-2,3,1,0
-Storm07,Stamina,Stamina.png,Stamina + 30,Storm14,0,3,1,0
-Storm08,Agility,Agility.png,Agility + 10,"Storm10,Storm11",2,3,1,0
-Storm09,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,"Storm12,Storm13",-2,4,1,0
-Storm10,Stamina,Stamina.png,Stamina + 30,Storm15,1,4,1,0
-Storm11,Keen Strike,KeenStrike.png,"When Basic Attacks deal DMG, 10% chance to trigger Piercing Slash, once per second.",Storm16,2,4,1,0
-Storm12,Stamina,Stamina.png,Stamina + 30,Storm17,-3,5,1,0
-Storm13,Stamina,Stamina.png,Stamina + 30,Storm18,-1,5,1,0
-Storm14,Agility Conversion,AgilityConversion.png,Every 8 Agility grants 1 ATK.,Storm19,0,5,1,0
-Storm15,Agility,Agility.png,Agility + 10,Storm22,1,5,1,0
-Storm16,Stamina,Stamina.png,Stamina + 30,Storm20,2,5,1,0
-Storm17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm24,-3,6,1,0
-Storm18,Agility,Agility.png,Agility + 10,Storm25,-2,6,1,0
-Storm19,Stamina,Stamina.png,Stamina + 30,"Storm21,Storm27",0,6,1,0
-Storm20,Agility,Agility.png,Agility + 10,"Storm23,Storm30",3,6,1,0
-Storm21,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm26,-1,7,1,0
-Storm22,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm28,1,7,1,0
-Storm23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm29,2,7,1,0
-Storm24,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,,-3,8,1,0
-Storm25,Swift,Swift.png,Each 1% Haste provides 1% Attack Speed.,,-2,8,1,0
-Storm26,Swift Blade,SwiftBlade.png,"When Agility reaches 500 points, Crit DMG and Lucky Damage +5%.",,-1,8,1,0
-Storm27,Overdrive Refinement,OverdriveRefinement.png,Reduces the CD of Overdrive by 30%.,,0,8,1,0
-Storm28,Thunder Charm Blade,ThunderCharmBlade.png,"For each 1 Thunder Sigil consumed by Expertise Skill, gain an additional 3 points of Blade Intent.",,1,8,1,0
-Storm29,Thunder Whirl,ThunderWhirl.png,Piercing Slash grants 1 layer of Overdrive.,,2,8,1,0
-Storm30,Keen Enhancement,KeenEnhancement.png,Increases the fixed chance to trigger Piercing Slash by 10%.,,3,8,1,0
-Iaido00,Iaido Spec,TRUE,"Storm01,Storm02,Storm03,Storm04,Storm05,Storm06,Storm07,Storm08,Storm09,Storm10,Storm11,Storm12,Storm13,Storm14,Storm15,Storm16,Storm17,Storm18,Storm19,Storm20,Storm21,Storm22,Storm23,Storm24,Storm25,Storm26,Storm27,Storm28,Storm29,Storm30",,9,10,,
+id,name,icon,desc,children,gx,gy,cost,seal,requiresUnlock
+Storm00,Stormblade,FALSE,,,10,1,,,
+Storm01,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Storm02,Storm03",0,0,1,0,
+Storm02,Stamina,Stamina.png,Stamina + 30,Storm04,-1,1,1,0,
+Storm03,Stamina,Stamina.png,Stamina + 30,Storm05,1,1,1,0,
+Storm04,Iai Thunder Dance,IaiThunderDance.png,"When you gain 3 or more Thunder Sigils, a Special Attack is cast, attacking 2 times consecutively.","Storm06,Storm07",-1,2,1,0,
+Storm05,Blade Intent,BladeIntent.png,3 points of Blade Intent are gained when an Expertise Skill is cast.,"Storm07,Storm08",1,2,1,0,
+Storm06,Agility,Agility.png,Agility + 10,Storm09,-2,3,1,0,
+Storm07,Stamina,Stamina.png,Stamina + 30,Storm14,0,3,1,0,
+Storm08,Agility,Agility.png,Agility + 10,"Storm10,Storm11",2,3,1,0,
+Storm09,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,"Storm12,Storm13",-2,4,1,0,
+Storm10,Stamina,Stamina.png,Stamina + 30,Storm15,1,4,1,0,
+Storm11,Keen Strike,KeenStrike.png,"When Basic Attacks deal DMG, 10% chance to trigger Piercing Slash, once per second.",Storm16,2,4,1,0,
+Storm12,Stamina,Stamina.png,Stamina + 30,Storm17,-3,5,1,0,
+Storm13,Stamina,Stamina.png,Stamina + 30,Storm18,-1,5,1,0,
+Storm14,Agility Conversion,AgilityConversion.png,Every 8 Agility grants 1 ATK.,Storm19,0,5,1,0,
+Storm15,Agility,Agility.png,Agility + 10,Storm22,1,5,1,0,
+Storm16,Stamina,Stamina.png,Stamina + 30,Storm20,2,5,1,0,
+Storm17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm24,-3,6,1,0,
+Storm18,Agility,Agility.png,Agility + 10,Storm25,-2,6,1,0,
+Storm19,Stamina,Stamina.png,Stamina + 30,"Storm21,Storm27",0,6,1,0,
+Storm20,Agility,Agility.png,Agility + 10,"Storm23,Storm30",3,6,1,0,
+Storm21,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm26,-1,7,1,0,
+Storm22,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm28,1,7,1,0,
+Storm23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Storm29,2,7,1,0,
+Storm24,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,,-3,8,1,0,
+Storm25,Swift,Swift.png,Each 1% Haste provides 1% Attack Speed.,,-2,8,1,0,
+Storm26,Swift Blade,SwiftBlade.png,"When Agility reaches 500 points, Crit DMG and Lucky Damage +5%.",,-1,8,1,0,
+Storm27,Overdrive Refinement,OverdriveRefinement.png,Reduces the CD of Overdrive by 30%.,,0,8,1,0,
+Storm28,Thunder Charm Blade,ThunderCharmBlade.png,"For each 1 Thunder Sigil consumed by Expertise Skill, gain an additional 3 points of Blade Intent.",,1,8,1,0,
+Storm29,Thunder Whirl,ThunderWhirl.png,Piercing Slash grants 1 layer of Overdrive.,,2,8,1,0,
+Storm30,Keen Enhancement,KeenEnhancement.png,Increases the fixed chance to trigger Piercing Slash by 10%.,,3,8,1,0,
+Iaido00,Iaido Spec,TRUE,,,9,10,,,
 Iaido01,Iaido Slash Spec,IaidoSlashSpec.png,"Further enhances the ability to use Iaido Slash.
-When the number of Thunder Sigils consumed by Iaido Slash and its enhanced skill (Thunder Cut) equals the current maximum Thunder Sigil count, increases the DMG of Iaido Slash and its enhanced skill (Thunder Cut) by 12% and grants Super Armor during the cast.","Iaido02,Iaido03",0,0,1,0
-Iaido02,Stamina,Stamina.png,Stamina + 30,"Iaido04,Iaido05",-1,1,1,0
-Iaido03,Stamina,Stamina.png,Stamina + 30,"Iaido05,Iaido06",1,1,1,0
+When the number of Thunder Sigils consumed by Iaido Slash and its enhanced skill (Thunder Cut) equals the current maximum Thunder Sigil count, increases the DMG of Iaido Slash and its enhanced skill (Thunder Cut) by 12% and grants Super Armor during the cast.","Iaido02,Iaido03",0,0,1,0,
+Iaido02,Stamina,Stamina.png,Stamina + 30,"Iaido04,Iaido05",-1,1,1,0,
+Iaido03,Stamina,Stamina.png,Stamina + 30,"Iaido05,Iaido06",1,1,1,0,
 Iaido04,Iaido Mastery,IaidoMastery.png,"Iaido Slash's Crit +10%.
-When Iaido Slash's critical rate exceeds 60%, each additional 1% grants 1% bonus Crit DMG.","Iaido07,Iaido08",-2,2,1,0
-Iaido05,Thunder Sigil Affinity,ThunderSigilAffinity.png,Each additional Thunder Sigil consumed by Expertise or Special Attacks increases your Lightning DMG dealt by 1.5% when they deal DMG.,Iaido09,0,2,1,0
-Iaido06,Flash Frenzy Blade,FlashFrenzyBlade.png,Crit hit of Iaido Slash grants a fixed 10% chance to clear the CD of Flash Strike and Raijin Dash. Chance +10% for each Thunder Sigil consumed.,"Iaido10,Iaido11",2,2,1,0
-Iaido07,Stamina,Stamina.png,Stamina + 30,"Iaido12,Iaido17",-3,3,1,0
-Iaido08,Agility,Agility.png,Agility + 10,"Iaido12,Iaido13,Iaido14",-1,3,1,0
-Iaido09,Zen Moment,ZenMoment.png,Crit Hits of Special Attacks grant 100 Blade Intent.,,0,3,1,0
-Iaido10,Agility,Agility.png,Agility + 10,"Iaido14,Iaido15,Iaido16",1,3,1,0
-Iaido11,Stamina,Stamina.png,Stamina + 30,"Iaido16,Iaido23",3,3,1,0
-Iaido12,Stamina,Stamina.png,Stamina + 30,Iaido18,-2,4,1,0
-Iaido13,Stamina,Stamina.png,Stamina + 30,"Iaido19,Iaido20",-1,4,1,0
-Iaido14,Thunder God's Might,ThunderGod'sMight.png,Activate Volt Surge. Flash Strike and Raijin Dash evolve into Dracoflash and Phantom Slash.,,0,4,1,0
-Iaido15,Stamina,Stamina.png,Stamina + 30,"Iaido20,Iaido21",1,4,1,0
-Iaido16,Stamina,Stamina.png,Stamina + 30,Iaido22,2,4,1,0
-Iaido17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido24,-3,5,1,0
+When Iaido Slash's critical rate exceeds 60%, each additional 1% grants 1% bonus Crit DMG.","Iaido07,Iaido08",-2,2,1,0,
+Iaido05,Thunder Sigil Affinity,ThunderSigilAffinity.png,Each additional Thunder Sigil consumed by Expertise or Special Attacks increases your Lightning DMG dealt by 1.5% when they deal DMG.,Iaido09,0,2,1,0,
+Iaido06,Flash Frenzy Blade,FlashFrenzyBlade.png,Crit hit of Iaido Slash grants a fixed 10% chance to clear the CD of Flash Strike and Raijin Dash. Chance +10% for each Thunder Sigil consumed.,"Iaido10,Iaido11",2,2,1,0,
+Iaido07,Stamina,Stamina.png,Stamina + 30,"Iaido12,Iaido17",-3,3,1,0,
+Iaido08,Agility,Agility.png,Agility + 10,"Iaido12,Iaido13,Iaido14",-1,3,1,0,
+Iaido09,Zen Moment,ZenMoment.png,Crit Hits of Special Attacks grant 100 Blade Intent.,,0,3,1,0,
+Iaido10,Agility,Agility.png,Agility + 10,"Iaido14,Iaido15,Iaido16",1,3,1,0,
+Iaido11,Stamina,Stamina.png,Stamina + 30,"Iaido16,Iaido23",3,3,1,0,
+Iaido12,Stamina,Stamina.png,Stamina + 30,Iaido18,-2,4,1,0,
+Iaido13,Stamina,Stamina.png,Stamina + 30,"Iaido19,Iaido20",-1,4,1,0,
+Iaido14,Thunder God's Might,ThunderGod'sMight.png,Activate Volt Surge. Flash Strike and Raijin Dash evolve into Dracoflash and Phantom Slash.,,0,4,1,0,
+Iaido15,Stamina,Stamina.png,Stamina + 30,"Iaido20,Iaido21",1,4,1,0,
+Iaido16,Stamina,Stamina.png,Stamina + 30,Iaido22,2,4,1,0,
+Iaido17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido24,-3,5,1,0,
 Iaido18,Thunder Curse,ThunderCurse.png,"Special Attacks inflict Thunder Curse on the target upon dealing DMG.
-Thunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",,-2,5,1,0
-Iaido19,Instant Slash,InstantSlash.png,Iaido Slash reduces the Armor of the target hit by 6%. The effect lasts 5s and stacks up to 5 times.,"Iaido25,Iaido26",-1,5,1,0
-Iaido20,Agility,Agility.png,Agility + 10,"Iaido26,Iaido27,Iaido28",0,5,1,0
-Iaido21,Rapid Thunder Assault,RapidThunderAssault.png,Each additional Thunder Sigil consumed by a skill increases its DMG by 3%.,"Iaido28,Iaido29",1,5,1,0
-Iaido22,Frenzied Thunder Roar,FrenziedThunderRoar.png,"Defeating an enemy triggers Thunderburst, once every 3s.",,2,5,1,0
-Iaido23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido30,3,5,1,0
-Iaido24,Wind Assault II,WindAssaultII.png,"Unleashes formidable energy to weaken nearby enemies, reducing their movement speed. Common monsters below 15% HP will instantly disperse.",Iaido31,-3,6,1,0
-Iaido25,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido32,-2,6,1,0
-Iaido26,Violent Slash,ViolentSlash.png,Increases the critical rate of Iaido Slash and Thunder Cut by 12%.,"Iaido33,Iaido34",-1,6,1,0
-Iaido27,End of Annihilation,EndofAnnihilation.png,The final strike of Oblivion Combo is empowered into Ultimate Slash.,,0,6,1,0
-Iaido28,Blade Intent Thunder Strike,BladeIntentThunderStrike.png,"When Iaido Slash deals Crit DMG, if the Blade Intent exceeds 20, launches Thunderstrike (which can only be triggered once per use of Iaido Slash).","Iaido34,Iaido35",1,6,1,0
-Iaido29,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido36,2,6,1,0
-Iaido30,Wind Assault I,WindAssaultI.png,"Crit Rate obtained in any way is increased by 12%, but Luck chance obtained in any way are reduced by 10%.",Iaido37,3,6,1,0
-Iaido31,Agility,Agility.png,Agility + 10,"Iaido38,Iaido43",-3,7,1,0
+Thunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",,-2,5,1,0,
+Iaido19,Instant Slash,InstantSlash.png,Iaido Slash reduces the Armor of the target hit by 6%. The effect lasts 5s and stacks up to 5 times.,"Iaido25,Iaido26",-1,5,1,0,
+Iaido20,Agility,Agility.png,Agility + 10,"Iaido26,Iaido27,Iaido28",0,5,1,0,
+Iaido21,Rapid Thunder Assault,RapidThunderAssault.png,Each additional Thunder Sigil consumed by a skill increases its DMG by 3%.,"Iaido28,Iaido29",1,5,1,0,
+Iaido22,Frenzied Thunder Roar,FrenziedThunderRoar.png,"Defeating an enemy triggers Thunderburst, once every 3s.",,2,5,1,0,
+Iaido23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido30,3,5,1,0,
+Iaido24,Wind Assault II,WindAssaultII.png,"Unleashes formidable energy to weaken nearby enemies, reducing their movement speed. Common monsters below 15% HP will instantly disperse.",Iaido31,-3,6,1,0,
+Iaido25,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido32,-2,6,1,0,
+Iaido26,Violent Slash,ViolentSlash.png,Increases the critical rate of Iaido Slash and Thunder Cut by 12%.,"Iaido33,Iaido34",-1,6,1,0,
+Iaido27,End of Annihilation,EndofAnnihilation.png,The final strike of Oblivion Combo is empowered into Ultimate Slash.,,0,6,1,0,
+Iaido28,Blade Intent Thunder Strike,BladeIntentThunderStrike.png,"When Iaido Slash deals Crit DMG, if the Blade Intent exceeds 20, launches Thunderstrike (which can only be triggered once per use of Iaido Slash).","Iaido34,Iaido35",1,6,1,0,
+Iaido29,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Iaido36,2,6,1,0,
+Iaido30,Wind Assault I,WindAssaultI.png,"Crit Rate obtained in any way is increased by 12%, but Luck chance obtained in any way are reduced by 10%.",Iaido37,3,6,1,0,
+Iaido31,Agility,Agility.png,Agility + 10,"Iaido38,Iaido43",-3,7,1,0,
 Iaido32,Flash Sharp Strike,FlashSharpStrike.png,"Triggers Sharp Strike when casting Iaido Slash.
-Sharp Strike: Increases Crit Rate of Flash Strike and its enhanced skill (Dracoflash) by 10%. If Flash Strike and its enhanced skill (Dracoflash) deals Crit DMG 1 time, gains 1 Thunder Sigil. This effect is removed after the use of Flash Strike and its enhanced skill (Dracoflash) or after 10s.",,-2,7,1,0
-Iaido33,Agility,Agility.png,Agility + 10,Iaido39,-1,7,1,0
-Iaido34,Thunder Sigil Rewind,ThunderSigilRewind.png,"When consuming Thunder Sigils, there is a chance to return 1 Thunder Sigil, and for each additional 1 Thunder Sigil consumed, the return chance +8%.",Iaido40,0,7,1,0
-Iaido35,Agility,Agility.png,Agility + 10,Iaido41,1,7,1,0
+Sharp Strike: Increases Crit Rate of Flash Strike and its enhanced skill (Dracoflash) by 10%. If Flash Strike and its enhanced skill (Dracoflash) deals Crit DMG 1 time, gains 1 Thunder Sigil. This effect is removed after the use of Flash Strike and its enhanced skill (Dracoflash) or after 10s.",,-2,7,1,0,
+Iaido33,Agility,Agility.png,Agility + 10,Iaido39,-1,7,1,0,
+Iaido34,Thunder Sigil Rewind,ThunderSigilRewind.png,"When consuming Thunder Sigils, there is a chance to return 1 Thunder Sigil, and for each additional 1 Thunder Sigil consumed, the return chance +8%.",Iaido40,0,7,1,0,
+Iaido35,Agility,Agility.png,Agility + 10,Iaido41,1,7,1,0,
 Iaido36,Unmatched Raijin Dash,UnmatchedRaijinDash.png,"Raijin Dash and its enhanced skill (Phantom Slash) ignore the target's Armor.
-Raijin Dash and its enhanced skill (Phantom Slash) deal 10% more damage per additional 1 enemy hit.",,2,7,1,0
-Iaido37,Agility,Agility.png,Agility + 10,"Iaido42,Iaido47",3,7,1,0
-Iaido38,Stamina,Stamina.png,Stamina + 30,Iaido55,-4,8,1,0
-Iaido39,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,Iaido44,-2,8,1,0
-Iaido40,Agility,Agility.png,Agility + 10,"Iaido44,Iaido45,Iaido46",0,8,1,0
-Iaido41,Infinite Thunder,InfiniteThunder.png,"For every 5 Thunder Sigils consumed, the remaining CD time of Volt Surge -0.5s.",Iaido46,2,8,1,0
-Iaido42,Stamina,Stamina.png,Stamina + 30,Iaido59,4,8,1,0
-Iaido43,Stamina,Stamina.png,Stamina + 30,"Iaido48,Iaido49",-3,9,1,0
-Iaido44,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Iaido49,Iaido50",-1,9,1,0
-Iaido45,Vacuum Slash,VacuumSlash.png,"Each cast of Flash Strike, Raijin Dash, or its evolved skills grants 1 layer of Thundrage. When Thundrage reaches 5 stacks, Iaido Slash evolves into Thunder Cut. After casting Thunder Cut, 5 stacks of Thundrage are consumed. Thundrage stacks up to 8 times.",Iaido51,0,9,1,0
-Iaido46,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Iaido52,Iaido53",1,9,1,0
-Iaido47,Stamina,Stamina.png,Stamina + 30,"Iaido53,Iaido54",3,9,1,0
+Raijin Dash and its enhanced skill (Phantom Slash) deal 10% more damage per additional 1 enemy hit.",,2,7,1,0,
+Iaido37,Agility,Agility.png,Agility + 10,"Iaido42,Iaido47",3,7,1,0,
+Iaido38,Stamina,Stamina.png,Stamina + 30,Iaido55,-4,8,1,0,
+Iaido39,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1.,Iaido44,-2,8,1,0,
+Iaido40,Agility,Agility.png,Agility + 10,"Iaido44,Iaido45,Iaido46",0,8,1,0,
+Iaido41,Infinite Thunder,InfiniteThunder.png,"For every 5 Thunder Sigils consumed, the remaining CD time of Volt Surge -0.5s.",Iaido46,2,8,1,0,
+Iaido42,Stamina,Stamina.png,Stamina + 30,Iaido59,4,8,1,0,
+Iaido43,Stamina,Stamina.png,Stamina + 30,"Iaido48,Iaido49",-3,9,1,0,
+Iaido44,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Iaido49,Iaido50",-1,9,1,0,
+Iaido45,Vacuum Slash,VacuumSlash.png,"Each cast of Flash Strike, Raijin Dash, or its evolved skills grants 1 layer of Thundrage. When Thundrage reaches 5 stacks, Iaido Slash evolves into Thunder Cut. After casting Thunder Cut, 5 stacks of Thundrage are consumed. Thundrage stacks up to 8 times.",Iaido51,0,9,1,0,
+Iaido46,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Iaido52,Iaido53",1,9,1,0,
+Iaido47,Stamina,Stamina.png,Stamina + 30,"Iaido53,Iaido54",3,9,1,0,
 Iaido48,Thunder Reversal,ThunderReversal.png,"Consumes 100 Blade Intent to gain stacks of Thunder Reversal Mark. When Thunder Reversal Mark reaches 5 stacks, casting Iaido Slash grants the Thunder Reversal effect and removes all Thunder Reversal Mark stacks.
-Thunder Reversal: Gain a 10% Lightning DMG bonus for 15s. During Thunder Reversal, Thunder Reversal Mark cannot be gained.",,-3,10,1,0
-Iaido49,Duel Awareness,DuelAwareness.png,Deals 20% more DMG to enemies with 80% HP or above.,,-2,10,1,0
-Iaido50,Agility,Agility.png,Agility + 10,Iaido56,-1,10,1,0
-Iaido51,Stamina,Stamina.png,Stamina + 30,Iaido57,0,10,1,0
-Iaido52,Agility,Agility.png,Agility + 10,Iaido58,1,10,1,0
-Iaido53,Break Slash,BreakSlash.png,"When dealing Crit DMG, Iaido Slash and its enhanced skill (Thunder Cut) nullifies 30% of the targets' Armor.",,2,10,1,0
-Iaido54,Shadow Despise,ShadowDespise.png,"For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",,3,10,1,0
-Iaido55,Arcane,Arcane.png,Crit DMG +10%.,,-4,11,1,0
+Thunder Reversal: Gain a 10% Lightning DMG bonus for 15s. During Thunder Reversal, Thunder Reversal Mark cannot be gained.",,-3,10,1,0,
+Iaido49,Duel Awareness,DuelAwareness.png,Deals 20% more DMG to enemies with 80% HP or above.,,-2,10,1,0,
+Iaido50,Agility,Agility.png,Agility + 10,Iaido56,-1,10,1,0,
+Iaido51,Stamina,Stamina.png,Stamina + 30,Iaido57,0,10,1,0,
+Iaido52,Agility,Agility.png,Agility + 10,Iaido58,1,10,1,0,
+Iaido53,Break Slash,BreakSlash.png,"When dealing Crit DMG, Iaido Slash and its enhanced skill (Thunder Cut) nullifies 30% of the targets' Armor.",,2,10,1,0,
+Iaido54,Shadow Despise,ShadowDespise.png,"For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",,3,10,1,0,
+Iaido55,Arcane,Arcane.png,Crit DMG +10%.,,-4,11,1,0,
 Iaido56,Dual Blade Intent,DualBladeIntent.png,"When Blade Intent is at least 100, Flash Strike, Raijin Dash, and their enhanced skills (Dracoflash, Phantom Slash) gain Crit Rate by 10%.
-When Blade Intent is at least 100, greatly increases Flash Strike's casting speed.",,-2,11,1,0
-Iaido57,Stamina,Stamina.png,Stamina + 30,Iaido60,0,11,1,0
-Iaido58,Bladewind Domain,BladewindDomain.png,"Every 3 casts of Overdrive allows the next Iaido Slash to generate a Bladewind Domain in front. Each time Bladewind Domain deals DMG, reduces the CD of Oblivion Combo by 1.5s.",,2,11,1,0
-Iaido59,Advancement,Advancement.png,Mastery +6%,,4,11,1,0
-Iaido60,Thundrage,Thundrage.png,"Each use of Dracoflash or Phantom Slash grants 4 stacks of Thundrage, up to 8 stacks.",,0,12,1,0
-Moons00,Moonstrike Spec,TRUE,"Storm01,Storm02,Storm03,Storm04,Storm05,Storm06,Storm07,Storm08,Storm09,Storm10,Storm11,Storm12,Storm13,Storm14,Storm15,Storm16,Storm17,Storm18,Storm19,Storm20,Storm21,Storm22,Storm23,Storm24,Storm25,Storm26,Storm27,Storm28,Storm29,Storm30",,11,10,,
-Moons01,Moonstrike Spec,MoonstrikeSpec.png,,"Moons02,Moons03",0,0,1,0
-Moons02,Stamina,Stamina.png,Stamina + 30,"Moons04,Moons05",-1,1,1,0
-Moons03,Stamina,Stamina.png,Stamina + 30,"Moons05,Moons06",1,1,1,0
-Moons04,Thunder Seed,ThunderSeed.png,Dealing DMG with Thundercut guarantees 1 Charge Seed.,"Moons07,Moons08",-2,2,1,0
-Moons05,Thunder Rune Mastery,ThunderRuneMastery.png,Doubles Max Blade Intent.,Moons09,0,2,1,0
+When Blade Intent is at least 100, greatly increases Flash Strike's casting speed.",,-2,11,1,0,
+Iaido57,Stamina,Stamina.png,Stamina + 30,Iaido60,0,11,1,0,
+Iaido58,Bladewind Domain,BladewindDomain.png,"Every 3 casts of Overdrive allows the next Iaido Slash to generate a Bladewind Domain in front. Each time Bladewind Domain deals DMG, reduces the CD of Oblivion Combo by 1.5s.",,2,11,1,0,
+Iaido59,Advancement,Advancement.png,Mastery +6%,,4,11,1,0,
+Iaido60,Thundrage,Thundrage.png,"Each use of Dracoflash or Phantom Slash grants 4 stacks of Thundrage, up to 8 stacks.",,0,12,1,0,
+Moons00,Moonstrike Spec,TRUE,,,11,10,,,
+Moons01,Moonstrike Spec,MoonstrikeSpec.png,,"Moons02,Moons03",0,0,1,0,
+Moons02,Stamina,Stamina.png,Stamina + 30,"Moons04,Moons05",-1,1,1,0,
+Moons03,Stamina,Stamina.png,Stamina + 30,"Moons05,Moons06",1,1,1,0,
+Moons04,Thunder Seed,ThunderSeed.png,Dealing DMG with Thundercut guarantees 1 Charge Seed.,"Moons07,Moons08",-2,2,1,0,
+Moons05,Thunder Rune Mastery,ThunderRuneMastery.png,Doubles Max Blade Intent.,Moons09,0,2,1,0,
 Moons06,Moonstrike Delay,MoonstrikeDelay.png,"Blade Intent cap +25.
-After 5 consecutive Thundercuts in one go, it evolves into the more powerful Thundercleave, which deals higher DMG.","Moons10,Moons11",2,2,1,0
-Moons07,Stamina,Stamina.png,Stamina + 30,"Moons12,Moons17",-3,3,1,0
-Moons08,Agility,Agility.png,Agility + 10,"Moons12,Moons13,Moons14",-1,3,1,0
-Moons09,Touch of Thunder Soul,TouchofThunderSoul.png,Moonstrike has a fixed 30% chance to cast Thunderstrike on a Lucky Hit.,,0,3,1,0
-Moons10,Agility,Agility.png,Agility + 10,"Moons14,Moons15,Moons16",1,3,1,0
-Moons11,Stamina,Stamina.png,Stamina + 30,"Moons16,Moons23",3,3,1,0
-Moons12,Stamina,Stamina.png,Stamina + 30,Moons18,-2,4,1,0
-Moons13,Stamina,Stamina.png,Stamina + 30,"Moons19,Moons20",-1,4,1,0
-Moons14,Chaos Breaker,ChaosBreaker.png,"When Stormflash is activated, Moonstrike evolves into Chaos Breaker.",,0,4,1,0
-Moons15,Stamina,Stamina.png,Stamina + 30,"Moons20,Moons21",1,4,1,0
-Moons16,Stamina,Stamina.png,Stamina + 30,Moons22,2,4,1,0
-Moons17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons24,-3,5,1,0
+After 5 consecutive Thundercuts in one go, it evolves into the more powerful Thundercleave, which deals higher DMG.","Moons10,Moons11",2,2,1,0,
+Moons07,Stamina,Stamina.png,Stamina + 30,"Moons12,Moons17",-3,3,1,0,
+Moons08,Agility,Agility.png,Agility + 10,"Moons12,Moons13,Moons14",-1,3,1,0,
+Moons09,Touch of Thunder Soul,TouchofThunderSoul.png,Moonstrike has a fixed 30% chance to cast Thunderstrike on a Lucky Hit.,,0,3,1,0,
+Moons10,Agility,Agility.png,Agility + 10,"Moons14,Moons15,Moons16",1,3,1,0,
+Moons11,Stamina,Stamina.png,Stamina + 30,"Moons16,Moons23",3,3,1,0,
+Moons12,Stamina,Stamina.png,Stamina + 30,Moons18,-2,4,1,0,
+Moons13,Stamina,Stamina.png,Stamina + 30,"Moons19,Moons20",-1,4,1,0,
+Moons14,Chaos Breaker,ChaosBreaker.png,"When Stormflash is activated, Moonstrike evolves into Chaos Breaker.",,0,4,1,0,
+Moons15,Stamina,Stamina.png,Stamina + 30,"Moons20,Moons21",1,4,1,0,
+Moons16,Stamina,Stamina.png,Stamina + 30,Moons22,2,4,1,0,
+Moons17,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons24,-3,5,1,0,
 Moons18,Thunder Curse,ThunderCurse.png,"Special Attacks inflict Thunder Curse on the target upon dealing DMG.
-Thunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",,-2,5,1,0
-Moons19,Thunder Scythe,ThunderScythe.png,Reduces the Charge Seeds that Storm Scythe consumes by 3.,"Moons25,Moons26",-1,5,1,0
-Moons20,Agility,Agility.png,Agility + 10,"Moons26,Moons27,Moons28",0,5,1,0
-Moons21,Moonlight Charge,MoonlightCharge.png,"When Moonstrike triggers a Lucky Hit, it has a fixed 30% chance to restore 1 Charge Seed.","Moons28,Moons29",1,5,1,0
-Moons22,Frenzied Thunder Roar,FrenziedThunderRoar.png,"Defeating an enemy triggers Thunderburst, once every 3s.",,2,5,1,0
-Moons23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons30,3,5,1,0
-Moons24,Thunder Strike Whisper,ThunderStrikeWhisper.png,"Increases the Lightning DMG Thunderstrike deals by 50%, yet Thunderstrike never deals Crit DMG.",Moons31,-3,6,1,0
-Moons25,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons32,-2,6,1,0
-Moons26,Thousand Thunder Flashes,ThousandThunderFlashes.png,Each 2 Thunderstrike triggered reduces the CD of Stormflash by 0.5s.,"Moons33,Moons34",-1,6,1,0
-Moons27,End of Annihilation,EndofAnnihilation.png,The final strike of Oblivion Combo is empowered into Ultimate Slash.,,0,6,1,0
-Moons28,Phantom Delay,PhantomDelay.png,Casting Chaos Breaker immediately grants 30 Charge Seeds.,"Moons34,Moons35",1,6,1,0
-Moons29,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons36,2,6,1,0
-Moons30,Moon Blade Swift,MoonBladeSwift.png,Moonstrike additionally deals 1 instance of Whirling DMG every 6s. Each 2% Haste reduces its CD by 1%.,Moons37,3,6,1,0
-Moons31,Agility,Agility.png,Agility + 10,"Moons38,Moons43",-3,7,1,0
-Moons32,Blade Intent - Rare,BladeIntent-Rare.png,Increases Max Blade Intent by 75.,,-2,7,1,0
-Moons33,Agility,Agility.png,Agility + 10,Moons39,-1,7,1,0
-Moons34,Phantom Scythe Realm I,PhantomScytheRealm.png,Increases Max Moonstrike by 1. Reduces the DMG dealt by Moonstrike by 35%.,Moons40,0,7,1,0
-Moons35,Agility,Agility.png,Agility + 10,Moons41,1,7,1,0
-Moons36,Moonstrike Sharp Strike,MoonstrikeSharpStrike.png,"When Blade Intent is at least 50, Moonstrike and its enhanced skill (Chaos Breaker) are guaranteed to lands a Crit.",,2,7,1,0
-Moons37,Agility,Agility.png,Agility + 10,"Moons42,Moons47",3,7,1,0
-Moons38,Stamina,Stamina.png,Stamina + 30,Moons55,-4,8,1,0
-Moons39,Raijin Dash Charge,RaijinDashCharge.png,"When Thundercut triggers a Lucky Hit, grants 1 Charge Seed.",Moons44,-2,8,1,0
-Moons40,Agility,Agility.png,Agility + 10,"Moons44,Moons45,Moons46",0,8,1,0
-Moons41,Blade Intent Recovery,BladeIntentRecovery.png,Each 1% Haste increases the REG SPD of Blade Intent by 1%.,Moons46,2,8,1,0
-Moons42,Stamina,Stamina.png,Stamina + 30,Moons59,4,8,1,0
-Moons43,Stamina,Stamina.png,Stamina + 30,"Moons48,Moons49",-3,9,1,0
-Moons44,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Moons49,Moons50",-1,9,1,0
-Moons45,Divine Sickle,DivineSickle.png,Each 7 uses of Storm Scythe triggers Divine Sickle. Divine Sickle always deals Crit DMG.,Moons51,0,9,1,0
-Moons46,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Moons52,Moons53",1,9,1,0
-Moons47,Stamina,Stamina.png,Stamina + 30,"Moons53,Moons54",3,9,1,0
-Moons48,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1. Storm Scythe and Divine Sickle are bound to trigger Piercing Slash.,,-3,10,1,0
-Moons49,Duel Awareness,DuelAwareness.png,Deals 20% more DMG to enemies with 80% HP or above.,,-2,10,1,0
-Moons50,Agility,Agility.png,Agility + 10,Moons56,-1,10,1,0
-Moons51,Stamina,Stamina.png,Stamina + 30,Moons57,0,10,1,0
-Moons52,Agility,Agility.png,Agility + 10,Moons58,1,10,1,0
-Moons53,Shadow Despise,ShadowDespise.png,"For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",,2,10,1,0
-Moons54,Thunder Strike Enhancement,ThunderStrikeEnhancement.png,Increases the DMG dealt by Thunderstrike by 20%. Each 1% Luck grants Thunderstrike 1% more DMG dealt.,,3,10,1,0
-Moons55,Charge Catcher,ChargeCatcher.png,Each enemy defeated grants 1 Charge Seed (effective within a team).,,-4,11,1,0
-Moons56,Breath of Mark,BreathofMark.png,"Lucky Hits of Moonstrike grant a fixed 30% chance to restore 1 Thunder Sigil, once per second.",,-2,11,1,0
-Moons57,Stamina,Stamina.png,Stamina + 30,Moons60,0,11,1,0
-Moons58,Lightning Flash,LightningFlash.png,"During Stormflash, accelerates Moonstrike's Attack SPD by 100%.",,2,11,1,0
+Thunder Curse: Each stack of Thunder Curse increases the target's DMG taken from you by 2% for 10s, stacking up to 4 times.",,-2,5,1,0,
+Moons19,Thunder Scythe,ThunderScythe.png,Reduces the Charge Seeds that Storm Scythe consumes by 3.,"Moons25,Moons26",-1,5,1,0,
+Moons20,Agility,Agility.png,Agility + 10,"Moons26,Moons27,Moons28",0,5,1,0,
+Moons21,Moonlight Charge,MoonlightCharge.png,"When Moonstrike triggers a Lucky Hit, it has a fixed 30% chance to restore 1 Charge Seed.","Moons28,Moons29",1,5,1,0,
+Moons22,Frenzied Thunder Roar,FrenziedThunderRoar.png,"Defeating an enemy triggers Thunderburst, once every 3s.",,2,5,1,0,
+Moons23,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons30,3,5,1,0,
+Moons24,Thunder Strike Whisper,ThunderStrikeWhisper.png,"Increases the Lightning DMG Thunderstrike deals by 50%, yet Thunderstrike never deals Crit DMG.",Moons31,-3,6,1,0,
+Moons25,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons32,-2,6,1,0,
+Moons26,Thousand Thunder Flashes,ThousandThunderFlashes.png,Each 2 Thunderstrike triggered reduces the CD of Stormflash by 0.5s.,"Moons33,Moons34",-1,6,1,0,
+Moons27,End of Annihilation,EndofAnnihilation.png,The final strike of Oblivion Combo is empowered into Ultimate Slash.,,0,6,1,0,
+Moons28,Phantom Delay,PhantomDelay.png,Casting Chaos Breaker immediately grants 30 Charge Seeds.,"Moons34,Moons35",1,6,1,0,
+Moons29,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,Moons36,2,6,1,0,
+Moons30,Moon Blade Swift,MoonBladeSwift.png,Moonstrike additionally deals 1 instance of Whirling DMG every 6s. Each 2% Haste reduces its CD by 1%.,Moons37,3,6,1,0,
+Moons31,Agility,Agility.png,Agility + 10,"Moons38,Moons43",-3,7,1,0,
+Moons32,Blade Intent - Rare,BladeIntent-Rare.png,Increases Max Blade Intent by 75.,,-2,7,1,0,
+Moons33,Agility,Agility.png,Agility + 10,Moons39,-1,7,1,0,
+Moons34,Phantom Scythe Realm I,PhantomScytheRealm.png,Increases Max Moonstrike by 1. Reduces the DMG dealt by Moonstrike by 35%.,Moons40,0,7,1,0,
+Moons35,Agility,Agility.png,Agility + 10,Moons41,1,7,1,0,
+Moons36,Moonstrike Sharp Strike,MoonstrikeSharpStrike.png,"When Blade Intent is at least 50, Moonstrike and its enhanced skill (Chaos Breaker) are guaranteed to lands a Crit.",,2,7,1,0,
+Moons37,Agility,Agility.png,Agility + 10,"Moons42,Moons47",3,7,1,0,
+Moons38,Stamina,Stamina.png,Stamina + 30,Moons55,-4,8,1,0,
+Moons39,Raijin Dash Charge,RaijinDashCharge.png,"When Thundercut triggers a Lucky Hit, grants 1 Charge Seed.",Moons44,-2,8,1,0,
+Moons40,Agility,Agility.png,Agility + 10,"Moons44,Moons45,Moons46",0,8,1,0,
+Moons41,Blade Intent Recovery,BladeIntentRecovery.png,Each 1% Haste increases the REG SPD of Blade Intent by 1%.,Moons46,2,8,1,0,
+Moons42,Stamina,Stamina.png,Stamina + 30,Moons59,4,8,1,0,
+Moons43,Stamina,Stamina.png,Stamina + 30,"Moons48,Moons49",-3,9,1,0,
+Moons44,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Moons49,Moons50",-1,9,1,0,
+Moons45,Divine Sickle,DivineSickle.png,Each 7 uses of Storm Scythe triggers Divine Sickle. Divine Sickle always deals Crit DMG.,Moons51,0,9,1,0,
+Moons46,Thunder Attack,ThunderAttack.png,Thunder Attack + 5,"Moons52,Moons53",1,9,1,0,
+Moons47,Stamina,Stamina.png,Stamina + 30,"Moons53,Moons54",3,9,1,0,
+Moons48,Thunder Sigil Charm,ThunderSigilCharm.png,Increases Max Thunder Sigil by 1. Storm Scythe and Divine Sickle are bound to trigger Piercing Slash.,,-3,10,1,0,
+Moons49,Duel Awareness,DuelAwareness.png,Deals 20% more DMG to enemies with 80% HP or above.,,-2,10,1,0,
+Moons50,Agility,Agility.png,Agility + 10,Moons56,-1,10,1,0,
+Moons51,Stamina,Stamina.png,Stamina + 30,Moons57,0,10,1,0,
+Moons52,Agility,Agility.png,Agility + 10,Moons58,1,10,1,0,
+Moons53,Shadow Despise,ShadowDespise.png,"For each enemy within 3m, you gain 3% Armor Penetration, up to 15%. This effect is doubled against Elite or stronger enemies.",,2,10,1,0,
+Moons54,Thunder Strike Enhancement,ThunderStrikeEnhancement.png,Increases the DMG dealt by Thunderstrike by 20%. Each 1% Luck grants Thunderstrike 1% more DMG dealt.,,3,10,1,0,
+Moons55,Charge Catcher,ChargeCatcher.png,Each enemy defeated grants 1 Charge Seed (effective within a team).,,-4,11,1,0,
+Moons56,Breath of Mark,BreathofMark.png,"Lucky Hits of Moonstrike grant a fixed 30% chance to restore 1 Thunder Sigil, once per second.",,-2,11,1,0,
+Moons57,Stamina,Stamina.png,Stamina + 30,Moons60,0,11,1,0,
+Moons58,Lightning Flash,LightningFlash.png,"During Stormflash, accelerates Moonstrike's Attack SPD by 100%.",,2,11,1,0,
 Moons59,Power of Thunder,PowerofThunder.png,"Every 10 instances of DMG dealt triggers Thunder Power.
-Thunder Power: Increases Thunder Element damage dealt by 10 for 10s, stacking up to 10 times.",,4,11,1,0
-Moons60,Phantom Scythe Realm II,PhantomScytheRealm.png,Casting Thundercut has a chance to grant 25 Blade Intent. The chance is equal to your Luck chance.,,0,12,1,0
+Thunder Power: Increases Thunder Element damage dealt by 10 for 10s, stacking up to 10 times.",,4,11,1,0,
+Moons60,Phantom Scythe Realm II,PhantomScytheRealm.png,Casting Thundercut has a chance to grant 25 Blade Intent. The chance is equal to your Luck chance.,,0,12,1,0,

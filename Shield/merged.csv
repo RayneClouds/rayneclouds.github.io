@@ -1,176 +1,176 @@
-id,name,icon,desc,children,gx,gy,cost,seal
-Shkni00,Shield Knight,FALSE,,,10,1,,
-Shkni01,Light Attack,LightAttack.png,Light Attack + 5,Shkni03,0,0,1,0
-Shkni02,Condemn,Condemn.png,"When casting a skill that consumes Photon Energy, there is a 30% fixed chance for Basic Attacks to evolve into Condemn.",Shkni06,-1,1,1,0
-Shkni03,Stamina,Stamina.png,Stamina + 30,"Shkni02,Shkni04,Shkni05",0,1,1,0
+id,name,icon,desc,children,gx,gy,cost,seal,requiresUnlock
+Shkni00,Shield Knight,FALSE,,,10,1,,,
+Shkni01,Light Attack,LightAttack.png,Light Attack + 5,Shkni03,0,0,1,0,
+Shkni02,Condemn,Condemn.png,"When casting a skill that consumes Photon Energy, there is a 30% fixed chance for Basic Attacks to evolve into Condemn.",Shkni06,-1,1,1,0,
+Shkni03,Stamina,Stamina.png,Stamina + 30,"Shkni02,Shkni04,Shkni05",0,1,1,0,
 Shkni04,Power Conversion,PowerConversion.png,"Armor +2000
-3 Strength provides 2 Armor.",Shkni08,1,1,1,0
-Shkni05,Lightforged Body,LightforgedBody.png,"Every 1 Holy Sigil consumed grants a Radiant shield equal to 30% ATK (depending on Adventurer Level, up to 60%).",Shkni07,0,2,1,0
-Shkni06,Strength,Strength.png,Strength + 10,"Shkni09,Shkni10",-1,3,1,0
-Shkni07,Stamina,Stamina.png,Stamina + 30,Shkni11,0,3,1,0
-Shkni08,Strength,Strength.png,Strength + 10,"Shkni12,Shkni13",1,3,1,0
-Shkni09,Stamina,Stamina.png,Stamina + 30,Shkni14,-2,4,1,0
-Shkni10,Strength,Strength.png,Strength + 10,Shkni23,-1,4,1,0
-Shkni11,Light Attack,LightAttack.png,Light Attack + 5,Shkni15,0,4,1,0
-Shkni12,Stamina,Stamina.png,Stamina + 30,Shkni16,1,4,1,0
-Shkni13,Strength,Strength.png,Strength + 10,Shkni17,2,4,1,0
-Shkni14,Light Attack,LightAttack.png,Light Attack + 5,Shkni18,-2,5,1,0
-Shkni15,Lightforged Fortitude,LightforgedFortitude.png,"During the duration of Radiant Shield, Block chance +10%.","Shkni19,Shkni20",0,5,1,0
-Shkni16,Haste Sigil,HasteSigil.png,"Each 1% haste increases the recovery speed of Holy Sigil by 1%, Holy Sigil recovery time = Holy Sigil initial recovery time / (1 + Holy Sigil recovery speed bonus).","Shkni20,Shkni21",1,5,1,0
-Shkni17,Lightforge Continuum,LightforgeContinuum.png,"For every 20 points of Photon Energy consumed, gains Radiant Shield equal to 30% ATK (this ratio is affected by Adventurer Level, up to 60%).",Shkni21,2,5,1,0
+3 Strength provides 2 Armor.",Shkni08,1,1,1,0,
+Shkni05,Lightforged Body,LightforgedBody.png,"Every 1 Holy Sigil consumed grants a Radiant shield equal to 30% ATK (depending on Adventurer Level, up to 60%).",Shkni07,0,2,1,0,
+Shkni06,Strength,Strength.png,Strength + 10,"Shkni09,Shkni10",-1,3,1,0,
+Shkni07,Stamina,Stamina.png,Stamina + 30,Shkni11,0,3,1,0,
+Shkni08,Strength,Strength.png,Strength + 10,"Shkni12,Shkni13",1,3,1,0,
+Shkni09,Stamina,Stamina.png,Stamina + 30,Shkni14,-2,4,1,0,
+Shkni10,Strength,Strength.png,Strength + 10,Shkni23,-1,4,1,0,
+Shkni11,Light Attack,LightAttack.png,Light Attack + 5,Shkni15,0,4,1,0,
+Shkni12,Stamina,Stamina.png,Stamina + 30,Shkni16,1,4,1,0,
+Shkni13,Strength,Strength.png,Strength + 10,Shkni17,2,4,1,0,
+Shkni14,Light Attack,LightAttack.png,Light Attack + 5,Shkni18,-2,5,1,0,
+Shkni15,Lightforged Fortitude,LightforgedFortitude.png,"During the duration of Radiant Shield, Block chance +10%.","Shkni19,Shkni20",0,5,1,0,
+Shkni16,Haste Sigil,HasteSigil.png,"Each 1% haste increases the recovery speed of Holy Sigil by 1%, Holy Sigil recovery time = Holy Sigil initial recovery time / (1 + Holy Sigil recovery speed bonus).","Shkni20,Shkni21",1,5,1,0,
+Shkni17,Lightforge Continuum,LightforgeContinuum.png,"For every 20 points of Photon Energy consumed, gains Radiant Shield equal to 30% ATK (this ratio is affected by Adventurer Level, up to 60%).",Shkni21,2,5,1,0,
 Shkni18,Ring of Judgment,RingofJudgment.png,"Casting Judgment generates a Divine Circle, with a CD of 30s.
-Each Holy Sigil consumed reduces the remaining CD by 1s.",Shkni22,-2,6,1,0
-Shkni19,Strength,Strength.png,Strength + 10,Shkni24,0,6,1,0
-Shkni20,Light Attack,LightAttack.png,Light Attack + 5,Shkni25,1,6,1,0
-Shkni21,Light Attack,LightAttack.png,Light Attack + 5,Shkni26,2,6,1,0
-Shkni22,Stamina,Stamina.png,Stamina + 30,Shkni27,-2,7,1,0
-Shkni23,Condemn Time Limit,CondemnTimeLimit.png,"When Condemn deals damage, it immediately cools down 1 Holy Sigil (prioritizing the Holy Sigil with the longest remaining CD).",,-1,7,1,0
-Shkni24,Stamina,Stamina.png,Stamina + 30,Shkni28,0,7,1,0
-Shkni25,Stamina,Stamina.png,Stamina + 30,Shkni29,1,7,1,0
-Shkni26,Stamina,Stamina.png,Stamina + 30,Shkni30,2,7,1,0
-Shkni27,Light of Condemn,LightofCondemn.png,"While inside a Divine Circle, your Condemn is enhanced—thrusting a blade of light forward and dealing double DMG.",,-1,8,1,0
-Shkni28,Life Enhancement,LifeEnhancement.png,"When Strength reaches 500 points, Max HP +12%.",,0,8,1,0
-Shkni29,Blessing of Holy Sigil,BlessingofHolySigil.png,"When using a Skill that consumes Holy Sigils, 20% chance for your next Holy Sigil-consuming skill to consume no Holy Sigils. The effect lasts for 8s or until a Holy Sigil-consuming skill is cast.",,1,8,1,0
-Shkni30,Energy Guard,EnergyGuard.png,"After Casting the Ultimate, the aggro generated by Allies is transferred to oneself, lasting for 6s.",,2,8,1,0
-Recov00,Shield Spec,TRUE,"Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30","Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30",9,10,,
+Each Holy Sigil consumed reduces the remaining CD by 1s.",Shkni22,-2,6,1,0,
+Shkni19,Strength,Strength.png,Strength + 10,Shkni24,0,6,1,0,
+Shkni20,Light Attack,LightAttack.png,Light Attack + 5,Shkni25,1,6,1,0,
+Shkni21,Light Attack,LightAttack.png,Light Attack + 5,Shkni26,2,6,1,0,
+Shkni22,Stamina,Stamina.png,Stamina + 30,Shkni27,-2,7,1,0,
+Shkni23,Condemn Time Limit,CondemnTimeLimit.png,"When Condemn deals damage, it immediately cools down 1 Holy Sigil (prioritizing the Holy Sigil with the longest remaining CD).",,-1,7,1,0,
+Shkni24,Stamina,Stamina.png,Stamina + 30,Shkni28,0,7,1,0,
+Shkni25,Stamina,Stamina.png,Stamina + 30,Shkni29,1,7,1,0,
+Shkni26,Stamina,Stamina.png,Stamina + 30,Shkni30,2,7,1,0,
+Shkni27,Light of Condemn,LightofCondemn.png,"While inside a Divine Circle, your Condemn is enhanced—thrusting a blade of light forward and dealing double DMG.",,-1,8,1,0,
+Shkni28,Life Enhancement,LifeEnhancement.png,"When Strength reaches 500 points, Max HP +12%.",,0,8,1,0,
+Shkni29,Blessing of Holy Sigil,BlessingofHolySigil.png,"When using a Skill that consumes Holy Sigils, 20% chance for your next Holy Sigil-consuming skill to consume no Holy Sigils. The effect lasts for 8s or until a Holy Sigil-consuming skill is cast.",,1,8,1,0,
+Shkni30,Energy Guard,EnergyGuard.png,"After Casting the Ultimate, the aggro generated by Allies is transferred to oneself, lasting for 6s.",,2,8,1,0,
+Recov00,Recovery Spec,TRUE,,,9,10,,,
 Recov01,Recovery Spec,RecoverySpec.png,"Continue to enhance the ability to use Valor Bash.
-Radiant Impact is accompanied by Radiant Impact, and when Radiant Impact hits an enemy target, it taunts them.","Recov02,Recov03",0,0,1,0
-Recov02,Stamina,Stamina.png,Stamina + 30,"Recov04,Recov05",-1,1,1,0
-Recov03,Stamina,Stamina.png,Stamina + 30,"Recov05,Recov06",1,1,1,0
-Recov04,Strength,Strength.png,Strength + 10,Recov07,-2,2,1,0
-Recov05,Light Attack,LightAttack.png,Light Attack + 5,"Recov08,Recov09,Recov13",0,2,1,0
-Recov06,Strength,Strength.png,Strength + 10,Recov10,2,2,1,0
-Recov07,Holy Light Time Limit,HolyLightTimeLimit.png,"During Aegis Ward, when Expertise deal Crit DMG, there's a 50% fixed chance to instantly reset 1 Holy Sigil CD (prioritizing Holy Sigil with the longest remaining CD). This effect triggers only once when hitting multiple targets.","Recov11,Recov12",-2,3,1,0
-Recov08,Radiant Guard,RadiantGuard.png,"Casting Shield Toss immediately grants a Radiant shield equal to 100% ATK (depending on Adventurer Level, up to 200%). The Overdrive of Shield Toss +1.",Recov12,-1,3,1,0
-Recov09,Divine Circle Defender,DivineCircleDefender.png,"While within the Divine Circle, the Armor effect provided by Valor Bash +30%.",Recov14,1,3,1,0
-Recov10,Radiant Heal,RadiantHeal.png,Increases Judgment Healing by 25%.,"Recov14,Recov15",2,3,1,0
-Recov11,Stamina,Stamina.png,Stamina + 30,"Recov16,Recov26",-3,4,1,0
-Recov12,Strength,Strength.png,Strength + 10,"Recov16,Recov17,Recov18",-1,4,1,0
+Radiant Impact is accompanied by Radiant Impact, and when Radiant Impact hits an enemy target, it taunts them.","Recov02,Recov03",0,0,1,0,
+Recov02,Stamina,Stamina.png,Stamina + 30,"Recov04,Recov05",-1,1,1,0,
+Recov03,Stamina,Stamina.png,Stamina + 30,"Recov05,Recov06",1,1,1,0,
+Recov04,Strength,Strength.png,Strength + 10,Recov07,-2,2,1,0,
+Recov05,Light Attack,LightAttack.png,Light Attack + 5,"Recov08,Recov09,Recov13",0,2,1,0,
+Recov06,Strength,Strength.png,Strength + 10,Recov10,2,2,1,0,
+Recov07,Holy Light Time Limit,HolyLightTimeLimit.png,"During Aegis Ward, when Expertise deal Crit DMG, there's a 50% fixed chance to instantly reset 1 Holy Sigil CD (prioritizing Holy Sigil with the longest remaining CD). This effect triggers only once when hitting multiple targets.","Recov11,Recov12",-2,3,1,0,
+Recov08,Radiant Guard,RadiantGuard.png,"Casting Shield Toss immediately grants a Radiant shield equal to 100% ATK (depending on Adventurer Level, up to 200%). The Overdrive of Shield Toss +1.",Recov12,-1,3,1,0,
+Recov09,Divine Circle Defender,DivineCircleDefender.png,"While within the Divine Circle, the Armor effect provided by Valor Bash +30%.",Recov14,1,3,1,0,
+Recov10,Radiant Heal,RadiantHeal.png,Increases Judgment Healing by 25%.,"Recov14,Recov15",2,3,1,0,
+Recov11,Stamina,Stamina.png,Stamina + 30,"Recov16,Recov26",-3,4,1,0,
+Recov12,Strength,Strength.png,Strength + 10,"Recov16,Recov17,Recov18",-1,4,1,0,
 Recov13,Oracle,Oracle.png,"When a skill that consumes Holy Sigil critically hits, gain an additional 30% Light Energy.
-Crit DMG of skills that consume Light Energy +30%.",,0,4,1,0
-Recov14,Strength,Strength.png,Strength + 10,"Recov18,Recov19,Recov20",1,4,1,0
-Recov15,Stamina,Stamina.png,Stamina + 30,"Recov20,Recov30",3,4,1,0
-Recov16,Light Attack,LightAttack.png,Light Attack + 5,Recov21,-2,5,1,0
-Recov17,Stamina,Stamina.png,Stamina + 30,Recov22,-1,5,1,0
+Crit DMG of skills that consume Light Energy +30%.",,0,4,1,0,
+Recov14,Strength,Strength.png,Strength + 10,"Recov18,Recov19,Recov20",1,4,1,0,
+Recov15,Stamina,Stamina.png,Stamina + 30,"Recov20,Recov30",3,4,1,0,
+Recov16,Light Attack,LightAttack.png,Light Attack + 5,Recov21,-2,5,1,0,
+Recov17,Stamina,Stamina.png,Stamina + 30,Recov22,-1,5,1,0,
 Recov18,Reckon Blaze,ReckonBlaze.png,"When Valor Bash deals Crit DMG, gain Blazing.
 Casting Aegis Ward guarantees Blazing.
-Blazing: For the next 10s, Reckoning evolves into Inferno Reckon.",,0,5,1,0
-Recov19,Stamina,Stamina.png,Stamina + 30,Recov22,1,5,1,0
-Recov20,Light Attack,LightAttack.png,Light Attack + 5,Recov23,2,5,1,0
-Recov21,Shield Impact,ShieldImpact.png,"Hold Valor Bash to charge, then dash forward a short distance.",Recov24,-1,6,1,0
-Recov22,Holy Barrier,HolyBarrier.png,"After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.","Recov24,Recov25",0,6,1,0
-Recov23,Reckon Shield,ReckonShield.png,"Each time Inferno Reckon or Reckoning deals Crit DMG to 1 enemy target, Block chance +5%, lasting for 10s, stacking up to a maximum of 5 layers.",Recov25,1,6,1,0
-Recov24,Strength,Strength.png,Strength + 10,"Recov27,Recov28",-1,7,1,0
-Recov25,Strength,Strength.png,Strength + 10,"Recov28,Recov29",1,7,1,0
+Blazing: For the next 10s, Reckoning evolves into Inferno Reckon.",,0,5,1,0,
+Recov19,Stamina,Stamina.png,Stamina + 30,Recov22,1,5,1,0,
+Recov20,Light Attack,LightAttack.png,Light Attack + 5,Recov23,2,5,1,0,
+Recov21,Shield Impact,ShieldImpact.png,"Hold Valor Bash to charge, then dash forward a short distance.",Recov24,-1,6,1,0,
+Recov22,Holy Barrier,HolyBarrier.png,"After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.","Recov24,Recov25",0,6,1,0,
+Recov23,Reckon Shield,ReckonShield.png,"Each time Inferno Reckon or Reckoning deals Crit DMG to 1 enemy target, Block chance +5%, lasting for 10s, stacking up to a maximum of 5 layers.",Recov25,1,6,1,0,
+Recov24,Strength,Strength.png,Strength + 10,"Recov27,Recov28",-1,7,1,0,
+Recov25,Strength,Strength.png,Strength + 10,"Recov28,Recov29",1,7,1,0,
 Recov26,Lightforged Balance,LightforgedBalance.png,"When your HP percentage is higher than your target's, DMG taken from that target -5%.
-When your HP percentage is lower than your target's, Judgment deals 50% more DMG.","Recov31,Recov32",-3,8,1,0
-Recov27,Ultimate Guard,UltimateGuard.png,"For 10s after casting Shield Toss, increases Block Chance by 15%.",Recov32,-2,8,1,0
-Recov28,Holy Summon,HolySummon.png,"When Shield Toss or Judgment deals DMG, 10% chance to trigger Divine Strike. If Crit DMG is dealt, the chance increases to 50%.",Recov33,0,8,1,0
-Recov29,Divine Circle Resonance,DivineCircleResonance.png,"For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",Recov34,2,8,1,0
-Recov30,Halo,Halo.png,"Divine Circle now has a halo effect, stunning enemy targets for 3s the first time it deals DMG.","Recov34,Recov35",3,8,1,0
-Recov31,Stamina,Stamina.png,Stamina + 30,Recov36,-3,9,1,0
-Recov32,Stamina,Stamina.png,Stamina + 30,"Recov37,Recov38",-2,9,1,0
-Recov33,Light Attack,LightAttack.png,Light Attack + 5,"Recov46,Recov47,Recov53",0,9,1,0
-Recov34,Stamina,Stamina.png,Stamina + 30,"Recov39,Recov40",2,9,1,0
-Recov35,Stamina,Stamina.png,Stamina + 30,Recov41,3,9,1,0
-Recov36,Shield Strike Enhancement,ShieldStrikeEnhancement.png,Increases Valor Bash DMG by 10%.,Recov44,-3,10,1,0
-Recov37,Stamina,Stamina.png,Stamina + 30,Recov42,-2,10,1,0
-Recov38,Fearless Shield,FearlessShield.png,"Each time Shield Toss deals DMG, gains Radiant Shield equal to 25% ATK (this ratio is affected by Adventurer Level, up to 50%).",Recov46,-1,10,1,0
-Recov39,Sword Dance,SwordDance.png,"When a Expertise Skill critically heals, gain a 15% healing bonus.",Recov47,1,10,1,0
-Recov40,Stamina,Stamina.png,Stamina + 30,Recov43,2,10,1,0
-Recov41,Shield Guard,ShieldGuard.png,"When Valor Bash deals Crit DMG, restores HP equal to 120% ATK.",Recov49,3,10,1,0
-Recov42,Light's Crit,Light'sCrit.png,Crit +5%.,Recov45,-2,11,1,0
-Recov43,Stamina,Stamina.png,Stamina + 30,"Recov48,Recov49",2,11,1,0
-Recov44,Stamina,Stamina.png,Stamina + 30,Recov50,-3,12,1,0
-Recov45,Aegis Ward's Anthem,AegisWard'sAnthem.png,"For every 2 Holy Sigils consumed, the remaining CD of Aegis Ward -1 second.",Recov51,-2,12,1,0
+When your HP percentage is lower than your target's, Judgment deals 50% more DMG.","Recov31,Recov32",-3,8,1,0,
+Recov27,Ultimate Guard,UltimateGuard.png,"For 10s after casting Shield Toss, increases Block Chance by 15%.",Recov32,-2,8,1,0,
+Recov28,Holy Summon,HolySummon.png,"When Shield Toss or Judgment deals DMG, 10% chance to trigger Divine Strike. If Crit DMG is dealt, the chance increases to 50%.",Recov33,0,8,1,0,
+Recov29,Divine Circle Resonance,DivineCircleResonance.png,"For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",Recov34,2,8,1,0,
+Recov30,Halo,Halo.png,"Divine Circle now has a halo effect, stunning enemy targets for 3s the first time it deals DMG.","Recov34,Recov35",3,8,1,0,
+Recov31,Stamina,Stamina.png,Stamina + 30,Recov36,-3,9,1,0,
+Recov32,Stamina,Stamina.png,Stamina + 30,"Recov37,Recov38",-2,9,1,0,
+Recov33,Light Attack,LightAttack.png,Light Attack + 5,"Recov46,Recov47,Recov53",0,9,1,0,
+Recov34,Stamina,Stamina.png,Stamina + 30,"Recov39,Recov40",2,9,1,0,
+Recov35,Stamina,Stamina.png,Stamina + 30,Recov41,3,9,1,0,
+Recov36,Shield Strike Enhancement,ShieldStrikeEnhancement.png,Increases Valor Bash DMG by 10%.,Recov44,-3,10,1,0,
+Recov37,Stamina,Stamina.png,Stamina + 30,Recov42,-2,10,1,0,
+Recov38,Fearless Shield,FearlessShield.png,"Each time Shield Toss deals DMG, gains Radiant Shield equal to 25% ATK (this ratio is affected by Adventurer Level, up to 50%).",Recov46,-1,10,1,0,
+Recov39,Sword Dance,SwordDance.png,"When a Expertise Skill critically heals, gain a 15% healing bonus.",Recov47,1,10,1,0,
+Recov40,Stamina,Stamina.png,Stamina + 30,Recov43,2,10,1,0,
+Recov41,Shield Guard,ShieldGuard.png,"When Valor Bash deals Crit DMG, restores HP equal to 120% ATK.",Recov49,3,10,1,0,
+Recov42,Light's Crit,Light'sCrit.png,Crit +5%.,Recov45,-2,11,1,0,
+Recov43,Stamina,Stamina.png,Stamina + 30,"Recov48,Recov49",2,11,1,0,
+Recov44,Stamina,Stamina.png,Stamina + 30,Recov50,-3,12,1,0,
+Recov45,Aegis Ward's Anthem,AegisWard'sAnthem.png,"For every 2 Holy Sigils consumed, the remaining CD of Aegis Ward -1 second.",Recov51,-2,12,1,0,
 Recov46,Strength ,Strength.png,"Strength
 
-Strength + 10",Recov52,-1,12,1,0
-Recov47,Light Attack,LightAttack.png,Light Attack + 5,Recov54,1,12,1,0
-Recov48,Light Attack,LightAttack.png,Light Attack + 5,Recov55,2,12,1,0
-Recov49,Strength,Strength.png,Strength + 10,Recov56,3,12,1,0
-Recov50,Holy Heal,HolyHeal.png,"While having Radiant Shield, gains 12% healing bonus.",,-3,13,1,0
-Recov51,Judgment of All Beings,JudgmentofAllBeings.png,"When Judgment hits only 1 enemy target, its damage +25%.",Recov57,-2,13,1,0
-Recov52,Ultimate Strike,UltimateStrike.png,"When Divine Strike deals DMG, increases Strength by 2% for 10s, stacking up to 5 times.",Recov57,-1,13,1,0
+Strength + 10",Recov52,-1,12,1,0,
+Recov47,Light Attack,LightAttack.png,Light Attack + 5,Recov54,1,12,1,0,
+Recov48,Light Attack,LightAttack.png,Light Attack + 5,Recov55,2,12,1,0,
+Recov49,Strength,Strength.png,Strength + 10,Recov56,3,12,1,0,
+Recov50,Holy Heal,HolyHeal.png,"While having Radiant Shield, gains 12% healing bonus.",,-3,13,1,0,
+Recov51,Judgment of All Beings,JudgmentofAllBeings.png,"When Judgment hits only 1 enemy target, its damage +25%.",Recov57,-2,13,1,0,
+Recov52,Ultimate Strike,UltimateStrike.png,"When Divine Strike deals DMG, increases Strength by 2% for 10s, stacking up to 5 times.",Recov57,-1,13,1,0,
 Recov53,Lightforged Greatsword,LightforgedGreatsword.png,"After every 10 casts of Judgment, the next Judgment is enhanced into Scorching Judgment.
 Scorching Judgment: Summon a holy greatsword to descend upon the target area for 5s, healing yourself (Healing equal to that of Judgment) while dealing damage over time to nearby enemies and inflicting Scorch, totally dealing physical DMG equal to 600% ATK (scales with Judgment level/rank).
-Scorch: Reduces damage taken from the target by 3% for 10s. Stacks up to 10 times. Grants 3 stacks of Scorch on Crit.",,0,13,1,0
-Recov54,Light Chain,LightChain.png,"While Aegis Ward is active, the chance of Divine Strike is doubled. Every 3 times Divine Strike is triggered, the duration of Aegis Ward is extended by 1 second.",Recov58,1,13,1,0
-Recov55,Divine Circle Blessing,DivineCircleBlessing.png,"While within the Divine Circle, your Healing Receive effect +10%.",Recov58,2,13,1,0
-Recov56,Light Protection,LightProtection.png,"While having Radiant Shield, gain 5% Lightal Bonus.",,3,13,1,0
-Recov57,Strength,Strength.png,Strength + 10,Recov59,-2,14,1,0
-Recov58,Strength,Strength.png,Strength + 10,Recov60,2,14,1,0
-Recov59,Judgment Revelation,JudgmentRevelation.png,"When Divine Strike Crits, there's a 50% fixed chance to automatically cast Judgment on the target (this Judgment cannot trigger Divine Strike).",,-1,15,1,0
+Scorch: Reduces damage taken from the target by 3% for 10s. Stacks up to 10 times. Grants 3 stacks of Scorch on Crit.",,0,13,1,0,
+Recov54,Light Chain,LightChain.png,"While Aegis Ward is active, the chance of Divine Strike is doubled. Every 3 times Divine Strike is triggered, the duration of Aegis Ward is extended by 1 second.",Recov58,1,13,1,0,
+Recov55,Divine Circle Blessing,DivineCircleBlessing.png,"While within the Divine Circle, your Healing Receive effect +10%.",Recov58,2,13,1,0,
+Recov56,Light Protection,LightProtection.png,"While having Radiant Shield, gain 5% Lightal Bonus.",,3,13,1,0,
+Recov57,Strength,Strength.png,Strength + 10,Recov59,-2,14,1,0,
+Recov58,Strength,Strength.png,Strength + 10,Recov60,2,14,1,0,
+Recov59,Judgment Revelation,JudgmentRevelation.png,"When Divine Strike Crits, there's a 50% fixed chance to automatically cast Judgment on the target (this Judgment cannot trigger Divine Strike).",,-1,15,1,0,
 Recov60,Aegis Ward's Retribution,AegisWard'sRetribution.png,"During Aegis Ward, Block chance is increased to 1.5 times.
-When attacked, reduces Aegis Ward's remaining CD by 0.5s. This effect can only trigger once per 1 second.",,1,15,1,0
-Shiel00,Shield Spec,TRUE,"Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30","Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30",11,10,,
+When attacked, reduces Aegis Ward's remaining CD by 0.5s. This effect can only trigger once per 1 second.",,1,15,1,0,
+Shiel00,Shield Spec,TRUE,"Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30","Shkni01,Shkni02,Shkni03,Shkni04,Shkni05,Shkni06,Shkni07,Shkni08,Shkni09,Shkni10,Shkni11,Shkni12,Shkni13,Shkni14,Shkni15,Shkni16,Shkni17,Shkni18,Shkni19,Shkni20,Shkni21,Shkni22,Shkni23,Shkni24,Shkni25,Shkni26,Shkni27,Shkni28,Shkni29,Shkni30",11,10,,,
 Shiel01,Shield Spec,ShieldSpec.png,"Replaces Special Attack with Vanguard Strike and enhances its power.
 Each additional enemy hit by Vanguard Strike grants 2 extra Photon Energy, up to 10.
 Successfully Block prevents losing the stacks of Lightforged Barrier.
 
-Lightforged Barrier: Each stack increases Max HP by 2%, up to 10 stacks, with each instance of DMG removing 1 stack. It lasts 25s or until all stacks are consumed. Gaining stacks resets the duration.","Shiel02,Shiel03",0,0,1,0
-Shiel02,Stamina,Stamina.png,Stamina + 30,"Shiel04,Shiel05",-1,1,1,0
-Shiel03,Stamina,Stamina.png,Stamina + 30,"Shiel05,Shiel06",1,1,1,0
-Shiel04,Strength,Strength.png,Strength + 10,Shiel07,-2,2,1,0
-Shiel05,Light Attack,LightAttack.png,Light Attack + 5,"Shiel08,Shiel09,Shiel13",0,2,1,0
-Shiel06,Strength,Strength.png,Strength + 10,Shiel10,2,2,1,0
-Shiel07,Resolved to Return,ResolvedtoReturn.png,"Each time 1 stack of Lightforged Barrier is consumed or deducted, reduces the remaining CD of Radiance by 1 second.","Shiel11,Shiel12",-2,3,1,0
+Lightforged Barrier: Each stack increases Max HP by 2%, up to 10 stacks, with each instance of DMG removing 1 stack. It lasts 25s or until all stacks are consumed. Gaining stacks resets the duration.","Shiel02,Shiel03",0,0,1,0,
+Shiel02,Stamina,Stamina.png,Stamina + 30,"Shiel04,Shiel05",-1,1,1,0,
+Shiel03,Stamina,Stamina.png,Stamina + 30,"Shiel05,Shiel06",1,1,1,0,
+Shiel04,Strength,Strength.png,Strength + 10,Shiel07,-2,2,1,0,
+Shiel05,Light Attack,LightAttack.png,Light Attack + 5,"Shiel08,Shiel09,Shiel13",0,2,1,0,
+Shiel06,Strength,Strength.png,Strength + 10,Shiel10,2,2,1,0,
+Shiel07,Resolved to Return,ResolvedtoReturn.png,"Each time 1 stack of Lightforged Barrier is consumed or deducted, reduces the remaining CD of Radiance by 1 second.","Shiel11,Shiel12",-2,3,1,0,
 Shiel08,Bold Fearless,BoldFearless.png,"When Sacred Blade or Judgment deals DMG, there is a fixed 25% chance to cause Vanguard Strike to evolve into Vanguard Hunt.
 Vanguard Hunt: Deals Attack Damage equal to 240% ATK to the target, restores 2% of your max HP, and gains Indomitable Courage.
-Indomitable Courage: Increases Haste by 3% for 10s, stacking up to 10 times.",Shiel12,-1,3,1,0
-Shiel09,Divine Circle Chant,DivineCircleChant.png,The recovery rate of Holy Sigils from Haste +100%.,Shiel14,1,3,1,0
+Indomitable Courage: Increases Haste by 3% for 10s, stacking up to 10 times.",Shiel12,-1,3,1,0,
+Shiel09,Divine Circle Chant,DivineCircleChant.png,The recovery rate of Holy Sigils from Haste +100%.,Shiel14,1,3,1,0,
 Shiel10,Holy Radiance,HolyRadiance.png,"When Sacred Blade hits an enemy target, it applies a Holy Mark to the target.
-Vanguard Strike can spread this Holy Mark to hit enemy targets.","Shiel14,Shiel15",2,3,1,0
-Shiel11,Stamina,Stamina.png,Stamina + 30,"Shiel16,Shiel26",-3,4,1,0
-Shiel12,Strength,Strength.png,Strength + 10,"Shiel16,Shiel17,Shiel18",-1,4,1,0
-Shiel13,Conquest Pursuit,ConquestPursuit.png,"While Zeal Crusade is active, Vanguard Strike evolves into Vanguard Hunt.",,0,4,1,0
-Shiel14,Strength,Strength.png,Strength + 10,"Shiel18,Shiel19,Shiel20",1,4,1,0
-Shiel15,Stamina,Stamina.png,Stamina + 30,"Shiel20,Shiel30",3,4,1,0
-Shiel16,Light Attack,LightAttack.png,Light Attack + 5,Shiel21,-2,5,1,0
-Shiel17,Stamina,Stamina.png,Stamina + 30,Shiel22,-1,5,1,0
-Shiel18,Adversity Enhancement,AdversityEnhancement.png,"Special Attack and damaging Expertise are enhanced based on missing HP. For every 1% HP lost, increases their DMG by 1%.",,0,5,1,0
-Shiel19,Stamina,Stamina.png,Stamina + 30,Shiel22,1,5,1,0
-Shiel20,Light Attack,LightAttack.png,Light Attack + 5,Shiel23,2,5,1,0
-Shiel21,Holy Strike,HolyStrike.png,"Each time 1 layer of Lightforged Barrier is consumed or deducted, 10% chance to obtain 1 Holy Sigil.",Shiel24,-1,6,1,0
-Shiel22,Holy Barrier,HolyBarrier.png,"After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.","Shiel24,Shiel25",0,6,1,0
-Shiel23,Lightforged Drive,LightforgedDrive.png,"When Casting Radiance, it automatically releases Judgment to up to 5 nearby enemy targets.",Shiel25,1,6,1,0
-Shiel24,Strength,Strength.png,Strength + 10,"Shiel27,Shiel28",-1,7,1,0
-Shiel25,Strength,Strength.png,Strength + 10,"Shiel28,Shiel29",1,7,1,0
+Vanguard Strike can spread this Holy Mark to hit enemy targets.","Shiel14,Shiel15",2,3,1,0,
+Shiel11,Stamina,Stamina.png,Stamina + 30,"Shiel16,Shiel26",-3,4,1,0,
+Shiel12,Strength,Strength.png,Strength + 10,"Shiel16,Shiel17,Shiel18",-1,4,1,0,
+Shiel13,Conquest Pursuit,ConquestPursuit.png,"While Zeal Crusade is active, Vanguard Strike evolves into Vanguard Hunt.",,0,4,1,0,
+Shiel14,Strength,Strength.png,Strength + 10,"Shiel18,Shiel19,Shiel20",1,4,1,0,
+Shiel15,Stamina,Stamina.png,Stamina + 30,"Shiel20,Shiel30",3,4,1,0,
+Shiel16,Light Attack,LightAttack.png,Light Attack + 5,Shiel21,-2,5,1,0,
+Shiel17,Stamina,Stamina.png,Stamina + 30,Shiel22,-1,5,1,0,
+Shiel18,Adversity Enhancement,AdversityEnhancement.png,"Special Attack and damaging Expertise are enhanced based on missing HP. For every 1% HP lost, increases their DMG by 1%.",,0,5,1,0,
+Shiel19,Stamina,Stamina.png,Stamina + 30,Shiel22,1,5,1,0,
+Shiel20,Light Attack,LightAttack.png,Light Attack + 5,Shiel23,2,5,1,0,
+Shiel21,Holy Strike,HolyStrike.png,"Each time 1 layer of Lightforged Barrier is consumed or deducted, 10% chance to obtain 1 Holy Sigil.",Shiel24,-1,6,1,0,
+Shiel22,Holy Barrier,HolyBarrier.png,"After casting the Ultimate, leaves a Holy Barrier that blocks damage for friendly targets within the area. The Holy Barrier disappears after taking total damage equal to 200% of the caster's Max HP or after 15s.","Shiel24,Shiel25",0,6,1,0,
+Shiel23,Lightforged Drive,LightforgedDrive.png,"When Casting Radiance, it automatically releases Judgment to up to 5 nearby enemy targets.",Shiel25,1,6,1,0,
+Shiel24,Strength,Strength.png,Strength + 10,"Shiel27,Shiel28",-1,7,1,0,
+Shiel25,Strength,Strength.png,Strength + 10,"Shiel28,Shiel29",1,7,1,0,
 Shiel26,Lightforged Balance,LightforgedBalance.png,"When your HP percentage is higher than your target's, DMG taken from that target -5%.
-When your HP percentage is lower than your target's, Judgment deals 50% more DMG.","Shiel31,Shiel32",-3,8,1,0
-Shiel27,Zeal Haste,ZealHaste.png,"For every 15 points of Photon Energy consumed, the remaining CD of Zeal Crusade -1 second.",Shiel32,-2,8,1,0
+When your HP percentage is lower than your target's, Judgment deals 50% more DMG.","Shiel31,Shiel32",-3,8,1,0,
+Shiel27,Zeal Haste,ZealHaste.png,"For every 15 points of Photon Energy consumed, the remaining CD of Zeal Crusade -1 second.",Shiel32,-2,8,1,0,
 Shiel28,Radiant Core,RadiantCore.png,"Vanguard Hunt can grant Radiant Core.
-Repeatedly gaining Radiant Core reduces its 2s window.",Shiel33,0,8,1,0
-Shiel29,Divine Circle Resonance,DivineCircleResonance.png,"For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",Shiel34,2,8,1,0
-Shiel30,Overflow Healwall,OverflowHealwall.png,"When your accumulated overhealing reaches 10% of your Max HP, gains 1 stack of Lightforged Barrier.","Shiel34,Shiel35",3,8,1,0
-Shiel31,Stamina,Stamina.png,Stamina + 30,Shiel36,-3,9,1,0
-Shiel32,Stamina,Stamina.png,Stamina + 30,"Shiel37,Shiel38",-2,9,1,0
-Shiel33,Light Attack,LightAttack.png,Light Attack + 5,"Shiel46,Shiel47,Shiel53",0,9,1,0
-Shiel34,Stamina,Stamina.png,Stamina + 30,"Shiel39,Shiel40",2,9,1,0
-Shiel35,Stamina,Stamina.png,Stamina + 30,Shiel41,3,9,1,0
-Shiel36,Divine Guard,DivineGuard.png,"When in the Divine Circle, reduces all DMG taken by 10%.",Shiel44,-3,10,1,0
-Shiel37,Stamina,Stamina.png,Stamina + 30,Shiel42,-2,10,1,0
-Shiel38,Light Barrier,LightBarrier.png,Lightforged Barrier cap +2.,Shiel46,-1,10,1,0
-Shiel39,Ultimate Conquest,UltimateConquest.png,Increases Zeal Crusade DMG by 50%.,Shiel47,1,10,1,0
-Shiel40,Stamina,Stamina.png,Stamina + 30,Shiel43,2,10,1,0
-Shiel41,Sigil Pursuit,SigilPursuit.png,DMG dealt by Vanguard Hunt and Sacred Blade to targets with Holy Sigil increases by 20%.,Shiel49,3,10,1,0
-Shiel42,Judgment Improvement,JudgmentImprovement.png,"For each 1 stack of Lightforged Barrier you possess, Judgment gains 2% bonus healing.",Shiel45,-2,11,1,0
-Shiel43,Stamina,Stamina.png,Stamina + 30,"Shiel48,Shiel49",2,11,1,0
-Shiel44,Stamina,Stamina.png,Stamina + 30,Shiel50,-3,12,1,0
+Repeatedly gaining Radiant Core reduces its 2s window.",Shiel33,0,8,1,0,
+Shiel29,Divine Circle Resonance,DivineCircleResonance.png,"For each enemy inside Divine Circle, increases Divine Circle DMG by 25% and Divine Circle Healing by 5% (caps at 10 enemies).",Shiel34,2,8,1,0,
+Shiel30,Overflow Healwall,OverflowHealwall.png,"When your accumulated overhealing reaches 10% of your Max HP, gains 1 stack of Lightforged Barrier.","Shiel34,Shiel35",3,8,1,0,
+Shiel31,Stamina,Stamina.png,Stamina + 30,Shiel36,-3,9,1,0,
+Shiel32,Stamina,Stamina.png,Stamina + 30,"Shiel37,Shiel38",-2,9,1,0,
+Shiel33,Light Attack,LightAttack.png,Light Attack + 5,"Shiel46,Shiel47,Shiel53",0,9,1,0,
+Shiel34,Stamina,Stamina.png,Stamina + 30,"Shiel39,Shiel40",2,9,1,0,
+Shiel35,Stamina,Stamina.png,Stamina + 30,Shiel41,3,9,1,0,
+Shiel36,Divine Guard,DivineGuard.png,"When in the Divine Circle, reduces all DMG taken by 10%.",Shiel44,-3,10,1,0,
+Shiel37,Stamina,Stamina.png,Stamina + 30,Shiel42,-2,10,1,0,
+Shiel38,Light Barrier,LightBarrier.png,Lightforged Barrier cap +2.,Shiel46,-1,10,1,0,
+Shiel39,Ultimate Conquest,UltimateConquest.png,Increases Zeal Crusade DMG by 50%.,Shiel47,1,10,1,0,
+Shiel40,Stamina,Stamina.png,Stamina + 30,Shiel43,2,10,1,0,
+Shiel41,Sigil Pursuit,SigilPursuit.png,DMG dealt by Vanguard Hunt and Sacred Blade to targets with Holy Sigil increases by 20%.,Shiel49,3,10,1,0,
+Shiel42,Judgment Improvement,JudgmentImprovement.png,"For each 1 stack of Lightforged Barrier you possess, Judgment gains 2% bonus healing.",Shiel45,-2,11,1,0,
+Shiel43,Stamina,Stamina.png,Stamina + 30,"Shiel48,Shiel49",2,11,1,0,
+Shiel44,Stamina,Stamina.png,Stamina + 30,Shiel50,-3,12,1,0,
 Shiel45,Ascension of the Lightforged Barrier,AscensionoftheLightforgedBarrier.png,"Maximum Light Energy +20.
-When you have at least 5 stacks of Lightforged Barrier, the Judgment consumes 5 less Light Energy.",Shiel51,-2,12,1,0
-Shiel46,Stamina,Stamina.png,Stamina + 30,Shiel52,-1,12,1,0
-Shiel47,Light Attack,LightAttack.png,Light Attack + 5,Shiel54,1,12,1,0
-Shiel48,Light Attack,LightAttack.png,Light Attack + 5,Shiel55,2,12,1,0
-Shiel49,Stamina,Stamina.png,Stamina + 30,Shiel56,3,12,1,0
-Shiel50,Light Healing,LightHealing.png,"While having Radiant Shield, gains 12% healing bonus.",,-3,13,1,0
-Shiel51,Judgment of All Beings,JudgmentofAllBeings.png,"When Judgment hits only 1 enemy target, its damage +25%.",Shiel57,-2,13,1,0
-Shiel52,Ruthless Rewind,RuthlessRewind.png,"During the duration of Zeal Crusade, each time 1 Holy Sigil is consumed, it overdrives Zeal Crusade by 1 layer. When the Overdrive reaches 3 layers, Zeal Crusade bursts outward, dealing 200% ATK Attack Damage and is guaranteed to critically hit.",Shiel57,-1,13,1,0
-Shiel53,Wide Raid,WideRaid.png,"Increases Zeal Crusade range by 100%. While Zeal Crusade is active, the effect of Indomitable Courage is doubled.",,0,13,1,0
-Shiel54,Divine Circle Blessing,DivineCircleBlessing.png,"While within the Divine Circle, your Healing Receive effect +10%.",Shiel58,1,13,1,0
-Shiel55,Determination Slash,DeterminationSlash.png,"When Lightforged Barrier has fewer than 5 stacks, taking DMG no longer reduces its stacks. When Lightforged Barrier has 5 or more stacks, taking DMG has a 50% fixed chance not to reduce its stacks.",Shiel58,2,13,1,0
-Shiel56,Light Protection,LightProtection.png,"While having Radiant Shield, gain 5% Lightal Bonus.",,3,13,1,0
-Shiel57,Strength,Strength.png,Strength + 10,Shiel59,-2,14,1,0
-Shiel58,Strength,Strength.png,Strength + 10,Shiel60,2,14,1,0
-Shiel59,Decisive Blade,DecisiveBlade.png,"After Radiant Core explosion, Sacred Blade DMG +100% for 20s. Stacks up to 3 charges, casting Sacred Blade consumes one charge.",,-1,15,1,0
-Shiel60,Holy Sigil Enhancement,HolySigilEnhancement.png,"When Judgment deals DMG, the target takes double DMG from Holy Sigil for the next 5s.",,1,15,1,0
+When you have at least 5 stacks of Lightforged Barrier, the Judgment consumes 5 less Light Energy.",Shiel51,-2,12,1,0,
+Shiel46,Stamina,Stamina.png,Stamina + 30,Shiel52,-1,12,1,0,
+Shiel47,Light Attack,LightAttack.png,Light Attack + 5,Shiel54,1,12,1,0,
+Shiel48,Light Attack,LightAttack.png,Light Attack + 5,Shiel55,2,12,1,0,
+Shiel49,Stamina,Stamina.png,Stamina + 30,Shiel56,3,12,1,0,
+Shiel50,Light Healing,LightHealing.png,"While having Radiant Shield, gains 12% healing bonus.",,-3,13,1,0,
+Shiel51,Judgment of All Beings,JudgmentofAllBeings.png,"When Judgment hits only 1 enemy target, its damage +25%.",Shiel57,-2,13,1,0,
+Shiel52,Ruthless Rewind,RuthlessRewind.png,"During the duration of Zeal Crusade, each time 1 Holy Sigil is consumed, it overdrives Zeal Crusade by 1 layer. When the Overdrive reaches 3 layers, Zeal Crusade bursts outward, dealing 200% ATK Attack Damage and is guaranteed to critically hit.",Shiel57,-1,13,1,0,
+Shiel53,Wide Raid,WideRaid.png,"Increases Zeal Crusade range by 100%. While Zeal Crusade is active, the effect of Indomitable Courage is doubled.",,0,13,1,0,
+Shiel54,Divine Circle Blessing,DivineCircleBlessing.png,"While within the Divine Circle, your Healing Receive effect +10%.",Shiel58,1,13,1,0,
+Shiel55,Determination Slash,DeterminationSlash.png,"When Lightforged Barrier has fewer than 5 stacks, taking DMG no longer reduces its stacks. When Lightforged Barrier has 5 or more stacks, taking DMG has a 50% fixed chance not to reduce its stacks.",Shiel58,2,13,1,0,
+Shiel56,Light Protection,LightProtection.png,"While having Radiant Shield, gain 5% Lightal Bonus.",,3,13,1,0,
+Shiel57,Strength,Strength.png,Strength + 10,Shiel59,-2,14,1,0,
+Shiel58,Strength,Strength.png,Strength + 10,Shiel60,2,14,1,0,
+Shiel59,Decisive Blade,DecisiveBlade.png,"After Radiant Core explosion, Sacred Blade DMG +100% for 20s. Stacks up to 3 charges, casting Sacred Blade consumes one charge.",,-1,15,1,0,
+Shiel60,Holy Sigil Enhancement,HolySigilEnhancement.png,"When Judgment deals DMG, the target takes double DMG from Holy Sigil for the next 5s.",,1,15,1,0,

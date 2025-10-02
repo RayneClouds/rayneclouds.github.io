@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mark01",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark02",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark04",
+    "name": "Wolf Pact",
+    "icon": "WolfPact.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Tames a Wild Wolf to fight alongside you. Storm Arrow has a 30% fixed chance to trigger Coordinated Attack.\n\nWild Wolf\nA Wild Wolf fights alongside you.\nBasic Attack: Sweeps the enemy, dealing Attack Damage equal to 60% ATK (which scales with the Level/Tier of your Basic Attack).\nCoordinated Attack: Wild Wolf leaps to the enemy and bites, dealing Attack Damage equal to 100% ATK (which scales with the Level/Tier of your Basic Attack).",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark05",
+    "name": "Agility Conversion",
+    "icon": "AgilityC.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Every 10 points of Agility provide 2 point of Haste.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark06",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark07",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark08",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark09",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark10",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark11",
+    "name": "Vulnerable Strike",
+    "icon": "Vulnerab.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.\nVulnerability: Increases the DMG you deal to the target by 10% for 5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark12",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark13",
+    "name": "Quick Shot",
+    "icon": "QuickSho.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Attack Speed +3%",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark14",
+    "name": "Rapid Shot",
+    "icon": "RapidSho.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Every 5% Haste provides an additional 1% attack speed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark15",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark16",
+    "name": "Psychic Surge",
+    "icon": "PsychicS.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "For every 15 Special Attacks cast, Photon Energy granted by the next cast of Arrow Rain +100%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark17",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark18",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark19",
+    "name": "Beast Power",
+    "icon": "BeastPow.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Pet damage +10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark20",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark21",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark22",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -1,
+    "gy": 7,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark23",
+    "name": "Overcharge",
+    "icon": "Overchar.png",
+    "gx": 1,
+    "gy": 7,
+    "desc": "When Basic Attacks deal DMG, 5% chance to instantly grant an overdrive to Special Attack, as long as the overdrive limit hasn't been reached..",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark24",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark25",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark26",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark27",
+    "name": "Photon Limit",
+    "icon": "PhotonLi.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Increases Max Photon Energy by 20, extending the duration of Photon Reforge. Unaffected when Wildpack Spec is active.\nIf Falconry Spec is activated, the effect becomes: Max Photon Energy -20 but Photon Reforge state can be entered more quickly.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark28",
+    "name": "Meditation",
+    "icon": "Meditati.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "While in Photon Reforge, Photon Energy drain per second is reduced from 25 to 20, allowing the effect to last longer.\nUnaffected when Wildpack Spec is active.\nIf Falconry Spec is activated, the effect becomes: Photon Energy regeneration is increased by 2 to 3 points per second, reducing the time required to enter Photon Reforge.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark29",
+    "name": "Dexterity",
+    "icon": "Dexterit.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "When Agility reaches 500 points, attack speed +5%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "mark30",
+    "name": "Explosive Arrow",
+    "icon": "Explosiv.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "When a Basic Attack or Special Attack deals DMG, it has a fixed 10% chance to fire an Explosive Arrow, once every 3s.",
+    "cost": null,
+    "seal": null
+  }
+]

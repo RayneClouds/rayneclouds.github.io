@@ -1,0 +1,182 @@
+id,name,icon,desc,children,gx,gy,cost,seal
+Verdo00,Verdant Oracle,FALSE,,,10,1,,
+Verdo01,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo03,0,0,1,0
+Verdo02,Inspiration,Inspiration.png,Applies Inspiration to yourself and allies within 30 meters.,Verdo06,-1,1,1,0
+Verdo03,Stamina,Stamina.png,Stamina + 30,"Verdo02,Verdo04,Verdo05",0,1,1,0
+Verdo04,Intellect Conversion,IntellectConversion.png,Every 10 points of Intellect provides 1 point of MATK.,Verdo08,1,1,1,0
+Verdo05,Regen Bud,RegenBud.png,"Casting a Special Attack grants 1 Regen Bud.
+
+Initial cap of Regen Buds: 4.
+When an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.
+When an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",Verdo07,0,2,1,0
+Verdo06,Intellect,Intellect.png,Intellect + 10,Verdo09,-1,3,1,0
+Verdo07,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo10,0,3,1,0
+Verdo08,Intellect,Intellect.png,Intellect + 10,Verdo11,1,3,1,0
+Verdo09,Stamina,Stamina.png,Stamina + 30,Verdo12,-2,4,1,0
+Verdo10,Stamina,Stamina.png,Stamina + 30,"Verdo13,Verdo14",0,4,1,0
+Verdo11,Stamina,Stamina.png,Stamina + 30,"Verdo14,Verdo15",2,4,1,0
+Verdo12,Defensive Blessing,DefensiveBlessing.png,Inspiration additionally grants the target 200 Armor.,Verdo16,-1,5,1,0
+Verdo13,Breath of Buds,BreathofBuds.png,Increases Max Regen Bud by 4.,Verdo19,0,5,1,0
+Verdo14,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo17,1,5,1,0
+Verdo15,Energy Surge,EnergySurge.png,Every 2% haste provides 1% energy natural recovery efficiency.,"Verdo18,Verdo20",2,5,1,0
+Verdo16,Intellect,Intellect.png,Intellect + 10,Verdo21,-2,6,1,0
+Verdo17,Regeneration Bud,RegenerationBud.png,"When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.","Verdo19,Verdo20",1,6,1,0
+Verdo18,Intellect,Intellect.png,Intellect + 10,Verdo25,3,6,1,0
+Verdo19,Stamina,Stamina.png,Stamina + 30,"Verdo22,Verdo23",0,7,1,0
+Verdo20,Forest Attack,ForestAttack.png,Forest Attack + 5,"Verdo23,Verdo24",2,7,1,0
+Verdo21,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo26,-2,8,1,0
+Verdo22,Stamina,Stamina.png,Stamina + 30,Verdo27,0,8,1,0
+Verdo23,Intellect,Intellect.png,Intellect + 10,Verdo28,1,8,1,0
+Verdo24,Stamina,Stamina.png,Stamina + 30,Verdo29,2,8,1,0
+Verdo25,Stamina,Stamina.png,Stamina + 30,Verdo30,3,8,1,0
+Verdo26,Healing Breath,HealingBreath.png,"When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",,-1,9,1,0
+Verdo27,Divine Ascension of the Flower Realm,DivineAscensionoftheFlowerRealm.png,"When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",,0,9,1,0
+Verdo28,Dancing Seed,DancingSeed.png,"When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.
+For every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",,1,9,1,0
+Verdo29,Omnipotent Breath,OmnipotentBreath.png,"When Intellect reaches 500, versatility +4%.",,2,9,1,0
+Verdo30,Brimming Vitality,BrimmingVitality.png,Increases Energy REG SPD by 20%,,3,9,1,0
+Smite00,Smite,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,9,11,,
+Smite01,Smite Spec,SmiteSpec.png,"Further enhances the ability to use Wild Bloom.
+Wild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.
+Symbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.
+
+Healing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.","Smite02,Smite03",0,0,1,0
+Smite02,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite04,-1,1,1,0
+Smite03,Stamina,Stamina.png,Stamina + 30,Smite05,1,1,1,0
+Smite04,Nature Shield,NatureShield.png,"When Wild Bloom heals a target, it also applies Nature Shield to them.
+Targets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.","Smite06,Smite07",-1,2,1,0
+Smite05,Pulse Duality,PulseDuality.png,"When Regen Pulse is actively used, it spreads twice.","Smite07,Smite08",1,2,1,0
+Smite06,Stamina,Stamina.png,Stamina + 30,"Smite09,Smite10",-2,3,1,0
+Smite07,Stamina,Stamina.png,Stamina + 30,"Smite10,Smite11",0,3,1,0
+Smite08,Intellect,Intellect.png,Intellect + 10,"Smite12,Smite13",2,3,1,0
+Smite09,Thorns,Thorns.png,"When Wild Seed hits a target, it inflicts Thorn on them.
+Verdant DMG dealt by players to targets with Thorn +5%.",Smite14,-3,4,1,0
+Smite10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite15,Smite17",-1,4,1,0
+Smite11,Intellect,Intellect.png,Intellect + 10,"Smite16,Smite18",0,4,1,0
+Smite12,Shelter,Shelter.png,"Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.","Smite16,Smite20",1,4,1,0
+Smite13,Luck Damage,LuckDamage.png,"Lucky Hit DMG Multiplier +5%.
+Every 1% Luck grants 1% Lucky Hit DMG Multiplier.",,3,4,1,0
+Smite14,Intellect,Intellect.png,Intellect + 10,Smite21,-3,5,1,0
+Smite15,Wild Blessing,WildBlessing.png,"Wild Bloom now stores up to 2 overdrives.
+Wild Bloom's Energy cost -15%.",,-2,5,1,0
+Smite16,Stamina,Stamina.png,Stamina + 30,Smite19,1,5,1,0
+Smite17,Final Bloomwheel,FinalBloomwheel.png,"When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.","Smite22,Smite23",-1,6,1,0
+Smite18,Bloomheal,Bloomheal.png,"Replace Ultimate, Divine Circle Bloom with Bloomheal.",Smite23,0,6,1,0
+Smite19,Intellect,Intellect.png,Intellect + 10,"Smite24,Smite30",1,6,1,0
+Smite20,Stamina,Stamina.png,Stamina + 30,Smite25,3,6,1,0
+Smite21,Wide-area Thorns,Wide-areaThorns.png,Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.,Smite26,-3,7,1,0
+Smite22,Stamina,Stamina.png,Stamina + 30,Smite26,-2,7,1,0
+Smite23,Stamina,Stamina.png,Stamina + 30,"Smite27,Smite28",-1,7,1,0
+Smite24,Pulse Retrospect,PulseRetrospect.png,"Regen Pulse returns to your position after it reaches the max distance.
+Regen Pulse now deals DMG to enemies.","Smite28,Smite29",1,7,1,0
+Smite25,Bud Acquisition,BudAcquisition.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",,3,7,1,0
+Smite26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite31,Smite32,Smite33",-2,8,1,0
+Smite27,Feral Seed Symbiosis,FeralSeedSymbiosis.png,"When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",Smite33,-1,8,1,0
+Smite28,Intellect,Intellect.png,Intellect + 10,"Smite33,Smite34,Smite35",0,8,1,0
+Smite29,Pulse Echo,PulseEcho.png,"When dealing DMG, Infusion grants 1 stack of Pulse Echo.
+Pulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.","Smite35,Smite36",2,8,1,0
+Smite30,Breath of Symbiosis,BreathofSymbiosis.png,Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.,Smite36,3,8,1,0
+Smite31,Laceration,Laceration.png,"When dealing DMG, Infusion inflicts Laceration on the target.
+Laceration: Takes 100% more DMG from Thorn in 2s.",,-3,9,1,0
+Smite32,Stamina,Stamina.png,Stamina + 30,Smite37,-2,9,1,0
+Smite33,Stamina,Stamina.png,Stamina + 30,"Smite38,Smite40",-1,9,1,0
+Smite34,Stag Charge,StagCharge.png,"After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.
+Casting Stag Charge instants grants 3 Regen Buds.","Smite38,Smite42",0,9,1,0
+Smite35,Intellect,Intellect.png,Intellect + 10,Smite46,1,9,1,0
+Smite36,Intellect,Intellect.png,Intellect + 10,"Smite39,Smite52",3,9,1,0
+Smite37,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
+Revival: Restores HP equal to 50% of the DMG taken over 5s.",,-3,10,1,0
+Smite38,Stamina,Stamina.png,Stamina + 30,Smite41,-1,10,1,0
+Smite39,Arcane of Green,ArcaneofGreen.png,"When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",Smite43,2,10,1,0
+Smite40,Intellect,Intellect.png,Intellect + 10,"Smite44,Smite47",-3,11,1,0
+Smite41,Verdant Blessing,VerdantBlessing.png,"When HP of an ally with Inspiration drops below 20%, Blessing triggers.
+Blessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.","Smite44,Smite48",-1,11,1,0
+Smite42,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite45,0,11,1,0
+Smite43,Intellect,Intellect.png,Intellect + 10,"Smite46,Smite51",2,11,1,0
+Smite44,Flourish,Flourish.png,"When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",Smite48,-2,12,1,0
+Smite45,Double Infusion,DoubleInfusion.png,"After casting Stag Charge, the number of channels for the next Infusion +100%.",Smite49,0,12,1,0
+Smite46,Symbiosis Extension,SymbiosisExtension.png,Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.,"Smite50,Smite51",1,12,1,0
+Smite47,Swift Bud,SwiftBud.png,"Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",,-3,13,1,0
+Smite48,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite57",-1,13,1,0
+Smite49,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite54,Smite55",0,13,1,0
+Smite50,Intellect,Intellect.png,Intellect + 10,Smite55,1,13,1,0
+Smite51,Stamina,Stamina.png,Stamina + 30,"Smite55,Smite56",2,13,1,0
+Smite52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",,3,13,1,0
+Smite53,Intellect,Intellect.png,Intellect + 10,Smite58,-1,14,1,0
+Smite54,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite59,0,14,1,0
+Smite55,Stamina,Stamina.png,Stamina + 30,Smite60,1,14,1,0
+Smite56,Swift Shelter,SwiftShelter.png,"Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",,3,14,1,0
+Smite57,Wild Luck,WildLuck.png,"When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",,-3,15,1,0
+Smite58,Pulse Breath,PulseBreath.png,"If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",,-1,15,1,0
+Smite59,Verdant Impact,VerdantImpact.png,"For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",,0,15,1,0
+Smite60,Wild Protection,WildProtection.png,"The charge count of Nature Ward +1.
+The charge time of Nature Ward decreases by 5s.",,2,15,1,0
+Lifeb00,Life Bloom,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,11,11,,
+Lifeb01,Lifebind Spec,LifebindSpec.png,"Replace Special Attack with Life Bloom and enhances the skill.
+Life Bloom generates 20% more healing.
+Casting Life Bloom grants 1 additional Regen Bud.","Lifeb02,Lifeb03",0,0,1,0
+Lifeb02,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb04,-1,1,1,0
+Lifeb03,Stamina,Stamina.png,Stamina + 30,Lifeb05,1,1,1,0
+Lifeb04,Healing Infusion,HealingInfusion.png,Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%,"Lifeb06,Lifeb07",-1,2,1,0
+Lifeb05,Lifeforce Extension,LifeforceExtension.png,"Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.","Lifeb07,Lifeb08",1,2,1,0
+Lifeb06,Stamina,Stamina.png,Stamina + 30,"Lifeb09,Lifeb10",-2,3,1,0
+Lifeb07,Stamina,Stamina.png,Stamina + 30,"Lifeb10,Lifeb11",0,3,1,0
+Lifeb08,Intellect,Intellect.png,Intellect + 10,"Lifeb12,Lifeb13",2,3,1,0
+Lifeb09,Energy Arcane,EnergyArcane.png,"During Growth Arcane, increases ERG REG SPD by 50%.
+Increases Grove Wish's Crit by 10%.",Lifeb14,-3,4,1,0
+Lifeb10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb15,Lifeb17",-1,4,1,0
+Lifeb11,Intellect,Intellect.png,Intellect + 10,"Lifeb16,Lifeb18",0,4,1,0
+Lifeb12,Transcendence,Transcendence.png,Every 60 self-heals from Nourish grants Transcendence.,"Lifeb16,Lifeb20",1,4,1,0
+Lifeb13,Verdant Nourishment,VerdantNourishment.png,"If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",,3,4,1,0
+Lifeb14,Intellect,Intellect.png,Intellect + 10,Lifeb21,-3,5,1,0
+Lifeb15,Life Bloom,LifeBloom.png,"Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",,-2,5,1,0
+Lifeb16,Stamina,Stamina.png,Stamina + 30,Lifeb19,1,5,1,0
+Lifeb17,Full Bloom,FullBloom.png,Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.,"Lifeb22,Lifeb23",-1,6,1,0
+Lifeb18,Vital Surge,VitalSurge.png,"Replace Ultimate, Divine Circle Bloom with Vital Surge.",Lifeb23,0,6,1,0
+Lifeb19,Intellect,Intellect.png,Intellect + 10,"Lifeb24,Lifeb30",1,6,1,0
+Lifeb20,Stamina,Stamina.png,Stamina + 30,Lifeb25,3,6,1,0
+Lifeb21,Blooming Reincarnation,BloomingReincarnation.png,Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.,Lifeb26,-3,7,1,0
+Lifeb22,Stamina,Stamina.png,Stamina + 30,Lifeb26,-2,7,1,0
+Lifeb23,Stamina,Stamina.png,Stamina + 30,"Lifeb27,Lifeb28",-1,7,1,0
+Lifeb24,Vitality,Vitality.png,Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.,"Lifeb28,Lifeb29",1,7,1,0
+Lifeb25,Gift of Life,GiftofLife.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",,3,7,1,0
+Lifeb26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb31,Lifeb32,Lifeb33",-2,8,1,0
+Lifeb27,Flower Time Dance,FlowerTimeDance.png,"Every 45s, generates 1 Flower Stalk in the following order:
+Crimson Insight, Golden Devotion, and Moonlight Solace.",Lifeb33,-1,8,1,0
+Lifeb28,Intellect,Intellect.png,Intellect + 10,"Lifeb33,Lifeb34,Lifeb35",0,8,1,0
+Lifeb29,Nourish Essence,NourishEssence.png,"When Life Bloom generates healing, 50% chance to apply Nourish.","Lifeb35,Lifeb36",2,8,1,0
+Lifeb30,Endless Blossom,EndlessBlossom.png,"When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",Lifeb36,3,8,1,0
+Lifeb31,Flourishing Progress,FlourishingProgress.png,"When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",,-3,9,1,0
+Lifeb32,Stamina,Stamina.png,Stamina + 30,Lifeb37,-2,9,1,0
+Lifeb33,Stamina,Stamina.png,Stamina + 30,"Lifeb38,Lifeb40",-1,9,1,0
+Lifeb34,Verdant Root,VerdantRoot.png,"While in battle state, standing still for 2s creates a Grass Domain.
+Grass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.","Lifeb38,Lifeb42",0,9,1,0
+Lifeb35,Intellect,Intellect.png,Intellect + 10,Lifeb46,1,9,1,0
+Lifeb36,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb39,Lifeb52",3,9,1,0
+Lifeb37,Natural Bloom,NaturalBloom.png,"When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",,-3,10,1,0
+Lifeb38,Stamina,Stamina.png,Stamina + 30,Lifeb41,-1,10,1,0
+Lifeb39,Energy Expansion,EnergyExpansion.png,"Increases Max Energy by 20.
+Using Blossom Charge restores 30% lost Energy.",Lifeb43,2,10,1,0
+Lifeb40,Intellect,Intellect.png,Intellect + 10,"Lifeb44,Lifeb47",-3,11,1,0
+Lifeb41,Verdant Duet,VerdantDuet.png,Life bloom has a fixed 20% chance to heal 1 additional time.,"Lifeb44,Lifeb48",-1,11,1,0
+Lifeb42,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb45,0,11,1,0
+Lifeb43,Intellect,Intellect.png,Intellect + 10,"Lifeb46,Lifeb51",2,11,1,0
+Lifeb44,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
+Revival: Restores HP equal to 50% of the DMG taken over 5s.",Lifeb48,-2,12,1,0
+Lifeb45,Bud to Blossom,BudtoBlossom.png,"When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",Lifeb49,0,12,1,0
+Lifeb46,Inspire and Strengthen,InspireandStrengthen.png,"Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.","Lifeb50,Lifeb51",1,12,1,0
+Lifeb47,Floral Whisper,FloralWhisper.png,"Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",,-3,13,1,0
+Lifeb48,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb57",-1,13,1,0
+Lifeb49,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb54,Lifeb55",0,13,1,0
+Lifeb50,Intellect,Intellect.png,Intellect + 10,Lifeb55,1,13,1,0
+Lifeb51,Stamina,Stamina.png,Stamina + 30,"Lifeb55,Lifeb56",2,13,1,0
+Lifeb52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",,3,13,1,0
+Lifeb53,Intellect,Intellect.png,Intellect + 10,Lifeb58,-1,14,1,0
+Lifeb54,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb59,0,14,1,0
+Lifeb55,Stamina,Stamina.png,Stamina + 30,Lifeb60,1,14,1,0
+Lifeb56,Instant Bloom,InstantBloom.png,Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.,,3,14,1,0
+Lifeb57,Rescue,Rescue.png,Healing Expertise restore 25% more HP to the targets with HP below 50%.,,-3,15,1,0
+Lifeb58,Flourishing Flower,FlourishingFlower.png,"Within Grass Domain, Flower Stalk appeared 50% earlier.",,-1,15,1,0
+Lifeb59,Tricolor Revelation,TricolorRevelation.png,"Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.
+Flower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",,0,15,1,0
+Lifeb60,Ultimate Inspiration,UltimateInspiration.png,Doubles the effectiveness of Inspiration.,,2,15,1,0

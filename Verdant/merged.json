@@ -4,7 +4,7 @@
       "id": "Verdo",
       "name": "Verdant Oracle",
       "collapsed": false,
-      "requiresUnlocked": [],
+      "requiresUnlock": [],
       "origin": {
         "gx": 10,
         "gy": 1
@@ -18,6 +18,7 @@
           "children": [
             "Verdo03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -31,6 +32,7 @@
           "children": [
             "Verdo06"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -46,6 +48,7 @@
             "Verdo04",
             "Verdo05"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 1,
           "cost": 1,
@@ -59,6 +62,7 @@
           "children": [
             "Verdo08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -72,6 +76,7 @@
           "children": [
             "Verdo07"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 2,
           "cost": 1,
@@ -85,6 +90,7 @@
           "children": [
             "Verdo09"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 3,
           "cost": 1,
@@ -98,6 +104,7 @@
           "children": [
             "Verdo10"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -111,6 +118,7 @@
           "children": [
             "Verdo11"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 3,
           "cost": 1,
@@ -124,6 +132,7 @@
           "children": [
             "Verdo12"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 4,
           "cost": 1,
@@ -138,6 +147,7 @@
             "Verdo13",
             "Verdo14"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -152,6 +162,7 @@
             "Verdo14",
             "Verdo15"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 4,
           "cost": 1,
@@ -165,6 +176,7 @@
           "children": [
             "Verdo16"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 5,
           "cost": 1,
@@ -178,6 +190,7 @@
           "children": [
             "Verdo19"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 5,
           "cost": 1,
@@ -191,6 +204,7 @@
           "children": [
             "Verdo17"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -205,6 +219,7 @@
             "Verdo18",
             "Verdo20"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 5,
           "cost": 1,
@@ -218,6 +233,7 @@
           "children": [
             "Verdo21"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 6,
           "cost": 1,
@@ -232,6 +248,7 @@
             "Verdo19",
             "Verdo20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -245,6 +262,7 @@
           "children": [
             "Verdo25"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -259,6 +277,7 @@
             "Verdo22",
             "Verdo23"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 7,
           "cost": 1,
@@ -273,6 +292,7 @@
             "Verdo23",
             "Verdo24"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 7,
           "cost": 1,
@@ -286,6 +306,7 @@
           "children": [
             "Verdo26"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -299,6 +320,7 @@
           "children": [
             "Verdo27"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -312,6 +334,7 @@
           "children": [
             "Verdo28"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 8,
           "cost": 1,
@@ -325,6 +348,7 @@
           "children": [
             "Verdo29"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -338,6 +362,7 @@
           "children": [
             "Verdo30"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -349,6 +374,7 @@
           "icon": "HealingBreath.png",
           "desc": "When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -360,6 +386,7 @@
           "icon": "DivineAscensionoftheFlowerRealm.png",
           "desc": "When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -371,6 +398,7 @@
           "icon": "DancingSeed.png",
           "desc": "When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.\nFor every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -382,6 +410,7 @@
           "icon": "OmnipotentBreath.png",
           "desc": "When Intellect reaches 500, versatility +4%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 9,
           "cost": 1,
@@ -393,6 +422,7 @@
           "icon": "BrimmingVitality.png",
           "desc": "Increases Energy REG SPD by 20%",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -404,38 +434,7 @@
       "id": "Smite",
       "name": "Smite",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 9,
         "gy": 11
@@ -450,6 +449,7 @@
             "Smite02",
             "Smite03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -463,6 +463,7 @@
           "children": [
             "Smite04"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -476,6 +477,7 @@
           "children": [
             "Smite05"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -490,6 +492,7 @@
             "Smite06",
             "Smite07"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
@@ -504,6 +507,7 @@
             "Smite07",
             "Smite08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
@@ -518,6 +522,7 @@
             "Smite09",
             "Smite10"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -532,6 +537,7 @@
             "Smite10",
             "Smite11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -546,6 +552,7 @@
             "Smite12",
             "Smite13"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -559,6 +566,7 @@
           "children": [
             "Smite14"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 4,
           "cost": 1,
@@ -573,6 +581,7 @@
             "Smite15",
             "Smite17"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -587,6 +596,7 @@
             "Smite16",
             "Smite18"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -601,6 +611,7 @@
             "Smite16",
             "Smite20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -612,6 +623,7 @@
           "icon": "LuckDamage.png",
           "desc": "Lucky Hit DMG Multiplier +5%.\nEvery 1% Luck grants 1% Lucky Hit DMG Multiplier.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 4,
           "cost": 1,
@@ -625,6 +637,7 @@
           "children": [
             "Smite21"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 5,
           "cost": 1,
@@ -636,6 +649,7 @@
           "icon": "WildBlessing.png",
           "desc": "Wild Bloom now stores up to 2 overdrives.\nWild Bloom's Energy cost -15%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -649,6 +663,7 @@
           "children": [
             "Smite19"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -663,6 +678,7 @@
             "Smite22",
             "Smite23"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -676,6 +692,7 @@
           "children": [
             "Smite23"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -690,6 +707,7 @@
             "Smite24",
             "Smite30"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -703,6 +721,7 @@
           "children": [
             "Smite25"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -716,6 +735,7 @@
           "children": [
             "Smite26"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
@@ -729,6 +749,7 @@
           "children": [
             "Smite26"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -743,6 +764,7 @@
             "Smite27",
             "Smite28"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -757,6 +779,7 @@
             "Smite28",
             "Smite29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -768,6 +791,7 @@
           "icon": "BudAcquisition.png",
           "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
@@ -783,6 +807,7 @@
             "Smite32",
             "Smite33"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -796,6 +821,7 @@
           "children": [
             "Smite33"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
@@ -811,6 +837,7 @@
             "Smite34",
             "Smite35"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -825,6 +852,7 @@
             "Smite35",
             "Smite36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -838,6 +866,7 @@
           "children": [
             "Smite36"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -849,6 +878,7 @@
           "icon": "Laceration.png",
           "desc": "When dealing DMG, Infusion inflicts Laceration on the target.\nLaceration: Takes 100% more DMG from Thorn in 2s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -862,6 +892,7 @@
           "children": [
             "Smite37"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
@@ -876,6 +907,7 @@
             "Smite38",
             "Smite40"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -890,6 +922,7 @@
             "Smite38",
             "Smite42"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -903,6 +936,7 @@
           "children": [
             "Smite46"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -917,6 +951,7 @@
             "Smite39",
             "Smite52"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -928,6 +963,7 @@
           "icon": "WingsofRevival.png",
           "desc": "When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.\nRevival: Restores HP equal to 50% of the DMG taken over 5s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -941,6 +977,7 @@
           "children": [
             "Smite41"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -954,6 +991,7 @@
           "children": [
             "Smite43"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -968,6 +1006,7 @@
             "Smite44",
             "Smite47"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 11,
           "cost": 1,
@@ -982,6 +1021,7 @@
             "Smite44",
             "Smite48"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 11,
           "cost": 1,
@@ -995,6 +1035,7 @@
           "children": [
             "Smite45"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 11,
           "cost": 1,
@@ -1009,6 +1050,7 @@
             "Smite46",
             "Smite51"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1022,6 +1064,7 @@
           "children": [
             "Smite48"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
@@ -1035,6 +1078,7 @@
           "children": [
             "Smite49"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
@@ -1049,6 +1093,7 @@
             "Smite50",
             "Smite51"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -1060,6 +1105,7 @@
           "icon": "SwiftBud.png",
           "desc": "Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 13,
           "cost": 1,
@@ -1074,6 +1120,7 @@
             "Smite53",
             "Smite57"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
@@ -1089,6 +1136,7 @@
             "Smite54",
             "Smite55"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -1102,6 +1150,7 @@
           "children": [
             "Smite55"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
           "cost": 1,
@@ -1116,6 +1165,7 @@
             "Smite55",
             "Smite56"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -1127,6 +1177,7 @@
           "icon": "HealingPulse.png",
           "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 13,
           "cost": 1,
@@ -1140,6 +1191,7 @@
           "children": [
             "Smite58"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
@@ -1153,6 +1205,7 @@
           "children": [
             "Smite59"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
@@ -1166,6 +1219,7 @@
           "children": [
             "Smite60"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
@@ -1177,6 +1231,7 @@
           "icon": "SwiftShelter.png",
           "desc": "Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 14,
           "cost": 1,
@@ -1188,6 +1243,7 @@
           "icon": "WildLuck.png",
           "desc": "When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 15,
           "cost": 1,
@@ -1199,6 +1255,7 @@
           "icon": "PulseBreath.png",
           "desc": "If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -1210,6 +1267,7 @@
           "icon": "VerdantImpact.png",
           "desc": "For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 15,
           "cost": 1,
@@ -1221,6 +1279,7 @@
           "icon": "WildProtection.png",
           "desc": "The charge count of Nature Ward +1.\nThe charge time of Nature Ward decreases by 5s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 15,
           "cost": 1,
@@ -1232,38 +1291,7 @@
       "id": "Lifeb",
       "name": "Life Bloom",
       "collapsed": true,
-      "requiresUnlocked": [
-        "Verdo01",
-        "Verdo02",
-        "Verdo03",
-        "Verdo04",
-        "Verdo05",
-        "Verdo06",
-        "Verdo07",
-        "Verdo08",
-        "Verdo09",
-        "Verdo10",
-        "Verdo11",
-        "Verdo12",
-        "Verdo13",
-        "Verdo14",
-        "Verdo15",
-        "Verdo16",
-        "Verdo17",
-        "Verdo18",
-        "Verdo19",
-        "Verdo20",
-        "Verdo21",
-        "Verdo22",
-        "Verdo23",
-        "Verdo24",
-        "Verdo25",
-        "Verdo26",
-        "Verdo27",
-        "Verdo28",
-        "Verdo29",
-        "Verdo30"
-      ],
+      "requiresUnlock": [],
       "origin": {
         "gx": 11,
         "gy": 11
@@ -1278,6 +1306,7 @@
             "Lifeb02",
             "Lifeb03"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 0,
           "cost": 1,
@@ -1291,6 +1320,7 @@
           "children": [
             "Lifeb04"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 1,
           "cost": 1,
@@ -1304,6 +1334,7 @@
           "children": [
             "Lifeb05"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 1,
           "cost": 1,
@@ -1318,6 +1349,7 @@
             "Lifeb06",
             "Lifeb07"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 2,
           "cost": 1,
@@ -1332,6 +1364,7 @@
             "Lifeb07",
             "Lifeb08"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 2,
           "cost": 1,
@@ -1346,6 +1379,7 @@
             "Lifeb09",
             "Lifeb10"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 3,
           "cost": 1,
@@ -1360,6 +1394,7 @@
             "Lifeb10",
             "Lifeb11"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 3,
           "cost": 1,
@@ -1374,6 +1409,7 @@
             "Lifeb12",
             "Lifeb13"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 3,
           "cost": 1,
@@ -1387,6 +1423,7 @@
           "children": [
             "Lifeb14"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 4,
           "cost": 1,
@@ -1401,6 +1438,7 @@
             "Lifeb15",
             "Lifeb17"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 4,
           "cost": 1,
@@ -1415,6 +1453,7 @@
             "Lifeb16",
             "Lifeb18"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 4,
           "cost": 1,
@@ -1429,6 +1468,7 @@
             "Lifeb16",
             "Lifeb20"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 4,
           "cost": 1,
@@ -1440,6 +1480,7 @@
           "icon": "VerdantNourishment.png",
           "desc": "If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 4,
           "cost": 1,
@@ -1453,6 +1494,7 @@
           "children": [
             "Lifeb21"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 5,
           "cost": 1,
@@ -1464,6 +1506,7 @@
           "icon": "LifeBloom.png",
           "desc": "Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 5,
           "cost": 1,
@@ -1477,6 +1520,7 @@
           "children": [
             "Lifeb19"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 5,
           "cost": 1,
@@ -1491,6 +1535,7 @@
             "Lifeb22",
             "Lifeb23"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 6,
           "cost": 1,
@@ -1504,6 +1549,7 @@
           "children": [
             "Lifeb23"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 6,
           "cost": 1,
@@ -1518,6 +1564,7 @@
             "Lifeb24",
             "Lifeb30"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 6,
           "cost": 1,
@@ -1531,6 +1578,7 @@
           "children": [
             "Lifeb25"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 6,
           "cost": 1,
@@ -1544,6 +1592,7 @@
           "children": [
             "Lifeb26"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 7,
           "cost": 1,
@@ -1557,6 +1606,7 @@
           "children": [
             "Lifeb26"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 7,
           "cost": 1,
@@ -1571,6 +1621,7 @@
             "Lifeb27",
             "Lifeb28"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
           "cost": 1,
@@ -1585,6 +1636,7 @@
             "Lifeb28",
             "Lifeb29"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
           "cost": 1,
@@ -1596,6 +1648,7 @@
           "icon": "GiftofLife.png",
           "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 7,
           "cost": 1,
@@ -1611,6 +1664,7 @@
             "Lifeb32",
             "Lifeb33"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 8,
           "cost": 1,
@@ -1624,6 +1678,7 @@
           "children": [
             "Lifeb33"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 8,
           "cost": 1,
@@ -1639,6 +1694,7 @@
             "Lifeb34",
             "Lifeb35"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 8,
           "cost": 1,
@@ -1653,6 +1709,7 @@
             "Lifeb35",
             "Lifeb36"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 8,
           "cost": 1,
@@ -1666,6 +1723,7 @@
           "children": [
             "Lifeb36"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 8,
           "cost": 1,
@@ -1677,6 +1735,7 @@
           "icon": "FlourishingProgress.png",
           "desc": "When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 9,
           "cost": 1,
@@ -1690,6 +1749,7 @@
           "children": [
             "Lifeb37"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 9,
           "cost": 1,
@@ -1704,6 +1764,7 @@
             "Lifeb38",
             "Lifeb40"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 9,
           "cost": 1,
@@ -1718,6 +1779,7 @@
             "Lifeb38",
             "Lifeb42"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 9,
           "cost": 1,
@@ -1731,6 +1793,7 @@
           "children": [
             "Lifeb46"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 9,
           "cost": 1,
@@ -1745,6 +1808,7 @@
             "Lifeb39",
             "Lifeb52"
           ],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 9,
           "cost": 1,
@@ -1756,6 +1820,7 @@
           "icon": "NaturalBloom.png",
           "desc": "When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 10,
           "cost": 1,
@@ -1769,6 +1834,7 @@
           "children": [
             "Lifeb41"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 10,
           "cost": 1,
@@ -1782,6 +1848,7 @@
           "children": [
             "Lifeb43"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 10,
           "cost": 1,
@@ -1796,6 +1863,7 @@
             "Lifeb44",
             "Lifeb47"
           ],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 11,
           "cost": 1,
@@ -1810,6 +1878,7 @@
             "Lifeb44",
             "Lifeb48"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 11,
           "cost": 1,
@@ -1823,6 +1892,7 @@
           "children": [
             "Lifeb45"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 11,
           "cost": 1,
@@ -1837,6 +1907,7 @@
             "Lifeb46",
             "Lifeb51"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 11,
           "cost": 1,
@@ -1850,6 +1921,7 @@
           "children": [
             "Lifeb48"
           ],
+          "requiresUnlock": [],
           "gx": -2,
           "gy": 12,
           "cost": 1,
@@ -1863,6 +1935,7 @@
           "children": [
             "Lifeb49"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 12,
           "cost": 1,
@@ -1877,6 +1950,7 @@
             "Lifeb50",
             "Lifeb51"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 12,
           "cost": 1,
@@ -1888,6 +1962,7 @@
           "icon": "FloralWhisper.png",
           "desc": "Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 13,
           "cost": 1,
@@ -1902,6 +1977,7 @@
             "Lifeb53",
             "Lifeb57"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 13,
           "cost": 1,
@@ -1917,6 +1993,7 @@
             "Lifeb54",
             "Lifeb55"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 13,
           "cost": 1,
@@ -1930,6 +2007,7 @@
           "children": [
             "Lifeb55"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 13,
           "cost": 1,
@@ -1944,6 +2022,7 @@
             "Lifeb55",
             "Lifeb56"
           ],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 13,
           "cost": 1,
@@ -1955,6 +2034,7 @@
           "icon": "HealingPulse.png",
           "desc": "When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 13,
           "cost": 1,
@@ -1968,6 +2048,7 @@
           "children": [
             "Lifeb58"
           ],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 14,
           "cost": 1,
@@ -1981,6 +2062,7 @@
           "children": [
             "Lifeb59"
           ],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 14,
           "cost": 1,
@@ -1994,6 +2076,7 @@
           "children": [
             "Lifeb60"
           ],
+          "requiresUnlock": [],
           "gx": 1,
           "gy": 14,
           "cost": 1,
@@ -2005,6 +2088,7 @@
           "icon": "InstantBloom.png",
           "desc": "Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 3,
           "gy": 14,
           "cost": 1,
@@ -2016,6 +2100,7 @@
           "icon": "Rescue.png",
           "desc": "Healing Expertise restore 25% more HP to the targets with HP below 50%.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -3,
           "gy": 15,
           "cost": 1,
@@ -2027,6 +2112,7 @@
           "icon": "FlourishingFlower.png",
           "desc": "Within Grass Domain, Flower Stalk appeared 50% earlier.",
           "children": [],
+          "requiresUnlock": [],
           "gx": -1,
           "gy": 15,
           "cost": 1,
@@ -2038,6 +2124,7 @@
           "icon": "TricolorRevelation.png",
           "desc": "Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.\nFlower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 0,
           "gy": 15,
           "cost": 1,
@@ -2049,6 +2136,7 @@
           "icon": "UltimateInspiration.png",
           "desc": "Doubles the effectiveness of Inspiration.",
           "children": [],
+          "requiresUnlock": [],
           "gx": 2,
           "gy": 15,
           "cost": 1,

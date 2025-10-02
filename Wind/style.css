@@ -4,9 +4,66 @@ body {
 	height: 100%;
 	overflow: hidden;
 	background: 
-		url("img/weapon_line.png") center/cover no-repeat fixed, url("img/virtual_scene_bg_4.png") center/cover no-repeat fixed;
+		url("img/weapon_line.png") center/cover fixed, url("img/virtual_scene_bg_4.png") center/cover fixed;
+	background-repeat: no-repeat;
+	background-position-x: -10rem, 0px;
  }
+/* Position hamburger + menu */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 
+/* Hamburger button */
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text, #FFFFFF); /* fallback white */
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Hidden/visible menu panel */
+.menu {
+  position: absolute;
+  top: 40px; /* just below header */
+  left: 0;
+  background: var(--panel, #220A0A);
+  border: 1px solid #C53728;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 999;
+  width: 200px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 8px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text, #ffe9f6);
+  display: block;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background: var(--grid, #C53728);
+}
+
+.hidden {
+  display: none;
+}
 /* Header */
 header {
   position: fixed;
@@ -15,7 +72,7 @@ header {
   right: 0;
   height: 60px;
   background: #222;
-  color: #BEBEBE;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +135,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #222222;
-  color: #FF4848;
+  color: #FF7975;
   gap: 4px; /* small space between text and badges if needed */
 }
 
@@ -123,9 +180,9 @@ header {
 
 .resource-counters input {
 	width: 50px;
-	background: #220a1a;
-	border: 1px solid #FF4848;
-	color: #FF4848;
+	background: #220A0A;
+	border: 1px solid #FF7975;
+	color: #FF7975;
 	text-align: center;
 	position: relative;
 	padding-right: 20px;
@@ -152,7 +209,7 @@ header {
 	right: 6px;
 	width: 6px;
 	height: 6px;
-	border: solid #FF4848;
+	border: solid #C53728;
 	border-width: 0 2px 2px 0;
 	padding: 2px;
 	pointer-events: none;
@@ -346,7 +403,7 @@ main {
 .node {
   width: 40px;
   height: 40px;
-  background: url("img/talent_icon_green.png");
+  background: url("img/talent_icon.png");
   filter: grayscale(100%);
   background-size: 100%;
   border-radius: 0%;

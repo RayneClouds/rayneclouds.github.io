@@ -443,10 +443,9 @@
           "id": "Block01",
           "name": "Block Spec",
           "icon": "BlockSpec.png",
-          "desc": "",
+          "desc": "Replace Special Attack with Counter crush, and enhance the ability.\nWhen Lucky Block triggers, increases Block DMG RED by 10%",
           "children": [
-            "Block02",
-            "Block03"
+            "Block02"
           ],
           "gx": 0,
           "gy": 0,
@@ -459,10 +458,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Block04",
-            "Block05"
+            "Block03",
+            "Block04"
           ],
-          "gx": -1,
+          "gx": 0,
           "gy": 1,
           "cost": 1,
           "seal": 0
@@ -476,8 +475,8 @@
             "Block05",
             "Block06"
           ],
-          "gx": 1,
-          "gy": 1,
+          "gx": -1,
+          "gy": 2,
           "cost": 1,
           "seal": 0
         },
@@ -486,8 +485,11 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -2,
+          "children": [
+            "Block06",
+            "Block07"
+          ],
+          "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
@@ -497,11 +499,9 @@
           "name": "Rage Enhancement",
           "icon": "RageEnhancement.png",
           "desc": "Granite Fury consumes 1 Sand Crystal.",
-          "children": [
-            "Block07"
-          ],
-          "gx": 0,
-          "gy": 2,
+          "children": [],
+          "gx": -2,
+          "gy": 3,
           "cost": 1,
           "seal": 0
         },
@@ -510,9 +510,11 @@
           "name": "Heart of Rock",
           "icon": "HeartofRock.png",
           "desc": "Casting Granite Fury 10 times grants Heart of Rock.\nHeart of Rock: for 10s, Granite Fury evolves into Boulder Smash. Casting Boulder Smash guarantees Enraged status.",
-          "children": [],
-          "gx": 2,
-          "gy": 2,
+          "children": [
+            "Block08"
+          ],
+          "gx": 0,
+          "gy": 3,
           "cost": 1,
           "seal": 0
         },
@@ -521,10 +523,8 @@
           "name": "Rampart Fury",
           "icon": "RampartFury.png",
           "desc": "When taking DMG, increases Lucky Block DMG RED by 2% for 8s, stacks up to 3 times.",
-          "children": [
-            "Block09"
-          ],
-          "gx": -1,
+          "children": [],
+          "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
@@ -535,8 +535,7 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Block11",
-            "Block12"
+            "Block10"
           ],
           "gx": -1,
           "gy": 4,
@@ -549,12 +548,11 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Block08",
-            "Block10",
-            "Block20"
+            "Block12",
+            "Block13"
           ],
-          "gx": 0,
-          "gy": 4,
+          "gx": -1,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
@@ -564,11 +562,12 @@
           "icon": "EarthShard.png",
           "desc": "After casting Boulder Smash, for the next 10s, summons 1 Rock Projectile every 2s.",
           "children": [
-            "Block13",
-            "Block14"
+            "Block09",
+            "Block11",
+            "Block21"
           ],
-          "gx": 1,
-          "gy": 4,
+          "gx": 0,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
@@ -577,8 +576,11 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": -2,
+          "children": [
+            "Block14",
+            "Block15"
+          ],
+          "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
@@ -588,12 +590,9 @@
           "name": "Enraged Rock Heart",
           "icon": "EnragedRockHeart.png",
           "desc": "While Enraged, increases Lucky Hit Chance by 10%.",
-          "children": [
-            "Block15",
-            "Block16"
-          ],
-          "gx": -1,
-          "gy": 5,
+          "children": [],
+          "gx": -2,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -603,11 +602,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Block17",
-            "Block18"
+            "Block16",
+            "Block17"
           ],
-          "gx": 1,
-          "gy": 5,
+          "gx": -1,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -616,9 +615,12 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": 2,
-          "gy": 5,
+          "children": [
+            "Block18",
+            "Block19"
+          ],
+          "gx": 1,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -628,7 +630,7 @@
           "icon": "SandBlock.png",
           "desc": "Successfully Blocking has a fixed 20% chance to gain 1 Sand Crystal. If it was a Lucky Block, gain an additional 1 Sand Crystal.",
           "children": [],
-          "gx": -2,
+          "gx": 2,
           "gy": 6,
           "cost": 1,
           "seal": 0
@@ -638,12 +640,9 @@
           "name": "Shattering Rageblow",
           "icon": "ShatteringRageblow.png",
           "desc": "When dealing DMB, Granite Fury has a 20% chance to allow your next Basic Attack to evolve into Rageblow. Each 2% Luck adds 1% chance.\nAfter casting Rageblow, increases Block DMG RED by 10% for 10s.",
-          "children": [
-            "Block19",
-            "Block20"
-          ],
-          "gx": -1,
-          "gy": 6,
+          "children": [],
+          "gx": -2,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -656,8 +655,8 @@
             "Block20",
             "Block21"
           ],
-          "gx": 1,
-          "gy": 6,
+          "gx": -1,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -666,9 +665,12 @@
           "name": "Block Counterstrike",
           "icon": "BlockCounterstrike.png",
           "desc": "A successful Block triggers a Countercrush, once per second. On a Lucky Block, randomly triggers 1 to 3 Countercrush, once per second.",
-          "children": [],
-          "gx": 2,
-          "gy": 6,
+          "children": [
+            "Block21",
+            "Block22"
+          ],
+          "gx": 1,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -677,11 +679,8 @@
           "name": "Fortune Bastion",
           "icon": "FortuneBastion.png",
           "desc": "During Bastion, you can block Magic Damage.",
-          "children": [
-            "Block22",
-            "Block23"
-          ],
-          "gx": -2,
+          "children": [],
+          "gx": 2,
           "gy": 7,
           "cost": 1,
           "seal": 0
@@ -695,8 +694,8 @@
             "Block23",
             "Block24"
           ],
-          "gx": 0,
-          "gy": 7,
+          "gx": -2,
+          "gy": 8,
           "cost": 1,
           "seal": 0
         },
@@ -709,8 +708,8 @@
             "Block24",
             "Block25"
           ],
-          "gx": 2,
-          "gy": 7,
+          "gx": 0,
+          "gy": 8,
           "cost": 1,
           "seal": 0
         },
@@ -720,9 +719,10 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Block28"
+            "Block25",
+            "Block26"
           ],
-          "gx": -3,
+          "gx": 2,
           "gy": 8,
           "cost": 1,
           "seal": 0
@@ -733,11 +733,10 @@
           "icon": "FangoftheAlpha.png",
           "desc": "DMG Reduction vs. Bosses +8%",
           "children": [
-            "Block26",
-            "Block28"
+            "Block29"
           ],
-          "gx": -1,
-          "gy": 8,
+          "gx": -3,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -750,8 +749,8 @@
             "Block27",
             "Block29"
           ],
-          "gx": 1,
-          "gy": 8,
+          "gx": -1,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -761,10 +760,11 @@
           "icon": "BlockShelter.png",
           "desc": "Granite Fury DMG enhances Lucky block DMG RED by 2% for 8s.\nStacks up to 3 times.",
           "children": [
-            "Block29"
+            "Block28",
+            "Block30"
           ],
-          "gx": 3,
-          "gy": 8,
+          "gx": 1,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -774,10 +774,9 @@
           "icon": "ShadowVeil.png",
           "desc": "Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)\nRemains unchanged when Earthfort Spec is active.\nIf Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.\n(Doubles the effect against Elite or stronger enemies.)",
           "children": [
-            "Block30",
-            "Block31"
+            "Block30"
           ],
-          "gx": -1,
+          "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
@@ -791,8 +790,8 @@
             "Block31",
             "Block32"
           ],
-          "gx": 1,
-          "gy": 9,
+          "gx": -1,
+          "gy": 10,
           "cost": 1,
           "seal": 0
         },
@@ -802,9 +801,10 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
+            "Block32",
             "Block33"
           ],
-          "gx": -2,
+          "gx": 1,
           "gy": 10,
           "cost": 1,
           "seal": 0
@@ -814,9 +814,11 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 2,
-          "gy": 10,
+          "children": [
+            "Block34"
+          ],
+          "gx": -2,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         },
@@ -826,10 +828,9 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Block33",
-            "Block34"
+            "Block36"
           ],
-          "gx": -1,
+          "gx": 2,
           "gy": 11,
           "cost": 1,
           "seal": 0
@@ -840,10 +841,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Block34"
+            "Block34",
+            "Block35"
           ],
-          "gx": 0,
-          "gy": 11,
+          "gx": -1,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
@@ -853,11 +855,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Block34",
             "Block35"
           ],
-          "gx": 1,
-          "gy": 11,
+          "gx": 0,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
@@ -867,10 +868,10 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Block36",
-            "Block37"
+            "Block35",
+            "Block36"
           ],
-          "gx": -2,
+          "gx": 1,
           "gy": 12,
           "cost": 1,
           "seal": 0
@@ -882,11 +883,10 @@
           "desc": "When Rock Projectile deals DMG, there is a chance, of which equals Lucky Hit Chance, to summon an additional Rock Projectile.",
           "children": [
             "Block37",
-            "Block38",
-            "Block39"
+            "Block38"
           ],
-          "gx": 0,
-          "gy": 12,
+          "gx": -2,
+          "gy": 13,
           "cost": 1,
           "seal": 0
         },
@@ -896,11 +896,12 @@
           "icon": "ResonantDomain.png",
           "desc": "Tectonic Ring generates a Sandfield that lasts for 5s.",
           "children": [
+            "Block38",
             "Block39",
             "Block40"
           ],
-          "gx": 2,
-          "gy": 12,
+          "gx": 0,
+          "gy": 13,
           "cost": 1,
           "seal": 0
         },
@@ -910,10 +911,10 @@
           "icon": "BlockBlessing.png",
           "desc": "A successful Block grants a fixed 30% chance for your next Granite Fury cast to consume no Sand Crystals. This effect can occur up to once every 3s.",
           "children": [
-            "Block41",
-            "Block42"
+            "Block40",
+            "Block41"
           ],
-          "gx": -2,
+          "gx": 2,
           "gy": 13,
           "cost": 1,
           "seal": 0
@@ -927,8 +928,8 @@
             "Block42",
             "Block43"
           ],
-          "gx": -1,
-          "gy": 13,
+          "gx": -2,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -938,10 +939,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
+            "Block43",
             "Block44"
           ],
-          "gx": 0,
-          "gy": 13,
+          "gx": -1,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -951,11 +953,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Block45",
-            "Block46"
+            "Block45"
           ],
-          "gx": 1,
-          "gy": 13,
+          "gx": 0,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -968,8 +969,8 @@
             "Block46",
             "Block47"
           ],
-          "gx": 2,
-          "gy": 13,
+          "gx": 1,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -979,9 +980,10 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
+            "Block47",
             "Block48"
           ],
-          "gx": -3,
+          "gx": 2,
           "gy": 14,
           "cost": 1,
           "seal": 0
@@ -991,9 +993,11 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -2,
-          "gy": 14,
+          "children": [
+            "Block49"
+          ],
+          "gx": -3,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1002,13 +1006,9 @@
           "name": "Counter Storm",
           "icon": "CounterStorm.png",
           "desc": "For 10s after casting Tectonic Ring, trigger 1 Block Counterstrike every 2s.",
-          "children": [
-            "Block49",
-            "Block50",
-            "Block51"
-          ],
-          "gx": -1,
-          "gy": 14,
+          "children": [],
+          "gx": -2,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1018,10 +1018,12 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Block51"
+            "Block50",
+            "Block51",
+            "Block52"
           ],
-          "gx": 0,
-          "gy": 14,
+          "gx": -1,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1031,12 +1033,10 @@
           "icon": "RockHeal.png",
           "desc": "Stone Fist restores 5% max HP. For every 1 extra enemy hit, restores an additional 2% max HP (up to a total of 15%). Excess healing is converted into an equivalent Shield.",
           "children": [
-            "Block51",
-            "Block52",
-            "Block53"
+            "Block52"
           ],
-          "gx": 1,
-          "gy": 14,
+          "gx": 0,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1045,9 +1045,13 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 2,
-          "gy": 14,
+          "children": [
+            "Block52",
+            "Block53",
+            "Block54"
+          ],
+          "gx": 1,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1056,11 +1060,9 @@
           "name": "Group Suppress",
           "icon": "GroupSuppress.png",
           "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
-          "children": [
-            "Block54"
-          ],
-          "gx": 3,
-          "gy": 14,
+          "children": [],
+          "gx": 2,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1069,8 +1071,10 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -3,
+          "children": [
+            "Block55"
+          ],
+          "gx": 3,
           "gy": 15,
           "cost": 1,
           "seal": 0
@@ -1080,12 +1084,9 @@
           "name": "Rock Luck",
           "icon": "RockLuck.png",
           "desc": "Luck Chance +5%.\nCountercrush Crit +50%.",
-          "children": [
-            "Block55",
-            "Block56"
-          ],
-          "gx": -2,
-          "gy": 15,
+          "children": [],
+          "gx": -3,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1094,9 +1095,12 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -1,
-          "gy": 15,
+          "children": [
+            "Block56",
+            "Block57"
+          ],
+          "gx": -2,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1105,11 +1109,9 @@
           "name": "Survival Instinct",
           "icon": "SurvivalInstinct.png",
           "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
-          "children": [
-            "Block57"
-          ],
-          "gx": 0,
-          "gy": 15,
+          "children": [],
+          "gx": -1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1118,9 +1120,11 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 1,
-          "gy": 15,
+          "children": [
+            "Block58"
+          ],
+          "gx": 0,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1129,12 +1133,9 @@
           "name": "Sandstone Shock",
           "icon": "SandstoneShock.png",
           "desc": "While in the Brave Bastion state, casting Countercrush or Granite Fury triggers Sand Crystal Shock.",
-          "children": [
-            "Block58",
-            "Block59"
-          ],
-          "gx": 2,
-          "gy": 15,
+          "children": [],
+          "gx": 1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1143,9 +1144,12 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": 3,
-          "gy": 15,
+          "children": [
+            "Block59",
+            "Block60"
+          ],
+          "gx": 2,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1155,7 +1159,7 @@
           "icon": "RockMastery.png",
           "desc": "Increases Mastery by 600.\nWhile Brave Bastion is active, increases Mastery by 8%.",
           "children": [],
-          "gx": -2,
+          "gx": 3,
           "gy": 16,
           "cost": 1,
           "seal": 0
@@ -1166,8 +1170,8 @@
           "icon": "Intimidation.png",
           "desc": "When Rock Projectile hits a target, it reduces all DMG taken by 10% for the next 5s.",
           "children": [],
-          "gx": -1,
-          "gy": 16,
+          "gx": -2,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -1177,8 +1181,8 @@
           "icon": "SandstoneRewind.png",
           "desc": "When Rageblow deals DMG, it reduces the CD of Brave Bastion by 3s.",
           "children": [],
-          "gx": 0,
-          "gy": 16,
+          "gx": -1,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -1188,8 +1192,8 @@
           "icon": "GraniteFury.png",
           "desc": "Summoning 20 Rock Projectiles grants Heart of Rock: For 10s, Granite Fury evolves into Stone Fist.",
           "children": [],
-          "gx": 1,
-          "gy": 16,
+          "gx": 0,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -1199,8 +1203,8 @@
           "icon": "Sandgrip.png",
           "desc": "After casting Sandgrip, gains 10% Versatility for 10s.",
           "children": [],
-          "gx": 2,
-          "gy": 16,
+          "gx": 1,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -1210,8 +1214,8 @@
           "icon": "RampartFortitude.png",
           "desc": "While Brave Bastion is active, taking DMG increases Countercrush DMG by 10% for 10s, stacks up to 10 times.",
           "children": [],
-          "gx": 4,
-          "gy": 16,
+          "gx": 2,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         }
@@ -1262,10 +1266,9 @@
           "id": "Earth01",
           "name": "Earthfort Spec",
           "icon": "EarthfortSpec.png",
-          "desc": "",
+          "desc": "Further enhances Shield Bash.\nEach additional enemy hit by Shield Slam increases its DMG by 30%, up to 150%.",
           "children": [
-            "Earth02",
-            "Earth03"
+            "Earth02"
           ],
           "gx": 0,
           "gy": 0,
@@ -1278,10 +1281,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Earth04",
-            "Earth05"
+            "Earth03",
+            "Earth04"
           ],
-          "gx": -1,
+          "gx": 0,
           "gy": 1,
           "cost": 1,
           "seal": 0
@@ -1295,8 +1298,8 @@
             "Earth05",
             "Earth06"
           ],
-          "gx": 1,
-          "gy": 1,
+          "gx": -1,
+          "gy": 2,
           "cost": 1,
           "seal": 0
         },
@@ -1305,8 +1308,11 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -2,
+          "children": [
+            "Earth06",
+            "Earth07"
+          ],
+          "gx": 1,
           "gy": 2,
           "cost": 1,
           "seal": 0
@@ -1316,11 +1322,9 @@
           "name": "Amplified Earthfort",
           "icon": "AmplifiedEarthfort.png",
           "desc": "Upon the triggering of Weak Point Strike, gains Amplified Earthfort.",
-          "children": [
-            "Earth07"
-          ],
-          "gx": 0,
-          "gy": 2,
+          "children": [],
+          "gx": -2,
+          "gy": 3,
           "cost": 1,
           "seal": 0
         },
@@ -1329,9 +1333,11 @@
           "name": "Starfall",
           "icon": "Starfall.png",
           "desc": "For every 20 Sand Crystals consumed, Star Shatter evolves into Starfall.",
-          "children": [],
-          "gx": 2,
-          "gy": 2,
+          "children": [
+            "Earth08"
+          ],
+          "gx": 0,
+          "gy": 3,
           "cost": 1,
           "seal": 0
         },
@@ -1340,10 +1346,8 @@
           "name": "Star Fury",
           "icon": "StarFury.png",
           "desc": "Increases Star Shatter and Starfall DMG by 30%, and guarantees Enraged status.",
-          "children": [
-            "Earth09"
-          ],
-          "gx": -1,
+          "children": [],
+          "gx": 2,
           "gy": 3,
           "cost": 1,
           "seal": 0
@@ -1354,8 +1358,7 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Earth11",
-            "Earth12"
+            "Earth10"
           ],
           "gx": -1,
           "gy": 4,
@@ -1368,12 +1371,11 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Earth08",
-            "Earth10",
-            "Earth20"
+            "Earth12",
+            "Earth13"
           ],
-          "gx": 0,
-          "gy": 4,
+          "gx": -1,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
@@ -1383,11 +1385,12 @@
           "icon": "ShatterStrike.png",
           "desc": "When Star Shatter or Starfall defeats a target, Star Shatter immediately recovers 1 charge.",
           "children": [
-            "Earth13",
-            "Earth14"
+            "Earth09",
+            "Earth11",
+            "Earth21"
           ],
-          "gx": 1,
-          "gy": 4,
+          "gx": 0,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
@@ -1396,8 +1399,11 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -2,
+          "children": [
+            "Earth14",
+            "Earth15"
+          ],
+          "gx": 1,
           "gy": 5,
           "cost": 1,
           "seal": 0
@@ -1407,12 +1413,9 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [
-            "Earth15",
-            "Earth16"
-          ],
-          "gx": -1,
-          "gy": 5,
+          "children": [],
+          "gx": -2,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -1422,11 +1425,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Earth17",
-            "Earth18"
+            "Earth16",
+            "Earth17"
           ],
-          "gx": 1,
-          "gy": 5,
+          "gx": -1,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -1435,9 +1438,12 @@
           "name": "Elemental Harmony",
           "icon": "ElementalHarmony.png",
           "desc": "While shielded, Magic Damage and Wind DMG you take are -25% and 50% respectively.",
-          "children": [],
-          "gx": 2,
-          "gy": 5,
+          "children": [
+            "Earth18",
+            "Earth19"
+          ],
+          "gx": 1,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -1447,7 +1453,7 @@
           "icon": "LordoftheGreatRock.png",
           "desc": "Casting Starfall grants Lord of Rock: For 15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",
           "children": [],
-          "gx": -2,
+          "gx": 2,
           "gy": 6,
           "cost": 1,
           "seal": 0
@@ -1457,12 +1463,9 @@
           "name": "Shield Echo",
           "icon": "ShieldEcho.png",
           "desc": "During Sandshroud, adding a shield to yourself via Shield Bash triggers Shield Echo.",
-          "children": [
-            "Earth19",
-            "Earth20"
-          ],
-          "gx": -1,
-          "gy": 6,
+          "children": [],
+          "gx": -2,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -1475,8 +1478,8 @@
             "Earth20",
             "Earth21"
           ],
-          "gx": 1,
-          "gy": 6,
+          "gx": -1,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -1485,9 +1488,12 @@
           "name": "Breath of Stone",
           "icon": "BreathofStone.png",
           "desc": "Each Sand Crystal consumed reduces the CD of Stoneform by 1s.",
-          "children": [],
-          "gx": 2,
-          "gy": 6,
+          "children": [
+            "Earth21",
+            "Earth22"
+          ],
+          "gx": 1,
+          "gy": 7,
           "cost": 1,
           "seal": 0
         },
@@ -1496,11 +1502,8 @@
           "name": "Shield Bash",
           "icon": "ShieldBash.png",
           "desc": "Enhances Shield effectiveness by 10%.\nDuring Sandshroud, additionally enhances Shield effectiveness by 10%.",
-          "children": [
-            "Earth22",
-            "Earth23"
-          ],
-          "gx": -2,
+          "children": [],
+          "gx": 2,
           "gy": 7,
           "cost": 1,
           "seal": 0
@@ -1514,8 +1517,8 @@
             "Earth23",
             "Earth24"
           ],
-          "gx": 0,
-          "gy": 7,
+          "gx": -2,
+          "gy": 8,
           "cost": 1,
           "seal": 0
         },
@@ -1528,8 +1531,8 @@
             "Earth24",
             "Earth25"
           ],
-          "gx": 2,
-          "gy": 7,
+          "gx": 0,
+          "gy": 8,
           "cost": 1,
           "seal": 0
         },
@@ -1539,9 +1542,10 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Earth28"
+            "Earth25",
+            "Earth26"
           ],
-          "gx": -3,
+          "gx": 2,
           "gy": 8,
           "cost": 1,
           "seal": 0
@@ -1552,11 +1556,10 @@
           "icon": "FangoftheAlpha.png",
           "desc": "DMG Reduction vs. Bosses +8%",
           "children": [
-            "Earth26",
-            "Earth28"
+            "Earth29"
           ],
-          "gx": -1,
-          "gy": 8,
+          "gx": -3,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -1569,8 +1572,8 @@
             "Earth27",
             "Earth29"
           ],
-          "gx": 1,
-          "gy": 8,
+          "gx": -1,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -1580,10 +1583,11 @@
           "icon": "StoneDomain.png",
           "desc": "During the duration of Sandshroud, being attacked reduces the attack speed of enemy targets within a 5 meter radius by 30% for 3s.\nDuring the duration of Sandshroud, Armor of allies within an 8 meter radius +10%.",
           "children": [
-            "Earth29"
+            "Earth28",
+            "Earth30"
           ],
-          "gx": 3,
-          "gy": 8,
+          "gx": 1,
+          "gy": 9,
           "cost": 1,
           "seal": 0
         },
@@ -1593,10 +1597,9 @@
           "icon": "ShadowVeil.png",
           "desc": "Each enemy within 3 meters increases your Block chance by 3%, up to 15%. (Doubles the effect against Elite or stronger enemies.)\nRemains unchanged when Earthfort Spec is active.\nIf Block Spec is activated, the effect becomes: Every enemy within 3 meters increases Block DMG RED by 1%, up to 5%.\n(Doubles the effect against Elite or stronger enemies.)",
           "children": [
-            "Earth30",
-            "Earth31"
+            "Earth30"
           ],
-          "gx": -1,
+          "gx": 3,
           "gy": 9,
           "cost": 1,
           "seal": 0
@@ -1610,8 +1613,8 @@
             "Earth31",
             "Earth32"
           ],
-          "gx": 1,
-          "gy": 9,
+          "gx": -1,
+          "gy": 10,
           "cost": 1,
           "seal": 0
         },
@@ -1621,9 +1624,10 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
+            "Earth32",
             "Earth33"
           ],
-          "gx": -2,
+          "gx": 1,
           "gy": 10,
           "cost": 1,
           "seal": 0
@@ -1633,9 +1637,11 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 2,
-          "gy": 10,
+          "children": [
+            "Earth34"
+          ],
+          "gx": -2,
+          "gy": 11,
           "cost": 1,
           "seal": 0
         },
@@ -1645,10 +1651,9 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Earth33",
-            "Earth34"
+            "Earth36"
           ],
-          "gx": -1,
+          "gx": 2,
           "gy": 11,
           "cost": 1,
           "seal": 0
@@ -1659,10 +1664,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Earth34"
+            "Earth34",
+            "Earth35"
           ],
-          "gx": 0,
-          "gy": 11,
+          "gx": -1,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
@@ -1672,11 +1678,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Earth34",
             "Earth35"
           ],
-          "gx": 1,
-          "gy": 11,
+          "gx": 0,
+          "gy": 12,
           "cost": 1,
           "seal": 0
         },
@@ -1686,10 +1691,10 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Earth36",
-            "Earth37"
+            "Earth35",
+            "Earth36"
           ],
-          "gx": -2,
+          "gx": 1,
           "gy": 12,
           "cost": 1,
           "seal": 0
@@ -1701,11 +1706,10 @@
           "desc": "Rage Burst gains 1 additional charge.\nWhile Enraged, Rage Burst and Terra Sunder become instant cast.",
           "children": [
             "Earth37",
-            "Earth38",
-            "Earth39"
+            "Earth38"
           ],
-          "gx": 0,
-          "gy": 12,
+          "gx": -2,
+          "gy": 13,
           "cost": 1,
           "seal": 0
         },
@@ -1715,11 +1719,12 @@
           "icon": "LordofRocks.png",
           "desc": "Casting Starfall grants Lord of Rock: For15s, Basic Attack evolves into 1 Rupture, and Rage Burst evolves into 1 Terra Sunder.",
           "children": [
+            "Earth38",
             "Earth39",
             "Earth40"
           ],
-          "gx": 2,
-          "gy": 12,
+          "gx": 0,
+          "gy": 13,
           "cost": 1,
           "seal": 0
         },
@@ -1729,10 +1734,10 @@
           "icon": "ShieldCombo.png",
           "desc": "Basic Attacks have a fixed 5% chance to trigger Shield Combo upon dealing DMG. Each 1% Mastery grants an extra 0.2% chance.",
           "children": [
-            "Earth41",
-            "Earth42"
+            "Earth40",
+            "Earth41"
           ],
-          "gx": -2,
+          "gx": 2,
           "gy": 13,
           "cost": 1,
           "seal": 0
@@ -1746,8 +1751,8 @@
             "Earth42",
             "Earth43"
           ],
-          "gx": -1,
-          "gy": 13,
+          "gx": -2,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -1757,10 +1762,11 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
+            "Earth43",
             "Earth44"
           ],
-          "gx": 0,
-          "gy": 13,
+          "gx": -1,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -1770,11 +1776,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Earth45",
-            "Earth46"
+            "Earth45"
           ],
-          "gx": 1,
-          "gy": 13,
+          "gx": 0,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -1787,8 +1792,8 @@
             "Earth46",
             "Earth47"
           ],
-          "gx": 2,
-          "gy": 13,
+          "gx": 1,
+          "gy": 14,
           "cost": 1,
           "seal": 0
         },
@@ -1798,9 +1803,10 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
+            "Earth47",
             "Earth48"
           ],
-          "gx": -3,
+          "gx": 2,
           "gy": 14,
           "cost": 1,
           "seal": 0
@@ -1810,9 +1816,11 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -2,
-          "gy": 14,
+          "children": [
+            "Earth49"
+          ],
+          "gx": -3,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1821,13 +1829,9 @@
           "name": "Enraged Rupture",
           "icon": "EnragedRupture.png",
           "desc": "While Enraged, Rupture is bound to trigger Weak Point Strike.",
-          "children": [
-            "Earth49",
-            "Earth50",
-            "Earth51"
-          ],
-          "gx": -1,
-          "gy": 14,
+          "children": [],
+          "gx": -2,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1837,10 +1841,12 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Earth51"
+            "Earth50",
+            "Earth51",
+            "Earth52"
           ],
-          "gx": 0,
-          "gy": 14,
+          "gx": -1,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1850,12 +1856,10 @@
           "icon": "BoulderShield.png",
           "desc": "During Stoneform, reduces all DMG taken by 10%.",
           "children": [
-            "Earth51",
-            "Earth52",
-            "Earth53"
+            "Earth52"
           ],
-          "gx": 1,
-          "gy": 14,
+          "gx": 0,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1864,9 +1868,13 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 2,
-          "gy": 14,
+          "children": [
+            "Earth52",
+            "Earth53",
+            "Earth54"
+          ],
+          "gx": 1,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1875,11 +1883,9 @@
           "name": "Group Suppress",
           "icon": "GroupSuppress.png",
           "desc": "Each enemy within 3 meters enhances the effectiveness of Suppress by 3%, up to 15%. This effect is doubled against Elite or stronger enemies.",
-          "children": [
-            "Earth54"
-          ],
-          "gx": 3,
-          "gy": 14,
+          "children": [],
+          "gx": 2,
+          "gy": 15,
           "cost": 1,
           "seal": 0
         },
@@ -1888,8 +1894,10 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -3,
+          "children": [
+            "Earth55"
+          ],
+          "gx": 3,
           "gy": 15,
           "cost": 1,
           "seal": 0
@@ -1899,12 +1907,9 @@
           "name": "Bravery in Battle",
           "icon": "BraveryinBattle.png",
           "desc": "In combat, 50% of overhealing converts to a shield (accumulated shield cannot exceed 50% of Max HP).",
-          "children": [
-            "Earth55",
-            "Earth56"
-          ],
-          "gx": -2,
-          "gy": 15,
+          "children": [],
+          "gx": -3,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1913,9 +1918,12 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": -1,
-          "gy": 15,
+          "children": [
+            "Earth56",
+            "Earth57"
+          ],
+          "gx": -2,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1924,11 +1932,9 @@
           "name": "Survival Instinct",
           "icon": "SurvivalInstinct.png",
           "desc": "When HP falls below 30%, triggers Last Stand, once every 60s.",
-          "children": [
-            "Earth57"
-          ],
-          "gx": 0,
-          "gy": 15,
+          "children": [],
+          "gx": -1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1937,9 +1943,11 @@
           "name": "Strength",
           "icon": "Strength.png",
           "desc": "Strength + 10",
-          "children": [],
-          "gx": 1,
-          "gy": 15,
+          "children": [
+            "Earth58"
+          ],
+          "gx": 0,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1948,12 +1956,9 @@
           "name": "Resolute Breath",
           "icon": "ResoluteBreath.png",
           "desc": "While shielded, use Basic Attack midair to slam down, detonating the shield and dealing damage equal to 30% max HP to nearby enemies.",
-          "children": [
-            "Earth58",
-            "Earth59"
-          ],
-          "gx": 2,
-          "gy": 15,
+          "children": [],
+          "gx": 1,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1962,9 +1967,12 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
-          "gx": 3,
-          "gy": 15,
+          "children": [
+            "Earth59",
+            "Earth60"
+          ],
+          "gx": 2,
+          "gy": 16,
           "cost": 1,
           "seal": 0
         },
@@ -1974,7 +1982,7 @@
           "icon": "SlamShelter.png",
           "desc": "A successful hit with Shield Bash reduces the target's DMG dealt to you by 3% for 10s, stacking up to 3 times.",
           "children": [],
-          "gx": -2,
+          "gx": 3,
           "gy": 16,
           "cost": 1,
           "seal": 0
@@ -1985,8 +1993,8 @@
           "icon": "Recovery.png",
           "desc": "Each successful hit of Expertise Skill or Special Attack increases Strength by 1% in 5s. The effect stacks up to 10 times. With 10 stacks, increases Strength by 10% for 8s. During this effect, the next Expertise Skill heals you for 20% of the DMG dealt, yet no additional Strength stacks can be gained.",
           "children": [],
-          "gx": -1,
-          "gy": 16,
+          "gx": -2,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -1996,8 +2004,8 @@
           "icon": "SmashSupport.png",
           "desc": "Increases the effectiveness of Shield granted by Shield Bash by 30%.",
           "children": [],
-          "gx": 0,
-          "gy": 16,
+          "gx": -1,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -2007,8 +2015,8 @@
           "icon": "StarShatterPursuit.png",
           "desc": "Star Shatter and Starfall deals additionally 200% DMG to targets with current HP less than or equal to 35%.",
           "children": [],
-          "gx": 1,
-          "gy": 16,
+          "gx": 0,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -2018,8 +2026,8 @@
           "icon": "SandyShelter.png",
           "desc": "During Stoneform, every 20 Rage gained triggers Sandy shelter.",
           "children": [],
-          "gx": 2,
-          "gy": 16,
+          "gx": 1,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         },
@@ -2030,7 +2038,7 @@
           "desc": "Armor +5%.\nEach attack of Terra Sunder deals an additional instance of Attack Damage to the target, equal to 100% Armor.",
           "children": [],
           "gx": 2,
-          "gy": 10,
+          "gy": 17,
           "cost": 1,
           "seal": 0
         }

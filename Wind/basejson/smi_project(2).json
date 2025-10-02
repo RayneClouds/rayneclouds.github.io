@@ -1,0 +1,470 @@
+{
+  "cols": 7,
+  "rows": 16,
+  "nodes": [
+    {
+      "id": "smi01",
+      "col": 3,
+      "row": 0
+    },
+    {
+      "id": "smi02",
+      "col": 2,
+      "row": 1
+    },
+    {
+      "id": "smi03",
+      "col": 3,
+      "row": 1
+    },
+    {
+      "id": "smi04",
+      "col": 4,
+      "row": 1
+    },
+    {
+      "id": "smi05",
+      "col": 1,
+      "row": 2
+    },
+    {
+      "id": "smi06",
+      "col": 2,
+      "row": 2
+    },
+    {
+      "id": "smi07",
+      "col": 3,
+      "row": 2
+    },
+    {
+      "id": "smi08",
+      "col": 4,
+      "row": 2
+    },
+    {
+      "id": "smi09",
+      "col": 5,
+      "row": 2
+    },
+    {
+      "id": "smi10",
+      "col": 0,
+      "row": 3
+    },
+    {
+      "id": "smi11",
+      "col": 1,
+      "row": 3
+    },
+    {
+      "id": "smi12",
+      "col": 2,
+      "row": 3
+    },
+    {
+      "id": "smi13",
+      "col": 3,
+      "row": 3
+    },
+    {
+      "id": "smi14",
+      "col": 4,
+      "row": 3
+    },
+    {
+      "id": "smi15",
+      "col": 5,
+      "row": 3
+    },
+    {
+      "id": "smi16",
+      "col": 6,
+      "row": 3
+    },
+    {
+      "id": "smi17",
+      "col": 1,
+      "row": 4
+    },
+    {
+      "id": "smi18",
+      "col": 2,
+      "row": 4
+    },
+    {
+      "id": "smi19",
+      "col": 3,
+      "row": 4
+    },
+    {
+      "id": "smi20",
+      "col": 4,
+      "row": 4
+    },
+    {
+      "id": "smi21",
+      "col": 5,
+      "row": 4
+    },
+    {
+      "id": "smi22",
+      "col": 1,
+      "row": 5
+    },
+    {
+      "id": "smi23",
+      "col": 2,
+      "row": 5
+    },
+    {
+      "id": "smi24",
+      "col": 3,
+      "row": 5
+    },
+    {
+      "id": "smi25",
+      "col": 4,
+      "row": 5
+    },
+    {
+      "id": "smi26",
+      "col": 5,
+      "row": 5
+    },
+    {
+      "id": "smi27",
+      "col": 0,
+      "row": 6
+    },
+    {
+      "id": "smi28",
+      "col": 3,
+      "row": 6
+    },
+    {
+      "id": "smi29",
+      "col": 6,
+      "row": 6
+    },
+    {
+      "id": "smi30",
+      "col": 1,
+      "row": 7
+    },
+    {
+      "id": "smi31",
+      "col": 2,
+      "row": 7
+    },
+    {
+      "id": "smi32",
+      "col": 3,
+      "row": 7
+    },
+    {
+      "id": "smi33",
+      "col": 4,
+      "row": 7
+    },
+    {
+      "id": "smi34",
+      "col": 5,
+      "row": 7
+    },
+    {
+      "id": "smi35",
+      "col": 0,
+      "row": 8
+    },
+    {
+      "id": "smi36",
+      "col": 2,
+      "row": 8
+    },
+    {
+      "id": "smi37",
+      "col": 4,
+      "row": 8
+    },
+    {
+      "id": "smi38",
+      "col": 6,
+      "row": 8
+    },
+    {
+      "id": "smi39",
+      "col": 0,
+      "row": 9
+    },
+    {
+      "id": "smi40",
+      "col": 1,
+      "row": 9
+    },
+    {
+      "id": "smi41",
+      "col": 2,
+      "row": 9
+    },
+    {
+      "id": "smi42",
+      "col": 3,
+      "row": 9
+    },
+    {
+      "id": "smi43",
+      "col": 4,
+      "row": 9
+    },
+    {
+      "id": "smi44",
+      "col": 5,
+      "row": 9
+    },
+    {
+      "id": "smi45",
+      "col": 6,
+      "row": 9
+    },
+    {
+      "id": "smi46",
+      "col": 1,
+      "row": 10
+    },
+    {
+      "id": "smi47",
+      "col": 2,
+      "row": 10
+    },
+    {
+      "id": "smi48",
+      "col": 4,
+      "row": 10
+    },
+    {
+      "id": "smi49",
+      "col": 5,
+      "row": 10
+    },
+    {
+      "id": "smi50",
+      "col": 0,
+      "row": 11
+    },
+    {
+      "id": "smi51",
+      "col": 2,
+      "row": 11
+    },
+    {
+      "id": "smi52",
+      "col": 4,
+      "row": 11
+    },
+    {
+      "id": "smi53",
+      "col": 6,
+      "row": 11
+    },
+    {
+      "id": "smi54",
+      "col": 0,
+      "row": 12
+    },
+    {
+      "id": "smi55",
+      "col": 1,
+      "row": 12
+    },
+    {
+      "id": "smi56",
+      "col": 3,
+      "row": 12
+    },
+    {
+      "id": "smi57",
+      "col": 5,
+      "row": 12
+    },
+    {
+      "id": "smi58",
+      "col": 6,
+      "row": 12
+    },
+    {
+      "id": "smi59",
+      "col": 2,
+      "row": 13
+    },
+    {
+      "id": "smi60",
+      "col": 4,
+      "row": 13
+    }
+  ],
+  "originId": "smi01",
+  "edges": {
+    "smi01": [
+      "smi02",
+      "smi03",
+      "smi04"
+    ],
+    "smi02": [
+      "smi05",
+      "smi06"
+    ],
+    "smi03": [
+      "smi06",
+      "smi07",
+      "smi08"
+    ],
+    "smi04": [
+      "smi08",
+      "smi09"
+    ],
+    "smi05": [
+      "smi11"
+    ],
+    "smi11": [
+      "smi10",
+      "smi12",
+      "smi17",
+      "smi18"
+    ],
+    "smi06": [
+      "smi12",
+      "smi11"
+    ],
+    "smi07": [
+      "smi13"
+    ],
+    "smi12": [
+      "smi18"
+    ],
+    "smi10": [
+      "smi27"
+    ],
+    "smi18": [
+      "smi22",
+      "smi23",
+      "smi24"
+    ],
+    "smi13": [
+      "smi18",
+      "smi19",
+      "smi20"
+    ],
+    "smi08": [
+      "smi14",
+      "smi15"
+    ],
+    "smi09": [
+      "smi15"
+    ],
+    "smi15": [
+      "smi16",
+      "smi21",
+      "smi20"
+    ],
+    "smi16": [
+      "smi29"
+    ],
+    "smi14": [
+      "smi20"
+    ],
+    "smi20": [
+      "smi24",
+      "smi25",
+      "smi26"
+    ],
+    "smi22": [
+      "smi30"
+    ],
+    "smi23": [
+      "smi31",
+      "smi28"
+    ],
+    "smi24": [
+      "smi28"
+    ],
+    "smi25": [
+      "smi28",
+      "smi33"
+    ],
+    "smi26": [
+      "smi34"
+    ],
+    "smi34": [
+      "smi38",
+      "smi44"
+    ],
+    "smi37": [
+      "smi44",
+      "smi43"
+    ],
+    "smi36": [
+      "smi41",
+      "smi40"
+    ],
+    "smi30": [
+      "smi35"
+    ],
+    "smi35": [
+      "smi39",
+      "smi40"
+    ],
+    "smi40": [
+      "smi46"
+    ],
+    "smi31": [
+      "smi36"
+    ],
+    "smi33": [
+      "smi37"
+    ],
+    "smi28": [
+      "smi32"
+    ],
+    "smi32": [
+      "smi42"
+    ],
+    "smi42": [
+      "smi47",
+      "smi48",
+      "smi56"
+    ],
+    "smi47": [
+      "smi51"
+    ],
+    "smi48": [
+      "smi52"
+    ],
+    "smi51": [
+      "smi50",
+      "smi55"
+    ],
+    "smi50": [
+      "smi54"
+    ],
+    "smi55": [
+      "smi59"
+    ],
+    "smi52": [
+      "smi57",
+      "smi53"
+    ],
+    "smi57": [
+      "smi60"
+    ],
+    "smi53": [
+      "smi58"
+    ],
+    "smi44": [
+      "smi49"
+    ],
+    "smi38": [
+      "smi45"
+    ]
+  }
+}

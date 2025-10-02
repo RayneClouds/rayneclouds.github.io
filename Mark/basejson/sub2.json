@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Wildp01",
+    "name": "Wildpack Spec",
+    "icon": "Wildpack.png",
+    "gx": 0,
+    "gy": 0,
+    "desc": "",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp02",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -1,
+    "gy": 1,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp03",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 1,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp04",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 1,
+    "gy": 1,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp05",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp06",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -1,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp07",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 2,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp08",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 2,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp09",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 2,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp10",
+    "name": "Light Chasing Sharp",
+    "icon": "LightCha.png",
+    "gx": -2,
+    "gy": 3,
+    "desc": "While Photon Reforge is active, reduces Storm Arrow CD by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp11",
+    "name": "Phantom Wolfstrike",
+    "icon": "PhantomW.png",
+    "gx": -1,
+    "gy": 3,
+    "desc": "When Wild Wolf launches a Coordinated Attack, or Tail Sweep, there is a fixed 30% chance to summon a Phantom Direwolf using Pounce and Bite to attack the current enemy.\nPounce and Bite inflicts Bleed, and if the target is already suffered from Bleed, Pounce and Bite deals Crit DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp12",
+    "name": "Direwolf Bite",
+    "icon": "Direwolf.png",
+    "gx": 0,
+    "gy": 3,
+    "desc": "Wild Wolf's Coordinated Attack has a 50% fixed chance to inflict Bleed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp13",
+    "name": "Stomp",
+    "icon": "Stomp.png",
+    "gx": 1,
+    "gy": 3,
+    "desc": "Casting Wildcall again within 10s of its initial cast commands all beasts on the field to immediately cast Stomp.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp14",
+    "name": "Light Intent",
+    "icon": "LightInt.png",
+    "gx": 2,
+    "gy": 3,
+    "desc": "Increases Max Photon Energy by 20.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp15",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 4,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp16",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp17",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 4,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp18",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 4,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp19",
+    "name": "Beast Tidal Power",
+    "icon": "BeastTid.png",
+    "gx": -3,
+    "gy": 5,
+    "desc": "Increases Light Bonus by 3%.\nFor 5s after casting Torrent Volley, increases Light Bonus by 10%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp20",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp21",
+    "name": "Tracer Arrows",
+    "icon": "TracerAr.png",
+    "gx": -1,
+    "gy": 5,
+    "desc": "While Photon Reforge is active, for each Companion on the battlefield, Storm Arrow fires 1 extra Lightseeker Arrow.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp22",
+    "name": "Wolf Evolution",
+    "icon": "WolfEvol.png",
+    "gx": 0,
+    "gy": 5,
+    "desc": "Wild Wolf evolves into its Adult Form, increases DMG by 30%, DMG Range by 50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp23",
+    "name": "Legendary Beast",
+    "icon": "Legendar.png",
+    "gx": 1,
+    "gy": 5,
+    "desc": "Each time Wildcall is cast, a powerful Legendary Eagle or Legendary Boar will answer your call.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp24",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 2,
+    "gy": 5,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp25",
+    "name": "Focused Shot",
+    "icon": "FocusedS.png",
+    "gx": 3,
+    "gy": 5,
+    "desc": "Every target hit grants 1% Light DMG bonus. The bonus lasts 3s and can layer up to 4 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp26",
+    "name": "Life Hunt",
+    "icon": "LifeHunt.png",
+    "gx": -3,
+    "gy": 6,
+    "desc": "For each additional bleed effect on the target, Wolf deals +3% damage to it.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp27",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp28",
+    "name": "Wolf Fang Pact",
+    "icon": "WolfFang.png",
+    "gx": -1,
+    "gy": 6,
+    "desc": "Wild Wolf's Coordinated Attack reduces the remaining CD of Storm Arrow by 1 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp29",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 6,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp30",
+    "name": "Battle Howl",
+    "icon": "BattleHo.png",
+    "gx": 1,
+    "gy": 6,
+    "desc": "While Wildcall is active, the Wild Wolf is bound to deal Crit DMG on hit.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp31",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 6,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp32",
+    "name": "Sundering Arrow",
+    "icon": "Sunderin.png",
+    "gx": 3,
+    "gy": 6,
+    "desc": "Basic Attacks have a fixed 15% chance to trigger Split Arrow, once per second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp33",
+    "name": "Valiant Heart",
+    "icon": "ValiantH.png",
+    "gx": -3,
+    "gy": 7,
+    "desc": "Pets deal 15% more DMG to Elites or stronger enemies.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp34",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp35",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 0,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp36",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 2,
+    "gy": 7,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp37",
+    "name": "Arrow Barrage",
+    "icon": "ArrowBar.png",
+    "gx": 3,
+    "gy": 7,
+    "desc": "Basic Attacks have a fixed 20% chance to fire one arrow at each of up to 3 enemies near the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp38",
+    "name": "Wild Call CD",
+    "icon": "WildCall.png",
+    "gx": -2,
+    "gy": 8,
+    "desc": "For every 1 Lightseeker Arrow shot, the remaining CD of Wildcall -0.5 second.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp39",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp40",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp41",
+    "name": "Direwolf's Hunger",
+    "icon": "Direwolf.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "When the Wild Wolf deals Crit DMG, you and your Companion gain 2% Haste. This bonus lasts for 10s and can layer up to 5 times.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp42",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": -2,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp43",
+    "name": "Demon Wolf Twin",
+    "icon": "DemonWol.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "When Storm Arrow deals DMG in battle, it has a fixed 10% chance to summon a Wild Wolf for 8s. This effect can occur once every 40s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp44",
+    "name": "Lumi Torrent",
+    "icon": "LumiTorr.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "While Photon Reforge is active, Torrent Volley continuously overdrives. After 30s of overdriving, Torrent Volley evolves into Lumi Torrent.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp45",
+    "name": "Wolf Dancer",
+    "icon": "WolfDanc.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "After you use Arrow Rain, the Wild Wolf continuously performs Tail Sweep until the Arrow Rain ends.\nWild Wolf's Tail Sweep is bound to deal Crit DMG and to inflict Bleed.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp46",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 2,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp47",
+    "name": "Light and Shadow Drain",
+    "icon": "Lightand.png",
+    "gx": -2,
+    "gy": 10,
+    "desc": "Lightseeker Arrow has a fixed 50% chance to apply bleed to the target.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp48",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": -1,
+    "gy": 10,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp49",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp50",
+    "name": "Light Attack",
+    "icon": "LightAtt.png",
+    "gx": 1,
+    "gy": 10,
+    "desc": "Light Attack + 5",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp51",
+    "name": "Mastery of Bleed",
+    "icon": "Masteryo.png",
+    "gx": 2,
+    "gy": 10,
+    "desc": "Every 2% Mastery provides 1% bleed DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp52",
+    "name": "Wolf's Bite",
+    "icon": "WolfsBit.png",
+    "gx": -2,
+    "gy": 11,
+    "desc": "Wild Wolf deals additionally 30% DMG to targets with current HP less than or equal to 35%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp53",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": -1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp54",
+    "name": "Wolf Sharp Strike",
+    "icon": "WolfShar.png",
+    "gx": 0,
+    "gy": 8,
+    "desc": "In the state of Light Reforging, Wolf Crit DMG +50%.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp55",
+    "name": "Stamina",
+    "icon": "Stamina.png",
+    "gx": 1,
+    "gy": 8,
+    "desc": "Stamina + 30",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp56",
+    "name": "Photon Reforge Lore",
+    "icon": "PhotonRe.png",
+    "gx": 2,
+    "gy": 8,
+    "desc": "While Photon Reforge is active, the Wild Wolf's Coordinated Attack nullifies the target's Armor.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp57",
+    "name": "Arrow of Light",
+    "icon": "ArrowofL.png",
+    "gx": -1,
+    "gy": 9,
+    "desc": "Arrow Rain and Lightseeker Arrow are bound to deal Crit DMG.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp58",
+    "name": "Agility",
+    "icon": "Agility.png",
+    "gx": 0,
+    "gy": 9,
+    "desc": "Agility + 10",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp59",
+    "name": "Arrow Rain Acceleration",
+    "icon": "ArrowRai.png",
+    "gx": 1,
+    "gy": 9,
+    "desc": "Each time you summon 1 Wolf or Phantom Wolf, the remaining CD of Arrow Rain -0.5s.",
+    "cost": null,
+    "seal": null
+  },
+  {
+    "id": "Wildp60",
+    "name": "Twin Arrows",
+    "icon": "TwinArro.png",
+    "gx": 0,
+    "gy": 10,
+    "desc": "Luminary Bolt additionally causes a Photon Explosion, dealing Attack Damage equal to 1,500% ATK (which scales with the Level/Tier of Ultimate), and also knocks targets airborne and increases the DMG you deal to them by 5% for 10s.",
+    "cost": null,
+    "seal": null
+  }
+]

@@ -1,182 +1,171 @@
-id,name,icon,desc,children,gx,gy,cost,seal
-Verdo00,Verdant Oracle,FALSE,,,10,1,,
-Verdo01,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo03,0,0,1,0
-Verdo02,Inspiration,Inspiration.png,Applies Inspiration to yourself and allies within 30 meters.,Verdo06,-1,1,1,0
-Verdo03,Stamina,Stamina.png,Stamina + 30,"Verdo02,Verdo04,Verdo05",0,1,1,0
-Verdo04,Intellect Conversion,IntellectConversion.png,Every 10 points of Intellect provides 1 point of MATK.,Verdo08,1,1,1,0
-Verdo05,Regen Bud,RegenBud.png,"Casting a Special Attack grants 1 Regen Bud.
-
-Initial cap of Regen Buds: 4.
-When an Expertise Skill or Ultimate generates healing, 2 Regen Buds are consumed to throw a Nourishing Seed, triggering up to once per second.
-When an Expertise Skill or Ultimate deals DMG, 2 Regen Buds are consumed to shoot a Wild Seed once per second.",Verdo07,0,2,1,0
-Verdo06,Intellect,Intellect.png,Intellect + 10,Verdo09,-1,3,1,0
-Verdo07,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo10,0,3,1,0
-Verdo08,Intellect,Intellect.png,Intellect + 10,Verdo11,1,3,1,0
-Verdo09,Stamina,Stamina.png,Stamina + 30,Verdo12,-2,4,1,0
-Verdo10,Stamina,Stamina.png,Stamina + 30,"Verdo13,Verdo14",0,4,1,0
-Verdo11,Stamina,Stamina.png,Stamina + 30,"Verdo14,Verdo15",2,4,1,0
-Verdo12,Defensive Blessing,DefensiveBlessing.png,Inspiration additionally grants the target 200 Armor.,Verdo16,-1,5,1,0
-Verdo13,Breath of Buds,BreathofBuds.png,Increases Max Regen Bud by 4.,Verdo19,0,5,1,0
-Verdo14,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo17,1,5,1,0
-Verdo15,Energy Surge,EnergySurge.png,Every 2% haste provides 1% energy natural recovery efficiency.,"Verdo18,Verdo20",2,5,1,0
-Verdo16,Intellect,Intellect.png,Intellect + 10,Verdo21,-2,6,1,0
-Verdo17,Regeneration Bud,RegenerationBud.png,"When dealing damage with normal attacks, 10% chance to gain 1 Regen Bud.","Verdo19,Verdo20",1,6,1,0
-Verdo18,Intellect,Intellect.png,Intellect + 10,Verdo25,3,6,1,0
-Verdo19,Stamina,Stamina.png,Stamina + 30,"Verdo22,Verdo23",0,7,1,0
-Verdo20,Forest Attack,ForestAttack.png,Forest Attack + 5,"Verdo23,Verdo24",2,7,1,0
-Verdo21,Forest Attack,ForestAttack.png,Forest Attack + 5,Verdo26,-2,8,1,0
-Verdo22,Stamina,Stamina.png,Stamina + 30,Verdo27,0,8,1,0
-Verdo23,Intellect,Intellect.png,Intellect + 10,Verdo28,1,8,1,0
-Verdo24,Stamina,Stamina.png,Stamina + 30,Verdo29,2,8,1,0
-Verdo25,Stamina,Stamina.png,Stamina + 30,Verdo30,3,8,1,0
-Verdo26,Healing Breath,HealingBreath.png,"When a Special Attack, Expertise Skill, or Ultimate generates Healing, there is a 20% chance to trigger Healing Chain. For every 2% Luck, the chance +1%.",,-1,9,1,0
-Verdo27,Divine Ascension of the Flower Realm,DivineAscensionoftheFlowerRealm.png,"When Wild Seed deals DMG or Nourishing Seed generates healing, you gain a 10% Forest DMG bonus for the next 8s.",,0,9,1,0
-Verdo28,Dancing Seed,DancingSeed.png,"When a DMG-type Expertise Skill triggers Lucky Hit, next Wild Seed launches 1 more projectile.
-For every 5 Nourishing Seeds thrown, next Nourishing Seed throws 1 more projectile.",,1,9,1,0
-Verdo29,Omnipotent Breath,OmnipotentBreath.png,"When Intellect reaches 500, versatility +4%.",,2,9,1,0
-Verdo30,Brimming Vitality,BrimmingVitality.png,Increases Energy REG SPD by 20%,,3,9,1,0
-Smite00,Smite,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,9,11,,
-Smite01,Smite Spec,SmiteSpec.png,"Further enhances the ability to use Wild Bloom.
-Wild Bloom, Regen Pulse, and Nature Ward applies Symbiotic Mark to allies.
-Symbiotic Mark: Lasts for 10s, all DMG dealt heals the Symbiotic Mark target for 45% of the DMG.
-
-Healing of Stillness: If you don't deal DMG to enemies for 5s, each hit of your Basic Attack restores HP to up to 10 allies, prioritizing Allies. All four hits restore a total of 12.6% of your Max HP.","Smite02,Smite03",0,0,1,0
-Smite02,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite04,-1,1,1,0
-Smite03,Stamina,Stamina.png,Stamina + 30,Smite05,1,1,1,0
-Smite04,Nature Shield,NatureShield.png,"When Wild Bloom heals a target, it also applies Nature Shield to them.
-Targets with Nature Shield restore HP when hit, with the amount equal to 10% of your ATK. This effect can occur up to once per second.","Smite06,Smite07",-1,2,1,0
-Smite05,Pulse Duality,PulseDuality.png,"When Regen Pulse is actively used, it spreads twice.","Smite07,Smite08",1,2,1,0
-Smite06,Stamina,Stamina.png,Stamina + 30,"Smite09,Smite10",-2,3,1,0
-Smite07,Stamina,Stamina.png,Stamina + 30,"Smite10,Smite11",0,3,1,0
-Smite08,Intellect,Intellect.png,Intellect + 10,"Smite12,Smite13",2,3,1,0
-Smite09,Thorns,Thorns.png,"When Wild Seed hits a target, it inflicts Thorn on them.
-Verdant DMG dealt by players to targets with Thorn +5%.",Smite14,-3,4,1,0
-Smite10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite15,Smite17",-1,4,1,0
-Smite11,Intellect,Intellect.png,Intellect + 10,"Smite16,Smite18",0,4,1,0
-Smite12,Shelter,Shelter.png,"Within 5s after Casting Infusion, the damage absorption of the Nature Shield added by Wild Bloom or Nature Ward is doubled.","Smite16,Smite20",1,4,1,0
-Smite13,Luck Damage,LuckDamage.png,"Lucky Hit DMG Multiplier +5%.
-Every 1% Luck grants 1% Lucky Hit DMG Multiplier.",,3,4,1,0
-Smite14,Intellect,Intellect.png,Intellect + 10,Smite21,-3,5,1,0
-Smite15,Wild Blessing,WildBlessing.png,"Wild Bloom now stores up to 2 overdrives.
-Wild Bloom's Energy cost -15%.",,-2,5,1,0
-Smite16,Stamina,Stamina.png,Stamina + 30,Smite19,1,5,1,0
-Smite17,Final Bloomwheel,FinalBloomwheel.png,"When Wild bloom triggers a Lucky Hit, it reduces the CD of Infusion by 3s.","Smite22,Smite23",-1,6,1,0
-Smite18,Bloomheal,Bloomheal.png,"Replace Ultimate, Divine Circle Bloom with Bloomheal.",Smite23,0,6,1,0
-Smite19,Intellect,Intellect.png,Intellect + 10,"Smite24,Smite30",1,6,1,0
-Smite20,Stamina,Stamina.png,Stamina + 30,Smite25,3,6,1,0
-Smite21,Wide-area Thorns,Wide-areaThorns.png,Successful hit of Feral Seed on the targets with Thorn spreads Thorn to other units within 10 meters.,Smite26,-3,7,1,0
-Smite22,Stamina,Stamina.png,Stamina + 30,Smite26,-2,7,1,0
-Smite23,Stamina,Stamina.png,Stamina + 30,"Smite27,Smite28",-1,7,1,0
-Smite24,Pulse Retrospect,PulseRetrospect.png,"Regen Pulse returns to your position after it reaches the max distance.
-Regen Pulse now deals DMG to enemies.","Smite28,Smite29",1,7,1,0
-Smite25,Bud Acquisition,BudAcquisition.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates an Engram Orb, which grants 1 Regen Bud upon pickup.",,3,7,1,0
-Smite26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Smite31,Smite32,Smite33",-2,8,1,0
-Smite27,Feral Seed Symbiosis,FeralSeedSymbiosis.png,"When the number of active Symbiotic Marks is greater than or equal to 5, the damage of Feral Seeds +100%.",Smite33,-1,8,1,0
-Smite28,Intellect,Intellect.png,Intellect + 10,"Smite33,Smite34,Smite35",0,8,1,0
-Smite29,Pulse Echo,PulseEcho.png,"When dealing DMG, Infusion grants 1 stack of Pulse Echo.
-Pulse Echo: Increases DMG dealt of Regen Pulse by 20%, which lasts 12s and stacks up to 5 times.","Smite35,Smite36",2,8,1,0
-Smite30,Breath of Symbiosis,BreathofSymbiosis.png,Symbiotic Mark enhances Healingiveness by 2%. Each 5% Mastery enhances Healingiveness by 1%.,Smite36,3,8,1,0
-Smite31,Laceration,Laceration.png,"When dealing DMG, Infusion inflicts Laceration on the target.
-Laceration: Takes 100% more DMG from Thorn in 2s.",,-3,9,1,0
-Smite32,Stamina,Stamina.png,Stamina + 30,Smite37,-2,9,1,0
-Smite33,Stamina,Stamina.png,Stamina + 30,"Smite38,Smite40",-1,9,1,0
-Smite34,Stag Charge,StagCharge.png,"After triggering a total of 10 Nourishing Seeds or Wild Seeds, Wild Bloom evolves into Stag Charge.
-Casting Stag Charge instants grants 3 Regen Buds.","Smite38,Smite42",0,9,1,0
-Smite35,Intellect,Intellect.png,Intellect + 10,Smite46,1,9,1,0
-Smite36,Intellect,Intellect.png,Intellect + 10,"Smite39,Smite52",3,9,1,0
-Smite37,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
-Revival: Restores HP equal to 50% of the DMG taken over 5s.",,-3,10,1,0
-Smite38,Stamina,Stamina.png,Stamina + 30,Smite41,-1,10,1,0
-Smite39,Arcane of Green,ArcaneofGreen.png,"When Feral Seed deals DMG, it increases the DMG dealt by Infusion, Wild Bloom, Stag Charge in the next 10s by 20%.",Smite43,2,10,1,0
-Smite40,Intellect,Intellect.png,Intellect + 10,"Smite44,Smite47",-3,11,1,0
-Smite41,Verdant Blessing,VerdantBlessing.png,"When HP of an ally with Inspiration drops below 20%, Blessing triggers.
-Blessing: Grants a Nature Shield and reduces the DMG taken by 35% for 8s, once every 60s.","Smite44,Smite48",-1,11,1,0
-Smite42,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite45,0,11,1,0
-Smite43,Intellect,Intellect.png,Intellect + 10,"Smite46,Smite51",2,11,1,0
-Smite44,Flourish,Flourish.png,"When Infusion, Feral Seed, or Wild Bloom deals DMG, 30% chance to reduce the CD of the Ultimate by 1s, once per second.",Smite48,-2,12,1,0
-Smite45,Double Infusion,DoubleInfusion.png,"After casting Stag Charge, the number of channels for the next Infusion +100%.",Smite49,0,12,1,0
-Smite46,Symbiosis Extension,SymbiosisExtension.png,Each Wild Seed fired extends the duration of activated Symbiotic Mark by 1 second.,"Smite50,Smite51",1,12,1,0
-Smite47,Swift Bud,SwiftBud.png,"Each Regen Bud gained, reduces the CD of Feral Seed by 1 second.",,-3,13,1,0
-Smite48,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite57",-1,13,1,0
-Smite49,Stamina,Stamina.png,Stamina + 30,"Smite53,Smite54,Smite55",0,13,1,0
-Smite50,Intellect,Intellect.png,Intellect + 10,Smite55,1,13,1,0
-Smite51,Stamina,Stamina.png,Stamina + 30,"Smite55,Smite56",2,13,1,0
-Smite52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once every 10s.",,3,13,1,0
-Smite53,Intellect,Intellect.png,Intellect + 10,Smite58,-1,14,1,0
-Smite54,Forest Attack,ForestAttack.png,Forest Attack + 5,Smite59,0,14,1,0
-Smite55,Stamina,Stamina.png,Stamina + 30,Smite60,1,14,1,0
-Smite56,Swift Shelter,SwiftShelter.png,"Each use or trigger of Regen Pulse, reduces the CD of Nature Ward by 2s.",,3,14,1,0
-Smite57,Wild Luck,WildLuck.png,"When Wild Bloom or Regen Pulse deal DMG, grants a chance (equal to the half percentage of Luck) to gain 1 Regen Bud. If the target is affected by Thorn, doubles the chance.",,-3,15,1,0
-Smite58,Pulse Breath,PulseBreath.png,"If equipped with Regen Pulse skill, Nature Ward and Ultimates will trigger Regen Pulse when their CDs are completed.",,-1,15,1,0
-Smite59,Verdant Impact,VerdantImpact.png,"For every 20 stacks of Pulse Echo gained, the next actively cast Regen Pulse triggers a Blossom Charge at both the nearest enemy and the Ally with lowest HP.",,0,15,1,0
-Smite60,Wild Protection,WildProtection.png,"The charge count of Nature Ward +1.
-The charge time of Nature Ward decreases by 5s.",,2,15,1,0
-Lifeb00,Life Bloom,TRUE,"Verdo01,Verdo02,Verdo03,Verdo04,Verdo05,Verdo06,Verdo07,Verdo08,Verdo09,Verdo10,Verdo11,Verdo12,Verdo13,Verdo14,Verdo15,Verdo16,Verdo17,Verdo18,Verdo19,Verdo20,Verdo21,Verdo22,Verdo23,Verdo24,Verdo25,Verdo26,Verdo27,Verdo28,Verdo29,Verdo30",,11,11,,
-Lifeb01,Lifebind Spec,LifebindSpec.png,"Replace Special Attack with Life Bloom and enhances the skill.
-Life Bloom generates 20% more healing.
-Casting Life Bloom grants 1 additional Regen Bud.","Lifeb02,Lifeb03",0,0,1,0
-Lifeb02,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb04,-1,1,1,0
-Lifeb03,Stamina,Stamina.png,Stamina + 30,Lifeb05,1,1,1,0
-Lifeb04,Healing Infusion,HealingInfusion.png,Every 5 uses of Life Bloom enhances the next direct healing Expertise Skill by 100%,"Lifeb06,Lifeb07",-1,2,1,0
-Lifeb05,Lifeforce Extension,LifeforceExtension.png,"Increases the Healing of Healing Chain by 10%. For every 7% Mastery, Healing Chain jumps 1 additional time.","Lifeb07,Lifeb08",1,2,1,0
-Lifeb06,Stamina,Stamina.png,Stamina + 30,"Lifeb09,Lifeb10",-2,3,1,0
-Lifeb07,Stamina,Stamina.png,Stamina + 30,"Lifeb10,Lifeb11",0,3,1,0
-Lifeb08,Intellect,Intellect.png,Intellect + 10,"Lifeb12,Lifeb13",2,3,1,0
-Lifeb09,Energy Arcane,EnergyArcane.png,"During Growth Arcane, increases ERG REG SPD by 50%.
-Increases Grove Wish's Crit by 10%.",Lifeb14,-3,4,1,0
-Lifeb10,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb15,Lifeb17",-1,4,1,0
-Lifeb11,Intellect,Intellect.png,Intellect + 10,"Lifeb16,Lifeb18",0,4,1,0
-Lifeb12,Transcendence,Transcendence.png,Every 60 self-heals from Nourish grants Transcendence.,"Lifeb16,Lifeb20",1,4,1,0
-Lifeb13,Verdant Nourishment,VerdantNourishment.png,"If you're affected with Nourish, reduces all DMG taken by 10%. If the targets are affected by Nourish, enhances their Healing Received from yourself by 5%. If the stack of Nourish is above or equal to 3, additionally enhances Healing Received by 3%.",,3,4,1,0
-Lifeb14,Intellect,Intellect.png,Intellect + 10,Lifeb21,-3,5,1,0
-Lifeb15,Life Bloom,LifeBloom.png,"Using Blossom Charge enhances the next Life Bloom, skipping the cast and increasing the Healing by 50%.",,-2,5,1,0
-Lifeb16,Stamina,Stamina.png,Stamina + 30,Lifeb19,1,5,1,0
-Lifeb17,Full Bloom,FullBloom.png,Casting Life Bloom grants a fixed 50% chance to reduce the CD of Blossom Charge and Regen by 2s.,"Lifeb22,Lifeb23",-1,6,1,0
-Lifeb18,Vital Surge,VitalSurge.png,"Replace Ultimate, Divine Circle Bloom with Vital Surge.",Lifeb23,0,6,1,0
-Lifeb19,Intellect,Intellect.png,Intellect + 10,"Lifeb24,Lifeb30",1,6,1,0
-Lifeb20,Stamina,Stamina.png,Stamina + 30,Lifeb25,3,6,1,0
-Lifeb21,Blooming Reincarnation,BloomingReincarnation.png,Casting Life Bloom increases Life Bloom's healing by 20% and its ENG consumed by 10% for 4s. This effect can stack up to 5 times.,Lifeb26,-3,7,1,0
-Lifeb22,Stamina,Stamina.png,Stamina + 30,Lifeb26,-2,7,1,0
-Lifeb23,Stamina,Stamina.png,Stamina + 30,"Lifeb27,Lifeb28",-1,7,1,0
-Lifeb24,Vitality,Vitality.png,Nourish can stack up to 5 times. Each use of Life Bloom grants the targets with Nourish 1 stack of Nourish.,"Lifeb28,Lifeb29",1,7,1,0
-Lifeb25,Gift of Life,GiftofLife.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Orb. This can only occur once ever 2s.",,3,7,1,0
-Lifeb26,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb31,Lifeb32,Lifeb33",-2,8,1,0
-Lifeb27,Flower Time Dance,FlowerTimeDance.png,"Every 45s, generates 1 Flower Stalk in the following order:
-Crimson Insight, Golden Devotion, and Moonlight Solace.",Lifeb33,-1,8,1,0
-Lifeb28,Intellect,Intellect.png,Intellect + 10,"Lifeb33,Lifeb34,Lifeb35",0,8,1,0
-Lifeb29,Nourish Essence,NourishEssence.png,"When Life Bloom generates healing, 50% chance to apply Nourish.","Lifeb35,Lifeb36",2,8,1,0
-Lifeb30,Endless Blossom,EndlessBlossom.png,"When casting Blossom charge, Grove Wish, or Regen Pulse, 20% chance that the next cast of Life Bloom within 5s consumes no Energy.",Lifeb36,3,8,1,0
-Lifeb31,Flourishing Progress,FlourishingProgress.png,"When holding 2 or more Regen Buds, casting Blossom Charge for damage or healing always triggers a corresponding seed (without costing Regen Buds) and grants 1 Regen Bud.",,-3,9,1,0
-Lifeb32,Stamina,Stamina.png,Stamina + 30,Lifeb37,-2,9,1,0
-Lifeb33,Stamina,Stamina.png,Stamina + 30,"Lifeb38,Lifeb40",-1,9,1,0
-Lifeb34,Verdant Root,VerdantRoot.png,"While in battle state, standing still for 2s creates a Grass Domain.
-Grass Domain: While inside the Grass Domain, your Haste +10%. Upon exiting the Grass Domain, 0. Your Movement SPD +50% for 5s, and Grass Domain disappears.","Lifeb38,Lifeb42",0,9,1,0
-Lifeb35,Intellect,Intellect.png,Intellect + 10,Lifeb46,1,9,1,0
-Lifeb36,Forest Attack,ForestAttack.png,Forest Attack + 5,"Lifeb39,Lifeb52",3,9,1,0
-Lifeb37,Natural Bloom,NaturalBloom.png,"When healing an ally with lower than 30% HP, Natural Bloom triggers, instantly restoring HP equal to 200% ATK to them. This effect can occur up to once every 30s.",,-3,10,1,0
-Lifeb38,Stamina,Stamina.png,Stamina + 30,Lifeb41,-1,10,1,0
-Lifeb39,Energy Expansion,EnergyExpansion.png,"Increases Max Energy by 20.
-Using Blossom Charge restores 30% lost Energy.",Lifeb43,2,10,1,0
-Lifeb40,Intellect,Intellect.png,Intellect + 10,"Lifeb44,Lifeb47",-3,11,1,0
-Lifeb41,Verdant Duet,VerdantDuet.png,Life bloom has a fixed 20% chance to heal 1 additional time.,"Lifeb44,Lifeb48",-1,11,1,0
-Lifeb42,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb45,0,11,1,0
-Lifeb43,Intellect,Intellect.png,Intellect + 10,"Lifeb46,Lifeb51",2,11,1,0
-Lifeb44,Wings of Revival,WingsofRevival.png,"When an ally within 20 meters takes DMG exceeding 30% of their HP, Revival triggers, which can affect the same target up to once every 45s.
-Revival: Restores HP equal to 50% of the DMG taken over 5s.",Lifeb48,-2,12,1,0
-Lifeb45,Bud to Blossom,BudtoBlossom.png,"When a Flower Stalk appears, grants 1 Regen Bud every 2s for 10s.",Lifeb49,0,12,1,0
-Lifeb46,Inspire and Strengthen,InspireandStrengthen.png,"Inspiration additionally grants 50 bonus Intellect, Strength, Agility, and Stamina.","Lifeb50,Lifeb51",1,12,1,0
-Lifeb47,Floral Whisper,FloralWhisper.png,"Healing Expertise generate 20% more healing, but healing from Life Bloom -50%.",,-3,13,1,0
-Lifeb48,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb57",-1,13,1,0
-Lifeb49,Stamina,Stamina.png,Stamina + 30,"Lifeb53,Lifeb54,Lifeb55",0,13,1,0
-Lifeb50,Intellect,Intellect.png,Intellect + 10,Lifeb55,1,13,1,0
-Lifeb51,Stamina,Stamina.png,Stamina + 30,"Lifeb55,Lifeb56",2,13,1,0
-Lifeb52,Healing Pulse,HealingPulse.png,"When an enemy within 10 meters that you are engaged with (effective within a team) is defeated, generates a Healing Pulse. This can only occur once ever 10s.",,3,13,1,0
-Lifeb53,Intellect,Intellect.png,Intellect + 10,Lifeb58,-1,14,1,0
-Lifeb54,Forest Attack,ForestAttack.png,Forest Attack + 5,Lifeb59,0,14,1,0
-Lifeb55,Stamina,Stamina.png,Stamina + 30,Lifeb60,1,14,1,0
-Lifeb56,Instant Bloom,InstantBloom.png,Every 5 uses of Life Bloom accelerates the using of Grove Wish or Regen Pulse by 100% and increases their Healing by 50% in 15s.,,3,14,1,0
-Lifeb57,Rescue,Rescue.png,Healing Expertise restore 25% more HP to the targets with HP below 50%.,,-3,15,1,0
-Lifeb58,Flourishing Flower,FlourishingFlower.png,"Within Grass Domain, Flower Stalk appeared 50% earlier.",,-1,15,1,0
-Lifeb59,Tricolor Revelation,TricolorRevelation.png,"Consumes Moonlight Solace to launch Flower Dance - Tricolor Revelation.
-Flower Dance - Tricolor Revelation: Grants all effects of Flower Stalks, once every 60s.",,0,15,1,0
-Lifeb60,Ultimate Inspiration,UltimateInspiration.png,Doubles the effectiveness of Inspiration.,,2,15,1,0
+id,name,icon,desc,children,gx,gy,cost,seal,requiresUnlock
+Windk00,Wind Knight,FALSE,,,10,1,,,
+Windk01,Wind Attack,WindAttack.png,Wind Attack + 5,Windk02,0,0,1,0,
+Windk02,Stamina,Stamina.png,Stamina + 30,Windk04,0,1,1,0,
+Windk03,Stamina,Stamina.png,Stamina + 30,Windk07,-1,2,1,0,
+Windk04,Sharp,Sharp.png,Dealing DMG with Special Attacks grants Sharp.,"Windk03,Windk05,Windk06",0,2,1,0,
+Windk05,Stamina,Stamina.png,Stamina + 30,Windk09,1,2,1,0,
+Windk06,Power Conversion,PowerConversion.png,Every 8 Strength grants 1 ATK.,Windk08,0,3,1,0,
+Windk07,Stamina,Stamina.png,Stamina + 30,Windk10,-1,4,1,0,
+Windk08,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,Windk11,0,5,1,0,
+Windk09,Swift Shadow,SwiftShadow.png,"Every 50 points of Courage consumed reduces the CD of Spiral Thrust, Breach Pursuit, and Falcon Toss by 1.","Windk12,Windk16",1,5,1,0,
+Windk10,Strength,Strength.png,Strength + 10,"Windk13,Windk14",-1,6,1,0,
+Windk11,Wind Attack,WindAttack.png,Wind Attack + 5,Windk15,0,6,1,0,
+Windk12,Strength,Strength.png,Strength + 10,Windk17,2,6,1,0,
+Windk13,Wind Attack,WindAttack.png,Wind Attack + 5,Windk21,-2,7,1,0,
+Windk14,Stamina,Stamina.png,Stamina + 30,Windk18,-1,7,1,0,
+Windk15,Strength,Strength.png,Strength + 10,Windk19,0,7,1,0,
+Windk16,Stamina,Stamina.png,Stamina + 30,Windk20,1,7,1,0,
+Windk17,Valor,Valor.png,Increases Max Courage by 30.,Windk20,2,7,1,0,
+Windk18,Long Lance Sharp Blade,LongLanceSharpBlade.png,"When Strength reaches 300 points, Expertise Skill damage +7%.",Windk22,-1,8,1,0,
+Windk19,Vulnerable Strike,VulnerableStrike.png,"Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.
+Vulnerability: Increases the DMG you deal to the target by 10% for 5s.",Windk22,0,8,1,0,
+Windk20,Divine Concealment,DivineConcealment.png,"Consuming Courage increases Haste by 1% and Speed by 2% for 5s, stacking up to 5 times.",Windk23,2,8,1,0,
+Windk21,Stamina,Stamina.png,Stamina + 30,Windk27,-2,9,1,0,
+Windk22,Wind Attack,WindAttack.png,Wind Attack + 5,Windk24,-1,9,1,0,
+Windk23,Wind Attack,WindAttack.png,Wind Attack + 5,"Windk25,Windk26",1,9,1,0,
+Windk24,Stamina,Stamina.png,Stamina + 30,Windk28,-1,10,1,0,
+Windk25,Strength,Strength.png,Strength + 10,"Windk29,Windk30",0,10,1,0,
+Windk26,Strength,Strength.png,Strength + 10,Windk30,2,10,1,0,
+Windk27,Sharp,Sharp.png,"When Strength reaches 500 points, the additional ATK from Sharp increases to 6%.",,-2,11,1,0,
+Windk28,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,,-1,11,1,0,
+Windk29,Wind and Thunder Strike,WindandThunderStrike.png,"When Galeform ends, it applies the Tempestrike.
+Every 50 points of Courage consumed during Galeform extends the duration of Tempestrike by 1s.",,0,11,1,0,
+Windk30,Swift,Swift.png,Each 1% Haste provides 1% Attack Speed.,,1,11,1,0,
+Skywa00,Skyward Spec,TRUE,,,9,13,,,
+Skywa01,Skyward Spec,SkywardSpec.png,"Replace Special Attack with Skyfall enhances the skill.
+When having Sharp, gains ATK based on the max number of Sharp.","Skywa02,Skywa03,Skywa04",0,0,1,0,
+Skywa02,Strength,Strength.png,Strength + 10,"Skywa05,Skywa06",-1,1,1,0,
+Skywa03,Stamina,Stamina.png,Stamina + 30,"Skywa06,Skywa07,Skywa08",0,1,1,0,
+Skywa04,Strength,Strength.png,Strength + 10,"Skywa08,Skywa09",1,1,1,0,
+Skywa05,Bird Advancement,BirdAdvancement.png,"Increases the Overdrive of Falcon Toss by 1.
+Reduces Courage consumed by Falcon Toss by 50%.",Skywa11,-2,2,1,0,
+Skywa06,Stamina,Stamina.png,Stamina + 30,"Skywa11,Skywa12",-1,2,1,0,
+Skywa07,Wind Fury,WindFury.png,Casting Sharp Impact grants Wind Fury.,Skywa13,0,2,1,0,
+Skywa08,Stamina,Stamina.png,Stamina + 30,"Skywa14,Skywa15",1,2,1,0,
+Skywa09,Skyfall,Skyfall.png,"When dealing DMG, Skyfall gains a fixed 15% chance to grant 1 stack of Sharp.",Skywa15,2,2,1,0,
+Skywa10,Wind Attack,WindAttack.png,Wind Attack + 5,Skywa27,-3,3,1,0,
+Skywa11,Stamina,Stamina.png,Stamina + 30,"Skywa10,Skywa12,Skywa17,Skywa18",-2,3,1,0,
+Skywa12,Kamikaze Luck,KamikazeLuck.png,"For each 1 stack of Sharpness consumed, gains 3 points of Courage.
+Increases Lucky Hit final DMG by 50%.",Skywa18,-1,3,1,0,
+Skywa13,Wind Attack,WindAttack.png,Wind Attack + 5,"Skywa18,Skywa19,Skywa20",0,3,1,0,
+Skywa14,Instant Edge Break Style,InstantEdgeBreakStyle.png,"Instant Edge consumes 1 more Sharp.
+Increases the DMG dealt by Instant Edge by 90%.",Skywa20,1,3,1,0,
+Skywa15,Stamina,Stamina.png,Stamina + 30,"Skywa16,Skywa20,Skywa21",2,3,1,0,
+Skywa16,Wind Attack,WindAttack.png,Wind Attack + 5,Skywa29,3,3,1,0,
+Skywa17,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,,-2,4,1,0,
+Skywa18,Strength,Strength.png,Strength + 10,"Skywa22,Skywa23,Skywa24",-1,4,1,0,
+Skywa19,Battle Cry,BattleCry.png,"Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.
+Inspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",,0,4,1,0,
+Skywa20,Strength,Strength.png,Strength + 10,"Skywa24,Skywa25,Skywa26",1,4,1,0,
+Skywa21,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,,2,4,1,0,
+Skywa22,Spear Penetration,SpearPenetration.png,"When Skyfall lands a Lucky Hit, it triggers Spear Thrust, once every 2s.
+Dealing DMG with Spear Thrust restores 8 points of Courage. This effect triggers only once, even if multiple targets are hit.",Skywa30,-2,5,1,0,
+Skywa23,Stamina,Stamina.png,Stamina + 30,"Skywa28,Skywa31",-1,5,1,0,
+Skywa24,Pursuit Stance,PursuitStance.png,"When Skyfall deals Crit DMG, it triggers Chasing Step.",Skywa28,0,5,1,0,
+Skywa25,Stamina,Stamina.png,Stamina + 30,"Skywa28,Skywa33",1,5,1,0,
+Skywa26,Sharp Echo,SharpEcho.png,"If Sharpness isn't at Max stacks, increases the DMG dealt by Skyfall by 25%.",Skywa34,2,5,1,0,
+Skywa27,Tornado Dance,TornadoDance.png,"During Wind Fury, DMG dealt by Instant Edge and Azure Sever triggers Tornado (triggered at most once when hitting multiple targets).",,-3,6,1,0,
+Skywa28,Sharp Long Breath,SharpLongBreath.png,"During Wind Fury, Falcon Toss evolves into Azure Sever once.",Skywa32,0,6,1,0,
+Skywa29,Catcher,Catcher.png,"In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",,3,6,1,0,
+Skywa30,Strength,Strength.png,Strength + 10,Skywa35,-2,7,1,0,
+Skywa31,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,Skywa36,-1,7,1,0,
+Skywa32,Exceptional Elegance,ExceptionalElegance.png,"During Galeform, increases the DMG dealt by Instant Edge and Skyfall by 25%.",Skywa42,0,7,1,0,
+Skywa33,Strength,Strength.png,Strength + 10,Skywa37,1,7,1,0,
+Skywa34,Wind Attack,WindAttack.png,Wind Attack + 5,"Skywa38,Skywa44",2,7,1,0,
+Skywa35,Stamina,Stamina.png,Stamina + 30,"Skywa39,Skywa40",-3,8,1,0,
+Skywa36,Wind Attack,WindAttack.png,Wind Attack + 5,"Skywa40,Skywa41",-1,8,1,0,
+Skywa37,Stamina,Stamina.png,Stamina + 30,"Skywa43,Skywa44",1,8,1,0,
+Skywa38,Wind Attack,WindAttack.png,Wind Attack + 5,Skywa45,3,8,1,0,
+Skywa39,Wind Swirl Strike,WindSwirlStrike.png,"Increases the DMG dealt by Tornado by 30%.
+Increases the DMG dealt by Spear Thrust by 30%.",,-3,9,1,0,
+Skywa40,Strength,Strength.png,Strength + 10,Skywa46,-2,9,1,0,
+Skywa41,Spear Recovery,SpearRecovery.png,Spear Thrust reduces the CD of Falcon Toss by 2s (which can only be triggers once on multiple hits).,,-1,9,1,0,
+Skywa42,Stamina,Stamina.png,Stamina + 30,"Skywa47,Skywa48,Skywa56",0,9,1,0,
+Skywa43,Sharp Advancement,SharpAdvancement.png,"Enhances the effectiveness of Wind Fury by 50%.
+When Instant Edge consumes Chasing Step, doubles the Overdrive effectiveness of Sharp Impact.",,1,9,1,0,
+Skywa44,Strength,Strength.png,Strength + 10,Skywa49,2,9,1,0,
+Skywa45,Combat Expertise,CombatExpertise.png,"You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",,3,9,1,0,
+Skywa46,Divine Wind Support,DivineWindSupport.png,"When Falcon Toss and its enhanced skill (Azure Sever), or Instant Edge hits 1 target, gains a 10% Wind bonus.",,-2,10,1,0,
+Skywa47,Stamina,Stamina.png,Stamina + 30,Skywa51,-1,10,1,0,
+Skywa48,Stamina,Stamina.png,Stamina + 30,Skywa52,1,10,1,0,
+Skywa49,Momentum Surge,MomentumSurge.png,"Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",,2,10,1,0,
+Skywa50,Strength,Strength.png,Strength + 10,Skywa54,-3,11,1,0,
+Skywa51,Instantaneous Crit,InstantaneousCrit.png,"While Chasing Step is active, Instant Edge and Sharp Impact have their critical rate doubled.","Skywa50,Skywa55",-1,11,1,0,
+Skywa52,Sharp Pursuit,SharpPursuit.png,"When Instant Edge consumes Chasing Step, grants 1 stack of Sharp.","Skywa53,Skywa57",1,11,1,0,
+Skywa53,Strength,Strength.png,Strength + 10,Skywa58,3,11,1,0,
+Skywa54,Stamina,Stamina.png,Stamina + 30,,-3,12,1,0,
+Skywa55,Air Dance Strike,AirDanceStrike.png,"Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) allow the next Galeform to restore 50% more Courage.
+Hitting a target with Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) immediately grants 3 Sharpness (only triggers once even if multiple targets are hit).",Skywa59,-2,12,1,0,
+Skywa56,Stamina,Stamina.png,Stamina + 30,,0,12,1,0,
+Skywa57,Typhoon: Sharp Impact,TyphoonSharpImpact.png,"Sharp Impact is enhanced, evolving into Typhoon: Sharp Impact.",Skywa60,2,12,1,0,
+Skywa58,Instant Edge Combo,InstantEdgeCombo.png,"When Instant Edge consumes Chasing Step, grants a fixed 15% chance to deal an extra instance of DMG.",,3,12,1,0,
+Skywa59,Pursuit Power,PursuitPower.png,Chasing Step consumed increases Strength by 10%. The effect lasts 10s and stacks up to 2 times.,,-1,13,1,0,
+Skywa60,Break Style,BreakStyle.png,"When dealing Crit DMG, Expertise ignore the targets' 50% Armor.",,1,13,1,0,
+Vangu00,Vanguard Spec,TRUE,,,11,13,,,
+Vangu01,Vanguard Spec,VanguardSpec.png,"Further enhances Gale Thrust. Casting Gale Thrust grants a fixed 20% chance to cause Basic Attacks to evolve into Swift Blade, with an additional 5% chance per layer of Sharpness.","Vangu02,Vangu03,Vangu04",0,0,1,0,
+Vangu02,Strength,Strength.png,Strength + 10,"Vangu05,Vangu06",-1,1,1,0,
+Vangu03,Stamina,Stamina.png,Stamina + 30,"Vangu06,Vangu07,Vangu08",0,1,1,0,
+Vangu04,Strength,Strength.png,Strength + 10,"Vangu08,Vangu09",1,1,1,0,
+Vangu05,Break Pursuit Advancement,BreakPursuitAdvancement.png,"Within 15s after Casting the Ultimate, Casting Breach Pursuit will not enter CD. This effect is removed after the time ends or after Casting 3 times Breach Pursuit.",Vangu11,-2,2,1,0,
+Vangu06,Stamina,Stamina.png,Stamina + 30,"Vangu11,Vangu12",-1,2,1,0,
+Vangu07,Quickshot Meteor,QuickshotMeteor.png,"Gale Thrust is enhanced, increasing hit counts by 2.
+Reduces Gale Thrust's Courage consumption by 20%.",Vangu13,0,2,1,0,
+Vangu08,Stamina,Stamina.png,Stamina + 30,"Vangu14,Vangu15",1,2,1,0,
+Vangu09,Swift Breeze,SwiftBreeze.png,Each 1% Haste accelerates the REG SPD of Courage by 2%.,Vangu15,2,2,1,0,
+Vangu10,Wind Attack,WindAttack.png,Wind Attack + 5,Vangu27,-3,3,1,0,
+Vangu11,Stamina,Stamina.png,Stamina + 30,"Vangu10,Vangu12,Vangu17,Vangu18",-2,3,1,0,
+Vangu12,Strong Attack,StrongAttack.png,"When Valor Cyclone deals DMG, reduces the CD of Ultimate by 0.5s (which can only be triggers once on multiple hits).",Vangu18,-1,3,1,0,
+Vangu13,Wind Attack,WindAttack.png,Wind Attack + 5,"Vangu18,Vangu19,Vangu20",0,3,1,0,
+Vangu14,Wind Tear,WindTear.png,"When Gale Thrust deals DMG, there is a 20% fixed chance to apply Rend.",Vangu20,1,3,1,0,
+Vangu15,Stamina,Stamina.png,Stamina + 30,"Vangu16,Vangu20,Vangu21",2,3,1,0,
+Vangu16,Wind Attack,WindAttack.png,Wind Attack + 5,Vangu29,3,3,1,0,
+Vangu17,Wind Chaser,WindChaser.png,"During the casting of Valor Cyclone, for every 20 points of Courage consumed, increase the DMG of Valor Cyclone by 4%, up to 20%.",,-2,4,1,0,
+Vangu18,Strength,Strength.png,Strength + 10,"Vangu22,Vangu23,Vangu24",-1,4,1,0,
+Vangu19,Battle Cry,BattleCry.png,"Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.
+Inspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",,0,4,1,0,
+Vangu20,Strength,Strength.png,Strength + 10,"Vangu24,Vangu25,Vangu26",1,4,1,0,
+Vangu21,Zephyr Waltz Agility,ZephyrWaltzAgility.png,Additional Courage recovery: Recovers 1 extra point of Courage per second for every 2 stacks of Sharp.,,2,4,1,0,
+Vangu22,Fearless Gale,FearlessGale.png,"After Casting Spiral Thrust or Breach Pursuit or Valor Cyclone, the next Gale Thrust will not consume Courage. This effect is removed after leaving combat.",Vangu30,-2,5,1,0,
+Vangu23,Stamina,Stamina.png,Stamina + 30,"Vangu28,Vangu31",-1,5,1,0,
+Vangu24,Sharp Expansion,SharpExpansion.png,Sharp cap +1.,Vangu28,0,5,1,0,
+Vangu25,Stamina,Stamina.png,Stamina + 30,"Vangu28,Vangu33",1,5,1,0,
+Vangu26,Vigor Spike,VigorSpike.png,"When Sharp is granted, reaching max stacks of Sharp enables Vigor Spike state. Triggers up to once per 30s.",Vangu34,2,5,1,0,
+Vangu27,Combat Expertise,CombatExpertise.png,"You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",,-3,6,1,0,
+Vangu28,Rapid Drake Canon,RapidDrakeCanon.png,Using Swift Blade grants it a fixed 10% chance to evolve Basic Attack into Drake Cannon in 10s. Each failure to evolve increases the chance by 10% until success.,Vangu32,0,6,1,0,
+Vangu29,Catcher,Catcher.png,"In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",,3,6,1,0,
+Vangu30,Strength,Strength.png,Strength + 10,Vangu35,-2,7,1,0,
+Vangu31,Wind Spiral,WindSpiral.png,"When Gale Thrust deals DMG, it has a 25% fixed chance to grant 1 stack of Wind Spiral that lasts 20s and stacks up to 10 times.
+Wind Spiral: Casting Spiral Thrust or Valor Cyclone triggers a spiral explosion that inflicts Attack Damage equal to 100% ATK on surrounding enemies. Each explosion consumes 1 stack of Wind Spiral.",Vangu36,-1,7,1,0,
+Vangu32,Spiral Tear,SpiralTear.png,Spiral Thrust and Vortex Strike deals 30% more DMG to the targets with Rend.,Vangu42,0,7,1,0,
+Vangu33,Strength,Strength.png,Strength + 10,Vangu37,1,7,1,0,
+Vangu34,Wind Attack,WindAttack.png,Wind Attack + 5,"Vangu38,Vangu44",2,7,1,0,
+Vangu35,Stamina,Stamina.png,Stamina + 30,"Vangu39,Vangu40",-3,8,1,0,
+Vangu36,Wind Attack,WindAttack.png,Wind Attack + 5,"Vangu40,Vangu41",-1,8,1,0,
+Vangu37,Stamina,Stamina.png,Stamina + 30,"Vangu43,Vangu44",1,8,1,0,
+Vangu38,Wind Attack,WindAttack.png,Wind Attack + 5,Vangu45,3,8,1,0,
+Vangu39,Whispering Breeze,WhisperingBreeze.png,"When Courage is below or equal to 50%, reduces the Energy Valor Cyclone consumes by 2.
+When Courage is above 50%, increases the DMG Valor Cyclone deals by 12%.",,-3,9,1,0,
+Vangu40,Strength,Strength.png,Strength + 10,Vangu46,-2,9,1,0,
+Vangu41,Breath of Wind,BreathofWind.png,"Skills that consume Courage (Spiral Thrust and its enhanced skills, Valor Cyclone, Falcon Toss and its enhanced skills, Gale Thrust) gain 6% Wind Bonus.",,-1,9,1,0,
+Vangu42,Stamina,Stamina.png,Stamina + 30,"Vangu47,Vangu48,Vangu56",0,9,1,0,
+Vangu43,Wind Rift Diffusion,WindRiftDiffusion.png,"Expertise and Ultimates deal 10% more DMG to targets afflicted with Rend, and can detonate their Rend, spreading it to nearby enemies.",,1,9,1,0,
+Vangu44,Strength,Strength.png,Strength + 10,Vangu49,2,9,1,0,
+Vangu45,Thousand Wounds,ThousandWounds.png,"When Valor Cyclone deals DMG, it has a fixed 50% chance to inflict Rupture.",,3,9,1,0,
+Vangu46,Momentum Surge,MomentumSurge.png,"Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",,-2,10,1,0,
+Vangu47,Stamina,Stamina.png,Stamina + 30,Vangu51,-1,10,1,0,
+Vangu48,Stamina,Stamina.png,Stamina + 30,Vangu52,1,10,1,0,
+Vangu49,Wind Split Technique,WindSplitTechnique.png,"When Rend deals DMG, it has a fixed 50% chance to grant 2 points of Courage.",,2,10,1,0,
+Vangu50,Strength,Strength.png,Strength + 10,Vangu54,-3,11,1,0,
+Vangu51,Vortex Strike,VortexStrike.png,"After every 2 casts of Drake Cannon, your Spiral Thrust evolves into Vortex Strike.","Vangu50,Vangu55",-1,11,1,0,
+Vangu52,Wind Gate Drake Cannon,WindGateDrakeCannon.png,Every 22 triggers of Valor Cyclone allows Basic Attack to evolve into Drake Cannon in 10s.,"Vangu53,Vangu57",1,11,1,0,
+Vangu53,Strength,Strength.png,Strength + 10,Vangu58,3,11,1,0,
+Vangu54,Stamina,Stamina.png,Stamina + 30,,-3,12,1,0,
+Vangu55,Swift Blade,SwiftBlade.png,"When Valor Cyclone deals DMG, it has a fixed 7% chance to evolve Basic Attacks into Swift Blade.",Vangu59,-2,12,1,0,
+Vangu56,Stamina,Stamina.png,Stamina + 30,,0,12,1,0,
+Vangu57,Dragon's Fury Flame,Dragon'sFuryFlame.png,"Doubles the critical rate of Drake Cannon and Vortex Strike.
+Increases the Crit DMG dealt by Drake Cannon and Vortex Strike by 8%.",Vangu60,2,12,1,0,
+Vangu58,Spiral Flame,SpiralFlame.png,"Using Vortext Strike, increases Haste by 25% for 10s.",,3,12,1,0,
+Vangu59,Fortitude,Fortitude.png,"During Valor Cyclone, gains Super Armor and reduces DMG taken by 20%.
+When Valor Cyclone deals DMG, restores HP equal to 10% ATK.",,-1,13,1,0,
+Vangu60,Wind Rise,WindRise.png,"When Valor Cyclone deals DMG, increases the critical rate of Drake Cannon and Vortex Strike by 7%. The effect lasts 5s and stacks up to 7 times.",,1,13,1,0,
