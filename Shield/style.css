@@ -301,6 +301,43 @@ header {
 	background: rgba(255, 255, 255, 0.1);
 }
 
+/* Container for your buttons */
+.header-buttons {
+  display: flex;
+  justify-content: space-between; /* space between buttons */
+  width: 80%; /* total width of both buttons */
+  margin: 0 auto; /* center in the sidebar */
+  gap: 10px; /* optional spacing between buttons */
+}
+
+/* Optional: make buttons expand evenly */
+.header-buttons .header-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* keep image above text inside button if needed */
+  align-items: center;
+}
+/* Keep Reset button inside the sidebar */
+#resetCur {
+  position: fixed;       /* float above everything */
+  bottom: 95px;
+  right: 300px;          /* next to sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Max button can break out */
+#MaxButton {
+  position: fixed;       /* float above everything */
+  bottom: 15px;
+  right: 300px;          /* next to sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
 /* Special emphasis for the Clear button */
 .sidebar-controls {
 	width: 100%;
