@@ -119,21 +119,51 @@ function bindLegend(){
     }
   });
 }
+// ---------- hamburger menu -----
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
 
-  menuToggle.addEventListener("click", () => {
+  function closeMenu() {
+    menu.classList.add("hidden");
+    menuToggle.classList.remove("open");
+    document.removeEventListener("click", outsideClickHandler);
+    document.removeEventListener("keydown", escHandler);
+  }
+
+  function outsideClickHandler(e) {
+    if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+      closeMenu();
+    }
+  }
+
+  function escHandler(e) {
+    if (e.key === "Escape") {
+      closeMenu();
+    }
+  }
+
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
     menu.classList.toggle("hidden");
+
+    if (!menu.classList.contains("hidden")) {
+      menuToggle.classList.add("open");
+      document.addEventListener("click", outsideClickHandler);
+      document.addEventListener("keydown", escHandler);
+    } else {
+      menuToggle.classList.remove("open");
+      document.removeEventListener("click", outsideClickHandler);
+      document.removeEventListener("keydown", escHandler);
+    }
   });
 
-  // Optional: hide menu when clicking a link
   menu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menu.classList.add("hidden");
-    });
+    link.addEventListener("click", closeMenu);
   });
 });
+
+
 
 // ---------- Resources ----------
 function getTpMax(){ return parseInt(document.getElementById("tpMax").value,10) || 0; }
@@ -447,13 +477,18 @@ function buildFromJSON(data){
       el.dataset.id = n.id;
       el.dataset.tier = tId;
 
-      if (n.icon) {
-        const img = document.createElement("img");
-        img.src = `Skills/${n.icon}`;
-        img.alt = n.name || n.id;
-        img.className = "node-icon";
-        el.appendChild(img);
-      }
+if (n.icon) {
+    const img = document.createElement("img");
+    img.src = `Skills/${n.icon}`;
+    img.alt = n.name || n.id;
+    img.className = "node-icon";
+
+    // Add tooltip with name + description
+    el.title = `${n.name || n.id}${n.desc ? "\n" + n.desc : ""}`;
+
+    el.appendChild(img);
+}
+
 
       nodes[n.id] = { ...n, tierId:tId, el, unlocked:false };
       tiers[tId].nodes.push(n.id);
@@ -836,7 +871,7 @@ maxImg.addEventListener("click", (e)=>{
 
 // Reset badge
 const resetImg = document.createElement("img");
-resetImg.src = "img/reset.png"; // your icon path
+resetImg.src = "img/Reset.png"; // your icon path
 resetImg.alt = "Reset";
 resetImg.className = "tier-badge reset-badge";
 resetImg.addEventListener("click", (e)=>{
