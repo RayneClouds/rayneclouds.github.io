@@ -88,8 +88,7 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Heavy09",
-            "Heavy10"
+            "Heavy09"
           ],
           "requiresUnlock": [],
           "gx": -1,
@@ -103,6 +102,7 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
+            "Heavy10",
             "Heavy11"
           ],
           "requiresUnlock": [],
@@ -117,8 +117,7 @@
           "icon": "Strength.png",
           "desc": "Strength + 10",
           "children": [
-            "Heavy12",
-            "Heavy13"
+            "Heavy12"
           ],
           "requiresUnlock": [],
           "gx": 1,
@@ -132,7 +131,7 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Heavy14"
+            "Heavy13"
           ],
           "requiresUnlock": [],
           "gx": -2,
@@ -146,7 +145,7 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Heavy23"
+            "Heavy14"
           ],
           "requiresUnlock": [],
           "gx": -1,
@@ -174,7 +173,8 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Heavy16"
+            "Heavy16",
+            "Heavy20"
           ],
           "requiresUnlock": [],
           "gx": 1,
@@ -191,8 +191,8 @@
             "Heavy17"
           ],
           "requiresUnlock": [],
-          "gx": 2,
-          "gy": 4,
+          "gx": -2,
+          "gy": 5,
           "cost": 1,
           "seal": 0
         },
@@ -202,10 +202,12 @@
           "icon": "LifeSuppress.png",
           "desc": "You gain the Suppress Specialization effect.",
           "children": [
-            "Heavy18"
+            "Heavy17",
+            "Heavy18",
+            "Heavy19"
           ],
           "requiresUnlock": [],
-          "gx": -2,
+          "gx": -1,
           "gy": 5,
           "cost": 1,
           "seal": 0
@@ -231,11 +233,10 @@
           "icon": "HealingSands.png",
           "desc": "Max HP +10%",
           "children": [
-            "Heavy20",
             "Heavy21"
           ],
           "requiresUnlock": [],
-          "gx": 1,
+          "gx": 2,
           "gy": 5,
           "cost": 1,
           "seal": 0
@@ -246,11 +247,11 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Heavy21"
+            "Heavy22"
           ],
           "requiresUnlock": [],
-          "gx": 2,
-          "gy": 5,
+          "gx": -2,
+          "gy": 6,
           "cost": 1,
           "seal": 0
         },
@@ -260,10 +261,10 @@
           "icon": "RockAttack.png",
           "desc": "Rock Attack + 5",
           "children": [
-            "Heavy22"
+            "Heavy23"
           ],
           "requiresUnlock": [],
-          "gx": -2,
+          "gx": -1,
           "gy": 6,
           "cost": 1,
           "seal": 0
@@ -329,7 +330,9 @@
           "name": "Stamina",
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
-          "children": [],
+          "children": [
+            "Heavy28"
+          ],
           "requiresUnlock": [],
           "gx": -1,
           "gy": 7,
@@ -342,7 +345,7 @@
           "icon": "Stamina.png",
           "desc": "Stamina + 30",
           "children": [
-            "Heavy28"
+            "Heavy29"
           ],
           "requiresUnlock": [],
           "gx": 0,
@@ -355,9 +358,7 @@
           "name": "Sandstone Revival",
           "icon": "SandstoneRevival.png",
           "desc": "For each 1 Sand Crystal consumed, restore 1% of Max HP.",
-          "children": [
-            "Heavy29"
-          ],
+          "children": [],
           "requiresUnlock": [],
           "gx": 1,
           "gy": 7,
@@ -385,7 +386,7 @@
           "desc": "When Strength reaches 500, extends the duration of Enraged by 1 second.",
           "children": [],
           "requiresUnlock": [],
-          "gx": -1,
+          "gx": -2,
           "gy": 8,
           "cost": 1,
           "seal": 0
@@ -397,7 +398,7 @@
           "desc": "When Enraged, you gain 30% bonus Armor, decreasing by 5% per second.",
           "children": [],
           "requiresUnlock": [],
-          "gx": 0,
+          "gx": -1,
           "gy": 8,
           "cost": 1,
           "seal": 0
@@ -409,7 +410,7 @@
           "desc": "In the state of Enrage, Max HP bonus +20%.",
           "children": [],
           "requiresUnlock": [],
-          "gx": 1,
+          "gx": 0,
           "gy": 8,
           "cost": 1,
           "seal": 0
@@ -421,7 +422,7 @@
           "desc": "During Enraged state, Suppress effect +50%.",
           "children": [],
           "requiresUnlock": [],
-          "gx": 2,
+          "gx": 1,
           "gy": 8,
           "cost": 1,
           "seal": 0
