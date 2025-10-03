@@ -179,14 +179,16 @@ function enforceResourceLimits(){
   const tpMax = getTpMax();
   const sealMax = getSealMax();
   while(tpUsed > tpMax || sealUsed > sealMax){
-    // refund last unlocked node
     let id = unlockHistory.pop();
     if(!id) break;
     if(nodes[id]?.unlocked){
       refundNode(id, true);
+      showToast(`Refunded ${nodes[id].name} (over resource limits)`);
     }
   }
+  enforceGlobalUnlocks(); // ensure global50 nodes also check after refund
 }
+
 
 // ---------- Helpers for gating ----------
 function verdantComplete(){
@@ -377,6 +379,21 @@ function refundNode(nodeId, silent=false){
 
   if(!silent) updateCounters();
   drawEdges();
+}
+
+
+
+function getTotalPointsSpent() {
+  return tpUsed; // already tracked globally
+}
+function enforceGlobalUnlocks() {
+  for (const id in nodes) {
+    const node = nodes[id];
+    if (node.unlocked && node.requiresUnlock === "global50" && tpUsed < 50) {
+      refundNode(id, true); // silent refund
+      showToast(`Refunded ${node.name} (below talent requirements)`);
+    }
+  }
 }
 
 
@@ -791,11 +808,12 @@ function resetTier(tid, silent=false){
       }
     }
   }
-  if(!silent) {
-    updateCounters();
-    if (tiers[tid] && tiers[tid].name) showToast(`Reset ${tiers[tid].name} Tree`);
-  }
-  drawEdges();
+if(!silent) {
+  updateCounters();
+  enforceGlobalUnlocks(); // check all global unlocks
+}
+drawEdges();
+
 }
 
 // ----- Modified Reset All -----
@@ -969,16 +987,26 @@ const originalCanUnlock = canUnlock;
 canUnlock = function(node) {
   if (!node) return false;
 
-  // normal gating first
+  // first, check existing rules (parents, tier, resources)
   if (!originalCanUnlock(node)) return false;
 
-  // new requiresPoints
+  // Tree-based points requirement
   if (node.requiresPoints) {
     const pointsSpent = getPointsSpentInTree(getTreeFromNode(node.id));
     if (pointsSpent < node.requiresPoints) return false;
   }
+
+  // Global TP requirement
+  if (node.requiresUnlock === "global50") {
+    if (getTotalPointsSpent() < 50) {
+      showToast(`Cannot unlock ${node.name}: Requires 50 TP spent`);
+      return false;
+    }
+  }
+
   return true;
 };
+
 
 function getPointsSpentInTree(treeId) {
   const tree = tiers[treeId];
