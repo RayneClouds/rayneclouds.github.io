@@ -1899,46 +1899,56 @@ function exportBuild() {
 
   if (!currentWeaponGroup) return;
 
-  // Sort IDs consistently
-  const ids = Object.keys(nodes)
-    .map(Number)
-    .sort((a, b) => a - b);
+  // Stable ordered IDs
+  const ids =
+    Object.keys(nodes)
+      .map(Number)
+      .sort((a,b)=>a-b);
 
-  // Build bit array
-  let bits = "";
+  // Selected node indexes
+  const selected = [];
 
-  ids.forEach(id => {
-    bits += nodes[id].currentRank > 0 ? "1" : "0";
+  ids.forEach((id, index) => {
+
+    if (nodes[id].currentRank > 0) {
+      selected.push(index);
+    }
+
   });
 
-  // Convert bits -> bytes
-  const bytes = [];
+  // Delta encode
+  let prev = 0;
 
-  for (let i = 0; i < bits.length; i += 8) {
-    bytes.push(
-      parseInt(bits.slice(i, i + 8).padEnd(8, "0"), 2)
-    );
-  }
+  const deltas = selected.map(i => {
+    const d = i - prev;
+    prev = i;
+    return d;
+  });
 
-  // Bytes -> binary string
-  const binary = String.fromCharCode(...bytes);
+  // Pack bytes
+  const bytes = Uint8Array.from(deltas);
+
+  // Binary string
+  let binary = "";
+
+  bytes.forEach(b => {
+    binary += String.fromCharCode(b);
+  });
 
   // Base64 URL-safe
-  const compressed = btoa(binary)
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
-
-  const params = new URLSearchParams();
-
-  params.set("wg", currentWeaponGroup);
-  params.set("b", compressed);
+  const compressed =
+    btoa(binary)
+      .replace(/\+/g, "-")
+      .replace(/\//g, "_")
+      .replace(/=+$/, "");
 
   const url =
     location.origin +
     location.pathname +
-    "?" +
-    params.toString();
+    "?wg=" +
+    currentWeaponGroup +
+    "&b=" +
+    compressed;
 
   navigator.clipboard.writeText(url);
 
@@ -1958,11 +1968,9 @@ function loadBuildFromURL() {
   const build =
     params.get("b");
 
-  if (!wg) return;
+  if (!wg || !build) return;
 
   setTimeout(() => loadWeaponGroup(wg), 0);
-
-  if (!build) return;
 
   // Restore Base64 padding
   const padded =
@@ -1976,17 +1984,6 @@ function loadBuildFromURL() {
       .replace(/_/g, "/")
   );
 
-  // Convert bytes -> bits
-  let bits = "";
-
-  for (let i = 0; i < binary.length; i++) {
-
-    bits += binary
-      .charCodeAt(i)
-      .toString(2)
-      .padStart(8, "0");
-  }
-
   // Stable node ordering
   const ids =
     Object.keys(nodes)
@@ -1995,14 +1992,33 @@ function loadBuildFromURL() {
 
   pendingImportedBuild = [];
 
-  ids.forEach((id, index) => {
+  // =========================
+  // DELTA DECODE
+  // =========================
 
-    if (bits[index] === "1") {
-      pendingImportedBuild.push(String(id));
+  let currentIndex = 0;
+
+  for (let i = 0; i < binary.length; i++) {
+
+    // read stored delta
+    currentIndex +=
+      binary.charCodeAt(i);
+
+    // get actual node id
+    const nodeId =
+      ids[currentIndex];
+
+    if (nodeId !== undefined) {
+
+      pendingImportedBuild.push(
+        String(nodeId)
+      );
+
     }
-
-  });
+  }
 }
+
+// Apply builds
 function applyImportedBuild() {
 
   if (!pendingImportedBuild) return;
