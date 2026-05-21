@@ -1899,22 +1899,46 @@ function exportBuild() {
 
   if (!currentWeaponGroup) return;
 
-  const unlocked =
-  Object.values(nodes)
-    .filter(n => n.currentRank > 0)
-    .map(n => Number(n.id).toString(36))
-    .join(".");
+  // Sort IDs consistently
+  const ids = Object.keys(nodes)
+    .map(Number)
+    .sort((a, b) => a - b);
+
+  // Build bit array
+  let bits = "";
+
+  ids.forEach(id => {
+    bits += nodes[id].currentRank > 0 ? "1" : "0";
+  });
+
+  // Convert bits -> bytes
+  const bytes = [];
+
+  for (let i = 0; i < bits.length; i += 8) {
+    bytes.push(
+      parseInt(bits.slice(i, i + 8).padEnd(8, "0"), 2)
+    );
+  }
+
+  // Bytes -> binary string
+  const binary = String.fromCharCode(...bytes);
+
+  // Base64 URL-safe
+  const compressed = btoa(binary)
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
 
   const params = new URLSearchParams();
 
   params.set("wg", currentWeaponGroup);
-  params.set("b", unlocked);
+  params.set("b", compressed);
 
   const url =
-  location.origin +
-  location.pathname +
-  "?" +
-  params.toString();
+    location.origin +
+    location.pathname +
+    "?" +
+    params.toString();
 
   navigator.clipboard.writeText(url);
 
@@ -1932,7 +1956,7 @@ function loadBuildFromURL() {
     parseInt(params.get("wg"));
 
   const build =
-  params.get("b");
+    params.get("b");
 
   if (!wg) return;
 
@@ -1940,10 +1964,44 @@ function loadBuildFromURL() {
 
   if (!build) return;
 
-  pendingImportedBuild =
-  build
-    .split(".")
-    .map(v => parseInt(v, 36).toString());
+  // Restore Base64 padding
+  const padded =
+    build +
+    "=".repeat((4 - build.length % 4) % 4);
+
+  // URL-safe decode
+  const binary = atob(
+    padded
+      .replace(/-/g, "+")
+      .replace(/_/g, "/")
+  );
+
+  // Convert bytes -> bits
+  let bits = "";
+
+  for (let i = 0; i < binary.length; i++) {
+
+    bits += binary
+      .charCodeAt(i)
+      .toString(2)
+      .padStart(8, "0");
+  }
+
+  // Stable node ordering
+  const ids =
+    Object.keys(nodes)
+      .map(Number)
+      .sort((a, b) => a - b);
+
+  pendingImportedBuild = [];
+
+  ids.forEach((id, index) => {
+
+    if (bits[index] === "1") {
+      pendingImportedBuild.push(String(id));
+    }
+
+  });
 }
 function applyImportedBuild() {
 
