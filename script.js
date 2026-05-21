@@ -1372,7 +1372,15 @@ function canUnlock(talent) {
   return parents.some(p => p.currentRank > 0);
 }
 
-function hasValidParent(talent) {
+function hasValidParent(
+  talent,
+  visited = new Set()
+) {
+
+  if (visited.has(talent.id))
+    return false;
+
+  visited.add(talent.id);
 
   const parents =
     runtimeParentMap.get(talent.id);
@@ -1380,11 +1388,17 @@ function hasValidParent(talent) {
   if (!parents || parents.length === 0)
     return true;
 
-  // ===== SPEC BRANCH RULE =====
-  if (talent.Spec && talent.Spec === activeSpec)
-    return true;
+  return parents.some(parent => {
 
-  return parents.some(p => p.currentRank > 0);
+    if (parent.currentRank === 0)
+      return false;
+
+    return hasValidParent(
+      parent,
+      visited
+    );
+
+  });
 }
 
 function validateThresholds() {
@@ -1419,17 +1433,12 @@ function validateChildren() {
 
     Object.values(nodes).forEach(talent => {
 
-      if (talent.currentRank === 0) return;
+      if (talent.currentRank === 0)
+        return;
 
       if (!hasValidParent(talent)) {
 
-        talent.currentRank = 0;
-
-        tpUsed =
-  Math.max(0, tpUsed - talent.cost);
-
-sealUsed =
-  Math.max(0, sealUsed - talent.seal);
+        refundTalent(talent);
 
         changed = true;
       }
