@@ -18,12 +18,12 @@ let tpUsed = 0;
 let sealUsed = 0;
 
 let activeTraversal = new Set();
+let isImporting = false;
 
 // ==============================
 // SPEC STATE
 // ==============================
 
-let activeClass = null;activateSpec
 let activeSpec  = null;
 // ==============================
 // NODE TYPE HELPERS
@@ -1556,73 +1556,72 @@ function toggleTalent(talent) {
 
 function purchaseTalent(talent) {
 
-  if (!canUnlock(talent)) return;
-	  
-function refundSpecBranch(specId) {
-
-  Object.values(nodes).forEach(node => {
-
-    // refund spec itself
-    if (node.id === specId) {
-      node.currentRank = 0;
-      return;
-    }
-
-    // refund everything belonging to it
-    if (node.Spec === specId &&
-        node.currentRank > 0) {
-
-      tpUsed -= node.cost;
-      sealUsed -= node.seal;
-
-      node.currentRank = 0;
-    }
-
-  });
-
-}
+  if (!canUnlock(talent))
+    return false;
 
   // ======================
   // SPEC PURCHASE
   // ======================
-if (isSpecNode(talent)) {
-	
-if (activeSpec === talent.id)
-  return;
-  // =========================
-  // SWITCHING SPECS
-  // =========================
-  if (activeSpec &&
-      activeSpec !== talent.id) {
+  if (isSpecNode(talent)) {
 
-    refundSpecBranch(activeSpec);
+    if (activeSpec === talent.id)
+      return false;
+
+    // switch specs
+    if (
+      activeSpec &&
+      activeSpec !== talent.id
+    ) {
+
+      refundSpecBranch(activeSpec);
+    }
+
+    if (
+      tpUsed + talent.cost >
+      parseInt(tpMaxEl.value)
+    ) return false;
+
+    if (
+      sealUsed + talent.seal >
+      parseInt(sealMaxEl.value)
+    ) return false;
+
+    tpUsed += talent.cost;
+    sealUsed += talent.seal;
+
+    talent.currentRank = 1;
+
+    activateSpec(talent);
+
+    updateCounters();
+    updateTreeVisuals();
+    drawEdges();
+
+    // IMPORTANT:
+    // skip validation during import
+    if (!isImporting) {
+
+      validateThresholds();
+      validateChildren();
+
+    }
+
+    return true;
   }
-
-  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
-  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
-
-  tpUsed += talent.cost;
-  sealUsed += talent.seal;
-
-  talent.currentRank = 1;
-
-  activateSpec(talent);
-
-  updateCounters();
-  updateTreeVisuals();
-  drawEdges();
-
-  validateThresholds();
-  validateChildren();
-
-  return;
-}
 
   // ======================
   // NORMAL TALENT PURCHASE
   // ======================
-  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
-  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
+
+  if (
+    tpUsed + talent.cost >
+    parseInt(tpMaxEl.value)
+  ) return false;
+
+  if (
+    sealUsed + talent.seal >
+    parseInt(sealMaxEl.value)
+  ) return false;
 
   tpUsed += talent.cost;
   sealUsed += talent.seal;
@@ -1633,8 +1632,16 @@ if (activeSpec === talent.id)
   updateTreeVisuals();
   drawEdges();
 
-  validateThresholds();
-  validateChildren();
+  // IMPORTANT:
+  // skip validation during import
+  if (!isImporting) {
+
+    validateThresholds();
+    validateChildren();
+
+  }
+
+  return true;
 }
 
   // ======================
@@ -1679,7 +1686,18 @@ function refundTalent(talent) {
   if (talent.currentRank === 0) return;
 
   if (isSpecNode(talent)) {
+
+    talent.currentRank = 0;
+
+    tpUsed -= talent.cost;
+    sealUsed -= talent.seal;
+
     deactivateSpec(talent);
+
+    updateCounters();
+    updateTreeVisuals();
+    drawEdges();
+
     return;
   }
 
@@ -2113,6 +2131,8 @@ function loadBuildFromURL() {
 
 function importBuild(ids) {
 
+  isImporting = true;
+
   let changed = true;
 
   let safety = 0;
@@ -2123,7 +2143,7 @@ function importBuild(ids) {
 
     safety++;
 
-    ids.forEach(id => {
+   ids.forEach(id => {
 
       const node =
         nodes[id];
@@ -2134,30 +2154,29 @@ function importBuild(ids) {
       if (node.currentRank > 0)
         return;
 
-      const wasUnlocked =
-        node.currentRank > 0;
+      if (!canUnlock(node))
+        return;
 
-      purchaseTalent(node);
+      const success =
+        purchaseTalent(node);
 
-      // detect successful unlock
-      if (
-        !wasUnlocked &&
-        node.currentRank > 0
-      ) {
-
+      if (success) {
         changed = true;
-
       }
 
     });
 
   }
-
   updateCounters();
 
   updateTreeVisuals();
 
   drawEdges();
+
+  isImporting = false;
+
+  validateThresholds();
+  validateChildren();
 
   requestAnimationFrame(() => {
 
