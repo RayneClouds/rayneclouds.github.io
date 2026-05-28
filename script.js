@@ -18,12 +18,12 @@ let tpUsed = 0;
 let sealUsed = 0;
 
 let activeTraversal = new Set();
-let isImporting = false;
-
+let pendingImportedBuild = null;
 // ==============================
 // SPEC STATE
 // ==============================
 
+let activeClass = null;
 let activeSpec  = null;
 // ==============================
 // NODE TYPE HELPERS
@@ -794,6 +794,9 @@ applyTheme(getWGTheme(groupId));
 // CENTER CLASS TREE
 // ======================
 centerOnClassRoot();
+	requestAnimationFrame(() => {
+  applyImportedBuild();
+});
 }
 
 function buildWeaponMenu(data) {
@@ -839,7 +842,7 @@ const CLASS_META = {
 
   1: { name: "Stormblade", order: 5 },
   2: { name: "Frost Mage", order: 7 },
-  3: { name: "Twin Axe", order: 4 },	
+  3: { name: "Twin Axe", order: 4 },
   4: { name: "Wind Knight", order: 3 },
   5: { name: "Verdant Oracle", order: 8 },
   9: { name: "Heavy Guardian", order: 1 },
@@ -1372,15 +1375,7 @@ function canUnlock(talent) {
   return parents.some(p => p.currentRank > 0);
 }
 
-function hasValidParent(
-  talent,
-  visited = new Set()
-) {
-
-  if (visited.has(talent.id))
-    return false;
-
-  visited.add(talent.id);
+function hasValidParent(talent) {
 
   const parents =
     runtimeParentMap.get(talent.id);
@@ -1388,17 +1383,11 @@ function hasValidParent(
   if (!parents || parents.length === 0)
     return true;
 
-  return parents.some(parent => {
+  // ===== SPEC BRANCH RULE =====
+  if (talent.Spec && talent.Spec === activeSpec)
+    return true;
 
-    if (parent.currentRank === 0)
-      return false;
-
-    return hasValidParent(
-      parent,
-      visited
-    );
-
-  });
+  return parents.some(p => p.currentRank > 0);
 }
 
 function validateThresholds() {
@@ -1433,12 +1422,17 @@ function validateChildren() {
 
     Object.values(nodes).forEach(talent => {
 
-      if (talent.currentRank === 0)
-        return;
+      if (talent.currentRank === 0) return;
 
       if (!hasValidParent(talent)) {
 
-        refundTalent(talent);
+        talent.currentRank = 0;
+
+        tpUsed =
+  Math.max(0, tpUsed - talent.cost);
+
+sealUsed =
+  Math.max(0, sealUsed - talent.seal);
 
         changed = true;
       }
@@ -1556,72 +1550,73 @@ function toggleTalent(talent) {
 
 function purchaseTalent(talent) {
 
-  if (!canUnlock(talent))
-    return false;
+  if (!canUnlock(talent)) return;
+	  
+function refundSpecBranch(specId) {
+
+  Object.values(nodes).forEach(node => {
+
+    // refund spec itself
+    if (node.id === specId) {
+      node.currentRank = 0;
+      return;
+    }
+
+    // refund everything belonging to it
+    if (node.Spec === specId &&
+        node.currentRank > 0) {
+
+      tpUsed -= node.cost;
+      sealUsed -= node.seal;
+
+      node.currentRank = 0;
+    }
+
+  });
+
+}
 
   // ======================
   // SPEC PURCHASE
   // ======================
-  if (isSpecNode(talent)) {
+if (isSpecNode(talent)) {
+	
+if (activeSpec === talent.id)
+  return;
+  // =========================
+  // SWITCHING SPECS
+  // =========================
+  if (activeSpec &&
+      activeSpec !== talent.id) {
 
-    if (activeSpec === talent.id)
-      return false;
-
-    // switch specs
-    if (
-      activeSpec &&
-      activeSpec !== talent.id
-    ) {
-
-      refundSpecBranch(activeSpec);
-    }
-
-    if (
-      tpUsed + talent.cost >
-      parseInt(tpMaxEl.value)
-    ) return false;
-
-    if (
-      sealUsed + talent.seal >
-      parseInt(sealMaxEl.value)
-    ) return false;
-
-    tpUsed += talent.cost;
-    sealUsed += talent.seal;
-
-    talent.currentRank = 1;
-
-    activateSpec(talent);
-
-    updateCounters();
-    updateTreeVisuals();
-    drawEdges();
-
-    // IMPORTANT:
-    // skip validation during import
-    if (!isImporting) {
-
-      validateThresholds();
-      validateChildren();
-
-    }
-
-    return true;
+    refundSpecBranch(activeSpec);
   }
+
+  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
+  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
+
+  tpUsed += talent.cost;
+  sealUsed += talent.seal;
+
+  talent.currentRank = 1;
+
+  activateSpec(talent);
+
+  updateCounters();
+  updateTreeVisuals();
+  drawEdges();
+
+  validateThresholds();
+  validateChildren();
+
+  return;
+}
 
   // ======================
   // NORMAL TALENT PURCHASE
   // ======================
-
-  if (
-    tpUsed + talent.cost >
-    parseInt(tpMaxEl.value)
-  ) return false;
-
-  if (
-    sealUsed + talent.seal >
-    parseInt(sealMaxEl.value)
-  ) return false;
+  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
+  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
 
   tpUsed += talent.cost;
   sealUsed += talent.seal;
@@ -1632,16 +1627,8 @@ function purchaseTalent(talent) {
   updateTreeVisuals();
   drawEdges();
 
-  // IMPORTANT:
-  // skip validation during import
-  if (!isImporting) {
-
-    validateThresholds();
-    validateChildren();
-
-  }
-
-  return true;
+  validateThresholds();
+  validateChildren();
 }
 
   // ======================
@@ -1686,18 +1673,7 @@ function refundTalent(talent) {
   if (talent.currentRank === 0) return;
 
   if (isSpecNode(talent)) {
-
-    talent.currentRank = 0;
-
-    tpUsed -= talent.cost;
-    sealUsed -= talent.seal;
-
     deactivateSpec(talent);
-
-    updateCounters();
-    updateTreeVisuals();
-    drawEdges();
-
     return;
   }
 
@@ -1914,276 +1890,104 @@ function updateCounters() {
   tpUsedEl.textContent = tpUsed;
   sealUsedEl.textContent = sealUsed;
 }
+
 // ==============================
-// EXPORT / IMPORT SYSTEM
+// EXPORT BUILD (Shareable URL)
 // ==============================
 
 document.getElementById("exportBuild")
   ?.addEventListener("click", exportBuild);
 
-// ==============================
-// GET ACTIVE NODE IDS
-// ==============================
-
-function getSelectedNodeIds() {
-
-  return Object.values(nodes)
-
-    .filter(node =>
-
-      node.currentRank > 0 &&
-      node.el.style.display !== "none"
-
-    )
-
-    .map(node => Number(node.id))
-
-    .sort((a, b) => a - b);
-}
-
-// ==============================
-// EXPORT BUILD
-// ==============================
-
 function exportBuild() {
 
-  if (!currentWeaponGroup)
-    return;
+  if (!currentWeaponGroup) return;
 
-  const selected =
-    getSelectedNodeIds();
+  const unlocked =
+  Object.values(nodes)
+    .filter(n => n.currentRank > 0)
+    .map(n => Number(n.id).toString(36))
+    .join(".");
 
-  // =========================
-  // DELTA COMPRESS IDS
-  // =========================
+  const params = new URLSearchParams();
 
-  let prev = 0;
-
-  const deltas =
-
-    selected.map(id => {
-
-      const delta = id - prev;
-
-      prev = id;
-
-      return delta;
-
-    });
-
-  // =========================
-  // PACK UINT16
-  // =========================
-
-  const bytes =
-    new Uint16Array(deltas);
-
-  // =========================
-  // BINARY STRING
-  // =========================
-
-  let binary = "";
-
-  bytes.forEach(num => {
-
-    binary +=
-      String.fromCharCode(
-        (num >> 8) & 255,
-        num & 255
-      );
-
-  });
-
-  // =========================
-  // URL SAFE BASE64
-  // =========================
-
-  const compressed =
-
-    btoa(binary)
-
-      .replace(/\+/g, "-")
-      .replace(/\//g, "_")
-      .replace(/=+$/, "");
+  params.set("wg", currentWeaponGroup);
+  params.set("b", unlocked);
 
   const url =
-
-    location.origin +
-    location.pathname +
-
-    "?wg=" +
-    currentWeaponGroup +
-
-    "&b=" +
-    compressed;
+  location.origin +
+  location.pathname +
+  "?" +
+  params.toString();
 
   navigator.clipboard.writeText(url);
 
   showToast("Build URL copied!");
 }
 
-// ==============================
-// LOAD BUILD FROM URL
-// ==============================
+// Load URL
 
 function loadBuildFromURL() {
 
   const params =
-
-    new URLSearchParams(
-      window.location.search
-    );
+    new URLSearchParams(window.location.search);
 
   const wg =
-
-    parseInt(
-      params.get("wg")
-    );
+    parseInt(params.get("wg"));
 
   const build =
-    params.get("b");
+  params.get("b");
 
-  if (!wg || !build)
-    return;
+  if (!wg) return;
 
-  // =========================
-  // LOAD TREE FIRST
-  // =========================
+  setTimeout(() => loadWeaponGroup(wg), 0);
 
-  loadWeaponGroup(wg);
+  if (!build) return;
 
-  requestAnimationFrame(() => {
-
-    // =======================
-    // RESTORE BASE64 PADDING
-    // =======================
-
-    const padded =
-
-      build +
-      "=".repeat(
-        (4 - build.length % 4) % 4
-      );
-
-    // =======================
-    // DECODE BASE64
-    // =======================
-
-    const binary =
-
-      atob(
-
-        padded
-
-          .replace(/-/g, "+")
-          .replace(/_/g, "/")
-      );
-
-    // =======================
-    // READ UINT16 DELTAS
-    // =======================
-
-    const deltas = [];
-
-    for (
-      let i = 0;
-      i < binary.length;
-      i += 2
-    ) {
-
-      const value =
-
-        (binary.charCodeAt(i) << 8)
-
-        |
-
-        binary.charCodeAt(i + 1);
-
-      deltas.push(value);
-    }
-
-    // =======================
-    // REBUILD IDS
-    // =======================
-
-    const ids = [];
-
-    let current = 0;
-
-    deltas.forEach(delta => {
-
-      current += delta;
-
-      ids.push(
-        String(current)
-      );
-
-    });
-
-    // =======================
-    // IMPORT BUILD
-    // =======================
-
-    importBuild(ids);
-
-  });
+  pendingImportedBuild =
+  build
+    .split(".")
+    .map(v => parseInt(v, 36).toString());
 }
+function applyImportedBuild() {
 
-function importBuild(ids) {
+  if (!pendingImportedBuild) return;
 
-  isImporting = true;
+  const ids = pendingImportedBuild;
+  pendingImportedBuild = null;
 
   let changed = true;
 
-  let safety = 0;
-
-  while (changed && safety < 100) {
+  // keep unlocking until stable
+  while (changed) {
 
     changed = false;
 
-    safety++;
+    ids.forEach(id => {
 
-   ids.forEach(id => {
+      const node = nodes[id];
+      if (!node) return;
+      if (node.currentRank > 0) return;
 
-      const node =
-        nodes[id];
+      if (!canUnlock(node)) return;
 
-      if (!node)
-        return;
-
-      if (node.currentRank > 0)
-        return;
-
-      if (!canUnlock(node))
-        return;
-
-      const success =
-        purchaseTalent(node);
-
-      if (success) {
-        changed = true;
-      }
+      purchaseTalent(node);
+      changed = true;
 
     });
 
   }
-  updateCounters();
 
-  updateTreeVisuals();
+updateTreeVisuals();
+drawEdges();
 
-  drawEdges();
 
-  isImporting = false;
-
-  validateThresholds();
-  validateChildren();
-
+requestAnimationFrame(() => {
   requestAnimationFrame(() => {
-
     centerOnClassRoot();
-
   });
+});
 }
+
 // ==
 // toasty
 // ==
