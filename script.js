@@ -19,6 +19,7 @@ let sealUsed = 0;
 
 let activeTraversal = new Set();
 let pendingImportedBuild = null;
+let isImportingBuild = false;
 // ==============================
 // SPEC STATE
 // ==============================
@@ -1615,8 +1616,10 @@ if (activeSpec === talent.id)
   updateTreeVisuals();
   drawEdges();
 
+if (!isImportingBuild) {
   validateThresholds();
   validateChildren();
+}
 
   return;
 }
@@ -2045,12 +2048,16 @@ function applyImportedBuild() {
   const ids = pendingImportedBuild;
   pendingImportedBuild = null;
 
-  let changed = true;
+  isImportingBuild = true;
 
-  // keep retrying until dependency chain resolves
-  while (changed) {
+  let changed = true;
+  let safety = 0;
+
+  // repeatedly retry imports
+  while (changed && safety < 100) {
 
     changed = false;
+    safety++;
 
     ids.forEach(id => {
 
@@ -2066,13 +2073,23 @@ function applyImportedBuild() {
 
       purchaseTalent(node);
 
-      changed = true;
+      // detect successful purchase
+      if (node.currentRank > 0) {
+        changed = true;
+      }
 
     });
 
   }
 
+  isImportingBuild = false;
+
+  // NOW validate final tree once
+  validateThresholds();
+  validateChildren();
+
   updateTreeVisuals();
+  updateCounters();
   drawEdges();
 
   requestAnimationFrame(() => {
