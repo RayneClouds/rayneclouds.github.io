@@ -840,19 +840,21 @@ function buildWeaponMenu(data) {
 
 const CLASS_META = {
 
-  1: { name: "Stormblade", order: 4 },
-  2: { name: "Frost Mage", order: 6 },
+  1: { name: "Stormblade", order: 5 },
+  2: { name: "Frost Mage", order: 7 },
+  3: { name: "Twin Axe", order: 4 },	
   4: { name: "Wind Knight", order: 3 },
-  5: { name: "Verdant Oracle", order: 7 },
+  5: { name: "Verdant Oracle", order: 8 },
   9: { name: "Heavy Guardian", order: 1 },
-  11:{ name: "Marksman", order: 5 },
+  11:{ name: "Marksman", order: 6 },
   12:{ name: "Shield Knight", order: 2 },
-  13:{ name: "Beat Performer", order: 8 }
+  13:{ name: "Beat Performer", order: 9 }
 
 };
 const CLASS_ICONS = {
   1: "../img/weapon_icon1.png",
   2: "../img/weapon_icon2.png",
+  3: "../img/weapon_icon3.png",
   4: "../img/weapon_icon4.png",
   5: "../img/weapon_icon5.png",
   9: "../img/weapon_icon9.png",
@@ -871,6 +873,7 @@ const WG_THEME = {
   // ----- RED THEME -----
   1: { theme: "red" },
   2: { theme: "red" },
+  3: { theme: "red" },
   4: { theme: "red" },
   11: { theme: "red" },
   
@@ -890,7 +893,7 @@ function getWGTheme(groupId) {
 function applyWGBackground(groupId) {
 
   document.body.classList.remove(
-    "wg1","wg2","wg4","wg5",
+    "wg1","wg2","wg3","wg4","wg5",
     "wg9","wg11","wg12","wg13"
   );
 
