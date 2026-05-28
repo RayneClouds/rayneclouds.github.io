@@ -1982,55 +1982,62 @@ function loadBuildFromURL() {
 
   if (!wg || !build) return;
 
-  setTimeout(() => loadWeaponGroup(wg), 0);
+  // load tree FIRST
+  setTimeout(() => {
 
-  // Restore Base64 padding
-  const padded =
-    build +
-    "=".repeat((4 - build.length % 4) % 4);
+    loadWeaponGroup(wg);
 
-  // URL-safe decode
-  const binary = atob(
-    padded
-      .replace(/-/g, "+")
-      .replace(/_/g, "/")
-  );
+    // Restore Base64 padding
+    const padded =
+      build +
+      "=".repeat((4 - build.length % 4) % 4);
 
-  // Stable node ordering
-  const ids =
-    Object.keys(nodes)
-      .map(Number)
-      .sort((a, b) => a - b);
+    // URL-safe decode
+    const binary = atob(
+      padded
+        .replace(/-/g, "+")
+        .replace(/_/g, "/")
+    );
 
-  pendingImportedBuild = [];
+    // Build node ordering AFTER tree load
+    const ids =
+      Object.keys(nodes)
+        .map(Number)
+        .sort((a, b) => a - b);
 
-  // =========================
-  // DELTA DECODE
-  // =========================
+    pendingImportedBuild = [];
 
-  let currentIndex = 0;
+    // =========================
+    // DELTA DECODE
+    // =========================
 
-  for (let i = 0; i < binary.length; i++) {
+    let currentIndex = 0;
 
-    // read stored delta
-    currentIndex +=
-      binary.charCodeAt(i);
+    for (let i = 0; i < binary.length; i++) {
 
-    // get actual node id
-    const nodeId =
-      ids[currentIndex];
+      currentIndex +=
+        binary.charCodeAt(i);
 
-    if (nodeId !== undefined) {
+      const nodeId =
+        ids[currentIndex];
 
-      pendingImportedBuild.push(
-        String(nodeId)
-      );
+      if (nodeId !== undefined) {
 
+        pendingImportedBuild.push(
+          String(nodeId)
+        );
+      }
     }
-  }
+
+    requestAnimationFrame(() => {
+      applyImportedBuild();
+    });
+
+  }, 0);
 }
 
 // Apply builds
+
 function applyImportedBuild() {
 
   if (!pendingImportedBuild) return;
@@ -2040,7 +2047,7 @@ function applyImportedBuild() {
 
   let changed = true;
 
-  // keep unlocking until stable
+  // keep retrying until dependency chain resolves
   while (changed) {
 
     changed = false;
@@ -2048,27 +2055,29 @@ function applyImportedBuild() {
     ids.forEach(id => {
 
       const node = nodes[id];
-      if (!node) return;
-      if (node.currentRank > 0) return;
 
-      if (!canUnlock(node)) return;
+      if (!node) return;
+
+      if (node.currentRank > 0)
+        return;
+
+      if (!canUnlock(node))
+        return;
 
       purchaseTalent(node);
+
       changed = true;
 
     });
 
   }
 
-updateTreeVisuals();
-drawEdges();
+  updateTreeVisuals();
+  drawEdges();
 
-
-requestAnimationFrame(() => {
   requestAnimationFrame(() => {
     centerOnClassRoot();
   });
-});
 }
 
 // ==
