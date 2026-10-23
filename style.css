@@ -18,6 +18,12 @@
   --input-bg: #220A0A;
 
   --edge-locked: #6E7179;
+	
+  --ItemQuality_5: #ef8e60;
+  --accent-gn: #cee98d;
+  --magic, physical: #8BE3FA;
+  --desctop: #daf901;
+  --tipsYellow: #f5e39a;
 
 }
 /* =============================
@@ -425,8 +431,68 @@ header {
 
 /* Hover effect (both header + sidebar buttons) */
 .header-btn:hover {
-	background: rgba(255, 255, 255, 0.1);
+ background: rgba(255, 255, 255, 0.1);
 }
+
+/* =====================================
+   RESET AND MAX BUTTON HOVER EFFECTS
+===================================== */
+
+/* Disable the original full-button hover background */
+#resetCur:hover,
+#MaxButton:hover {
+    background: transparent;
+}
+
+/* Image wrapper: keeps the original image dimensions */
+#resetCur .button-icon-wrap,
+#MaxButton .button-icon-wrap {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+
+/* Scale only the images to 75% */
+#resetCur .button-icon-wrap img,
+#MaxButton .button-icon-wrap img {
+    display: block;
+    transform: scale(0.75);
+    transform-origin: center;
+    transition: filter 0.15s ease;
+}
+
+/* Border positioned around the visually scaled image */
+#resetCur .button-icon-wrap::after,
+#MaxButton .button-icon-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    box-sizing: content-box;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: border-color 0.15s ease,
+                background-color 0.15s ease;
+}
+
+/* Show the border and subtle background on hover */
+#resetCur:hover .button-icon-wrap::after,
+#MaxButton:hover .button-icon-wrap::after {
+    border-color: var(--input-bg);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Brighten only the image on hover */
+#resetCur:hover .button-icon-wrap img,
+#MaxButton:hover .button-icon-wrap img {
+    filter: brightness(1.15);
+}
+
 
 /* Container for your buttons */
 .header-buttons {
@@ -459,12 +525,13 @@ header {
 #MaxButton {
   position: fixed;       /* float above everything */
   bottom: 15px;
-  right: 300px;          /* next to sidebar */
+  right: 275px;          /* next to sidebar */
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 999;
 }
+
 /* Special emphasis for the Clear button */
 .sidebar-controls {
 	width: 100%;
@@ -532,7 +599,7 @@ aside {
 	font-size: 18px;
 	z-index: 2;
 	/* above background */
-	text-align: center;
+	text-align: left;
 	flex: 1;
 	/* take remaining space below attr-container */
 	overflow-y: auto;
@@ -844,6 +911,7 @@ main:active {
 .edge-locked {
   stroke: var(--edge-locked);
   opacity: 0.7;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
 }
 
 .edge-unlocked {
@@ -880,4 +948,310 @@ main:active {
 }
 .toast.show {
   opacity: 1;
+}
+
+/* =====================================
+   TALENT DESCRIPTION LINKS + SKILL TOOLTIP
+   Moved out of JavaScript into this CSS file
+===================================== */
+
+.talent-desc-link {
+  color: var(--desclink, #ef8e60);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.talent-desc-link:hover {
+  filter: brightness(1.15);
+}
+
+.talent-desc .desc-text {
+  color: var(--desctext, #cee98d);
+}
+
+.talent-desc .desc-dmg {
+  color: var(--descdmg, #8BE3FA);
+}
+
+#talentSkillTooltip {
+  position: fixed;
+  z-index: 100000;
+  display: none;
+  min-width: 240px;
+  width: max-content;
+  max-width: min(500px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+  padding: 0 12px 12px;
+  color: inherit;
+  background: var(--main-elevated, #242424);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 20px;
+}
+
+/* Bright accent strip at the top of the tooltip */
+#talentSkillTooltip::before {
+  content: "";
+  display: block;
+  height: 20px;
+  margin: 0 -12px 10px;
+  background: var(--desctop, #daf901);
+  border-radius: 6px 6px 0 0;
+}
+
+#talentSkillTooltip .tooltip-talent-section {
+  padding: 0 0 12px;
+  margin: 0 0 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#talentSkillTooltip .tooltip-talent-section:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+#talentSkillTooltip .tooltip-heading {
+    display: inline-block;
+    width: fit-content;
+    font-weight: bold;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+#talentSkillTooltip .tooltip-description {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#talentSkillTooltip .tooltip-related-title {
+  margin: 2px 0 10px;
+  font-weight: 700;
+  color: var(--text-main, #ffffff);
+}
+
+#talentSkillTooltip .tooltip-skill-id {
+  opacity: 0.7;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+#talentSkillTooltip .talent-desc-link {
+  color: var(--desclink, var(--ItemQuality_5, #ef8e60));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+#talentSkillTooltip .talent-desc-link:hover {
+  filter: brightness(1.15);
+}
+
+#talentSkillTooltip .desc-text {
+  color: var(--desctext, #cee98d);
+}
+
+#talentSkillTooltip .desc-dmg {
+  color: var(--descdmg, #8BE3FA);
+}
+
+
+
+/* Other named game-description styles */
+.talent-desc [data-desc-style="ItemQuality_5"],
+#talentSkillTooltip [data-desc-style="ItemQuality_5"] {
+  color: var(--ItemQuality_5, #ef8e60);
+}
+
+
+/* Updated talent sidebar details and cost display */
+.sidebar-text {
+  text-align: left;
+}
+
+.talent-detail {
+  text-align: left;
+  padding: 8px;
+}
+
+.talent-detail-heading {
+  margin-top: 0;
+  text-align: left;
+  color: var(--text-main, #ffffff);
+}
+
+.talent-desc {
+  text-align: left;
+  color: var(--text-main, #ffffff);
+  overflow-wrap: anywhere;
+}
+
+.talent-cost {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.talent-cost-label {
+  margin-bottom: 6px;
+  color: var(--text-main, #ffffff);
+  font-weight: 700;
+}
+
+.talent-cost-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.talent-cost-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-main, #ffffff);
+}
+
+.talent-cost-icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  flex: 0 0 75px;
+}
+
+
+#talentSkillTooltip .tooltip-skill-id {
+  color: var(--main-elevated, #242424);
+  opacity: 0.75;
+}
+
+#talentSkillTooltip .tooltip-description {
+  color: #ffffff;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#talentSkillTooltip .tooltip-description .desc-text {
+  color: var(--desctext, #cee98d);
+}
+
+#talentSkillTooltip .tooltip-description .desc-dmg {
+  color: var(--descdmg, #8BE3FA);
+}
+
+#talentSkillTooltip .tooltip-description [data-desc-style="tipsYellow"] {
+  color: var(--tipsYellow, #f5e39a);
+}
+
+#talentSkillTooltip .tooltip-description [data-desc-style="ItemQuality_5"] {
+  color: var(--ItemQuality_5, #ef8e60);
+}
+
+
+/* Sidebar layout - Cost + Seal */
+.talent-detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+  border-left: 30px solid transparent;
+  padding: 8px 8px 50px 8px;
+}
+
+.talent-desc {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.talent-cost {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+/* Tooltip heading: transparent background, white text, 2px larger */
+#talentSkillTooltip .tooltip-heading {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-size: 22px;
+}
+
+/* Keep the skill ID white as well */
+#talentSkillTooltip .tooltip-skill-id {
+  color: #ffffff !important;
+}
+
+/* =====================================
+   UNLOCKED TALENT GLOW
+===================================== */
+
+/* All unlocked talents: permanent glow */
+.node.unlocked {
+  filter:
+    drop-shadow(0 0 5px var(--accent-glow))
+    drop-shadow(0 0 8px var(--accent));
+}
+
+/* Only the most recently unlocked talent: animated glow */
+.node.unlocked.last-unlocked {
+  animation: talentPulse 2s ease-out infinite;
+}
+
+@keyframes talentPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px var(--accent-glow));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 5px var(--accent-glow))
+      drop-shadow(0 0 8px var(--accent));
+  }
+}
+
+/* Tooltip popup layout */
+#talentSkillTooltip {
+  display: none;
+  flex-direction: column;
+  max-height: calc(100vh - 16px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#talentSkillTooltip > .tooltip-popup-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#talentSkillTooltip .tooltip-close {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+#talentSkillTooltip .tooltip-close:hover {
+  filter: brightness(1.25);
+}
+
+/* Scrollable descriptions */
+#talentSkillTooltip > .tooltip-popup-content {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Allow selecting and copying description text */
+#talentSkillTooltip .tooltip-description,
+#talentSkillTooltip .tooltip-talent-section {
+  user-select: text;
+  -webkit-user-select: text;
 }

@@ -7,6 +7,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
 <header><div class="menu-container">
   <button id="menuToggle" class="menu-btn" aria-label="Menu">
     <span class="icon-bar"></span>
@@ -18,7 +19,7 @@
       <li><a href="#" data-group="9">Heavy Guardian</a></li>
       <li><a href="#" data-group="12">Shield Knight</a></li>
       <li><a href="#" data-group="4">Wind Knight</a></li>
-	  <li><a href="#" data-group="15">Twin Axe</a></li>
+	  <li><a href="#" data-group="8">Twin Axe</a></li>
 	  <li><a href="#" data-group="1">Stormblade</a></li>
       <li><a href="#" data-group="11">Marksman</a></li>
 	  <li><a href="#" data-group="2">Frost Mage</a></li>
@@ -72,16 +73,22 @@
 No Class selected<br>
 
   </div>
+
 <div class="header-buttons">
-   <button id="MaxButton" class="header-btn">
-    <img src="img/MaxTal.png" alt="Max Current Tree">
-    <div class="MaxTreeBtn">Max Current Tree</div>
-  </button>
-	
-	<button id="resetCur" class="header-btn">
-    <img src="img/Reset.png" alt="Reset Current">
-  </button>
+    <button id="MaxButton" class="header-btn">
+        <span class="button-icon-wrap">
+            <img src="img/MaxTal.png" alt="Max Current Tree">
+        </span>
+        <div class="MaxTreeBtn">Max Current Tree</div>
+    </button>
+
+    <button id="resetCur" class="header-btn">
+        <span class="button-icon-wrap">
+            <img src="img/Reset.png" alt="Reset Current">
+        </span>
+    </button>
 </div>
+
 
 
 </aside>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BP Star Resonance Skill Tree</title>
+<link rel="icon" type="image/x-icon" href="Styles/favicon.png" >	
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header><div class="menu-container">
+  <button id="menuToggle" class="menu-btn" aria-label="Menu">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <nav id="menu" class="menu hidden">
+    <ul>
+      <li><a href="#" data-group="9">Heavy Guardian</a></li>
+      <li><a href="#" data-group="12">Shield Knight</a></li>
+      <li><a href="#" data-group="4">Wind Knight</a></li>
+	  <li><a href="#" data-group="15">Twin Axe</a></li>
+	  <li><a href="#" data-group="1">Stormblade</a></li>
+      <li><a href="#" data-group="11">Marksman</a></li>
+	  <li><a href="#" data-group="2">Frost Mage</a></li>
+      <li><a href="#" data-group="5">Verdant Oracle</a></li>
+      <li><a href="#" data-group="13">Beat Performer</a></li>
+    </ul>
+  </nav>
+</div>
+  <img id="classIcon"
+     src="../Styles/favicon.png"
+     alt="Class Icon"
+     height="50px" />
+
+<h2 id="classTitle">Select A Class On The Left</h2>
+
+  <div class="header-right">
+<button id="exportBuild" class="header-btn">Export</button>
+    <!-- Buttons + reset -->
+    <div class="header-buttons-row">
+      <div id="tierButtons"></div>
+      <button id="resetAll" class="header-btn">Reset All</button>
+    </div>
+
+    <!-- Counters inside fixed 300px zone -->
+    <div class="header-counters">
+      <div id="resourceCounters" class="resource-counters">
+        <div>Talent Points: <span id="tpUsed">0</span>/<input id="tpMax" type="number" value="70" min="0" /></div>
+        <div>Arcane Seals: <span id="sealUsed">0</span>/<input id="sealMax" type="number" value="50" min="0" /></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<aside>
+  <!-- Continuous background -->
+  <div class="sidebar-bg"></div>
+
+  <!-- Attribute container (acts like a sub-header in the sidebar) -->
+  <div class="attr-container">
+    <img id="hoverPreview" alt="preview" />
+  </div>
+
+  <!-- Text content -->
+<div class="sidebar-controls">
+  <button id="clearSidebar" class="header-btn">Clear ✖</button>
+</div>
+
+  <div class="sidebar-text">
+No Class selected<br>
+
+  </div>
+<div class="header-buttons">
+   <button id="MaxButton" class="header-btn">
+    <img src="img/MaxTal.png" alt="Max Current Tree">
+    <div class="MaxTreeBtn">Max Current Tree</div>
+  </button>
+	
+	<button id="resetCur" class="header-btn">
+    <img src="img/Reset.png" alt="Reset Current">
+  </button>
+</div>
+
+
+</aside>
+
+  <main>
+    <div class="zoom-container" id="zoomArea">
+<svg id="edgesLayer"
+     width="12000"
+     height="12000"
+     style="
+       position:absolute;
+       left:0;
+       top:0;
+       pointer-events:none;
+       overflow:visible;
+     ">
+    <defs></defs>
+  </svg>
+    </div>
+  </main>
+
+	<script src="script.js"></script>
+<div id="toast-container"></div>
+ 
+</body>
+</html>

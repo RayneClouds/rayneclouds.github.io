@@ -7,6 +7,8 @@
 // GLOBAL STATE
 // ==============================
 let allTalents = [];
+let allDescriptions = [];
+let descriptionById = new Map();
 
 let talentMap = new Map();
 let parentMap = new Map();
@@ -23,7 +25,7 @@ let pendingImportedBuild = null;
 // SPEC STATE
 // ==============================
 
-let activeClass = null;activateSpec
+let activeClass = null;
 let activeSpec  = null;
 // ==============================
 // NODE TYPE HELPERS
@@ -248,13 +250,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   initHamburgerMenu();
 
   await loadTalents();
+  await loadDescriptions();
 
   buildFromJSON(allTalents);
 
   hideAllNodes();
 
-  buildWeaponMenu(allTalents);
-  
   bindClearSidebar();	
 	
   loadBuildFromURL();
@@ -306,17 +307,83 @@ function buildMaps() {
 async function loadTalents() {
 
   const response = await fetch("talents.json");
+
+  if (!response.ok) {
+    throw new Error(
+      `Failed to load talents.json: ${response.status} ${response.statusText}`
+    );
+  }
+
   const data = await response.json();
 
-  allTalents = data;
+  // talents.json is an object keyed by talent ID, for example:
+  // { "1129002": { "Id": 1129002, ... }, "1129003": { ... } }
+  // Convert its values into the flat array expected by this engine.
+  if (!data || typeof data !== "object" || Array.isArray(data)) {
+    console.error("Unexpected talents.json structure:", data);
+    throw new TypeError(
+      "Expected talents.json to be an object keyed by talent ID."
+    );
+  }
 
-  allTalents.forEach(t => {
-    t.currentRank = 0;
+  allTalents = Object.values(data);
+
+  // Validate entries before functions such as buildMaps() use them.
+  if (
+    !allTalents.every(
+      talent =>
+        talent &&
+        typeof talent === "object" &&
+        !Array.isArray(talent) &&
+        "Id" in talent
+    )
+  ) {
+    console.error("Invalid talent data in talents.json:", data);
+    throw new TypeError(
+      "talents.json contains an invalid talent entry."
+    );
+  }
+
+  allTalents.forEach(talent => {
+    talent.currentRank = 0;
   });
 
   buildMaps();
-
   buildWeaponMenu(allTalents);
+}
+
+async function loadDescriptions() {
+  const response = await fetch("desc.json");
+
+  if (!response.ok) {
+    throw new Error(
+      `Failed to load desc.json: ${response.status} ${response.statusText}`
+    );
+  }
+
+  const data = await response.json();
+  descriptionById.clear();
+
+  // desc.json may be an object keyed by description ID or an array of records.
+  const entries = Array.isArray(data)
+    ? data.map((record, index) => [String(record?.Id ?? record?.ID ?? index), record])
+    : Object.entries(data || {});
+
+  allDescriptions = entries
+    .filter(([, record]) => record && typeof record === "object")
+    .map(([key, record]) => {
+      const id = String(record.Id ?? record.ID ?? key);
+      return {
+        ...record,
+        Id: id,
+        name: record.Name ?? record.name ?? record.Title ?? record.title ?? `Description ${id}`,
+        desc: record.Description ?? record.description ?? record.desc ?? ""
+      };
+    });
+
+  allDescriptions.forEach(description => {
+    descriptionById.set(String(description.Id), description);
+  });
 }
 
   // --------------------------
@@ -840,19 +907,21 @@ function buildWeaponMenu(data) {
 
 const CLASS_META = {
 
-  1: { name: "Stormblade", order: 4 },
-  2: { name: "Frost Mage", order: 6 },
+  1: { name: "Stormblade", order: 5 },
+  2: { name: "Frost Mage", order: 7 },
+  3: { name: "Twin Striker", order: 4 },
   4: { name: "Wind Knight", order: 3 },
-  5: { name: "Verdant Oracle", order: 7 },
+  5: { name: "Verdant Oracle", order: 8 },
   9: { name: "Heavy Guardian", order: 1 },
-  11:{ name: "Marksman", order: 5 },
+  11:{ name: "Marksman", order: 6 },
   12:{ name: "Shield Knight", order: 2 },
-  13:{ name: "Beat Performer", order: 8 }
+  13:{ name: "Beat Performer", order: 9 }
 
 };
 const CLASS_ICONS = {
   1: "../img/weapon_icon1.png",
   2: "../img/weapon_icon2.png",
+  3: "../img/weapon_icon3.png",
   4: "../img/weapon_icon4.png",
   5: "../img/weapon_icon5.png",
   9: "../img/weapon_icon9.png",
@@ -871,6 +940,7 @@ const WG_THEME = {
   // ----- RED THEME -----
   1: { theme: "red" },
   2: { theme: "red" },
+  3: { theme: "red" },
   4: { theme: "red" },
   11: { theme: "red" },
   
@@ -890,7 +960,7 @@ function getWGTheme(groupId) {
 function applyWGBackground(groupId) {
 
   document.body.classList.remove(
-    "wg1","wg2","wg4","wg5",
+    "wg1","wg2","wg3","wg4","wg5",
     "wg9","wg11","wg12","wg13"
   );
 
@@ -1356,88 +1426,82 @@ function traverseVisible(startNodes, visible) {
 
 
 
+function getRequiredTP(talent) {
+  const raw = talent?.requiresUnlock;
+  if (raw == null) return 0;
+  const values = Array.isArray(raw) ? raw : [raw];
+  return values.reduce((max, value) => {
+    const n = Number(value);
+    return Number.isFinite(n) ? Math.max(max, n) : max;
+  }, 0);
+}
+
+// A talent is gated by the amount of TP spent BEFORE buying that talent.
+function meetsTPRequirement(talent) {
+  const required = getRequiredTP(talent);
+  return (tpUsed - (talent.currentRank > 0 ? Number(talent.cost || 0) : 0)) >= required;
+}
+
 function canUnlock(talent) {
+  if (!talent) return false;
+  if (isSpecNode(talent) && tpUsed < 30) return false;
+  if (tpUsed < getRequiredTP(talent)) return false;
 
-  // ===== SPEC RULE =====
-  if (isSpecNode(talent)) {
-    return tpUsed >= 30; // your base-tree requirement
-  }
-
-  const parents =
-    runtimeParentMap.get(talent.id);
-
-  if (!parents || parents.length === 0)
-    return true;
-
-  return parents.some(p => p.currentRank > 0);
+  const parents = runtimeParentMap.get(String(talent.id ?? talent.Id));
+  if (!parents || parents.length === 0) return true;
+  return parents.some(parent => parent.currentRank > 0);
 }
 
 function hasValidParent(talent) {
-
-  const parents =
-    runtimeParentMap.get(talent.id);
-
-  if (!parents || parents.length === 0)
-    return true;
-
-  // ===== SPEC BRANCH RULE =====
-  if (talent.Spec && talent.Spec === activeSpec)
-    return true;
-
-  return parents.some(p => p.currentRank > 0);
+  const parents = runtimeParentMap.get(String(talent.id ?? talent.Id));
+  if (!parents || parents.length === 0) return true;
+  // A node remains valid if ANY one of its parents is still unlocked.
+  return parents.some(parent => parent.currentRank > 0);
 }
 
+// Refund invalid nodes until the graph and TP thresholds stabilize. This is
+// deliberately evaluated against `nodes`, not `allTalents`, because the live
+// ranks are stored on the runtime node objects.
 function validateThresholds() {
-
-  allTalents.forEach(talent => {
-
-    if (talent.currentRank === 0) return;
-
-    const required =
-     talent.requiresUnlock?.[0] ?? 0;
-
-    if (tpUsed < required) {
-
-      talent.currentRank = 0;
-
-      tpUsed = Math.max(0, tpUsed - talent.cost);
-      sealUsed = Math.max(0, sealUsed - talent.seal);
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const talent of Object.values(nodes)) {
+      if (talent.currentRank <= 0 || isSpecNode(talent)) continue;
+      if (!meetsTPRequirement(talent)) {
+        talent.currentRank = 0;
+        tpUsed = Math.max(0, tpUsed - Number(talent.cost || 0));
+        sealUsed = Math.max(0, sealUsed - Number(talent.seal || 0));
+        changed = true;
+      }
     }
-
-  });
-
+  }
 }
 
 function validateChildren() {
-
   let changed = true;
-
-  // keep checking until tree stabilizes
   while (changed) {
-
     changed = false;
-
-    Object.values(nodes).forEach(talent => {
-
-      if (talent.currentRank === 0) return;
-
-      if (!hasValidParent(talent)) {
-
+    for (const talent of Object.values(nodes)) {
+      if (talent.currentRank <= 0) continue;
+      if (isSpecNode(talent)) {
+        if (tpUsed < 30) {
+          talent.currentRank = 0;
+          tpUsed = Math.max(0, tpUsed - Number(talent.cost || 0));
+          sealUsed = Math.max(0, sealUsed - Number(talent.seal || 0));
+          if (activeSpec === talent.id) activeSpec = null;
+          changed = true;
+        }
+        continue;
+      }
+      if (!hasValidParent(talent) || !meetsTPRequirement(talent)) {
         talent.currentRank = 0;
-
-        tpUsed =
-  Math.max(0, tpUsed - talent.cost);
-
-sealUsed =
-  Math.max(0, sealUsed - talent.seal);
-
+        tpUsed = Math.max(0, tpUsed - Number(talent.cost || 0));
+        sealUsed = Math.max(0, sealUsed - Number(talent.seal || 0));
         changed = true;
       }
-
-    });
-
+    }
   }
-
   updateCounters();
 }
 
@@ -1545,92 +1609,83 @@ function toggleTalent(talent) {
   talent.currentRank > 0 ? refundTalent(talent) : purchaseTalent(talent);
 }
 
-function purchaseTalent(talent) {
-
-  if (!canUnlock(talent)) return;
-	  
 function refundSpecBranch(specId) {
-
-  Object.values(nodes).forEach(node => {
-
-    // refund spec itself
-    if (node.id === specId) {
-      node.currentRank = 0;
-      return;
+  for (const node of Object.values(nodes)) {
+    if (node.id === specId || node.Spec === specId) {
+      if (node.currentRank > 0) {
+        tpUsed = Math.max(0, tpUsed - Number(node.cost || 0));
+        sealUsed = Math.max(0, sealUsed - Number(node.seal || 0));
+        node.currentRank = 0;
+      }
     }
-
-    // refund everything belonging to it
-    if (node.Spec === specId &&
-        node.currentRank > 0) {
-
-      tpUsed -= node.cost;
-      sealUsed -= node.seal;
-
-      node.currentRank = 0;
-    }
-
-  });
-
+  }
 }
 
-  // ======================
-  // SPEC PURCHASE
-  // ======================
-if (isSpecNode(talent)) {
-	
-if (activeSpec === talent.id)
-  return;
-  // =========================
-  // SWITCHING SPECS
-  // =========================
-  if (activeSpec &&
-      activeSpec !== talent.id) {
+function purchaseTalent(talent) {
+  if (!talent || talent.currentRank > 0 || !canUnlock(talent)) return;
 
-    refundSpecBranch(activeSpec);
+  const cost = Number(talent.cost || 0);
+  const seal = Number(talent.seal || 0);
+  const tpMax = Number.parseInt(tpMaxEl?.value, 10);
+  const sealMax = Number.parseInt(sealMaxEl?.value, 10);
+  if (tpUsed + cost > (Number.isFinite(tpMax) ? tpMax : Infinity)) return;
+  if (sealUsed + seal > (Number.isFinite(sealMax) ? sealMax : Infinity)) return;
+
+  if (isSpecNode(talent)) {
+    if (activeSpec === talent.id) return;
+    if (activeSpec && activeSpec !== talent.id) refundSpecBranch(activeSpec);
   }
 
-  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
-  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
+tpUsed += cost;
+sealUsed += seal;
+talent.currentRank = 1;
 
-  tpUsed += talent.cost;
-  sealUsed += talent.seal;
+// Mark this as the most recently unlocked talent
+document.querySelectorAll(".node.last-unlocked")
+  .forEach(node => node.classList.remove("last-unlocked"));
 
-  talent.currentRank = 1;
+talent.el.classList.add("last-unlocked");
 
-  activateSpec(talent);
-
-  updateCounters();
-  updateTreeVisuals();
-  drawEdges();
+  if (isSpecNode(talent)) activateSpec(talent);
 
   validateThresholds();
   validateChildren();
-
-  return;
+  updateCounters();
+  updateTreeVisuals();
+  applySpecVisibility();
+  drawEdges();
 }
 
-  // ======================
-  // NORMAL TALENT PURCHASE
-  // ======================
-  if (tpUsed + talent.cost > parseInt(tpMaxEl.value)) return;
-  if (sealUsed + talent.seal > parseInt(sealMaxEl.value)) return;
+function refundTalent(talent) {
+  if (!talent || talent.currentRank <= 0) return;
 
-  tpUsed += talent.cost;
-  sealUsed += talent.seal;
+  if (isSpecNode(talent)) {
+    refundSpecBranch(talent.id);
+    if (activeSpec === talent.id) activeSpec = null;
+    collapseSpecBranch(talent.id);
+    applySpecVisibility();
+    updateCounters();
+    updateTreeVisuals();
+    drawEdges();
+    validateThresholds();
+    validateChildren();
+    return;
+  }
 
-  talent.currentRank = 1;
+  talent.currentRank = 0;
+  talent.el.classList.remove("last-unlocked");
+  tpUsed = Math.max(0, tpUsed - Number(talent.cost || 0));
+  sealUsed = Math.max(0, sealUsed - Number(talent.seal || 0));
 
+  // Repeated validation refunds descendants only when they have no other
+  // unlocked parent, or when their TP threshold is no longer satisfied.
+  validateThresholds();
+  validateChildren();
   updateCounters();
   updateTreeVisuals();
   drawEdges();
-
-  validateThresholds();
-  validateChildren();
 }
 
-  // ======================
-  // SPEC SELECTION
-  // ======================
 function activateSpec(talent) {
 
   if (!isSpecNode(talent)) return;
@@ -1795,30 +1850,437 @@ function centerOnNode(id) {
 // ==============================
 
 function showSidebar(talent) {
-
   setSidebarPreview(talent.icon);
 
+  const description = renderTalentDescription(talent.desc || "", talent);
+  const theme = getWGTheme(currentWeaponGroup);
+  const sealImage = `img/aseal_${theme}.png`;
+
   setSidebarInfo(
-  '<div class="talent-detail">' +
-    '<h3 style="color:#ffd700">' +
-      talent.name +
-    '</h3>' +
-
-    '<div class="talent-desc">' +
-      talent.desc +
-    '</div>' +
-
-    '<div style="margin-top:10px">' +
-      '<span style="color:#6cf">Talent Cost:</span> ' +
-      talent.cost + '<br>' +
-
-      '<span style="color:#f66">Seal Cost:</span> ' +
-      talent.seal +
-    '</div>' +
-  '</div>'
-);
+    '<div class="talent-detail">' +
+      '<h3 class="talent-detail-heading">' + escapeTalentHtml(talent.name || "") + '</h3>' +
+      '<div class="talent-desc" data-talent-id="' + escapeTalentHtml(talent.Id ?? talent.ID ?? talent.id ?? "") + '" data-talent-name="' + escapeTalentHtml(talent.name || "") + '">' + description + '</div>' +
+      '<div class="talent-cost">' +
+        '<div class="talent-cost-label">Cost:</div>' +
+        '<div class="talent-cost-row">' +
+          '<div class="talent-cost-item"><img class="talent-cost-icon" src="' + sealImage + '" alt="Seals"><span>' + escapeTalentHtml(talent.seal ?? 0) + '</span></div>' +
+          '<div class="talent-cost-item"><img class="talent-cost-icon" src="img/talentp.png" alt="Talent Points"><span>' + escapeTalentHtml(talent.cost ?? 0) + '</span></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>'
+  );
 }
 
+// Escape text from the JSON before inserting it into the sidebar or tooltip.
+function escapeTalentHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function renderStyledDescriptionText(value) {
+  return renderTalentMarkup(String(value ?? ""));
+}
+
+// Render the game's description markup safely while preserving line breaks,
+// supported style colors, common inline HTML, and clickable linktext references.
+function renderTalentMarkup(source) {
+  const tokenPattern = /<linktext=(\d+)>([\s\S]*?)<\/linktext>|<style="([^"]+)">([\s\S]*?)<\/style>|<br\s*\/?>|<\/?(?:b|strong|i|em|u|sup|sub)>|<[^>]*>/gi;
+  let html = "";
+  let lastIndex = 0;
+  let match;
+
+  while ((match = tokenPattern.exec(source)) !== null) {
+    html += escapeTalentHtml(source.slice(lastIndex, match.index));
+    const token = match[0];
+
+    if (match[1] !== undefined) {
+      const skillId = String(match[1]);
+      const innerHtml = renderTalentMarkup(match[2]);
+      const plainName = match[2].replace(/<[^>]*>/g, "").trim();
+      html += '<a href="#" class="talent-desc-link" data-skill-id="' +
+        escapeTalentHtml(skillId) + '" data-skill-name="' +
+        escapeTalentHtml(plainName) + '">' + innerHtml + '</a>';
+    } else if (match[3] !== undefined) {
+      const styleName = match[3].toLowerCase();
+      const innerHtml = renderTalentMarkup(match[4]);
+      if (styleName === "accent-gn") {
+        html += '<span class="desc-text">' + innerHtml + '</span>';
+      } else if (styleName === "magic" || styleName === "physical") {
+        html += '<span class="desc-dmg">' + innerHtml + '</span>';
+      } else {
+        // Preserve the style name as a data attribute so CSS can map game colors.
+        html += '<span class="desc-style" data-desc-style="' +
+          escapeTalentHtml(match[3]) + '">' + innerHtml + '</span>';
+      }
+    } else if (/^<br\s*\/?\s*>$/i.test(token)) {
+      html += "<br>";
+    } else if (/^<\/?(?:b|strong|i|em|u|sup|sub)>$/i.test(token)) {
+      html += token.toLowerCase();
+    }
+    // Any other tag is intentionally stripped, rather than shown literally.
+    lastIndex = tokenPattern.lastIndex;
+  }
+
+  html += escapeTalentHtml(source.slice(lastIndex));
+  // Support literal newline characters in addition to <br> tags.
+  return html.replace(/\r\n?|\n/g, "<br>");
+}
+
+function getTalentByDescriptionId(id, linkedName = "") {
+  const wanted = String(id ?? "").trim();
+
+  // desc.json is the source of linked description names and description text.
+  const descriptionRecord = descriptionById.get(wanted);
+  if (descriptionRecord) return descriptionRecord;
+
+  const normalizeName = value => String(value || "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase()
+    .replace(/s$/, "");
+
+  const byExactId = allTalents.find(talent => String(talent.Id) === wanted);
+  if (byExactId) return byExactId;
+
+  const wantedName = normalizeName(linkedName);
+  if (wantedName) {
+    const byExactName = allTalents.find(talent => normalizeName(talent.name) === wantedName);
+    if (byExactName) return byExactName;
+  }
+
+  const byTalentId = allTalents.filter(talent => String(talent.TalentId) === wanted);
+  if (byTalentId.length === 1) return byTalentId[0];
+
+  return null;
+}
+
+function getLinkedTalentReferences(description) {
+  const references = [];
+  const seenIds = new Set();
+  const pattern = /<linktext=(\d+)>([\s\S]*?)<\/linktext>/gi;
+  let match;
+
+  while ((match = pattern.exec(String(description || ""))) !== null) {
+    const id = String(match[1]);
+    const name = match[2].replace(/<[^>]*>/g, "").trim();
+    if (!seenIds.has(id)) {
+      seenIds.add(id);
+      references.push({ id, name });
+    }
+  }
+
+  return references;
+}
+
+function renderLinkedTalentSection(talent) {
+  if (!talent) return "";
+  const name = talent.name || talent.Name || "Unnamed Talent";
+  const description = talent.desc ?? talent.Description ?? talent.description ?? "";
+  const desc = renderTalentDescription(description, talent);
+
+  return '<section class="tooltip-talent-section" data-description-id="' + escapeTalentHtml(talent.Id ?? talent.ID ?? "") + '">' +
+    '<div class="tooltip-heading">' + escapeTalentHtml(name) +
+    ' <span class="tooltip-skill-id">(#' + escapeTalentHtml(talent.Id ?? talent.ID ?? "?") + ')</span></div>' +
+    '<div class="tooltip-description">' + (desc || "No description available.") + '</div>' +
+    '</section>';
+}
+
+function renderTalentDescription(description, talent) {
+  return renderTalentMarkup(String(description || ""));
+}
+
+// Collect every unique description reachable from the selected link. A visited
+// ID set prevents duplicate entries and also stops circular link references.
+function collectUniqueLinkedDescriptions(rootTalent) {
+  if (!rootTalent) return [];
+
+  const result = [];
+  const visited = new Set();
+  const queue = [rootTalent];
+
+  while (queue.length) {
+    const current = queue.shift();
+    if (!current) continue;
+
+    const id = String(current.Id ?? current.ID ?? "");
+    if (id && visited.has(id)) continue;
+    if (id) visited.add(id);
+    result.push(current);
+
+    const description = current.desc ?? current.Description ?? current.description ?? "";
+    for (const reference of getLinkedTalentReferences(description)) {
+      if (visited.has(String(reference.id))) continue;
+      const linked = getTalentByDescriptionId(reference.id, reference.name);
+      if (linked) queue.push(linked);
+    }
+  }
+
+  return result;
+}
+
+function collectUniqueLinkedDescriptionsFromReferences(references) {
+  const result = [];
+  const visited = new Set();
+  const queue = [...(references || [])];
+  while (queue.length) {
+    const reference = queue.shift();
+    if (!reference) continue;
+    const id = String(reference.id ?? "");
+    if (!id || visited.has(id)) continue;
+    visited.add(id);
+    const linked = getTalentByDescriptionId(id, reference.name);
+    if (!linked) continue;
+    result.push(linked);
+    const description = linked.desc ?? linked.Description ?? linked.description ?? "";
+    for (const nested of getLinkedTalentReferences(description)) {
+      if (!visited.has(String(nested.id))) queue.push(nested);
+    }
+  }
+  return result;
+}
+
+function getTalentSkillTooltip() {
+  let tooltip = document.getElementById("talentSkillTooltip");
+  if (tooltip) return tooltip;
+
+  tooltip = document.createElement("div");
+  tooltip.id = "talentSkillTooltip";
+  tooltip.setAttribute("role", "dialog");
+  tooltip.setAttribute("aria-label", "Talent Details");
+
+  // Keep the popup independent of the talent tree's zoom and pan.
+  Object.assign(tooltip.style, {
+    position: "fixed",
+    display: "none",
+    zIndex: "10000",
+    maxHeight: "calc(100vh - 16px)",
+    overflow: "hidden",
+    boxSizing: "border-box",
+    flexDirection: "column"
+  });
+
+  // Fixed heading bar with a close button.
+  const header = document.createElement("div");
+  header.className = "tooltip-heading tooltip-popup-header";
+
+  const headerTitle = document.createElement("span");
+  headerTitle.textContent = "Linked Talent Descriptions";
+
+  const closeButton = document.createElement("button");
+  closeButton.type = "button";
+  closeButton.className = "tooltip-close";
+  closeButton.textContent = "×";
+  closeButton.setAttribute("aria-label", "Close tooltip");
+  closeButton.title = "Close";
+
+  Object.assign(closeButton.style, {
+    marginLeft: "auto",
+    padding: "0 6px",
+    border: "none",
+    background: "transparent",
+    color: "inherit",
+    fontSize: "24px",
+    fontWeight: "bold",
+    lineHeight: "1",
+    cursor: "pointer",
+    flexShrink: "0"
+  });
+
+  header.appendChild(headerTitle);
+  header.appendChild(closeButton);
+
+  const content = document.createElement("div");
+  content.className = "tooltip-popup-content";
+
+  Object.assign(content.style, {
+    overflowY: "auto",
+    overflowX: "hidden",
+    minHeight: "0",
+    flex: "1 1 auto",
+    overscrollBehavior: "contain",
+    overflowWrap: "anywhere",
+    WebkitOverflowScrolling: "touch"
+  });
+
+  tooltip.appendChild(header);
+  tooltip.appendChild(content);
+  document.body.appendChild(tooltip);
+
+  function closeTooltip() {
+    tooltip.style.display = "none";
+  }
+
+  // X button closes the popup.
+  closeButton.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+    closeTooltip();
+  });
+
+  // Clicking anywhere inside the popup must not trigger outside-click logic.
+  tooltip.addEventListener("click", event => {
+    event.stopPropagation();
+
+    const link = event.target.closest(".talent-desc-link");
+    if (!link) return;
+
+    event.preventDefault();
+    openTalentSkillTooltip(link);
+  });
+
+  // Close only when clicking outside the popup.
+  document.addEventListener("click", event => {
+    if (
+      tooltip.style.display !== "none" &&
+      !tooltip.contains(event.target)
+    ) {
+      closeTooltip();
+    }
+  });
+
+  // Escape closes the popup.
+  document.addEventListener("keydown", event => {
+    if (
+      event.key === "Escape" &&
+      tooltip.style.display !== "none"
+    ) {
+      closeTooltip();
+    }
+  });
+
+  // IMPORTANT:
+  // Do not add a window scroll listener that hides the tooltip.
+  // Scrolling inside the popup must remain possible.
+
+  return tooltip;
+}
+function openTalentSkillTooltip(clickedLink) {
+  if (!clickedLink) return;
+
+  const skillId = String(clickedLink.dataset?.skillId ?? "");
+  const skillName =
+    clickedLink.dataset?.skillName ||
+    clickedLink.textContent?.trim() ||
+    "";
+
+  const tooltip = getTalentSkillTooltip();
+  const content = tooltip.querySelector(".tooltip-popup-content");
+
+  const sourceDesc = clickedLink.closest?.(".talent-desc");
+  const sourceId = sourceDesc?.dataset?.talentId;
+
+  const sourceTalent = sourceId
+    ? allTalents.find(
+        t => String(t.Id ?? t.ID ?? t.id ?? "") === String(sourceId)
+      )
+    : null;
+
+  let entries = [];
+
+  if (sourceTalent) {
+    const refs = getLinkedTalentReferences(
+      sourceTalent.desc ??
+      sourceTalent.Description ??
+      sourceTalent.description ??
+      ""
+    );
+
+    entries = collectUniqueLinkedDescriptionsFromReferences(refs);
+  } else {
+    const linked = getTalentByDescriptionId(skillId, skillName);
+
+    if (linked) {
+      entries = collectUniqueLinkedDescriptions(linked);
+    }
+  }
+
+  if (entries.length) {
+    content.innerHTML = entries
+      .map(renderLinkedTalentSection)
+      .join("");
+  } else {
+    content.innerHTML =
+      '<div class="tooltip-heading">' +
+        escapeTalentHtml(skillName || "Linked skill") +
+      '</div>' +
+      '<div class="tooltip-description">' +
+        'No matching talent description found for ID ' +
+        escapeTalentHtml(skillId || "?") +
+      '.</div>';
+  }
+
+  // Reset scroll when opening a new set of descriptions.
+  content.scrollTop = 0;
+
+  // Display as a flex container so the header stays fixed above the content.
+  tooltip.style.display = "flex";
+  tooltip.style.left = "0px";
+  tooltip.style.top = "0px";
+
+  const sidebarTextRect =
+    sidebarText?.getBoundingClientRect() ??
+    clickedLink.getBoundingClientRect();
+
+  const sidebarControl = document.querySelector(
+    ".sidebar-control, .sidebar-controls"
+  );
+
+  const sidebarControlRect = sidebarControl
+    ? sidebarControl.getBoundingClientRect()
+    : sidebarTextRect;
+
+  const margin = 8;
+  const maxHeight = window.innerHeight - margin * 2;
+
+  tooltip.style.maxHeight = maxHeight + "px";
+  tooltip.style.width = "500px";
+  tooltip.style.maxWidth = `calc(100vw - ${margin * 2}px)`;
+
+  // Measure the popup after the content has been inserted.
+  const tipRect = tooltip.getBoundingClientRect();
+
+  let left = sidebarTextRect.left - tipRect.width - margin;
+
+  if (left < margin) {
+    left = sidebarTextRect.right + margin;
+  }
+
+  // Keep the entire popup within the viewport.
+  left = Math.max(
+    margin,
+    Math.min(left, window.innerWidth - tipRect.width - margin)
+  );
+
+  let top = Math.max(margin, sidebarControlRect.top);
+
+  if (top + tipRect.height > window.innerHeight - margin) {
+    top = Math.max(
+      margin,
+      window.innerHeight - tipRect.height - margin
+    );
+  }
+
+  tooltip.style.left = left + "px";
+  tooltip.style.top = top + "px";
+}
+
+
+// Delegated sidebar handler: works for dynamically replaced sidebar HTML.
+if (sidebarText && !sidebarText.dataset.tooltipDelegationBound) {
+  sidebarText.dataset.tooltipDelegationBound = "true";
+  sidebarText.addEventListener("click", event => {
+    const link = event.target.closest?.(".talent-desc-link");
+    if (!link) return;
+    event.preventDefault();
+    event.stopPropagation();
+    openTalentSkillTooltip(link);
+  });
+}
 
 function setSidebarInfo(html) {
   sidebarText.innerHTML =
@@ -1892,59 +2354,194 @@ function updateCounters() {
 // EXPORT BUILD (Shareable URL)
 // ==============================
 
+
+ // ==============================
+ // COMPACT BUILD URL EXPORT / IMPORT
+ // ==============================
+
+// Create a stable list of IDs for the selected weapon group's
+// connected talent tree, including connected WG0/base talents.
+function getCanonicalBuildIds(weaponGroup) {
+  const connectedIds = getConnectedTalents(Number(weaponGroup));
+
+  return allTalents
+    .filter(t => connectedIds.has(String(t.Id)))
+    .map(t => Number(t.Id))
+    .filter(Number.isSafeInteger)
+    .filter((id, index, arr) => arr.indexOf(id) === index)
+    .sort((a, b) => a - b);
+}
+
+// Convert bytes to URL-safe Base64.
+function bytesToBase64Url(bytes) {
+  let binary = "";
+
+  for (const byte of bytes) {
+    binary += String.fromCharCode(byte);
+  }
+
+  return btoa(binary)
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/g, "");
+}
+
+function base64UrlToBytes(value) {
+  const base64 = value
+    .replace(/-/g, "+")
+    .replace(/_/g, "/");
+
+  const binary = atob(
+    base64 + "=".repeat((4 - base64.length % 4) % 4)
+  );
+
+  return Uint8Array.from(binary, c => c.charCodeAt(0));
+}
+
+// Pack the unlocked talents into one bit per talent.
+// Select whichever representation is shorter.
+function encodeBuild(weaponGroup, unlockedIds) {
+  const ids = getCanonicalBuildIds(weaponGroup);
+  const bytes = new Uint8Array(Math.ceil(ids.length / 8));
+  const unlocked = new Set(unlockedIds.map(Number));
+  const indexById = new Map(ids.map((id, index) => [id, index]));
+
+  for (const id of unlocked) {
+    const index = indexById.get(id);
+
+    if (index === undefined) {
+      throw new Error(
+        "Unlocked talent " + id +
+        " is not part of weapon group " + weaponGroup
+      );
+    }
+
+    bytes[index >> 3] |= 1 << (index & 7);
+  }
+
+  const rawPayload = "r" + bytesToBase64Url(bytes);
+
+  let binary = "";
+  for (const byte of bytes) {
+    binary += String.fromCharCode(byte);
+  }
+
+  const compressedPayload =
+    "z" + LZString.compressToEncodedURIComponent(binary);
+
+  return compressedPayload.length < rawPayload.length
+    ? compressedPayload
+    : rawPayload;
+}
+
+function decodeBuild(weaponGroup, payload) {
+  const ids = getCanonicalBuildIds(weaponGroup);
+
+  if (!payload || !["r", "z"].includes(payload[0])) {
+    throw new Error("Invalid build link.");
+  }
+
+  let bytes;
+
+  if (payload[0] === "r") {
+    bytes = base64UrlToBytes(payload.slice(1));
+  } else {
+    const binary =
+      LZString.decompressFromEncodedURIComponent(payload.slice(1));
+
+    if (binary === null) {
+      throw new Error("Unable to decompress build.");
+    }
+
+    bytes = Uint8Array.from(
+      binary,
+      character => character.charCodeAt(0)
+    );
+  }
+
+  const expectedLength = Math.ceil(ids.length / 8);
+
+  if (bytes.length !== expectedLength) {
+    throw new Error("Build does not match this talent tree.");
+  }
+
+  return ids
+    .filter((id, index) =>
+      (bytes[index >> 3] & (1 << (index & 7))) !== 0
+    )
+    .map(String);
+}
+
+
+// ==============================
+// EXPORT BUILD
+// ==============================
+
 document.getElementById("exportBuild")
   ?.addEventListener("click", exportBuild);
 
 function exportBuild() {
-
   if (!currentWeaponGroup) return;
 
-  const unlocked =
-  Object.values(nodes)
-    .filter(n => n.currentRank > 0)
-    .map(n => Number(n.id).toString(36))
-    .join(".");
+  try {
+    const unlockedIds = Object.values(nodes)
+      .filter(node => node.currentRank > 0)
+      .map(node => Number(node.id));
 
-  const params = new URLSearchParams();
+    const payload = encodeBuild(
+      currentWeaponGroup,
+      unlockedIds
+    );
 
-  params.set("wg", currentWeaponGroup);
-  params.set("b", unlocked);
+    const params = new URLSearchParams();
+    params.set("w", String(currentWeaponGroup));
+    params.set("b", payload);
 
-  const url =
-  location.origin +
-  location.pathname +
-  "?" +
-  params.toString();
+    const url =
+      location.origin +
+      location.pathname +
+      "?" +
+      params.toString();
 
-  navigator.clipboard.writeText(url);
-
-  showToast("Build URL copied!");
+    navigator.clipboard.writeText(url)
+      .then(() => showToast("Build URL copied!"))
+      .catch(() => showToast("Unable to copy build URL."));
+  } catch (error) {
+    console.error("Build export failed:", error);
+    showToast("Unable to export build.");
+  }
 }
 
-// Load URL
+
+// ==============================
+// IMPORT BUILD
+// ==============================
 
 function loadBuildFromURL() {
+  const params = new URLSearchParams(window.location.search);
 
-  const params =
-    new URLSearchParams(window.location.search);
+  const wg = Number.parseInt(params.get("w"), 10);
+  const payload = params.get("b");
 
-  const wg =
-    parseInt(params.get("wg"));
+  if (!Number.isInteger(wg) || wg <= 0) return;
 
-  const build =
-  params.get("b");
+  let importedIds = null;
 
-  if (!wg) return;
+  if (payload) {
+    try {
+      importedIds = decodeBuild(wg, payload);
+    } catch (error) {
+      console.error("Build import failed:", error);
+      showToast("Invalid or incompatible build link.");
+      return;
+    }
+  }
+
+  pendingImportedBuild = importedIds;
 
   setTimeout(() => loadWeaponGroup(wg), 0);
-
-  if (!build) return;
-
-  pendingImportedBuild =
-  build
-    .split(".")
-    .map(v => parseInt(v, 36).toString());
 }
+
 function applyImportedBuild() {
 
   if (!pendingImportedBuild) return;

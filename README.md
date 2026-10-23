@@ -1,3 +1,7 @@
 # rayneclouds.github.io
 Blue Protocol Star Resonance Talent Tree
-Season 2 changes live. Ability to Export builds added. 
+Season 4 changes live. (Updated to v1_0_46166_262)
+
+Ability to Export/Import builds added and fixed. 
+
+rayneclouds.github.io

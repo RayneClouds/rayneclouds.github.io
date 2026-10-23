@@ -1,0 +1,883 @@
+/* =====================================
+   ACCENT THEME SYSTEM
+===================================== */
+
+:root {
+
+  /* default = RED */
+  --accent: #FF4848;
+  --accent-soft: #FF7975;
+  --accent-glow: #FF2A48;
+
+  --panel: #220A0A;
+  --panel-dark: #180606;
+
+  --text-main: #ffffff;
+  --text-accent: #ffe9f6;
+
+  --input-bg: #220A0A;
+
+  --edge-locked: #6E7179;
+
+}
+/* =============================
+   RED THEME
+============================= */
+
+body.theme-red {
+
+  --accent: #FF4848;
+  --accent-soft: #FF7975;
+  --accent-glow: #FF2A48;
+
+  --panel: #220A0A;
+  --panel-dark: #180606;
+
+  --text-accent: #ffe9f6;
+
+  --input-bg: #220A0A;
+
+  --img-aseal: url("img/aseal_red.png");
+  --img-talent: url("img/talent_icon_red.png");
+  --img-select: url("img/talent_select_red.png");
+  --img-select2: url("img/talent_select2_red.png");
+  --img-bg: url("img/virtual_scene_bg_red.png");
+	
+}
+/* =============================
+   BLUE THEME
+============================= */
+
+body.theme-blue {
+
+  --accent: #6DCBFF;
+  --accent-soft: #C5E6FF;
+  --accent-glow: #6DCBFF;
+
+  --panel: #0D1A2F;
+  --panel-dark: #0a1a22;
+
+  --text-accent: #C5E6FF;
+
+  --input-bg: #0a1a22;
+	
+  --img-aseal: url("img/aseal_blue.png");
+  --img-talent: url("img/talent_icon_blue.png");
+  --img-select: url("img/talent_select_blue.png");
+  --img-select2: url("img/talent_select2_blue.png");
+  --img-bg: url("img/virtual_scene_bg_blue.png");
+}
+
+
+/* =============================
+   GREEN THEME
+============================= */
+
+body.theme-green {
+
+  --accent: #6dffcb;
+  --accent-soft: #c5ffe6;
+  --accent-glow: #6dffcb;
+
+  --panel: #0a221a;
+  --panel-dark: #0a221a;
+
+  --text-accent: #c5ffe6;
+
+  --input-bg: #0a221a;
+
+  --img-aseal: url("img/aseal_green.png");
+  --img-talent: url("img/talent_icon_green.png");
+  --img-select: url("img/talent_select_green.png");
+  --img-select2: url("img/talent_select2_green.png");
+  --img-bg: url("img/virtual_scene_bg_green.png");
+}
+
+body.wg1 {
+  --img-bg-left: url("img/talent_bg_left1.png");
+  --img-bg-right: url("img/talent_bg_right1.png");
+}
+
+body.wg2 {
+  --img-bg-left: url("img/talent_bg_left2.png");
+  --img-bg-right: url("img/talent_bg_right2.png");
+}
+body.wg4 {
+  --img-bg-left: url("img/talent_bg_left4.png");
+  --img-bg-right: url("img/talent_bg_right4.png");
+}
+
+body.wg5 {
+  --img-bg-left: url("img/talent_bg_left5.png");
+  --img-bg-right: url("img/talent_bg_right5.png");
+}
+body.wg9 {
+  --img-bg-left: url("img/talent_bg_left9.png");
+  --img-bg-right: url("img/talent_bg_right9.png");
+}
+
+body.wg11 {
+  --img-bg-left: url("img/talent_bg_left11.png");
+  --img-bg-right: url("img/talent_bg_right11.png");
+}
+body.wg12 {
+  --img-bg-left: url("img/talent_bg_left12.png");
+  --img-bg-right: url("img/talent_bg_right12.png");
+}
+
+body.wg13 {
+  --img-bg-left: url("img/talent_bg_left13.png");
+  --img-bg-right: url("img/talent_bg_right13.png");
+}
+
+html, body {
+  background:
+    url("img/weapon_line.png") center/cover fixed,
+    var(--img-bg) center/cover fixed;
+}
+
+/* Position hamburger + menu */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Hamburger button */
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text-main, #FFFFFF); /* fallback white */
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Hidden/visible menu panel */
+.menu {
+  position: absolute;
+  top: 40px; /* just below header */
+  left: 0;
+  border: 1px solid var(--accent);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 999;
+  width: 200px;
+}
+
+/* Base button */
+.menu-btn {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  position: relative;
+}
+
+/* Bars */
+.icon-bar {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+  position: relative;
+}
+
+/* When open → all bars overlap in the middle */
+.menu-btn.open .icon-bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu-btn.open .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open .icon-bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 8px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-accent);
+  display: block;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+    background: var(--accent);
+}
+
+.hidden {
+  display: none;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #222;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 10;
+}
+
+/* Right block split: buttons vs counters */
+.header-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1; /* fill space between title and counters */
+}
+
+/* Buttons + reset: sit just before counter zone */
+.header-buttons-row {
+  display: inline-block;
+  gap: 5px;
+  align-items: center;
+  margin-right: 1rem; /* space before counter zone */
+}
+
+#tierButtons {
+  display: flex;
+  gap: 15px;          /* space between tiers */
+  flex-wrap: wrap;     /* wrap if too many tiers for one row */
+  align-items: center; /* vertical alignment of buttons */
+}
+
+.tier-btn-row {
+  display: flex;
+  align-items: center; /* vertical center of row */
+  gap: 10px;
+}
+
+.tier-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 40px;                /* square icon button */
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tier-action-btn img {
+  display: block;
+  max-height: 80%;            /* make icon slightly smaller than button */
+  max-width: 80%;
+}
+.tier-name-btn {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: var(--accent-soft);
+  gap: 4px; /* small space between text and badges if needed */
+}
+
+.tier-badge {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.max-badge { /* optional extra styling */ }
+.reset-badge { /* optional extra styling */ }
+
+/* Optional: hover effect for badges */
+.tier-badge:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+}
+
+
+
+/* Counter zone: fixed 300px box */
+.header-counters {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.resource-counters {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+
+.resource-counters input {
+	width: 50px;
+	background: var(--input-bg);
+    border: 1px solid var(--accent);
+    color: var(--accent-soft);
+	text-align: center;
+	position: relative;
+	padding-right: 20px;
+	/* leave space for custom arrows */
+}
+
+/* Remove default spinners */
+.resource-counters input::-webkit-inner-spin-button,
+.resource-counters input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.resource-counters input[type=number] {
+	-moz-appearance: textfield;
+	/* Firefox */
+}
+
+/* Custom neon arrows */
+.resource-counters input::before,
+.resource-counters input::after {
+	content: "";
+	position: absolute;
+	right: 6px;
+	width: 6px;
+	height: 6px;
+	border: solid var(--accent);
+	border-width: 0 2px 2px 0;
+	padding: 2px;
+	pointer-events: none;
+}
+
+.resource-counters input::before {
+	top: 6px;
+	/* Up arrow */
+	transform: rotate(-135deg);
+}
+
+.resource-counters input::after {
+	bottom: 6px;
+	/* Down arrow */
+	transform: rotate(45deg);
+}
+
+
+/* ===== Shared header + sidebar buttons ===== */
+.header-btn {
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	/* force white */
+	font-size: 16px;
+	padding: 6px 14px;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	/* keeps sidebar button above background */
+	margin-left: auto;
+	/*margin-right: auto;*/
+}
+.header-buttons-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.header-controls {
+  display: flex;
+  flex-direction: column;   /* stack rows */
+  align-items: flex-end;    /* right-align content */
+  margin-right: 300px;      /* 300px gap from right edge */
+}
+
+/* Hover effect (both header + sidebar buttons) */
+.header-btn:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* Container for your buttons */
+.header-buttons {
+  display: flex;
+  justify-content: space-between; /* space between buttons */
+  width: 80%; /* total width of both buttons */
+  margin: 0 auto; /* center in the sidebar */
+  gap: 10px; /* optional spacing between buttons */
+}
+
+/* Optional: make buttons expand evenly */
+.header-buttons .header-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* keep image above text inside button if needed */
+  align-items: center;
+}
+/* Keep Reset button inside the sidebar */
+#resetCur {
+  position: fixed;       /* float above everything */
+  bottom: 95px;
+  right: 300px;          /* next to sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Max button can break out */
+#MaxButton {
+  position: fixed;       /* float above everything */
+  bottom: 15px;
+  right: 300px;          /* next to sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+/* Special emphasis for the Clear button */
+.sidebar-controls {
+	width: 100%;
+	text-align: right;
+}
+
+#clearSidebar {
+	margin: 0;
+	font-weight: bold;
+	opacity: 1 !important;
+}
+
+/* Sidebar itself */
+aside {
+	position: fixed;
+	top: 60px;
+	/* under site header */
+	right: 0;
+	width: 300px;
+	height: calc(100% - 60px);
+	overflow: hidden;
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sidebar-controls #clearSidebar {
+	color: #ffffff !important;
+	font-weight: bold;
+	opacity: 1 !important;
+}
+
+/* Continuous background */
+.sidebar-bg {
+	position: absolute;
+	inset: 0;
+	background: url("img/talent_flag.png") center/cover no-repeat;
+	background-size: 100% 190%;
+	z-index: 1;
+	pointer-events: none;
+	/* allow clicks to pass through */
+}
+
+/* Icon container */
+.icon-container {
+	position: relative;
+	margin-bottom: 135px;
+	/* lift up from bottom */
+	z-index: 2;
+}
+
+/* Icon background */
+.icon-container .icon {
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 2;
+}
+
+/* /* Text between the bars */
+.sidebar-text {
+	position: relative;
+	color: white;
+	font-size: 18px;
+	z-index: 2;
+	/* above background */
+	text-align: center;
+	flex: 1;
+	/* take remaining space below attr-container */
+	overflow-y: auto;
+}
+
+/* Attribute container (sub-header inside sidebar) */
+.attr-container {
+	position: relative;
+	width: 100%;
+	height: 155px;
+	/* fixed height like before */
+	background: url("img/talent_base_attr.png") center/contain no-repeat;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.attr-container .attr {
+	width: 100%;
+	height: 155px;
+	display: block;
+}
+.MaxTreeBtn
+ {
+  position: absolute;
+  color: #323232;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Hover preview image */
+#hoverPreview {
+	max-width: 70%;
+	max-height: 70%;
+	display: none;
+	z-index: 3;
+}
+
+/* Main content area */
+main {
+	position: absolute;
+	top: 60px;
+	/* below header */
+	left: 0;
+	right: 300px;
+	/* leave space for sidebar */
+	bottom: 0;
+	overflow: hidden;
+background:
+    var(--img-bg-left) no-repeat,
+    var(--img-bg-right) no-repeat;
+	background-position: left -150px center, right -200px center;
+	cursor: grab;
+}
+main:active {
+  cursor: grabbing;
+}
+
+/* Zoomable area */
+.zoom-container {
+    width:100%;
+    height:100%;
+	transform-origin: 0 0;
+	cursor: grab;
+	overflow: visible;
+	position: relative;
+}
+
+.zoom-container:active {
+	cursor: grabbing;
+}
+#zoomArea {
+  position: relative;
+  transform-origin: 0 0;
+}
+#edgesLayer {
+  pointer-events:none;
+}
+/* Talent tree nodes */
+.node {
+  width: 40px;
+  height: 40px;
+  /*filter: grayscale(100%);*/
+  background-size: 100%;
+  border-radius: 0%;
+  position: absolute;
+  isolation: isolate;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events:auto;
+  /*overflow: hidden;*/
+}
+.node .node-frame {
+  position: absolute;
+  inset: 0;
+
+  background: var(--img-talent)
+              center / contain no-repeat;
+
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* =============================
+   LOCKED NODE VISUAL STATE
+============================= */
+
+.node.size1:not(.unlocked) .node-frame {
+  filter: grayscale(100%) brightness(0.35);
+}
+.node.size2:not(.unlocked) .node-frame {
+  filter: grayscale(100%);
+}
+.node.size3:not(.unlocked) .node-frame {
+  filter: grayscale(100%) brightness(0.65);
+}
+/* =============================
+   SIZE 1 FRAME OVERRIDE
+============================= */
+
+.node.size1 .node-frame {
+  background-image: url("img/talent_icon_active.png");
+	
+} 
+.node.size3 .node-frame {
+  background:
+    url("img/talent_icon_hex.png")
+    center / contain no-repeat;
+
+  clip-path:
+    polygon(
+      50% 0%,
+      95% 25%,
+      95% 75%,
+      50% 100%,
+      5% 75%,
+      5% 25%
+    );
+}
+.node.unlocked .node-frame {
+  filter: none;
+}
+
+
+/* ================= Node Size Variants ================= */
+
+/* SMALL stat nodes */
+.node.size1 {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* NORMAL talents */
+.node.size2 {
+  width: 75px;
+  height: 75px;
+}
+
+/* SPEC / HEX */
+.node.size3 {
+  width: 90px;
+  height: 90px;
+}
+
+
+.node.unlocked::before {
+  opacity: 1;
+}
+
+.node::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("img/talent_icon_active.png")
+    center / contain no-repeat;
+
+  opacity: 0;
+  pointer-events: none;
+
+  z-index: 1;
+}
+.node.size3::before {
+  background:
+    url("img/talent_base_reset.png")
+    center / contain no-repeat;
+}
+.node.unlocked::before {
+  opacity: 1;
+}
+
+.node.av {
+	border: 1px #FFFFFF;
+	z-index: 11;
+	/* optional, if you want unlocked nodes above locked ones */
+}
+
+.node.unlocked {
+	border: 0px;
+	/* remove grayscale */
+	z-index: 12;
+	/* optional, if you want unlocked nodes above locked ones */
+}
+
+.node-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	max-width: 75%;
+	max-height: 75%;
+	z-index: 5;
+	filter: none;
+}
+
+/* larger icons for size2+3 nodes */
+.node.size2 .node-icon,
+.node.size3 .node-icon {
+	max-width: 75%;
+	max-height: 75%;
+}
+
+/* smol size1 */
+.node.size1 .node-icon
+ {
+	max-width: 55%;
+	max-height: 55%;
+	
+}
+
+
+.aseal {
+  background-image: var(--img-aseal);
+}
+
+/* Shared hover overlay setup */
+.node::after {
+  content: "";
+  position: absolute;
+
+    inset: -15%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  z-index: 2;
+}
+
+/* Show overlay on hover */
+.node:hover::after,
+.node.selected::after {
+  opacity: 1;
+}
+
+/* Size1 + Size2 → use talent_select.png */
+.node.size1::after {
+	background-image: var(--img-select);
+	width: 150%;
+	height: 150%;
+}
+
+/* Tweak scaling for small stat nodes */
+.node.size2::after {
+	background-image: var(--img-select);
+	width: 150%;
+	/* slightly smaller overlay */
+	height: 140%;
+}
+
+/* Size3 (hex roots) → use talent_select2.png */
+.node.size3::after {
+	background-image: var(--img-select2);
+	width: 150%;
+	/* bigger to cover hex */
+	height: 150%;
+}
+
+.edges {
+	position: absolute;
+	z-index: 9;
+	/* behind nodes */
+}
+/* All edges default thickness */
+.edges line {
+  stroke-width: 13;   
+}
+/* Base edge style */
+.edge {
+  stroke-width: 3;    /* thickness, no px */
+  fill: none;
+}
+
+/* Locked edges */
+.edge-locked {
+  stroke: var(--edge-locked);
+  opacity: 0.7;
+}
+
+.edge-unlocked {
+  stroke: var(--accent);
+  opacity: 1;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+
+
+#toast-container {
+  position: fixed;
+  bottom: 5%; /* or 20px */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column-reverse; /* newest toast stays at the bottom */
+  align-items: center;
+  gap: 8px; /* spacing between stacked toasts */
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.toast.show {
+  opacity: 1;
+}

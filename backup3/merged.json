@@ -1,0 +1,2132 @@
+{
+  "tiers": [
+    {
+      "id": "Windk",
+      "name": "Wind Knight",
+      "collapsed": false,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 10,
+        "gy": 1
+      },
+      "nodes": [
+        {
+          "id": "Windk01",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk02"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk02",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk04"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk07"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk04",
+          "name": "Sharp",
+          "icon": "Sharp.png",
+          "desc": "Dealing DMG with Special Attacks grants Sharp.",
+          "children": [
+            "Windk03",
+            "Windk05",
+            "Windk06"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk05",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk09"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk06",
+          "name": "Power Conversion",
+          "icon": "PowerConversion.png",
+          "desc": "Every 8 Strength grants 1 ATK.",
+          "children": [
+            "Windk08"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk07",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk10"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk08",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [
+            "Windk11"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk09",
+          "name": "Swift Shadow",
+          "icon": "SwiftShadow.png",
+          "desc": "Every 50 points of Courage consumed reduces the CD of Spiral Thrust, Breach Pursuit, and Falcon Toss by 1.",
+          "children": [
+            "Windk12",
+            "Windk16"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk10",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk13",
+            "Windk14"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk11",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk15"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk12",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk17"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk21"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk14",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk18"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk15",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk19"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk16",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk20"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk17",
+          "name": "Valor",
+          "icon": "Valor.png",
+          "desc": "Increases Max Courage by 30.",
+          "children": [
+            "Windk20"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk18",
+          "name": "Long Lance Sharp Blade",
+          "icon": "LongLanceSharpBlade.png",
+          "desc": "When Strength reaches 300 points, Expertise Skill damage +7%.",
+          "children": [
+            "Windk22"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk19",
+          "name": "Vulnerable Strike",
+          "icon": "VulnerableStrike.png",
+          "desc": "Dealing DMG grants a fixed 30% chance to apply Vulnerability to the enemy.\nVulnerability: Increases the DMG you deal to the target by 10% for 5s.",
+          "children": [
+            "Windk22"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk20",
+          "name": "Divine Concealment",
+          "icon": "DivineConcealment.png",
+          "desc": "Consuming Courage increases Haste by 1% and Speed by 2% for 5s, stacking up to 5 times.",
+          "children": [
+            "Windk23"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk21",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk27"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk22",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk24"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk23",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Windk25",
+            "Windk26"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk24",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Windk28"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk25",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk29",
+            "Windk30"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk26",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Windk30"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk27",
+          "name": "Sharp",
+          "icon": "Sharp.png",
+          "desc": "When Strength reaches 500 points, the additional ATK from Sharp increases to 6%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk28",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk29",
+          "name": "Wind and Thunder Strike",
+          "icon": "WindandThunderStrike.png",
+          "desc": "When Galeform ends, it applies the Tempestrike.\nEvery 50 points of Courage consumed during Galeform extends the duration of Tempestrike by 1s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Windk30",
+          "name": "Swift",
+          "icon": "Swift.png",
+          "desc": "Each 1% Haste provides 1% Attack Speed.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Skywa",
+      "name": "Skyward Spec",
+      "collapsed": true,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 9,
+        "gy": 13
+      },
+      "nodes": [
+        {
+          "id": "Skywa01",
+          "name": "Skyward Spec",
+          "icon": "SkywardSpec.png",
+          "desc": "Replace Special Attack with Skyfall enhances the skill.\nWhen having Sharp, gains ATK based on the max number of Sharp.",
+          "children": [
+            "Skywa02",
+            "Skywa03",
+            "Skywa04"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa02",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa05",
+            "Skywa06"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa06",
+            "Skywa07",
+            "Skywa08"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa08",
+            "Skywa09"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa05",
+          "name": "Bird Advancement",
+          "icon": "BirdAdvancement.png",
+          "desc": "Increases the Overdrive of Falcon Toss by 1.\nReduces Courage consumed by Falcon Toss by 50%.",
+          "children": [
+            "Skywa11"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa06",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa11",
+            "Skywa12"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa07",
+          "name": "Wind Fury",
+          "icon": "WindFury.png",
+          "desc": "Casting Sharp Impact grants Wind Fury.",
+          "children": [
+            "Skywa13"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa08",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa14",
+            "Skywa15"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa09",
+          "name": "Skyfall",
+          "icon": "Skyfall.png",
+          "desc": "When dealing DMG, Skyfall gains a fixed 15% chance to grant 1 stack of Sharp.",
+          "children": [
+            "Skywa15"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa10",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa27"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa10",
+            "Skywa12",
+            "Skywa17",
+            "Skywa18"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa12",
+          "name": "Kamikaze Luck",
+          "icon": "KamikazeLuck.png",
+          "desc": "For each 1 stack of Sharpness consumed, gains 3 points of Courage.\nIncreases Lucky Hit final DMG by 50%.",
+          "children": [
+            "Skywa18"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa18",
+            "Skywa19",
+            "Skywa20"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa14",
+          "name": "Instant Edge Break Style",
+          "icon": "InstantEdgeBreakStyle.png",
+          "desc": "Instant Edge consumes 1 more Sharp.\nIncreases the DMG dealt by Instant Edge by 90%.",
+          "children": [
+            "Skywa20"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa16",
+            "Skywa20",
+            "Skywa21"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa16",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa29"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa17",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa18",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa22",
+            "Skywa23",
+            "Skywa24"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa19",
+          "name": "Battle Cry",
+          "icon": "BattleCry.png",
+          "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa20",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa24",
+            "Skywa25",
+            "Skywa26"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa21",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa22",
+          "name": "Spear Penetration",
+          "icon": "SpearPenetration.png",
+          "desc": "When Skyfall lands a Lucky Hit, it triggers Spear Thrust, once every 2s.\nDealing DMG with Spear Thrust restores 8 points of Courage. This effect triggers only once, even if multiple targets are hit.",
+          "children": [
+            "Skywa30"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa23",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa28",
+            "Skywa31"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa24",
+          "name": "Pursuit Stance",
+          "icon": "PursuitStance.png",
+          "desc": "When Skyfall deals Crit DMG, it triggers Chasing Step.",
+          "children": [
+            "Skywa28"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa25",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa28",
+            "Skywa33"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa26",
+          "name": "Sharp Echo",
+          "icon": "SharpEcho.png",
+          "desc": "If Sharpness isn't at Max stacks, increases the DMG dealt by Skyfall by 25%.",
+          "children": [
+            "Skywa34"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa27",
+          "name": "Tornado Dance",
+          "icon": "TornadoDance.png",
+          "desc": "During Wind Fury, DMG dealt by Instant Edge and Azure Sever triggers Tornado (triggered at most once when hitting multiple targets).",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa28",
+          "name": "Sharp Long Breath",
+          "icon": "SharpLongBreath.png",
+          "desc": "During Wind Fury, Falcon Toss evolves into Azure Sever once.",
+          "children": [
+            "Skywa32"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa29",
+          "name": "Catcher",
+          "icon": "Catcher.png",
+          "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa30",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa35"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa31",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [
+            "Skywa36"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa32",
+          "name": "Exceptional Elegance",
+          "icon": "ExceptionalElegance.png",
+          "desc": "During Galeform, increases the DMG dealt by Instant Edge and Skyfall by 25%.",
+          "children": [
+            "Skywa42"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa33",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa37"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa34",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa38",
+            "Skywa44"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa39",
+            "Skywa40"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa36",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa40",
+            "Skywa41"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa43",
+            "Skywa44"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa38",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Skywa45"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa39",
+          "name": "Wind Swirl Strike",
+          "icon": "WindSwirlStrike.png",
+          "desc": "Increases the DMG dealt by Tornado by 30%.\nIncreases the DMG dealt by Spear Thrust by 30%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa40",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa46"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa41",
+          "name": "Spear Recovery",
+          "icon": "SpearRecovery.png",
+          "desc": "Spear Thrust reduces the CD of Falcon Toss by 2s (which can only be triggers once on multiple hits).",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa47",
+            "Skywa48",
+            "Skywa56"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa43",
+          "name": "Sharp Advancement",
+          "icon": "SharpAdvancement.png",
+          "desc": "Enhances the effectiveness of Wind Fury by 50%.\nWhen Instant Edge consumes Chasing Step, doubles the Overdrive effectiveness of Sharp Impact.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa44",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa49"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa45",
+          "name": "Combat Expertise",
+          "icon": "CombatExpertise.png",
+          "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa46",
+          "name": "Divine Wind Support",
+          "icon": "DivineWindSupport.png",
+          "desc": "When Falcon Toss and its enhanced skill (Azure Sever), or Instant Edge hits 1 target, gains a 10% Wind bonus.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa47",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa51"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa48",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Skywa52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa49",
+          "name": "Momentum Surge",
+          "icon": "MomentumSurge.png",
+          "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa50",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa54"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa51",
+          "name": "Instantaneous Crit",
+          "icon": "InstantaneousCrit.png",
+          "desc": "While Chasing Step is active, Instant Edge and Sharp Impact have their critical rate doubled.",
+          "children": [
+            "Skywa50",
+            "Skywa55"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa52",
+          "name": "Sharp Pursuit",
+          "icon": "SharpPursuit.png",
+          "desc": "When Instant Edge consumes Chasing Step, grants 1 stack of Sharp.",
+          "children": [
+            "Skywa53",
+            "Skywa57"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa53",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Skywa58"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa54",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa55",
+          "name": "Air Dance Strike",
+          "icon": "AirDanceStrike.png",
+          "desc": "Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) allow the next Galeform to restore 50% more Courage.\nHitting a target with Sharp Impact and its enhanced skill (Typhoon: Sharp Impact) immediately grants 3 Sharpness (only triggers once even if multiple targets are hit).",
+          "children": [
+            "Skywa59"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa56",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa57",
+          "name": "Typhoon: Sharp Impact",
+          "icon": "TyphoonSharpImpact.png",
+          "desc": "Sharp Impact is enhanced, evolving into Typhoon: Sharp Impact.",
+          "children": [
+            "Skywa60"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa58",
+          "name": "Instant Edge Combo",
+          "icon": "InstantEdgeCombo.png",
+          "desc": "When Instant Edge consumes Chasing Step, grants a fixed 15% chance to deal an extra instance of DMG.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa59",
+          "name": "Pursuit Power",
+          "icon": "PursuitPower.png",
+          "desc": "Chasing Step consumed increases Strength by 10%. The effect lasts 10s and stacks up to 2 times.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Skywa60",
+          "name": "Break Style",
+          "icon": "BreakStyle.png",
+          "desc": "When dealing Crit DMG, Expertise ignore the targets' 50% Armor.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    },
+    {
+      "id": "Vangu",
+      "name": "Vanguard Spec",
+      "collapsed": true,
+      "requiresUnlock": [],
+      "origin": {
+        "gx": 11,
+        "gy": 13
+      },
+      "nodes": [
+        {
+          "id": "Vangu01",
+          "name": "Vanguard Spec",
+          "icon": "VanguardSpec.png",
+          "desc": "Further enhances Gale Thrust. Casting Gale Thrust grants a fixed 20% chance to cause Basic Attacks to evolve into Swift Blade, with an additional 5% chance per layer of Sharpness.",
+          "children": [
+            "Vangu02",
+            "Vangu03",
+            "Vangu04"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 0,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu02",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu05",
+            "Vangu06"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu03",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu06",
+            "Vangu07",
+            "Vangu08"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu04",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu08",
+            "Vangu09"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 1,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu05",
+          "name": "Break Pursuit Advancement",
+          "icon": "BreakPursuitAdvancement.png",
+          "desc": "Within 15s after Casting the Ultimate, Casting Breach Pursuit will not enter CD. This effect is removed after the time ends or after Casting 3 times Breach Pursuit.",
+          "children": [
+            "Vangu11"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu06",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu11",
+            "Vangu12"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu07",
+          "name": "Quickshot Meteor",
+          "icon": "QuickshotMeteor.png",
+          "desc": "Gale Thrust is enhanced, increasing hit counts by 2.\nReduces Gale Thrust's Courage consumption by 20%.",
+          "children": [
+            "Vangu13"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu08",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu14",
+            "Vangu15"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu09",
+          "name": "Swift Breeze",
+          "icon": "SwiftBreeze.png",
+          "desc": "Each 1% Haste accelerates the REG SPD of Courage by 2%.",
+          "children": [
+            "Vangu15"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 2,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu10",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu27"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu11",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu10",
+            "Vangu12",
+            "Vangu17",
+            "Vangu18"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu12",
+          "name": "Strong Attack",
+          "icon": "StrongAttack.png",
+          "desc": "When Valor Cyclone deals DMG, reduces the CD of Ultimate by 0.5s (which can only be triggers once on multiple hits).",
+          "children": [
+            "Vangu18"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu13",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu18",
+            "Vangu19",
+            "Vangu20"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu14",
+          "name": "Wind Tear",
+          "icon": "WindTear.png",
+          "desc": "When Gale Thrust deals DMG, there is a 20% fixed chance to apply Rend.",
+          "children": [
+            "Vangu20"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu15",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu16",
+            "Vangu20",
+            "Vangu21"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu16",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu29"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 3,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu17",
+          "name": "Wind Chaser",
+          "icon": "WindChaser.png",
+          "desc": "During the casting of Valor Cyclone, for every 20 points of Courage consumed, increase the DMG of Valor Cyclone by 4%, up to 20%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu18",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu22",
+            "Vangu23",
+            "Vangu24"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu19",
+          "name": "Battle Cry",
+          "icon": "BattleCry.png",
+          "desc": "Typhoon Cleave Raises the banner spear, granting Inspire to Allies. Afterward, a follow-up leap can be launched, dealing Attack Damage to the enemies within range and knocking them airborne, while restoring 100 Courage.\nInspire: Lasts for 10s. All Allies gain 10% Haste (Only one effect can be active at a time). You restore 10 Courage per second and 1 Sharpness every 2s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu20",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu24",
+            "Vangu25",
+            "Vangu26"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu21",
+          "name": "Zephyr Waltz Agility",
+          "icon": "ZephyrWaltzAgility.png",
+          "desc": "Additional Courage recovery: Recovers 1 extra point of Courage per second for every 2 stacks of Sharp.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 4,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu22",
+          "name": "Fearless Gale",
+          "icon": "FearlessGale.png",
+          "desc": "After Casting Spiral Thrust or Breach Pursuit or Valor Cyclone, the next Gale Thrust will not consume Courage. This effect is removed after leaving combat.",
+          "children": [
+            "Vangu30"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu23",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu28",
+            "Vangu31"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu24",
+          "name": "Sharp Expansion",
+          "icon": "SharpExpansion.png",
+          "desc": "Sharp cap +1.",
+          "children": [
+            "Vangu28"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu25",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu28",
+            "Vangu33"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu26",
+          "name": "Vigor Spike",
+          "icon": "VigorSpike.png",
+          "desc": "When Sharp is granted, reaching max stacks of Sharp enables Vigor Spike state. Triggers up to once per 30s.",
+          "children": [
+            "Vangu34"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 5,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu27",
+          "name": "Combat Expertise",
+          "icon": "CombatExpertise.png",
+          "desc": "You gain bonus ATK continuously as the battle goes on. Every 15s in battle increases your ATK by 2%, up to 8%. The bonus is cleared after the battle ends.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu28",
+          "name": "Rapid Drake Canon",
+          "icon": "RapidDrakeCanon.png",
+          "desc": "Using Swift Blade grants it a fixed 10% chance to evolve Basic Attack into Drake Cannon in 10s. Each failure to evolve increases the chance by 10% until success.",
+          "children": [
+            "Vangu32"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu29",
+          "name": "Catcher",
+          "icon": "Catcher.png",
+          "desc": "In combat, for every enemy defeated that you participated in defeating (effective within a team), increases ATK by 30 for 30s, up to 300.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 6,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu30",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu35"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu31",
+          "name": "Wind Spiral",
+          "icon": "WindSpiral.png",
+          "desc": "When Gale Thrust deals DMG, it has a 25% fixed chance to grant 1 stack of Wind Spiral that lasts 20s and stacks up to 10 times.\nWind Spiral: Casting Spiral Thrust or Valor Cyclone triggers a spiral explosion that inflicts Attack Damage equal to 100% ATK on surrounding enemies. Each explosion consumes 1 stack of Wind Spiral.",
+          "children": [
+            "Vangu36"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu32",
+          "name": "Spiral Tear",
+          "icon": "SpiralTear.png",
+          "desc": "Spiral Thrust and Vortex Strike deals 30% more DMG to the targets with Rend.",
+          "children": [
+            "Vangu42"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu33",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu37"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu34",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu38",
+            "Vangu44"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 7,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu35",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu39",
+            "Vangu40"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu36",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu40",
+            "Vangu41"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu37",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu43",
+            "Vangu44"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu38",
+          "name": "Wind Attack",
+          "icon": "WindAttack.png",
+          "desc": "Wind Attack + 5",
+          "children": [
+            "Vangu45"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 8,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu39",
+          "name": "Whispering Breeze",
+          "icon": "WhisperingBreeze.png",
+          "desc": "When Courage is below or equal to 50%, reduces the Energy Valor Cyclone consumes by 2.\nWhen Courage is above 50%, increases the DMG Valor Cyclone deals by 12%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu40",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu46"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu41",
+          "name": "Breath of Wind",
+          "icon": "BreathofWind.png",
+          "desc": "Skills that consume Courage (Spiral Thrust and its enhanced skills, Valor Cyclone, Falcon Toss and its enhanced skills, Gale Thrust) gain 6% Wind Bonus.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu42",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu47",
+            "Vangu48",
+            "Vangu56"
+          ],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu43",
+          "name": "Wind Rift Diffusion",
+          "icon": "WindRiftDiffusion.png",
+          "desc": "Expertise and Ultimates deal 10% more DMG to targets afflicted with Rend, and can detonate their Rend, spreading it to nearby enemies.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu44",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu49"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu45",
+          "name": "Thousand Wounds",
+          "icon": "ThousandWounds.png",
+          "desc": "When Valor Cyclone deals DMG, it has a fixed 50% chance to inflict Rupture.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 9,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu46",
+          "name": "Momentum Surge",
+          "icon": "MomentumSurge.png",
+          "desc": "Enhances Sharpness by 1%. Every enemy within 5 meters additionally grants 1%, up to 3%.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu47",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu51"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu48",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [
+            "Vangu52"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu49",
+          "name": "Wind Split Technique",
+          "icon": "WindSplitTechnique.png",
+          "desc": "When Rend deals DMG, it has a fixed 50% chance to grant 2 points of Courage.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 10,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu50",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu54"
+          ],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu51",
+          "name": "Vortex Strike",
+          "icon": "VortexStrike.png",
+          "desc": "After every 2 casts of Drake Cannon, your Spiral Thrust evolves into Vortex Strike.",
+          "children": [
+            "Vangu50",
+            "Vangu55"
+          ],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu52",
+          "name": "Wind Gate Drake Cannon",
+          "icon": "WindGateDrakeCannon.png",
+          "desc": "Every 22 triggers of Valor Cyclone allows Basic Attack to evolve into Drake Cannon in 10s.",
+          "children": [
+            "Vangu53",
+            "Vangu57"
+          ],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu53",
+          "name": "Strength",
+          "icon": "Strength.png",
+          "desc": "Strength + 10",
+          "children": [
+            "Vangu58"
+          ],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 11,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu54",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu55",
+          "name": "Swift Blade",
+          "icon": "SwiftBlade.png",
+          "desc": "When Valor Cyclone deals DMG, it has a fixed 7% chance to evolve Basic Attacks into Swift Blade.",
+          "children": [
+            "Vangu59"
+          ],
+          "requiresUnlock": [],
+          "gx": -2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu56",
+          "name": "Stamina",
+          "icon": "Stamina.png",
+          "desc": "Stamina + 30",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 0,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu57",
+          "name": "Dragon's Fury Flame",
+          "icon": "Dragon'sFuryFlame.png",
+          "desc": "Doubles the critical rate of Drake Cannon and Vortex Strike.\nIncreases the Crit DMG dealt by Drake Cannon and Vortex Strike by 8%.",
+          "children": [
+            "Vangu60"
+          ],
+          "requiresUnlock": [],
+          "gx": 2,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu58",
+          "name": "Spiral Flame",
+          "icon": "SpiralFlame.png",
+          "desc": "Using Vortext Strike, increases Haste by 25% for 10s.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 3,
+          "gy": 12,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu59",
+          "name": "Fortitude",
+          "icon": "Fortitude.png",
+          "desc": "During Valor Cyclone, gains Super Armor and reduces DMG taken by 20%.\nWhen Valor Cyclone deals DMG, restores HP equal to 10% ATK.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": -1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        },
+        {
+          "id": "Vangu60",
+          "name": "Wind Rise",
+          "icon": "WindRise.png",
+          "desc": "When Valor Cyclone deals DMG, increases the critical rate of Drake Cannon and Vortex Strike by 7%. The effect lasts 5s and stacks up to 7 times.",
+          "children": [],
+          "requiresUnlock": [],
+          "gx": 1,
+          "gy": 13,
+          "cost": 1,
+          "seal": 0
+        }
+      ]
+    }
+  ]
+}
