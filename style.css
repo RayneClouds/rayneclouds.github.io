@@ -108,6 +108,10 @@ body.wg2 {
   --img-bg-left: url("img/talent_bg_left2.png");
   --img-bg-right: url("img/talent_bg_right2.png");
 }
+body.wg3 {
+  --img-bg-left: url("img/talent_bg_left3.png");
+  --img-bg-right: url("img/talent_bg_right3.png");
+}
 body.wg4 {
   --img-bg-left: url("img/talent_bg_left4.png");
   --img-bg-right: url("img/talent_bg_right4.png");
