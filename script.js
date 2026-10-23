@@ -1188,6 +1188,7 @@ function getTreeRootNode(groupId) {
 
   });
 
+
   return bestRoot;
 }
 
@@ -2455,6 +2456,7 @@ function decodeBuild(weaponGroup, payload) {
     if (binary === null) {
       throw new Error("Unable to decompress build.");
     }
+
 
     bytes = Uint8Array.from(
       binary,
