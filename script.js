@@ -909,7 +909,11 @@ const CLASS_META = {
 
   1: { name: "Stormblade", order: 5 },
   2: { name: "Frost Mage", order: 7 },
+<<<<<<< HEAD
   3: { name: "Twin Striker", order: 4 },
+=======
+  3: { name: "Twin Axe", order: 4 },
+>>>>>>> origin/main
   4: { name: "Wind Knight", order: 3 },
   5: { name: "Verdant Oracle", order: 8 },
   9: { name: "Heavy Guardian", order: 1 },
