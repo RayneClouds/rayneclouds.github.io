@@ -1021,9 +1021,12 @@ if (ATTRIBUTE_SET.has(name.trim())) {
   return "small";
 }
 
-  if (/\b\w+\s+attack\b/i.test(talent.name)) {
-    return "small";
-  }
+if (
+  /\b\w+\s+attack\b/i.test(talent.name) &&
+  !(Number(talent.seal) >= 1)
+) {
+  return "small";
+}
 
   // LARGE — normal talents
   if (talent.cost >= 1) {
