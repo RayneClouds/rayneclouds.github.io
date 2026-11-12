@@ -15,6 +15,7 @@ let parentMap = new Map();
 let talentById = new Map();
 
 let currentWeaponGroup = null;
+let selectedSidebarTalent = null;
 
 let tpUsed = 0;
 let sealUsed = 0;
@@ -39,8 +40,22 @@ function isSpecNode(talent) {
 // DOM REFERENCES
 // ==============================
 
+const zoomViewport = document.getElementById("zoomViewport");
 const zoomArea = document.getElementById("zoomArea");
 const svg = document.getElementById("edgesLayer");
+const mainArea = zoomArea?.parentElement;
+
+// Always size the zoom container to main
+function sizeZoomAreaToMain() {
+    if (!zoomArea || !mainArea) return;
+
+    zoomArea.style.position = "absolute";
+    zoomArea.style.left = "0";
+    zoomArea.style.top = "0";
+
+    zoomArea.style.width = mainArea.clientWidth + "px";
+    zoomArea.style.height = mainArea.clientHeight + "px";
+}
 const sidebarText = document.querySelector(".sidebar-text");
 const tpUsedEl = document.getElementById("tpUsed");
 const sealUsedEl = document.getElementById("sealUsed");
@@ -65,7 +80,13 @@ let offsetY = 0;
 
 offsetX = 200;
 offsetY = 100;
+
+// Size the container before applying its transform.
+sizeZoomAreaToMain();
 applyTransform();
+
+// Keep it matched to main if the browser window changes size.
+window.addEventListener("resize", sizeZoomAreaToMain);
 
 function applyTransform() {
   zoomArea.style.transform =
@@ -78,24 +99,38 @@ function applyTransform() {
 // ZOOM (Mouse Wheel)
 // ==============================
 
-zoomArea.addEventListener("wheel", e => {
-  e.preventDefault();
+zoomViewport.addEventListener("wheel", e => {
+    e.preventDefault();
 
-  const zoomSpeed = 0.1;
-  const rect = zoomArea.getBoundingClientRect();
+    const zoomSpeed = 0.1;
 
-const mouseX = e.clientX - rect.left;
-const mouseY = e.clientY - rect.top;
+    // Measure the FIXED viewport, not the transformed content.
+    const rect = zoomViewport.getBoundingClientRect();
 
-  const zoomFactor = e.deltaY < 0 ? 1 + zoomSpeed : 1 - zoomSpeed;
-  const newScale = Math.min(2.5, Math.max(0.5, scale * zoomFactor));
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
 
-  offsetX -= mouseX * (newScale / scale - 1);
-  offsetY -= mouseY * (newScale / scale - 1);
+    const zoomFactor = e.deltaY < 0
+        ? 1 + zoomSpeed
+        : 1 - zoomSpeed;
 
-  scale = newScale;
-  applyTransform();
-});
+    const newScale = Math.min(
+        2.5,
+        Math.max(0.5, scale * zoomFactor)
+    );
+
+    // Keep the point under the mouse stationary while zooming.
+    const worldX = (mouseX - offsetX) / scale;
+    const worldY = (mouseY - offsetY) / scale;
+
+    offsetX = mouseX - worldX * newScale;
+    offsetY = mouseY - worldY * newScale;
+
+    scale = newScale;
+
+    applyTransform();
+
+}, { passive: false });
 
 // ==============================
 // DRAG (Mouse)
@@ -134,7 +169,7 @@ document.addEventListener("mouseup", () => {
 let initialDistance = null;
 let lastScale = 1;
 
-zoomArea.addEventListener("touchstart", e => {
+zoomViewport.addEventListener("touchstart", e => {
 
   if (e.touches.length === 2) {
     initialDistance = getTouchDistance(e.touches);
@@ -143,7 +178,7 @@ zoomArea.addEventListener("touchstart", e => {
 
 }, { passive: false });
 
-zoomArea.addEventListener("touchmove", e => {
+zoomViewport.addEventListener("touchmove", e => {
 
   if (e.touches.length === 2 && initialDistance) {
     e.preventDefault();
@@ -161,7 +196,7 @@ zoomArea.addEventListener("touchmove", e => {
 
 }, { passive: false });
 
-zoomArea.addEventListener("touchend", () => {
+zoomViewport.addEventListener("touchend", () => {
   initialDistance = null;
   isDragging = false;
 });
@@ -248,6 +283,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   sealMaxEl.value = 50;
 
   initHamburgerMenu();
+  initAlwaysMaxBaseSpecToggle();
 
   await loadTalents();
   await loadDescriptions();
@@ -507,7 +543,19 @@ const img = document.createElement("img");
 img.src = "Skills/" + talent.icon;
 img.className = "node-icon";
 el.appendChild(img);
+// ===== ADD NODE TO TREE =====
+zoomArea.appendChild(el);
 
+// Position the node using its original talent coordinates.
+// Append first so offsetWidth and offsetHeight use the actual CSS dimensions.
+const nodeWidth = el.offsetWidth;
+const nodeHeight = el.offsetHeight;
+
+el.style.left =
+  (Number(talent.gx) * TREE_SCALE - nodeWidth / 2) + "px";
+
+el.style.top =
+  (Number(talent.gy) * TREE_SCALE - nodeHeight / 2) + "px";
     // register
     nodes[String(talent.Id)] = {
       ...talent,
@@ -517,18 +565,23 @@ el.appendChild(img);
     };
 
     // click
-// LEFT CLICK = purchase
+
+// LEFT CLICK = purchase / refund
 el.addEventListener("click", e => {
 
   const t = nodes[String(talent.Id)];
 
   if (t.currentRank === 0)
-    purchaseTalent(t);
+    purchaseTalentWithPrerequisites(t);
   else
     refundTalent(t);
 
   updateTreeVisuals();
   drawEdges();
+
+  // Remember this as the last clicked talent.
+  selectedSidebarTalent = t;
+  showSidebar(t);
 });
 
 // RIGHT CLICK = refund
@@ -536,30 +589,32 @@ el.addEventListener("contextmenu", e => {
 
   e.preventDefault();
 
-  refundTalent(
-    nodes[String(talent.Id)]
-  );
+  const t = nodes[String(talent.Id)];
+
+  refundTalent(t);
 
   updateTreeVisuals();
   drawEdges();
+
+  selectedSidebarTalent = t;
+  showSidebar(t);
 });
-    // hover
-    el.addEventListener("mouseenter", () => {
-      showSidebar(nodes[String(talent.Id)]);
-    });
 
-    zoomArea.appendChild(el);
+// HOVER = temporary preview
+el.addEventListener("mouseenter", () => {
+  showSidebar(nodes[String(talent.Id)]);
+});
 
-    // positioning
-    const w = el.offsetWidth;
-    const h = el.offsetHeight;
+// MOUSE LEAVE = restore last clicked talent
+el.addEventListener("mouseleave", () => {
 
-    el.style.left =
-      (talent.gx * TREE_SCALE - w/2) + "px";
+  if (selectedSidebarTalent) {
+    showSidebar(selectedSidebarTalent);
+  }
 
-    el.style.top =
-      (talent.gy * TREE_SCALE - h/2) + "px";
-  });
+});
+
+});
 
 
   // ---------- runtime parents ----------
@@ -569,16 +624,20 @@ el.addEventListener("contextmenu", e => {
 
     parent.children?.forEach(childId => {
 
-      if (!runtimeParentMap.has(childId))
-        runtimeParentMap.set(childId, []);
+      const childKey = String(childId);
+
+      if (!runtimeParentMap.has(childKey)) {
+        runtimeParentMap.set(childKey, []);
+      }
 
       runtimeParentMap
-        .get(childId)
+        .get(childKey)
         .push(parent);
 
     });
 
   });
+
 
   updateTreeVisuals();
 
@@ -747,6 +806,7 @@ function maxCurrentTree() {
 
   updateTreeVisuals();
   drawEdges();
+  showMaxedTreeToast();
 }
 
 
@@ -755,18 +815,123 @@ document.getElementById("resetCur")
 
 function resetCurrentTree() {
 
+  // =================================
+  // ACTIVE SPEC: RESET SPEC BRANCH ONLY
+  // =================================
+
+  if (activeSpec) {
+
+    const specId = activeSpec;
+
+    refundSpecBranch(specId);
+
+    activeSpec = null;
+
+    collapseSpecBranch(specId);
+
+    validateThresholds();
+    validateChildren();
+
+    updateCounters();
+    updateTreeVisuals();
+    applySpecVisibility();
+    drawEdges();
+
+    showToast(
+      `Reset ${nodes[specId]?.name?.replace(/\bspec\b/gi, "").trim() || "Spec"}`
+    );
+
+    return;
+  }
+
+  // =================================
+  // BASE TREE
+  // =================================
+
+  // If Always Max Base Spec is enabled,
+  // don't allow Reset Current Tree to remove the base talents.
+  if (isAlwaysMaxBaseSpecEnabled()) {
+    showToast("Base talents are kept maxed");
+    return;
+  }
+
   Object.values(nodes).forEach(node => {
 
-    if (node.el.style.display === "none")
-      return;
+    if (node.el.style.display === "none") return;
 
-    if (node.currentRank > 0)
+    if (node.currentRank > 0) {
       refundTalent(node);
+    }
 
   });
 
+  updateCounters();
   updateTreeVisuals();
+  applySpecVisibility();
   drawEdges();
+
+  showToast(
+    `Reset ${getClassName(currentWeaponGroup)} Talents`
+  );
+}
+
+function maxBaseSpec({ silent = false } = {}) {
+
+  if (!currentWeaponGroup) return;
+
+  // Only consider WG0 talents connected to the current class.
+  const connectedIds =
+    getConnectedTalents(currentWeaponGroup);
+
+const baseTalents =
+  Object.values(nodes).filter(node =>
+    connectedIds.has(node.id) &&
+    !isSpecNode(node)
+  );
+
+  let changed = true;
+
+  while (changed) {
+
+    changed = false;
+
+    for (const node of baseTalents) {
+
+      if (node.currentRank > 0) continue;
+
+      if (!canUnlock(node)) continue;
+
+      const cost = Number(node.cost || 0);
+      const seal = Number(node.seal || 0);
+
+      const tpMax = Number.parseInt(tpMaxEl?.value, 10);
+      const sealMax = Number.parseInt(sealMaxEl?.value, 10);
+
+      if (
+        tpUsed + cost >
+        (Number.isFinite(tpMax) ? tpMax : Infinity)
+      ) continue;
+
+      if (
+        sealUsed + seal >
+        (Number.isFinite(sealMax) ? sealMax : Infinity)
+      ) continue;
+
+      purchaseTalent(node);
+
+      if (node.currentRank > 0) {
+        changed = true;
+      }
+    }
+  }
+
+  updateCounters();
+  updateTreeVisuals();
+  applySpecVisibility();
+  drawEdges();
+  if (!silent) {
+  showMaxedClassToast();
+}
 }
 
 // ==============================
@@ -855,15 +1020,25 @@ applyTheme(getWGTheme(groupId));
   // THEN apply visibility rules
   applySpecVisibility();
 
+
   buildSpecButtons();
+
+// Automatically max the new class's base talents if enabled.
+// During a build import, keep this silent until the import finishes.
+if (isAlwaysMaxBaseSpecEnabled()) {
+  maxBaseSpec({
+    silent: Array.isArray(pendingImportedBuild)
+  });
+}
 
 // ======================
 // CENTER CLASS TREE
 // ======================
-centerOnClassRoot();
-	requestAnimationFrame(() => {
-  applyImportedBuild();
-});
+  centerOnClassRoot();
+
+  requestAnimationFrame(() => {
+    applyImportedBuild();
+  });
 }
 
 function buildWeaponMenu(data) {
@@ -1187,7 +1362,6 @@ function getTreeRootNode(groupId) {
     }
 
   });
-
 
   return bestRoot;
 }
@@ -1609,6 +1783,231 @@ function getBaseTreeBottom(classTraversal) {
 // TALENT LOGIC
 // ==============================
 
+function getPrerequisitePath(talent, visiting = new Set()) {
+
+  if (!talent) return null;
+
+  // Already purchased: no further prerequisites needed.
+  if (talent.currentRank > 0) return [];
+
+  const id = String(talent.id ?? talent.Id);
+
+  // Prevent circular parent relationships.
+  if (visiting.has(id)) return null;
+
+  const nextVisiting = new Set(visiting);
+  nextVisiting.add(id);
+
+  const parents =
+    runtimeParentMap.get(id) || [];
+
+  // A root talent has no prerequisites.
+  if (parents.length === 0) {
+    return [talent];
+  }
+
+  const possiblePaths = [];
+
+  for (const parent of parents) {
+
+    const parentPath =
+      getPrerequisitePath(parent, nextVisiting);
+
+    if (parentPath === null) continue;
+
+    // The path includes the parent and all its prerequisites.
+    // Add this talent at the end.
+    const candidate = [...parentPath, talent];
+
+    // Count only talents that still need purchasing.
+    const missing = candidate.filter(
+      node => node.currentRank <= 0
+    );
+
+    const totalCost = missing.reduce(
+      (sum, node) => sum + Number(node.cost || 0),
+      0
+    );
+
+    possiblePaths.push({
+      path: candidate,
+      count: missing.length,
+      cost: totalCost
+    });
+  }
+
+  if (possiblePaths.length === 0) return null;
+
+  // Choose one route:
+  // 1. Fewest missing talents.
+  // 2. Lowest total TP cost.
+  possiblePaths.sort((a, b) =>
+    a.count - b.count ||
+    a.cost - b.cost
+  );
+
+  return possiblePaths[0].path;
+}
+
+
+// Purchase one valid prerequisite route, then the requested talent.
+function purchaseTalentWithPrerequisites(talent) {
+
+if (!talent || talent.currentRank > 0) return;
+
+// =================================
+// SPEC SWAP
+// =================================
+
+let isSpecSwap = false;
+
+if (
+  isSpecNode(talent) &&
+  activeSpec &&
+  activeSpec !== talent.id
+) {
+  const previousSpecId = activeSpec;
+
+  // Use your EXISTING refund function.
+  refundSpecBranch(previousSpecId);
+
+  activeSpec = null;
+
+  collapseSpecBranch(previousSpecId);
+
+  isSpecSwap = true;
+}
+
+let path = getPrerequisitePath(talent);
+
+  if (!path) {
+    showToast("You have insufficient talent points");
+    return;
+  }
+
+  // If the requested route involves a spec but the 30 TP
+  // base requirement has not been met, max the base tree first.
+  const requiresSpec = path.some(node =>
+    isSpecNode(node)
+  );
+
+  if (requiresSpec && tpUsed < 30) {
+    maxBaseSpec({ silent: true });
+
+    path = getPrerequisitePath(talent);
+
+    if (!path) {
+      showToast("You must spend 30 talent points first");
+      return;
+    }
+  }
+
+  // Only count talents that still need to be purchased.
+  const missing = path.filter(node =>
+    node.currentRank <= 0
+  );
+
+  // Check the total TP cost of the prerequisite route.
+  const totalCost = missing.reduce(
+    (sum, node) => sum + Number(node.cost || 0),
+    0
+  );
+
+  const tpMax = Number.parseInt(tpMaxEl?.value, 10);
+  const availableTP = Number.isFinite(tpMax)
+    ? Math.max(0, tpMax - tpUsed)
+    : Infinity;
+
+  if (totalCost > availableTP) {
+    if (Number.isFinite(availableTP)) {
+      const additionalTP = totalCost - availableTP;
+
+      showToast(
+        `You need ${additionalTP} more talent points to auto purchase that`
+      );
+    } else {
+      showToast("You have insufficient talent points");
+    }
+
+    return;
+  }
+
+  // Check whether the route contains a TP threshold
+  // that hasn't been reached yet.
+  let projectedTP = tpUsed;
+
+  for (const node of missing) {
+
+    const requiredTP = getRequiredTP(node);
+
+    if (projectedTP < requiredTP) {
+      showToast(
+        `You must spend ${requiredTP} talent points first`
+      );
+      return;
+    }
+
+    projectedTP += Number(node.cost || 0);
+  }
+
+  // Check the seal limit for the entire route.
+  const sealMax = Number.parseInt(sealMaxEl?.value, 10);
+
+  const totalSeal = missing.reduce(
+    (sum, node) => sum + Number(node.seal || 0),
+    0
+  );
+
+  if (
+    Number.isFinite(sealMax) &&
+    sealUsed + totalSeal > sealMax
+  ) {
+    showToast("You have insufficient talent points");
+    return;
+  }
+
+  // Purchase prerequisites in order, ending with the target.
+  for (const node of path) {
+
+    if (node.currentRank > 0) continue;
+
+    if (!canUnlock(node)) {
+
+      const requiredTP = getRequiredTP(node);
+
+      if (tpUsed < requiredTP) {
+        showToast(
+          `You must spend ${requiredTP} talent points first`
+        );
+      } else if (isSpecNode(node) && tpUsed < 30) {
+        showToast("You must spend 30 talent points first");
+      } else {
+        showToast("You have insufficient talent points");
+      }
+
+      return;
+    }
+
+    purchaseTalent(node);
+
+    // If the purchase was blocked, stop the chain.
+    if (node.currentRank <= 0) {
+      showToast("You have insufficient talent points");
+      return;
+    }
+  }
+
+  updateCounters();
+  updateTreeVisuals();
+  applySpecVisibility();
+  drawEdges();
+if (isSpecSwap && talent.currentRank > 0) {
+  showToast("Spec swapped");
+}
+}
+
+
+
 function toggleTalent(talent) {
   talent.currentRank > 0 ? refundTalent(talent) : purchaseTalent(talent);
 }
@@ -1628,29 +2027,43 @@ function refundSpecBranch(specId) {
 function purchaseTalent(talent) {
   if (!talent || talent.currentRank > 0 || !canUnlock(talent)) return;
 
+  // If purchasing a different spec, refund the previous spec first.
+  if (isSpecNode(talent)) {
+    if (activeSpec === talent.id) return;
+
+    if (activeSpec && activeSpec !== talent.id) {
+      const previousSpecId = activeSpec;
+
+      refundSpecBranch(previousSpecId);
+      activeSpec = null;
+      collapseSpecBranch(previousSpecId);
+    }
+  }
+
+  // Check TP and seal limits AFTER refunding the previous spec.
   const cost = Number(talent.cost || 0);
   const seal = Number(talent.seal || 0);
+
   const tpMax = Number.parseInt(tpMaxEl?.value, 10);
   const sealMax = Number.parseInt(sealMaxEl?.value, 10);
+
   if (tpUsed + cost > (Number.isFinite(tpMax) ? tpMax : Infinity)) return;
   if (sealUsed + seal > (Number.isFinite(sealMax) ? sealMax : Infinity)) return;
 
+  // Purchase the new talent.
+  tpUsed += cost;
+  sealUsed += seal;
+  talent.currentRank = 1;
+
+  // Mark this as the most recently unlocked talent.
+  document.querySelectorAll(".node.last-unlocked")
+    .forEach(node => node.classList.remove("last-unlocked"));
+
+  talent.el.classList.add("last-unlocked");
+
   if (isSpecNode(talent)) {
-    if (activeSpec === talent.id) return;
-    if (activeSpec && activeSpec !== talent.id) refundSpecBranch(activeSpec);
+    activateSpec(talent);
   }
-
-tpUsed += cost;
-sealUsed += seal;
-talent.currentRank = 1;
-
-// Mark this as the most recently unlocked talent
-document.querySelectorAll(".node.last-unlocked")
-  .forEach(node => node.classList.remove("last-unlocked"));
-
-talent.el.classList.add("last-unlocked");
-
-  if (isSpecNode(talent)) activateSpec(talent);
 
   validateThresholds();
   validateChildren();
@@ -1659,6 +2072,7 @@ talent.el.classList.add("last-unlocked");
   applySpecVisibility();
   drawEdges();
 }
+
 
 function refundTalent(talent) {
   if (!talent || talent.currentRank <= 0) return;
@@ -1726,23 +2140,50 @@ function deactivateSpec(talent) {
 
 function refundTalent(talent) {
 
-  if (talent.currentRank === 0) return;
+  if (!talent || talent.currentRank <= 0) return;
+
+  // =================================
+  // REFUND SPEC + ENTIRE SPEC BRANCH
+  // =================================
 
   if (isSpecNode(talent)) {
-    deactivateSpec(talent);
+
+    refundSpecBranch(talent.id);
+
+    if (activeSpec === talent.id) {
+      activeSpec = null;
+    }
+
+    collapseSpecBranch(talent.id);
+
+    validateThresholds();
+    validateChildren();
+
+    updateCounters();
+    updateTreeVisuals();
+    applySpecVisibility();
+    drawEdges();
+
     return;
   }
 
+  // =================================
+  // REFUND NORMAL TALENT
+  // =================================
+
   talent.currentRank = 0;
 
-  tpUsed -= talent.cost;
-  sealUsed -= talent.seal;
+  talent.el.classList.remove("last-unlocked");
+
+  tpUsed = Math.max(0, tpUsed - Number(talent.cost || 0));
+  sealUsed = Math.max(0, sealUsed - Number(talent.seal || 0));
+
+  validateThresholds();
+  validateChildren();
 
   updateCounters();
   updateTreeVisuals();
   drawEdges();
-  validateThresholds();
-  validateChildren();
 }
 // ==============================
 // Node Visibility 
@@ -2317,11 +2758,71 @@ function bindClearSidebar(){
 
   btn.addEventListener("click", () => {
 
+    selectedSidebarTalent = null;
+
     setSidebarInfo("");
     setSidebarPreview(null);
 
   });
+
 }
+
+// ==============================
+// Max Base 30
+// ==============================
+
+function initAlwaysMaxBaseSpecToggle() {
+  const resetButton = document.getElementById("resetAll");
+  if (!resetButton) return;
+
+  // Avoid creating the checkbox more than once.
+  if (document.getElementById("alwaysMaxBaseSpec")) return;
+
+  const label = document.createElement("label");
+  label.id = "alwaysMaxBaseSpecLabel";
+  label.htmlFor = "alwaysMaxBaseSpec";
+  label.style.display = "inline-flex";
+  label.style.alignItems = "center";
+  label.style.gap = "6px";
+  label.style.marginLeft = "12px";
+  label.style.cursor = "pointer";
+  label.style.userSelect = "none";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.id = "alwaysMaxBaseSpec";
+
+  // Restore the previous setting.
+  checkbox.checked =
+    localStorage.getItem("alwaysMaxBaseSpec") === "true";
+
+  checkbox.addEventListener("change", () => {
+    localStorage.setItem(
+      "alwaysMaxBaseSpec",
+      String(checkbox.checked)
+    );
+
+    // If enabled while a class is already open,
+    // max its base tree immediately.
+    if (checkbox.checked && currentWeaponGroup) {
+      maxBaseSpec();
+    }
+  });
+
+  const text = document.createElement("span");
+  text.textContent = "Always Max Base Spec";
+
+  label.appendChild(checkbox);
+  label.appendChild(text);
+
+  resetButton.insertAdjacentElement("afterend", label);
+}
+
+function isAlwaysMaxBaseSpecEnabled() {
+  return document.getElementById("alwaysMaxBaseSpec")?.checked === true;
+}
+
+
 // ==============================
 // RESET
 // ==============================
@@ -2340,6 +2841,7 @@ function resetAll() {
   updateTreeVisuals();
   updateCounters();
   drawEdges();
+  showToast("All talents have been reset");
 }
 
 document.getElementById("resetAll")
@@ -2457,7 +2959,6 @@ function decodeBuild(weaponGroup, payload) {
       throw new Error("Unable to decompress build.");
     }
 
-
     bytes = Uint8Array.from(
       binary,
       character => character.charCodeAt(0)
@@ -2569,8 +3070,11 @@ function applyImportedBuild() {
 
       if (!canUnlock(node)) return;
 
-      purchaseTalent(node);
-      changed = true;
+purchaseTalent(node);
+
+if (node.currentRank > 0) {
+  changed = true;
+}
 
     });
 
@@ -2582,42 +3086,103 @@ drawEdges();
 
 requestAnimationFrame(() => {
   requestAnimationFrame(() => {
+
     centerOnClassRoot();
+
+    // Build loading is now complete.
+    showToast("Build import successful");
+    showMaxedClassToast();
+
   });
 });
 }
 
-// ==
-// toasty
-// ==
+// ==============================
+// TOAST QUEUE
+// ==============================
+
+let toastQueue = [];
+let toastIsShowing = false;
 
 function showToast(msg) {
+  toastQueue.push(msg);
 
-  let toast =
-    document.getElementById("toast");
+  if (!toastIsShowing) {
+    displayNextToast();
+  }
+}
+
+function displayNextToast() {
+  if (toastQueue.length === 0) {
+    toastIsShowing = false;
+    return;
+  }
+
+  toastIsShowing = true;
+
+  let toast = document.getElementById("toast");
 
   if (!toast) {
     toast = document.createElement("div");
     toast.id = "toast";
 
-    toast.style.position = "fixed";
-    toast.style.bottom = "20px";
-    toast.style.left = "50%";
-    toast.style.transform = "translateX(-50%)";
-    toast.style.padding = "10px 18px";
-    toast.style.background = "#111";
-    toast.style.color = "#fff";
-    toast.style.borderRadius = "6px";
-    toast.style.zIndex = 9999;
-    toast.style.opacity = 0;
+    Object.assign(toast.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      padding: "10px 18px",
+      background: "#111",
+      color: "#fff",
+      borderRadius: "6px",
+      zIndex: "9999",
+      opacity: "0",
+      transition: "opacity 0.2s ease"
+    });
 
     document.body.appendChild(toast);
   }
 
+  const msg = toastQueue.shift();
+
   toast.textContent = msg;
-  toast.style.opacity = 1;
+  toast.style.opacity = "1";
 
   setTimeout(() => {
-    toast.style.opacity = 0;
+    toast.style.opacity = "0";
+
+    setTimeout(() => {
+      displayNextToast();
+    }, 250);
+
   }, 1800);
+}
+
+// Used when maxing the currently selected tree.
+function showMaxedTreeToast() {
+  if (!currentWeaponGroup) return;
+
+  // If a spec is active, show its name instead of the class name.
+  if (activeSpec && nodes[activeSpec]) {
+    const specName = nodes[activeSpec].name
+      .replace(/\bspec\b/gi, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    showToast(`Maxed ${specName}`);
+    return;
+  }
+
+  showToast(
+    `Maxed ${getClassName(currentWeaponGroup)} Talents`
+  );
+}
+
+// Used specifically when maxing the base talents.
+function showMaxedClassToast() {
+  if (!currentWeaponGroup) return;
+
+  showToast(
+    `Maxed ${getClassName(currentWeaponGroup)} Talents`
+  );
 }
