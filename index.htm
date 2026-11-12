@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BP Star Resonance Skill Tree</title>
+  <title>BPSR Skill Tree</title>
 <link rel="icon" type="image/x-icon" href="Styles/favicon.png" >	
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -93,22 +93,20 @@ No Class selected<br>
 
 </aside>
 
-  <main>
-    <div class="zoom-container" id="zoomArea">
-<svg id="edgesLayer"
-     width="12000"
-     height="12000"
-     style="
-       position:absolute;
-       left:0;
-       top:0;
-       pointer-events:none;
-       overflow:visible;
-     ">
-    <defs></defs>
-  </svg>
+<main>
+    <div id="zoomViewport">
+        <div class="zoom-container" id="zoomArea">
+            <svg id="edgesLayer"
+                 width="12000"
+                 height="12000"
+                 style="position:absolute; left:0; top:0; pointer-events:none; overflow:visible;">
+                <defs></defs>
+            </svg>
+
+            <!-- Talent nodes are created inside zoomArea -->
+        </div>
     </div>
-  </main>
+</main>
 
 	<script src="script.js"></script>
 <div id="toast-container"></div>
