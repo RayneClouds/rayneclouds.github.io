@@ -141,9 +141,7 @@ body.wg13 {
 }
 
 html, body {
-  background:
-    url("img/weapon_line.png") center/cover fixed,
-    var(--img-bg) center/cover fixed;
+    background: var(--img-bg) center/cover fixed no-repeat;
 }
 
 /* Position hamburger + menu */
@@ -645,21 +643,36 @@ aside {
 	z-index: 3;
 }
 
-/* Main content area */
+/* Main content background layers */
 main {
-	position: absolute;
-	top: 60px;
-	/* below header */
-	left: 0;
-	right: 300px;
-	/* leave space for sidebar */
-	bottom: 0;
-	overflow: hidden;
-background:
-    var(--img-bg-left) no-repeat,
-    var(--img-bg-right) no-repeat;
-	background-position: left -150px center, right -200px center;
-	cursor: grab;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 300px;
+    bottom: 0;
+    overflow: hidden;
+
+    background-image:
+        url("img/weapon_line.png"),
+        var(--img-bg-left),
+        var(--img-bg-right);
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-position:
+        center center,
+        left clamp(-150px, -8vw, -40px) center,
+        right clamp(-200px, -10vw, -40px) center;
+
+    background-size:
+        auto 75%, /* circle */
+        auto 85%, /* left */
+        auto 85%; /* right */
+
+    cursor: grab;
 }
 main:active {
   cursor: grabbing;
