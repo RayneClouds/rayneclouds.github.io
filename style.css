@@ -331,9 +331,9 @@ header {
 
 
 
-/* Counter zone: fixed 300px box */
+/* Counter zone: fixed box */
 .header-counters {
-  width: 300px;
+  width: 175px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -668,7 +668,7 @@ main {
         right clamp(-200px, -10vw, -40px) center;
 
     background-size:
-        auto 75%, /* circle */
+        auto 90%, /* circle */
         auto 85%, /* left */
         auto 85%; /* right */
 
@@ -678,23 +678,35 @@ main:active {
   cursor: grabbing;
 }
 
-/* Zoomable area */
-.zoom-container {
-    width:100%;
-    height:100%;
-	transform-origin: 0 0;
-	cursor: grab;
-	overflow: visible;
-	position: relative;
+/* Fixed viewport: always covers MAIN */
+#zoomViewport {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: none;
 }
 
-.zoom-container:active {
-	cursor: grabbing;
-}
+/* Movable content: receives pan and zoom */
 #zoomArea {
-  position: relative;
-  transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 12000px;
+    height: 12000px;
+
+    transform-origin: 0 0;
+    overflow: visible;
 }
+
+#zoomViewport:active {
+    cursor: grabbing;
+}
+
+
 #edgesLayer {
   pointer-events:none;
 }
